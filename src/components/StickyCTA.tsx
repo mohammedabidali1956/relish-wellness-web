@@ -14,20 +14,21 @@ const StickyCTA = () => {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-gray-200 shadow-lg p-3">
-      <div className="flex gap-3">
-        <Button 
+    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-card border-t border-border px-3 py-2.5 shadow-[0_-1px_8px_rgba(16,32,48,0.06)]">
+      <div className="flex gap-2.5">
+        <Button
           onClick={handleCall}
-          className="flex-1 bg-relish-600 hover:bg-relish-700 text-white py-3 rounded-xl flex items-center justify-center gap-2"
+          className="flex-1 bg-relish-700 hover:bg-relish-800 text-white h-11 rounded-md flex items-center justify-center gap-2 text-sm font-medium"
         >
-          <Phone className="w-5 h-5" />
-          Call Now
+          <Phone className="w-4 h-4" />
+          Call clinic
         </Button>
-        <Button 
+        <Button
           onClick={handleWhatsApp}
-          className="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl flex items-center justify-center gap-2"
+          variant="outline"
+          className="flex-1 border-relish-700/40 text-relish-800 hover:bg-relish-50 hover:text-relish-900 h-11 rounded-md flex items-center justify-center gap-2 text-sm font-medium"
         >
-          <MessageCircle className="w-5 h-5" />
+          <MessageCircle className="w-4 h-4" />
           WhatsApp
         </Button>
       </div>
