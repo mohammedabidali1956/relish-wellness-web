@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,35 +7,35 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 40 24% 98%;
+    --foreground: 210 26% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 26% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 26% 14%;
 
-    --primary: 203 92% 47%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 207 48% 32%;
+    --primary-foreground: 40 24% 98%;
 
-    --secondary: 150 65% 42%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 170 30% 31%;
+    --secondary-foreground: 40 24% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 12% 42%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 170 24% 94%;
+    --accent-foreground: 170 30% 22%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 40 24% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 203 92% 47%;
+    --border: 210 18% 88%;
+    --input: 210 18% 86%;
+    --ring: 207 48% 32%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
   }
 
   * {
@@ -43,66 +43,90 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 }
 
 @layer components {
   .section-padding {
-    @apply py-16 px-4 md:py-24 md:px-6 lg:px-8;
+    @apply py-14 px-4 md:py-20 md:px-6 lg:px-8;
   }
-  
+
   .heading-1 {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold font-display;
+    @apply text-3xl md:text-4xl lg:text-[2.75rem] font-semibold font-display leading-[1.15];
   }
-  
+
   .heading-2 {
-    @apply text-2xl md:text-3xl lg:text-4xl font-bold font-display;
+    @apply text-2xl md:text-3xl lg:text-[2rem] font-semibold font-display leading-[1.2];
   }
-  
+
   .heading-3 {
-    @apply text-xl md:text-2xl lg:text-3xl font-bold font-display;
+    @apply text-xl md:text-2xl font-semibold font-display;
   }
-  
+
   .paragraph {
-    @apply text-base md:text-lg leading-relaxed text-foreground/80;
+    @apply text-base md:text-lg leading-relaxed text-muted-foreground;
   }
-  
+
+  /* Small-caps label used above section headings */
+  .eyebrow {
+    @apply inline-block text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-relish-600;
+  }
+
+  .rule {
+    @apply block w-12 h-[2px] bg-relish-600/70;
+  }
+
   .btn-primary {
-    @apply bg-relish-600 hover:bg-relish-700 text-white rounded-lg px-6 py-3 
-           font-medium transition-colors duration-200 focus:outline-none focus:ring-2 
-           focus:ring-relish-500 focus:ring-offset-2;
+    @apply bg-relish-700 hover:bg-relish-800 text-white rounded-md px-6 py-3
+           font-medium transition-colors duration-200 focus:outline-none focus:ring-2
+           focus:ring-relish-600 focus:ring-offset-2;
   }
-  
+
   .btn-secondary {
-    @apply bg-wellness-600 hover:bg-wellness-700 text-white rounded-lg px-6 py-3 
-           font-medium transition-colors duration-200 focus:outline-none focus:ring-2 
-           focus:ring-wellness-500 focus:ring-offset-2;
+    @apply bg-wellness-700 hover:bg-wellness-800 text-white rounded-md px-6 py-3
+           font-medium transition-colors duration-200 focus:outline-none focus:ring-2
+           focus:ring-wellness-600 focus:ring-offset-2;
   }
 
   .btn-outline {
-    @apply border-2 border-relish-600 text-relish-600 hover:bg-relish-50 
-           rounded-lg px-6 py-3 font-medium transition-colors duration-200 
-           focus:outline-none focus:ring-2 focus:ring-relish-500 focus:ring-offset-2;
+    @apply border border-relish-700 text-relish-700 hover:bg-relish-50
+           rounded-md px-6 py-3 font-medium transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-relish-600 focus:ring-offset-2;
   }
-  
+
+  /* Quiet, paper-like surface: hairline border, minimal shadow */
+  .surface {
+    @apply bg-card border border-border/80 rounded-md shadow-[0_1px_2px_rgba(16,32,48,0.04)];
+  }
+
   .card-shadow {
-    @apply shadow-lg shadow-gray-200/50 hover:shadow-xl hover:shadow-gray-200/60 transition-shadow duration-300;
+    @apply border border-border/80 shadow-[0_1px_2px_rgba(16,32,48,0.04)] hover:border-relish-200 transition-colors duration-300;
   }
 
   .logo-circular {
-    @apply rounded-full object-cover border-2 border-yellow-400 shadow-md;
+    @apply rounded-full object-cover border border-border shadow-sm;
     aspect-ratio: 1;
   }
 
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+    animation: fadeIn 0.5s ease-out forwards;
   }
 
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(10px);
     }
     to {
       opacity: 1;
