@@ -1,4 +1,6 @@
 
+import { cn } from "@/lib/utils";
+
 interface ContactMapProps {
   mapEmbedUrl: string;
   className?: string;
@@ -6,8 +8,8 @@ interface ContactMapProps {
 
 const ContactMap = ({ mapEmbedUrl, className }: ContactMapProps) => {
   return (
-    <div className={className}>
-      <div className="rounded-xl overflow-hidden h-full min-h-[300px] shadow-md">
+    <div className={cn("h-full", className)}>
+      <div className="rounded-md overflow-hidden h-full min-h-[300px] border border-border bg-card">
         <iframe
           src={mapEmbedUrl}
           width="100%"
@@ -16,7 +18,7 @@ const ContactMap = ({ mapEmbedUrl, className }: ContactMapProps) => {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Google Maps"
+          title="Dr. Hamid's Physio Clinic location on Google Maps"
           className="w-full h-full min-h-[300px]"
         ></iframe>
       </div>

@@ -9,7 +9,7 @@ import ContactMap from "@/components/ContactMap";
 import StructuredData from "@/components/StructuredData";
 import StickyCTA from "@/components/StickyCTA";
 import { conditions } from "@/data/conditions";
-import { MapPin, Phone, ArrowDown, Star, Stethoscope, Home } from "lucide-react";
+import { MapPin, Phone, Star, Stethoscope, Home, Clock, Quote } from "lucide-react";
 
 const HomePage = () => {
   const featuredServices = [
@@ -43,6 +43,21 @@ const HomePage = () => {
     },
   ];
 
+  const testimonials = [
+    {
+      quote: "After months of back pain, I found relief after just a few sessions at Dr. Hamid's Physio Clinic. The therapists are knowledgeable, caring, and attentive.",
+      author: "R.K.",
+    },
+    {
+      quote: "The exercise therapy program designed for me was excellent. I've regained strength in my knee and can now walk without pain. Highly recommended!",
+      author: "S.M.",
+    },
+    {
+      quote: "Professional, punctual, and effective treatment. The clinic is clean and well-equipped. Will definitely continue my therapy here.",
+      author: "A.S.",
+    },
+  ];
+
   const scrollToAppointment = () => {
     const appointmentSection = document.getElementById('appointment');
     if (appointmentSection) {
@@ -60,144 +75,126 @@ const HomePage = () => {
   return (
     <div className="pb-16 md:pb-0">
       <StructuredData type="homepage" />
-      
-      {/* Hero Section - Updated Copy */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-green-50 to-teal-50 pt-8 pb-16 md:pt-16 md:pb-24 overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-relish-400 to-wellness-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-          <div className="absolute top-0 right-0 w-72 h-72 bg-gradient-to-br from-wellness-400 to-relish-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse" style={{ animationDelay: "2s" }}></div>
-          <div className="absolute bottom-0 left-1/2 w-72 h-72 bg-gradient-to-br from-blue-400 to-green-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse" style={{ animationDelay: "4s" }}></div>
-        </div>
-        
-        <div className="container px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="text-center lg:text-left space-y-6 animate-fade-in">
-              <div className="flex items-center justify-center lg:justify-start mb-4">
-                <img 
-                  src="/lovable-uploads/hamid-physio-logo.png" 
-                  alt="Dr. Hamid's Physio Clinic Logo - Best Physiotherapy in Manikonda, Hyderabad" 
-                  className="h-12 sm:h-16 lg:h-20 drop-shadow-lg rounded-full object-cover border-2 border-white/50" 
-                />
-              </div>
-              
-              <div className="space-y-4">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display leading-tight text-gray-900">
-                  <span className="bg-gradient-to-r from-relish-600 to-wellness-600 bg-clip-text text-transparent">
-                    Expert Physiotherapy
-                  </span>
-                  <br />
-                  <span className="text-gray-800">in Manikonda, Hyderabad</span>
-                </h1>
-                
-                <p className="text-base sm:text-lg leading-relaxed text-gray-600 max-w-2xl mx-auto lg:mx-0">
-                  Personalized treatment for pain relief, injury recovery, post-surgery rehab, and mobility improvement. Experience compassionate care with Dr. Mohammed Hamid Ali, BPT.
-                </p>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-relish-600 to-relish-700 hover:from-relish-700 hover:to-relish-800 text-white px-6 py-3 text-base font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 w-full sm:w-auto"
+
+      {/* Hero */}
+      <section className="border-b border-border bg-sand-50">
+        <div className="container px-4 py-14 md:py-20 lg:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <div className="lg:col-span-7 space-y-6 animate-fade-in">
+              <span className="eyebrow">Physiotherapy &amp; Rehabilitation · Manikonda</span>
+
+              <h1 className="text-[2rem] sm:text-4xl lg:text-5xl font-semibold font-display leading-[1.12] text-relish-900">
+                Expert physiotherapy care in Manikonda, Hyderabad
+              </h1>
+
+              <p className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-xl">
+                Personalised treatment for pain relief, injury recovery, post-surgery rehabilitation
+                and improved mobility — under the care of Dr. Mohammed Hamid Ali, BPT.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-3 pt-1">
+                <Button
+                  size="lg"
+                  className="bg-relish-700 hover:bg-relish-800 text-white px-7 h-12 text-base font-medium rounded-md w-full sm:w-auto"
                   onClick={scrollToAppointment}
                 >
-                  Book Appointment
+                  Book an Appointment
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-2 border-wellness-600 text-wellness-600 hover:bg-wellness-50 px-6 py-3 text-base font-semibold w-full sm:w-auto flex items-center justify-center gap-2"
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-relish-700/40 text-relish-800 hover:bg-relish-50 hover:text-relish-900 px-7 h-12 text-base font-medium rounded-md w-full sm:w-auto flex items-center justify-center gap-2"
                   onClick={handleWhatsAppHomeService}
                 >
-                  <Home className="w-5 h-5" />
+                  <Home className="w-4 h-4" />
                   Physiotherapy at Home
                 </Button>
               </div>
+
+              <dl className="grid grid-cols-3 gap-6 pt-8 border-t border-border max-w-lg">
+                <div>
+                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">Experience</dt>
+                  <dd className="mt-1 text-2xl font-display font-semibold text-relish-800">6+ yrs</dd>
+                </div>
+                <div>
+                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">5-star reviews</dt>
+                  <dd className="mt-1 text-2xl font-display font-semibold text-relish-800">40+</dd>
+                </div>
+                <div>
+                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">Qualification</dt>
+                  <dd className="mt-1 text-2xl font-display font-semibold text-relish-800">BPT</dd>
+                </div>
+              </dl>
             </div>
-            
-            <div className="relative animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <div className="relative bg-white rounded-3xl shadow-2xl p-6 sm:p-8 backdrop-blur-sm bg-opacity-95">
-                <div className="text-center space-y-4">
-                  <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-relish-500 to-wellness-500 rounded-full flex items-center justify-center shadow-lg">
-                    <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                  </div>
-                  
+
+            {/* Clinic details panel */}
+            <div className="lg:col-span-5 animate-fade-in" style={{ animationDelay: "0.15s" }}>
+              <div className="surface p-6 sm:p-8">
+                <div className="flex items-center gap-4 pb-6 border-b border-border">
+                  <img
+                    src="/lovable-uploads/hamid-physio-logo.png"
+                    alt="Dr. Hamid's Physio Clinic logo"
+                    className="h-14 w-14 rounded-full object-cover border border-border"
+                  />
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Professional Care</h3>
-                    <p className="text-gray-600 text-base">Excellence in Every Treatment</p>
-                  </div>
-                  
-                  <div className="grid grid-cols-2 gap-4 pt-3">
-                    <div className="text-center">
-                      <div className="text-2xl sm:text-3xl font-bold text-relish-600">40+</div>
-                      <div className="text-xs sm:text-sm text-gray-600">5-Star Reviews</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl sm:text-3xl font-bold text-wellness-600">6+</div>
-                      <div className="text-xs sm:text-sm text-gray-600">Years Experience</div>
-                    </div>
+                    <p className="font-display text-lg font-semibold text-relish-900 leading-tight">
+                      Dr. Hamid's Physio Clinic
+                    </p>
+                    <p className="text-sm text-muted-foreground">Dr. Mohammed Hamid Ali, BPT</p>
                   </div>
                 </div>
-                
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full animate-bounce"></div>
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-400 rounded-full animate-pulse"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex-col items-center hidden sm:flex">
-          <p className="text-sm text-gray-600 mb-2">Discover our services</p>
-          <ArrowDown className="w-5 h-5 text-relish-600 animate-bounce" />
-        </div>
-      </section>
 
-      {/* Quick Contact Info */}
-      <section className="py-8 bg-white border-b border-gray-100">
-        <div className="container px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="flex items-center justify-center sm:justify-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors">
-              <div className="bg-relish-100 p-3 rounded-full flex-shrink-0">
-                <MapPin className="h-6 w-6 text-relish-600" />
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900">Our Location</p>
-                <p className="text-gray-600">Puppalguda, Manikonda, Hyderabad</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center sm:justify-end gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors">
-              <div className="bg-relish-100 p-3 rounded-full flex-shrink-0">
-                <Phone className="h-6 w-6 text-relish-600" />
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900">Phone Number</p>
-                <p className="text-gray-600">+91 76010 26596</p>
+                <ul className="divide-y divide-border">
+                  <li className="flex gap-3 py-4">
+                    <MapPin className="w-5 h-5 text-relish-600 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-sm font-medium text-foreground">Clinic address</p>
+                      <p className="text-sm text-muted-foreground">
+                        4-3/81, Opp HDFC Bank ATM, Near Friends Colony Park, Puppalguda, Manikonda, Hyderabad
+                      </p>
+                    </div>
+                  </li>
+                  <li className="flex gap-3 py-4">
+                    <Phone className="w-5 h-5 text-relish-600 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-sm font-medium text-foreground">Phone</p>
+                      <a href="tel:+917601026596" className="text-sm text-muted-foreground hover:text-relish-700 transition-colors">
+                        +91 76010 26596
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex gap-3 py-4">
+                    <Clock className="w-5 h-5 text-relish-600 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-sm font-medium text-foreground">Consultation</p>
+                      <p className="text-sm text-muted-foreground">By appointment · Home visits available</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Conditions We Treat Section */}
-      <section className="py-16 md:py-24 px-4 bg-white">
+      {/* Conditions We Treat */}
+      <section className="py-16 md:py-24 px-4 bg-background">
         <div className="container">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display mb-6 text-gray-900">
-              Conditions We <span className="bg-gradient-to-r from-relish-600 to-wellness-600 bg-clip-text text-transparent">Treat</span>
-            </h2>
-            <p className="text-lg sm:text-xl leading-relaxed text-gray-600 max-w-3xl mx-auto">
-              Expert physiotherapy treatment for a wide range of musculoskeletal and neurological conditions in Manikonda, Hyderabad.
+          <div className="max-w-2xl mb-12">
+            <span className="eyebrow">Conditions</span>
+            <h2 className="heading-2 mt-3 mb-4 text-relish-900">Conditions we treat</h2>
+            <p className="paragraph">
+              Assessment and treatment for a wide range of musculoskeletal and neurological
+              conditions, for patients across Manikonda and Puppalguda.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {conditions.map((condition, index) => (
-              <div 
-                key={condition.slug} 
+              <div
+                key={condition.slug}
                 className="animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ animationDelay: `${Math.min(index, 5) * 0.06}s` }}
               >
                 <ConditionCard
                   title={condition.title}
@@ -212,95 +209,76 @@ const HomePage = () => {
         </div>
       </section>
 
-
-      {/* About the Doctor Section */}
-      <section className="py-16 md:py-24 px-4 bg-white">
+      {/* About the Doctor */}
+      <section className="py-16 md:py-24 px-4 bg-sand-100 border-y border-border">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="bg-relish-100 p-3 rounded-full">
-                  <Stethoscope className="h-8 w-8 text-relish-600" />
-                </div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-gray-900">
-                  About the <span className="bg-gradient-to-r from-relish-600 to-wellness-600 bg-clip-text text-transparent">Doctor</span>
-                </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+            <div className="lg:col-span-4">
+              <span className="eyebrow">About the doctor</span>
+              <h2 className="heading-2 mt-3 text-relish-900">Dr. Mohammed Hamid Ali, BPT</h2>
+              <span className="rule mt-5" />
+              <div className="mt-6 flex items-center gap-3 text-sm text-muted-foreground">
+                <Stethoscope className="w-5 h-5 text-relish-600" />
+                Physiotherapist · Practising since 2019
               </div>
             </div>
-            
-            <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl shadow-xl p-8 md:p-12">
-              <div className="space-y-6">
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                    👨‍⚕️ Dr. Mohammed Hamid Ali, BPT
-                  </h3>
-                </div>
-                
-                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
-                  <p className="text-lg sm:text-xl">
-                    Dr. Mohammed Hamid Ali is a certified physiotherapist with a Bachelor of Physiotherapy (BPT) degree and over 6 years of hands-on clinical experience. Known for his gentle demeanor and precise approach, Dr. Hamid combines deep medical knowledge with a sincere commitment to patient wellbeing.
-                  </p>
-                  
-                  <p className="text-lg sm:text-xl">
-                    His treatment philosophy is rooted in both science and compassion — ensuring each patient receives not just professional care, but also understanding, encouragement, and respect. From chronic pain to post-injury rehab, Dr. Hamid's expertise helps individuals regain mobility, confidence, and joy in everyday movement.
-                  </p>
-                </div>
 
-                {/* Areas Served */}
-                <div className="mt-8 p-6 bg-white rounded-xl">
-                  <h4 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                    <MapPin className="w-5 h-5 text-relish-600" />
-                    Areas We Serve
-                  </h4>
-                  <p className="text-gray-600">
-                    Manikonda, Puppalguda, Shaikpet, Alkapur Township, Narsingi, Gandipet, Kokapet, Financial District, Gachibowli, and surrounding areas in Hyderabad.
-                  </p>
+            <div className="lg:col-span-8 space-y-5">
+              <p className="text-lg leading-relaxed text-foreground/85">
+                Dr. Mohammed Hamid Ali is a certified physiotherapist with a Bachelor of Physiotherapy (BPT)
+                degree and over six years of hands-on clinical experience. Known for his measured, precise
+                approach, he combines clinical knowledge with a sincere commitment to patient wellbeing.
+              </p>
+              <p className="text-lg leading-relaxed text-foreground/85">
+                His treatment philosophy is rooted in both evidence and compassion — each patient receives a
+                clear diagnosis, a plan explained in plain language, and consistent follow-up. From chronic
+                pain to post-injury rehabilitation, the aim is to restore mobility, confidence and comfort in
+                everyday movement.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-border mt-8 border border-border">
+                <div className="bg-card p-5">
+                  <p className="font-display text-lg font-semibold text-relish-900">BPT certified</p>
+                  <p className="text-sm text-muted-foreground mt-1">Professional qualification</p>
                 </div>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200">
-                  <div className="text-center">
-                    <div className="bg-relish-50 rounded-full p-4 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
-                      <span className="text-2xl">🎓</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-900 mb-1">BPT Certified</h4>
-                    <p className="text-sm text-gray-600">Professional Qualification</p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="bg-wellness-50 rounded-full p-4 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
-                      <span className="text-2xl">⏱️</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-900 mb-1">6+ Years</h4>
-                    <p className="text-sm text-gray-600">Clinical Experience</p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="bg-yellow-50 rounded-full p-4 w-16 h-16 mx-auto mb-3 flex items-center justify-center">
-                      <span className="text-2xl">❤️</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Compassionate</h4>
-                    <p className="text-sm text-gray-600">Patient-Centered Care</p>
-                  </div>
+                <div className="bg-card p-5">
+                  <p className="font-display text-lg font-semibold text-relish-900">6+ years</p>
+                  <p className="text-sm text-muted-foreground mt-1">Clinical experience</p>
                 </div>
+                <div className="bg-card p-5">
+                  <p className="font-display text-lg font-semibold text-relish-900">Patient-centred</p>
+                  <p className="text-sm text-muted-foreground mt-1">Individual treatment plans</p>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-border">
+                <p className="text-sm font-medium text-foreground mb-2 flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-relish-600" />
+                  Areas we serve
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Manikonda, Puppalguda, Shaikpet, Alkapur Township, Narsingi, Gandipet, Kokapet,
+                  Financial District, Gachibowli and surrounding areas in Hyderabad.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Services */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+      {/* Services */}
+      <section className="py-16 md:py-24 px-4 bg-background">
         <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display mb-6 text-gray-900">
-              Our <span className="bg-gradient-to-r from-relish-600 to-wellness-600 bg-clip-text text-transparent">Services</span>
-            </h2>
-            <p className="text-lg sm:text-xl leading-relaxed text-gray-600 max-w-3xl mx-auto">
-              Evidence-based physiotherapy treatments delivered with clinical expertise and personalized care.
+          <div className="max-w-2xl mb-12">
+            <span className="eyebrow">Treatments</span>
+            <h2 className="heading-2 mt-3 mb-4 text-relish-900">Our services</h2>
+            <p className="paragraph">
+              Evidence-based physiotherapy treatments, delivered with clinical care and reviewed
+              at every stage of your recovery.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl">
             {featuredServices.map((service) => (
               <ServiceCard
                 key={service.id}
@@ -311,94 +289,83 @@ const HomePage = () => {
               />
             ))}
           </div>
+
+          <div className="mt-10">
+            <Link
+              to="/services"
+              className="text-sm font-medium text-relish-700 hover:text-relish-900 underline underline-offset-4 decoration-relish-300"
+            >
+              View all services in detail
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Appointment and Map Section */}
-      <section id="appointment" className="py-16 md:py-24 px-4 bg-white">
+      {/* Appointment + Map */}
+      <section id="appointment" className="py-16 md:py-24 px-4 bg-sand-100 border-y border-border">
         <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display mb-6 text-gray-900">
-              Book Your <span className="bg-gradient-to-r from-relish-600 to-wellness-600 bg-clip-text text-transparent">Appointment</span>
-            </h2>
-            <p className="text-lg sm:text-xl leading-relaxed text-gray-600 max-w-3xl mx-auto">
-              Take the first step towards recovery. Schedule a consultation with Dr. Mohammed Hamid Ali, BPT.
+          <div className="max-w-2xl mb-12">
+            <span className="eyebrow">Appointments</span>
+            <h2 className="heading-2 mt-3 mb-4 text-relish-900">Book your appointment</h2>
+            <p className="paragraph">
+              Share a few details and we will confirm a suitable time with you. You can also call
+              the clinic directly on +91 76010 26596.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <AppointmentForm />
-            </div>
-            <ContactMap 
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <AppointmentForm />
+            <ContactMap
               mapEmbedUrl="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Dr.%20Hamid's%20Physio%20Clinic&maptype=roadmap"
-              className="h-full min-h-[400px] rounded-2xl shadow-lg"
+              className="h-full min-h-[360px]"
             />
           </div>
         </div>
       </section>
 
-      {/* Testimonial Section */}
-      <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-relish-50 to-wellness-50">
+      {/* Testimonials */}
+      <section className="py-16 md:py-24 px-4 bg-background">
         <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display mb-6 text-gray-900">
-              What Our <span className="bg-gradient-to-r from-relish-600 to-wellness-600 bg-clip-text text-transparent">Patients Say</span>
-            </h2>
-            <p className="text-lg sm:text-xl leading-relaxed text-gray-600 max-w-3xl mx-auto">
-              Don't just take our word for it. Read what our patients have to say about their experiences.
+          <div className="max-w-2xl mb-12">
+            <span className="eyebrow">Patient feedback</span>
+            <h2 className="heading-2 mt-3 mb-4 text-relish-900">What our patients say</h2>
+            <p className="paragraph">
+              A selection of experiences shared by patients treated at the clinic.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex mb-4">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                ))}
-              </div>
-              <p className="text-gray-700 italic mb-6 leading-relaxed">
-                "After months of back pain, I found relief after just a few sessions at Dr. Hamid's Physio Clinic. The therapists are knowledgeable, caring, and attentive."
-              </p>
-              <p className="text-gray-900 font-semibold">- R.K.</p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex mb-4">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                ))}
-              </div>
-              <p className="text-gray-700 italic mb-6 leading-relaxed">
-                "The exercise therapy program designed for me was excellent. I've regained strength in my knee and can now walk without pain. Highly recommended!"
-              </p>
-              <p className="text-gray-900 font-semibold">- S.M.</p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow md:col-span-2 lg:col-span-1">
-              <div className="flex mb-4">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                ))}
-              </div>
-              <p className="text-gray-700 italic mb-6 leading-relaxed">
-                "Professional, punctual, and effective treatment. The clinic is clean and well-equipped. Will definitely continue my therapy here."
-              </p>
-              <p className="text-gray-900 font-semibold">- A.S.</p>
-            </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border border border-border">
+            {testimonials.map((t) => (
+              <figure key={t.author} className="bg-card p-7 flex flex-col">
+                <Quote className="w-5 h-5 text-relish-300 mb-4" />
+                <blockquote className="text-foreground/85 leading-relaxed flex-grow">
+                  {t.quote}
+                </blockquote>
+                <figcaption className="mt-6 pt-5 border-t border-border flex items-center justify-between">
+                  <span className="text-sm font-medium text-relish-900">{t.author}</span>
+                  <span className="flex" aria-label="5 out of 5 stars">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star key={star} className="w-3.5 h-3.5 text-relish-600 fill-relish-600" />
+                    ))}
+                  </span>
+                </figcaption>
+              </figure>
+            ))}
           </div>
-          
-          <div className="text-center mt-12">
+
+          <div className="mt-10">
             <Link to="/reviews">
-              <Button variant="outline" size="lg" className="border-2 border-relish-600 text-relish-600 hover:bg-relish-50 px-8 py-4 text-lg font-semibold">
-                View All Reviews
+              <Button
+                variant="outline"
+                className="border-relish-700/40 text-relish-800 hover:bg-relish-50 hover:text-relish-900 rounded-md px-6 h-11 font-medium"
+              >
+                Read all reviews
               </Button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Sticky CTA for Mobile */}
       <StickyCTA />
     </div>
   );
