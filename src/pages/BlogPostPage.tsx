@@ -21,7 +21,7 @@ const BlogPostPage = () => {
         pageDescription={post.excerpt}
       />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-relish-100 to-wellness-100 py-12 md:py-16">
+      <section className="border-b border-border bg-sand-50 py-12 md:py-16">
         <div className="container">
           <Link to="/blogs">
             <Button variant="outline" className="mb-6 border-relish-600 text-relish-600 hover:bg-relish-50">
@@ -109,7 +109,7 @@ const BlogPostPage = () => {
                   <Link 
                     key={relatedPost.id} 
                     to={`/blogs/${relatedPost.slug}`}
-                    className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                    className="bg-card border border-border rounded-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                   >
                     <div className="relative h-48 overflow-hidden">
                       <img 
@@ -137,7 +137,7 @@ const BlogPostPage = () => {
       )}
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-relish-600 to-wellness-600 text-white">
+      <section className="py-16 bg-relish-800 text-white">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Ready to Start Your Recovery Journey?</h2>

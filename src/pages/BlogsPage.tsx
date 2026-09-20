@@ -14,11 +14,11 @@ const BlogsPage = () => {
         pageDescription="Expert physiotherapy advice and health tips from Dr. Hamid's Physio Clinic in Manikonda, Hyderabad. Learn about pain management, rehabilitation, and wellness."
       />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-relish-100 to-wellness-100 py-16 md:py-24">
+      <section className="border-b border-border bg-sand-50 py-14 md:py-20">
         <div className="container">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-gray-900">
-              Health & Wellness <span className="bg-gradient-to-r from-relish-600 to-wellness-600 bg-clip-text text-transparent">Insights</span>
+              Health & Wellness <span className="text-relish-700">Insights</span>
             </h1>
             <p className="text-lg sm:text-xl leading-relaxed text-gray-700 max-w-3xl mx-auto">
               Expert advice, research-backed information, and practical tips from Dr. Hamid's Physio Clinic to help you live pain-free and stay healthy.
@@ -32,7 +32,7 @@ const BlogsPage = () => {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
-              <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
+              <article key={post.id} className="bg-card border border-border rounded-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={post.imageUrl} 
@@ -86,7 +86,7 @@ const BlogsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-relish-600 to-wellness-600 text-white">
+      <section className="py-16 bg-relish-800 text-white">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Have Questions About Your Health?</h2>
