@@ -61,7 +61,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-relish-600 mt-0.5 mr-3" />
-                <span className="text-muted-foreground">4-3/81, Opp HDFC Bank ATM, Near Friends Colony Park, Puppalguda, Manikonda, Hyderabad, Telangana 500089</span>
+                <span className="text-muted-foreground">4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-relish-600 mr-3" />
