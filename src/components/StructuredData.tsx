@@ -154,8 +154,8 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
       "availableLanguage": ["en", "hi", "te"]
     },
     "sameAs": [
-      "https://www.instagram.com/relishphysio",
-      "https://twitter.com/relishphysio"
+      "https://www.instagram.com/drhamidphysio",
+      "https://www.facebook.com/profile.php?id=61587086612280"
     ]
   };
 
