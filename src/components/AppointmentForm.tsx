@@ -43,11 +43,11 @@ const AppointmentForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg">
-      <h3 className="text-2xl font-semibold mb-6 text-gray-800">Book an Appointment</h3>
+    <div className="bg-card border border-border rounded-md p-6 md:p-8">
+      <h3 className="font-display text-xl sm:text-2xl font-semibold mb-6 text-relish-900">Book an Appointment</h3>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
             Your Name*
           </label>
           <input
@@ -55,14 +55,14 @@ const AppointmentForm = () => {
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-relish-500"
+            className="w-full px-4 py-2.5 bg-background border border-input rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-relish-500/40 focus:border-relish-500"
             placeholder="John Doe"
             required
           />
         </div>
         
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1.5">
             Phone Number*
           </label>
           <input
@@ -70,14 +70,14 @@ const AppointmentForm = () => {
             id="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-relish-500"
+            className="w-full px-4 py-2.5 bg-background border border-input rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-relish-500/40 focus:border-relish-500"
             placeholder="+91 76010 26596"
             required
           />
         </div>
         
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1.5">
             Message (Optional)
           </label>
           <textarea
@@ -85,7 +85,7 @@ const AppointmentForm = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             rows={4}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-relish-500"
+            className="w-full px-4 py-2.5 bg-background border border-input rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-relish-500/40 focus:border-relish-500"
             placeholder="Tell us about your condition or any specific requirements..."
           ></textarea>
         </div>
@@ -93,7 +93,7 @@ const AppointmentForm = () => {
         <div className="flex flex-col sm:flex-row gap-3">
           <Button 
             type="button" 
-            className="bg-green-600 hover:bg-green-700 flex-1"
+            className="bg-relish-700 hover:bg-relish-800 text-white flex-1 h-12 text-base font-medium rounded-md"
             onClick={handleWhatsAppRedirect}
           >
             Book via WhatsApp
