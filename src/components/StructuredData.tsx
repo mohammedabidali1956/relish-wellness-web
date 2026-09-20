@@ -12,8 +12,8 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     "@type": "Physiotherapy",
     "name": "Dr. Hamid's Physio Clinic",
     "image": "/og-image.png",
-    "url": "https://yourwebsite.com",
-    "@id": "https://yourwebsite.com",
+    "url": "https://hamidphysio.lovable.app",
+    "@id": "https://hamidphysio.lovable.app",
     "telephone": "+919885755888",
     "email": "hamid.physio324@gmail.com",
     "address": {
@@ -144,7 +144,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     "@type": "Organization",
     "name": "Dr. Hamid's Physio Clinic",
     "alternateName": "Dr Hamid Physiotherapy",
-    "url": "https://yourwebsite.com",
+    "url": "https://hamidphysio.lovable.app",
     "logo": "/og-image.png",
     "contactPoint": {
       "@type": "ContactPoint",
@@ -171,7 +171,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
         {JSON.stringify(organizationSchema)}
       </script>
       {type === "homepage" && (
-        <link rel="canonical" href="https://yourwebsite.com/" />
+        <link rel="canonical" href="https://hamidphysio.lovable.app/" />
       )}
       {pageTitle && <title>{pageTitle}</title>}
       {pageDescription && <meta name="description" content={pageDescription} />}
