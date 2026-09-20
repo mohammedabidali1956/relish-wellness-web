@@ -150,7 +150,7 @@ const HomePage = () => {
                     <div>
                       <p className="text-sm font-medium text-foreground">Clinic address</p>
                       <p className="text-sm text-muted-foreground">
-                        4-3/81, Opp HDFC Bank ATM, Near Friends Colony Park, 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089
+                        4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089
                       </p>
                     </div>
                   </li>
