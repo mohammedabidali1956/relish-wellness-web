@@ -18,8 +18,9 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     "email": "hamid.physio324@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "4-3/81, Opp HDFC Bank ATM, Near Friends Colony Park, Puppalguda",
-      "addressLocality": "Manikonda",
+      "streetAddress": "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park",
+      "addressSubLocality": "Friends Colony, Puppalguda, Manikonda",
+      "addressLocality": "Hyderabad",
       "addressRegion": "Telangana",
       "postalCode": "500089",
       "addressCountry": "IN"
@@ -116,7 +117,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
         "name": "Where is Dr. Hamid's Physio Clinic located?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Dr. Hamid's Physio Clinic is located at 4-3/81, Opp HDFC Bank ATM, Near Friends Colony Park, Puppalguda, Manikonda, Hyderabad, Telangana 500089."
+          "text": "Dr. Hamid's Physio Clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089."
         }
       },
       {

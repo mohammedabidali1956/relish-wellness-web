@@ -150,7 +150,7 @@ const HomePage = () => {
                     <div>
                       <p className="text-sm font-medium text-foreground">Clinic address</p>
                       <p className="text-sm text-muted-foreground">
-                        4-3/81, Opp HDFC Bank ATM, Near Friends Colony Park, Puppalguda, Manikonda, Hyderabad
+                        4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089
                       </p>
                     </div>
                   </li>
@@ -316,7 +316,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             <AppointmentForm />
             <ContactMap
-              mapEmbedUrl="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=Dr.%20Hamid's%20Physio%20Clinic&maptype=roadmap"
+              mapEmbedUrl="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=4-3%2F81%2C%20Opp%3A%20HDFC%20Bank%20ATM%2C%20near%20Friends%20Colony%20Park%2C%20Friends%20Colony%2C%20Puppalguda%2C%20Manikonda%2C%20Hyderabad%2C%20Telangana%20500089&maptype=roadmap"
               className="h-full min-h-[360px]"
             />
           </div>
