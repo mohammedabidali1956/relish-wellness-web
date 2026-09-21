@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { Activity, ArrowRight, CheckCircle2, Info, MessageCircle } from "lucide-react";
 
@@ -115,7 +115,7 @@ const bodyAreas: BodyArea[] = [
   },
 ];
 
-const regions: Record<BodyAreaId, React.ReactNode> = {
+const regions: Record<BodyAreaId, ReactNode> = {
   head: <circle cx="130" cy="48" r="29" />,
   neck: <rect x="113" y="77" width="34" height="30" rx="12" />,
   shoulder: (
@@ -251,8 +251,7 @@ const BodyPainMap = () => {
                       }
                     }}
                   >
-                    {Array.isArray(regions[area.id]) ? regions[area.id] : regions[area.id]}
-                    <g className={regionClass(area.id)} pointerEvents="none">
+<g className={regionClass(area.id)} pointerEvents="none">
                       {regions[area.id]}
                     </g>
                   </g>
