@@ -251,7 +251,7 @@ const BodyPainMap = () => {
                       }
                     }}
                   >
-<g className={regionClass(area.id)} pointerEvents="none">
+<g className={regionClass(area.id)}>
                       {regions[area.id]}
                     </g>
                   </g>
