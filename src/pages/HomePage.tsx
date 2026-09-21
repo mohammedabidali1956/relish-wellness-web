@@ -8,6 +8,8 @@ import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
 import StructuredData from "@/components/StructuredData";
 import StickyCTA from "@/components/StickyCTA";
+import PainPointGuide from "@/components/PainPointGuide";
+import doctorPortrait from "@/assets/hamid-dr.jpeg.asset.json";
 import { conditions } from "@/data/conditions";
 import { MapPin, Phone, Star, Stethoscope, Home, Clock, Quote } from "lucide-react";
 
@@ -177,6 +179,8 @@ const HomePage = () => {
         </div>
       </section>
 
+      <PainPointGuide />
+
       {/* Conditions We Treat */}
       <section className="py-16 md:py-24 px-4 bg-background">
         <div className="container">
@@ -205,63 +209,6 @@ const HomePage = () => {
                 />
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About the Doctor */}
-      <section className="py-16 md:py-24 px-4 bg-sand-100 border-y border-border">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
-            <div className="lg:col-span-4">
-              <span className="eyebrow">About the doctor</span>
-              <h2 className="heading-2 mt-3 text-relish-900">Dr. Mohammed Hamid Ali, BPT</h2>
-              <span className="rule mt-5" />
-              <div className="mt-6 flex items-center gap-3 text-sm text-muted-foreground">
-                <Stethoscope className="w-5 h-5 text-relish-600" />
-                Physiotherapist · 8+ years of clinical experience
-              </div>
-            </div>
-
-            <div className="lg:col-span-8 space-y-5">
-              <p className="text-lg leading-relaxed text-foreground/85">
-                Dr. Mohammed Hamid Ali is a certified physiotherapist with a Bachelor of Physiotherapy (BPT)
-                degree and over eight years of hands-on clinical experience. Known for his measured, precise
-                approach, he combines clinical knowledge with a sincere commitment to patient wellbeing.
-              </p>
-              <p className="text-lg leading-relaxed text-foreground/85">
-                His treatment philosophy is rooted in both evidence and compassion — each patient receives a
-                clear diagnosis, a plan explained in plain language, and consistent follow-up. From chronic
-                pain to post-injury rehabilitation, the aim is to restore mobility, confidence and comfort in
-                everyday movement.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-border mt-8 border border-border">
-                <div className="bg-card p-5">
-                  <p className="font-display text-lg font-semibold text-relish-900">BPT certified</p>
-                  <p className="text-sm text-muted-foreground mt-1">Professional qualification</p>
-                </div>
-                <div className="bg-card p-5">
-                  <p className="font-display text-lg font-semibold text-relish-900">8+ years</p>
-                  <p className="text-sm text-muted-foreground mt-1">Clinical experience</p>
-                </div>
-                <div className="bg-card p-5">
-                  <p className="font-display text-lg font-semibold text-relish-900">Patient-centred</p>
-                  <p className="text-sm text-muted-foreground mt-1">Individual treatment plans</p>
-                </div>
-              </div>
-
-              <div className="mt-8 pt-6 border-t border-border">
-                <p className="text-sm font-medium text-foreground mb-2 flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-relish-600" />
-                  Areas we serve
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Manikonda, Puppalguda, Shaikpet, Alkapur Township, Narsingi, Gandipet, Kokapet,
-                  Financial District, Gachibowli and surrounding areas in Hyderabad.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -301,24 +248,74 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Appointment + Map */}
-      <section id="appointment" className="py-16 md:py-24 px-4 bg-sand-100 border-y border-border">
+      {/* About the Doctor */}
+      <section className="py-16 md:py-24 px-4 bg-sand-100 border-y border-border">
         <div className="container">
-          <div className="max-w-2xl mb-12">
-            <span className="eyebrow">Appointments</span>
-            <h2 className="heading-2 mt-3 mb-4 text-relish-900">Book your appointment</h2>
-            <p className="paragraph">
-              Share a few details and we will confirm a suitable time with you. You can also call
-              the clinic directly on +91 76010 26596.
-            </p>
-          </div>
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16 lg:items-center">
+            <div className="lg:col-span-5">
+              <div className="relative mx-auto max-w-md overflow-hidden rounded-md border border-border bg-card">
+                <img
+                  src={doctorPortrait.url}
+                  alt="Dr. Mohammed Hamid Ali, BPT"
+                  className="aspect-[4/5] w-full object-cover object-top"
+                  loading="lazy"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-relish-900/90 px-5 py-4 text-primary-foreground">
+                  <p className="font-display text-lg font-semibold">Dr. Mohammed Hamid Ali</p>
+                  <p className="mt-0.5 text-sm text-primary-foreground/80">Bachelor of Physiotherapy (BPT)</p>
+                </div>
+              </div>
+            </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-            <AppointmentForm />
-            <ContactMap
-              mapEmbedUrl="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=4-3%2F81%2C%20Opp%3A%20HDFC%20Bank%20ATM%2C%20near%20Friends%20Colony%20Park%2C%20Friends%20Colony%2C%20Puppalguda%2C%20Manikonda%2C%20Hyderabad%2C%20Telangana%20500089&maptype=roadmap"
-              className="h-full min-h-[360px]"
-            />
+            <div className="lg:col-span-7">
+              <span className="eyebrow">About the doctor</span>
+              <h2 className="heading-2 mt-3 text-relish-900">Dr. Mohammed Hamid Ali, BPT</h2>
+              <span className="rule mt-5" />
+              <div className="mt-6 flex items-center gap-3 text-sm text-muted-foreground">
+                <Stethoscope className="w-5 h-5 text-relish-600" />
+                Physiotherapist · 8+ years of clinical experience
+              </div>
+
+              <div className="mt-7 space-y-5">
+              <p className="text-lg leading-relaxed text-foreground/85">
+                Dr. Mohammed Hamid Ali is a certified physiotherapist with a Bachelor of Physiotherapy (BPT)
+                degree and over eight years of hands-on clinical experience. Known for his measured, precise
+                approach, he combines clinical knowledge with a sincere commitment to patient wellbeing.
+              </p>
+              <p className="text-lg leading-relaxed text-foreground/85">
+                His treatment philosophy is rooted in both evidence and compassion — each patient receives a
+                clear diagnosis, a plan explained in plain language, and consistent follow-up. From chronic
+                pain to post-injury rehabilitation, the aim is to restore mobility, confidence and comfort in
+                everyday movement.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-border mt-8 border border-border">
+                <div className="bg-card p-5">
+                  <p className="font-display text-lg font-semibold text-relish-900">BPT certified</p>
+                  <p className="text-sm text-muted-foreground mt-1">Professional qualification</p>
+                </div>
+                <div className="bg-card p-5">
+                  <p className="font-display text-lg font-semibold text-relish-900">8+ years</p>
+                  <p className="text-sm text-muted-foreground mt-1">Clinical experience</p>
+                </div>
+                <div className="bg-card p-5">
+                  <p className="font-display text-lg font-semibold text-relish-900">Patient-centred</p>
+                  <p className="text-sm text-muted-foreground mt-1">Individual treatment plans</p>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-border">
+                <p className="text-sm font-medium text-foreground mb-2 flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-relish-600" />
+                  Areas we serve
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Manikonda, Puppalguda, Shaikpet, Alkapur Township, Narsingi, Gandipet, Kokapet,
+                  Financial District, Gachibowli and surrounding areas in Hyderabad.
+                </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -362,6 +359,28 @@ const HomePage = () => {
                 Read all reviews
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Appointment + Map */}
+      <section id="appointment" className="py-16 md:py-24 px-4 bg-sand-100 border-y border-border">
+        <div className="container">
+          <div className="max-w-2xl mb-12">
+            <span className="eyebrow">Appointments</span>
+            <h2 className="heading-2 mt-3 mb-4 text-relish-900">Book your appointment</h2>
+            <p className="paragraph">
+              Share a few details and we will confirm a suitable time with you. You can also call
+              the clinic directly on +91 76010 26596.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <AppointmentForm />
+            <ContactMap
+              mapEmbedUrl="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=4-3%2F81%2C%20Opp%3A%20HDFC%20Bank%20ATM%2C%20near%20Friends%20Colony%20Park%2C%20Friends%20Colony%2C%20Puppalguda%2C%20Manikonda%2C%20Hyderabad%2C%20Telangana%20500089&maptype=roadmap"
+              className="h-full min-h-[360px]"
+            />
           </div>
         </div>
       </section>
