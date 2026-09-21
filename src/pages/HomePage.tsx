@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
 import ConditionCard from "@/components/ConditionCard";
 import AppointmentForm from "@/components/AppointmentForm";
+import BodyPainMap from "@/components/BodyPainMap";
 
 import ContactMap from "@/components/ContactMap";
 import StructuredData from "@/components/StructuredData";
@@ -208,6 +209,8 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      <BodyPainMap />
 
       {/* About the Doctor */}
       <section className="py-16 md:py-24 px-4 bg-sand-100 border-y border-border">
