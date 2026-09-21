@@ -61,7 +61,7 @@ const ConditionPage = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-relish-50 via-wellness-50 to-blue-50 py-12 md:py-20">
+      <section className="relative border-b border-border bg-sand-50 py-12 md:py-20">
         <div className="container px-4">
           <Link 
             to="/" 
@@ -75,7 +75,7 @@ const ConditionPage = () => {
             <div className="animate-fade-in">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-display mb-6 text-gray-900">
                 {condition.title}{" "}
-                <span className="bg-gradient-to-r from-relish-600 to-wellness-600 bg-clip-text text-transparent">
+                <span className="text-relish-700">
                   in Manikonda
                 </span>
               </h1>
@@ -141,7 +141,7 @@ const ConditionPage = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
               Symptoms to Watch For
             </h2>
-            <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+            <div className="bg-card border border-border rounded-md p-6 md:p-8">
               <ul className="space-y-4">
                 {condition.symptoms.map((symptom, index) => (
                   <li key={index} className="flex items-start gap-3">
@@ -162,7 +162,7 @@ const ConditionPage = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
               How Physiotherapy Helps
             </h2>
-            <div className="bg-gradient-to-br from-relish-50 to-wellness-50 rounded-2xl p-6 md:p-8">
+            <div className="rounded-md border border-border bg-sand-100 p-6 md:p-8">
               <p className="text-lg text-gray-700 leading-relaxed">
                 {condition.howPhysioHelps}
               </p>
@@ -219,7 +219,7 @@ const ConditionPage = () => {
               <HelpCircle className="w-8 h-8 text-relish-600" />
               Frequently Asked Questions
             </h2>
-            <Accordion type="single" collapsible className="bg-white rounded-2xl shadow-lg">
+            <Accordion type="single" collapsible className="bg-card border border-border rounded-md">
               {condition.faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`faq-${index}`}>
                   <AccordionTrigger className="px-6 text-left hover:no-underline">
@@ -236,7 +236,7 @@ const ConditionPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-relish-600 to-wellness-600">
+      <section className="py-12 md:py-16 bg-relish-800">
         <div className="container px-4">
           <div className="max-w-3xl mx-auto text-center text-white">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">

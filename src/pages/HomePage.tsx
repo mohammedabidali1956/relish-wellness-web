@@ -111,18 +111,18 @@ const HomePage = () => {
                 </Button>
               </div>
 
-              <dl className="grid grid-cols-3 gap-6 pt-8 border-t border-border max-w-lg">
-                <div>
-                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">Experience</dt>
-                  <dd className="mt-1 text-2xl font-display font-semibold text-relish-800">6+ yrs</dd>
+              <dl className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-border max-w-lg">
+                <div className="min-w-0">
+                  <dt className="text-[11px] sm:text-xs uppercase tracking-wider text-muted-foreground">Clinical experience</dt>
+                  <dd className="mt-1 text-xl sm:text-2xl font-display font-semibold text-relish-800">8+ yrs</dd>
                 </div>
-                <div>
-                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">5-star reviews</dt>
-                  <dd className="mt-1 text-2xl font-display font-semibold text-relish-800">40+</dd>
+                <div className="min-w-0">
+                  <dt className="text-[11px] sm:text-xs uppercase tracking-wider text-muted-foreground">5-star reviews</dt>
+                  <dd className="mt-1 text-xl sm:text-2xl font-display font-semibold text-relish-800">100+</dd>
                 </div>
-                <div>
-                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">Qualification</dt>
-                  <dd className="mt-1 text-2xl font-display font-semibold text-relish-800">BPT</dd>
+                <div className="min-w-0">
+                  <dt className="text-[11px] sm:text-xs uppercase tracking-wider text-muted-foreground">Qualification</dt>
+                  <dd className="mt-1 text-xl sm:text-2xl font-display font-semibold text-relish-800">BPT</dd>
                 </div>
               </dl>
             </div>
@@ -219,14 +219,14 @@ const HomePage = () => {
               <span className="rule mt-5" />
               <div className="mt-6 flex items-center gap-3 text-sm text-muted-foreground">
                 <Stethoscope className="w-5 h-5 text-relish-600" />
-                Physiotherapist · Practising since 2019
+                Physiotherapist · 8+ years of clinical experience
               </div>
             </div>
 
             <div className="lg:col-span-8 space-y-5">
               <p className="text-lg leading-relaxed text-foreground/85">
                 Dr. Mohammed Hamid Ali is a certified physiotherapist with a Bachelor of Physiotherapy (BPT)
-                degree and over six years of hands-on clinical experience. Known for his measured, precise
+                degree and over eight years of hands-on clinical experience. Known for his measured, precise
                 approach, he combines clinical knowledge with a sincere commitment to patient wellbeing.
               </p>
               <p className="text-lg leading-relaxed text-foreground/85">
@@ -242,7 +242,7 @@ const HomePage = () => {
                   <p className="text-sm text-muted-foreground mt-1">Professional qualification</p>
                 </div>
                 <div className="bg-card p-5">
-                  <p className="font-display text-lg font-semibold text-relish-900">6+ years</p>
+                  <p className="font-display text-lg font-semibold text-relish-900">8+ years</p>
                   <p className="text-sm text-muted-foreground mt-1">Clinical experience</p>
                 </div>
                 <div className="bg-card p-5">

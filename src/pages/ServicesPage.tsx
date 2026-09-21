@@ -46,7 +46,7 @@ const ServicesPage = () => {
         pageDescription="Comprehensive physiotherapy services in Puppalguda, Manikonda, Hyderabad. Ultrasound therapy, TENS, exercise therapy, manual therapy & more by Dr. Hamid."
       />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-relish-100 to-wellness-100 py-16 md:py-24">
+      <section className="border-b border-border bg-sand-50 py-14 md:py-20">
         <div className="container">
           <div className="text-center">
             <h1 className="heading-1 mb-6 text-gray-800">Our Services</h1>
@@ -75,7 +75,7 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-relish-600 to-relish-700 text-white">
+      <section className="py-16 bg-relish-800 text-white">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Ready to Start Your Healing Journey?</h2>

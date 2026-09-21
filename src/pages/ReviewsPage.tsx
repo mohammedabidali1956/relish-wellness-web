@@ -89,7 +89,7 @@ const ReviewsPage = () => {
         pageDescription="Read 50+ genuine reviews from patients treated at Dr. Hamid's Physio Clinic in Manikonda, Hyderabad. 5-star rated physiotherapy services."
       />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-relish-100 to-wellness-100 py-16 md:py-24">
+      <section className="border-b border-border bg-sand-50 py-14 md:py-20">
         <div className="container">
           <div className="text-center">
             <h1 className="heading-1 mb-6 text-gray-800">Patient Reviews</h1>
@@ -151,7 +151,7 @@ const ReviewsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-wellness-600 to-wellness-700 text-white">
+      <section className="py-16 bg-relish-800 text-white">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Join Our Satisfied Patients</h2>
