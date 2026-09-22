@@ -9,7 +9,7 @@ import ContactMap from "@/components/ContactMap";
 import StructuredData from "@/components/StructuredData";
 import StickyCTA from "@/components/StickyCTA";
 import PainPointGuide from "@/components/PainPointGuide";
-import doctorPortrait from "@/assets/hamid-dr.jpeg.asset.json";
+const doctorPortrait = { url: "/doctor-hamid-ali.jpg" };
 import { conditions } from "@/data/conditions";
 import { MapPin, Phone, Star, Stethoscope, Home, Clock, Quote } from "lucide-react";
 
