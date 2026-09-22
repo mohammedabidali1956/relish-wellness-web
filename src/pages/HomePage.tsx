@@ -9,7 +9,7 @@ import ContactMap from "@/components/ContactMap";
 import StructuredData from "@/components/StructuredData";
 import StickyCTA from "@/components/StickyCTA";
 import PainPointGuide from "@/components/PainPointGuide";
-import doctorPortrait from "@/assets/hamid-dr.jpeg.asset.json";
+const doctorPortrait = { url: "/doctor-hamid-ali.jpg" };
 import { conditions } from "@/data/conditions";
 import { MapPin, Phone, Star, Stethoscope, Home, Clock, Quote } from "lucide-react";
 
@@ -19,28 +19,28 @@ const HomePage = () => {
       id: 1,
       title: "Ultrasound Therapy",
       description: "Non-invasive treatment using sound waves to reduce pain and promote healing in injured tissues.",
-      imageSrc: "/lovable-uploads/01292324-cb51-41f6-bd7a-1c494545808a.png",
+      imageSrc: "/lovable-uploads/01292324-cb51-41f6-bd7a-1c494545808a.jpg",
       altText: "Physiotherapist performing ultrasound therapy on patient's leg with handheld device and gel"
     },
     {
       id: 2,
       title: "Interferential Therapy",
       description: "Two medium-frequency electrical currents that intersect to create therapeutic low-frequency stimulation.",
-      imageSrc: "/lovable-uploads/c220c26b-4bc1-4d9d-98b4-337454da8afb.png",
+      imageSrc: "/lovable-uploads/c220c26b-4bc1-4d9d-98b4-337454da8afb.jpg",
       altText: "Physiotherapist applying interferential therapy electrodes to patient's leg with visible wires and equipment"
     },
     {
       id: 3,
       title: "Exercise Therapy",
       description: "Custom-designed exercise programs to improve mobility, strength, coordination, and overall function.",
-      imageSrc: "/lovable-uploads/0651f71a-9e1c-4cc0-ac06-d637f4c03ad3.png",
+      imageSrc: "/lovable-uploads/0651f71a-9e1c-4cc0-ac06-d637f4c03ad3.jpg",
       altText: "Patient performing exercise therapy with physiotherapist guidance using resistance bands"
     },
     {
       id: 4,
       title: "Consultation & Assessment",
       description: "Comprehensive evaluation of your condition including physical examination and development of a customized treatment plan.",
-      imageSrc: "/lovable-uploads/7b58bcad-171e-4d7d-a569-8269c66ed030.png",
+      imageSrc: "/lovable-uploads/7b58bcad-171e-4d7d-a569-8269c66ed030.jpg",
       altText: "Professional physiotherapy consultation with doctor and patient discussing treatment plan"
     },
   ];

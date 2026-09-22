@@ -8,28 +8,28 @@ const services = [
     id: 1,
     title: "Ultrasound Therapy",
     description: "Ultrasound therapy uses high-frequency sound waves to stimulate deep tissue heating, increasing blood flow, reducing pain and swelling, and accelerating healing. It's particularly effective for treating chronic conditions such as tendonitis, muscle spasms, and joint contractures. Our trained physiotherapists use ultrasound therapy as part of a comprehensive treatment plan tailored to your specific needs.",
-    imageSrc: "/lovable-uploads/01292324-cb51-41f6-bd7a-1c494545808a.png",
+    imageSrc: "/lovable-uploads/01292324-cb51-41f6-bd7a-1c494545808a.jpg",
     altText: "Physiotherapist performing ultrasound therapy on patient's leg with handheld device and gel"
   },
   {
     id: 2,
     title: "Interferential Therapy",
     description: "Interferential therapy utilizes two medium-frequency electrical currents that intersect within the tissues to create a low-frequency current at the point of intersection. This therapeutic approach helps to reduce pain, decrease inflammation, stimulate muscle, and promote healing. It's gentle on sensitive tissues and effective for treating a wide range of conditions, from acute injuries to chronic pain syndromes.",
-    imageSrc: "/lovable-uploads/c220c26b-4bc1-4d9d-98b4-337454da8afb.png",
+    imageSrc: "/lovable-uploads/c220c26b-4bc1-4d9d-98b4-337454da8afb.jpg",
     altText: "Physiotherapist applying interferential therapy electrodes to patient's leg with visible wires and equipment"
   },
   {
     id: 3,
     title: "Exercise Therapy",
     description: "Our exercise therapy programs are custom-designed to address your specific condition and goals. Through a series of targeted movements and activities, we help improve your mobility, strength, coordination, and overall function. Whether recovering from an injury, managing a chronic condition, or seeking to enhance performance, our expert physiotherapists will guide you through appropriate exercises and progressively adjust your program as you improve.",
-    imageSrc: "/lovable-uploads/0651f71a-9e1c-4cc0-ac06-d637f4c03ad3.png",
+    imageSrc: "/lovable-uploads/0651f71a-9e1c-4cc0-ac06-d637f4c03ad3.jpg",
     altText: "Patient performing exercise therapy with physiotherapist guidance using resistance bands"
   },
   {
     id: 4,
     title: "Consultation & Assessment",
     description: "Our comprehensive consultation and assessment services begin with a thorough evaluation of your condition, medical history, and goals. Based on this evaluation, we develop a personalized treatment plan that may include a combination of hands-on techniques, therapeutic exercises, and advice on lifestyle modifications. We regularly reassess your progress and adjust your treatment plan to ensure optimal outcomes and help you return to your daily activities with confidence.",
-    imageSrc: "/lovable-uploads/7b58bcad-171e-4d7d-a569-8269c66ed030.png",
+    imageSrc: "/lovable-uploads/7b58bcad-171e-4d7d-a569-8269c66ed030.jpg",
     altText: "Professional physiotherapy consultation with doctor and patient discussing treatment plan"
   },
 ];
