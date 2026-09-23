@@ -9,7 +9,7 @@ import ContactMap from "@/components/ContactMap";
 import StructuredData from "@/components/StructuredData";
 import StickyCTA from "@/components/StickyCTA";
 import PainPointGuide from "@/components/PainPointGuide";
-const doctorPortrait = { url: "/doctor-hamid-ali.jpg" };
+import doctorPortrait from "@/assets/doctor-hamid-ali.webp";
 import { conditions } from "@/data/conditions";
 import { MapPin, Phone, Star, Stethoscope, Home, Clock, Quote } from "lucide-react";
 
@@ -255,7 +255,7 @@ const HomePage = () => {
             <div className="lg:col-span-5">
               <div className="relative mx-auto max-w-md overflow-hidden rounded-md border border-border bg-card">
                 <img
-                  src={doctorPortrait.url}
+                  src={doctorPortrait}
                   alt="Dr. Mohammed Hamid Ali, BPT"
                   className="aspect-[4/5] w-full object-cover object-top"
                   loading="lazy"
