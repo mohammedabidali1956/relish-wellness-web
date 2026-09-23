@@ -1,7 +1,11 @@
 import { useState } from "react";
-import { Activity, AlertCircle, Check, Info, Stethoscope } from "lucide-react";
+import { Activity, AlertCircle, Info, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import bodyFront from "@/assets/body-front.webp";
+import bodyBack from "@/assets/body-back.webp";
+
+type BodyView = "front" | "back";
 
 type PainRegion = {
   id: string;
@@ -10,10 +14,21 @@ type PainRegion = {
   contributors: string;
   support: string;
   assessment: string;
-  markerClass: string;
+  preferredView: BodyView;
+  hotspots: Partial<Record<BodyView, string>>;
 };
 
 const painRegions: PainRegion[] = [
+  {
+    id: "head",
+    label: "Head",
+    symptoms: "Headache, pressure, or pain around the head that may occur with neck stiffness, sensitivity to light, nausea, or changes in normal activity.",
+    contributors: "Head pain can be associated with tension, migraine, illness, injury, or pain referred from the neck. An individual assessment is needed to understand the pattern.",
+    support: "When symptoms are linked with neck movement or muscle and joint factors, physiotherapy may help through assessment, education, movement advice, and an individualized exercise plan.",
+    assessment: "Seek urgent medical help for a sudden extremely severe headache, headache after a serious injury, or headache with confusion, fainting, fever, new weakness, numbness, vision loss, or speech difficulty.",
+    preferredView: "front",
+    hotspots: { front: "left-[39%] top-[2.5%] h-[10%] w-[22%]" },
+  },
   {
     id: "neck",
     label: "Neck",
@@ -21,7 +36,11 @@ const painRegions: PainRegion[] = [
     contributors: "Prolonged static positions, muscle strain, joint-related changes, nerve irritation, or an injury can be associated with neck pain.",
     support: "A physiotherapist may assess movement and nerve symptoms, then use education, graded exercise, posture or activity changes, and an individual movement plan.",
     assessment: "Arrange an assessment when pain persists or limits normal activity. Seek medical care promptly after major trauma, or for marked weakness, loss of coordination, fever, or severe unexplained symptoms.",
-    markerClass: "left-[48%] top-[13%]",
+    preferredView: "front",
+    hotspots: {
+      front: "left-[42%] top-[12%] h-[8%] w-[16%]",
+      back: "left-[41%] top-[12%] h-[9%] w-[18%]",
+    },
   },
   {
     id: "shoulder",
@@ -30,7 +49,11 @@ const painRegions: PainRegion[] = [
     contributors: "Possible contributors include overuse, tendon or bursa irritation, joint stiffness, age-related change, or a fall or other injury.",
     support: "Physiotherapy may help through movement assessment, advice on comfortable activity, progressive mobility and strengthening, and a plan matched to daily needs.",
     assessment: "Seek assessment if symptoms are worsening, last beyond a couple of weeks, or make arm movement very difficult. Sudden severe pain, deformity, or inability to move after injury needs medical evaluation.",
-    markerClass: "left-[27%] top-[20%]",
+    preferredView: "front",
+    hotspots: {
+      front: "left-[25%] top-[17%] h-[10%] w-[50%] rounded-[45%]",
+      back: "left-[25%] top-[18%] h-[10%] w-[50%] rounded-[45%]",
+    },
   },
   {
     id: "upper-back",
@@ -39,7 +62,8 @@ const painRegions: PainRegion[] = [
     contributors: "Muscle or joint strain, repeated loading, prolonged positions, reduced activity, or pain referred from the neck can contribute.",
     support: "Physiotherapy may help identify movement factors and provide education, mobility work, strengthening, and a gradual return to comfortable activity.",
     assessment: "Persistent or limiting pain merits assessment. Seek urgent medical help when upper-back pain occurs with chest pain, breathing difficulty, faintness, fever, or follows significant trauma.",
-    markerClass: "left-[66%] top-[25%]",
+    preferredView: "back",
+    hotspots: { back: "left-[32%] top-[24%] h-[16%] w-[36%] rounded-[38%]" },
   },
   {
     id: "elbow",
@@ -48,7 +72,11 @@ const painRegions: PainRegion[] = [
     contributors: "Repetitive work or sport, a change in loading, tendon irritation, joint problems, or a direct injury are possible contributors.",
     support: "Physiotherapy may help by reviewing load and technique, guiding progressive exercise, and improving strength and movement around the arm and shoulder.",
     assessment: "Book an assessment if pain persists or affects work and daily tasks. Marked swelling, deformity, locking, numbness, or inability to use the arm after injury needs medical review.",
-    markerClass: "left-[17%] top-[36%]",
+    preferredView: "front",
+    hotspots: {
+      front: "left-[15%] top-[34%] h-[13%] w-[15%] -rotate-12",
+      back: "left-[70%] top-[34%] h-[13%] w-[15%] rotate-12",
+    },
   },
   {
     id: "wrist-hand",
@@ -57,7 +85,11 @@ const painRegions: PainRegion[] = [
     contributors: "Repetitive loading, tendon irritation, a sprain, joint changes, or nerve irritation can be associated with these symptoms.",
     support: "Physiotherapy may help assess movement, sensation and strength, advise on activity changes, and guide suitable mobility or strengthening exercises.",
     assessment: "Assessment is appropriate for ongoing pain, weakness, or altered sensation. Seek prompt medical care after significant injury, or for deformity, a cold or discoloured hand, or rapidly worsening numbness.",
-    markerClass: "left-[10%] top-[50%]",
+    preferredView: "front",
+    hotspots: {
+      front: "left-[8%] top-[46%] h-[13%] w-[17%] -rotate-12",
+      back: "left-[75%] top-[46%] h-[13%] w-[17%] rotate-12",
+    },
   },
   {
     id: "lower-back",
@@ -66,7 +98,8 @@ const painRegions: PainRegion[] = [
     contributors: "A strain, sudden or repeated loading, reduced activity, joint or disc-related change, or nerve irritation may contribute; the exact cause is not always clear.",
     support: "Physiotherapy may help restore comfortable movement through assessment, reassurance, education, graded activity and an individualized exercise plan.",
     assessment: "Seek assessment when pain is persistent or limits daily life. Urgent medical evaluation is needed for new bowel or bladder changes, numbness around the groin, major leg weakness, fever, or pain after significant trauma.",
-    markerClass: "left-[67%] top-[42%]",
+    preferredView: "back",
+    hotspots: { back: "left-[34%] top-[39%] h-[14%] w-[32%] rounded-[38%]" },
   },
   {
     id: "hip",
@@ -75,7 +108,11 @@ const painRegions: PainRegion[] = [
     contributors: "A fall or strain, tendon or bursa irritation, joint-related change, or pain referred from the back are possible contributors.",
     support: "Physiotherapy may help assess walking and movement, manage activity, and build mobility, balance and strength progressively.",
     assessment: "Arrange assessment if pain affects sleep or normal activity, worsens, or keeps returning. Severe pain or inability to walk after a fall, or a hot swollen joint with fever, needs urgent medical care.",
-    markerClass: "left-[31%] top-[49%]",
+    preferredView: "front",
+    hotspots: {
+      front: "left-[31%] top-[46%] h-[13%] w-[38%] rounded-[42%]",
+      back: "left-[31%] top-[46%] h-[13%] w-[38%] rounded-[42%]",
+    },
   },
   {
     id: "knee",
@@ -84,7 +121,11 @@ const painRegions: PainRegion[] = [
     contributors: "Overuse, a sprain or other injury, tendon irritation, joint-related change, or altered strength and movement can contribute.",
     support: "Physiotherapy may help through movement and strength assessment, load guidance, progressive exercise, and support returning to everyday or sporting activity.",
     assessment: "Seek assessment for persistent pain, swelling, locking, or instability. Inability to bear weight, marked swelling or deformity, or a hot red knee with fever requires prompt medical evaluation.",
-    markerClass: "left-[35%] top-[70%]",
+    preferredView: "front",
+    hotspots: {
+      front: "left-[35%] top-[68%] h-[10%] w-[14%]",
+      back: "left-[51%] top-[68%] h-[10%] w-[14%]",
+    },
   },
   {
     id: "ankle-foot",
@@ -93,59 +134,80 @@ const painRegions: PainRegion[] = [
     contributors: "A sprain, sudden increase in activity, tendon irritation, footwear or loading changes, or joint-related problems are possible contributors.",
     support: "Physiotherapy may help assess walking, balance, strength and mobility, then guide progressive loading and a safe return to activity.",
     assessment: "Assessment is appropriate when pain or swelling persists. Seek medical evaluation if you cannot bear weight after injury, the foot looks deformed, or it becomes cold, pale, numb, hot, or very swollen.",
-    markerClass: "left-[36%] top-[90%]",
+    preferredView: "front",
+    hotspots: {
+      front: "left-[34%] top-[87%] h-[12%] w-[17%]",
+      back: "left-[49%] top-[87%] h-[12%] w-[17%]",
+    },
   },
 ];
 
-const BodyFigure = ({ activeRegion, onSelect }: { activeRegion: string; onSelect: (id: string) => void }) => (
-  <div className="relative mx-auto h-[440px] w-full max-w-[280px]" aria-label="Interactive human body pain map">
-    <svg viewBox="0 0 280 440" className="h-full w-full text-relish-100" role="img" aria-labelledby="body-map-title">
-      <title id="body-map-title">Front and back human body silhouettes</title>
-      <g fill="currentColor" stroke="hsl(var(--border))" strokeWidth="2">
-        <circle cx="84" cy="45" r="25" />
-        <path d="M65 72 C45 82 39 112 42 158 L50 244 C52 260 64 260 66 244 L64 170 L70 169 L68 270 L58 400 C57 416 73 419 77 403 L86 286 L92 286 L101 403 C105 419 121 416 120 400 L110 270 L108 169 L114 170 L112 244 C114 260 126 260 128 244 L136 158 C139 112 123 82 103 72 Z" />
-        <circle cx="198" cy="45" r="25" />
-        <path d="M179 72 C159 82 153 112 156 158 L164 244 C166 260 178 260 180 244 L178 170 L184 169 L182 270 L172 400 C171 416 187 419 191 403 L200 286 L206 286 L215 403 C219 419 235 416 234 400 L224 270 L222 169 L228 170 L226 244 C228 260 240 260 242 244 L250 158 C253 112 237 82 217 72 Z" />
-      </g>
-      <g className="text-relish-500" fill="none" stroke="currentColor" strokeLinecap="round" opacity="0.45">
-        <path d="M84 81 L84 258" strokeWidth="2" />
-        <path d="M198 81 L198 258" strokeWidth="2" />
-        <path d="M173 104 Q198 121 223 104" strokeWidth="3" />
-        <path d="M174 157 Q198 174 222 157" strokeWidth="3" />
-      </g>
-    </svg>
+const BodyFigure = ({
+  activeRegion,
+  view,
+  onSelect,
+}: {
+  activeRegion: string;
+  view: BodyView;
+  onSelect: (id: string) => void;
+}) => (
+  <div
+    className="relative mx-auto aspect-[9/16] w-full max-w-[350px] sm:max-w-[390px]"
+    aria-label={`${view === "front" ? "Front" : "Back"} view interactive human body pain map`}
+  >
+    <img
+      src={view === "front" ? bodyFront : bodyBack}
+      alt=""
+      aria-hidden="true"
+      className="h-full w-full object-contain transition-opacity duration-300 motion-reduce:transition-none"
+      draggable={false}
+    />
 
     {painRegions.map((region) => {
+      const hotspotClass = region.hotspots[view];
+      if (!hotspotClass) return null;
       const isActive = activeRegion === region.id;
+
       return (
         <Button
-          key={region.id}
+          key={`${view}-${region.id}`}
           type="button"
-          size="icon"
-          variant={isActive ? "default" : "outline"}
+          variant="ghost"
           className={cn(
-            "absolute h-11 w-11 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 shadow-sm transition-transform duration-200 hover:scale-105 focus-visible:scale-105",
-            region.markerClass,
-            isActive
-              ? "border-primary bg-primary text-primary-foreground"
-              : "border-relish-400 bg-card text-relish-800 hover:bg-relish-50",
+            "absolute min-h-11 min-w-11 border border-transparent p-0 text-transparent transition-all duration-200 motion-reduce:transition-none",
+            "hover:border-wellness-300 hover:bg-wellness-300/55 focus-visible:border-wellness-400 focus-visible:bg-wellness-300/60 focus-visible:ring-wellness-600",
+            isActive && "border-wellness-300 bg-wellness-400/70 shadow-[0_0_0_5px_hsl(var(--accent)/0.55)]",
+            hotspotClass,
           )}
           onClick={() => onSelect(region.id)}
           aria-label={`Show information for ${region.label}`}
           aria-pressed={isActive}
         >
-          {isActive ? <Check aria-hidden="true" /> : <span aria-hidden="true" className="text-xs font-semibold">+</span>}
+          <span className="sr-only">{region.label}</span>
         </Button>
       );
     })}
-    <div className="absolute bottom-1 left-0 text-[10px] font-semibold uppercase text-muted-foreground">Front</div>
-    <div className="absolute bottom-1 right-2 text-[10px] font-semibold uppercase text-muted-foreground">Back</div>
   </div>
 );
 
 const PainPointGuide = () => {
   const [activeId, setActiveId] = useState(painRegions[0].id);
+  const [bodyView, setBodyView] = useState<BodyView>("front");
   const activeRegion = painRegions.find((region) => region.id === activeId) ?? painRegions[0];
+
+  const selectRegion = (id: string) => {
+    const region = painRegions.find((item) => item.id === id);
+    if (!region) return;
+    setActiveId(id);
+    setBodyView(region.preferredView);
+  };
+
+  const changeView = (view: BodyView) => {
+    setBodyView(view);
+    if (!activeRegion.hotspots[view]) {
+      setActiveId(view === "front" ? "head" : "upper-back");
+    }
+  };
 
   return (
     <section className="border-y border-border bg-sand-100 px-4 py-16 md:py-24" aria-labelledby="pain-guide-heading">
@@ -154,13 +216,33 @@ const PainPointGuide = () => {
           <span className="eyebrow">Body pain guide</span>
           <h2 id="pain-guide-heading" className="heading-2 mt-3 text-relish-900">Where does it hurt?</h2>
           <p className="paragraph mt-4">
-            Select an area to understand common presentations and how a professional assessment may help.
+            Tap an area to explore common pain conditions and how physiotherapy may help.
           </p>
         </div>
 
-        <div className="mt-10 grid items-start gap-8 lg:grid-cols-[minmax(320px,0.85fr)_minmax(0,1.35fr)] lg:gap-14">
-          <div className="border border-border bg-card px-4 py-6 sm:px-8">
-            <BodyFigure activeRegion={activeId} onSelect={setActiveId} />
+        <div className="mt-10 grid items-start gap-8 lg:grid-cols-[minmax(380px,1.2fr)_minmax(0,1fr)] lg:gap-14">
+          <div className="min-w-0 border border-border bg-card px-3 py-5 sm:px-8 sm:py-7">
+            <div className="mx-auto mb-5 flex w-fit rounded-md border border-border bg-background p-1" aria-label="Choose body view">
+              {(["front", "back"] as BodyView[]).map((view) => (
+                <Button
+                  key={view}
+                  type="button"
+                  size="sm"
+                  variant={bodyView === view ? "default" : "ghost"}
+                  className={cn(
+                    "min-w-20 capitalize",
+                    bodyView === view && "bg-relish-700 text-primary-foreground hover:bg-relish-800",
+                  )}
+                  onClick={() => changeView(view)}
+                  aria-pressed={bodyView === view}
+                >
+                  {view}
+                </Button>
+              ))}
+            </div>
+
+            <BodyFigure activeRegion={activeId} view={bodyView} onSelect={selectRegion} />
+
             <div className="mt-5 flex flex-wrap justify-center gap-2" aria-label="Choose a pain region">
               {painRegions.map((region) => (
                 <Button
@@ -174,7 +256,7 @@ const PainPointGuide = () => {
                       ? "bg-primary text-primary-foreground"
                       : "border-border bg-background text-foreground hover:bg-accent",
                   )}
-                  onClick={() => setActiveId(region.id)}
+                  onClick={() => selectRegion(region.id)}
                   aria-pressed={activeId === region.id}
                 >
                   {region.label}
