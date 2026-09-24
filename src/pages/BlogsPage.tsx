@@ -28,26 +28,27 @@ const BlogsPage = () => {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-16 md:py-24 px-4 bg-white">
+      <section className="bg-card px-4 py-10 md:py-20">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
-              <article key={post.id} className="bg-card border border-border rounded-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
-                <div className="relative h-48 overflow-hidden">
+              <article key={post.id} className="flex flex-col overflow-hidden rounded-md border border-border bg-card transition-colors duration-200 hover:border-relish-300">
+                <Link to={`/blogs/${post.slug}`} className="relative block aspect-[16/10] overflow-hidden bg-muted" aria-label={`Read ${post.title}`}>
                   <img 
                     src={post.imageUrl} 
                     alt={post.title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    className="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none hover:scale-[1.03]"
+                    loading={post.id === "5" ? "eager" : "lazy"}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-relish-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                       {post.category}
                     </span>
                   </div>
-                </div>
+                </Link>
                 
                 <div className="p-6 flex flex-col flex-grow">
-                  <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs sm:text-sm text-muted-foreground mb-3">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
                       <span>{post.date}</span>
@@ -58,11 +59,9 @@ const BlogsPage = () => {
                     </div>
                   </div>
                   
-                  <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
-                    {post.title}
-                  </h2>
+                  <h2 className="text-xl font-bold text-foreground mb-3 line-clamp-3"><Link to={`/blogs/${post.slug}`} className="hover:text-relish-700">{post.title}</Link></h2>
                   
-                  <p className="text-gray-600 mb-4 line-clamp-3 flex-grow">
+                  <p className="text-muted-foreground mb-4 line-clamp-3 flex-grow">
                     {post.excerpt}
                   </p>
                   

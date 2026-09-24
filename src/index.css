@@ -123,6 +123,109 @@
     animation: fadeIn 0.5s ease-out forwards;
   }
 
+  .blog-article {
+    @apply text-[1.0625rem] leading-8;
+  }
+
+  .blog-article h2 {
+    @apply mt-12 scroll-mt-24 border-t border-border pt-8 text-2xl font-semibold leading-tight md:text-3xl;
+  }
+
+  .blog-article h3 {
+    @apply mb-3 mt-8 scroll-mt-24 text-xl font-semibold leading-snug md:text-2xl;
+  }
+
+  .blog-article p {
+    @apply mb-5;
+  }
+
+  .blog-article ul,
+  .blog-article ol {
+    @apply my-5 space-y-2 pl-6;
+  }
+
+  .blog-article li {
+    @apply pl-1;
+  }
+
+  .blog-article .article-lead {
+    @apply text-lg font-medium leading-8 text-foreground md:text-xl;
+  }
+
+  .blog-article .article-toc {
+    @apply my-8 rounded-md border border-border bg-sand-50 p-5;
+  }
+
+  .blog-article .article-toc ol {
+    @apply mb-0 mt-3 space-y-2;
+  }
+
+  .blog-article .article-toc a {
+    @apply font-medium underline decoration-relish-300 underline-offset-4 hover:text-relish-800;
+  }
+
+  .blog-article .article-figure {
+    @apply mx-auto my-8 max-w-xl overflow-hidden rounded-md border border-border bg-card;
+  }
+
+  .blog-article .article-figure-wide {
+    @apply max-w-3xl;
+  }
+
+  .blog-article .article-figure img {
+    @apply mx-auto h-auto w-full object-contain;
+  }
+
+  .blog-article .article-figure figcaption {
+    @apply border-t border-border px-4 py-3 text-sm leading-6 text-muted-foreground;
+  }
+
+  .blog-article .article-callout,
+  .blog-article .article-tip,
+  .blog-article .article-disclaimer {
+    @apply my-8 border-l-4 border-wellness-600 bg-wellness-50 p-5 text-base leading-7;
+  }
+
+  .blog-article .article-callout p,
+  .blog-article .article-tip p,
+  .blog-article .article-disclaimer p {
+    @apply mb-0 mt-2;
+  }
+
+  .blog-article .article-urgent {
+    @apply my-10 rounded-md border border-destructive/30 bg-destructive/5 p-5 md:p-7;
+  }
+
+  .blog-article .article-urgent h2 {
+    @apply mt-0 border-0 pt-0;
+  }
+
+  .blog-article .article-local-cta {
+    @apply my-10 border-y border-relish-200 bg-relish-50 px-5 py-7 md:px-8;
+  }
+
+  .blog-article .article-local-cta h2 {
+    @apply mt-0 border-0 pt-0;
+  }
+
+  .blog-article .article-local-cta a {
+    @apply mt-2 inline-flex rounded-md bg-relish-700 px-5 py-3 font-semibold text-primary-foreground no-underline hover:bg-relish-800;
+  }
+
+  @media (max-width: 640px) {
+    .blog-article {
+      @apply text-base leading-7;
+    }
+
+    .blog-article h2 {
+      @apply mt-10 pt-7 text-2xl;
+    }
+
+    .blog-article .article-figure {
+      @apply -mx-1;
+    }
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
