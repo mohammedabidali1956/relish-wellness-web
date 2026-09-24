@@ -5,6 +5,11 @@
       "destination": "/api/google5d006f26e5daf13c"
     },
     {
+      "source": "/googleda41df8ea84cf8c1.html",
+      "destination": "/api/googleda41df8ea84cf8c1"
+    },
+
+    {
       "source": "/((?!.*\\.).*)",
       "destination": "/index.html"
     }
