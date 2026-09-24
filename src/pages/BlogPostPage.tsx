@@ -1,8 +1,9 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Calendar, Clock, User, ArrowLeft } from "lucide-react";
+import { Calendar, Clock, User, ArrowLeft, ArrowRight, ShieldAlert } from "lucide-react";
 import { getBlogPost, getRecentPosts } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import StructuredData from "@/components/StructuredData";
+import { Helmet } from "react-helmet";
 
 const BlogPostPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -13,6 +14,31 @@ const BlogPostPage = () => {
     return <Navigate to="/blogs" replace />;
   }
 
+  const isKneeStairsArticle = post.slug === "knee-pain-when-climbing-stairs";
+  const canonicalUrl = `https://hamidphysio.lovable.app/blogs/${post.slug}`;
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: "2026-09-24",
+    dateModified: "2026-09-24",
+    author: { "@type": "Person", name: post.author },
+    publisher: { "@type": "Organization", name: "Dr. Hamid's Physio Clinic" },
+    mainEntityOfPage: canonicalUrl,
+    about: { "@type": "MedicalCondition", name: "Knee pain" },
+  };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      ["Is knee pain while climbing stairs normal?", "Occasional discomfort does not automatically mean serious damage, but persistent or recurring pain deserves attention, particularly when it affects daily activities."],
+      ["Why does my knee hurt going downstairs?", "Descending requires substantial eccentric control from the quadriceps and places considerable demand on the knee. Several conditions can produce pain during this movement."],
+      ["Can physiotherapy help knee pain?", "Physiotherapy may help many musculoskeletal knee problems through assessment, education, exercise, and progressive rehabilitation. Appropriate care depends on the underlying cause."],
+      ["Do I need an MRI for knee pain on stairs?", "Not necessarily. Imaging decisions depend on clinical history, examination, and whether imaging is likely to change management."],
+    ].map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })),
+  };
+
   return (
     <div>
       <StructuredData 
@@ -20,8 +46,19 @@ const BlogPostPage = () => {
         pageTitle={`${post.title} | Dr. Hamid's Physio Clinic`}
         pageDescription={post.excerpt}
       />
+      {isKneeStairsArticle && (
+        <Helmet>
+          <link rel="canonical" href={canonicalUrl} />
+          <meta property="og:title" content={post.title} />
+          <meta property="og:description" content={post.excerpt} />
+          <meta property="og:type" content="article" />
+          <meta property="og:url" content={canonicalUrl} />
+          <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        </Helmet>
+      )}
       {/* Hero Section */}
-      <section className="border-b border-border bg-sand-50 py-12 md:py-16">
+      <section className="border-b border-border bg-sand-50 py-8 md:py-14">
         <div className="container">
           <Link to="/blogs">
             <Button variant="outline" className="mb-6 border-relish-600 text-relish-600 hover:bg-relish-50">
@@ -37,11 +74,11 @@ const BlogPostPage = () => {
               </span>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5 text-foreground leading-tight">
               {post.title}
             </h1>
             
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-gray-700">
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm sm:text-base text-muted-foreground">
               <div className="flex items-center gap-2">
                 <User className="w-5 h-5" />
                 <span className="font-medium">{post.author}</span>
@@ -60,37 +97,36 @@ const BlogPostPage = () => {
       </section>
 
       {/* Featured Image */}
-      <section className="py-8 bg-white">
+      <section className="bg-card py-5 md:py-8">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
+            <figure className="overflow-hidden rounded-md border border-border bg-muted">
               <img 
                 src={post.imageUrl} 
                 alt={post.title}
-                className="w-full h-auto object-cover"
+                className="aspect-[5/4] w-full object-cover sm:aspect-[16/9]"
+                width="1000"
+                height="800"
+                fetchPriority="high"
               />
-            </div>
+              {isKneeStairsArticle && <figcaption className="px-4 py-3 text-sm text-muted-foreground">Patellofemoral pain is one possible cause of knee pain during stair climbing.</figcaption>}
+            </figure>
           </div>
         </div>
       </section>
 
       {/* Blog Content */}
-      <section className="py-12 bg-white">
+      <section className="bg-card py-8 md:py-12">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <div 
-              className="prose prose-lg max-w-none
-                prose-headings:font-bold prose-headings:text-gray-900
-                prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
-                prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
-                prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6
-                prose-strong:text-gray-900 prose-strong:font-semibold
-                prose-ul:my-6 prose-ul:space-y-2
-                prose-li:text-gray-700
-                prose-a:text-relish-600 prose-a:no-underline hover:prose-a:underline
-                prose-table:border-collapse prose-table:w-full
-                prose-th:bg-relish-50 prose-th:p-3 prose-th:text-left prose-th:font-semibold
-                prose-td:border prose-td:border-gray-200 prose-td:p-3"
+            {isKneeStairsArticle && (
+              <div className="mb-8 flex items-start gap-3 border-l-4 border-wellness-600 bg-wellness-50 p-4 text-sm leading-relaxed text-foreground sm:text-base">
+                <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0 text-wellness-700" aria-hidden="true" />
+                <p><strong>Quick safety note:</strong> A locked knee, inability to bear weight, major trauma, marked swelling, or a hot red knee with fever needs prompt medical evaluation.</p>
+              </div>
+            )}
+            <article 
+              className="blog-article prose max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-relish-700"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </div>
@@ -120,11 +156,11 @@ const BlogPostPage = () => {
                     </div>
                     
                     <div className="p-6">
-                      <div className="text-sm text-gray-600 mb-2">{relatedPost.date}</div>
+                      <div className="text-sm text-muted-foreground mb-2">{relatedPost.date}</div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
                         {relatedPost.title}
                       </h3>
-                      <p className="text-gray-600 line-clamp-2">
+                      <p className="text-muted-foreground line-clamp-2">
                         {relatedPost.excerpt}
                       </p>
                     </div>
@@ -145,8 +181,8 @@ const BlogPostPage = () => {
               Book a consultation at Dr. Hamid's Physio Clinic in Manikonda and experience expert physiotherapy care.
             </p>
             <Link to="/#appointment">
-              <Button className="bg-white text-relish-700 hover:bg-gray-100 px-8 py-3 font-medium text-lg">
-                Book an Appointment
+              <Button className="bg-card text-relish-700 hover:bg-muted px-8 py-3 font-medium text-lg">
+                Book an Appointment <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
