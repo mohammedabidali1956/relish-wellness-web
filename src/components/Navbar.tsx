@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="flex items-center min-w-0 flex-1">
           <NavLink to="/" className="flex items-center min-w-0">
             <img 
-              src="/lovable-uploads/hamid-physio-logo.png" 
+              src="/images/logo/hamid-physio-logo.png" 
               alt="Dr. Hamid's Physio Clinic - Best Physiotherapy in Manikonda" 
               className="h-8 w-8 sm:h-10 sm:w-10 mr-2 flex-shrink-0 rounded-full object-cover" 
             />

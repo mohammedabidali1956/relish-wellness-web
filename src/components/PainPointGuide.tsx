@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Activity, AlertCircle, Info, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import bodyFront from "@/assets/body-front.webp";
-import bodyBack from "@/assets/body-back.webp";
+const bodyFront = "/images/clinic/body-map-front.webp";
+const bodyBack = "/images/clinic/body-map-back.webp";
 
 type BodyView = "front" | "back";
 
