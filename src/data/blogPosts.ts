@@ -1,7 +1,7 @@
-import kneePainHero from "@/assets/knee-pain-stairs.webp.asset.json";
-import patellofemoralAnatomy from "@/assets/patellofemoral-joint-anatomy.webp.asset.json";
-import patellofemoralPain from "@/assets/patellofemoral-pain-location.webp.asset.json";
-import kneeAnatomy from "@/assets/knee-joint-anatomy.webp.asset.json";
+const kneePainHero = { url: "/images/blog/knee-pain-stairs.webp" };
+const patellofemoralAnatomy = { url: "/images/blog/patellofemoral-joint-anatomy.webp" };
+const patellofemoralPain = { url: "/images/blog/patellofemoral-pain-location.webp" };
+const kneeAnatomy = { url: "/images/blog/knee-joint-anatomy.webp" };
 
 export interface BlogPost {
   id: string;
@@ -181,7 +181,7 @@ export const blogPosts: BlogPost[] = [
     date: "January 31, 2021",
     author: "Dr. Mohammed Hamid Ali",
     category: "Education",
-    imageUrl: "/lovable-uploads/7b58bcad-171e-4d7d-a569-8269c66ed030.jpg",
+    imageUrl: "/images/services/consultation-assessment.webp",
     readTime: "8 min read",
     content: `
 <h2>Understanding the Difference Between Yoga and Physical Therapy</h2>
@@ -229,7 +229,7 @@ export const blogPosts: BlogPost[] = [
     date: "January 27, 2021",
     author: "Dr. Mohammed Hamid Ali",
     category: "Healthcare",
-    imageUrl: "/lovable-uploads/6e67ff43-9972-4849-86a3-27617fcf9b7e.jpg",
+    imageUrl: "/images/blog/physiotherapy-blog-cover.webp",
     readTime: "10 min read",
     content: `
 <h2>Who Should Be Your First Stop for Musculoskeletal Pain?</h2>
@@ -281,7 +281,7 @@ export const blogPosts: BlogPost[] = [
     date: "January 1, 2021",
     author: "Dr. Mohammed Hamid Ali",
     category: "Exercise & Fitness",
-    imageUrl: "/lovable-uploads/0651f71a-9e1c-4cc0-ac06-d637f4c03ad3.jpg",
+    imageUrl: "/images/services/exercise-therapy.webp",
     readTime: "7 min read",
     content: `
 <h2>Physiotherapy Exercises vs. Gym Workouts: What's the Difference?</h2>
@@ -405,7 +405,7 @@ export const blogPosts: BlogPost[] = [
     date: "December 29, 2020",
     author: "Dr. Mohammed Hamid Ali",
     category: "Wellness",
-    imageUrl: "/lovable-uploads/7b58bcad-171e-4d7d-a569-8269c66ed030.jpg",
+    imageUrl: "/images/services/consultation-assessment.webp",
     readTime: "9 min read",
     content: `
 <h2>Understanding the Role of Physiotherapy in Our Daily Lives</h2>
