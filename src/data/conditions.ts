@@ -20,7 +20,7 @@ export const conditions: Condition[] = [
     shortDescription: "Expert treatment for lower back pain, sciatica, and spinal conditions to restore mobility and reduce discomfort.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Back pain physiotherapy treatment showing highlighted spine in Manikonda clinic",
-    overview: "Back pain is one of the most common reasons people seek physiotherapy. It can range from a dull, constant ache to sudden sharp pain that makes movement difficult. At Dr. Hamid's Physio Clinic in Manikonda, we specialize in diagnosing the root cause of your back pain and providing targeted treatment to restore your mobility and quality of life.",
+    overview: "Back pain is one of the most common reasons people seek physiotherapy. It can range from a dull, constant ache to sudden sharp pain that makes movement difficult. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we specialize in diagnosing the root cause of your back pain and providing targeted treatment to restore your mobility and quality of life.",
     causes: [
       "Poor posture from prolonged sitting or standing",
       "Muscle strain from lifting heavy objects incorrectly",
@@ -69,7 +69,7 @@ export const conditions: Condition[] = [
     shortDescription: "Effective relief for cervical pain, stiffness, and headaches caused by poor posture or injury.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Neck pain treatment showing cervical spine visualization at physio clinic",
-    overview: "Neck pain is increasingly common in today's digital age, affecting people who spend long hours at computers or on smartphones. At Dr. Hamid's Physio Clinic, we provide comprehensive treatment for neck pain, cervical spondylosis, and related conditions. Our goal is to relieve your pain, restore full range of motion, and prevent future episodes.",
+    overview: "Neck pain is increasingly common in today's digital age, affecting people who spend long hours at computers or on smartphones. At Dr. Hamid's Physio and Pain Clinic, we provide comprehensive treatment for neck pain, cervical spondylosis, and related conditions. Our goal is to relieve your pain, restore full range of motion, and prevent future episodes.",
     causes: [
       "Forward head posture from prolonged screen use",
       "Cervical spondylosis (age-related wear)",
@@ -118,7 +118,7 @@ export const conditions: Condition[] = [
     shortDescription: "Comprehensive treatment for arthritis, ligament injuries, and post-surgical knee rehabilitation.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Knee pain rehabilitation showing athlete with knee injury",
-    overview: "Knee pain can significantly impact your mobility and quality of life. Whether you're dealing with arthritis, a sports injury, or recovering from surgery, Dr. Hamid's Physio Clinic offers expert knee rehabilitation services. Our evidence-based approach focuses on reducing pain, restoring function, and getting you back to your active lifestyle.",
+    overview: "Knee pain can significantly impact your mobility and quality of life. Whether you're dealing with arthritis, a sports injury, or recovering from surgery, Dr. Hamid's Physio and Pain Clinic offers expert knee rehabilitation services. Our evidence-based approach focuses on reducing pain, restoring function, and getting you back to your active lifestyle.",
     causes: [
       "Osteoarthritis and degenerative changes",
       "ACL, MCL, or meniscus injuries",
@@ -167,7 +167,7 @@ export const conditions: Condition[] = [
     shortDescription: "Specialized care for frozen shoulder, rotator cuff injuries, and shoulder impingement.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Shoulder pain treatment showing patient with shoulder discomfort",
-    overview: "Shoulder problems can make simple daily tasks like reaching overhead or getting dressed incredibly painful. At Dr. Hamid's Physio Clinic, we treat a wide range of shoulder conditions from frozen shoulder to rotator cuff injuries. Our comprehensive approach combines hands-on treatment with therapeutic exercises to restore full shoulder function.",
+    overview: "Shoulder problems can make simple daily tasks like reaching overhead or getting dressed incredibly painful. At Dr. Hamid's Physio and Pain Clinic, we treat a wide range of shoulder conditions from frozen shoulder to rotator cuff injuries. Our comprehensive approach combines hands-on treatment with therapeutic exercises to restore full shoulder function.",
     causes: [
       "Frozen shoulder (adhesive capsulitis)",
       "Rotator cuff tears or tendinitis",
@@ -216,7 +216,7 @@ export const conditions: Condition[] = [
     shortDescription: "Fast recovery and return-to-play programs for athletes with sprains, strains, and sports-related injuries.",
     imageSrc: "/images/services/condition-sports-injury.webp",
     altText: "Sports injury physiotherapy showing athlete with bandaged knee",
-    overview: "Athletes and active individuals require specialized care to recover from injuries and return to their sport safely. Dr. Hamid's Physio Clinic provides comprehensive sports injury rehabilitation that addresses the unique demands of athletic performance. Our goal is not just recovery, but helping you come back stronger and more resilient.",
+    overview: "Athletes and active individuals require specialized care to recover from injuries and return to their sport safely. Dr. Hamid's Physio and Pain Clinic provides comprehensive sports injury rehabilitation that addresses the unique demands of athletic performance. Our goal is not just recovery, but helping you come back stronger and more resilient.",
     causes: [
       "Muscle strains and ligament sprains",
       "Tendon injuries (tendinitis, tendinopathy)",
@@ -265,7 +265,7 @@ export const conditions: Condition[] = [
     shortDescription: "Specialized neurological physiotherapy for stroke recovery, paralysis, and movement disorders.",
     imageSrc: "/images/services/condition-neuro-rehab.webp",
     altText: "Neurological rehabilitation therapy with physiotherapist guiding patient",
-    overview: "Neurological conditions require specialized physiotherapy approaches to help patients regain function and independence. At Dr. Hamid's Physio Clinic, we provide comprehensive neuro-rehabilitation for stroke survivors, patients with Parkinson's disease, and other neurological conditions. Our patient-centered approach focuses on maximizing recovery potential and improving quality of life.",
+    overview: "Neurological conditions require specialized physiotherapy approaches to help patients regain function and independence. At Dr. Hamid's Physio and Pain Clinic, we provide comprehensive neuro-rehabilitation for stroke survivors, patients with Parkinson's disease, and other neurological conditions. Our patient-centered approach focuses on maximizing recovery potential and improving quality of life.",
     causes: [
       "Stroke (ischemic or hemorrhagic)",
       "Traumatic brain injury",

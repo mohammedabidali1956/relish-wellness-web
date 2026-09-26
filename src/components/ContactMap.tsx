@@ -18,7 +18,7 @@ const ContactMap = ({ mapEmbedUrl, className }: ContactMapProps) => {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Dr. Hamid's Physio Clinic location on Google Maps"
+          title="Dr. Hamid's Physio and Pain Clinic location on Google Maps"
           className="w-full h-full min-h-[300px]"
         ></iframe>
       </div>

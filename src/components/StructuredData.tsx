@@ -10,7 +10,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Physiotherapy",
-    "name": "Dr. Hamid's Physio Clinic",
+    "name": "Dr. Hamid's Physio and Pain Clinic",
     "image": "/images/logo/og-image.png",
     "url": "https://hamidphysio.lovable.app",
     "@id": "https://hamidphysio.lovable.app",
@@ -114,10 +114,10 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
       },
       {
         "@type": "Question",
-        "name": "Where is Dr. Hamid's Physio Clinic located?",
+        "name": "Where is Dr. Hamid's Physio and Pain Clinic located?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Dr. Hamid's Physio Clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089."
+          "text": "Dr. Hamid's Physio and Pain Clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089."
         }
       },
       {
@@ -133,7 +133,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
         "name": "How long does a physiotherapy session last?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A typical physiotherapy session at Dr. Hamid's Physio Clinic lasts 30-45 minutes, depending on the treatment required and the condition being addressed."
+          "text": "A typical physiotherapy session at Dr. Hamid's Physio and Pain Clinic lasts 30-45 minutes, depending on the treatment required and the condition being addressed."
         }
       }
     ]
@@ -142,7 +142,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Dr. Hamid's Physio Clinic",
+    "name": "Dr. Hamid's Physio and Pain Clinic",
     "alternateName": "Dr Hamid Physiotherapy",
     "url": "https://hamidphysio.lovable.app",
     "logo": "/images/logo/og-image.png",

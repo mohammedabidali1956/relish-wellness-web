@@ -34,13 +34,13 @@ const Navbar = () => {
           <NavLink to="/" className="flex items-center min-w-0">
             <img 
               src="/images/logo/hamid-physio-logo.png" 
-              alt="Dr. Hamid's Physio Clinic - Best Physiotherapy in Manikonda" 
-              className="h-8 w-8 sm:h-10 sm:w-10 mr-2 flex-shrink-0 rounded-full object-cover" 
+              alt="Dr. Hamid's Physio and Pain Clinic - Best Physiotherapy in Manikonda" 
+              className="h-12 w-12 sm:h-16 sm:w-16 mr-2 flex-shrink-0 rounded-full object-cover" 
             />
             <span className="text-xs sm:text-sm lg:text-base font-semibold text-relish-600 truncate">
-              <span className="hidden lg:inline">Dr. Hamid's Physio Clinic</span>
-              <span className="hidden sm:inline lg:hidden">Dr. Hamid's Physio</span>
-              <span className="sm:hidden">Dr. Hamid's</span>
+              <span className="hidden lg:inline">Dr. Hamid's Physio and Pain Clinic</span>
+              <span className="hidden sm:inline lg:hidden">Dr. Hamid's Physio and Pain Clinic</span>
+              <span className="sm:hidden">Dr. Hamid's Physio and Pain Clinic</span>
             </span>
           </NavLink>
         </div>

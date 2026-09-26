@@ -56,7 +56,7 @@ const ConditionPage = () => {
     <div className="min-h-screen pb-20 md:pb-0">
       <StructuredData 
         type="service"
-        pageTitle={`${condition.title} in Manikonda, Hyderabad | Dr. Hamid's Physio Clinic`}
+        pageTitle={`${condition.title} in Manikonda, Hyderabad | Dr. Hamid's Physio and Pain Clinic`}
         pageDescription={condition.shortDescription}
       />
 

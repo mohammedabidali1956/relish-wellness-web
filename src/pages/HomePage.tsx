@@ -47,7 +47,7 @@ const HomePage = () => {
 
   const testimonials = [
     {
-      quote: "After months of back pain, I found relief after just a few sessions at Dr. Hamid's Physio Clinic. The therapists are knowledgeable, caring, and attentive.",
+      quote: "After months of back pain, I found relief after just a few sessions at Dr. Hamid's Physio and Pain Clinic. The therapists are knowledgeable, caring, and attentive.",
       author: "R.K.",
     },
     {
@@ -135,12 +135,12 @@ const HomePage = () => {
                 <div className="flex items-center gap-4 pb-6 border-b border-border">
                   <img
                     src="/images/logo/hamid-physio-logo.png"
-                    alt="Dr. Hamid's Physio Clinic logo"
-                    className="h-14 w-14 rounded-full object-cover border border-border"
+                    alt="Dr. Hamid's Physio and Pain Clinic logo"
+                    className="h-28 w-28 rounded-full object-cover border border-border"
                   />
                   <div>
                     <p className="font-display text-lg font-semibold text-relish-900 leading-tight">
-                      Dr. Hamid's Physio Clinic
+                      Dr. Hamid's Physio and Pain Clinic
                     </p>
                     <p className="text-sm text-muted-foreground">Dr. Mohammed Hamid Ali, BPT</p>
                   </div>

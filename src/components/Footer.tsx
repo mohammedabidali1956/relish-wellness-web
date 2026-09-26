@@ -34,11 +34,11 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <img
                 src="/images/logo/hamid-physio-logo.png"
-                alt="Dr. Hamid's Physio Clinic — physiotherapy in Manikonda, Hyderabad"
-                className="h-12 w-12 shrink-0 rounded-full object-cover border border-border"
+                alt="Dr. Hamid's Physio and Pain Clinic — physiotherapy in Manikonda, Hyderabad"
+                className="h-24 w-24 shrink-0 rounded-full object-cover border border-border"
               />
               <span className="font-display text-base sm:text-lg font-semibold text-relish-900 leading-tight">
-                Dr. Hamid's Physio Clinic
+                Dr. Hamid's Physio and Pain Clinic
               </span>
             </div>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground max-w-sm">
@@ -114,7 +114,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-border pt-6">
           <p className="text-xs text-muted-foreground text-center sm:text-left">
-            &copy; {new Date().getFullYear()} Dr. Hamid's Physio Clinic. All rights reserved.
+            &copy; {new Date().getFullYear()} Dr. Hamid's Physio and Pain Clinic. All rights reserved.
           </p>
         </div>
       </div>

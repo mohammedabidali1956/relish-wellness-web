@@ -24,7 +24,7 @@ const BlogPostPage = () => {
     datePublished: "2026-09-24",
     dateModified: "2026-09-24",
     author: { "@type": "Person", name: post.author },
-    publisher: { "@type": "Organization", name: "Dr. Hamid's Physio Clinic" },
+    publisher: { "@type": "Organization", name: "Dr. Hamid's Physio and Pain Clinic" },
     mainEntityOfPage: canonicalUrl,
     about: { "@type": "MedicalCondition", name: "Knee pain" },
   };
@@ -43,7 +43,7 @@ const BlogPostPage = () => {
     <div>
       <StructuredData 
         type="blog" 
-        pageTitle={`${post.title} | Dr. Hamid's Physio Clinic`}
+        pageTitle={`${post.title} | Dr. Hamid's Physio and Pain Clinic`}
         pageDescription={post.excerpt}
       />
       {isKneeStairsArticle && (
@@ -178,7 +178,7 @@ const BlogPostPage = () => {
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Ready to Start Your Recovery Journey?</h2>
             <p className="text-lg mb-8 text-white/90">
-              Book a consultation at Dr. Hamid's Physio Clinic in Manikonda and experience expert physiotherapy care.
+              Book a consultation at Dr. Hamid's Physio and Pain Clinic in Manikonda and experience expert physiotherapy care.
             </p>
             <Link to="/#appointment">
               <Button className="bg-card text-relish-700 hover:bg-muted px-8 py-3 font-medium text-lg">

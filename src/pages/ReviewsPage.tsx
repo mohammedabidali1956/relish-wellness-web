@@ -85,8 +85,8 @@ const ReviewsPage = () => {
     <div>
       <StructuredData 
         type="about" 
-        pageTitle="Patient Reviews | Dr. Hamid's Physio Clinic Manikonda" 
-        pageDescription="Read 50+ genuine reviews from patients treated at Dr. Hamid's Physio Clinic in Manikonda, Hyderabad. 5-star rated physiotherapy services."
+        pageTitle="Patient Reviews | Dr. Hamid's Physio and Pain Clinic Manikonda" 
+        pageDescription="Read 50+ genuine reviews from patients treated at Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad. 5-star rated physiotherapy services."
       />
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-14 md:py-20">
@@ -94,7 +94,7 @@ const ReviewsPage = () => {
           <div className="text-center">
             <h1 className="heading-1 mb-6 text-gray-800">Patient Reviews</h1>
             <p className="paragraph max-w-3xl mx-auto">
-              Read what our patients have to say about their experiences at Dr. Hamid's Physio Clinic in Manikonda, Hyderabad.
+              Read what our patients have to say about their experiences at Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad.
             </p>
             
             <div className="flex justify-center mt-8">
