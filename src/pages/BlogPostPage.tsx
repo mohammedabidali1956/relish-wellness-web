@@ -109,7 +109,7 @@ const BlogPostPage = () => {
                 height="800"
                 fetchPriority="high"
               />
-              {isKneeStairsArticle && <figcaption className="px-4 py-3 text-sm text-muted-foreground">Patellofemoral pain is one possible cause of knee pain during stair climbing.</figcaption>}
+              {isKneeStairsArticle && <figcaption className="px-4 py-3 text-sm text-muted-foreground">Knee pain during stair climbing is common and can have several underlying causes.</figcaption>}
             </figure>
           </div>
         </div>

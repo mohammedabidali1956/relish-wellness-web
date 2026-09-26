@@ -1,4 +1,5 @@
-const kneePainHero = { url: "/images/blog/knee-pain-stairs.webp" };
+const kneePainHero = { url: "/images/blog/knee-pain-stairs-hero.jpg" };
+const kneePainComparison = { url: "/images/blog/knee-pain-stairs.webp" };
 const patellofemoralAnatomy = { url: "/images/blog/patellofemoral-joint-anatomy.webp" };
 const patellofemoralPain = { url: "/images/blog/patellofemoral-pain-location.webp" };
 const kneeAnatomy = { url: "/images/blog/knee-joint-anatomy.webp" };
@@ -65,6 +66,11 @@ export const blogPosts: BlogPost[] = [
   <li>Sitting for prolonged periods</li>
 </ul>
 <p>Pain is often felt at the front of the knee or around the kneecap. A sudden change in activity or reduced conditioning can contribute.</p>
+
+<figure class="article-figure article-figure-wide">
+  <img src="${kneePainComparison.url}" alt="Comparison between normal knee and patellofemoral pain" loading="lazy" width="700" height="560" />
+  <figcaption>Comparison showing stress and irritation behind the kneecap in patellofemoral pain.</figcaption>
+</figure>
 
 <figure class="article-figure article-figure-wide">
   <img src="${patellofemoralPain.url}" alt="Front and side views showing the common location of patellofemoral pain" loading="lazy" width="700" height="559" />
