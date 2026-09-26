@@ -36,7 +36,7 @@ const BlogsPage = () => {
                 <Link to={`/blogs/${post.slug}`} className="relative block aspect-[16/10] overflow-hidden bg-muted" aria-label={`Read ${post.title}`}>
                   <img 
                     src={post.imageUrl} 
-                    alt={post.title}
+                    alt={`${post.title} - Dr. Hamid's Physio and Pain Clinic`}
                     className="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none hover:scale-[1.03]"
                     loading={post.id === "5" ? "eager" : "lazy"}
                   />

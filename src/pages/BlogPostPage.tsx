@@ -103,7 +103,7 @@ const BlogPostPage = () => {
             <figure className="overflow-hidden rounded-md border border-border bg-muted">
               <img 
                 src={post.imageUrl} 
-                alt={post.title}
+                alt={`${post.title} - Dr. Hamid's Physio and Pain Clinic`}
                 className="aspect-[5/4] w-full object-cover sm:aspect-[16/9]"
                 width="1000"
                 height="800"

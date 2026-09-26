@@ -1,8 +1,8 @@
-const kneePainHero = { url: "/images/blog/knee-pain-stairs-hero.jpg" };
-const kneePainComparison = { url: "/images/blog/knee-pain-stairs.webp" };
-const patellofemoralAnatomy = { url: "/images/blog/patellofemoral-joint-anatomy.webp" };
-const patellofemoralPain = { url: "/images/blog/patellofemoral-pain-location.webp" };
-const kneeAnatomy = { url: "/images/blog/knee-joint-anatomy.webp" };
+const kneePainHero = { url: "/images/blog/knee-pain-when-climbing-stairs/knee-pain-climbing-stairs-dr-hamid-physio.jpg" };
+const kneePainComparison = { url: "/images/blog/knee-pain-when-climbing-stairs/patellofemoral-knee-pain-comparison-dr-hamid-physio.webp" };
+const patellofemoralAnatomy = { url: "/images/blog/knee-pain-when-climbing-stairs/patellofemoral-joint-anatomy-dr-hamid-physio.webp" };
+const patellofemoralPain = { url: "/images/blog/knee-pain-when-climbing-stairs/patellofemoral-pain-syndrome-location-dr-hamid-physio.webp" };
+const kneeAnatomy = { url: "/images/blog/knee-pain-when-climbing-stairs/knee-joint-anatomy-cartilage-dr-hamid-physio.webp" };
 
 export interface BlogPost {
   id: string;
@@ -48,7 +48,7 @@ export const blogPosts: BlogPost[] = [
 <p>The kneecap, or patella, moves against the femur as the knee bends. Irritated tissues, reduced conditioning, a sudden increase in activity, or an underlying joint problem may become noticeable on stairs even when ordinary walking is comfortable.</p>
 
 <figure class="article-figure">
-  <img src="${patellofemoralAnatomy.url}" alt="Patellofemoral joint and kneecap anatomy" loading="lazy" width="500" height="432" />
+  <img src="${patellofemoralAnatomy.url}" alt="Patellofemoral joint and kneecap anatomy - Dr. Hamid's Physio and Pain Clinic" loading="lazy" width="500" height="432" />
   <figcaption>The patella moves against the femur as the knee bends and straightens.</figcaption>
 </figure>
 
@@ -68,12 +68,12 @@ export const blogPosts: BlogPost[] = [
 <p>Pain is often felt at the front of the knee or around the kneecap. A sudden change in activity or reduced conditioning can contribute.</p>
 
 <figure class="article-figure article-figure-wide">
-  <img src="${kneePainComparison.url}" alt="Comparison between normal knee and patellofemoral pain" loading="lazy" width="700" height="560" />
+  <img src="${kneePainComparison.url}" alt="Comparison between normal knee and patellofemoral pain - Dr. Hamid's Physio and Pain Clinic" loading="lazy" width="700" height="560" />
   <figcaption>Comparison showing stress and irritation behind the kneecap in patellofemoral pain.</figcaption>
 </figure>
 
 <figure class="article-figure article-figure-wide">
-  <img src="${patellofemoralPain.url}" alt="Front and side views showing the common location of patellofemoral pain" loading="lazy" width="700" height="559" />
+  <img src="${patellofemoralPain.url}" alt="Front and side views showing common location of patellofemoral pain - Dr. Hamid's Physio and Pain Clinic" loading="lazy" width="700" height="559" />
   <figcaption>Patellofemoral pain is commonly felt around or behind the kneecap.</figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
 <p>A previous meniscus or ligament injury, fracture, kneecap injury, or knee surgery may affect how the knee tolerates load. If stair pain began after an injury—especially with swelling, instability, or locking—professional assessment is appropriate.</p>
 
 <figure class="article-figure">
-  <img src="${kneeAnatomy.url}" alt="Labelled front view of the femur, patella, articular cartilage and tibia" loading="lazy" width="629" height="650" />
+  <img src="${kneeAnatomy.url}" alt="Labelled front view of the femur, patella, articular cartilage and tibia - Dr. Hamid's Physio and Pain Clinic" loading="lazy" width="629" height="650" />
   <figcaption>A simplified front view of the main bones, kneecap, and articular cartilage.</figcaption>
 </figure>
 
@@ -187,7 +187,7 @@ export const blogPosts: BlogPost[] = [
     date: "January 31, 2021",
     author: "Dr. Mohammed Hamid Ali",
     category: "Education",
-    imageUrl: "/images/services/consultation-assessment.webp",
+    imageUrl: "/images/blog/yoga-vs-physical-therapy/physical-therapy-vs-yoga-pain-relief-dr-hamid-physio.webp",
     readTime: "8 min read",
     content: `
 <h2>Understanding the Difference Between Yoga and Physical Therapy</h2>
@@ -235,7 +235,7 @@ export const blogPosts: BlogPost[] = [
     date: "January 27, 2021",
     author: "Dr. Mohammed Hamid Ali",
     category: "Healthcare",
-    imageUrl: "/images/blog/physiotherapy-blog-cover.webp",
+    imageUrl: "/images/blog/physiotherapist-vs-gp-for-pain/physiotherapist-vs-gp-pain-relief-dr-hamid-physio.webp",
     readTime: "10 min read",
     content: `
 <h2>Who Should Be Your First Stop for Musculoskeletal Pain?</h2>
@@ -287,7 +287,7 @@ export const blogPosts: BlogPost[] = [
     date: "January 1, 2021",
     author: "Dr. Mohammed Hamid Ali",
     category: "Exercise & Fitness",
-    imageUrl: "/images/services/exercise-therapy.webp",
+    imageUrl: "/images/blog/physiotherapy-vs-gym-exercises/physiotherapy-vs-gym-exercises-recovery-dr-hamid-physio.webp",
     readTime: "7 min read",
     content: `
 <h2>Physiotherapy Exercises vs. Gym Workouts: What's the Difference?</h2>
@@ -411,7 +411,7 @@ export const blogPosts: BlogPost[] = [
     date: "December 29, 2020",
     author: "Dr. Mohammed Hamid Ali",
     category: "Wellness",
-    imageUrl: "/images/services/consultation-assessment.webp",
+    imageUrl: "/images/blog/role-of-physiotherapy-in-daily-life/role-of-physiotherapy-daily-life-health-dr-hamid-physio.webp",
     readTime: "9 min read",
     content: `
 <h2>Understanding the Role of Physiotherapy in Our Daily Lives</h2>
