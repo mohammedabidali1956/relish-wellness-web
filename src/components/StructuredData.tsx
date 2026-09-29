@@ -16,6 +16,12 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     "@id": "https://hamidphysio.lovable.app",
     "telephone": "+919885755888",
     "email": "hamid.physio324@gmail.com",
+    "sameAs": [
+      "https://www.youtube.com/@dr.hamidsphysiopainclinic",
+      "https://www.instagram.com/drhamidphysio",
+      "https://www.facebook.com/profile.php?id=61587086612280",
+      "https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park",
