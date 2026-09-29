@@ -85,10 +85,15 @@ const Footer = () => {
             <ul className="mt-4 space-y-4">
               <li className="flex gap-3">
                 <MapPin className="h-4 w-4 shrink-0 mt-1 text-relish-600" />
-                <span className="text-sm leading-relaxed text-muted-foreground">
+                <a
+                  href="https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm leading-relaxed text-muted-foreground hover:text-relish-700 transition-colors"
+                >
                   4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony,
                   Puppalguda, Manikonda, Hyderabad, Telangana 500089
-                </span>
+                </a>
               </li>
               <li className="flex gap-3">
                 <Phone className="h-4 w-4 shrink-0 mt-0.5 text-relish-600" />

@@ -27,9 +27,10 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 17.4165,
-      "longitude": 78.3892
+      "latitude": 17.3989817,
+      "longitude": 78.390221
     },
+    "hasMap": "https://maps.app.goo.gl/zGixCFnPJbKzKxy17",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -56,8 +57,8 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": 17.4165,
-        "longitude": 78.3892
+        "latitude": 17.3989817,
+        "longitude": 78.390221
       },
       "geoRadius": "10000"
     },

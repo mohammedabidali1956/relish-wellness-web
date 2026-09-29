@@ -151,9 +151,14 @@ const HomePage = () => {
                     <MapPin className="w-5 h-5 text-relish-600 shrink-0 mt-0.5" />
                     <div>
                       <p className="text-sm font-medium text-foreground">Clinic address</p>
-                      <p className="text-sm text-muted-foreground">
+                      <a
+                        href="https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-muted-foreground hover:text-relish-700 transition-colors inline-block"
+                      >
                         4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089
-                      </p>
+                      </a>
                     </div>
                   </li>
                   <li className="flex gap-3 py-4">
@@ -378,7 +383,8 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             <AppointmentForm />
             <ContactMap
-              mapEmbedUrl="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=4-3%2F81%2C%20Opp%3A%20HDFC%20Bank%20ATM%2C%20near%20Friends%20Colony%20Park%2C%20Friends%20Colony%2C%20Puppalguda%2C%20Manikonda%2C%20Hyderabad%2C%20Telangana%20500089&maptype=roadmap"
+              mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.7!2d78.390221!3d17.3989817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97c8eb026f65%3A0x5e83196a16a5e123!2sDr.%20Hamid's%20Physio%20%26%20Pain%20Clinic!5e0!3m2!1sen!2sin!4v1727624000000"
+              externalMapUrl="https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
               className="h-full min-h-[360px]"
             />
           </div>
