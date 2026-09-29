@@ -103,7 +103,14 @@ const Navbar = () => {
                   )
                 }
               >
-                {link.title}
+                <span className="flex items-center justify-between">
+                  <span>{link.title}</span>
+                  {link.title === "Blogs" && (
+                    <span className="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-relish-100 text-relish-800 border border-relish-200">
+                      Guides &amp; Tips
+                    </span>
+                  )}
+                </span>
               </NavLink>
             ))}
             <Button 

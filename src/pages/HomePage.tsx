@@ -11,7 +11,8 @@ import StickyCTA from "@/components/StickyCTA";
 import PainPointGuide from "@/components/PainPointGuide";
 const doctorPortrait = "/images/doctor/dr-mohammed-hamid-ali.webp";
 import { conditions } from "@/data/conditions";
-import { MapPin, Phone, Star, Stethoscope, Home, Clock, Quote } from "lucide-react";
+import { blogPosts } from "@/data/blogPosts";
+import { MapPin, Phone, Star, Stethoscope, Home, Clock, Quote, BookOpen, ArrowRight } from "lucide-react";
 
 const HomePage = () => {
   const featuredServices = [
@@ -83,7 +84,17 @@ const HomePage = () => {
         <div className="container px-4 py-14 md:py-20 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-7 space-y-6 animate-fade-in">
-              <span className="eyebrow">Physiotherapy &amp; Rehabilitation · Manikonda</span>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="eyebrow">Physiotherapy &amp; Rehabilitation · Manikonda</span>
+                <Link
+                  to="/blogs"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-relish-100/90 text-relish-900 text-xs font-medium hover:bg-relish-200 transition-colors border border-relish-300/60 shadow-2xs group"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-relish-700" />
+                  <span>Explore Health Blogs</span>
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                </Link>
+              </div>
 
               <h1 className="text-[2rem] sm:text-4xl lg:text-5xl font-semibold font-display leading-[1.12] text-relish-900">
                 Expert physiotherapy care in Manikonda, Hyderabad
@@ -112,6 +123,31 @@ const HomePage = () => {
                   Physiotherapy at Home
                 </Button>
               </div>
+
+              {/* Mobile & Desktop Quick Blog Explorer Banner */}
+              <Link
+                to="/blogs"
+                className="flex items-center justify-between p-3.5 sm:p-4 rounded-xl border border-relish-200/90 bg-white/95 shadow-sm hover:shadow-md hover:border-relish-400 transition-all group max-w-xl"
+              >
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="w-10 h-10 rounded-lg bg-relish-100 text-relish-700 flex items-center justify-center shrink-0 group-hover:bg-relish-700 group-hover:text-white transition-colors">
+                    <BookOpen className="w-5 h-5" />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[11px] uppercase tracking-wider font-bold text-relish-700">Health Guides &amp; Blogs</span>
+                      <span className="text-[10px] bg-emerald-100 text-emerald-800 font-semibold px-1.5 py-0.2 rounded">Latest</span>
+                    </div>
+                    <p className="text-xs sm:text-sm font-medium text-foreground group-hover:text-relish-900 transition-colors truncate">
+                      Knee pain on stairs, exercises &amp; recovery tips
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1 text-xs font-semibold text-relish-700 shrink-0 ml-3">
+                  <span className="hidden sm:inline">Explore Blogs</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
 
               <dl className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-border max-w-lg">
                 <div className="min-w-0">
@@ -178,6 +214,20 @@ const HomePage = () => {
                     </div>
                   </li>
                 </ul>
+
+                <div className="mt-5 pt-4 border-t border-border flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <BookOpen className="w-4 h-4 text-relish-600" />
+                    <span className="text-xs text-muted-foreground">Self-care &amp; recovery</span>
+                  </div>
+                  <Link
+                    to="/blogs"
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-relish-700 hover:text-relish-900 transition-colors"
+                  >
+                    Explore our blogs
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -364,6 +414,78 @@ const HomePage = () => {
                 Read all reviews
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Health Articles & Blogs */}
+      <section className="py-16 md:py-24 px-4 bg-sand-50 border-t border-border">
+        <div className="container">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div className="max-w-2xl">
+              <span className="eyebrow">Health Knowledge &amp; Insights</span>
+              <h2 className="heading-2 mt-3 mb-4 text-relish-900">Explore our health &amp; physio blogs</h2>
+              <p className="paragraph">
+                Evidence-based physiotherapy tips, injury prevention guides, and pain management advice by Dr. Mohammed Hamid Ali.
+              </p>
+            </div>
+            <Link to="/blogs" className="shrink-0">
+              <Button
+                variant="outline"
+                className="border-relish-700/40 text-relish-800 hover:bg-relish-50 hover:text-relish-900 rounded-md px-5 h-11 font-medium flex items-center gap-2"
+              >
+                View all articles
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {blogPosts.slice(0, 3).map((post) => (
+              <article
+                key={post.id}
+                className="flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-xs transition-all duration-300 hover:border-relish-300 hover:shadow-md group"
+              >
+                <Link to={`/blogs/${post.slug}`} className="relative block aspect-[16/10] overflow-hidden bg-muted">
+                  <img
+                    src={post.imageUrl}
+                    alt={`${post.title} - Dr. Hamid's Physio and Pain Clinic`}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-3 left-3">
+                    <span className="bg-relish-700/90 backdrop-blur-xs text-white px-2.5 py-0.5 rounded-full text-xs font-medium">
+                      {post.category}
+                    </span>
+                  </div>
+                </Link>
+                <div className="p-5 flex flex-col flex-grow">
+                  <div className="flex items-center gap-3 text-xs text-muted-foreground mb-2.5">
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5" />
+                      {post.readTime}
+                    </span>
+                    <span>•</span>
+                    <span>{post.date}</span>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-foreground group-hover:text-relish-800 transition-colors line-clamp-2 leading-snug mb-2">
+                    <Link to={`/blogs/${post.slug}`}>
+                      {post.title}
+                    </Link>
+                  </h3>
+                  <p className="text-sm text-muted-foreground line-clamp-2 mb-4 flex-grow">
+                    {post.excerpt}
+                  </p>
+                  <Link
+                    to={`/blogs/${post.slug}`}
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-relish-700 group-hover:text-relish-900 group-hover:translate-x-1 transition-all pt-3 border-t border-border/60"
+                  >
+                    Read full article
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
