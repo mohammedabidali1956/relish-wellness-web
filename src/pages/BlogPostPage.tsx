@@ -15,7 +15,7 @@ const BlogPostPage = () => {
   }
 
   const isKneeStairsArticle = post.slug === "knee-pain-when-climbing-stairs";
-  const canonicalUrl = `https://hamidphysio.lovable.app/blogs/${post.slug}`;
+  const canonicalUrl = `https://www.drhamidphysio.in/blogs/${post.slug}`;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
