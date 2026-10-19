@@ -14,6 +14,7 @@ import ReviewsPage from "./pages/ReviewsPage";
 import BlogsPage from "./pages/BlogsPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import ConditionPage from "./pages/ConditionPage";
+import ServiceDetailPage from "./pages/ServiceDetailPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,10 +31,12 @@ const App = () => (
             <Route index element={<HomePage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="services" element={<ServicesPage />} />
+            <Route path="services/:slug" element={<ServiceDetailPage />} />
+            <Route path="conditions/:slug" element={<ServiceDetailPage />} />
             <Route path="reviews" element={<ReviewsPage />} />
             <Route path="blogs" element={<BlogsPage />} />
             <Route path="blogs/:slug" element={<BlogPostPage />} />
-            <Route path="conditions/:slug" element={<ConditionPage />} />
+            <Route path=":slug" element={<ServiceDetailPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
