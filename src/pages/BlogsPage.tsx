@@ -10,8 +10,8 @@ const BlogsPage = () => {
     <div>
       <StructuredData 
         type="blog" 
-        pageTitle="Health & Wellness Blog | Dr. Hamid's Physio Clinic Manikonda" 
-        pageDescription="Expert physiotherapy advice and health tips from Dr. Hamid's Physio Clinic in Manikonda, Hyderabad. Learn about pain management, rehabilitation, and wellness."
+        pageTitle="Health & Wellness Blog | Dr. Hamid's Physio and Pain Clinic Manikonda" 
+        pageDescription="Expert physiotherapy advice and health tips from Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad. Learn about pain management, rehabilitation, and wellness."
       />
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-14 md:py-20">
@@ -21,7 +21,7 @@ const BlogsPage = () => {
               Health & Wellness <span className="text-relish-700">Insights</span>
             </h1>
             <p className="text-lg sm:text-xl leading-relaxed text-gray-700 max-w-3xl mx-auto">
-              Expert advice, research-backed information, and practical tips from Dr. Hamid's Physio Clinic to help you live pain-free and stay healthy.
+              Expert advice, research-backed information, and practical tips from Dr. Hamid's Physio and Pain Clinic to help you live pain-free and stay healthy.
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ const BlogsPage = () => {
                 <Link to={`/blogs/${post.slug}`} className="relative block aspect-[16/10] overflow-hidden bg-muted" aria-label={`Read ${post.title}`}>
                   <img 
                     src={post.imageUrl} 
-                    alt={post.title}
+                    alt={`${post.title} - Dr. Hamid's Physio and Pain Clinic`}
                     className="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none hover:scale-[1.03]"
                     loading={post.id === "5" ? "eager" : "lazy"}
                   />

@@ -42,7 +42,7 @@ const ServicesPage = () => {
     <div>
       <StructuredData 
         type="service" 
-        pageTitle="Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic" 
+        pageTitle="Physiotherapy Services in Manikonda | Dr. Hamid's Physio and Pain Clinic" 
         pageDescription="Comprehensive physiotherapy services in Puppalguda, Manikonda, Hyderabad. Ultrasound therapy, TENS, exercise therapy, manual therapy & more by Dr. Hamid."
       />
       {/* Hero Section */}
@@ -51,7 +51,7 @@ const ServicesPage = () => {
           <div className="text-center">
             <h1 className="heading-1 mb-6 text-gray-800">Our Services</h1>
             <p className="paragraph max-w-3xl mx-auto">
-              At Dr. Hamid's Physio Clinic in Manikonda, Hyderabad, we offer a comprehensive range of evidence-based physiotherapy treatments designed to address various conditions and promote optimal physical health.
+              At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we offer a comprehensive range of evidence-based physiotherapy treatments designed to address various conditions and promote optimal physical health.
             </p>
           </div>
         </div>
