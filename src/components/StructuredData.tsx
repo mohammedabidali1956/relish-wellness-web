@@ -10,12 +10,18 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Physiotherapy",
-    "name": "Dr. Hamid's Physio Clinic",
+    "name": "Dr. Hamid's Physio and Pain Clinic",
     "image": "/images/logo/og-image.png",
     "url": "https://www.drhamidphysio.in",
     "@id": "https://www.drhamidphysio.in",
     "telephone": "+919885755888",
     "email": "hamid.physio324@gmail.com",
+    "sameAs": [
+      "https://www.youtube.com/@dr.hamidsphysiopainclinic",
+      "https://www.instagram.com/drhamidphysio",
+      "https://www.facebook.com/profile.php?id=61587086612280",
+      "https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park",
@@ -27,9 +33,10 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 17.4165,
-      "longitude": 78.3892
+      "latitude": 17.3989817,
+      "longitude": 78.390221
     },
+    "hasMap": "https://maps.app.goo.gl/zGixCFnPJbKzKxy17",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -56,8 +63,8 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": 17.4165,
-        "longitude": 78.3892
+        "latitude": 17.3989817,
+        "longitude": 78.390221
       },
       "geoRadius": "10000"
     },
@@ -114,10 +121,10 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
       },
       {
         "@type": "Question",
-        "name": "Where is Dr. Hamid's Physio Clinic located?",
+        "name": "Where is Dr. Hamid's Physio and Pain Clinic located?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Dr. Hamid's Physio Clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089."
+          "text": "Dr. Hamid's Physio and Pain Clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089."
         }
       },
       {
@@ -133,7 +140,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
         "name": "How long does a physiotherapy session last?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A typical physiotherapy session at Dr. Hamid's Physio Clinic lasts 30-45 minutes, depending on the treatment required and the condition being addressed."
+          "text": "A typical physiotherapy session at Dr. Hamid's Physio and Pain Clinic lasts 30-45 minutes, depending on the treatment required and the condition being addressed."
         }
       }
     ]
@@ -142,7 +149,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Dr. Hamid's Physio Clinic",
+    "name": "Dr. Hamid's Physio and Pain Clinic",
     "alternateName": "Dr Hamid Physiotherapy",
     "url": "https://www.drhamidphysio.in",
     "logo": "/images/logo/og-image.png",

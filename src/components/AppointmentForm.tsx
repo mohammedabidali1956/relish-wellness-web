@@ -37,7 +37,7 @@ const AppointmentForm = () => {
 
   const handleWhatsAppRedirect = () => {
     const whatsappMessage = encodeURIComponent(
-      `Hello Dr. Mohammed Hamid Ali, I would like to book an appointment at Dr. Hamid's Physio Clinic. My name is ${name || "[Your Name]"} and my phone number is ${phone || "[Your Phone]"}. ${message ? `Additional info: ${message}` : ""}`
+      `Hello Dr. Mohammed Hamid Ali, I would like to book an appointment at Dr. Hamid's Physio and Pain Clinic. My name is ${name || "[Your Name]"} and my phone number is ${phone || "[Your Phone]"}. ${message ? `Additional info: ${message}` : ""}`
     );
     window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
   };

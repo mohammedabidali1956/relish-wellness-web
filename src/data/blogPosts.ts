@@ -1,7 +1,8 @@
-const kneePainHero = { url: "/images/blog/knee-pain-stairs.webp" };
-const patellofemoralAnatomy = { url: "/images/blog/patellofemoral-joint-anatomy.webp" };
-const patellofemoralPain = { url: "/images/blog/patellofemoral-pain-location.webp" };
-const kneeAnatomy = { url: "/images/blog/knee-joint-anatomy.webp" };
+const kneePainHero = { url: "/images/blog/knee-pain-when-climbing-stairs/knee-pain-climbing-stairs-dr-hamid-physio.jpg" };
+const kneePainComparison = { url: "/images/blog/knee-pain-when-climbing-stairs/patellofemoral-knee-pain-comparison-dr-hamid-physio.webp" };
+const patellofemoralAnatomy = { url: "/images/blog/knee-pain-when-climbing-stairs/patellofemoral-joint-anatomy-dr-hamid-physio.webp" };
+const patellofemoralPain = { url: "/images/blog/knee-pain-when-climbing-stairs/patellofemoral-pain-syndrome-location-dr-hamid-physio.webp" };
+const kneeAnatomy = { url: "/images/blog/knee-pain-when-climbing-stairs/knee-joint-anatomy-cartilage-dr-hamid-physio.webp" };
 
 export interface BlogPost {
   id: string;
@@ -47,7 +48,7 @@ export const blogPosts: BlogPost[] = [
 <p>The kneecap, or patella, moves against the femur as the knee bends. Irritated tissues, reduced conditioning, a sudden increase in activity, or an underlying joint problem may become noticeable on stairs even when ordinary walking is comfortable.</p>
 
 <figure class="article-figure">
-  <img src="${patellofemoralAnatomy.url}" alt="Patellofemoral joint and kneecap anatomy" loading="lazy" width="500" height="432" />
+  <img src="${patellofemoralAnatomy.url}" alt="Patellofemoral joint and kneecap anatomy - Dr. Hamid's Physio and Pain Clinic" loading="lazy" width="500" height="432" />
   <figcaption>The patella moves against the femur as the knee bends and straightens.</figcaption>
 </figure>
 
@@ -67,7 +68,12 @@ export const blogPosts: BlogPost[] = [
 <p>Pain is often felt at the front of the knee or around the kneecap. A sudden change in activity or reduced conditioning can contribute.</p>
 
 <figure class="article-figure article-figure-wide">
-  <img src="${patellofemoralPain.url}" alt="Front and side views showing the common location of patellofemoral pain" loading="lazy" width="700" height="559" />
+  <img src="${kneePainComparison.url}" alt="Comparison between normal knee and patellofemoral pain - Dr. Hamid's Physio and Pain Clinic" loading="lazy" width="700" height="560" />
+  <figcaption>Comparison showing stress and irritation behind the kneecap in patellofemoral pain.</figcaption>
+</figure>
+
+<figure class="article-figure article-figure-wide">
+  <img src="${patellofemoralPain.url}" alt="Front and side views showing common location of patellofemoral pain - Dr. Hamid's Physio and Pain Clinic" loading="lazy" width="700" height="559" />
   <figcaption>Patellofemoral pain is commonly felt around or behind the kneecap.</figcaption>
 </figure>
 
@@ -84,7 +90,7 @@ export const blogPosts: BlogPost[] = [
 <p>A previous meniscus or ligament injury, fracture, kneecap injury, or knee surgery may affect how the knee tolerates load. If stair pain began after an injury—especially with swelling, instability, or locking—professional assessment is appropriate.</p>
 
 <figure class="article-figure">
-  <img src="${kneeAnatomy.url}" alt="Labelled front view of the femur, patella, articular cartilage and tibia" loading="lazy" width="629" height="650" />
+  <img src="${kneeAnatomy.url}" alt="Labelled front view of the femur, patella, articular cartilage and tibia - Dr. Hamid's Physio and Pain Clinic" loading="lazy" width="629" height="650" />
   <figcaption>A simplified front view of the main bones, kneecap, and articular cartilage.</figcaption>
 </figure>
 
@@ -163,7 +169,7 @@ export const blogPosts: BlogPost[] = [
 
 <div class="article-local-cta">
   <h2>Physiotherapy for knee pain in Manikonda, Hyderabad</h2>
-  <p>If knee pain is affecting stairs, squatting, walking, exercise, or daily life, book an assessment with Dr. Mohammed Hamid Ali at Dr. Hamid's Physio Clinic in Puppalguda, Manikonda.</p>
+  <p>If knee pain is affecting stairs, squatting, walking, exercise, or daily life, book an assessment with Dr. Mohammed Hamid Ali at Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda.</p>
   <a href="/#appointment">Book a physiotherapy assessment</a>
 </div>
 
@@ -181,11 +187,11 @@ export const blogPosts: BlogPost[] = [
     date: "January 31, 2021",
     author: "Dr. Mohammed Hamid Ali",
     category: "Education",
-    imageUrl: "/images/services/consultation-assessment.webp",
+    imageUrl: "/images/blog/yoga-vs-physical-therapy/physical-therapy-vs-yoga-pain-relief-dr-hamid-physio.webp",
     readTime: "8 min read",
     content: `
 <h2>Understanding the Difference Between Yoga and Physical Therapy</h2>
-<p>Welcome to Dr. Hamid's Physio Clinic! Today, we'll explore the key variations and similarities between two important aspects of healthcare: Physical Therapy and Yoga.</p>
+<p>Welcome to Dr. Hamid's Physio and Pain Clinic! Today, we'll explore the key variations and similarities between two important aspects of healthcare: Physical Therapy and Yoga.</p>
 
 <h3>The Rise of Yoga</h3>
 <p>Yoga, involving spiritual, mental, and physical disciplines, is one of the six 'Astika' (orthodox) schools of Indian philosophical traditions. The exact origins of yoga remain somewhat obscure, but researchers believe that yoga — a word whose root in Sanskrit means "unity" or "union" — began in India over 5,000 years ago.</p>
@@ -229,11 +235,11 @@ export const blogPosts: BlogPost[] = [
     date: "January 27, 2021",
     author: "Dr. Mohammed Hamid Ali",
     category: "Healthcare",
-    imageUrl: "/images/blog/physiotherapy-blog-cover.webp",
+    imageUrl: "/images/blog/physiotherapist-vs-gp-for-pain/physiotherapist-vs-gp-pain-relief-dr-hamid-physio.webp",
     readTime: "10 min read",
     content: `
 <h2>Who Should Be Your First Stop for Musculoskeletal Pain?</h2>
-<p>Welcome back to Dr. Hamid's Physio Clinic! Today we're addressing an important question: When experiencing musculoskeletal pain, should you see a GP or go directly to a physiotherapist?</p>
+<p>Welcome back to Dr. Hamid's Physio and Pain Clinic! Today we're addressing an important question: When experiencing musculoskeletal pain, should you see a GP or go directly to a physiotherapist?</p>
 
 <h3>The Growing Problem of Musculoskeletal Conditions</h3>
 <p>Due to ever-increasing workloads, our bodies face constant stress. We push ourselves to fulfill commitments while taking inadequate care of our bodies, resulting in musculoskeletal (MSK) conditions.</p>
@@ -268,7 +274,7 @@ export const blogPosts: BlogPost[] = [
 <p>Many national and international healthcare organizations are recognizing this important factor. They're making crucial changes to allow easier access to physiotherapists, which also decreases GP caseloads and allows doctors to focus on patients who need them most — those with diabetes, hypertension, infections, metabolic disorders, and other systemic conditions.</p>
 
 <h3>Making the Right Choice</h3>
-<p>When you experience musculoskeletal pain, going directly to a qualified physiotherapist at Dr. Hamid's Physio Clinic not only saves time and money but ensures you receive specific, targeted treatment with proper attention to your condition.</p>
+<p>When you experience musculoskeletal pain, going directly to a qualified physiotherapist at Dr. Hamid's Physio and Pain Clinic not only saves time and money but ensures you receive specific, targeted treatment with proper attention to your condition.</p>
 
 <p><strong>Remember: The right specialist at the right time makes all the difference in your recovery journey.</strong></p>
     `
@@ -281,11 +287,11 @@ export const blogPosts: BlogPost[] = [
     date: "January 1, 2021",
     author: "Dr. Mohammed Hamid Ali",
     category: "Exercise & Fitness",
-    imageUrl: "/images/services/exercise-therapy.webp",
+    imageUrl: "/images/blog/physiotherapy-vs-gym-exercises/physiotherapy-vs-gym-exercises-recovery-dr-hamid-physio.webp",
     readTime: "7 min read",
     content: `
 <h2>Physiotherapy Exercises vs. Gym Workouts: What's the Difference?</h2>
-<p>Happy New Year from Dr. Hamid's Physio Clinic! As we embark on 2021 with renewed health commitments, let's address a common misconception: Are physiotherapy exercises the same as gym workouts?</p>
+<p>Happy New Year from Dr. Hamid's Physio and Pain Clinic! As we embark on 2021 with renewed health commitments, let's address a common misconception: Are physiotherapy exercises the same as gym workouts?</p>
 
 <h3>The Common Misconception</h3>
 <p>Many people consciously or subconsciously believe that exercise prescriptions from physiotherapists are identical to gym workout routines. Today, we're setting the record straight!</p>
@@ -392,7 +398,7 @@ export const blogPosts: BlogPost[] = [
 <h3>The Bottom Line</h3>
 <p>Both fitness trainers and physiotherapists are valuable allies in your health journey. The main difference? <strong>Fitness trainers work with healthy bodies focusing on building and aesthetics, while physiotherapists work with injured bodies focusing on pain management and functional rehabilitation.</strong></p>
 
-<p>At Dr. Hamid's Physio Clinic in Manikonda, we specialize in therapeutic exercises designed specifically for your recovery and rehabilitation needs. Our evidence-based approach ensures you receive the right exercises for your specific condition.</p>
+<p>At Dr. Hamid's Physio and Pain Clinic in Manikonda, we specialize in therapeutic exercises designed specifically for your recovery and rehabilitation needs. Our evidence-based approach ensures you receive the right exercises for your specific condition.</p>
 
 <p><strong>Remember: The right exercise at the right time makes all the difference in your recovery!</strong></p>
     `
@@ -405,11 +411,11 @@ export const blogPosts: BlogPost[] = [
     date: "December 29, 2020",
     author: "Dr. Mohammed Hamid Ali",
     category: "Wellness",
-    imageUrl: "/images/services/consultation-assessment.webp",
+    imageUrl: "/images/blog/role-of-physiotherapy-in-daily-life/role-of-physiotherapy-daily-life-health-dr-hamid-physio.webp",
     readTime: "9 min read",
     content: `
 <h2>Understanding the Role of Physiotherapy in Our Daily Lives</h2>
-<p>Welcome to Dr. Hamid's Physio Clinic! Today, we're exploring how physiotherapy plays a vital role in maintaining and improving our quality of life.</p>
+<p>Welcome to Dr. Hamid's Physio and Pain Clinic! Today, we're exploring how physiotherapy plays a vital role in maintaining and improving our quality of life.</p>
 
 <h3>What Exactly is Physiotherapy?</h3>
 <p>Physiotherapy is a medical profession that works with patients to develop, maintain, and restore maximum movement and functional ability using various therapeutic exercises and electrotherapy techniques.</p>
@@ -516,7 +522,7 @@ export const blogPosts: BlogPost[] = [
   <li>Age-related condition management</li>
 </ul>
 
-<h3>The Dr. Hamid's Physio Clinic Approach</h3>
+<h3>The Dr. Hamid's Physio and Pain Clinic Approach</h3>
 <p>At our clinic in Puppalguda, Manikonda, we take a comprehensive approach:</p>
 <ol>
   <li><strong>Thorough Assessment:</strong> Understanding your condition fully</li>
@@ -537,7 +543,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h3>Your Partner in Health</h3>
-<p>At Dr. Hamid's Physio Clinic, we're committed to helping you achieve and maintain optimal physical health. Whether you're recovering from an injury, managing a chronic condition, or simply want to improve your quality of life, our expert physiotherapy services in Manikonda, Hyderabad are here to support you.</p>
+<p>At Dr. Hamid's Physio and Pain Clinic, we're committed to helping you achieve and maintain optimal physical health. Whether you're recovering from an injury, managing a chronic condition, or simply want to improve your quality of life, our expert physiotherapy services in Manikonda, Hyderabad are here to support you.</p>
 
 <p><strong>Remember: Your body is designed to move. Let us help you move better, feel better, and live better!</strong></p>
     `
