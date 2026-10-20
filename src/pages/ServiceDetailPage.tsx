@@ -1,3 +1,4 @@
+import { openWhatsApp } from "@/lib/whatsapp";
 import React, { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -53,7 +54,7 @@ export const ServiceDetailPage: React.FC = () => {
     const text = encodeURIComponent(
       `Hello Dr. Hamid, I would like to book a consultation for ${service.title} at your Manikonda clinic.`
     );
-    window.open(`https://wa.me/917601026596?text=${text}`, "_blank");
+    openWhatsApp(decodeURIComponent(text));
   };
 
   const canonicalUrl = `https://www.drhamidphysio.in/services/${service.slug}`;
