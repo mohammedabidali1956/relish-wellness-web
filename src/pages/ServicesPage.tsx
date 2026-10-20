@@ -33,12 +33,7 @@ const ServicesPage: React.FC = () => {
     window.location.href = "tel:+917601026596";
   };
 
-  const handleWhatsApp = () => {
-    const text = encodeURIComponent(
-      "Hello Dr. Hamid, I would like to book a physiotherapy consultation at your Manikonda clinic."
-    );
-    window.open(`https://wa.me/917601026596?text=${text}`, "_blank");
-  };
+  const handleWhatsApp = () => openWhatsApp();
 
   // Filtered services if user searches
   const filteredServices = useMemo(() => {
@@ -471,10 +466,9 @@ const ServicesPage: React.FC = () => {
                 </Button>
                 <Button
                   onClick={handleWhatsApp}
-                  variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10 font-semibold px-6 py-5 rounded-xl flex items-center justify-center gap-2 text-sm"
+                  className="bg-[#1f8f4e] text-white hover:bg-[#187a42] active:bg-[#136637] border border-[#1f8f4e] focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b1d33] font-semibold px-6 py-5 min-h-11 rounded-xl flex items-center justify-center gap-2 text-sm"
                 >
-                  <MessageCircle className="w-4 h-4 text-emerald-400" />
+                  <MessageCircle className="w-4 h-4 text-white" />
                   <span>Chat on WhatsApp</span>
                 </Button>
               </div>

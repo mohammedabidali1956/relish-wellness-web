@@ -10,7 +10,7 @@ const navLinks = [
   { title: "About", path: "/about" },
   { title: "Services", path: "/services" },
   { title: "Conditions", path: "/#conditions" },
-  { title: "Patient Info", path: "/#patient-info" },
+  { title: "Patient Resources", path: "/#patient-info" },
   { title: "Contact", path: "/#contact" },
 ];
 
@@ -30,14 +30,11 @@ const Navbar = () => {
   const handleNavClick = (path: string) => {
     setIsMobileMenuOpen(false);
     if (path.startsWith("/#")) {
-      const sectionId = path.replace("/#", "");
+      const sectionId = path.slice(2);
       if (location.pathname !== "/") {
-        navigate(`/${path}`);
+        navigate(path);
       } else {
-        const el = document.getElementById(sectionId);
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
-        }
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
       }
     }
   };
@@ -47,8 +44,15 @@ const Navbar = () => {
       <div className="container flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand Logo & Name exactly matching reference typography */}
         <div className="flex items-center min-w-0">
-          <NavLink to="/" className="flex items-center gap-3 min-w-0 group">
-            <div className="flex flex-col">
+          <NavLink to="/" className="flex items-center gap-3 min-w-0 group" aria-label="Dr Hamid's Physio and Pain Clinic – Home">
+            <img
+              src="/images/logo/hamid-physio-logo.png"
+              alt=""
+              width={48}
+              height={48}
+              className="h-11 w-11 sm:h-12 sm:w-12 shrink-0 rounded-full object-contain"
+            />
+            <div className="flex flex-col min-w-0">
               <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#0a1f33] group-hover:text-[#183955] transition-colors leading-none">
                 Dr Hamid&apos;s
               </span>
