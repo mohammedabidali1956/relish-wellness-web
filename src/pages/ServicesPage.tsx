@@ -120,13 +120,38 @@ const ServicesPage: React.FC = () => {
             </div>
 
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] tracking-tight leading-[1.18]">
-              Comprehensive Physiotherapy Services in Manikonda, Hyderabad
+              Physiotherapy Services in Manikonda | Pain Relief &amp; Rehabilitation
             </h1>
 
             <p className="text-base sm:text-lg text-[#4a5568] leading-relaxed">
-              Every condition is unique and deserves dedicated, evidence-based care. Under the direct supervision of{" "}
-              <strong className="text-[#081a2e] font-semibold">Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413 (8+ Years Experience)</strong>, we provide personalized physical therapy for individual spine, joint, neurological, and sports conditions at our Puppalguda, Manikonda clinic and via home physiotherapy visits for patients across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and neighbouring areas.
+              At Dr Hamid’s Physio and Pain Clinic, we provide doctor-led physiotherapy for back pain, neck pain, knee pain, shoulder problems, sciatica, sports injuries, post-surgical rehabilitation and neurological conditions. Our clinic is located in Manikonda, Hyderabad, and we also offer home physiotherapy visits in Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas. Every treatment plan is individualised after proper assessment by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413, Consultant Physiotherapist.
             </p>
+
+            <div id="services-cta-top" className="services-cta bg-white border border-[#e5dec9] rounded-xl p-5 text-left space-y-2">
+              <h2 className="font-serif text-lg sm:text-xl font-bold text-[#081a2e]">
+                Ready to start your recovery?
+              </h2>
+              <p className="text-sm text-[#4a5568] leading-relaxed">
+                Book a consultation or home visit with Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413.
+              </p>
+              <p className="text-sm font-semibold text-[#081a2e]">
+                Call or WhatsApp: <a href="tel:+917601026596" className="text-[#8a5d24] hover:underline">+91 76010 26596</a>
+              </p>
+              <p className="text-xs text-[#64748b]">
+                Serving Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-2 pt-1">
+                <Button onClick={handleCall} className="bg-[#081a2e] hover:bg-[#122842] text-white text-sm">
+                  <Phone className="w-4 h-4 mr-1.5" />
+                  <span>Call +91 76010 26596</span>
+                </Button>
+                <Button onClick={handleWhatsApp} variant="outline" className="border-[#d6cbaf] text-[#081a2e] text-sm">
+                  <MessageCircle className="w-4 h-4 mr-1.5 text-emerald-600" />
+                  <span>WhatsApp to Book</span>
+                </Button>
+              </div>
+            </div>
+
 
             {/* Quick Stats Banner */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 max-w-2xl mx-auto text-left">
