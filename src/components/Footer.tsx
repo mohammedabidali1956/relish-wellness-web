@@ -85,7 +85,7 @@ const Footer = () => {
                   Dr. Hamid's Physio and Pain Clinic
                 </span>
                 <span className="text-xs text-muted-foreground block mt-0.5">
-                  Dr. Mohammed Hamid Ali, BPT
+                  Dr. Mohammed Hamid Ali, BPT, MPT (Ortho)
                 </span>
               </div>
             </div>

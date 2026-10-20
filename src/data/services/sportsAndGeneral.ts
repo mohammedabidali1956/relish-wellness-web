@@ -522,7 +522,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     metaTitle: "Home Physiotherapy Visits in Manikonda & Hyderabad | Dr. Hamid's Clinic",
     metaDescription: "Professional home physiotherapy visits in Manikonda, Puppalguda, Gachibowli & Hyderabad. Expert 1-on-1 care in your home or apartment. Call +91 76010 26596 to book!",
     h1: "Home Physiotherapy Visits in Manikonda, Hyderabad",
-    shortDescription: "Certified, clinic-grade physical therapy delivered in the comfort and privacy of your home and apartment across Manikonda, Puppalguda, Gachibowli, and surrounding Hyderabad suburbs.",
+    shortDescription: "Professional physiotherapy delivered at your home in Manikonda, Puppalguda, Lanco Hills and nearby areas. Suitable for patients who cannot travel to the clinic.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Home physiotherapy visits and apartment rehabilitation in Manikonda",
     whatItIs: "Home physiotherapy visits bring clinical-grade physical rehabilitation directly to your residence and apartment. For many patients—including elderly individuals with severe mobility limitations, patients immediately discharged after major orthopedic or spinal surgery, stroke survivors requiring bed mobility training, or busy professionals suffering acute back spasms—traveling to an outpatient clinic in traffic can be exhausting, painful, or logistically impossible. At Dr. Hamid's Physio and Pain Clinic, our dedicated home visit physiotherapy service delivers comprehensive, 1-on-1 personalized physical therapy right in the comfort, safety, and familiar surroundings of your home in Manikonda and neighboring Hyderabad suburbs.",
@@ -1196,6 +1196,182 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       {
         question: "Do you offer home visit physiotherapy for whiplash patients in Manikonda?",
         answer: "Yes, if post-accident pain makes driving or riding in a car unbearable, our team provides home visit physiotherapy across Manikonda, Puppalguda, and Gachibowli."
+      }
+    ]
+  },
+  {
+    slug: "post-knee-replacement-rehabilitation-manikonda",
+    category: "Sports, Post-Op & General",
+    title: "Post Knee Replacement Rehabilitation",
+    metaTitle: "Post Knee Replacement Rehabilitation in Manikonda | TKR Recovery Hyderabad",
+    metaDescription: "Expert post knee replacement rehabilitation in Manikonda, Hyderabad. Accelerated recovery after total knee replacement (TKR) by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    h1: "Post Knee Replacement Rehabilitation in Manikonda, Hyderabad",
+    shortDescription: "Specialized, protocol-driven rehabilitation following total knee replacement (TKR) and partial knee replacement surgery.",
+    imageSrc: "/images/services/condition-knee-pain.webp",
+    altText: "Post knee replacement rehabilitation and TKR recovery in Manikonda clinic",
+    whatItIs: "Post knee replacement rehabilitation is the critical structured physiotherapy program following Total Knee Replacement (TKR) or Unicompartmental Knee Arthroplasty (UKA). While the surgical procedure replaces the damaged joint surfaces with metal and plastic components, successful functional recovery depends entirely on systematic rehabilitation. Post-operative physiotherapy restores knee range of motion, rebuilds quadriceps strength, normalizes walking gait, and enables patients to return to independent daily activities. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) provides comprehensive, surgeon-aligned rehabilitation protocols ensuring optimal outcomes after knee replacement surgery.",
+    causes: [
+      "Post-surgical joint stiffness and capsular contracture from tissue healing",
+      "Quadriceps inhibition and weakness following surgical trauma",
+      "Persistent post-operative swelling and joint effusion",
+      "Altered gait patterns developed during years of pre-operative arthritis",
+      "Scar tissue formation requiring manual mobilization",
+      "Muscle atrophy from pre-operative pain avoidance and disuse"
+    ],
+    symptoms: [
+      "Significant stiffness and inability to fully bend or straighten the knee",
+      "Weakness when attempting to lift the leg straight (extension lag)",
+      "Difficulty walking without a walker, crutches, or cane",
+      "Persistent swelling around the knee and lower leg",
+      "Pain and apprehension during weight-bearing activities",
+      "Struggling with stairs, getting in and out of chairs, or car transfers"
+    ],
+    howPhysioHelps: "Structured post-operative physiotherapy dramatically accelerates knee replacement recovery. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) implements phased rehabilitation protocols: early mobilization to prevent stiffness, progressive range of motion exercises to achieve functional flexion, quadriceps strengthening to restore stable walking, and functional training for stairs and daily activities. This evidence-based approach ensures you achieve maximum knee function, typically reaching 110-120 degrees of bending within 6 to 12 weeks.",
+    assessmentProcess: [
+      "Goniometric measurement of knee flexion and extension range of motion",
+      "Assessment of active extension lag and quadriceps activation",
+      "Circumferential measurement of swelling and calf circumference",
+      "Surgical incision healing and scar mobility evaluation",
+      "Gait analysis with or without assistive devices"
+    ],
+    treatmentApproach: [
+      "Phase 1 (Weeks 0-2): Edema control, patellar mobilization, quadriceps setting, and heel slides",
+      "Phase 2 (Weeks 2-6): Progressive flexion to 90-110 degrees, stationary cycling, and walker weaning",
+      "Phase 3 (Weeks 6-12): Closed kinetic chain strengthening, stair climbing, and outdoor walking",
+      "Phase 4 (Weeks 12+): Advanced strengthening, endurance training, and return to recreational activities",
+      "Manual scar tissue mobilization and joint mobilizations as needed"
+    ],
+    expectedRecovery: "Most patients achieve independent walking with a cane by week 3 to 4, and walk without assistive devices by week 6 to 8. Functional knee flexion of 110-120 degrees is typically achieved by week 8 to 12. Full recovery of strength and endurance continues for 6 to 12 months.",
+    whyChooseDoctor: [
+      "8+ years of specialized orthopedic post-surgical rehabilitation experience",
+      "Strict compliance with orthopedic surgical protocols and milestones",
+      "Available for home visit physiotherapy during early post-operative weeks",
+      "Specialized training in joint replacement rehabilitation (MPT Orthopedics)"
+    ],
+    serviceAreas: [
+      "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
+      "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
+    ],
+    homeCare: [
+      "Perform ankle pumps and quadriceps sets every hour while awake to prevent blood clots",
+      "Elevate the operated leg above heart level when resting to reduce swelling",
+      "Apply ice packs for 15-20 minutes after exercise sessions",
+      "Perform prescribed heel slides and knee bends 3 to 4 times daily",
+      "Never place a pillow directly under the knee when resting—place it under the calf"
+    ],
+    whenToVisit: "Begin rehabilitation immediately after hospital discharge (typically day 3 to 5 post-surgery). Home visits are strongly recommended for the first 2 to 3 weeks for patients who cannot travel to the clinic.",
+    faqs: [
+      {
+        question: "How soon after knee replacement surgery should physiotherapy start?",
+        answer: "Bedside exercises begin in the hospital on postoperative day 1. Formal outpatient or home physiotherapy should start within 3 to 5 days of discharge to prevent permanent stiffness."
+      },
+      {
+        question: "How much should I be able to bend my knee after knee replacement?",
+        answer: "The goal is to achieve at least 90 degrees of flexion by week 2 to 3, and 110 to 120+ degrees by week 6 to 8, which allows comfortable stair climbing and sitting in normal chairs."
+      },
+      {
+        question: "Do you offer home visit physiotherapy after knee replacement in Manikonda?",
+        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation across Manikonda, Puppalguda, and surrounding areas during the early post-operative period when travel is difficult."
+      },
+      {
+        question: "Will rehabilitation be painful after knee replacement?",
+        answer: "Some stretching discomfort is normal as you regain motion, but therapy should never cause severe pain. Dr. Hamid uses gentle techniques and paces exercises appropriately."
+      },
+      {
+        question: "How long will I need a walker or cane after knee replacement?",
+        answer: "Most patients progress from a walker to a single cane within 2 to 3 weeks, and walk without assistive devices by week 4 to 6 with consistent rehabilitation."
+      },
+      {
+        question: "How do I book post-knee replacement rehabilitation?",
+        answer: "Call +91 76010 26596 or message us on WhatsApp before or after your surgery to coordinate clinic sessions or home visits."
+      }
+    ]
+  },
+  {
+    slug: "post-hip-replacement-rehabilitation-manikonda",
+    category: "Sports, Post-Op & General",
+    title: "Post Hip Replacement Rehabilitation",
+    metaTitle: "Post Hip Replacement Rehabilitation in Manikonda | THA Recovery Hyderabad",
+    metaDescription: "Expert post hip replacement rehabilitation in Manikonda, Hyderabad. Safe recovery after total hip arthroplasty (THA) by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    h1: "Post Hip Replacement Rehabilitation in Manikonda, Hyderabad",
+    shortDescription: "Specialized, protocol-driven rehabilitation following total hip replacement (THA) and hip arthroplasty surgery.",
+    imageSrc: "/images/services/condition-back-pain.webp",
+    altText: "Post hip replacement rehabilitation and THA recovery in Manikonda clinic",
+    whatItIs: "Post hip replacement rehabilitation is the essential structured physiotherapy program following Total Hip Arthroplasty (THA) or hemiarthroplasty. Hip replacement surgery replaces the damaged ball-and-socket joint with prosthetic components, but restoring normal walking, hip strength, and functional independence requires dedicated rehabilitation. Post-operative physiotherapy addresses hip precautions, restores muscle strength, improves gait mechanics, and enables safe return to daily activities. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) provides surgeon-coordinated rehabilitation protocols with strict adherence to hip precautions for optimal outcomes.",
+    causes: [
+      "Post-surgical muscle weakness, particularly in gluteal and hip abductor muscles",
+      "Altered gait patterns developed during years of pre-operative hip arthritis",
+      "Hip joint stiffness and soft tissue contracture from surgical healing",
+      "Balance deficits and fear of falling during early weight-bearing",
+      "Need for strict adherence to hip precautions (posterior approach) to prevent dislocation",
+      "Muscle atrophy from pre-operative pain avoidance and limited mobility"
+    ],
+    symptoms: [
+      "Difficulty walking without a walker, crutches, or cane",
+      "Weakness when lifting the leg or standing from a chair",
+      "Stiffness and limited hip range of motion",
+      "Apprehension about hip movement and weight-bearing",
+      "Struggling with stairs, getting in and out of bed, or car transfers",
+      "Persistent swelling or discomfort around the surgical site"
+    ],
+    howPhysioHelps: "Post-hip replacement rehabilitation requires careful attention to surgical approach-specific precautions while progressively restoring function. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) implements phased protocols: early protected weight-bearing with assistive devices, hip precautions education and enforcement, progressive hip strengthening (especially abductors), gait retraining, and functional independence training. This evidence-based approach ensures safe healing while rapidly restoring mobility and confidence.",
+    assessmentProcess: [
+      "Review of surgical approach (posterior, anterior, lateral) and specific precautions",
+      "Hip range of motion measurement within safe limits",
+      "Hip abductor and extensor strength testing",
+      "Gait analysis with assistive device assessment",
+      "Functional transfer assessment (bed, chair, toilet, car)"
+    ],
+    treatmentApproach: [
+      "Phase 1 (Weeks 0-2): Hip precautions education, protected weight-bearing, gentle exercises",
+      "Phase 2 (Weeks 2-6): Progressive strengthening, walker to cane transition, gait normalization",
+      "Phase 3 (Weeks 6-12): Advanced strengthening, balance training, stair negotiation",
+      "Phase 4 (Weeks 12+): Return to recreational activities, precaution weaning (if appropriate)",
+      "Functional training for daily activities (dressing, bathing, transfers)"
+    ],
+    expectedRecovery: "Most patients achieve independent walking with a cane by week 4 to 6, and walk without assistive devices by week 8 to 12. Full functional recovery and return to low-impact recreational activities typically occurs within 3 to 6 months.",
+    whyChooseDoctor: [
+      "8+ years of specialized post-surgical orthopedic rehabilitation experience",
+      "Strict compliance with hip precautions and surgeon protocols",
+      "Available for home visit physiotherapy during early post-operative weeks",
+      "Specialized training in joint replacement rehabilitation (MPT Orthopedics)"
+    ],
+    serviceAreas: [
+      "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
+      "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
+    ],
+    homeCare: [
+      "Strictly follow hip precautions: no bending past 90 degrees, no crossing legs, no twisting the operated leg inward",
+      "Use elevated toilet seat and chair/armchair risers as recommended",
+      "Sleep with a pillow between your legs (if instructed by your surgeon)",
+      "Perform prescribed ankle pumps and gentle hip exercises daily",
+      "Apply ice packs for 15-20 minutes after activities to reduce swelling"
+    ],
+    whenToVisit: "Begin rehabilitation within 3 to 5 days of hospital discharge. Home visits are strongly recommended for the first 2 to 4 weeks while hip precautions are strict and mobility is limited.",
+    faqs: [
+      {
+        question: "What are hip precautions and why are they important?",
+        answer: "Hip precautions protect the new hip from dislocation during the healing period. For posterior approach surgery, you must avoid bending past 90 degrees, crossing your legs, and twisting the operated leg inward. These precautions typically last 6 to 12 weeks."
+      },
+      {
+        question: "How soon can I walk after hip replacement?",
+        answer: "Most patients begin walking with a walker the day after surgery. You'll progressively transition to a cane over 4 to 6 weeks, and walk independently by week 8 to 12 with consistent rehabilitation."
+      },
+      {
+        question: "Do you offer home visit physiotherapy after hip replacement in Manikonda?",
+        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation across Manikonda, Puppalguda, and surrounding areas. Home visits are especially valuable during the early weeks when hip precautions limit your mobility."
+      },
+      {
+        question: "When can I drive after hip replacement?",
+        answer: "For right hip replacement, you can typically drive by week 4 to 6 once off narcotic pain medications and able to move your leg safely. For left hip replacement, driving may be permitted earlier."
+      },
+      {
+        question: "When can I sleep on my side after hip replacement?",
+        answer: "You can sleep on your operated side once it is comfortable and your surgeon approves, typically after 6 to 12 weeks. Use a pillow between your legs for support during the transition."
+      },
+      {
+        question: "How do I book post-hip replacement rehabilitation?",
+        answer: "Call +91 76010 26596 or message us on WhatsApp before or after your surgery. Provide your surgical discharge summary for protocol coordination."
       }
     ]
   }

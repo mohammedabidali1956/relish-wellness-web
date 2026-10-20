@@ -63,7 +63,7 @@ const ServicesPage: React.FC = () => {
         url: canonicalUrl,
         name: "Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic",
         description:
-          "Comprehensive condition-based physiotherapy in Manikonda, Hyderabad: Spine, Neck, Knee, Shoulder, Neuro Rehab, Sports Injuries & Home Visits by Dr. Mohammed Hamid Ali, BPT.",
+          "Comprehensive condition-based physiotherapy in Manikonda, Hyderabad: Spine, Neck, Knee, Shoulder, Neuro Rehab, Sports Injuries & Home Visits by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
         inLanguage: "en-IN",
         about: {
           "@type": "Physiotherapy",
@@ -103,7 +103,7 @@ const ServicesPage: React.FC = () => {
         <meta property="og:title" content="Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic" />
         <meta
           property="og:description"
-          content="Over 40 dedicated clinical condition and rehabilitation programs by Dr. Mohammed Hamid Ali (BPT) in Manikonda & Puppalguda."
+          content="Over 40 dedicated clinical condition and rehabilitation programs by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) in Manikonda & Puppalguda."
         />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
@@ -125,7 +125,7 @@ const ServicesPage: React.FC = () => {
 
             <p className="text-base sm:text-lg text-[#4a5568] leading-relaxed">
               Every condition is unique and deserves dedicated, evidence-based care. Under the direct supervision of{" "}
-              <strong className="text-[#081a2e] font-semibold">Dr. Mohammed Hamid Ali, BPT (8+ Years Experience)</strong>, we provide personalized physical therapy for individual spine, joint, neurological, and sports conditions at our Manikonda clinic and via home physiotherapy visits.
+              <strong className="text-[#081a2e] font-semibold">Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413 (8+ Years Experience)</strong>, we provide personalized physical therapy for individual spine, joint, neurological, and sports conditions at our Manikonda clinic and via home physiotherapy visits.
             </p>
 
             {/* Quick Stats Banner */}

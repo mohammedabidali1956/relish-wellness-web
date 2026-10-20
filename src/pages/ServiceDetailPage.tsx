@@ -111,7 +111,12 @@ export const ServiceDetailPage: React.FC = () => {
           "@type": "Person",
           name: "Dr. Mohammed Hamid Ali",
           jobTitle: "Consultant Physiotherapist",
-          hasCredential: "BPT (Bachelor of Physiotherapy)",
+          hasCredential: "BPT, MPT (Orthopedics)",
+          identifier: {
+            "@type": "PropertyValue",
+            name: "Registration Number",
+            value: "0413"
+          },
           worksFor: {
             "@type": "MedicalClinic",
             name: "Dr. Hamid's Physio and Pain Clinic"
@@ -237,7 +242,7 @@ export const ServiceDetailPage: React.FC = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-[#4a5568]">
                 <div className="flex items-center gap-2 bg-white/80 border border-[#e5dec9] px-3 py-2 rounded-lg">
                   <ShieldCheck className="w-4 h-4 text-[#8a5d24] shrink-0" />
-                  <span>Dr. Hamid, BPT (8+ Yrs)</span>
+                  <span>Dr. Hamid, BPT, MPT (8+ Yrs)</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/80 border border-[#e5dec9] px-3 py-2 rounded-lg">
                   <Award className="w-4 h-4 text-[#8a5d24] shrink-0" />
@@ -290,7 +295,7 @@ export const ServiceDetailPage: React.FC = () => {
                     <span>Verified Clinical Protocol</span>
                   </div>
                   <p className="text-xs text-[#64748b] leading-relaxed">
-                    1-on-1 personalized sessions by Dr. Mohammed Hamid Ali (BPT). Complete assessment and progressive milestone recovery.
+                    1-on-1 personalized sessions by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics). Complete assessment and progressive milestone recovery.
                   </p>
                 </div>
               </div>
@@ -384,7 +389,7 @@ export const ServiceDetailPage: React.FC = () => {
                   Our Diagnostic Evaluation in Manikonda
                 </h2>
                 <p className="text-sm sm:text-base text-[#4a5568] leading-relaxed">
-                  Before applying any treatment, Dr. Mohammed Hamid Ali (BPT) conducts a comprehensive 45-minute clinical evaluation to pinpoint the exact musculoskeletal root cause.
+                  Before applying any treatment, Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) conducts a comprehensive 45-minute clinical evaluation to pinpoint the exact musculoskeletal root cause.
                 </p>
 
                 <div className="space-y-3">
@@ -542,7 +547,7 @@ export const ServiceDetailPage: React.FC = () => {
                   <div className="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-[#8a5d24] mb-3 shadow-xs bg-[#f4ede0]">
                     <img
                       src="/images/doctor/dr-hamid-actual.png"
-                      alt="Dr. Mohammed Hamid Ali, BPT Physiotherapist in Manikonda"
+                      alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist in Manikonda"
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
@@ -550,7 +555,7 @@ export const ServiceDetailPage: React.FC = () => {
                     Dr. Mohammed Hamid Ali
                   </h3>
                   <p className="text-xs font-semibold text-[#8a5d24]">
-                    Consultant Physiotherapist • BPT
+                    Consultant Physiotherapist • BPT, MPT (Ortho)
                   </p>
                   <p className="text-xs text-[#64748b] mt-1">
                     8+ Years Clinical Experience in Hyderabad

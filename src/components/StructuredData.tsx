@@ -56,8 +56,13 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     "founder": {
       "@type": "Person",
       "name": "Dr. Mohammed Hamid Ali",
-      "jobTitle": "Physiotherapist",
-      "hasCredential": "BPT (Bachelor of Physiotherapy)"
+      "jobTitle": "Consultant Physiotherapist",
+      "hasCredential": "BPT, MPT (Orthopedics)",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "Registration Number",
+        "value": "0413"
+      }
     },
     "areaServed": {
       "@type": "GeoCircle",

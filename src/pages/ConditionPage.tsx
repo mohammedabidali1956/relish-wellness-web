@@ -79,7 +79,7 @@ const ConditionPage = () => {
   const conditionSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    headline: `${condition.title} in Manikonda | Dr. Mohammed Hamid Ali, BPT`,
+    headline: `${condition.title} in Manikonda | Dr. Mohammed Hamid Ali, BPT, MPT`,
     description: condition.shortDescription,
     url: canonicalUrl,
     mainEntityOfPage: canonicalUrl,
@@ -87,7 +87,12 @@ const ConditionPage = () => {
       "@type": "Person",
       name: "Dr. Mohammed Hamid Ali",
       jobTitle: "Consultant Physiotherapist",
-      hasCredential: "BPT"
+      hasCredential: "BPT, MPT (Orthopedics)",
+      identifier: {
+        "@type": "PropertyValue",
+        name: "Registration Number",
+        value: "0413"
+      }
     },
     publisher: {
       "@type": "Physiotherapy",
@@ -119,7 +124,7 @@ const ConditionPage = () => {
       <StructuredData
         type="service"
         pageTitle={`${condition.title} in Manikonda | Dr. Hamid's Physio Clinic`}
-        pageDescription={`${condition.shortDescription} Expert treatment in Puppalguda, Manikonda, Hyderabad under Dr. Mohammed Hamid Ali, BPT.`}
+        pageDescription={`${condition.shortDescription} Expert treatment in Puppalguda, Manikonda, Hyderabad under Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).`}
       />
 
       <Helmet>
@@ -189,7 +194,7 @@ const ConditionPage = () => {
                 />
                 <div className="p-4 bg-white border-t border-[#e5dec9] text-center">
                   <p className="text-xs font-bold text-[#081a2e]">
-                    Clinical Assessment under Dr. Mohammed Hamid Ali, BPT
+                    Clinical Assessment under Dr. Mohammed Hamid Ali, BPT, MPT
                   </p>
                   <p className="text-[11px] text-[#718096] mt-0.5">
                     Near Friends Colony Park, Puppalguda, Manikonda
@@ -286,7 +291,7 @@ const ConditionPage = () => {
               <ul className="space-y-3">
                 {(condition.whyChooseDoctor || [
                   "8+ years of musculoskeletal and spinal rehabilitation experience",
-                  "Direct 1-on-1 care under Dr. Mohammed Hamid Ali, BPT",
+                  "Direct 1-on-1 care under Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics)",
                   "Patient-first approach with clear biomechanical explanations",
                   "Over 100+ positive patient reviews across Hyderabad"
                 ]).map((reason, idx) => (
@@ -439,7 +444,7 @@ const ConditionPage = () => {
               Ready to Overcome Your Pain?
             </h2>
             <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              Schedule your 1-on-1 assessment with Dr. Mohammed Hamid Ali (BPT) at our Manikonda clinic, or request an in-home physiotherapy session.
+              Schedule your 1-on-1 assessment with Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) at our Manikonda clinic, or request an in-home physiotherapy session.
             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-3">
               <Button

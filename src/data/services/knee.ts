@@ -8,7 +8,7 @@ export const kneeServices: ServiceDetail[] = [
     metaTitle: "Knee Pain Physiotherapy in Manikonda | Expert Knee Care Hyderabad",
     metaDescription: "Relieve acute and chronic knee pain with specialized physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali, BPT. Book today!",
     h1: "Knee Pain Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Specialized clinical rehabilitation for acute and chronic knee discomfort, patellofemoral pain, stair-climbing ache, and joint stiffness.",
+    shortDescription: "Comprehensive physiotherapy for knee pain, arthritis, ligament strain, stair-climbing difficulty, and sports-related knee problems. Aims to reduce pain and improve daily function.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Knee pain physiotherapy and knee joint rehabilitation in Manikonda clinic",
     whatItIs: "Knee pain is one of the most disabling musculoskeletal complaints, directly impairing basic daily activities such as walking, descending stairs, squatting, and rising from low seats. The knee is a modified hinge joint that bears up to 3 to 5 times your body weight during stair climbing and squatting. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we evaluate the entire kinetic chain — from the hip abductors down to the foot and ankle — to pinpoint why your knee is absorbing abnormal mechanical stress.",
@@ -491,6 +491,179 @@ export const kneeServices: ServiceDetail[] = [
       {
         question: "How do I book post-surgical knee rehabilitation?",
         answer: "Call +91 76010 26596 or reach out via WhatsApp to coordinate clinic sessions or home visits."
+      }
+    ]
+  },
+  {
+    slug: "runner-knee-physiotherapy-manikonda",
+    category: "Knee",
+    title: "Runner's Knee Physiotherapy",
+    metaTitle: "Runner's Knee Physiotherapy in Manikonda | Patellofemoral Pain Treatment Hyderabad",
+    metaDescription: "Relieve runner's knee pain with specialized physiotherapy in Manikonda, Hyderabad. Expert care for runners and active individuals by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    h1: "Runner's Knee Physiotherapy in Manikonda, Hyderabad",
+    shortDescription: "Specialized clinical rehabilitation for patellofemoral pain syndrome, anterior knee pain, and running-related knee injuries.",
+    imageSrc: "/images/services/condition-knee-pain.webp",
+    altText: "Runner's knee physiotherapy and patellofemoral pain treatment in Manikonda clinic",
+    whatItIs: "Runner's knee, medically known as patellofemoral pain syndrome (PFPS), is one of the most common overuse injuries affecting runners, joggers, cyclists, and fitness enthusiasts. The condition involves pain around or behind the kneecap (patella), particularly during activities that load the knee in flexion—such as running, squatting, climbing stairs, or sitting with bent knees for extended periods. The pain arises from abnormal tracking of the patella within the femoral groove, causing irritation to the cartilage and surrounding soft tissues. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide comprehensive gait analysis, biomechanical correction, and progressive rehabilitation to restore pain-free running.",
+    causes: [
+      "Weakness in the vastus medialis obliquus (VMO) allowing lateral patellar tracking",
+      "Hip abductor and external rotator weakness causing dynamic knee valgus during running",
+      "Tight iliotibial band (ITB), hamstrings, or hip flexors increasing lateral patellar forces",
+      "Training errors including rapid increases in mileage, hill running, or hard surface training",
+      "Poor foot biomechanics such as overpronation causing excessive tibial internal rotation",
+      "Improper running shoes or worn-out footwear lacking adequate support"
+    ],
+    symptoms: [
+      "Gradual onset of pain around or behind the kneecap during or after running",
+      "Pain when climbing or descending stairs, particularly going downhill",
+      "Discomfort when sitting with knees bent for prolonged periods (movie theater sign)",
+      "Crepitus or grinding sensation when bending and straightening the knee",
+      "Mild swelling around the kneecap and tenderness along the patellar edges"
+    ],
+    howPhysioHelps: "Runner's knee responds excellently to targeted physiotherapy addressing the underlying biomechanical causes. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) performs comprehensive kinetic chain assessment from the hip to the foot, identifying and correcting muscle imbalances, flexibility deficits, and movement pattern faults. Treatment includes patellar taping for immediate pain relief, hip strengthening to control knee alignment, and progressive running re-education to restore pain-free training.",
+    assessmentProcess: [
+      "Running gait analysis to identify biomechanical faults, cadence, and foot strike pattern",
+      "Single-leg squat and step-down test to evaluate dynamic knee valgus and hip control",
+      "Patellar tracking, glide, and tilt assessment in weight-bearing and non-weight-bearing positions",
+      "Flexibility testing of ITB, hamstrings, hip flexors, and gastrocnemius",
+      "Hip abductor and external rotator strength testing comparing both sides"
+    ],
+    treatmentApproach: [
+      "Patellar McConnell taping to improve tracking and provide immediate pain relief",
+      "Targeted hip strengthening (gluteus medius, maximus, and external rotators)",
+      "VMO-specific strengthening exercises to balance patellar tracking forces",
+      "ITB, hamstring, and hip flexor stretching and foam rolling program",
+      "Running form correction, cadence optimization, and gradual return-to-run program"
+    ],
+    expectedRecovery: "Most runners experience significant pain reduction within 2 to 4 weeks of starting rehabilitation. Full return to pain-free running at previous distances typically occurs within 6 to 10 weeks with consistent exercise compliance.",
+    whyChooseDoctor: [
+      "8+ years of clinical experience treating runners and endurance athletes in Hyderabad",
+      "Specialized training in running biomechanics and sports injury rehabilitation",
+      "Comprehensive kinetic chain assessment addressing root causes, not just symptoms",
+      "Convenient Manikonda clinic near running tracks and fitness centers"
+    ],
+    serviceAreas: [
+      "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
+      "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
+    ],
+    homeCare: [
+      "Reduce running mileage by 50% and avoid hills during the acute pain phase",
+      "Apply ice packs for 15 minutes after runs to control inflammation",
+      "Perform prescribed hip strengthening exercises daily",
+      "Consider a temporary switch to cycling or swimming to maintain fitness",
+      "Replace running shoes every 500-600 kilometers or when cushioning feels flat"
+    ],
+    whenToVisit: "Consult Dr. Hamid if knee pain has persisted for more than a week despite rest, prevents you from running your normal distance, or recurs whenever you increase your training volume.",
+    faqs: [
+      {
+        question: "Can I keep running with runner's knee?",
+        answer: "During the acute painful phase, reduce mileage by 50% and avoid hills and speed work. As symptoms improve with physiotherapy, gradually rebuild distance following a structured return-to-run program."
+      },
+      {
+        question: "How is runner's knee different from other knee pain?",
+        answer: "Runner's knee specifically involves pain around or behind the kneecap related to abnormal patellar tracking. It differs from ITB syndrome (lateral knee pain), patellar tendinitis (pain below the kneecap), and meniscus injuries (joint line pain)."
+      },
+      {
+        question: "Do I need new running shoes for runner's knee?",
+        answer: "Worn-out or improperly matched shoes can contribute to runner's knee. We assess your foot type and gait to recommend appropriate footwear, though shoes alone rarely fix the problem—hip strengthening is essential."
+      },
+      {
+        question: "Will strengthening my hips really help my knee pain?",
+        answer: "Absolutely. Weak hip abductors allow the knee to collapse inward during running, dramatically increasing patellofemoral stress. Strengthening these muscles is one of the most evidence-based treatments for runner's knee."
+      },
+      {
+        question: "Do you treat runners from Gachibowli and Manikonda running groups?",
+        answer: "Yes, we frequently treat runners from running clubs across Hyderabad, including Gachibowli, Manikonda, and Hitec City running communities."
+      },
+      {
+        question: "How do I book a runner's knee assessment?",
+        answer: "Call +91 76010 26596 or message us on WhatsApp to schedule your running injury consultation."
+      }
+    ]
+  },
+  {
+    slug: "patellar-tracking-disorder-physiotherapy-manikonda",
+    category: "Knee",
+    title: "Patellar Tracking Disorder Physiotherapy",
+    metaTitle: "Patellar Tracking Disorder Physiotherapy in Manikonda | Kneecap Alignment Hyderabad",
+    metaDescription: "Specialized physiotherapy for patellar tracking disorder and kneecap alignment issues in Manikonda, Hyderabad. Expert care by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    h1: "Patellar Tracking Disorder Physiotherapy in Manikonda, Hyderabad",
+    shortDescription: "Specialized clinical rehabilitation for abnormal kneecap tracking, patellar malalignment, and anterior knee dysfunction.",
+    imageSrc: "/images/services/condition-knee-pain.webp",
+    altText: "Patellar tracking disorder physiotherapy and kneecap alignment treatment in Manikonda clinic",
+    whatItIs: "Patellar tracking disorder occurs when the kneecap (patella) does not move smoothly within its groove on the thigh bone (femoral trochlea) during knee bending and straightening. Instead of tracking centrally, the patella may shift laterally, tilt, or rotate abnormally, causing uneven pressure on the cartilage, pain, and potential joint damage over time. This condition commonly affects young active adults, women with wider pelvises, and individuals with muscle imbalances around the knee. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide specialized assessment and targeted rehabilitation to correct patellar mechanics and restore pain-free knee function.",
+    causes: [
+      "Weakness in the vastus medialis obliquus (VMO) failing to counteract lateral pull",
+      "Tightness in the lateral retinaculum, ITB, or vastus lateralis pulling the patella outward",
+      "Structural factors including high Q-angle (common in women), shallow trochlear groove, or patella alta",
+      "Hip abductor weakness causing dynamic knee valgus and internal tibial rotation",
+      "Poor foot mechanics with overpronation increasing tibial internal rotation"
+    ],
+    symptoms: [
+      "Pain in the front of the knee, particularly when climbing stairs, squatting, or standing from sitting",
+      "Sensation of the kneecap catching, grinding, or popping during knee movement",
+      "Feeling that the kneecap is unstable, slipping, or may dislocate",
+      "Pain when sitting with bent knees for prolonged periods",
+      "Visible lateral shifting of the patella when extending the knee"
+    ],
+    howPhysioHelps: "Patellar tracking correction requires a comprehensive approach addressing the entire lower limb kinetic chain. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) combines patellar mobilization techniques to release tight lateral structures, targeted VMO strengthening to improve medial pull, hip stability training, and biomechanical correction. Patellar taping provides immediate symptom relief while the underlying muscle imbalances are corrected through progressive exercise.",
+    assessmentProcess: [
+      "Patellar tracking observation during active knee extension in sitting and standing",
+      "Patellar glide, tilt, and rotation mobility assessment",
+      "Q-angle measurement and lower limb alignment analysis",
+      "VMO activation timing testing and comparison with vastus lateralis",
+      "Single-leg squat analysis for dynamic knee valgus and hip control"
+    ],
+    treatmentApproach: [
+      "Patellar mobilization to release tight lateral retinaculum and improve medial glide",
+      "McConnell patellar taping to correct tracking and provide immediate pain relief",
+      "Isolated VMO strengthening exercises (inner range quads, terminal knee extension)",
+      "Hip abductor and external rotator strengthening to control femoral rotation",
+      "ITB and lateral structure stretching with foam rolling and specific stretches"
+    ],
+    expectedRecovery: "Most patients experience noticeable improvement in tracking and pain reduction within 3 to 5 weeks. Long-term correction and full return to activities typically requires 6 to 10 weeks of consistent exercise.",
+    whyChooseDoctor: [
+      "8+ years of clinical expertise in patellofemoral biomechanics and knee rehabilitation",
+      "Specialized orthopedic training in patellar tracking disorders (MPT Orthopedics)",
+      "Comprehensive kinetic chain approach addressing hip, knee, and foot contributions",
+      "Convenient Manikonda clinic with evening appointments for working professionals"
+    ],
+    serviceAreas: [
+      "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
+      "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
+    ],
+    homeCare: [
+      "Perform VMO activation exercises (straight leg raises with foot externally rotated) 3 times daily",
+      "Apply ice for 15 minutes after activities that provoke knee pain",
+      "Avoid deep squats and lunges until tracking is corrected and pain-free",
+      "Use patellar taping as taught by Dr. Hamid during aggravating activities",
+      "Stretch the ITB and hip flexors daily to reduce lateral tension on the patella"
+    ],
+    whenToVisit: "Seek assessment if you experience persistent front-of-knee pain, grinding sensations, or feelings of kneecap instability. Early treatment prevents cartilage damage and progression to arthritis.",
+    faqs: [
+      {
+        question: "Can patellar tracking disorder be corrected without surgery?",
+        answer: "Yes, the vast majority of patellar tracking disorders are successfully corrected with specialized physiotherapy. Surgery is reserved only for cases with structural abnormalities or failed conservative management."
+      },
+      {
+        question: "Why is my kneecap tracking incorrectly?",
+        answer: "Multiple factors contribute: weakness in the inner quad muscle (VMO), tightness in outer structures (ITB and lateral retinaculum), hip weakness, and sometimes structural factors like a high Q-angle or shallow groove."
+      },
+      {
+        question: "How does hip strength affect my kneecap?",
+        answer: "Weak hip muscles allow your thigh bone to rotate inward and your knee to collapse inward during movement, which pulls the kneecap laterally out of its groove. Strengthening hip abductors is essential for correcting tracking."
+      },
+      {
+        question: "Will patellar taping fix the problem permanently?",
+        answer: "Taping provides temporary relief and improved tracking, allowing you to exercise pain-free. The permanent fix comes from strengthening exercises that correct the underlying muscle imbalances."
+      },
+      {
+        question: "Do you treat patellar tracking issues in athletes in Manikonda?",
+        answer: "Yes, we frequently treat athletes, runners, and fitness enthusiasts from Manikonda and Gachibowli with patellar tracking disorders using comprehensive kinetic chain rehabilitation."
+      },
+      {
+        question: "How do I book a patellar tracking assessment?",
+        answer: "Call +91 76010 26596 or message us on WhatsApp to schedule your knee biomechanics consultation."
       }
     ]
   }

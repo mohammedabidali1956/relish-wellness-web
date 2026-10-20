@@ -8,7 +8,7 @@ export const spineAndBackServices: ServiceDetail[] = [
     metaTitle: "Back Pain Physiotherapy in Manikonda | Dr. Hamid's Physio Clinic",
     metaDescription: "Relieve acute and chronic back pain with evidence-based physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali, BPT. Book today!",
     h1: "Back Pain Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Specialized clinical physiotherapy for acute lumbar strain, chronic low back ache, and postural spinal stiffness in Manikonda.",
+    shortDescription: "Clinical physiotherapy for acute and chronic lower back pain, muscle spasm, postural strain, and movement-related back discomfort in Manikonda. Focus on pain relief, mobility restoration, and preventing recurrence.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Back pain physiotherapy treatment and spinal care in Manikonda clinic",
     whatItIs: "Back pain is the leading cause of activity restriction and workplace absence worldwide. It encompasses discomfort ranging from a dull, persistent ache in the lumbar spine to sudden, debilitating spasms that restrict simple daily movements such as bending, sitting, or standing up. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we look beyond surface symptoms to identify whether your back pain is rooted in disc pathology, facet joint irritation, ligamentous strain, or deep muscular imbalances.",
@@ -95,7 +95,7 @@ export const spineAndBackServices: ServiceDetail[] = [
     metaTitle: "Sciatica Physiotherapy in Manikonda | Nerve Pain Relief Hyderabad",
     metaDescription: "Relieve shooting sciatic nerve pain, leg numbness, and tingling with expert sciatica physiotherapy in Manikonda by Dr. Mohammed Hamid Ali, BPT. Call today!",
     h1: "Sciatica Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Specialized clinical nerve decompression and rehabilitation for radiating sciatic pain, leg tingling, and buttock ache.",
+    shortDescription: "Targeted treatment for sciatic nerve pain, radiating leg pain, tingling, numbness, and disc-related sciatica. Includes assessment, nerve mobility work, and progressive rehabilitation.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Sciatica physiotherapy and sciatic nerve decompression in Manikonda clinic",
     whatItIs: "Sciatica is nerve pain caused by irritation, inflammation, or mechanical compression of the sciatic nerve — the largest nerve in the human body. The pain originates in the lower lumbar spine or buttock and radiates down through the back of the thigh, calf, and into the foot. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we pinpoint the exact anatomical site of sciatic nerve entrapment — whether from a lumbar disc herniation, spinal canal narrowing, or piriformis muscle impingement.",
@@ -268,7 +268,7 @@ export const spineAndBackServices: ServiceDetail[] = [
     metaTitle: "Disc Bulge Physiotherapy in Manikonda | Herniated Disc Treatment",
     metaDescription: "Evidence-based disc bulge and herniated disc physiotherapy in Manikonda, Hyderabad. Non-surgical recovery by Dr. Mohammed Hamid Ali, BPT. Book your consultation!",
     h1: "Disc Bulge Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Advanced non-surgical rehabilitation for lumbar disc bulges, disc protrusions, and discogenic nerve root compression.",
+    shortDescription: "Specialised physiotherapy for disc bulge and prolapsed intervertebral disc problems. Focuses on reducing nerve pressure, improving spinal stability, and restoring safe movement.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Disc bulge physiotherapy and herniated disc treatment in Manikonda clinic",
     whatItIs: "An intervertebral disc bulge occurs when the tough outer ring of the spinal disc (annulus fibrosus) weakens or tears, allowing the soft gelatinous core (nucleus pulposus) to bulge outward into the spinal canal or intervertebral foramen. Most commonly occurring at the L4-L5 and L5-S1 lumbar levels, disc bulges can press against spinal nerves, causing severe localized back pain or radiating pain into the gluteal region and legs. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we provide specialized non-surgical disc decompression protocols designed to retract disc material and stimulate annular healing.",
@@ -594,6 +594,88 @@ export const spineAndBackServices: ServiceDetail[] = [
       {
         question: "How can I book a full spine consultation?",
         answer: "Call +91 76010 26596 or connect with us on WhatsApp to schedule an assessment."
+      }
+    ]
+  },
+  {
+    slug: "spondylolisthesis-physiotherapy-manikonda",
+    category: "Spine & Back",
+    title: "Spondylolisthesis Physiotherapy",
+    metaTitle: "Spondylolisthesis Physiotherapy in Manikonda | Vertebral Slip Care Hyderabad",
+    metaDescription: "Specialized physiotherapy for spondylolisthesis and vertebral slippage in Manikonda, Hyderabad. Expert conservative care by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics). Book today!",
+    h1: "Spondylolisthesis Physiotherapy in Manikonda, Hyderabad",
+    shortDescription: "Specialized clinical rehabilitation for vertebral slippage, spinal instability, and nerve compression from spondylolisthesis.",
+    imageSrc: "/images/services/condition-back-pain.webp",
+    altText: "Spondylolisthesis physiotherapy and vertebral slip rehabilitation in Manikonda clinic",
+    whatItIs: "Spondylolisthesis is a spinal condition where one vertebra slips forward over the vertebra below it, most commonly occurring at the L4-L5 or L5-S1 levels. This forward slippage can narrow the spinal canal, compress nerve roots, and cause persistent lower back pain, hamstring tightness, and radiating leg symptoms. The condition ranges from Grade I (mild, less than 25% slippage) to Grade V (complete displacement). At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide specialized conservative management for stable spondylolisthesis, focusing on core stabilization, spinal decompression, and functional strengthening to avoid or delay surgical intervention.",
+    causes: [
+      "Degenerative changes in the discs and facet joints leading to segmental instability",
+      "Spondylolysis (stress fracture in the pars interarticularis) from repetitive hyperextension in athletes",
+      "Congenital vertebral defects affecting the structural integrity of the posterior elements",
+      "Age-related weakening of spinal ligaments and supporting musculature",
+      "Repetitive heavy lifting, high-impact sports, or occupational spinal stress over decades"
+    ],
+    symptoms: [
+      "Persistent lower back ache that worsens with standing, walking, or arching backward",
+      "Tightness in both hamstrings making it difficult to touch your toes",
+      "Pain, numbness, or tingling radiating into the buttocks or legs (neurogenic claudication)",
+      "Weakness or heaviness in the legs after walking short distances",
+      "Pain relief when sitting or bending forward (shopping cart sign)"
+    ],
+    howPhysioHelps: "Conservative physiotherapy is highly effective for stable Grade I and II spondylolisthesis. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) implements a flexion-biased stabilization program that reduces shear forces on the slipped vertebra. Core bracing exercises, posterior pelvic tilt training, and neutral spine mechanics protect the unstable segment while strengthening the muscular corset that supports your spine during daily activities.",
+    assessmentProcess: [
+      "Detailed review of standing lateral and flexion/extension X-rays to grade the slippage and assess stability",
+      "Segmental spinal stability testing and postural deviation analysis",
+      "Neurological examination including dermatomal sensory mapping, reflex testing, and myotomal strength",
+      "Hamstring flexibility and hip range of motion assessment",
+      "Functional walking tolerance and lumbar extension provocation testing"
+    ],
+    treatmentApproach: [
+      "Flexion-biased exercises (posterior pelvic tilts, bent-knee crunches) to reduce lumbar lordosis and shear stress",
+      "Deep core stabilization training targeting transversus abdominis and multifidus activation",
+      "Gentle neural mobilization to address associated nerve root irritation",
+      "Hamstring and hip flexor flexibility program to reduce posterior chain tension",
+      "Activity modification education and safe lifting mechanics training"
+    ],
+    expectedRecovery: "Stable Grade I and II spondylolisthesis typically achieves significant pain reduction and improved function within 6 to 10 weeks of consistent stabilization exercises. Long-term management with home exercises helps maintain spinal stability and prevent progression.",
+    whyChooseDoctor: [
+      "8+ years of clinical experience managing spinal instability and degenerative conditions",
+      "Specialized training in orthopedic spinal biomechanics (MPT Orthopedics)",
+      "Evidence-based flexion-biased protocols tailored to your specific grade and symptoms",
+      "Convenient Manikonda clinic with dedicated home visit options available"
+    ],
+    serviceAreas: [
+      "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
+      "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
+    ],
+    homeCare: [
+      "Avoid prolonged standing in excessive lumbar extension; maintain a slight posterior pelvic tilt",
+      "Perform prescribed posterior pelvic tilt exercises 3 times daily",
+      "Use a supportive chair with lumbar support set slightly higher than usual to encourage flexion",
+      "Avoid high-impact activities, heavy deadlifts, and excessive backward bending",
+      "Sleep on your side with knees bent or on your back with a pillow under the knees"
+    ],
+    whenToVisit: "Consult Dr. Hamid if you have been diagnosed with spondylolisthesis, experience persistent back pain with leg symptoms, or have been advised to consider spinal surgery and want to explore conservative options first.",
+    faqs: [
+      {
+        question: "Can spondylolisthesis be treated without surgery?",
+        answer: "Yes, the majority of stable Grade I and II spondylolisthesis cases are successfully managed with specialized physiotherapy focusing on core stabilization and flexion-biased exercises, often avoiding or significantly delaying the need for surgery."
+      },
+      {
+        question: "What exercises should I avoid with spondylolisthesis?",
+        answer: "Avoid excessive lumbar extension exercises like prone press-ups, backbends, overhead presses with excessive arching, and high-impact activities. Focus on flexion-based core exercises and neutral spine movements."
+      },
+      {
+        question: "Will my vertebra slip further without surgery?",
+        answer: "With proper core stabilization and activity modification, most stable low-grade spondylolisthesis does not progress. Regular monitoring through X-rays and consistent exercise are key to preventing advancement."
+      },
+      {
+        question: "Do you provide home visit physiotherapy for spondylolisthesis in Manikonda?",
+        answer: "Yes, Dr. Hamid provides personalized home visit physiotherapy across Manikonda, Puppalguda, and surrounding areas for patients with spinal conditions requiring specialized care."
+      },
+      {
+        question: "How do I book a consultation for spondylolisthesis?",
+        answer: "Call +91 76010 26596 or reach out via WhatsApp with your X-ray or MRI reports to schedule a comprehensive spinal assessment."
       }
     ]
   }

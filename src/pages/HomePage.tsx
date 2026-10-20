@@ -206,7 +206,7 @@ const HomePage = () => {
 
               {/* Subheading */}
               <p className="text-base sm:text-lg lg:text-xl text-[#4a5568] leading-relaxed max-w-xl font-normal">
-                Helping you move better, feel stronger and live an active life with personalized physiotherapy treatment under Dr. Mohammed Hamid Ali, BPT.
+                Helping you move better, feel stronger and live an active life with personalized physiotherapy treatment under Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).
               </p>
 
               {/* Two CTA Buttons Side by Side */}
@@ -252,14 +252,14 @@ const HomePage = () => {
               <div className="relative w-full max-w-[420px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-b from-[#fbf7ee] to-[#ede2cd]">
                 <img
                   src="/images/doctor/dr-hamid-actual.png"
-                  alt="Dr. Mohammed Hamid Ali, BPT - Consultant Physiotherapist holding anatomical spine model at Dr. Hamid's Physio Clinic Manikonda"
+                  alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist holding anatomical spine model at Dr. Hamid's Physio Clinic Manikonda"
                   className="w-full h-auto aspect-[3/4] object-cover object-top drop-shadow-sm"
                   loading="eager"
                 />
                 
                 {/* Subtle overlay badge for credentials */}
                 <div className="absolute bottom-3 right-3 bg-[#081a2e]/90 backdrop-blur-md text-white px-3.5 py-1.5 rounded-lg text-xs font-medium shadow-md">
-                  Dr. Mohammed Hamid Ali, BPT
+                  Dr. Mohammed Hamid Ali, BPT, MPT
                 </div>
               </div>
             </div>
@@ -445,7 +445,7 @@ const HomePage = () => {
               <div className="relative w-full max-w-md rounded-2xl overflow-hidden border-2 border-[#e5dec9] bg-gradient-to-b from-[#fbf7ee] to-[#ede2cd] shadow-lg">
                 <img
                   src="/images/doctor/dr-hamid-actual.png"
-                  alt="Dr. Mohammed Hamid Ali, BPT - Lead Physiotherapist Manikonda"
+                  alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist Manikonda"
                   className="w-full aspect-[3/4] object-cover object-top drop-shadow-sm"
                   loading="lazy"
                 />
@@ -454,7 +454,7 @@ const HomePage = () => {
                     Dr. Mohammed Hamid Ali
                   </h3>
                   <p className="text-sm font-medium text-[#8a5d24]">
-                    Bachelor of Physiotherapy (BPT) · 8+ Years Experience
+                    BPT, MPT (Orthopedics) · Regd. No. 0413 · 8+ Years Experience
                   </p>
                   <p className="text-xs text-[#718096] mt-2">
                     Consultant Physiotherapist &amp; Founder, Dr. Hamid&apos;s Physio and Pain Clinic
@@ -484,8 +484,8 @@ const HomePage = () => {
               <div className="grid grid-cols-3 gap-3 pt-3">
                 <div className="p-4 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-center">
                   <Award className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
-                  <p className="font-bold text-[#081a2e] text-sm">BPT Certified</p>
-                  <p className="text-[11px] text-[#718096]">Professional Degree</p>
+                  <p className="font-bold text-[#081a2e] text-sm">BPT, MPT</p>
+                  <p className="text-[11px] text-[#718096]">Orthopedics Specialist</p>
                 </div>
                 <div className="p-4 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-center">
                   <Clock className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
@@ -493,9 +493,9 @@ const HomePage = () => {
                   <p className="text-[11px] text-[#718096]">Clinical Experience</p>
                 </div>
                 <div className="p-4 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-center">
-                  <Users className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
-                  <p className="font-bold text-[#081a2e] text-sm">1-on-1 Care</p>
-                  <p className="text-[11px] text-[#718096]">Tailored Sessions</p>
+                  <ShieldCheck className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
+                  <p className="font-bold text-[#081a2e] text-sm">Regd. No. 0413</p>
+                  <p className="text-[11px] text-[#718096]">Licensed Therapist</p>
                 </div>
               </div>
 
