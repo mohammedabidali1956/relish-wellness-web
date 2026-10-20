@@ -324,6 +324,17 @@ const ServicesPage: React.FC = () => {
                       <p className="text-xs sm:text-sm text-[#4a5568] mt-1 max-w-2xl">
                         {group.description}
                       </p>
+                      {group.id === "sports-general" && (
+                        <a
+                          href="https://wa.me/917601026596?text=Hello%20Dr.%20Hamid%2C%20I%20would%20like%20to%20book%20a%20home%20physiotherapy%20visit."
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="home-visit-whatsapp mt-2 inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-emerald-700 hover:underline"
+                        >
+                          <MessageCircle className="w-4 h-4" />
+                          <span>WhatsApp to book home visit: +91 76010 26596</span>
+                        </a>
+                      )}
                     </div>
                     <span className="text-xs font-semibold text-[#64748b] bg-white border border-[#e5dec9] px-3 py-1 rounded-full self-start sm:self-auto">
                       {group.services.length} Specialized Programs
@@ -355,6 +366,17 @@ const ServicesPage: React.FC = () => {
                           <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5 flex-grow">
                             {service.shortDescription}
                           </p>
+                          {service.slug === "home-visit-physiotherapy-manikonda" && (
+                            <a
+                              href="https://wa.me/917601026596?text=Hello%20Dr.%20Hamid%2C%20I%20would%20like%20to%20book%20a%20home%20physiotherapy%20visit."
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="home-visit-whatsapp mb-4 inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-emerald-700 hover:underline"
+                            >
+                              <MessageCircle className="w-4 h-4" />
+                              <span>WhatsApp to book home visit: +91 76010 26596</span>
+                            </a>
+                          )}
 
                           <div className="pt-4 border-t border-[#f0e7d3] flex items-center justify-between">
                             <Link
@@ -425,13 +447,19 @@ const ServicesPage: React.FC = () => {
           <section className="bg-gradient-to-r from-[#081a2e] to-[#122842] rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl">
             <div className="max-w-2xl space-y-4 relative z-10">
               <span className="text-xs uppercase font-bold tracking-widest text-[#e5dec9]">
-                Personalized Clinical Consultation
+                Clinic Consultation &amp; Home Visits
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
-                Not sure which service is right for your pain?
+                Ready to start your recovery?
               </h2>
               <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
-                Consult directly with Dr. Mohammed Hamid Ali (BPT). We will evaluate your movement, explain the root cause, and create a custom recovery plan.
+                Book a consultation or home visit with Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413.
+              </p>
+              <p className="text-sm sm:text-base font-semibold">
+                Call or WhatsApp: +91 76010 26596
+              </p>
+              <p className="text-xs sm:text-sm text-slate-300">
+                Serving Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button
