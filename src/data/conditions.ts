@@ -330,10 +330,10 @@ export const conditions: Condition[] = [
   {
     slug: "home-visit-services",
     title: "Home Physiotherapy Visits",
-    shortDescription: "Professional in-home physiotherapy treatment across Manikonda, Puppalguda, Narsingi, and Gachibowli for elderly, post-op, and acute patients.",
+    shortDescription: "Professional in-home physiotherapy treatment across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas for elderly, post-op, and acute patients.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Physiotherapist providing home visit physiotherapy service in Manikonda",
-    overview: "For elderly seniors, post-operative patients, or individuals experiencing debilitating back spasms or neurological conditions, travelling to a clinic can be painful and impractical. Dr. Hamid's Physio and Pain Clinic offers trusted Home Visit Physiotherapy Services across Manikonda, Puppalguda, Alkapur Township, Shaikpet, Narsingi, Kokapet, and Gachibowli. Dr. Mohammed Hamid Ali (BPT) brings professional medical equipment, portable modalities, and customized rehabilitation right to the comfort and safety of your home.",
+    overview: "For elderly seniors, post-operative patients, or individuals experiencing debilitating back spasms or neurological conditions, travelling to a clinic can be painful and impractical. Dr. Hamid's Physio and Pain Clinic offers trusted Home Visit Physiotherapy Services across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas. Dr. Mohammed Hamid Ali (BPT) brings professional medical equipment, portable modalities, and customized rehabilitation right to the comfort and safety of your home.",
     causes: [
       "Recent orthopedic surgery (knee/hip replacement, spinal surgery, fractures)",
       "Severe acute back spasm or sciatic pain preventing sitting or travel",
@@ -360,11 +360,11 @@ export const conditions: Condition[] = [
       "Punctual, dignified, and compassionate home visits by Dr. Mohammed Hamid Ali",
       "Portable medical equipment brought directly to your home",
       "Tailored home exercise programs using your existing living space",
-      "Trusted by families across Puppalguda, Manikonda, and Financial District"
+      "Trusted by families across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and surrounding areas"
     ],
     serviceAreas: [
-      "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
-      "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
+      "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
+      "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
     ],
     homeCare: [
       "Remove loose rugs, floor cords, and clutter from walking pathways",
@@ -377,7 +377,7 @@ export const conditions: Condition[] = [
     faqs: [
       {
         question: "Which areas in Hyderabad do you cover for home visits?",
-        answer: "We cover Manikonda, Puppalguda, Friends Colony, Alkapur Township, Shaikpet, Narsingi, Kokapet, Gandipet, Financial District, and Gachibowli."
+        answer: "We cover Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas."
       },
       {
         question: "Do you bring treatment equipment for home visits?",

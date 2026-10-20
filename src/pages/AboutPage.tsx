@@ -30,8 +30,11 @@ const AboutPage = () => {
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-lg max-w-none">
             <div className="bg-card border border-border rounded-md p-8 md:p-12 mb-12">
-              <p className="text-lg leading-relaxed text-gray-700 mb-8">
-                Founded in 2021 by Dr. Mohammed Hamid Ali, Dr. Hamid's Physio and Pain Clinic has recently relocated to Manikonda, offering advanced physiotherapy and evidence-based rehabilitation in a modern, patient-centred environment. Now operating from Puppalguda near Friends Colony Park, the clinic focuses on accurate diagnosis, personalized treatment plans, and consistent, measurable recovery outcomes. Our approach combines professional expertise with updated techniques, making us a reliable choice for physiotherapy and pain management in the Manikonda–Puppalguda area.
+              <p className="text-lg leading-relaxed text-gray-700 mb-4">
+                Founded in 2021 by Dr. Mohammed Hamid Ali, Dr. Hamid's Physio and Pain Clinic offers advanced physiotherapy and evidence-based rehabilitation in a modern, patient-centred environment. Operating from Puppalguda, Manikonda (Opposite HDFC Bank ATM, near Friends Colony Park), the clinic focuses on accurate diagnosis, personalized treatment plans, and consistent, measurable recovery outcomes.
+              </p>
+              <p className="text-base leading-relaxed text-gray-600">
+                Our clinic serves as a primary, trusted physiotherapy center for patients across Manikonda and Puppalaguda, as well as neighbouring West Hyderabad communities including Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda, and the Seven Tombs area.
               </p>
             </div>
 

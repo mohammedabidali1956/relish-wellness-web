@@ -64,15 +64,67 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
         "value": "0413"
       }
     },
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 17.3989817,
-        "longitude": 78.390221
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Puppalaguda",
+        "description": "Primary clinic location"
       },
-      "geoRadius": "10000"
-    },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Manikonda",
+        "description": "Primary clinic location"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Lanco Hills"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Tolichowki"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Shaikpet"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "OU Colony"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Alkapur Township"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Khajaguda"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Narsingi"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Neknampur"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Golconda"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Seven Tombs"
+      },
+      {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 17.3989817,
+          "longitude": 78.390221
+        },
+        "geoRadius": "10000"
+      }
+    ],
     "medicalSpecialty": [
       "Physiotherapy",
       "Physical Therapy",
@@ -142,10 +194,10 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
       },
       {
         "@type": "Question",
-        "name": "How long does a physiotherapy session last?",
+        "name": "Which areas do you serve near Manikonda and Puppalaguda?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A typical physiotherapy session at Dr. Hamid's Physio and Pain Clinic lasts 30-45 minutes, depending on the treatment required and the condition being addressed."
+          "text": "Dr. Hamid's Physio and Pain Clinic is located in Puppalaguda, Manikonda, and conveniently serves patients from surrounding neighbourhoods including Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda, and the Seven Tombs area."
         }
       }
     ]

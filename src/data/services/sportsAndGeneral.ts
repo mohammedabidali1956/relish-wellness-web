@@ -94,7 +94,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     metaTitle: "Post-Surgical Physiotherapy in Manikonda | Dr. Hamid's Physio Clinic",
     metaDescription: "Expert post-operative rehabilitation in Manikonda, Hyderabad. Accelerated recovery for knee replacement, hip surgery, spine fusion & fractures. Book a session!",
     h1: "Post-Surgical Physiotherapy & Rehabilitation in Manikonda, Hyderabad",
-    shortDescription: "Doctor-supervised post-operative physical therapy restoring joint mobility, muscle activation, and independent functional living after orthopedic surgeries in Manikonda.",
+    shortDescription: "Doctor-supervised post-operative physical therapy restoring joint mobility, muscle activation, and independent functional living after orthopedic surgeries. Offers both clinic-based advanced therapy and dedicated home visit physiotherapy across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Post-surgical rehabilitation and orthopedic physiotherapy in Manikonda",
     whatItIs: "Post-surgical rehabilitation is the structured, physician-aligned physical therapy protocol administered following orthopedic, spinal, or trauma surgery. Surgical procedures such as total knee replacement (TKR), total hip arthroplasty (THA), arthroscopic ligament reconstructions, lumbar discectomies, and open reduction internal fixation (ORIF) for bone fractures successfully repair structural anatomy; however, recovery depends entirely on rehabilitating the surrounding muscles, nerves, and joint capsules. At Dr. Hamid's Physio and Pain Clinic in Manikonda, post-op physiotherapy ensures rapid scar remodeling, eliminates surgical swelling, prevents deep vein thrombosis (DVT), and safely restores normal joint movement.",
@@ -135,8 +135,8 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Strict compliance with evidence-based surgical protocols and patient safety guidelines"
     ],
     serviceAreas: [
-      "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
-      "Gachibowli", "Jubilee Hills", "Banjara Hills", "Kokapet", "Alkapur Township"
+      "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
+      "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
     ],
     homeCare: [
       "Strictly perform your prescribed bedside ankle pumps and quad sets every 2 hours while awake",
@@ -152,7 +152,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for post-surgery patients in Manikonda?",
-        answer: "Yes, Dr. Hamid's team provides comprehensive home visit physiotherapy across Manikonda, Puppalguda, Narsingi, and surrounding areas for patients who cannot travel comfortably to the clinic during early post-op recovery."
+        answer: "Yes, Dr. Hamid's team provides comprehensive home visit physiotherapy across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and surrounding areas for patients who cannot travel comfortably to the clinic during early post-op recovery."
       },
       {
         question: "Will post-surgery physiotherapy be extremely painful?",
@@ -304,9 +304,9 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Empathetic, reassuring patient-centered approach that builds trust and overcomes movement fear",
       "Convenient Manikonda clinic with easy ground-level access and dedicated home therapy visits"
     ],
-    serviceAreas: [
-      "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
-      "Kokapet", "Gachibowli", "Hitec City", "Alkapur Township"
+serviceAreas: [
+      "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
+      "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
     ],
     homeCare: [
       "Avoid total prolonged bed rest; engage in frequent short gentle walks around your home",
@@ -387,12 +387,12 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     whyChooseDoctor: [
       "8+ years of empathetic clinical experience dedicated to senior wellness and geriatric rehabilitation",
       "Patient, respectful communication style that puts elderly patients and their families at complete ease",
-      "Dedicated home visit physiotherapy available across Manikonda, Puppalguda, and surrounding suburbs",
+      "Dedicated home visit physiotherapy available across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and surrounding suburbs",
       "Holistic approach combining pain relief, fall prevention, and functional lifestyle independence"
     ],
     serviceAreas: [
-      "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
-      "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
+      "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
+      "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
     ],
     homeCare: [
       "Remove loose floor rugs, clear clutter from hallways, and ensure nightlights are plugged in near the bed",
@@ -478,8 +478,8 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Holistic approach avoiding unnecessary medical interventions while promoting natural physical growth"
     ],
     serviceAreas: [
-      "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
-      "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
+      "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
+      "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
     ],
     homeCare: [
       "Incorporate daily active tummy time for infants to build vital neck and shoulder girdle strength",
@@ -522,7 +522,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     metaTitle: "Home Physiotherapy Visits in Manikonda & Hyderabad | Dr. Hamid's Clinic",
     metaDescription: "Professional home physiotherapy visits in Manikonda, Puppalguda, Gachibowli & Hyderabad. Expert 1-on-1 care in your home or apartment. Call +91 76010 26596 to book!",
     h1: "Home Physiotherapy Visits in Manikonda, Hyderabad",
-    shortDescription: "Professional physiotherapy delivered at your home in Manikonda, Puppalguda, Lanco Hills and nearby areas. Suitable for patients who cannot travel to the clinic.",
+    shortDescription: "Professional physiotherapy at your home in Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas. Ideal for patients who prefer treatment in the comfort of their home.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Home physiotherapy visits and apartment rehabilitation in Manikonda",
     whatItIs: "Home physiotherapy visits bring clinical-grade physical rehabilitation directly to your residence and apartment. For many patients—including elderly individuals with severe mobility limitations, patients immediately discharged after major orthopedic or spinal surgery, stroke survivors requiring bed mobility training, or busy professionals suffering acute back spasms—traveling to an outpatient clinic in traffic can be exhausting, painful, or logistically impossible. At Dr. Hamid's Physio and Pain Clinic, our dedicated home visit physiotherapy service delivers comprehensive, 1-on-1 personalized physical therapy right in the comfort, safety, and familiar surroundings of your home in Manikonda and neighboring Hyderabad suburbs.",
@@ -820,8 +820,8 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Convenient Manikonda clinic with serene, supportive treatment environments"
     ],
     serviceAreas: [
-      "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
-      "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
+      "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
+      "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
     ],
     homeCare: [
       "Practice 10 minutes of slow diaphragmatic belly breathing daily to down-regulate sympathetic stress",
@@ -831,9 +831,9 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     ],
     whenToVisit: "If you have lived with daily aches for more than 3 months, rely constantly on pain pills, or have been told 'nothing is wrong on your scans' while still suffering, schedule an in-depth consultation with Dr. Hamid.",
     faqs: [
-      {
-        question: "Why do I still feel pain when my X-rays and MRI scans are normal?",
-        answer: "Scans only capture static anatomy (bones and discs), not how your nervous system processes pain. In chronic pain, the nervous system's alarm system remains hypersensitive even after physical tissues have healed. Physiotherapy directly retrains this overactive alarm system."
+{
+        question: "Do you offer chronic pain therapy home visits in Manikonda?",
+        answer: "Yes, for patients whose severe chronic pain restricts them from traveling to the clinic, we offer dedicated home visit physiotherapy across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas."
       },
       {
         question: "Can physiotherapy help with fibromyalgia?",
@@ -939,7 +939,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "Can I get home physiotherapy if I cannot stand up to come to the clinic?",
-        answer: "Yes, we offer emergency home visit physiotherapy across Manikonda, Puppalguda, and Gachibowli for patients whose severe muscle spasms prevent them from driving or climbing stairs."
+        answer: "Yes, we offer emergency home visit physiotherapy across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas for patients whose severe muscle spasms prevent them from driving or climbing stairs."
       }
     ]
   },
@@ -991,8 +991,8 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Objective return-to-sport testing ensuring complete physiological recovery before full play"
     ],
     serviceAreas: [
-      "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
-      "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
+      "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
+      "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
     ],
     homeCare: [
       "Protect and elevate the injured limb during the first 48 hours; avoid aggressive stretching",
@@ -1077,8 +1077,8 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Personalized loading spreadsheets and exercise tracking ensuring safe, continuous progress"
     ],
     serviceAreas: [
-      "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
-      "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
+      "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
+      "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
     ],
     homeCare: [
       "Perform your prescribed isometric holds (45-second static holds) whenever you feel tendon aches",

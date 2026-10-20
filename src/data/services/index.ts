@@ -88,7 +88,7 @@ export const serviceCategoryGroups: ServiceCategoryGroup[] = [
     id: "sports-general",
     title: "Sports, Post-Op & General Physical Therapy",
     badge: "Rehabilitation & Sports",
-    description: "Complete rehabilitation for sports injuries, post-surgical recovery, fractures, geriatric mobility, and home-based physiotherapy across Manikonda, Puppalguda, Lanco Hills and surrounding areas.",
+    description: "Rehabilitation for sports injuries, post-surgical recovery, fractures and geriatric mobility, with home physiotherapy visits available in Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas.",
     services: sportsAndGeneralServices,
   },
 ];

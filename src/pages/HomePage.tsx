@@ -301,9 +301,9 @@ const HomePage = () => {
         <div className="container flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm">
           <div className="flex items-center gap-2 text-[#443621]">
             <Compass className="w-4 h-4 text-[#8a5d24] shrink-0" />
-            <span className="font-semibold">Local Physiotherapy Centers Near You:</span>
+            <span className="font-semibold">Physiotherapy Clinic Near You:</span>
             <span className="text-[#5c4a30]">
-              Serving Manikonda, Puppalguda, Alkapur Township, Shaikpet, Narsingi, Kokapet, Financial District &amp; Gachibowli.
+              Primary Clinic in Puppalguda, Manikonda — Accessible for patients from Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda &amp; Seven Tombs.
             </span>
           </div>
           <div className="flex items-center gap-4">
@@ -646,10 +646,10 @@ const HomePage = () => {
               Start Your Recovery
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-1 mb-3">
-              Book Your Physiotherapy Appointment in Manikonda
+              Book Your Physiotherapy Appointment in Puppalguda, Manikonda
             </h2>
             <p className="text-[#4a5568] text-base leading-relaxed">
-              Appointments available Mon – Sun: 10:00 AM – 10:00 PM. Clinic visits and personalized home physiotherapy visits available across Puppalguda, Manikonda, and surrounding areas.
+              Appointments available Mon – Sun: 10:00 AM – 10:00 PM. Clinic consultations in Puppalguda and personalized home physiotherapy visits available across Manikonda and surrounding areas.
             </p>
           </div>
 
@@ -660,6 +660,108 @@ const HomePage = () => {
               externalMapUrl="https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
               className="h-full min-h-[380px]"
             />
+          </div>
+
+          {/* Areas We Serve & Neighbourhood Accessibility */}
+          <div className="mt-12 pt-10 border-t border-[#e2d8c0]">
+            <div className="bg-white/80 border border-[#e5dec9] rounded-2xl p-6 sm:p-8 shadow-xs">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+                <div>
+                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#8a5d24] uppercase tracking-wider mb-1">
+                    <MapPin className="w-3.5 h-3.5 text-[#8a5d24]" />
+                    <span>Neighbourhood Accessibility</span>
+                  </div>
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#081a2e]">
+                    Areas We Serve Around Puppalguda &amp; Manikonda
+                  </h3>
+                </div>
+                <span className="text-xs text-[#718096] bg-[#faf6ed] border border-[#e5dec9] px-3 py-1.5 rounded-full font-medium self-start sm:self-auto">
+                  📍  Physio Clinic in Manikonda
+                </span>
+              </div>
+
+              <p className="text-sm text-[#4a5568] leading-relaxed mb-6">
+                Our specialized clinic is conveniently located at <strong>Friends Colony, Puppalguda, Manikonda</strong> (Opposite HDFC Bank ATM, near Friends Colony Park). With direct road connectivity across West Hyderabad, patients regularly visit us for in-clinic physiotherapy and pain relief from:
+              </p>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Puppalguda</p>
+                  <p className="text-[11px] text-[#8a5d24] font-medium mt-0.5">Primary Clinic</p>
+                  <p className="text-[10px] text-[#718096] mt-1">Walk-in / 2 min</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Manikonda</p>
+                  <p className="text-[11px] text-[#8a5d24] font-medium mt-0.5">Primary Location</p>
+                  <p className="text-[10px] text-[#718096] mt-1">Local / 3–5 min</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Lanco Hills</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Via Main Road</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~5 min drive</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Tolichowki</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Via Shaikpet</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~10 min drive</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Shaikpet</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Via Dargah Road</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~7 min drive</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">OU Colony</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Via Manikonda Rd</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~6 min drive</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Alkapur Township</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Direct Access</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~5 min drive</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Khajaguda</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Via Lake Road</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~8 min drive</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Narsingi</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Puppalguda Junc.</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~8 min drive</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Neknampur</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Via Neknampur Rd</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~6 min drive</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Golconda</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Direct Route</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~12 min drive</p>
+                </div>
+                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Seven Tombs</p>
+                  <p className="text-[11px] text-[#718096] mt-0.5">Via Shaikpet</p>
+                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~10 min drive</p>
+                </div>
+              </div>
+
+              <div className="mt-5 pt-4 border-t border-[#e5dec9] flex flex-wrap items-center justify-between gap-3 text-xs text-[#5c4928]">
+                <span>
+                  💡 <em>Home Physiotherapy Visits:</em> Dedicated in-home rehabilitation is available across Manikonda and Puppalguda for elderly and post-operative patients.
+                </span>
+                <a
+                  href="https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#081a2e] hover:text-[#8a5d24] inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Open Directions on Google Maps</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

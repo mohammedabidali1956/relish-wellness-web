@@ -213,6 +213,18 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Nearby Areas Served */}
+        <div className="mt-10 pt-6 border-t border-border text-xs text-muted-foreground">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-2.5">
+            <span className="font-medium text-foreground/90 shrink-0">
+              📍 Clinic Location: Puppalguda, Manikonda, Hyderabad
+            </span>
+            <span className="text-[11px] leading-relaxed text-muted-foreground">
+              Accessible for patients from Puppalguda, Manikonda, Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda &amp; the Seven Tombs area.
+            </span>
+          </div>
+        </div>
+
         {/* Bottom bar */}
         <div className="mt-12 border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground text-center sm:text-left">

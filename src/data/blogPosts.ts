@@ -168,8 +168,8 @@ export const blogPosts: BlogPost[] = [
 <p>Knee pain while climbing stairs is a symptom, not a diagnosis. Increased knee bending, muscular effort, and load may explain why stairs hurt when level walking does not. A proper assessment can help identify contributing factors and an appropriate rehabilitation plan.</p>
 
 <div class="article-local-cta">
-  <h2>Physiotherapy for knee pain in Manikonda, Hyderabad</h2>
-  <p>If knee pain is affecting stairs, squatting, walking, exercise, or daily life, book an assessment with Dr. Mohammed Hamid Ali at Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda.</p>
+  <h2>Physiotherapy for knee pain in Manikonda & Puppalguda, Hyderabad</h2>
+  <p>If knee pain is affecting stairs, squatting, walking, or sports activities, schedule a comprehensive assessment with Dr. Mohammed Hamid Ali at Dr. Hamid's Physio and Pain Clinic. Located in Puppalguda, Manikonda, our clinic welcomes patients from Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, and Narsingi.</p>
   <a href="/#appointment">Book a physiotherapy assessment</a>
 </div>
 
@@ -274,7 +274,7 @@ export const blogPosts: BlogPost[] = [
 <p>Many national and international healthcare organizations are recognizing this important factor. They're making crucial changes to allow easier access to physiotherapists, which also decreases GP caseloads and allows doctors to focus on patients who need them most — those with diabetes, hypertension, infections, metabolic disorders, and other systemic conditions.</p>
 
 <h3>Making the Right Choice</h3>
-<p>When you experience musculoskeletal pain, going directly to a qualified physiotherapist at Dr. Hamid's Physio and Pain Clinic not only saves time and money but ensures you receive specific, targeted treatment with proper attention to your condition.</p>
+<p>When you experience musculoskeletal pain, going directly to a qualified orthopedic physiotherapist at Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda saves time and ensures direct, evidence-based care. Located near Friends Colony Park, our clinic is easily accessible for residents across Manikonda, Lanco Hills, Shaikpet, Tolichowki, OU Colony, and Alkapur Township.</p>
 
 <p><strong>Remember: The right specialist at the right time makes all the difference in your recovery journey.</strong></p>
     `
@@ -543,7 +543,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h3>Your Partner in Health</h3>
-<p>At Dr. Hamid's Physio and Pain Clinic, we're committed to helping you achieve and maintain optimal physical health. Whether you're recovering from an injury, managing a chronic condition, or simply want to improve your quality of life, our expert physiotherapy services in Manikonda, Hyderabad are here to support you.</p>
+<p>At Dr. Hamid's Physio and Pain Clinic, we're committed to helping you achieve and maintain optimal physical health. Located in Puppalguda, Manikonda, we welcome residents, working professionals, and seniors from Manikonda, Lanco Hills, Tolichowki, Shaikpet, Neknampur, and surrounding West Hyderabad neighbourhoods with personalized, evidence-based physiotherapy care.</p>
 
 <p><strong>Remember: Your body is designed to move. Let us help you move better, feel better, and live better!</strong></p>
     `

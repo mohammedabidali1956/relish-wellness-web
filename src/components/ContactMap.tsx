@@ -27,8 +27,8 @@ const ContactMap = ({ mapEmbedUrl, externalMapUrl, className }: ContactMapProps)
       {externalMapUrl && (
         <div className="mt-3 flex items-center justify-between px-1">
           <span className="text-xs text-muted-foreground flex items-center gap-1.5">
-            <MapPin className="w-3.5 h-3.5 text-relish-600" />
-            Puppalguda, Manikonda, Hyderabad
+            <MapPin className="w-3.5 h-3.5 text-relish-600 shrink-0" />
+            Puppalguda, Manikonda, Hyderabad (Near Friends Colony Park)
           </span>
           <a
             href={externalMapUrl}
