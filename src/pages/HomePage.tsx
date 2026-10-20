@@ -301,7 +301,7 @@ const HomePage = () => {
         <div className="container flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm">
           <div className="flex items-center gap-2 text-[#443621]">
             <Compass className="w-4 h-4 text-[#8a5d24] shrink-0" />
-            <span className="font-semibold">Local Physiotherapy Clinic Near You:</span>
+            <span className="font-semibold">Physiotherapy Clinic Near You:</span>
             <span className="text-[#5c4a30]">
               Primary Clinic in Puppalguda, Manikonda — Accessible for patients from Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda &amp; Seven Tombs.
             </span>
@@ -676,7 +676,7 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <span className="text-xs text-[#718096] bg-[#faf6ed] border border-[#e5dec9] px-3 py-1.5 rounded-full font-medium self-start sm:self-auto">
-                  📍 Single Clinic Center in Puppalguda
+                  📍  Physio Clinic in Manikonda
                 </span>
               </div>
 
