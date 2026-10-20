@@ -237,3 +237,6 @@
     }
   }
 }
+
+/* Keep anchored sections clear of the sticky header */
+section[id], div[id] { scroll-margin-top: 5.5rem; }
