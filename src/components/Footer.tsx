@@ -61,7 +61,7 @@ const quickLinks = [
   { to: "/conditions/knee-pain", label: "Knee Pain Treatment" },
   { to: "/conditions/sports-injuries", label: "Sports Rehab" },
   { to: "/conditions/post-surgery-rehab", label: "Post-Surgery Rehab" },
-  { to: "/conditions/home-visit-services", label: "Home Visit Services" },
+  { to: "/conditions/home-visit-services", label: "Home Physiotherapy Visits" },
   { to: "/reviews", label: "Reviews" },
   { to: "/blogs", label: "Blogs" },
   { to: "/#appointment", label: "Book Appointment" },

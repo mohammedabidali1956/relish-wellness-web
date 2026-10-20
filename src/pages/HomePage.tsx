@@ -75,11 +75,25 @@ const RehabBedIcon = () => (
   </svg>
 );
 
-const HomeCareIcon = () => (
+const ApartmentBuildingIcon = () => (
   <svg viewBox="0 0 64 64" fill="none" className="w-10 h-10 text-[#a06b32]" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M14 28l18-14 18 14" />
-    <path d="M20 25v25h24V25" />
-    <path d="M28 50V36h8v14" />
+    {/* Base ground line */}
+    <path d="M8 54h48" />
+    {/* Luxury high-rise residential apartment tower */}
+    <rect x="18" y="12" width="28" height="42" rx="2" strokeWidth="2.5" />
+    {/* Architectural penthouse crown & spire */}
+    <path d="M25 12V7h14v5" strokeWidth="2" />
+    <path d="M32 7V4" strokeWidth="2" />
+    {/* Symmetrical luxury apartment balcony / window suites */}
+    <rect x="23" y="17" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="35" y="17" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="23" y="26" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="35" y="26" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="23" y="35" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="35" y="35" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    {/* Grand entrance / lobby canopy */}
+    <path d="M28 54v-8h8v8" strokeWidth="2" />
+    <path d="M26 46h12" strokeWidth="2" />
   </svg>
 );
 
@@ -117,10 +131,10 @@ const HomePage = () => {
       hint: "TKR, THR & fracture protocol"
     },
     {
-      title: "Home Visit Services",
+      title: "Home Physiotherapy Visits",
       slug: "home-visit-services",
-      icon: <HomeCareIcon />,
-      hint: "In-home physio across Manikonda"
+      icon: <ApartmentBuildingIcon />,
+      hint: "Apartment & in-home physio in Manikonda"
     },
   ];
 
@@ -228,7 +242,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#2a5d45]" />
-                  <span>Home Visits in Manikonda &amp; Puppalguda</span>
+                  <span>Home Physiotherapy Visits in Manikonda &amp; Puppalguda</span>
                 </div>
               </div>
             </div>
@@ -301,7 +315,7 @@ const HomePage = () => {
               <span>+91 76010 26596</span>
             </a>
             <span className="text-[#8a5d24]">•</span>
-            <span className="text-[#2a5d45] font-semibold">Home Visits Available</span>
+            <span className="text-[#2a5d45] font-semibold">Home Physiotherapy Visits Available</span>
           </div>
         </div>
       </section>
@@ -635,7 +649,7 @@ const HomePage = () => {
               Book Your Physiotherapy Appointment in Manikonda
             </h2>
             <p className="text-[#4a5568] text-base leading-relaxed">
-              Appointments available Mon – Sun: 10:00 AM – 10:00 PM. Clinic visits and personalized home visits available across Puppalguda, Manikonda, and surrounding areas.
+              Appointments available Mon – Sun: 10:00 AM – 10:00 PM. Clinic visits and personalized home physiotherapy visits available across Puppalguda, Manikonda, and surrounding areas.
             </p>
           </div>
 

@@ -21,6 +21,7 @@ import {
   Clock,
   Sparkles,
   Home,
+  Building2,
   Check,
   Activity,
   Layers,
@@ -221,7 +222,7 @@ export const ServiceDetailPage: React.FC = () => {
             <div className="lg:col-span-7 space-y-4 sm:space-y-5">
               <div className="inline-flex items-center gap-2 bg-[#f4ede0] border border-[#e5dec9] px-3 py-1 rounded-full text-xs font-semibold text-[#8a5d24]">
                 <MapPin className="w-3.5 h-3.5 text-[#8a5d24]" />
-                <span>Manikonda &amp; Puppalguda Clinic • Home Visits Available</span>
+                <span>Manikonda &amp; Puppalguda Clinic • Home Physiotherapy Visits</span>
               </div>
 
               <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] tracking-tight leading-[1.15]">
@@ -243,8 +244,8 @@ export const ServiceDetailPage: React.FC = () => {
                   <span>Evidence-Based Care</span>
                 </div>
                 <div className="col-span-2 sm:col-span-1 flex items-center gap-2 bg-white/80 border border-[#e5dec9] px-3 py-2 rounded-lg">
-                  <Home className="w-4 h-4 text-[#8a5d24] shrink-0" />
-                  <span>Doorstep Home Visits</span>
+                  <Building2 className="w-4 h-4 text-[#8a5d24] shrink-0" />
+                  <span>Home Physiotherapy Visits</span>
                 </div>
               </div>
 

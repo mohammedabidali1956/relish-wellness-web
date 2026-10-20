@@ -329,7 +329,7 @@ export const conditions: Condition[] = [
   },
   {
     slug: "home-visit-services",
-    title: "Home Visit Physiotherapy Services",
+    title: "Home Physiotherapy Visits",
     shortDescription: "Professional in-home physiotherapy treatment across Manikonda, Puppalguda, Narsingi, and Gachibowli for elderly, post-op, and acute patients.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Physiotherapist providing home visit physiotherapy service in Manikonda",

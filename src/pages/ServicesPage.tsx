@@ -125,7 +125,7 @@ const ServicesPage: React.FC = () => {
 
             <p className="text-base sm:text-lg text-[#4a5568] leading-relaxed">
               Every condition is unique and deserves dedicated, evidence-based care. Under the direct supervision of{" "}
-              <strong className="text-[#081a2e] font-semibold">Dr. Mohammed Hamid Ali, BPT (8+ Years Experience)</strong>, we provide personalized physical therapy for individual spine, joint, neurological, and sports conditions at our Manikonda clinic and via doorstep home visits.
+              <strong className="text-[#081a2e] font-semibold">Dr. Mohammed Hamid Ali, BPT (8+ Years Experience)</strong>, we provide personalized physical therapy for individual spine, joint, neurological, and sports conditions at our Manikonda clinic and via home physiotherapy visits.
             </p>
 
             {/* Quick Stats Banner */}
@@ -139,7 +139,7 @@ const ServicesPage: React.FC = () => {
                 <p className="text-xs text-[#64748b]">Doctor Attention</p>
               </div>
               <div className="bg-white/80 border border-[#e5dec9] p-3 rounded-xl">
-                <p className="text-xl sm:text-2xl font-bold text-[#081a2e]">Home</p>
+                <p className="text-xl sm:text-2xl font-bold text-[#081a2e]">Home Physio</p>
                 <p className="text-xs text-[#64748b]">Visits in Manikonda</p>
               </div>
               <div className="bg-white/80 border border-[#e5dec9] p-3 rounded-xl">
