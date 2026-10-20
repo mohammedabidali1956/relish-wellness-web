@@ -89,16 +89,16 @@ const ServicesPage: React.FC = () => {
   return (
     <div className="bg-[#faf6ed] min-h-screen">
       <Helmet>
-        <title>Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic</title>
+        <title>Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder &amp; Home Visits</title>
         <meta
           name="description"
-          content="Specialized physiotherapy in Puppalguda, Manikonda, Hyderabad. Individualized care for Back Pain, Sciatica, Knee Arthritis, Frozen Shoulder & Sports Rehab. Easily accessible from Lanco Hills, Tolichowki & Shaikpet."
+          content="Professional physiotherapy services in Manikonda for back pain, neck pain, knee pain, shoulder problems, sciatica, sports injuries and post-surgical rehabilitation. Home visits available in Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas. Led by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413."
         />
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content="Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic" />
+        <meta property="og:title" content="Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder & Home Visits" />
         <meta
           property="og:description"
-          content="Over 40 dedicated clinical condition and rehabilitation programs by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) in Manikonda & Puppalguda."
+          content="Professional physiotherapy services in Manikonda for back pain, neck pain, knee pain, shoulder problems, sciatica, sports injuries and post-surgical rehabilitation. Home visits available in Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas. Led by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413."
         />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
@@ -479,6 +479,11 @@ const ServicesPage: React.FC = () => {
           </section>
         </div>
       </main>
+      <section aria-label="Treatment standard" className="container max-w-6xl mx-auto px-4 sm:px-6 py-4">
+        <p className="text-center text-sm text-[#5f6872]">
+          All treatments are provided after individual assessment by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413, Consultant Physiotherapist.
+        </p>
+      </section>
     </div>
   );
 };

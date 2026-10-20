@@ -230,9 +230,9 @@ const Footer = () => {
           <p className="text-xs text-muted-foreground text-center sm:text-left">
             &copy; {new Date().getFullYear()} Dr. Hamid's Physio and Pain Clinic. All rights reserved.
           </p>
-          <div className="flex items-center gap-4 text-xs text-muted-foreground">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-muted-foreground">
             <span>Follow us:</span>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
               {socialLinks.map(({ label, href, icon: Icon, accentColor }) => (
                 <a
                   key={label}

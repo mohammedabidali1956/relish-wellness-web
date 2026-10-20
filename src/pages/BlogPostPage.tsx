@@ -107,7 +107,7 @@ const BlogPostPage = () => {
                 className="aspect-[5/4] w-full object-cover sm:aspect-[16/9]"
                 width="1000"
                 height="800"
-                fetchPriority="high"
+                {...{ fetchpriority: "high" }}
               />
               {isKneeStairsArticle && <figcaption className="px-4 py-3 text-sm text-muted-foreground">Knee pain during stair climbing is common and can have several underlying causes.</figcaption>}
             </figure>
@@ -181,7 +181,7 @@ const BlogPostPage = () => {
               Book a consultation at Dr. Hamid's Physio and Pain Clinic in Manikonda and experience expert physiotherapy care.
             </p>
             <Link to="/#appointment">
-              <Button className="bg-card text-relish-700 hover:bg-muted px-8 py-3 font-medium text-lg">
+              <Button className="bg-card text-relish-700 hover:bg-muted px-4 sm:px-8 py-3 font-medium text-lg">
                 Book an Appointment <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
