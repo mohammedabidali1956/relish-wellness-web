@@ -97,7 +97,7 @@ const ServicesPage: React.FC = () => {
         <title>Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic</title>
         <meta
           name="description"
-          content="Specialized physiotherapy in Manikonda, Hyderabad. Individualized care for Back Pain, Sciatica, Knee Arthritis, Frozen Shoulder, Stroke Rehab & Sports Injuries. Call +91 76010 26596."
+          content="Specialized physiotherapy in Puppalguda, Manikonda, Hyderabad. Individualized care for Back Pain, Sciatica, Knee Arthritis, Frozen Shoulder & Sports Rehab. Easily accessible from Lanco Hills, Tolichowki & Shaikpet."
         />
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content="Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic" />
@@ -125,7 +125,7 @@ const ServicesPage: React.FC = () => {
 
             <p className="text-base sm:text-lg text-[#4a5568] leading-relaxed">
               Every condition is unique and deserves dedicated, evidence-based care. Under the direct supervision of{" "}
-              <strong className="text-[#081a2e] font-semibold">Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413 (8+ Years Experience)</strong>, we provide personalized physical therapy for individual spine, joint, neurological, and sports conditions at our Manikonda clinic and via home physiotherapy visits.
+              <strong className="text-[#081a2e] font-semibold">Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413 (8+ Years Experience)</strong>, we provide personalized physical therapy for individual spine, joint, neurological, and sports conditions at our Puppalguda, Manikonda clinic and via home physiotherapy visits for patients across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and neighbouring areas.
             </p>
 
             {/* Quick Stats Banner */}

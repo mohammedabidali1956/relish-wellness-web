@@ -306,15 +306,15 @@ const ConditionPage = () => {
             <div className="bg-white p-7 rounded-2xl border border-[#e5dec9] shadow-xs">
               <h2 className="font-serif text-xl font-bold text-[#081a2e] mb-4 flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-[#8a5d24]" />
-                Service Areas &amp; Home Visits
+                Clinic Location &amp; Nearby Areas Served
               </h2>
               <p className="text-sm text-[#4a5568] leading-relaxed mb-4">
-                We cater to patients visiting our Manikonda clinic as well as those booking personalized in-home physiotherapy across West Hyderabad:
+                Our clinic is conveniently located in Puppalguda, Manikonda, welcoming patients arriving from nearby neighbourhoods across West Hyderabad:
               </p>
               <div className="flex flex-wrap gap-2">
                 {(condition.serviceAreas || [
-                  "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
-                  "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
+                  "Puppalguda", "Manikonda", "Lanco Hills", "Tolichowki", "Shaikpet",
+                  "OU Colony", "Alkapur Township", "Khajaguda", "Narsingi", "Neknampur", "Golconda", "Seven Tombs"
                 ]).map((area) => (
                   <span
                     key={area}
