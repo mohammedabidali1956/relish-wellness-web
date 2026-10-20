@@ -75,11 +75,25 @@ const RehabBedIcon = () => (
   </svg>
 );
 
-const HomeCareIcon = () => (
+const ApartmentBuildingIcon = () => (
   <svg viewBox="0 0 64 64" fill="none" className="w-10 h-10 text-[#a06b32]" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M14 28l18-14 18 14" />
-    <path d="M20 25v25h24V25" />
-    <path d="M28 50V36h8v14" />
+    {/* Base ground line */}
+    <path d="M8 54h48" />
+    {/* Luxury high-rise residential apartment tower */}
+    <rect x="18" y="12" width="28" height="42" rx="2" strokeWidth="2.5" />
+    {/* Architectural penthouse crown & spire */}
+    <path d="M25 12V7h14v5" strokeWidth="2" />
+    <path d="M32 7V4" strokeWidth="2" />
+    {/* Symmetrical luxury apartment balcony / window suites */}
+    <rect x="23" y="17" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="35" y="17" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="23" y="26" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="35" y="26" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="23" y="35" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    <rect x="35" y="35" width="6" height="5" rx="0.5" strokeWidth="1.8" />
+    {/* Grand entrance / lobby canopy */}
+    <path d="M28 54v-8h8v8" strokeWidth="2" />
+    <path d="M26 46h12" strokeWidth="2" />
   </svg>
 );
 
@@ -117,10 +131,10 @@ const HomePage = () => {
       hint: "TKR, THR & fracture protocol"
     },
     {
-      title: "Home Visit Services",
+      title: "Home Physiotherapy Visits",
       slug: "home-visit-services",
-      icon: <HomeCareIcon />,
-      hint: "In-home physio across Manikonda"
+      icon: <ApartmentBuildingIcon />,
+      hint: "Apartment & in-home physio in Manikonda"
     },
   ];
 
@@ -192,7 +206,7 @@ const HomePage = () => {
 
               {/* Subheading */}
               <p className="text-base sm:text-lg lg:text-xl text-[#4a5568] leading-relaxed max-w-xl font-normal">
-                Helping you move better, feel stronger and live an active life with personalized physiotherapy treatment under Dr. Mohammed Hamid Ali, BPT.
+                Helping you move better, feel stronger and live an active life with personalized physiotherapy treatment under Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).
               </p>
 
               {/* Two CTA Buttons Side by Side */}
@@ -228,7 +242,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#2a5d45]" />
-                  <span>Home Visits in Manikonda &amp; Puppalguda</span>
+                  <span>Home Physiotherapy Visits in Manikonda &amp; Puppalguda</span>
                 </div>
               </div>
             </div>
@@ -238,14 +252,14 @@ const HomePage = () => {
               <div className="relative w-full max-w-[420px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-b from-[#fbf7ee] to-[#ede2cd]">
                 <img
                   src="/images/doctor/dr-hamid-actual.png"
-                  alt="Dr. Mohammed Hamid Ali, BPT - Consultant Physiotherapist holding anatomical spine model at Dr. Hamid's Physio Clinic Manikonda"
+                  alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist holding anatomical spine model at Dr. Hamid's Physio Clinic Manikonda"
                   className="w-full h-auto aspect-[3/4] object-cover object-top drop-shadow-sm"
                   loading="eager"
                 />
                 
                 {/* Subtle overlay badge for credentials */}
                 <div className="absolute bottom-3 right-3 bg-[#081a2e]/90 backdrop-blur-md text-white px-3.5 py-1.5 rounded-lg text-xs font-medium shadow-md">
-                  Dr. Mohammed Hamid Ali, BPT
+                  Dr. Mohammed Hamid Ali, BPT, MPT
                 </div>
               </div>
             </div>
@@ -301,7 +315,7 @@ const HomePage = () => {
               <span>+91 76010 26596</span>
             </a>
             <span className="text-[#8a5d24]">•</span>
-            <span className="text-[#2a5d45] font-semibold">Home Visits Available</span>
+            <span className="text-[#2a5d45] font-semibold">Home Physiotherapy Visits Available</span>
           </div>
         </div>
       </section>
@@ -431,7 +445,7 @@ const HomePage = () => {
               <div className="relative w-full max-w-md rounded-2xl overflow-hidden border-2 border-[#e5dec9] bg-gradient-to-b from-[#fbf7ee] to-[#ede2cd] shadow-lg">
                 <img
                   src="/images/doctor/dr-hamid-actual.png"
-                  alt="Dr. Mohammed Hamid Ali, BPT - Lead Physiotherapist Manikonda"
+                  alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist Manikonda"
                   className="w-full aspect-[3/4] object-cover object-top drop-shadow-sm"
                   loading="lazy"
                 />
@@ -440,7 +454,7 @@ const HomePage = () => {
                     Dr. Mohammed Hamid Ali
                   </h3>
                   <p className="text-sm font-medium text-[#8a5d24]">
-                    Bachelor of Physiotherapy (BPT) · 8+ Years Experience
+                    BPT, MPT (Orthopedics) · Regd. No. 0413 · 8+ Years Experience
                   </p>
                   <p className="text-xs text-[#718096] mt-2">
                     Consultant Physiotherapist &amp; Founder, Dr. Hamid&apos;s Physio and Pain Clinic
@@ -470,8 +484,8 @@ const HomePage = () => {
               <div className="grid grid-cols-3 gap-3 pt-3">
                 <div className="p-4 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-center">
                   <Award className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
-                  <p className="font-bold text-[#081a2e] text-sm">BPT Certified</p>
-                  <p className="text-[11px] text-[#718096]">Professional Degree</p>
+                  <p className="font-bold text-[#081a2e] text-sm">BPT, MPT</p>
+                  <p className="text-[11px] text-[#718096]">Orthopedics Specialist</p>
                 </div>
                 <div className="p-4 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-center">
                   <Clock className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
@@ -479,9 +493,9 @@ const HomePage = () => {
                   <p className="text-[11px] text-[#718096]">Clinical Experience</p>
                 </div>
                 <div className="p-4 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-center">
-                  <Users className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
-                  <p className="font-bold text-[#081a2e] text-sm">1-on-1 Care</p>
-                  <p className="text-[11px] text-[#718096]">Tailored Sessions</p>
+                  <ShieldCheck className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
+                  <p className="font-bold text-[#081a2e] text-sm">Regd. No. 0413</p>
+                  <p className="text-[11px] text-[#718096]">Licensed Therapist</p>
                 </div>
               </div>
 
@@ -635,7 +649,7 @@ const HomePage = () => {
               Book Your Physiotherapy Appointment in Manikonda
             </h2>
             <p className="text-[#4a5568] text-base leading-relaxed">
-              Appointments available Mon – Sun: 10:00 AM – 10:00 PM. Clinic visits and personalized home visits available across Puppalguda, Manikonda, and surrounding areas.
+              Appointments available Mon – Sun: 10:00 AM – 10:00 PM. Clinic visits and personalized home physiotherapy visits available across Puppalguda, Manikonda, and surrounding areas.
             </p>
           </div>
 

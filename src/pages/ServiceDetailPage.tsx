@@ -21,6 +21,7 @@ import {
   Clock,
   Sparkles,
   Home,
+  Building2,
   Check,
   Activity,
   Layers,
@@ -110,7 +111,12 @@ export const ServiceDetailPage: React.FC = () => {
           "@type": "Person",
           name: "Dr. Mohammed Hamid Ali",
           jobTitle: "Consultant Physiotherapist",
-          hasCredential: "BPT (Bachelor of Physiotherapy)",
+          hasCredential: "BPT, MPT (Orthopedics)",
+          identifier: {
+            "@type": "PropertyValue",
+            name: "Registration Number",
+            value: "0413"
+          },
           worksFor: {
             "@type": "MedicalClinic",
             name: "Dr. Hamid's Physio and Pain Clinic"
@@ -221,7 +227,7 @@ export const ServiceDetailPage: React.FC = () => {
             <div className="lg:col-span-7 space-y-4 sm:space-y-5">
               <div className="inline-flex items-center gap-2 bg-[#f4ede0] border border-[#e5dec9] px-3 py-1 rounded-full text-xs font-semibold text-[#8a5d24]">
                 <MapPin className="w-3.5 h-3.5 text-[#8a5d24]" />
-                <span>Manikonda &amp; Puppalguda Clinic • Home Visits Available</span>
+                <span>Manikonda &amp; Puppalguda Clinic • Home Physiotherapy Visits</span>
               </div>
 
               <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] tracking-tight leading-[1.15]">
@@ -236,15 +242,15 @@ export const ServiceDetailPage: React.FC = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-[#4a5568]">
                 <div className="flex items-center gap-2 bg-white/80 border border-[#e5dec9] px-3 py-2 rounded-lg">
                   <ShieldCheck className="w-4 h-4 text-[#8a5d24] shrink-0" />
-                  <span>Dr. Hamid, BPT (8+ Yrs)</span>
+                  <span>Dr. Hamid, BPT, MPT (8+ Yrs)</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/80 border border-[#e5dec9] px-3 py-2 rounded-lg">
                   <Award className="w-4 h-4 text-[#8a5d24] shrink-0" />
                   <span>Evidence-Based Care</span>
                 </div>
                 <div className="col-span-2 sm:col-span-1 flex items-center gap-2 bg-white/80 border border-[#e5dec9] px-3 py-2 rounded-lg">
-                  <Home className="w-4 h-4 text-[#8a5d24] shrink-0" />
-                  <span>Doorstep Home Visits</span>
+                  <Building2 className="w-4 h-4 text-[#8a5d24] shrink-0" />
+                  <span>Home Physiotherapy Visits</span>
                 </div>
               </div>
 
@@ -289,7 +295,7 @@ export const ServiceDetailPage: React.FC = () => {
                     <span>Verified Clinical Protocol</span>
                   </div>
                   <p className="text-xs text-[#64748b] leading-relaxed">
-                    1-on-1 personalized sessions by Dr. Mohammed Hamid Ali (BPT). Complete assessment and progressive milestone recovery.
+                    1-on-1 personalized sessions by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics). Complete assessment and progressive milestone recovery.
                   </p>
                 </div>
               </div>
@@ -383,7 +389,7 @@ export const ServiceDetailPage: React.FC = () => {
                   Our Diagnostic Evaluation in Manikonda
                 </h2>
                 <p className="text-sm sm:text-base text-[#4a5568] leading-relaxed">
-                  Before applying any treatment, Dr. Mohammed Hamid Ali (BPT) conducts a comprehensive 45-minute clinical evaluation to pinpoint the exact musculoskeletal root cause.
+                  Before applying any treatment, Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) conducts a comprehensive 45-minute clinical evaluation to pinpoint the exact musculoskeletal root cause.
                 </p>
 
                 <div className="space-y-3">
@@ -541,7 +547,7 @@ export const ServiceDetailPage: React.FC = () => {
                   <div className="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-[#8a5d24] mb-3 shadow-xs bg-[#f4ede0]">
                     <img
                       src="/images/doctor/dr-hamid-actual.png"
-                      alt="Dr. Mohammed Hamid Ali, BPT Physiotherapist in Manikonda"
+                      alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist in Manikonda"
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
@@ -549,7 +555,7 @@ export const ServiceDetailPage: React.FC = () => {
                     Dr. Mohammed Hamid Ali
                   </h3>
                   <p className="text-xs font-semibold text-[#8a5d24]">
-                    Consultant Physiotherapist • BPT
+                    Consultant Physiotherapist • BPT, MPT (Ortho)
                   </p>
                   <p className="text-xs text-[#64748b] mt-1">
                     8+ Years Clinical Experience in Hyderabad

@@ -8,7 +8,7 @@ export const shoulderServices: ServiceDetail[] = [
     metaTitle: "Shoulder Pain Physiotherapy in Manikonda | Rotator Cuff Relief Hyderabad",
     metaDescription: "Relieve shoulder pain, rotator cuff tendonitis, and impingement with specialized physiotherapy in Manikonda, Hyderabad. Care by Dr. Mohammed Hamid Ali, BPT.",
     h1: "Shoulder Pain Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Specialized clinical rehabilitation for rotator cuff tendinopathy, subacromial impingement, and overhead reach pain in Manikonda.",
+    shortDescription: "Clinical treatment for shoulder pain, rotator cuff problems, impingement, and restricted shoulder movement to help restore strength and daily function.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Shoulder pain physiotherapy and rotator cuff treatment in Manikonda clinic",
     whatItIs: "The shoulder is the most mobile joint in the human body, relying primarily on a dynamic cuff of four muscles (supraspinatus, infraspinatus, teres minor, subscapularis) and scapulothoracic stabilizers rather than deep bony sockets. This mobility leaves it susceptible to impingement, tendinitis, and bursitis. When you experience shoulder pain, simple tasks like reaching overhead, putting on a shirt, fastening a seatbelt, or sleeping on your side become agonizing. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we evaluate the entire shoulder girdle, thoracic spine, and neck to identify the exact source of your pain and restore smooth, pain-free overhead reach.",
@@ -91,7 +91,7 @@ export const shoulderServices: ServiceDetail[] = [
     metaTitle: "Frozen Shoulder Physiotherapy in Manikonda | Adhesive Capsulitis Care",
     metaDescription: "Gentle, effective frozen shoulder physiotherapy in Manikonda, Hyderabad. Restore overhead reach and rotation with Dr. Mohammed Hamid Ali, BPT. Call today!",
     h1: "Frozen Shoulder Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Specialized clinical rehabilitation for adhesive capsulitis, severe joint capsule contracture, night pain, and progressive shoulder stiffness.",
+    shortDescription: "Structured rehabilitation for frozen shoulder (adhesive capsulitis), including pain management, progressive mobility exercises, and restoration of overhead movement.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Frozen shoulder physiotherapy and adhesive capsulitis treatment in Manikonda clinic",
     whatItIs: "Frozen shoulder, medically termed Adhesive Capsulitis, is a painful and debilitating condition characterized by severe inflammation, thickening, fibrosis, and contracture of the glenohumeral joint capsule. It typically progresses through three distinct clinical phases: the Freezing stage (severe pain, increasing stiffness), the Frozen stage (less pain at rest, extreme stiffness and mobility restriction), and the Thawing stage (gradual recovery of movement). Without skilled physiotherapy, frozen shoulder can persist for 2 to 3 years. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) applies stage-specific manual mobilizations and capsule-stretching techniques that dramatically shorten recovery time and restore full, pain-free range of motion.",
@@ -245,6 +245,93 @@ export const shoulderServices: ServiceDetail[] = [
       {
         question: "How do I book an appointment?",
         answer: "Call +91 76010 26596 or contact us via WhatsApp with your surgical discharge summary."
+      }
+    ]
+  },
+  {
+    slug: "rotator-cuff-physiotherapy-manikonda",
+    category: "Shoulder",
+    title: "Rotator Cuff Physiotherapy",
+    metaTitle: "Rotator Cuff Physiotherapy in Manikonda | Shoulder Tendonitis Treatment Hyderabad",
+    metaDescription: "Expert rotator cuff physiotherapy in Manikonda, Hyderabad. Non-surgical treatment for rotator cuff tears, tendonitis, and impingement by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    h1: "Rotator Cuff Physiotherapy in Manikonda, Hyderabad",
+    shortDescription: "Specialized clinical rehabilitation for rotator cuff tears, tendonitis, impingement, and shoulder weakness.",
+    imageSrc: "/images/services/condition-shoulder-pain.webp",
+    altText: "Rotator cuff physiotherapy and shoulder tendon treatment in Manikonda clinic",
+    whatItIs: "The rotator cuff is a group of four deep muscles (supraspinatus, infraspinatus, teres minor, and subscapularis) that surround the shoulder joint, providing dynamic stability and enabling smooth rotation of the arm. Rotator cuff injuries are among the most common shoulder problems, ranging from tendonitis and impingement to partial or complete tears. These injuries cause pain during overhead activities, difficulty sleeping on the affected side, and weakness when lifting or rotating the arm. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide evidence-based conservative management for rotator cuff conditions, helping patients avoid surgery and regain full shoulder function.",
+    causes: [
+      "Repetitive overhead activities in sports (badminton, tennis, swimming, cricket) or occupations",
+      "Age-related tendon degeneration and reduced blood supply after age 40",
+      "Subacromial impingement from bone spurs or thickened bursa compressing the tendons",
+      "Poor scapular mechanics and rounded shoulder posture reducing subacromial space",
+      "Acute trauma from falls onto an outstretched arm or heavy lifting",
+      "Muscle imbalances between the deltoid and rotator cuff causing superior humeral head migration"
+    ],
+    symptoms: [
+      "Pain on the outside or front of the shoulder, particularly when reaching overhead or behind the back",
+      "Painful arc between 60-120 degrees of arm elevation",
+      "Night pain and difficulty sleeping on the affected shoulder",
+      "Weakness when lifting objects or rotating the arm against resistance",
+      "Clicking, popping, or catching sensations during shoulder movement"
+    ],
+    howPhysioHelps: "Rotator cuff rehabilitation focuses on restoring the balance between the deltoid and rotator cuff, improving scapular stability, and progressively loading the tendons to stimulate healing. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) uses targeted manual therapy to mobilize stiff joints, soft tissue techniques to release tight structures, and a structured progressive strengthening program that rebuilds tendon health and shoulder function without surgery.",
+    assessmentProcess: [
+      "Empty Can (Jobe's) and Full Can tests to isolate supraspinatus function",
+      "External rotation and internal rotation strength testing against resistance",
+      "Neer's and Hawkins-Kennedy impingement provocative tests",
+      "Scapular dyskinesis assessment evaluating upward rotation and posterior tilt",
+      "Cervical spine screening to rule out referred pain from neck issues"
+    ],
+    treatmentApproach: [
+      "Pain relief phase: Gentle joint mobilizations, electrotherapy, and activity modification",
+      "Scapular stabilization exercises (serratus anterior wall slides, lower trapezius Y-raises)",
+      "Progressive rotator cuff strengthening using resistance bands at various angles",
+      "Posterior capsule stretching and thoracic extension exercises to improve posture",
+      "Functional retraining for overhead activities and return to sport or work"
+    ],
+    expectedRecovery: "Tendonitis and impingement typically improve within 4 to 6 weeks. Partial tears respond to rehabilitation in 8 to 12 weeks. Full-thickness tears require 3 to 6 months of conservative management; surgery is considered only if conservative treatment fails.",
+    whyChooseDoctor: [
+      "8+ years of clinical experience treating rotator cuff injuries in Hyderabad",
+      "Specialized orthopedic training in shoulder biomechanics (MPT Orthopedics)",
+      "Evidence-based progressive loading protocols avoiding unnecessary surgery",
+      "Convenient Manikonda clinic with home visit options for acute painful shoulders"
+    ],
+    serviceAreas: [
+      "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
+      "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
+    ],
+    homeCare: [
+      "Avoid sleeping on the painful shoulder; sleep on your back or unaffected side with a pillow under the arm",
+      "Apply ice packs for 15 minutes after activities that provoke shoulder pain",
+      "Avoid repetitive overhead activities and heavy lifting during the acute phase",
+      "Perform gentle pendulum exercises daily to maintain joint mobility",
+      "Maintain upright posture with shoulders back and down during desk work"
+    ],
+    whenToVisit: "Seek assessment if shoulder pain persists beyond one week, prevents overhead activities or sleeping, or if you experience sudden weakness after an injury. Early treatment prevents progression to tears.",
+    faqs: [
+      {
+        question: "Can a rotator cuff tear heal without surgery?",
+        answer: "Yes, many partial-thickness and even some full-thickness tears heal with structured physiotherapy. The key is progressive loading that stimulates tendon repair while avoiding further damage."
+      },
+      {
+        question: "Why does my shoulder hurt more at night?",
+        answer: "Lying down eliminates gravity's downward pull on the arm, allowing the humeral head to ride up into the inflamed subacromial space. Sleeping on the shoulder also directly compresses the sensitive tissues."
+      },
+      {
+        question: "How is rotator cuff tendonitis different from a tear?",
+        answer: "Tendonitis involves inflammation and irritation of the tendon without structural damage. A tear involves actual disruption of tendon fibers. Both cause pain, but tears typically cause more weakness and may require longer rehabilitation."
+      },
+      {
+        question: "Can I continue playing badminton with rotator cuff pain?",
+        answer: "During the acute painful phase, overhead sports should be reduced. As symptoms improve with rehabilitation, a gradual return-to-sport program allows safe resumption of badminton with corrected mechanics."
+      },
+      {
+        question: "Do you treat rotator cuff injuries in badminton players in Manikonda?",
+        answer: "Yes, we frequently treat badminton players, tennis players, and swimmers from Manikonda and Gachibowli with rotator cuff issues, focusing on sport-specific rehabilitation."
+      },
+      {
+        question: "How do I book a rotator cuff assessment?",
+        answer: "Call +91 76010 26596 or message us on WhatsApp to schedule your shoulder evaluation."
       }
     ]
   }

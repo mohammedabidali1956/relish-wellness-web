@@ -9,7 +9,7 @@ const AboutPage = () => {
       <StructuredData 
         type="about" 
         pageTitle="About Dr. Hamid's Physio and Pain Clinic | Best Physiotherapist in Manikonda" 
-        pageDescription="Learn about Dr. Mohammed Hamid Ali, BPT and Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda. Expert physiotherapy care since 2021 with 5-star ratings."
+        pageDescription="Learn about Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413, and Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda. Expert physiotherapy care with 8+ years experience and 5-star ratings."
       />
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-14 md:py-20">
@@ -31,7 +31,56 @@ const AboutPage = () => {
           <div className="prose prose-lg max-w-none">
             <div className="bg-card border border-border rounded-md p-8 md:p-12 mb-12">
               <p className="text-lg leading-relaxed text-gray-700 mb-8">
-                Founded in 2021 by Dr. Hamid Ali, Dr. Hamid's Physio and Pain Clinic has recently relocated to Manikonda, offering advanced physiotherapy and evidence-based rehabilitation in a modern, patient-centred environment. Now operating from Puppalguda near Friends Colony Park, the clinic focuses on accurate diagnosis, personalized treatment plans, and consistent, measurable recovery outcomes. Our approach combines professional expertise with updated techniques, making us a reliable choice for physiotherapy and pain management in the Manikonda–Puppalguda area.
+                Founded in 2021 by Dr. Mohammed Hamid Ali, Dr. Hamid's Physio and Pain Clinic has recently relocated to Manikonda, offering advanced physiotherapy and evidence-based rehabilitation in a modern, patient-centred environment. Now operating from Puppalguda near Friends Colony Park, the clinic focuses on accurate diagnosis, personalized treatment plans, and consistent, measurable recovery outcomes. Our approach combines professional expertise with updated techniques, making us a reliable choice for physiotherapy and pain management in the Manikonda–Puppalguda area.
+              </p>
+            </div>
+
+            {/* About Dr. Mohammed Hamid Ali - E-E-A-T Section */}
+            <div className="rounded-md border border-border bg-white p-8 md:p-12 mb-12">
+              <div className="flex items-center mb-6">
+                <div className="bg-relish-600 p-3 rounded-full mr-4">
+                  <Award className="h-6 w-6 text-white" />
+                </div>
+                <h2 className="text-3xl font-bold text-gray-900">About Dr. Mohammed Hamid Ali</h2>
+              </div>
+
+              <div className="space-y-6">
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-sand-50 border border-border">
+                  <div className="bg-relish-100 p-2 rounded-lg">
+                    <Star className="h-5 w-5 text-relish-700" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 text-lg">Full Qualifications</h3>
+                    <p className="text-gray-700">BPT, MPT (Orthopedics)</p>
+                    <p className="text-sm text-gray-500 mt-1">Bachelor of Physiotherapy, Master of Physiotherapy in Orthopedics</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-sand-50 border border-border">
+                  <div className="bg-relish-100 p-2 rounded-lg">
+                    <Users className="h-5 w-5 text-relish-700" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 text-lg">Professional Designation</h3>
+                    <p className="text-gray-700">Consultant Physiotherapist</p>
+                    <p className="text-sm text-gray-500 mt-1">Registration Number: <span className="font-medium text-gray-700">0413</span></p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-sand-50 border border-border">
+                  <div className="bg-relish-100 p-2 rounded-lg">
+                    <Heart className="h-5 w-5 text-relish-700" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 text-lg">Clinical Experience</h3>
+                    <p className="text-gray-700">8+ years of clinical practice in Hyderabad</p>
+                    <p className="text-sm text-gray-500 mt-1">Specializing in spinal biomechanics, joint preservation, post-surgical recovery, and sports rehabilitation</p>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-gray-700 mt-6 leading-relaxed">
+                Dr. Mohammed Hamid Ali is a certified physiotherapist with over eight years of rigorous clinical practice. His patient-first methodology eliminates guesswork through detailed physical examination and clear communication. Rather than rushing patients into passive cycles of machines, Dr. Hamid designs individualized exercise programs that empower patients to understand their condition, recover functional confidence, and prevent future recurrences.
               </p>
             </div>
 
