@@ -1,4 +1,6 @@
+
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
       "source": "/google5d006f26e5daf13c.html",
@@ -7,9 +9,6 @@
     {
       "source": "/googleda41df8ea84cf8c1.html",
       "destination": "/api/googleda41df8ea84cf8c1"
-    },
-    {
-      "source": "/((?!.*\\.).*)",
-      "destination": "/$1/index.html"
     }
   ]
+}
