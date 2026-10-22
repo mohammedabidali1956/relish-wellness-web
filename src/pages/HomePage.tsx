@@ -200,8 +200,8 @@ const HomePage = () => {
 
               {/* Main Headline */}
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-[3.65rem] font-bold text-[#081a2e] tracking-tight leading-[1.12]">
-                Expert Care <br />
-                for Your Pain &amp; Recovery
+                Physiotherapy Clinic <br />
+                in Manikonda, Hyderabad
               </h1>
 
               {/* Subheading */}

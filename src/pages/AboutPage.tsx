@@ -16,11 +16,9 @@ const AboutPage = () => {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-gray-900">
-              About <span className="text-relish-700">Dr. Hamid's Physio and Pain Clinic</span>
+              About Dr. Hamid's Physio and Pain Clinic
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              & Wellness Centre
-            </p>
+            
           </div>
         </div>
       </section>
@@ -65,7 +63,7 @@ const AboutPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 text-lg">Professional Designation</h3>
-                    <p className="text-gray-700">Consultant Physiotherapist</p>
+                    <p className="text-gray-700">Founder, Consultant Physiotherapist</p>
                     <p className="text-sm text-gray-500 mt-1">Registration Number: <span className="font-medium text-gray-700">0413</span></p>
                   </div>
                 </div>
