@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
 
 interface StructuredDataProps {
   type?: "homepage" | "service" | "blog" | "about";
@@ -7,6 +8,8 @@ interface StructuredDataProps {
 }
 
 const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: StructuredDataProps) => {
+  const { pathname } = useLocation();
+  const canonicalUrl = `https://www.drhamidphysio.in${pathname === "/" ? "/" : pathname}`;
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Physiotherapy",
@@ -234,9 +237,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
       </script>
-      {type === "homepage" && (
-        <link rel="canonical" href="https://www.drhamidphysio.in/" />
-      )}
+      <link rel="canonical" href={canonicalUrl} />
       {pageTitle && <title>{pageTitle}</title>}
       {pageDescription && <meta name="description" content={pageDescription} />}
     </Helmet>

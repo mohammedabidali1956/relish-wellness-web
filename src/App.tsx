@@ -19,12 +19,11 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+export const AppContent = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -40,9 +39,14 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+);
+
+const App = () => (
+  <BrowserRouter>
+    <AppContent />
+  </BrowserRouter>
 );
 
 export default App;

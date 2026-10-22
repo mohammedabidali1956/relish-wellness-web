@@ -8,6 +8,7 @@ import {
   primaryServices,
 } from "@/data/services";
 import { Button } from "@/components/ui/button";
+import { openWhatsApp } from "@/lib/whatsapp";
 import {
   ArrowRight,
   Phone,

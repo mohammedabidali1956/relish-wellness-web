@@ -1,3 +1,4 @@
+
 {
   "rewrites": [
     {
@@ -8,11 +9,9 @@
       "source": "/googleda41df8ea84cf8c1.html",
       "destination": "/api/googleda41df8ea84cf8c1"
     },
-
     {
       "source": "/((?!.*\\.).*)",
-      "destination": "/index.html"
+      "destination": "/$1/index.html"
     }
   ]
 }
-
