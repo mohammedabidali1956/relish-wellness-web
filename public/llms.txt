@@ -1,0 +1,31 @@
+# Dr. Hamid's Physio and Pain Clinic
+
+> Physiotherapy and rehabilitation clinic in Puppalguda, Manikonda, Hyderabad, Telangana, India.
+
+## Clinic
+
+- Website: https://www.drhamidphysio.in/
+- Address: 4-3/81, Opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad, Telangana 500089
+- Phone: +91 76010 26596
+- Physiotherapist: Dr. Mohammed Hamid Ali, BPT
+- Google Business Profile: https://maps.app.goo.gl/zGixCFnPJbKzKxy17
+- Practo profile: https://www.practo.com/hyderabad/doctor/mohammed-hamid-ali-physiotherapist-1
+
+## Main pages
+
+- Services: https://www.drhamidphysio.in/services
+- About the clinic: https://www.drhamidphysio.in/about
+- Patient reviews: https://www.drhamidphysio.in/reviews
+- Articles: https://www.drhamidphysio.in/blogs
+
+## Topics
+
+The website provides information about physiotherapy services for back and neck pain, joint and sports injuries, rehabilitation after surgery, neurological rehabilitation, exercise therapy, and related assessment services. Individual pages describe available care and service areas.
+
+## Use of health information
+
+Website articles provide general educational information. They are not a diagnosis or a substitute for an individual assessment or medical advice. Seek urgent medical care for severe, sudden, or concerning symptoms.
+
+## Canonical URLs and crawling
+
+Use the canonical URLs provided in page metadata. The XML sitemap is available at https://www.drhamidphysio.in/sitemap.xml.

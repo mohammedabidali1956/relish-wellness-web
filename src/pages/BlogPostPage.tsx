@@ -16,17 +16,20 @@ const BlogPostPage = () => {
 
   const isKneeStairsArticle = post.slug === "knee-pain-when-climbing-stairs";
   const canonicalUrl = `https://www.drhamidphysio.in/blogs/${post.slug}`;
+  const publishedDate = new Date(post.date).toISOString().slice(0, 10);
+  const modifiedDate = post.lastUpdated ? new Date(post.lastUpdated).toISOString().slice(0, 10) : publishedDate;
+  const authorCredentials = post.author === "Dr. Mohammed Hamid Ali" ? "BPT" : undefined;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     headline: post.title,
     description: post.excerpt,
-    datePublished: "2026-09-24",
-    dateModified: "2026-09-24",
-    author: { "@type": "Person", name: post.author },
+    datePublished: publishedDate,
+    dateModified: modifiedDate,
+    author: { "@type": post.author === "Clinic Education Team" ? "Organization" : "Person", name: post.author, ...(authorCredentials ? { hasCredential: authorCredentials } : {}) },
     publisher: { "@type": "Organization", name: "Dr. Hamid's Physio and Pain Clinic" },
     mainEntityOfPage: canonicalUrl,
-    about: { "@type": "MedicalCondition", name: "Knee pain" },
+    about: { "@type": "Thing", name: post.category },
   };
   const faqSchema = {
     "@context": "https://schema.org",
@@ -46,17 +49,20 @@ const BlogPostPage = () => {
         pageTitle={`${post.title} | Dr. Hamid's Physio and Pain Clinic`}
         pageDescription={post.excerpt}
       />
-      {isKneeStairsArticle && (
-        <Helmet>
-          <link rel="canonical" href={canonicalUrl} />
-          <meta property="og:title" content={post.title} />
-          <meta property="og:description" content={post.excerpt} />
-          <meta property="og:type" content="article" />
-          <meta property="og:url" content={canonicalUrl} />
-          <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
-          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-        </Helmet>
-      )}
+      <Helmet>
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={`https://www.drhamidphysio.in${post.imageUrl}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content={`https://www.drhamidphysio.in${post.imageUrl}`} />
+        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+        {isKneeStairsArticle && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+      </Helmet>
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-8 md:py-14">
         <div className="container">
@@ -81,7 +87,7 @@ const BlogPostPage = () => {
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm sm:text-base text-muted-foreground">
               <div className="flex items-center gap-2">
                 <User className="w-5 h-5" />
-                <span className="font-medium">{post.author}</span>
+                <span className="font-medium">{post.author}{authorCredentials ? `, ${authorCredentials}` : ""}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
@@ -91,6 +97,11 @@ const BlogPostPage = () => {
                 <Clock className="w-5 h-5" />
                 <span>{post.readTime}</span>
               </div>
+              {post.lastUpdated && (
+                <div className="flex items-center gap-2">
+                  <span>Updated {post.lastUpdated}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>

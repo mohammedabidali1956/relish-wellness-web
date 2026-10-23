@@ -2,6 +2,8 @@ export interface ServiceDetail {
   slug: string;
   category: "Spine & Back" | "Neck & Cervical" | "Knee" | "Shoulder" | "Other Joints & Pain" | "Neurological & Special" | "Sports, Post-Op & General" | "Supporting Modalities";
   isModality?: boolean;
+  relatedServiceSlugs?: string[];
+  evidenceSources?: { label: string; url: string }[];
   title: string;
   metaTitle: string;
   metaDescription: string;

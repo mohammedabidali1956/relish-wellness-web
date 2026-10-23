@@ -27,7 +27,11 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Muscle guarding, spasms, and tenderness along the lumbar paraspinal muscles",
       "Difficulty standing fully erect immediately after getting out of bed or a chair"
     ],
-    howPhysioHelps: "Physiotherapy is clinically proven as the most effective first-line conservative treatment for lower back pain. Rather than relying on temporary analgesic pills or prolonged bed rest, physical therapy directly restores spinal biomechanics. Dr. Mohammed Hamid Ali (BPT) combines targeted manual therapy to relieve muscle guarding with progressive neuromuscular exercises that rebuild your spine's natural load-bearing capacity.",
+    howPhysioHelps: "Guidelines support advice, self-management, continued activity and exercise for many people with low back pain. After an assessment, Dr. Mohammed Hamid Ali can discuss an individual plan that may include progressive exercise and manual therapy as part of an active rehabilitation program.",
+    evidenceSources: [
+      { label: "NICE guideline: low back pain and sciatica", url: "https://www.nice.org.uk/guidance/ng59/chapter/recommendations" },
+      { label: "NHS: Back pain", url: "https://www.nhs.uk/conditions/back-pain/" }
+    ],
     assessmentProcess: [
       "Detailed clinical history of pain onset, daily aggravating factors, and previous treatments",
       "Postural alignment and pelvic tilt assessment in standing and sitting positions",
@@ -54,7 +58,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
     homeCare: [
-      "Avoid strict bed rest beyond 24 hours; gentle walking promotes disc nutrition",
+      "Avoid prolonged bed rest and keep gently active as your symptoms allow",
       "Use a supportive lumbar cushion behind your lower back while seated",
       "Take standing breaks every 35 to 45 minutes to perform gentle standing lumbar extensions",
       "Apply moist warmth for 15 minutes before daily prescribed stretches",
@@ -64,7 +68,7 @@ export const spineAndBackServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Is bed rest recommended for severe acute back pain?",
-        answer: "No. Modern medical evidence clearly demonstrates that strict bed rest beyond 24 to 48 hours actually delays recovery, causes muscle atrophy, and increases stiffness. Gentle walking and guided physiotherapy exercises promote blood flow and hasten tissue healing."
+        answer: "Prolonged bed rest is generally not recommended for back pain. Staying gently active as your symptoms allow is usually encouraged; seek individual advice if movement is difficult or symptoms are worsening."
       },
       {
         question: "How many physiotherapy sessions will I need for my back pain?",
@@ -263,13 +267,14 @@ export const spineAndBackServices: ServiceDetail[] = [
   },
   {
     slug: "disc-bulge-physiotherapy-manikonda",
+    relatedServiceSlugs: ["back-pain-physiotherapy-manikonda", "sciatica-physiotherapy-manikonda", "lumbar-spondylosis-physiotherapy-manikonda"],
     category: "Spine & Back",
     title: "Disc Bulge Physiotherapy",
     metaTitle: "Disc Bulge Physiotherapy in Manikonda | Herniated Disc Treatment",
     metaDescription: "Evidence-based disc bulge and herniated disc physiotherapy in Manikonda, Hyderabad. Non-surgical recovery by Dr. Mohammed Hamid Ali, BPT. Book your consultation!",
     h1: "Disc Bulge Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialised physiotherapy for disc bulge and prolapsed intervertebral disc problems. Focuses on reducing nerve pressure, improving spinal stability, and restoring safe movement.",
-    imageSrc: "/images/services/condition-back-pain.webp",
+    imageSrc: "/images/services/spine-care.svg",
     altText: "Disc bulge physiotherapy and herniated disc treatment in Manikonda clinic",
     whatItIs: "An intervertebral disc bulge occurs when the tough outer ring of the spinal disc (annulus fibrosus) weakens or tears, allowing the soft gelatinous core (nucleus pulposus) to bulge outward into the spinal canal or intervertebral foramen. Most commonly occurring at the L4-L5 and L5-S1 lumbar levels, disc bulges can press against spinal nerves, causing severe localized back pain or radiating pain into the gluteal region and legs. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we provide specialized non-surgical disc decompression protocols designed to retract disc material and stimulate annular healing.",
     causes: [
@@ -349,13 +354,14 @@ export const spineAndBackServices: ServiceDetail[] = [
   },
   {
     slug: "lumbar-spondylosis-physiotherapy-manikonda",
+    relatedServiceSlugs: ["back-pain-physiotherapy-manikonda", "disc-bulge-physiotherapy-manikonda", "spinal-injuries-rehabilitation-manikonda"],
     category: "Spine & Back",
     title: "Lumbar Spondylosis Physiotherapy",
     metaTitle: "Lumbar Spondylosis Physiotherapy in Manikonda | Spine Arthritis Care",
     metaDescription: "Relieve spinal stiffness and lumbar spondylosis pain with specialized physiotherapy in Manikonda, Hyderabad. Expert care by Dr. Mohammed Hamid Ali, BPT.",
     h1: "Lumbar Spondylosis Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized geriatric and adult rehabilitation for lumbar spine arthritis, disc space narrowing, and osteophytic stiffness.",
-    imageSrc: "/images/services/condition-back-pain.webp",
+    imageSrc: "/images/services/spine-care.svg",
     altText: "Lumbar spondylosis physiotherapy and spine arthritis care in Manikonda clinic",
     whatItIs: "Lumbar spondylosis is an age-related degenerative condition affecting the discs, vertebral bodies, and facet joints of the lower spine. Over decades, gradual dehydration of intervertebral discs leads to reduced disc height, bone spur formation (osteophytes), and facet joint arthrosis. While natural with age, it can cause persistent morning stiffness, aching after walking, and reduced functional mobility. At Dr. Hamid's Physio and Pain Clinic in Manikonda, our focus is on keeping your spinal joints mobile, unweighting the facet joints, and strengthening muscular support to ensure an active, pain-free life.",
     causes: [
@@ -435,13 +441,14 @@ export const spineAndBackServices: ServiceDetail[] = [
   },
   {
     slug: "spinal-injuries-rehabilitation-manikonda",
+    relatedServiceSlugs: ["back-pain-physiotherapy-manikonda", "disc-bulge-physiotherapy-manikonda", "lumbar-spondylosis-physiotherapy-manikonda"],
     category: "Spine & Back",
     title: "Spinal Injuries Rehabilitation",
     metaTitle: "Spinal Injuries Rehabilitation in Manikonda | Spine Trauma Recovery",
     metaDescription: "Comprehensive spinal injury rehabilitation in Manikonda, Hyderabad. Specialized recovery for vertebral fractures, post-trauma spine care by Dr. Mohammed Hamid Ali, BPT.",
     h1: "Spinal Injuries Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for post-traumatic spinal injuries, stable vertebral compression fractures, and post-brace spinal recovery.",
-    imageSrc: "/images/services/condition-back-pain.webp",
+    imageSrc: "/images/services/spine-care.svg",
     altText: "Spinal injury rehabilitation and post-trauma recovery in Manikonda clinic",
     whatItIs: "Spinal injuries — resulting from motor vehicle accidents, domestic falls, sports trauma, or osteoporotic compression fractures — require careful, protocol-driven clinical rehabilitation. Whether recovering from a conservative period of spinal bracing (such as a Taylor's or TLSO brace) or post-surgical internal stabilization, restoring spinal confidence, segmental mobility, and muscular endurance is critical. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT) provides safe, structured spinal rehabilitation that rebuilds functional independence step by step.",
     causes: [

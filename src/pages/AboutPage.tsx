@@ -1,16 +1,29 @@
 
 import React from "react";
 import { Star, Heart, Users, Award, Target, Lightbulb } from "lucide-react";
+import { Helmet } from "react-helmet";
 import StructuredData from "@/components/StructuredData";
+import { PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 
 const AboutPage = () => {
   return (
     <div className="min-h-screen">
       <StructuredData 
         type="about" 
-        pageTitle="About Dr. Hamid's Physio and Pain Clinic | Best Physiotherapist in Manikonda" 
-        pageDescription="Learn about Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413, and Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda. Expert physiotherapy care with 8+ years experience and 5-star ratings."
+        pageTitle="About Dr. Hamid's Physio Clinic | Physiotherapist in Manikonda"
+        pageDescription="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), physiotherapist at Dr. Hamid's clinic in Manikonda, Hyderabad."
       />
+      <Helmet>
+        <meta property="og:title" content="About Dr. Hamid's Physio Clinic | Manikonda, Hyderabad" />
+        <meta property="og:description" content="Meet Dr. Mohammed Hamid Ali and learn about the physiotherapy clinic in Puppalguda, Manikonda." />
+        <meta property="og:url" content="https://www.drhamidphysio.in/about" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:image" content="https://www.drhamidphysio.in/images/doctor/dr-mohammed-hamid-ali.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Dr. Hamid's Physio Clinic | Manikonda" />
+        <meta name="twitter:description" content="Learn about Dr. Mohammed Hamid Ali and his physiotherapy clinic in Manikonda, Hyderabad." />
+        <meta name="twitter:image" content="https://www.drhamidphysio.in/images/doctor/dr-mohammed-hamid-ali.webp" />
+      </Helmet>
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-14 md:py-20">
         <div className="container px-4">
@@ -53,7 +66,15 @@ const AboutPage = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 text-lg">Full Qualifications</h3>
                     <p className="text-gray-700">BPT, MPT (Orthopedics)</p>
-                    <p className="text-sm text-gray-500 mt-1">Bachelor of Physiotherapy, Master of Physiotherapy in Orthopedics</p>
+                    <p className="text-sm text-gray-500 mt-1">BPT education is listed with Dr. NTR University of Health Sciences (2018) on Practo.</p>
+                    <a
+                      href={PRACTO_PROFILE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-flex text-sm font-medium text-relish-700 hover:underline"
+                    >
+                      View education details on Practo
+                    </a>
                   </div>
                 </div>
 
@@ -64,7 +85,7 @@ const AboutPage = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 text-lg">Professional Designation</h3>
                     <p className="text-gray-700">Founder, Consultant Physiotherapist</p>
-                    <p className="text-sm text-gray-500 mt-1">Registration Number: <span className="font-medium text-gray-700">0413</span></p>
+                    <p className="text-sm text-gray-500 mt-1">Registration number listed: <span className="font-medium text-gray-700">0413</span></p>
                   </div>
                 </div>
 

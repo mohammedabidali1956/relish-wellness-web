@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, ExternalLink } from "lucide-react";
+import { GOOGLE_BUSINESS_PROFILE_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 
 const WhatsAppIcon = ({ className = "h-5 w-5" }: { className?: string }) => (
   <svg
@@ -50,18 +51,36 @@ const socialLinks = [
     hoverBg: "hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2]",
     accentColor: "text-[#1877F2]",
   },
+  {
+    label: "Google Maps",
+    subtext: "Clinic details and reviews",
+    handle: "Dr. Hamid's Physio & Pain Clinic",
+    href: GOOGLE_BUSINESS_PROFILE_URL,
+    icon: MapPin,
+    hoverBg: "hover:bg-[#4285F4] hover:text-white hover:border-[#4285F4]",
+    accentColor: "text-[#4285F4]",
+  },
+  {
+    label: "Practo",
+    subtext: "Profile and consultation fee",
+    handle: "Dr. Mohammed Hamid Ali",
+    href: PRACTO_PROFILE_URL,
+    icon: ExternalLink,
+    hoverBg: "hover:bg-[#1f7a70] hover:text-white hover:border-[#1f7a70]",
+    accentColor: "text-[#1f7a70]",
+  },
 ];
 
 const quickLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
-  { to: "/conditions/neck-pain", label: "Neck Pain Treatment" },
-  { to: "/conditions/back-pain", label: "Back Pain Treatment" },
-  { to: "/conditions/knee-pain", label: "Knee Pain Treatment" },
-  { to: "/conditions/sports-injuries", label: "Sports Rehab" },
-  { to: "/conditions/post-surgery-rehab", label: "Post-Surgery Rehab" },
-  { to: "/conditions/home-visit-services", label: "Home Physiotherapy Visits" },
+  { to: "/services/neck-pain-physiotherapy-manikonda", label: "Neck Pain Treatment" },
+  { to: "/services/back-pain-physiotherapy-manikonda", label: "Back Pain Treatment" },
+  { to: "/services/knee-pain-physiotherapy-manikonda", label: "Knee Pain Treatment" },
+  { to: "/services/sports-injury-physiotherapy-manikonda", label: "Sports Rehab" },
+  { to: "/services/post-surgical-rehabilitation-manikonda", label: "Post-Surgery Rehab" },
+  { to: "/services/home-visit-physiotherapy-manikonda", label: "Home Physiotherapy Visits" },
   { to: "/reviews", label: "Reviews" },
   { to: "/blogs", label: "Blogs" },
   { to: "/#appointment", label: "Book Appointment" },

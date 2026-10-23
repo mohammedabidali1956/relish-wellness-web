@@ -4,6 +4,7 @@ import ReviewCard from "@/components/ReviewCard";
 import { Star } from "lucide-react";
 import StructuredData from "@/components/StructuredData";
 import { scrollToAppointmentSection } from "@/lib/navigation";
+import { GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_REVIEW_SUMMARY } from "@/lib/businessInfo";
 
 interface Review {
   id: number;
@@ -74,8 +75,10 @@ const ReviewsPage = () => {
 
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filter reviews based on search term only
+  // Keep the page focused on feedback that clearly refers to this clinic.
+  const excludedReviewIds = new Set([1, 6, 20, 33, 35]);
   const filteredReviews = allReviews.filter((review) => {
+    if (excludedReviewIds.has(review.id)) return false;
     const matchesSearch = review.comment.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           review.patientName.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesSearch;
@@ -86,7 +89,7 @@ const ReviewsPage = () => {
       <StructuredData 
         type="about" 
         pageTitle="Patient Reviews | Dr. Hamid's Physio and Pain Clinic Manikonda" 
-        pageDescription="Read 50+ genuine reviews from patients treated at Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad. 5-star rated physiotherapy services."
+        pageDescription="Read selected patient comments and view Dr. Hamid's current Google rating and reviews for the Manikonda clinic."
       />
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-14 md:py-20">
@@ -94,8 +97,18 @@ const ReviewsPage = () => {
           <div className="text-center">
             <h1 className="heading-1 mb-6 text-gray-800">Patient Reviews</h1>
             <p className="paragraph max-w-3xl mx-auto">
-              Read what our patients have to say about their experiences at Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad.
+              These are selected patient comments. See Google for the current clinic rating and complete review count.
             </p>
+
+            <a
+              href={GOOGLE_BUSINESS_PROFILE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 font-semibold text-relish-700 hover:underline"
+            >
+              <Star className="h-5 w-5 fill-current" />
+              <span>{GOOGLE_REVIEW_SUMMARY.rating}/5 from {GOOGLE_REVIEW_SUMMARY.reviewCount} Google reviews</span>
+            </a>
             
             <div className="flex justify-center mt-8">
               <div className="relative">

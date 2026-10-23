@@ -61,27 +61,45 @@ export const ServiceDetailPage: React.FC = () => {
 
   // Find 3 closely related services in same or complementary category
   const relatedServices = useMemo(() => {
-    return allServices
+    const selectedServices = (service.relatedServiceSlugs ?? []).flatMap((relatedSlug) => {
+      const relatedService = getServiceBySlug(relatedSlug);
+      return relatedService && relatedService.slug !== service.slug ? [relatedService] : [];
+    });
+
+    const additionalServices = allServices
       .filter((s) => s.slug !== service.slug)
+      .filter((s) => !selectedServices.some((selected) => selected.slug === s.slug))
       .sort((a, b) => {
         const aCatMatch = a.category === service.category ? -1 : 1;
         const bCatMatch = b.category === service.category ? -1 : 1;
         return aCatMatch - bCatMatch;
       })
-      .slice(0, 3);
+      .slice(0, Math.max(0, 3 - selectedServices.length));
+
+    return [...selectedServices, ...additionalServices];
   }, [service]);
 
   // Find relevant blogs for internal linking
   const relatedBlogs = useMemo(() => {
-    const sLower = service.title.toLowerCase();
+    const serviceTitle = service.title.toLowerCase();
+    let relevantTopics: string[] = [];
+
+    if (service.category === "Spine & Back") {
+      relevantTopics = ["back", "sciatica", "disc bulge", "desk"];
+    } else if (serviceTitle.includes("neck") || service.category === "Neck & Cervical") {
+      relevantTopics = ["neck"];
+    } else if (serviceTitle.includes("knee") || service.category === "Knee") {
+      relevantTopics = ["knee"];
+    } else if (service.category === "Other Joints & Pain") {
+      relevantTopics = ["heel", "plantar", "foot", "ankle"];
+    } else if (serviceTitle.includes("sport")) {
+      relevantTopics = ["sports", "gym", "exercise"];
+    }
+
     return blogPosts
       .filter((b) => {
-        const bTitle = b.title.toLowerCase();
-        if (sLower.includes("knee") && bTitle.includes("knee")) return true;
-        if (sLower.includes("back") && (bTitle.includes("back") || bTitle.includes("desk"))) return true;
-        if (sLower.includes("neck") && (bTitle.includes("neck") || bTitle.includes("posture"))) return true;
-        if (sLower.includes("sport") && bTitle.includes("gym")) return true;
-        return true;
+        const articleText = `${b.title} ${b.slug} ${b.category}`.toLowerCase();
+        return relevantTopics.some((topic) => articleText.includes(topic));
       })
       .slice(0, 2);
   }, [service]);
@@ -198,6 +216,7 @@ export const ServiceDetailPage: React.FC = () => {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={`https://www.drhamidphysio.in${service.imageSrc}`} />
+        <link rel="preload" as="image" href={service.imageSrc} fetchpriority="high" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={service.metaTitle} />
         <meta name="twitter:description" content={service.metaDescription} />
@@ -332,6 +351,25 @@ export const ServiceDetailPage: React.FC = () => {
                   <p className="text-sm text-[#4a5568] leading-relaxed">
                     {service.howPhysioHelps}
                   </p>
+                  {service.evidenceSources && (
+                    <div className="border-t border-[#e5dec9] pt-3">
+                      <h3 className="text-xs font-bold uppercase tracking-wide text-[#081a2e]">Guidance and further reading</h3>
+                      <ul className="mt-2 space-y-1">
+                        {service.evidenceSources.map((source) => (
+                          <li key={source.url}>
+                            <a
+                              href={source.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-[#8a5d24] underline-offset-2 hover:underline"
+                            >
+                              {source.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </article>
 

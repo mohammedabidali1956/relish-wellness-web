@@ -9,6 +9,7 @@ import {
 } from "@/data/services";
 import { Button } from "@/components/ui/button";
 import { openWhatsApp } from "@/lib/whatsapp";
+import { PRACTO_CONSULTATION_FEE_INR, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 import {
   ArrowRight,
   Phone,
@@ -93,16 +94,20 @@ const ServicesPage: React.FC = () => {
         <title>Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder &amp; Home Visits</title>
         <meta
           name="description"
-          content="Professional physiotherapy services in Manikonda for back pain, neck pain, knee pain, shoulder problems, sciatica, sports injuries and post-surgical rehabilitation. Home visits available in Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas. Led by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413."
+          content="Explore physiotherapy for back, neck, knee and shoulder pain, sports injuries and recovery after surgery in Manikonda. Home visits available."
         />
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content="Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder & Home Visits" />
         <meta
           property="og:description"
-          content="Professional physiotherapy services in Manikonda for back pain, neck pain, knee pain, shoulder problems, sciatica, sports injuries and post-surgical rehabilitation. Home visits available in Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas. Led by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413."
+          content="Browse physiotherapy programs for back, neck, knee and shoulder pain, sports injuries and post-surgery recovery in Manikonda, Hyderabad."
         />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic" />
+        <meta name="twitter:description" content="Physiotherapy programs for back, neck, knee and shoulder pain, sports injuries and post-surgery recovery. Home visits available." />
+        <meta name="twitter:image" content="https://www.drhamidphysio.in/images/logo/og-image.png" />
         <script type="application/ld+json">{JSON.stringify(servicesStructuredData)}</script>
       </Helmet>
 
@@ -148,6 +153,21 @@ const ServicesPage: React.FC = () => {
               </div>
             </div>
 
+
+            <div id="consultation-fee" className="mt-4 rounded-xl border border-[#e5dec9] bg-[#fffbf2] p-4 text-left">
+              <h2 className="font-serif text-lg font-bold text-[#081a2e]">Consultation fee</h2>
+              <p className="mt-1 text-sm leading-relaxed text-[#4a5568]">
+                Practo currently lists a consultation fee of ₹{PRACTO_CONSULTATION_FEE_INR}. Please confirm the current fee when booking; treatment sessions and home visits may be priced separately.
+              </p>
+              <a
+                href={PRACTO_PROFILE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex text-sm font-semibold text-[#8a5d24] hover:underline"
+              >
+                View Dr. Hamid's Practo profile
+              </a>
+            </div>
 
             {/* Quick Stats Banner */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 max-w-2xl mx-auto text-left">

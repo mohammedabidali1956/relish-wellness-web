@@ -15,6 +15,7 @@ export interface BlogPost {
   category: string;
   imageUrl: string;
   readTime: string;
+  lastUpdated?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -547,6 +548,87 @@ export const blogPosts: BlogPost[] = [
 
 <p><strong>Remember: Your body is designed to move. Let us help you move better, feel better, and live better!</strong></p>
     `
+  },
+  {
+    id: "6",
+    title: "Sciatica and Disc Bulge: What Is the Difference?",
+    slug: "sciatica-vs-disc-bulge",
+    excerpt: "Sciatica describes a pattern of nerve-related symptoms, while a disc bulge is an imaging finding. Learn why one does not automatically prove the other and when to seek help.",
+    date: "October 23, 2026",
+    lastUpdated: "October 23, 2026",
+    author: "Clinic Education Team",
+    category: "Back Pain & Sciatica",
+    imageUrl: "/images/services/condition-neuro-rehab.webp",
+    readTime: "5 min read",
+    content: `
+<p class="article-lead">People often use “sciatica” and “disc bulge” as if they mean the same thing. They do not. Sciatica describes symptoms that may follow irritation or compression of a nerve in the lower back; a disc bulge is a description of the shape of a disc, usually reported on a scan.</p>
+<h2>What does sciatica mean?</h2>
+<p>Sciatica commonly causes pain that travels from the lower back or buttock down one leg. Some people also experience tingling, numbness, or weakness. Symptoms and their severity vary, and pain in the leg can have causes other than sciatica.</p>
+<h2>What is a disc bulge?</h2>
+<p>A disc is a cushion between the bones of the spine. A scan may describe a disc as bulging, but that finding alone does not show whether it is causing symptoms. The result needs to be considered alongside a person's history and clinical examination.</p>
+<h2>Can a disc bulge cause sciatica?</h2>
+<p>It can be one cause if it irritates a nearby nerve, but a scan finding does not automatically explain pain. Some people have disc changes without symptoms, and sciatica may arise for other reasons. A clinician can help interpret symptoms and decide whether imaging or another assessment is appropriate.</p>
+<h2>What can I do?</h2>
+<p>For many people with low back pain, guidance supports staying active as tolerated, self-management, and exercise selected for the person's needs. A physiotherapist can assess movement, strength, function, and symptoms, then discuss options. Treatment should be adapted to the individual; no single exercise or hands-on technique is right for everyone.</p>
+<p>Read more about <a href="https://www.nhs.uk/conditions/sciatica/" rel="noopener noreferrer">sciatica from the NHS</a> and the <a href="https://www.nice.org.uk/guidance/ng59/chapter/recommendations" rel="noopener noreferrer">NICE recommendations for low back pain and sciatica</a>.</p>
+<h2>When to seek urgent medical help</h2>
+<p>Get urgent medical care if back or leg symptoms are accompanied by numbness around the genitals or bottom, difficulty starting or controlling urination, loss of bowel control, or severe or worsening weakness—especially in both legs. These can be signs of a serious problem.</p>
+<h2>Book an assessment in Manikonda</h2>
+<p>If back or leg symptoms are affecting daily activities, you can book an assessment at Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda. An assessment can help decide whether physiotherapy is appropriate or whether you need another healthcare professional.</p>
+<p><strong>Medical information:</strong> This article provides general education and does not diagnose or replace medical advice. Seek prompt care for severe, sudden, or concerning symptoms.</p>
+    `
+  },
+  {
+    id: "7",
+    title: "Desk Work and Back Pain: Small Changes That May Help",
+    slug: "desk-work-and-back-pain",
+    excerpt: "Long periods at a desk can make back discomfort harder to manage. Learn practical ways to vary your position, take movement breaks, and get help when symptoms persist.",
+    date: "October 23, 2026",
+    lastUpdated: "October 23, 2026",
+    author: "Clinic Education Team",
+    category: "Back Pain & Workplace Health",
+    imageUrl: "/images/services/condition-back-pain.webp",
+    readTime: "4 min read",
+    content: `
+<p class="article-lead">Back discomfort during desk work is common, but there is no single perfect sitting posture that prevents it for everyone. Your work setup, time spent in one position, activity, sleep, stress, and health all may contribute.</p>
+<h2>Change position regularly</h2>
+<p>Try to break up long, uninterrupted periods of sitting. Stand, walk briefly, or change position when it is practical. Short movement breaks can make the workday less static; they do not need to be complicated workouts.</p>
+<h2>Make your workstation comfortable</h2>
+<ul><li>Place your screen where you can read it without repeatedly leaning forward.</li><li>Keep frequently used items within comfortable reach.</li><li>Adjust chair and desk height so you can work without holding an awkward position.</li><li>Use a headset if you often hold a phone between your ear and shoulder.</li></ul>
+<p>Comfort matters more than trying to hold a rigid “correct” posture all day. Desk setup advice from <a href="https://www.merseycare.nhs.uk/msk-work/desk-based-jobs" rel="noopener noreferrer">Mersey Care NHS Foundation Trust</a> includes varying position and making the workstation work for you.</p>
+<h2>Keep active within your tolerance</h2>
+<p>Walking and ordinary daily activity can usually continue as symptoms allow. If pain is persistent, severe, or limits work or sleep, a healthcare professional can assess it. A physiotherapist can help identify useful activity changes and an individual exercise plan.</p>
+<h2>When to seek care</h2>
+<p>Seek medical advice if back pain is getting worse, follows significant trauma, comes with fever or feeling unwell, or is accompanied by new numbness or weakness. Urgent care is needed for new problems controlling the bladder or bowel, or numbness around the genitals or bottom.</p>
+<p>For general information, see the <a href="https://www.nhs.uk/conditions/back-pain/" rel="noopener noreferrer">NHS back pain guidance</a>.</p>
+<h2>Physiotherapy in Manikonda</h2>
+<p>If desk-related back symptoms are interfering with daily life, an assessment at Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda can help discuss appropriate next steps.</p>
+<p><strong>Medical information:</strong> This article is for general education and does not replace individual medical advice or assessment.</p>
+    `
+  },
+  {
+    id: "8",
+    title: "Morning Heel Pain: Could It Be Plantar Fasciitis?",
+    slug: "morning-heel-pain-plantar-fasciitis",
+    excerpt: "Heel pain with the first steps after rest has several possible causes. Learn what plantar fasciitis can feel like, what else may explain heel pain, and how assessment can help.",
+    date: "October 23, 2026",
+    lastUpdated: "October 23, 2026",
+    author: "Clinic Education Team",
+    category: "Foot & Heel Pain",
+    imageUrl: "/images/services/foot-and-ankle-care.svg",
+    readTime: "4 min read",
+    content: `
+<p class="article-lead">Pain under the heel during the first steps after waking or resting can occur with plantar fasciitis, but the symptom alone cannot confirm the cause. Heel discomfort may also relate to other tissues, injury, or a health condition that needs separate attention.</p>
+<h2>What is plantar fasciitis?</h2>
+<p>The plantar fascia is a strong band of tissue along the sole of the foot. Plantar fasciitis can cause pain under the heel, often worse with the first steps after rest. Symptoms can vary from person to person. See the <a href="https://www.nhs.uk/conditions/plantar-fasciitis/" rel="noopener noreferrer">NHS overview of plantar fasciitis</a>.</p>
+<h2>What may help?</h2>
+<p>Management depends on symptoms and activity. It may include adjusting activities temporarily, comfortable supportive footwear, and exercises selected to suit your foot and ankle. A physiotherapist can assess your symptoms, walking and standing demands, and relevant movement before recommending a plan. Insoles are one option for some people, but they are not required by everyone and are not a guaranteed cure.</p>
+<p>If symptoms are linked to a recent injury, are severe, or make it difficult to put weight on the foot, seek medical advice. A clinician can also advise if symptoms are not improving or if another diagnosis should be considered.</p>
+<h2>When to book an assessment</h2>
+<p>Consider an assessment if heel pain keeps returning, limits your work or walking, or you are unsure how to adjust activity. Bring the shoes you use most often so they can be considered as part of the discussion.</p>
+<p>For heel or foot pain, Dr. Hamid's Physio and Pain Clinic is located in Puppalguda, Manikonda, Hyderabad. <a href="/services/orthotics-insole-assessment-manikonda">Learn about foot and insole assessment</a>.</p>
+<p><strong>Medical information:</strong> This article is for general education and does not replace an individual medical or physiotherapy assessment.</p>
+    `
   }
 ];
 
@@ -555,5 +637,9 @@ export const getBlogPost = (slug: string): BlogPost | undefined => {
 };
 
 export const getRecentPosts = (limit: number = 3): BlogPost[] => {
-  return blogPosts.slice(0, limit);
+  return [...blogPosts]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime() || Number(b.id) - Number(a.id))
+    .slice(0, limit);
 };
+
+export const getBlogPostsNewestFirst = (): BlogPost[] => getRecentPosts(blogPosts.length);

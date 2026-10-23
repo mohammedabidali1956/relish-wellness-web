@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
-import { blogPosts } from "@/data/blogPosts";
+import { getBlogPostsNewestFirst } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 
 import StructuredData from "@/components/StructuredData";
 
 const BlogsPage = () => {
+  const posts = getBlogPostsNewestFirst();
   return (
     <div>
       <StructuredData 
@@ -31,14 +32,14 @@ const BlogsPage = () => {
       <section className="bg-card px-4 py-10 md:py-20">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+            {posts.map((post, index) => (
               <article key={post.id} className="flex flex-col overflow-hidden rounded-md border border-border bg-card transition-colors duration-200 hover:border-relish-300">
                 <Link to={`/blogs/${post.slug}`} className="relative block aspect-[16/10] overflow-hidden bg-muted" aria-label={`Read ${post.title}`}>
                   <img 
                     src={post.imageUrl} 
                     alt={`${post.title} - Dr. Hamid's Physio and Pain Clinic`}
                     className="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none hover:scale-[1.03]"
-                    loading={post.id === "5" ? "eager" : "lazy"}
+                    loading={index === 0 ? "eager" : "lazy"}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-relish-600 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -68,7 +69,7 @@ const BlogsPage = () => {
                   <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                     <div className="flex items-center gap-2 text-sm text-gray-600">
                       <User className="w-4 h-4" />
-                      <span>{post.author}</span>
+                      <span>{post.author}{post.author === "Dr. Mohammed Hamid Ali" ? ", BPT" : ""}</span>
                     </div>
                     
                     <Link to={`/blogs/${post.slug}`}>

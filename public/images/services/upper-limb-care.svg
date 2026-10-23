@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">Arm and elbow care</title>
+  <desc id="desc">A simple illustration highlighting the elbow and forearm.</desc>
+  <rect width="800" height="620" rx="32" fill="#f4f1e8"/>
+  <circle cx="626" cy="151" r="84" fill="#e1eadb"/>
+  <path d="M250 138c38-29 81-24 103 11l76 121-72 55-91-93-88 97c-17 19-48 20-68 2-20-17-23-47-6-68l116-142c8-10 18-19 30-27z" fill="#d9a17b" stroke="#79534b" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M422 270l142-14c28-3 52 18 55 46 2 28-18 52-46 55l-135 16 104 101c20 19 20 50 1 69-19 20-50 20-70 1L330 404c-19-19-20-49-2-69l94-65z" fill="#d9a17b" stroke="#79534b" stroke-width="16" stroke-linejoin="round"/>
+  <circle cx="422" cy="276" r="47" fill="#e8ba80" stroke="#79534b" stroke-width="14"/>
+  <circle cx="422" cy="276" r="13" fill="#47755d"/>
+</svg>

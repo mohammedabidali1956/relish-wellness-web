@@ -51,6 +51,19 @@ try {
     await mkdir(path.dirname(outputPath), { recursive: true });
     await writeFile(outputPath, html);
   }
+  const canonicalPaths = [
+    "/",
+    "/about",
+    "/services",
+    "/reviews",
+    "/blogs",
+    ...allServices.map(({ slug }) => `/services/${slug}`),
+    ...blogPosts.map(({ slug }) => `/blogs/${slug}`),
+  ];
+  const lastModified = new Date().toISOString().slice(0, 10);
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${canonicalPaths.map((route) => `  <url><loc>https://www.drhamidphysio.in${route === "/" ? "/" : route}</loc><lastmod>${lastModified}</lastmod></url>`).join("\n")}\n</urlset>\n`;
+  await writeFile(path.join(root, "public/sitemap.xml"), sitemap);
+  await writeFile(path.join(root, "dist/sitemap.xml"), sitemap);
   console.log(`Prerendered ${paths.length} routes.`);
 } finally {
   await vite.close();

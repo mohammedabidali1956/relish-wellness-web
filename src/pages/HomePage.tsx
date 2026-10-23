@@ -22,7 +22,9 @@ import PainPointGuide from "@/components/PainPointGuide";
 import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
 import { conditions } from "@/data/conditions";
-import { blogPosts } from "@/data/blogPosts";
+import { getRecentPosts } from "@/data/blogPosts";
+import { getServiceBySlug } from "@/data/services";
+import { GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_REVIEW_SUMMARY } from "@/lib/businessInfo";
 
 // Medical SVG icons styled to match reference image cards
 const NeckIcon = () => (
@@ -102,37 +104,37 @@ const HomePage = () => {
   const heroHighlightCards = [
     {
       title: "Neck Pain Treatment",
-      slug: "neck-pain",
+      slug: "neck-pain-physiotherapy-manikonda",
       icon: <NeckIcon />,
       hint: "Cervical care & text neck"
     },
     {
       title: "Back Pain Treatment",
-      slug: "back-pain",
+      slug: "back-pain-physiotherapy-manikonda",
       icon: <SpineBackIcon />,
       hint: "Sciatica & disc decompression"
     },
     {
       title: "Knee Pain Treatment",
-      slug: "knee-pain",
+      slug: "knee-pain-physiotherapy-manikonda",
       icon: <KneeIcon />,
       hint: "Stair pain & arthritis care"
     },
     {
       title: "Sports Injuries Rehab",
-      slug: "sports-injuries",
+      slug: "sports-injury-physiotherapy-manikonda",
       icon: <RunningAthleteIcon />,
       hint: "Sprains, tears & return-to-play"
     },
     {
       title: "Post-Surgery Rehab",
-      slug: "post-surgery-rehab",
+      slug: "post-surgical-rehabilitation-manikonda",
       icon: <RehabBedIcon />,
       hint: "TKR, THR & fracture protocol"
     },
     {
       title: "Home Physiotherapy Visits",
-      slug: "home-visit-services",
+      slug: "home-visit-physiotherapy-manikonda",
       icon: <ApartmentBuildingIcon />,
       hint: "Apartment & in-home physio in Manikonda"
     },
@@ -175,7 +177,7 @@ const HomePage = () => {
   };
 
   const handleDirections = () => {
-    window.open("https://maps.app.goo.gl/zGixCFnPJbKzKxy17", "_blank");
+    window.open(GOOGLE_BUSINESS_PROFILE_URL, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -200,8 +202,7 @@ const HomePage = () => {
 
               {/* Main Headline */}
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-[3.65rem] font-bold text-[#081a2e] tracking-tight leading-[1.12]">
-                Expert Care <br />
-                for Your Pain &amp; Recovery
+                Physiotherapy in Manikonda
               </h1>
 
               {/* Subheading */}
@@ -238,7 +239,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Star className="w-4 h-4 text-[#c28e28] fill-[#c28e28]" />
-                  <span>100+ 5-Star Reviews</span>
+                  <span>{GOOGLE_REVIEW_SUMMARY.reviewCount} Google reviews · {GOOGLE_REVIEW_SUMMARY.rating}/5</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#2a5d45]" />
@@ -255,6 +256,7 @@ const HomePage = () => {
                   alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist holding anatomical spine model at Dr. Hamid's Physio Clinic Manikonda"
                   className="w-full h-auto aspect-[3/4] object-cover object-top drop-shadow-sm"
                   loading="eager"
+                  {...{ fetchpriority: "high" }}
                 />
                 
                 {/* Subtle overlay badge for credentials */}
@@ -274,7 +276,7 @@ const HomePage = () => {
               {heroHighlightCards.map((card) => (
                 <Link
                   key={card.slug}
-                  to={`/conditions/${card.slug}`}
+                  to={`/services/${card.slug}`}
                   className="group flex flex-col items-center text-center p-5 rounded-2xl bg-[#fffbf2]/90 hover:bg-white border border-[#e5dec9] hover:border-[#8c6b3e]/60 shadow-xs hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <div className="w-16 h-16 rounded-full bg-[#f6eddb] group-hover:bg-[#efe3c8] flex items-center justify-center mb-3 transition-colors">
@@ -368,7 +370,7 @@ const HomePage = () => {
 
                   <div className="pt-4 border-t border-[#e2d8c0]/60 flex items-center justify-between">
                     <Link
-                      to={`/conditions/${service.slug}`}
+                      to={`/services/${getServiceBySlug(service.slug)?.slug ?? service.slug}`}
                       className="inline-flex items-center text-sm font-semibold text-[#8a5d24] hover:text-[#5c3e17] transition-colors"
                     >
                       <span>Explore Treatment &amp; FAQs</span>
@@ -420,7 +422,7 @@ const HomePage = () => {
                     {modality.shortDescription}
                   </p>
                   <Link
-                    to={`/conditions/${modality.slug}`}
+                    to={`/services/${getServiceBySlug(modality.slug)?.slug ?? modality.slug}`}
                     className="inline-flex items-center text-xs font-semibold text-[#8a5d24] hover:underline mt-2.5"
                   >
                     <span>Read modality overview</span>
@@ -532,19 +534,21 @@ const HomePage = () => {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">
-                Verified Patient Experiences
+                Patient feedback
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-1">
                 What Manikonda Patients Say
               </h2>
             </div>
-            <Link
-              to="/reviews"
+            <a
+              href={GOOGLE_BUSINESS_PROFILE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-semibold text-[#8a5d24] hover:underline"
             >
-              <span>View all 50+ Google Reviews</span>
+              <span>Read {GOOGLE_REVIEW_SUMMARY.reviewCount} reviews on Google</span>
               <ArrowRight className="w-4 h-4 ml-1" />
-            </Link>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -597,7 +601,7 @@ const HomePage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {blogPosts.slice(0, 3).map((post) => (
+            {getRecentPosts(3).map((post) => (
               <article
                 key={post.id}
                 className="flex flex-col rounded-2xl border border-[#e5dec9] bg-[#fffbf2] overflow-hidden hover:shadow-lg transition-all group"

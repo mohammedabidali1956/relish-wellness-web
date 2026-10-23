@@ -531,10 +531,10 @@ export const supportingModalities: ServiceDetail[] = [
     metaTitle: "Exercise Therapy in Manikonda | Medical Rehabilitation | Dr. Hamid's Clinic",
     metaDescription: "Evidence-based exercise therapy in Manikonda, Hyderabad. Rebuild strength, mobility, balance & functional independence. Expert supervision by Dr. Hamid, BPT.",
     h1: "Exercise Therapy & Medical Rehabilitation in Manikonda, Hyderabad",
-    shortDescription: "Doctor-guided biomechanical movement rehabilitation, progressive resistance training, and functional conditioning to permanently cure physical impairments.",
+    shortDescription: "Doctor-guided exercise and functional rehabilitation to support strength, mobility and daily activities.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Exercise therapy and functional medical training in Manikonda clinic",
-    whatItIs: "Exercise Therapy is the evidence-based foundation of all modern physiotherapy and physical rehabilitation. While passive modalities (heat, ultrasound, electrotherapy) are valuable supporting tools for temporary pain relief and tissue preparation, only active exercise therapy creates permanent biological adaptations: strengthening weakened skeletal muscles, remodeling collagen fibers along mechanical lines of stress, restoring joint lubrication, and re-educating the brain's neuromuscular movement patterns. At Dr. Hamid's Physio and Pain Clinic in Manikonda, exercise therapy is not a random collection of stretches; it is an individualized medical exercise prescription tailored to your biomechanics, injury phase, and functional goals.",
+    whatItIs: "Exercise therapy is an important part of physiotherapy and physical rehabilitation. Depending on the condition and goals, a tailored exercise plan may support strength, mobility, balance, confidence, and day-to-day function over time. Other approaches, such as education, activity changes, or symptom relief strategies, may also form part of care. At Dr. Hamid's Physio and Pain Clinic in Manikonda, exercise options are adapted to the person's assessment findings, health, and functional goals.",
     causes: [
       "Severe muscular deconditioning and postural muscle imbalances resulting from desk-bound lifestyles",
       "Post-operative joint contracture, arthrogenic muscle inhibition, and loss of walking stamina",

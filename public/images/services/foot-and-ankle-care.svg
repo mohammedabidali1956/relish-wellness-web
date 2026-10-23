@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">Foot and ankle support</title>
+  <desc id="desc">A simple illustration of a foot, ankle and supportive insole.</desc>
+  <rect width="800" height="620" rx="32" fill="#f4f1e8"/>
+  <circle cx="620" cy="150" r="80" fill="#e1eadb"/>
+  <path d="M305 92c-16 88-25 158-17 209 6 39 30 66 56 88 32 28 68 46 116 66 58 24 104 48 105 83 1 24-22 40-55 38l-199-12c-93-6-152-54-160-127-5-43 13-82 34-119 19-35 32-81 29-133l-3-93c-1-24 16-44 43-46 30-3 55 17 51 46z" fill="#d9a17b" stroke="#79534b" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M248 476c64 33 133 40 206 45 47 3 82 18 104 42-10 18-28 25-54 23l-199-12c-77-5-126-37-145-93 26 7 56 5 88-5z" fill="#47755d" stroke="#315c47" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M391 140v103m-46-55h92" stroke="#47755d" stroke-width="18" stroke-linecap="round"/>
+</svg>

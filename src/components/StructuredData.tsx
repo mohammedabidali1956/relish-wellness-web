@@ -17,13 +17,14 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     "image": "/images/logo/og-image.png",
     "url": "https://www.drhamidphysio.in",
     "@id": "https://www.drhamidphysio.in",
-    "telephone": "+919885755888",
+    "telephone": "+917601026596",
     "email": "hamid.physio324@gmail.com",
     "sameAs": [
       "https://www.youtube.com/@dr.hamidsphysiopainclinic",
       "https://www.instagram.com/drhamidphysio",
       "https://www.facebook.com/profile.php?id=61587086612280",
-      "https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
+      "https://maps.app.goo.gl/zGixCFnPJbKzKxy17",
+      "https://www.practo.com/hyderabad/doctor/mohammed-hamid-ali-physiotherapist-1"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -48,14 +49,6 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
         "closes": "22:00"
       }
     ],
-    "priceRange": "₹₹",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "50",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "founder": {
       "@type": "Person",
       "name": "Dr. Mohammed Hamid Ali",
@@ -159,53 +152,6 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     ]
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is physiotherapy?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Physiotherapy is a healthcare profession that helps people restore, maintain, and maximize their strength, function, movement, and overall well-being through physical examination, diagnosis, prognosis, patient education, and physical intervention."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What conditions can physiotherapy treat?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Physiotherapy can treat a wide range of conditions including back pain, neck pain, sports injuries, arthritis, post-surgical rehabilitation, stroke recovery, neurological disorders, and chronic pain conditions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where is Dr. Hamid's Physio and Pain Clinic located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Dr. Hamid's Physio and Pain Clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need a doctor's referral for physiotherapy?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, you don't need a doctor's referral to visit a physiotherapist. You can directly consult a physiotherapist for musculoskeletal conditions, which can save time and provide specialized care faster."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which areas do you serve near Manikonda and Puppalaguda?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Dr. Hamid's Physio and Pain Clinic is located in Puppalaguda, Manikonda, and conveniently serves patients from surrounding neighbourhoods including Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda, and the Seven Tombs area."
-        }
-      }
-    ]
-  };
-
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -215,14 +161,16 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     "logo": "/images/logo/og-image.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+919885755888",
+      "telephone": "+917601026596",
       "contactType": "customer service",
       "areaServed": "IN",
       "availableLanguage": ["en", "hi", "te"]
     },
     "sameAs": [
       "https://www.instagram.com/drhamidphysio",
-      "https://www.facebook.com/profile.php?id=61587086612280"
+      "https://www.facebook.com/profile.php?id=61587086612280",
+      "https://maps.app.goo.gl/zGixCFnPJbKzKxy17",
+      "https://www.practo.com/hyderabad/doctor/mohammed-hamid-ali-physiotherapist-1"
     ]
   };
 
@@ -230,9 +178,6 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     <Helmet>
       <script type="application/ld+json">
         {JSON.stringify(localBusinessSchema)}
-      </script>
-      <script type="application/ld+json">
-        {JSON.stringify(faqSchema)}
       </script>
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}

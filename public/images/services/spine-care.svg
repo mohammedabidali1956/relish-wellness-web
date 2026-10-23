@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-labelledby="title desc">
+  <title id="title">Spine and back care</title>
+  <desc id="desc">A simple illustration of the spinal column with a highlighted lower back.</desc>
+  <rect width="800" height="620" rx="32" fill="#f4f1e8"/>
+  <circle cx="620" cy="150" r="82" fill="#e1eadb"/>
+  <path d="M337 88c-53 12-84 49-86 94-2 38 19 63 40 84-28 27-43 61-37 93 5 27 23 47 46 62-22 30-27 67-10 97 15 28 43 42 76 48l34-31-21-42 23-44-24-40 23-47-26-43 22-45-25-43 21-48-31-41-25-34z" fill="#d9a17b" stroke="#79534b" stroke-width="15" stroke-linejoin="round"/>
+  <path d="M463 88c53 12 84 49 86 94 2 38-19 63-40 84 28 27 43 61 37 93-5 27-23 47-46 62 22 30 27 67 10 97-15 28-43 42-76 48l-34-31 21-42-23-44 24-40-23-47 26-43-22-45 25-43-21-48 31-41 25-34z" fill="#d9a17b" stroke="#79534b" stroke-width="15" stroke-linejoin="round"/>
+  <path d="M399 155v327" stroke="#47755d" stroke-width="22" stroke-linecap="round" stroke-dasharray="4 34"/>
+  <circle cx="400" cy="413" r="55" fill="none" stroke="#d18a42" stroke-width="12"/>
+</svg>
