@@ -24,7 +24,7 @@ export const conditions: Condition[] = [
     shortDescription: "Specialized physiotherapy treatment for neck pain, cervical spondylosis, stiffness, and postural strain in Manikonda.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Neck pain physiotherapy treatment showing cervical spine care in Manikonda clinic",
-    overview: "Neck pain and cervical stiffness are among the most frequent complaints seen at Dr. Hamid's Physio and Pain Clinic in Manikonda. Long desk hours, forward-head posture with smartphones ('text neck'), disc bulges, and cervical spondylosis cause severe muscle spasms, headaches, and radiating nerve pain down the arms. Led by Dr. Mohammed Hamid Ali (BPT, 8+ years clinical experience), our goal is to deliver fast pain relief, decompress cervical nerve roots, and restore full, pain-free neck mobility without unnecessary medications.",
+    overview: "Neck pain and stiffness can have several causes, including long periods in one position, an injury, or age-related changes. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT, MPT) assesses symptoms and movement before discussing whether physiotherapy may help manage pain and improve function. Care is tailored to the individual and may include activity advice and exercise.",
     causes: [
       "Forward head posture and ergonomic strain from long computer or mobile use",
       "Cervical spondylosis (age-related disc and facet joint wear)",
@@ -70,7 +70,7 @@ export const conditions: Condition[] = [
     faqs: [
       {
         question: "Can physiotherapy cure cervical spondylosis and neck pain?",
-        answer: "While age-related spinal changes cannot be reversed, physiotherapy is exceptionally effective at relieving nerve compression, strengthening supporting neck musculature, and eliminating pain and stiffness so you can live completely symptom-free."
+        answer: "Physiotherapy cannot reverse age-related changes, and it cannot guarantee that symptoms will go away. Depending on the assessment, an individual plan may include movement, strengthening, and advice to help manage pain and improve everyday function."
       },
       {
         question: "What is text neck syndrome, and how do you treat it?",
@@ -104,7 +104,7 @@ export const conditions: Condition[] = [
       "Stiffness and restricted spinal bending or twisting",
       "Muscle spasms locking the lower spine"
     ],
-    howPhysioHelps: "Physiotherapy for back pain targets both immediate symptom relief and permanent functional restoration. We combine spinal mobilization, lumbar traction principles, neural gliding, targeted core strengthening (transversus abdominis and multifidus), and postural retraining. Supportive modalities like ultrasound therapy and IFT assist in quelling acute inflammation.",
+    howPhysioHelps: "Physiotherapy for back pain may include advice, activity modification, and exercises selected for a person's symptoms and goals. Hands-on techniques or modalities may be considered as part of an individual plan, but response varies. The aim is to support movement and day-to-day function over time.",
     treatmentApproach: [
       "Comprehensive spinal assessment (directional preference, neural tension tests)",
       "Targeted manual therapy to restore intervertebral and sacroiliac joint mobility",
@@ -438,7 +438,7 @@ export const conditions: Condition[] = [
     faqs: [
       {
         question: "Can physiotherapy thaw a frozen shoulder without steroid injections?",
-        answer: "Yes, consistent physical therapy combining gentle capsular mobilization and progressive stretching is the gold-standard treatment, successfully restoring functional mobility in the vast majority of patients."
+        answer: "Physiotherapy may help some people with frozen shoulder manage pain and gradually improve movement. Recovery and the right approach vary, so an assessment can help guide activity and exercises for the person's symptoms and stage."
       },
       {
         question: "How many sessions are typically required for shoulder impingement?",
@@ -545,7 +545,7 @@ export const conditions: Condition[] = [
     faqs: [
       {
         question: "Does therapeutic ultrasound therapy hurt?",
-        answer: "No, therapeutic ultrasound is completely painless and non-invasive. Most patients feel only a soothing, mild warmth as the sound head gently glides across the skin."
+        answer: "Therapeutic ultrasound is non-invasive, but the sensation can vary and some people feel warmth. Tell the physiotherapist if the treatment is uncomfortable; it should be adjusted or stopped as needed."
       },
       {
         question: "Is ultrasound therapy used alone for treatment?",
@@ -599,7 +599,7 @@ export const conditions: Condition[] = [
       },
       {
         question: "Is IFT the primary treatment for my condition?",
-        answer: "IFT is a supportive therapy used to control acute pain and swelling so that you can comfortably perform the strengthening and mobility exercises that provide lasting cure."
+        answer: "IFT may be used as a supportive modality for some people, but it is not a cure or a substitute for an assessment and an appropriate active rehabilitation plan. Response varies."
       }
     ]
   }

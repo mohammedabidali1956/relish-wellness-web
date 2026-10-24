@@ -253,7 +253,9 @@ const HomePage = () => {
               <div className="relative w-full max-w-[420px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-b from-[#fbf7ee] to-[#ede2cd]">
                 <img
                   src="/images/doctor/dr-hamid-actual.png"
-                  alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist holding anatomical spine model at Dr. Hamid's Physio Clinic Manikonda"
+                  alt="Dr. Mohammed Hamid Ali holding an anatomical spine model"
+                  width={682}
+                  height={1024}
                   className="w-full h-auto aspect-[3/4] object-cover object-top drop-shadow-sm"
                   loading="eager"
                   {...{ fetchpriority: "high" }}
@@ -271,7 +273,10 @@ const HomePage = () => {
           {/* =========================================================
               HORIZONTAL 6-CARD ROW (EXACT MATCH TO REFERENCE)
           ========================================================= */}
-          <div className="mt-14 lg:mt-20">
+          <section className="mt-14 lg:mt-20" aria-labelledby="featured-services-heading">
+            <h2 id="featured-services-heading" className="sr-only">
+              Popular physiotherapy services in Manikonda
+            </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3.5 sm:gap-4">
               {heroHighlightCards.map((card) => (
                 <Link
@@ -291,7 +296,7 @@ const HomePage = () => {
                 </Link>
               ))}
             </div>
-          </div>
+          </section>
 
         </div>
       </section>
@@ -348,10 +353,16 @@ const HomePage = () => {
                 key={service.slug}
                 className="group flex flex-col bg-[#fffbf2] border border-[#e5dec9] rounded-2xl overflow-hidden hover:border-[#8c6b3e] hover:shadow-xl transition-all duration-300"
               >
+                <Link
+                  to={`/services/${getServiceBySlug(service.slug)?.slug ?? service.slug}`}
+                  className="block rounded-t-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#8a5d24]"
+                >
                 <div className="aspect-[16/10] overflow-hidden bg-muted relative">
                   <img
                     src={service.imageSrc}
                     alt={service.altText}
+                    width={640}
+                    height={400}
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -360,14 +371,17 @@ const HomePage = () => {
                   </div>
                 </div>
 
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-6 pb-0">
                   <h3 className="font-serif text-xl font-bold text-[#081a2e] mb-2 group-hover:text-[#8a5d24] transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5 flex-grow">
+                  <p className="text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5">
                     {service.shortDescription}
                   </p>
+                </div>
+                </Link>
 
+                <div className="px-6 pb-6 mt-auto">
                   <div className="pt-4 border-t border-[#e2d8c0]/60 flex items-center justify-between">
                     <Link
                       to={`/services/${getServiceBySlug(service.slug)?.slug ?? service.slug}`}
@@ -405,13 +419,17 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
             {supportiveModalities.map((modality) => (
-              <div
+              <Link
                 key={modality.slug}
-                className="flex flex-col sm:flex-row items-center gap-4 p-5 rounded-xl border border-[#e5dec9] bg-white shadow-2xs hover:border-[#8c6b3e]/60 transition-colors"
+                to={`/services/${getServiceBySlug(modality.slug)?.slug ?? modality.slug}`}
+                className="flex flex-col sm:flex-row items-center gap-4 p-5 rounded-xl border border-[#e5dec9] bg-white shadow-2xs hover:border-[#8c6b3e]/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24]"
               >
                 <img
                   src={modality.imageSrc}
                   alt={modality.altText}
+                  width={96}
+                  height={96}
+                  loading="lazy"
                   className="w-24 h-24 rounded-lg object-cover shrink-0"
                 />
                 <div className="min-w-0">
@@ -421,15 +439,12 @@ const HomePage = () => {
                   <p className="text-xs text-[#4a5568] mt-1 line-clamp-2">
                     {modality.shortDescription}
                   </p>
-                  <Link
-                    to={`/services/${getServiceBySlug(modality.slug)?.slug ?? modality.slug}`}
-                    className="inline-flex items-center text-xs font-semibold text-[#8a5d24] hover:underline mt-2.5"
-                  >
+                  <span className="inline-flex items-center text-xs font-semibold text-[#8a5d24] hover:underline mt-2.5">
                     <span>Read modality overview</span>
                     <ArrowRight className="w-3 h-3 ml-1" />
-                  </Link>
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -447,7 +462,9 @@ const HomePage = () => {
               <div className="relative w-full max-w-md rounded-2xl overflow-hidden border-2 border-[#e5dec9] bg-gradient-to-b from-[#fbf7ee] to-[#ede2cd] shadow-lg">
                 <img
                   src="/images/doctor/dr-hamid-actual.png"
-                  alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist Manikonda"
+                  alt="Dr. Mohammed Hamid Ali, physiotherapist"
+                  width={682}
+                  height={1024}
                   className="w-full aspect-[3/4] object-cover object-top drop-shadow-sm"
                   loading="lazy"
                 />
@@ -610,6 +627,8 @@ const HomePage = () => {
                   <img
                     src={post.imageUrl}
                     alt={post.title}
+                    width={640}
+                    height={400}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />

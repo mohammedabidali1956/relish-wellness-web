@@ -287,10 +287,13 @@ const ServicesPage: React.FC = () => {
                       key={service.slug}
                       className="group flex flex-col bg-white border border-[#e5dec9] rounded-2xl overflow-hidden shadow-xs hover:border-[#8a5d24] hover:shadow-lg transition-all duration-300"
                     >
+                      <Link to={`/services/${service.slug}`} className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#8a5d24]">
                       <div className="aspect-[16/10] overflow-hidden bg-[#faf6ed] relative">
                         <img
                           src={service.imageSrc}
                           alt={service.altText}
+                          width={640}
+                          height={400}
                           loading="lazy"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
@@ -299,14 +302,17 @@ const ServicesPage: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="p-6 flex flex-col flex-grow">
+                      <div className="p-6 pb-0">
                         <h3 className="font-serif text-xl font-bold text-[#081a2e] mb-2 group-hover:text-[#8a5d24] transition-colors">
                           {service.title}
                         </h3>
-                        <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5 flex-grow">
+                        <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5">
                           {service.shortDescription}
                         </p>
+                      </div>
+                      </Link>
 
+                      <div className="p-6 pt-0 mt-auto">
                         <div className="pt-4 border-t border-[#f0e7d3] flex items-center justify-between">
                           <Link
                             to={`/services/${service.slug}`}
@@ -363,10 +369,13 @@ const ServicesPage: React.FC = () => {
                         key={service.slug}
                         className="group flex flex-col bg-white border border-[#e5dec9] rounded-2xl overflow-hidden shadow-xs hover:border-[#8a5d24] hover:shadow-lg transition-all duration-300"
                       >
+                        <Link to={`/services/${service.slug}`} className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#8a5d24]">
                         <div className="aspect-[16/10] overflow-hidden bg-[#faf6ed] relative">
                           <img
                             src={service.imageSrc}
                             alt={service.altText}
+                            width={640}
+                            height={400}
                             loading="lazy"
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
@@ -375,13 +384,17 @@ const ServicesPage: React.FC = () => {
                           </div>
                         </div>
 
-                        <div className="p-6 flex flex-col flex-grow">
+                        <div className="p-6 pb-0">
                           <h3 className="font-serif text-xl font-bold text-[#081a2e] mb-2 group-hover:text-[#8a5d24] transition-colors">
                             {service.title}
                           </h3>
-                          <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5 flex-grow">
+                          <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5">
                             {service.shortDescription}
                           </p>
+                        </div>
+                        </Link>
+
+                        <div className="p-6 pt-0 mt-auto flex flex-col">
                           {service.slug === "home-visit-physiotherapy-manikonda" && (
                             <a
                               href="https://wa.me/917601026596?text=Hello%20Dr.%20Hamid%2C%20I%20would%20like%20to%20book%20a%20home%20physiotherapy%20visit."
@@ -394,7 +407,7 @@ const ServicesPage: React.FC = () => {
                             </a>
                           )}
 
-                          <div className="pt-4 border-t border-[#f0e7d3] flex items-center justify-between">
+                          <div className="pt-4 border-t border-[#f0e7d3] flex items-center justify-between mt-auto">
                             <Link
                               to={`/services/${service.slug}`}
                               className="inline-flex items-center text-xs sm:text-sm font-semibold text-[#8a5d24] hover:text-[#5c3e17] transition-colors"
@@ -431,10 +444,16 @@ const ServicesPage: React.FC = () => {
                       key={modality.slug}
                       className="group bg-white border border-[#e5dec9] rounded-xl p-5 hover:border-[#8a5d24] hover:shadow-md transition-all flex flex-col"
                     >
+                      <Link
+                        to={`/services/${modality.slug}`}
+                        className="flex h-full flex-col rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24]"
+                      >
                       <div className="aspect-[16/10] rounded-lg overflow-hidden bg-[#faf6ed] mb-4">
                         <img
                           src={modality.imageSrc}
                           alt={modality.altText}
+                          width={640}
+                          height={400}
                           loading="lazy"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
@@ -445,12 +464,10 @@ const ServicesPage: React.FC = () => {
                       <p className="text-xs text-[#64748b] leading-relaxed line-clamp-3 mb-4 flex-grow">
                         {modality.shortDescription}
                       </p>
-                      <Link
-                        to={`/services/${modality.slug}`}
-                        className="inline-flex items-center text-xs font-semibold text-[#8a5d24] hover:text-[#5c3e17] pt-3 border-t border-[#f0e7d3]"
-                      >
+                      <span className="inline-flex items-center text-xs font-semibold text-[#8a5d24] hover:text-[#5c3e17] pt-3 border-t border-[#f0e7d3] mt-auto">
                         <span>Learn how it works</span>
                         <ChevronRight className="w-3.5 h-3.5 ml-1" />
+                      </span>
                       </Link>
                     </article>
                   ))}

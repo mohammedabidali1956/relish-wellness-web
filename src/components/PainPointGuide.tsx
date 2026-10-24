@@ -159,6 +159,9 @@ const BodyFigure = ({
       src={view === "front" ? bodyFront : bodyBack}
       alt=""
       aria-hidden="true"
+      width={view === "front" ? 474 : 178}
+      height={view === "front" ? 1040 : 427}
+      loading="lazy"
       className="h-full w-full object-contain transition-opacity duration-300 motion-reduce:transition-none"
       draggable={false}
     />
@@ -312,11 +315,11 @@ const PainPointGuide = () => {
             </p>
             <p className="mt-3 text-xs text-muted-foreground">
               Clinical references: {" "}
-              <a className="underline underline-offset-2 hover:text-relish-700" href="https://www.nhs.uk/symptoms/joint-pain/" target="_blank" rel="noreferrer">NHS joint pain guidance</a>
+              <a className="underline underline-offset-2 hover:text-relish-700" href="https://www.nhs.uk/symptoms/joint-pain/" target="_blank" rel="noopener noreferrer">NHS joint pain guidance</a>
               {" · "}
-              <a className="underline underline-offset-2 hover:text-relish-700" href="https://www.nhs.uk/nhs-services/get-nhs-help-for-back-joint-problems/" target="_blank" rel="noreferrer">NHS musculoskeletal care</a>
+              <a className="underline underline-offset-2 hover:text-relish-700" href="https://www.nhs.uk/nhs-services/get-nhs-help-for-back-joint-problems/" target="_blank" rel="noopener noreferrer">NHS musculoskeletal care</a>
               {" · "}
-              <a className="underline underline-offset-2 hover:text-relish-700" href="https://www.choosept.com/symptoms-conditions" target="_blank" rel="noreferrer">APTA ChoosePT</a>
+              <a className="underline underline-offset-2 hover:text-relish-700" href="https://www.choosept.com/symptoms-conditions" target="_blank" rel="noopener noreferrer">APTA ChoosePT</a>
             </p>
           </article>
         </div>

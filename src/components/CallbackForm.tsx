@@ -1,40 +1,21 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useToast } from "@/hooks/use-toast";
 import { Phone } from "lucide-react";
 
 const CallbackForm = () => {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
-  const { toast } = useToast();
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!phone || !name) {
-      toast({
-        title: "Please fill all fields",
-        description: "Name and phone number are required.",
-        variant: "destructive",
-      });
-      return;
-    }
 
     // Open WhatsApp with pre-filled callback request
     const message = `Callback Request:\nName: ${name}\nPhone: ${phone}\n\nPlease call me back at your earliest convenience.`;
     window.open(
       `https://wa.me/917601026596?text=${encodeURIComponent(message)}`,
-      "_blank"
+      "_blank",
+      "noopener,noreferrer"
     );
-
-    toast({
-      title: "Request Sent!",
-      description: "We will call you back shortly.",
-    });
-
-    setPhone("");
-    setName("");
   };
 
   return (
@@ -46,28 +27,34 @@ const CallbackForm = () => {
         <h3 className="text-xl font-bold text-gray-900">Request a Callback</h3>
       </div>
       <p className="text-gray-600 mb-6">
-        Leave your details and we'll call you back within 30 minutes during working hours.
+        Continue in WhatsApp with a prepared callback request. Review it and press Send to contact the clinic.
       </p>
       <form onSubmit={handleSubmit} className="space-y-4">
+        <label htmlFor="callback-name" className="sr-only">Your name</label>
         <Input
           type="text"
+          id="callback-name"
           placeholder="Your Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="bg-white"
+          required
         />
+        <label htmlFor="callback-phone" className="sr-only">Your phone number</label>
         <Input
           type="tel"
+          id="callback-phone"
           placeholder="Your Phone Number"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           className="bg-white"
+          required
         />
         <Button 
           type="submit" 
           className="w-full bg-relish-600 hover:bg-relish-700 text-white"
         >
-          Request Callback
+          Continue in WhatsApp
         </Button>
       </form>
     </div>

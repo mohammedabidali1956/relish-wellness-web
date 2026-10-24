@@ -27,7 +27,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Pain aggravated by climbing stairs, crossing legs, or walking on uneven surfaces",
       "A noticeable limp (antalgic gait or Trendelenburg gait) when bearing weight on the affected leg"
     ],
-    howPhysioHelps: "Physiotherapy for hip pain targets joint mobility, muscle balance, and pelvic stability. Dr. Mohammed Hamid Ali (BPT) uses gentle hip distraction mobilizations to expand the acetabular joint space, performs myofascial release on hypertonic tensor fasciae latae (TFL) and piriformis muscles, and strengthens the gluteus medius and core. This stabilizes the pelvis and eliminates painful friction across the greater trochanter.",
+    howPhysioHelps: "Physiotherapy for hip pain may include movement assessment, activity advice, and exercises for strength and function. Hands-on techniques may be considered when appropriate. The plan depends on the cause of symptoms and individual goals; improvement varies.",
     assessmentProcess: [
       "FABER (Patrick's) test and FADIR test to differentiate intra-articular hip pathology from SI joint or lumbar issues",
       "Trendelenburg test to evaluate hip abductor (gluteus medius) functional competence",
@@ -42,7 +42,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Pelvic stabilization exercises on stable and unstable surfaces",
       "Gait retraining and advice on sleeping modifications with supportive pillows"
     ],
-    expectedRecovery: "Trochanteric bursitis and acute hip strain typically resolve within 4 to 6 sessions (2 to 3 weeks). Hip osteoarthritis and labral tears show substantial pain reduction and walking improvement over 6 to 8 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical musculoskeletal experience in Hyderabad",
       "Precise clinical differentiation between spine-referred pain, bursitis, and true hip joint pathology",
@@ -125,7 +125,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Progressive eccentric wrist loading exercises using light dumbbells or flexbars",
       "Ergonomic workstation mouse configuration and counterforce elbow strap education"
     ],
-    expectedRecovery: "Acute elbow tendinopathies and bursitis typically show marked pain reduction within 4 to 6 sessions (2 weeks). Chronic recalcitrant cases achieve complete tendon remodelling over 6 to 8 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of hands-on clinical musculoskeletal experience in Hyderabad",
       "Expertise in modern eccentric tendon loading and manual therapy protocols",
@@ -192,7 +192,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Exquisite tenderness when pressing directly on the lateral epicondyle bone",
       "Morning stiffness in the elbow and forearm extensors"
     ],
-    howPhysioHelps: "True chronic tennis elbow is not an active inflammatory condition, but rather a degenerative tendinopathy requiring mechanical stimulus for collagen regeneration. Dr. Mohammed Hamid Ali (BPT) applies Mulligan Mobilization with Movement (MWM), Mill's manipulation, deep cross-friction massage, and structured heavy-slow resistance (HSR) eccentric loading. This promotes healthy collagen alignment and restores full grip strength.",
+    howPhysioHelps: "Care for tennis elbow may include activity modification and progressive exercises to support arm function. Some people may benefit from additional techniques, depending on assessment. Recovery and grip strength vary, so the plan should be reviewed as symptoms change.",
     assessmentProcess: [
       "Cozen's test: Resisted active wrist extension with the elbow extended and forearm pronated",
       "Mill's test: Passive wrist flexion and pronation with elbow extended to stretch the ECRB tendon",
@@ -207,7 +207,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Progressive eccentric wrist extensor loading (lowering weights slowly against gravity)",
       "Prescription of a specialized counterforce brace worn 2-3 cm below the lateral epicondyle"
     ],
-    expectedRecovery: "Most patients experience a 50% improvement in pain-free grip within 3 to 4 weeks (6 to 8 sessions). Complete tendon remodelling and return to heavy lifting or sports occurs in 6 to 10 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical musculoskeletal experience treating tennis elbow in IT professionals and athletes",
       "Application of modern Mulligan Mobilization with Movement providing immediate pain relief",
@@ -291,7 +291,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Supportive therapeutic ultrasound to reduce localized tissue inflammation",
       "Customized silicone heel cup and orthotic footwear guidance"
     ],
-    expectedRecovery: "Most patients experience substantial relief from morning heel pain within 3 to 4 weeks (6 to 8 sessions). Complete tissue recovery and return to long-distance walking typically occurs within 6 to 10 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical musculoskeletal experience in Hyderabad",
       "Accurate differentiation between plantar fascia, fat pad syndrome, and nerve entrapment",
@@ -372,12 +372,12 @@ export const otherJointsServices: ServiceDetail[] = [
       "Plantafascia-specific stretching (pulling toes back toward shin while palpating the taut band)",
       "High-load strength training (calf raises with a rolled towel under the big toe to engage the Windlass mechanism)",
       "Myofascial trigger point release and instrument-assisted mobilization for the calf and soleus",
-      "Low-Dye taping to mechanically support the longitudinal arch and immediately eliminate pain",
+      "Foot taping may be considered as temporary support if appropriate; response varies",
       "Prescription of custom arch-support orthotics and night splint guidance"
     ],
-    expectedRecovery: "With structured daily home stretches and clinic therapy, morning stabbing pain significantly improves within 2 to 3 weeks (6 to 8 sessions). Full tissue remodelling and permanent recovery occurs in 6 to 12 weeks.",
+    expectedRecovery: "The time to improvement varies with the cause, symptom duration, activity, and chosen plan. Follow-up can help review comfort and function and adjust activity or exercise as needed.",
     whyChooseDoctor: [
-      "Application of the evidence-based Rathleff loading protocol for permanent collagen repair",
+      "Progressive foot and ankle loading may be included when suitable for the person's symptoms and goals",
       "8+ years of dedicated orthopedic rehabilitation experience in Hyderabad",
       "Personalized 1-on-1 guided therapy ensuring exercises are performed correctly",
       "Convenient clinic location in Puppalguda, Manikonda with dedicated home visit options"
@@ -459,7 +459,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Progressive stretching and eccentric loading of the gastroc-soleus complex",
       "Prescription of shock-absorbing silicone heel cups with central cut-outs for the spur"
     ],
-    expectedRecovery: "Most patients experience a marked reduction in heel pain within 3 to 4 weeks (6 to 8 sessions), with long-term symptom relief maintained through appropriate footwear and daily stretching.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical musculoskeletal experience treating chronic foot conditions in Hyderabad",
       "Accurate biomechanical approach treating the soft-tissue cause rather than rushing into surgery",
@@ -485,7 +485,7 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "Can a heel spur disappear on its own?",
-        answer: "The bone spur itself will not disappear, but the inflammation and pain will completely resolve with conservative physiotherapy and proper cushioned footwear."
+        answer: "Physiotherapy and footwear changes may help some people manage symptoms, but pain relief is not guaranteed and the bone spur may remain. A clinician can assess whether another cause or treatment should be considered."
       },
       {
         question: "What kind of footwear is best for a heel spur?",
@@ -543,7 +543,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Neuromuscular balance and proprioception retraining on balance pads and wobble boards",
       "Kinesiology taping for ankle stability and footwear or insole guidance when appropriate"
     ],
-    expectedRecovery: "Mild to moderate ankle sprains and tendonitis typically recover within 3 to 6 weeks. Chronic ankle instability and post-fracture rehabilitation require 8 to 12 weeks of structured therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical musculoskeletal experience treating foot and ankle disorders in Hyderabad",
       "Application of modern Mulligan manual therapy techniques for fast range of motion recovery",
@@ -569,7 +569,7 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "How soon after an ankle sprain should I start physiotherapy?",
-        answer: "Gentle physiotherapy should begin within 48 to 72 hours once acute fractures are ruled out. Early guided movement promotes ligament collagen healing and prevents permanent joint stiffness."
+        answer: "Timing depends on the injury and symptoms. For a suspected fracture or a severe injury, seek medical assessment first. A clinician can advise when to begin comfortable movement and how to progress activity safely."
       },
       {
         question: "Can physiotherapy help flat feet and arch pain?",
@@ -596,7 +596,7 @@ export const otherJointsServices: ServiceDetail[] = [
     shortDescription: "Complete, protocol-driven recovery for post-surgical bimalleolar/trimalleolar ankle fractures, syndesmotic tears, and athletic return-to-play.",
     imageSrc: "/images/services/foot-and-ankle-care.svg",
     altText: "Comprehensive ankle rehabilitation and post-surgical recovery in Manikonda clinic",
-    whatItIs: "Ankle Rehabilitation is a comprehensive, protocol-driven physiotherapy program designed to guide patients through recovery following major ankle fractures (bimalleolar, trimalleolar, Weber B/C), syndesmotic (high ankle) sprains, Achilles tendon repairs, or chronic severe ligament reconstructions. After weeks in a cast, moon boot, or external fixator, the ankle joint suffers severe arthrofibrosis, profound calf muscle atrophy, and loss of proprioceptive balance receptors. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides safe, hands-on rehabilitation that restores full dorsiflexion, rebuilds explosive calf power, and gets you back to confident, independent walking and athletic play.",
+    whatItIs: "Ankle rehabilitation may be considered after a fracture, sprain, surgery, or a period of reduced movement. The appropriate exercises and weight-bearing depend on the injury, healing, and medical restrictions. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help plan suitable movement and activity goals.",
     causes: [
       "Post-operative recovery following Open Reduction and Internal Fixation (ORIF) of ankle fractures",
       "Surgical repair or conservative management of Achilles tendon ruptures",
@@ -626,7 +626,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Phase 4: Proprioception retraining on balance foam pads, wobble boards, and single-leg drills",
       "Phase 5: Jogging progression, plyometric hops, and sport-specific return-to-play testing"
     ],
-    expectedRecovery: "Post-fracture ankle rehabilitation typically progresses over 8 to 16 weeks depending on bone healing, hardware configuration, and the patient's functional activity goals.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Strict compliance with orthopedic surgical protocols ensuring safe recovery",
       "8+ years of dedicated clinical musculoskeletal experience in Hyderabad",
@@ -704,7 +704,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Referral or signposting to a qualified orthotics provider if custom devices are being considered",
       "A broader exercise or rehabilitation plan when clinically appropriate"
     ],
-    expectedRecovery: "Response varies with the cause of symptoms and the treatment plan. Insoles are not a guaranteed or immediate solution; follow-up can help review comfort and function.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Assessment considers the whole foot and ankle, footwear, and activity rather than the device alone",
       "Practical options are discussed in the context of your symptoms and goals",

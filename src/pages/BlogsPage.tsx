@@ -38,6 +38,8 @@ const BlogsPage = () => {
                   <img 
                     src={post.imageUrl} 
                     alt={`${post.title} - Dr. Hamid's Physio and Pain Clinic`}
+                    width={640}
+                    height={400}
                     className="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none hover:scale-[1.03]"
                     loading={index === 0 ? "eager" : "lazy"}
                   />

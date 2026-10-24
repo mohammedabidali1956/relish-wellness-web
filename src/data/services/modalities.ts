@@ -43,7 +43,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Continuous mode settings applied for chronic joint contractures to soften tight collagen fibers",
       "Immediate follow-up with targeted manual joint mobilization and active stretching while tissue is warm"
     ],
-    expectedRecovery: "Patients often feel reduced localized tenderness within 2 to 4 sessions. Chronic tendon issues or tough surgical scars typically achieve significant remodeling over 6 to 8 sessions when combined with active exercises.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical physiotherapy experience with advanced electro-physical modalities",
       "Modern, calibrated ultrasound technology with dual-frequency soundheads in Manikonda",
@@ -64,7 +64,7 @@ export const supportingModalities: ServiceDetail[] = [
     faqs: [
       {
         question: "Does therapeutic ultrasound hurt?",
-        answer: "No, therapeutic ultrasound is completely painless and gentle. In continuous thermal mode, you will feel a soothing, mild warmth deep within the tissue. In pulsed mode for acute injuries, you will feel nothing beyond the cool gel and smooth soundhead contact."
+        answer: "Therapeutic ultrasound is non-invasive, but sensation varies. Some people feel warmth, while others notice little sensation. Tell the physiotherapist if it is uncomfortable so the treatment can be adjusted or stopped."
       },
       {
         question: "How is therapeutic ultrasound different from pregnancy ultrasound?",
@@ -99,7 +99,7 @@ export const supportingModalities: ServiceDetail[] = [
     shortDescription: "Advanced medium-frequency electrotherapy delivering deep, comfortable electrical stimulation to relieve pain, eliminate muscle spasm, and reduce inflammation.",
     imageSrc: "/images/services/interferential-therapy.webp",
     altText: "Interferential therapy IFT electrotherapy treatment in Manikonda clinic",
-    whatItIs: "Interferential Therapy (IFT) is one of the most effective and widely respected electrotherapy modalities in modern physiotherapy. It utilizes two medium-frequency electrical currents (usually around 4000 Hz) that intersect deep within painful anatomical tissues. Where these currents cross, they interfere with one another, generating a low-frequency therapeutic beat frequency (typically 1 to 150 Hz). Because skin impedance is naturally low at medium frequencies, IFT bypasses cutaneous nerve sensitivity painlessly, delivering deep therapeutic stimulation without the burning or stinging sensation of older low-frequency machines. At Dr. Hamid's Physio and Pain Clinic in Manikonda, IFT provides rapid, deep-seated pain relief and reduces swelling.",
+    whatItIs: "Interferential therapy (IFT) is an electrotherapy modality used in some physiotherapy settings. It delivers a mild electrical sensation through electrodes placed on the skin. Comfort and response vary, and it may be considered as a supportive option alongside an individual rehabilitation plan rather than a replacement for assessment or active care.",
     causes: [
       "Severe acute and chronic lower back pain and lumbar disc irritation",
       "Cervical radiculopathy, neck muscle spasms, and post-accident whiplash",
@@ -130,7 +130,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Treatment duration of 15 to 20 minutes in a comfortable, relaxed reclining position",
       "Immediate follow-up with active stabilization exercises while pain sensitivity is suppressed"
     ],
-    expectedRecovery: "Most patients experience immediate, noticeable pain relief and muscle relaxation during and right after a 20-minute IFT session. Long-term pain relief is achieved within 4 to 8 sessions when combined with active exercise therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of expertise in clinical electrotherapy dosage and vector placement",
       "State-of-the-art multi-channel IFT units with comfortable suction-cup electrode options in Manikonda",
@@ -217,12 +217,12 @@ export const supportingModalities: ServiceDetail[] = [
       "Integration with gentle active range-of-motion drills during the therapeutic pain-suppression window",
       "Prescription and training on home TENS devices for self-managed flare-ups when indicated"
     ],
-    expectedRecovery: "TENS provides immediate pain reduction during the 20 to 30-minute session, with analgesia often persisting for 2 to 6 hours afterward. When used systematically alongside active physical therapy, it accelerates long-term functional recovery.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical experience in neuromodulation and electro-analgesia techniques",
       "Professional-grade digital TENS equipment with microsecond pulse precision in Manikonda",
       "Comprehensive patient training empowering you to use personal TENS units safely at home",
-      "Holistic approach combining pain gating with active strengthening for permanent healing"
+      "Supportive modalities may be combined with active exercise when appropriate"
     ],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
@@ -304,7 +304,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Progressive duty cycles consisting of 15 to 25 contractions per muscle group per session",
       "Gradual transition from passive electrical stimulation to unassisted active resistance exercises"
     ],
-    expectedRecovery: "Initial voluntary muscle reactivation (e.g. first voluntary straight leg raise or facial twitch) is often achieved within 3 to 7 sessions. Measurable gains in muscle bulk and strength develop over 4 to 8 weeks of consistent therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of expertise in neuro-rehabilitation and post-operative muscular reactivation",
       "Advanced electrotherapy devices supporting both Faradic surge and Interrupted Galvanic waveforms",
@@ -391,7 +391,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Therapist checks skin every 5 minutes to verify uniform, comfortable erythema without hot spots",
       "Immediate transition to passive stretching, myofascial release, or joint mobilization while tissues are pliable"
     ],
-    expectedRecovery: "Infrared therapy produces immediate muscular relaxation and joint soothing within 15 minutes. Long-term flexibility and pain relief are achieved within 3 to 6 sessions when paired with active physical therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical physiotherapy experience ensuring safe, calibrated thermal dosage",
       "Modern medical infrared emitters with safety grids and adjustable stands in Manikonda",
@@ -474,11 +474,11 @@ export const supportingModalities: ServiceDetail[] = [
     treatmentApproach: [
       "Application of multi-layered insulated moist heat packs directly over the target muscle or joint group",
       "Patient relaxes in a supported, ergonomic posture for 15 to 20 minutes of deep thermal penetration",
-      "Therapist checks skin color and temperature at 5-minute intervals to guarantee comfort and safety",
+      "The therapist monitors comfort and skin response and adjusts or stops treatment if needed",
       "Immediate transition to passive manual stretching, joint mobilizations, or therapeutic exercise",
       "Education on safe home moist heat applications to maintain daily gains between clinic visits"
     ],
-    expectedRecovery: "Immediate muscular relaxation and relief of stiffness occur within 15 minutes of application. When utilized systematically before daily rehabilitation exercises, it accelerates overall functional recovery by weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical physiotherapy excellence ensuring optimal, safe thermal therapy application",
       "Clinical-grade stainless steel hydrocollator tanks maintaining sterile, consistent therapeutic heat",
@@ -511,7 +511,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Can I use heat therapy if I have high blood pressure?",
-        answer: "Localized heat packs on the neck, back, or knee are completely safe. However, generalized whole-body heat (like hot tubs or saunas) should be used cautiously by individuals with uncontrolled hypertension."
+        answer: "Heat packs are not suitable for everyone, including some people with reduced sensation or circulation. Use a barrier, avoid excessive heat, and ask a clinician for advice if you have a health condition or are unsure."
       },
       {
         question: "How often can heat therapy be applied?",
@@ -565,7 +565,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Proprioceptive balance retraining on wobble boards, foam pads, and dynamic obstacle courses",
       "Sport-specific and functional task conditioning simulating real-world physical demands"
     ],
-    expectedRecovery: "Noticeable gains in movement comfort, joint lubrication, and posture appear within 2 to 3 weeks. Structural muscle strengthening, tendon remodeling, and lasting functional resilience develop across 6 to 10 weeks of progressive therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical expertise prescribing medical-grade exercise therapy protocols",
       "1-on-1 personalized exercise coaching ensuring perfect form and complete safety",
@@ -602,7 +602,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Is exercise therapy safe for seniors with osteoporosis or heart conditions?",
-        answer: "Yes, absolutely. Exercise therapy is customized to every patient's medical history. Dr. Hamid monitors vitals and prescribes low-impact, bone-stimulating exercises that are completely safe."
+        answer: "Exercise may be appropriate for many people, but the type and level depend on health, symptoms, and goals. A clinician can help adapt activity; no exercise can be guaranteed completely risk-free for everyone."
       },
       {
         question: "Do you offer exercise therapy during home visits in Manikonda?",
@@ -652,7 +652,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Deep transverse friction massage to break down chronic fibrotic scar tissue in tendons and ligaments",
       "Gentle neural mobilization flossing techniques to free entrapped peripheral nerves"
     ],
-    expectedRecovery: "Patients typically experience immediate, noticeable improvements in joint range of motion and pain reduction during the very first manual therapy session. Lasting structural improvements are achieved over 3 to 6 sessions when consolidated with corrective exercises.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of dedicated hands-on clinical mastery in orthopedic and spinal manual therapy",
       "Gentle, respectful clinical approach prioritizing comfort and strictly avoiding aggressive cracking",
@@ -685,7 +685,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Can manual therapy help a frozen shoulder?",
-        answer: "Yes, manual therapy is essential for frozen shoulder. Skilled glenohumeral capsular stretching, posterior glides, and scapular mobilizations are the most effective ways to break down tight capsular adhesions."
+        answer: "Manual techniques may be considered for some people with frozen shoulder, depending on symptoms and movement. They are not essential for everyone, and a physiotherapist can discuss the options alongside comfortable movement and exercise."
       },
       {
         question: "Is manual therapy safe for patients with neck pain?",

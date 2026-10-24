@@ -46,7 +46,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Directional preference exercises (Mckenzie method) to centralize and resolve symptoms",
       "Ergonomic workstation adjustments and safe lifting technique education"
     ],
-    expectedRecovery: "Acute mechanical back pain typically shows significant symptom relief within 4 to 6 sessions (1 to 2 weeks). Chronic back pain with postural deconditioning generally achieves lasting spinal stability within 4 to 6 weeks of consistent guided therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of dedicated clinical experience diagnosing and treating spinal conditions",
       "Direct 1-on-1 personalized treatment by Dr. Mohammed Hamid Ali, BPT",
@@ -132,7 +132,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Gentle lumbar decompression traction and anti-inflammatory electro-modalities in acute flare-ups",
       "Progressive lumbo-pelvic stabilization exercises to protect the nerve root from re-compression"
     ],
-    expectedRecovery: "Most sciatica patients experience substantial centralization of leg pain within 2 to 3 weeks (6 to 9 sessions). Complete resolution of residual tingling and restoration of full walking endurance typically occurs over 4 to 8 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Proven expertise in non-surgical sciatic nerve decompression",
       "Precise differentiation between disc herniation and deep gluteal piriformis syndrome",
@@ -219,7 +219,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Spinal stabilization exercises on stable and unstable surfaces",
       "Comprehensive workplace ergonomic modification and movement pacing strategies"
     ],
-    expectedRecovery: "Most patients with mechanical lumbar pain achieve substantial functional relief within 4 to 8 sessions over 2 to 3 weeks. Full postural stamina and core endurance typically solidify over 4 to 6 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Precise segment-by-segment spinal palpation and clinical biomechanical diagnosis",
       "8+ years of dedicated clinical musculoskeletal experience in Hyderabad",
@@ -306,7 +306,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Postural re-education with strict avoidance of forward flexion during the early healing phase",
       "Progressive deep core bracing (drawing-in maneuver, bird-dog, side planks) to stabilize the segment"
     ],
-    expectedRecovery: "With strict adherence to directional exercises and postural pacing, symptomatic disc bulges typically show marked centralization within 2 to 4 weeks. Full annular collagen healing and return to active physical pursuits takes between 6 to 10 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Expertise in non-surgical McKenzie directional therapy for disc injuries",
       "Clear explanation of disc mechanics so patients feel confident moving safely",
@@ -393,7 +393,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Supportive heat therapy and gentle electrotherapy to soothe chronic aching",
       "Low-impact aerobic conditioning program (stationary cycle, walking pacing)"
     ],
-    expectedRecovery: "Most patients experience a significant reduction in daily stiffness and improved walking tolerance within 3 to 5 weeks of consistent physiotherapy and home exercise practice.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Gentle, respectful, patient-centered care for seniors and middle-aged adults",
       "Extensive experience treating degenerative spinal conditions without painful manipulations",
@@ -480,7 +480,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Progressive kinetic chain strengthening of gluteal, hip, and shoulder girdle musculature",
       "Functional retraining for safe daily activities (getting in/out of bed, chairs, cars)"
     ],
-    expectedRecovery: "Rehabilitation progresses through phases over 8 to 16 weeks depending on injury severity, bone healing rate, and prior functional level.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Strict compliance with orthopedic surgical protocols and bone healing guidelines",
       "Patient, reassuring approach that builds psychological confidence after trauma",
@@ -562,7 +562,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Functional multi-planar core stability exercises integrating upper and lower body",
       "Personalized daily mobility routine and ergonomic workstation configuration"
     ],
-    expectedRecovery: "Postural fatigue and mid-back stiffness often show noticeable improvement within 3 to 5 sessions. Long-term structural realignment and sustained core endurance develop over 4 to 8 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Holistic whole-spine philosophy instead of quick, isolated symptom masking",
       "8+ years of dedicated clinical experience in Hyderabad",
@@ -644,7 +644,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Hamstring and hip flexor flexibility program to reduce posterior chain tension",
       "Activity modification education and safe lifting mechanics training"
     ],
-    expectedRecovery: "Stable Grade I and II spondylolisthesis typically achieves significant pain reduction and improved function within 6 to 10 weeks of consistent stabilization exercises. Long-term management with home exercises helps maintain spinal stability and prevent progression.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical experience managing spinal instability and degenerative conditions",
       "Specialized training in orthopedic spinal biomechanics (MPT Orthopedics)",

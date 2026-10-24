@@ -40,7 +40,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Overground gait retraining with body-weight support, orthotic ankle bracing, and rhythmic auditory cues",
       "Caregiver education on safe transferring techniques, positioning, and home exercise assistance"
     ],
-    expectedRecovery: "The most rapid neurological recovery occurs during the first 3 to 6 months post-stroke, but clinical neuroplasticity continues for years with consistent physiotherapy and daily practice.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of dedicated clinical experience in neurological and stroke rehabilitation",
       "Compassionate, dignified, patient-paced therapy tailored to individual recovery potential",
@@ -53,7 +53,7 @@ export const neurologicalServices: ServiceDetail[] = [
     ],
     homeCare: [
       "Ensure proper hemiplegic arm positioning using pillows to prevent painful shoulder subluxation",
-      "Perform daily passive range of motion to all paralyzed joints to prevent permanent contractures",
+      "Follow the treating team's guidance on positioning and range-of-motion activity to maintain comfort and joint movement",
       "Encourage the patient to use their affected arm and leg in daily activities as much as possible",
       "Practice supported sit-to-stand repetitions from a firm chair 2-3 times daily",
       "Keep walking pathways at home free of loose rugs, wires, and furniture obstacles"
@@ -122,7 +122,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Strengthening of anti-gravity postural muscles (quadriceps, gluteals, spinal extensors)",
       "Energy conservation techniques and adaptive equipment recommendations"
     ],
-    expectedRecovery: "For progressive neurological conditions, physiotherapy focuses on delaying functional decline, improving daily walking quality, and dramatically reducing fall risks through ongoing structured sessions.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of dedicated clinical experience in neurological movement disorders",
       "Empathetic, encouraging clinical approach that motivates patients and families",
@@ -205,7 +205,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Dynamic balance retraining on firm and compliant foam surfaces with eyes open and closed",
       "Gentle upper cervical manual therapy if cervicogenic dizziness is identified"
     ],
-    expectedRecovery: "Over 80-90% of BPPV vertigo cases are completely resolved within 1 to 2 sessions of proper canalith repositioning. Chronic vestibular hypofunction typically recovers within 4 to 6 weeks of daily balance exercises.",
+    expectedRecovery: "Response and time to improvement vary. Some people with benign paroxysmal positional vertigo (BPPV) improve after a clinician-guided repositioning procedure; other vestibular conditions may need a different assessment and rehabilitation plan.",
     whyChooseDoctor: [
       "Precise clinical diagnostic testing to pinpoint the exact affected inner ear canal",
       "Safe, comfortable execution of repositioning maneuvers without medication side effects",
@@ -287,7 +287,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Prescription and fitting of dynamic Ankle-Foot Orthoses (AFO) or foot-up splints for safe walking",
       "Overground functional gait retraining with obstacle clearance and balance drills"
     ],
-    expectedRecovery: "Peripheral nerve compression injuries often show gradual re-innervation over 2 to 6 months as the nerve regenerates (at ~1 mm per day). Central stroke-related foot drop recovery depends on overall neuroplastic rehabilitation.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical neuro-rehabilitation and electrotherapy experience in Hyderabad",
       "Accurate differential diagnosis between lumbar spine radiculopathy and peripheral fibular nerve entrapment",
@@ -305,7 +305,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Ensure all loose rugs and clutter are removed from home floors to prevent falls",
       "Inspect the skin on your foot and ankle daily for any friction or pressure spots from braces"
     ],
-    whenToVisit: "Consult Dr. Hamid immediately upon noticing sudden weakness lifting your foot or dragging your toes when walking. Early electrical stimulation and splinting prevent permanent tendon shortening.",
+    whenToVisit: "Seek prompt medical assessment for new or sudden weakness lifting the foot or dragging the toes, especially if it is worsening. Physiotherapy, exercise, or an orthosis may be considered after the cause has been assessed.",
     faqs: [
       {
         question: "Can a common peroneal nerve foot drop fully recover?",
@@ -369,7 +369,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Gentle electrical nerve stimulation to facilitate axonal recovery and manage neuropathic pain",
       "Prescription of functional resting splints to prevent nerve compression during sleep"
     ],
-    expectedRecovery: "Mild to moderate entrapment neuropathies (like early carpal tunnel syndrome) typically resolve within 4 to 6 weeks. Severe nerve regeneration following trauma progresses steadily over 3 to 6 months.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of dedicated clinical experience in musculoskeletal and peripheral nerve rehabilitation",
       "Advanced certification in clinical neurodynamics and non-surgical nerve decompression",
@@ -387,7 +387,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Protect numb areas of skin from hot water and sharp objects to prevent undetected injury",
       "Take frequent ergonomic rest breaks during computer typing and mouse usage"
     ],
-    whenToVisit: "Schedule an assessment if you experience persistent tingling, numbness, or loss of hand grip strength. Early intervention prevents permanent axonal damage.",
+    whenToVisit: "Arrange medical assessment for persistent tingling, numbness, or reduced hand grip strength, particularly if symptoms are worsening. New or rapidly progressing weakness needs prompt medical attention.",
     faqs: [
       {
         question: "Can Carpal Tunnel Syndrome be cured with physiotherapy instead of surgery?",

@@ -2,7 +2,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { toast } from "@/components/ui/use-toast";
 
 const AppointmentForm = () => {
   const [name, setName] = useState("");
@@ -10,36 +9,12 @@ const AppointmentForm = () => {
   const [message, setMessage] = useState("");
   const phoneNumber = "917601026596"; // WhatsApp number without + sign
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
-    // Form validation
-    if (!name || !phone) {
-      toast({
-        title: "Missing Information",
-        description: "Please fill in all required fields",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    // In a real application, this would send data to a backend
-    toast({
-      title: "Appointment Request Sent",
-      description: "We'll contact you shortly to confirm your appointment.",
-    });
-
-    // Reset form
-    setName("");
-    setPhone("");
-    setMessage("");
-  };
-
-  const handleWhatsAppRedirect = () => {
     const whatsappMessage = encodeURIComponent(
-      `Hello Dr. Mohammed Hamid Ali, I would like to book an appointment at Dr. Hamid's Physio and Pain Clinic. My name is ${name || "[Your Name]"} and my phone number is ${phone || "[Your Phone]"}. ${message ? `Additional info: ${message}` : ""}`
+      `Hello Dr. Mohammed Hamid Ali, I would like to book an appointment at Dr. Hamid's Physio and Pain Clinic. My name is ${name} and my phone number is ${phone}.${message ? ` Additional information: ${message}` : ""}`
     );
-    window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
+    window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -92,13 +67,15 @@ const AppointmentForm = () => {
         
         <div className="flex flex-col sm:flex-row gap-3">
           <Button 
-            type="button" 
+            type="submit" 
             className="bg-relish-700 hover:bg-relish-800 text-white flex-1 h-12 text-base font-medium rounded-md"
-            onClick={handleWhatsAppRedirect}
           >
             Book via WhatsApp
           </Button>
         </div>
+        <p className="text-xs leading-relaxed text-muted-foreground">
+          WhatsApp opens with a prepared message. Review it and press Send there to contact the clinic.
+        </p>
       </form>
     </div>
   );

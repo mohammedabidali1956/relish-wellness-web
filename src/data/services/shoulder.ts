@@ -27,7 +27,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Difficulty reaching behind your back to tuck in a shirt or fasten clothing",
       "Clicking, popping, or catching sensations during arm rotation"
     ],
-    howPhysioHelps: "Physiotherapy restores the critical subacromial space. When the rotator cuff muscles are weak, the larger deltoid pulls the humeral head upward into the acromion, causing pinching. Dr. Mohammed Hamid Ali (BPT) uses targeted glenohumeral joint mobilizations, scapular retractor strengthening, rotator cuff force-couple retraining, and posture correction to seat the humeral head centrally in the socket, permanently resolving impingement.",
+    howPhysioHelps: "For shoulder pain, an individual physiotherapy plan may include activity advice and progressive shoulder exercises to support movement and function. Hands-on techniques may be considered when appropriate. The plan depends on the assessment, and improvement varies from person to person.",
     assessmentProcess: [
       "Neer's and Hawkins-Kennedy impingement provocative tests",
       "Empty Can (Jobe's) test and Full Can test to isolate the supraspinatus tendon",
@@ -42,7 +42,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Scapular stabilization exercises (serratus anterior wall slides, lower trapezius Y-raises)",
       "Ergonomic sleeping modification and functional reach pacing advice"
     ],
-    expectedRecovery: "Subacromial impingement and acute rotator cuff tendinopathy typically show 50-70% improvement within 4 to 6 sessions (2 to 3 weeks). Full overhead athletic recovery is achieved in 6 to 8 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical musculoskeletal experience treating shoulder disorders in Hyderabad",
       "Precise differentiation between neck-referred pain, rotator cuff tears, and frozen shoulder",
@@ -94,7 +94,7 @@ export const shoulderServices: ServiceDetail[] = [
     shortDescription: "Structured rehabilitation for frozen shoulder (adhesive capsulitis), including pain management, progressive mobility exercises, and restoration of overhead movement.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Frozen shoulder physiotherapy and adhesive capsulitis treatment in Manikonda clinic",
-    whatItIs: "Frozen shoulder, medically termed Adhesive Capsulitis, is a painful and debilitating condition characterized by severe inflammation, thickening, fibrosis, and contracture of the glenohumeral joint capsule. It typically progresses through three distinct clinical phases: the Freezing stage (severe pain, increasing stiffness), the Frozen stage (less pain at rest, extreme stiffness and mobility restriction), and the Thawing stage (gradual recovery of movement). Without skilled physiotherapy, frozen shoulder can persist for 2 to 3 years. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) applies stage-specific manual mobilizations and capsule-stretching techniques that dramatically shorten recovery time and restore full, pain-free range of motion.",
+    whatItIs: "Frozen shoulder (adhesive capsulitis) can cause shoulder pain and stiffness that develop gradually and limit movement. Symptoms and recovery time vary. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help discuss suitable activity changes and exercises based on the person's symptoms and movement.",
     causes: [
       "Idiopathic thickening and contracture of the glenohumeral joint capsule and coracohumeral ligament",
       "High prevalence in individuals with diabetes mellitus (up to 20% higher risk) and thyroid disorders",
@@ -124,7 +124,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Stage 3 (Thawing): Progressive strengthening of rotator cuff and scapular muscles throughout newly gained range",
       "Functional retraining for personal grooming, dressing, and daily reaching activities"
     ],
-    expectedRecovery: "While natural unmanaged frozen shoulder takes 18 to 36 months, consistent stage-matched physiotherapy typically accelerates functional recovery to 3 to 6 months, significantly reducing duration and suffering.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Gentle, stage-appropriate manual mobilization that respects your pain threshold",
       "Extensive experience treating diabetic frozen shoulder patients in Hyderabad",
@@ -206,7 +206,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Phase 4: Rhythmic stabilization, pertubation training on stability balls, and dynamic rotator cuff endurance",
       "Phase 5: Plyometrics, throwing/overhead athletic drills, and return-to-sport functional clearance"
     ],
-    expectedRecovery: "Post-rotator cuff repair or Bankart stabilization follows a structured 4 to 6-month phased rehabilitation protocol. Return to high-demand overhead sports or heavy gym lifting occurs between 6 to 9 months.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Strict compliance with orthopedic surgical protocols ensuring repair integrity",
       "8+ years of dedicated clinical musculoskeletal experience in Hyderabad",
@@ -289,7 +289,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Posterior capsule stretching and thoracic extension exercises to improve posture",
       "Functional retraining for overhead activities and return to sport or work"
     ],
-    expectedRecovery: "Tendonitis and impingement typically improve within 4 to 6 weeks. Partial tears respond to rehabilitation in 8 to 12 weeks. Full-thickness tears require 3 to 6 months of conservative management; surgery is considered only if conservative treatment fails.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical experience treating rotator cuff injuries in Hyderabad",
       "Specialized orthopedic training in shoulder biomechanics (MPT Orthopedics)",

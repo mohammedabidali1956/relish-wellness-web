@@ -42,7 +42,7 @@ export const kneeServices: ServiceDetail[] = [
       "Gluteus medius and hip external rotator strengthening to stabilize knee alignment",
       "Biomechanical stair-climbing retraining and safe squatting mechanics education"
     ],
-    expectedRecovery: "Most patients with non-arthritic knee pain or patellofemoral syndrome experience 50-70% symptom relief within 4 to 6 sessions (2 weeks). Full functional strength and pain-free stair climbing are achieved in 4 to 6 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of dedicated orthopedic knee rehabilitation experience in Hyderabad",
       "Precise kinetic-chain assessment identifying hip and foot causes of knee pain",
@@ -87,6 +87,9 @@ export const kneeServices: ServiceDetail[] = [
   {
     slug: "arthritis-physiotherapy-manikonda",
     category: "Knee",
+    evidenceSources: [
+      { label: "NICE guideline: osteoarthritis diagnosis and management", url: "https://www.nice.org.uk/guidance/ng226/chapter/recommendations" }
+    ],
     title: "Arthritis Physiotherapy (Knee & Joints)",
     metaTitle: "Arthritis Physiotherapy in Manikonda | Knee Osteoarthritis Care Hyderabad",
     metaDescription: "Relieve knee osteoarthritis pain and joint stiffness with evidence-based physiotherapy in Manikonda, Hyderabad. Expert care under Dr. Mohammed Hamid Ali, BPT.",
@@ -94,7 +97,7 @@ export const kneeServices: ServiceDetail[] = [
     shortDescription: "Specialized conservative joint preservation and exercise therapy for knee osteoarthritis, joint stiffness, and age-related cartilage wear.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Knee arthritis physiotherapy and osteoarthritis treatment in Manikonda clinic",
-    whatItIs: "Osteoarthritis of the knee and peripheral joints is a progressive degenerative joint condition characterized by gradual thinning of articular cartilage, narrowing of the joint space, subchondral bone remodeling, and osteophyte formation. As cartilage wears down, joint movement loses its natural low-friction cushion, leading to pain, morning stiffness, reduced walking distance, and muscle wasting. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we specialize in conservative knee preservation. Clinical research proves that targeted exercise therapy is the gold-standard first-line treatment for osteoarthritis, proven to delay or eliminate the need for surgical joint replacement.",
+    whatItIs: "Knee osteoarthritis can be associated with pain, stiffness, and changes in daily function. Symptoms differ between people and do not always match scan findings. NICE recommends therapeutic exercise tailored to a person's needs for osteoarthritis; exercise may initially cause some discomfort, and individual response varies. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help discuss appropriate options alongside any advice from the person's medical team.",
     causes: [
       "Age-related degeneration of articular cartilage and reduced synovial fluid lubrication",
       "Excess body weight placing multi-fold mechanical compressive load on knee joint compartments",
@@ -125,7 +128,7 @@ export const kneeServices: ServiceDetail[] = [
       "Supportive modalities (ultrasound, IFT, heat therapy) during inflammatory flare-ups",
       "Joint protection education, assistive cane gait training, and weight-management movement advice"
     ],
-    expectedRecovery: "Most osteoarthritis patients achieve marked reductions in daily joint pain, decreased morning stiffness, and 40-60% improvements in walking endurance within 4 to 6 weeks of consistent physiotherapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Strong clinical focus on conservative joint preservation to avoid or delay surgery",
       "8+ years of dedicated clinical experience treating senior and adult joint conditions",
@@ -207,7 +210,7 @@ export const kneeServices: ServiceDetail[] = [
       "Phase 4: Proprioception, perturbation balance drills, and deceleration landing mechanics",
       "Phase 5: Sport-specific agility drills, cutting mechanics, and objective discharge testing"
     ],
-    expectedRecovery: "Conservative ACL recovery typically takes 12 to 16 weeks. Post-surgical ACL reconstruction follows a gold-standard 6 to 9-month phased protocol to ensure graft maturation before high-intensity contact sport clearance.",
+    expectedRecovery: "Recovery after an ACL injury or reconstruction varies with the injury, procedure, and individual progress. Return to running or sport should follow the treating surgeon's and physiotherapist's criteria and rehabilitation plan rather than a fixed calendar alone.",
     whyChooseDoctor: [
       "Protocol-driven rehabilitation compliant with international orthopedic sports medicine standards",
       "Objective functional milestone testing rather than arbitrary time-based clearances",
@@ -233,7 +236,7 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "Why is achieving full knee extension so critical early on?",
-        answer: "Failure to regain full terminal extension within the first 2-3 weeks post-injury or post-surgery can lead to permanent arthrofibrosis (scar tissue stiffness), abnormal gait limping, and patellofemoral pain."
+        answer: "Knee movement can be limited by pain, swelling, or the injury or procedure itself. Follow the treating team's plan, and contact them if stiffness, pain, or swelling is not improving or is getting worse."
       },
       {
         question: "When can I run again after ACL reconstruction surgery?",
@@ -288,7 +291,7 @@ export const kneeServices: ServiceDetail[] = [
       "Progressive knee flexion mobilization under controlled anterior tibial support",
       "Advanced balance, proprioception, and functional athletic retraining"
     ],
-    expectedRecovery: "Grade I and II isolated PCL injuries typically heal with conservative physiotherapy within 8 to 12 weeks. Post-surgical reconstructions require 6 to 9 months of structured rehabilitation.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "In-depth understanding of complex posterior knee biomechanics and contraindications",
       "Safe, structured rehabilitation protocols protecting the healing PCL from posterior drawer forces",
@@ -370,7 +373,7 @@ export const kneeServices: ServiceDetail[] = [
       "Neuromuscular proprioceptive training on wobble boards and balance pads",
       "Gradual functional progression into jogging, squatting, and sports drills"
     ],
-    expectedRecovery: "Conservative meniscus rehabilitation typically yields significant pain reduction and functional return within 6 to 8 weeks. Post-operative meniscal repairs follow protected weight-bearing protocols over 12 to 16 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Evidence-based conservative management to help patients avoid unnecessary arthroscopic surgery",
       "8+ years of orthopedic musculoskeletal experience in Hyderabad",
@@ -422,7 +425,7 @@ export const kneeServices: ServiceDetail[] = [
     shortDescription: "Complete, protocol-driven knee recovery covering post-total knee replacement (TKR), complex ligament trauma, and return to active lifestyle.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Comprehensive knee rehabilitation and post-surgical recovery in Manikonda clinic",
-    whatItIs: "Knee Rehabilitation is a comprehensive, multidisciplinary physiotherapy program designed to restore full joint range of motion, muscle strength, dynamic stability, and functional mobility following major knee surgery or severe joint trauma. Whether recovering from a Total Knee Replacement (TKR), Partial Knee Replacement (PKR), knee arthroscopy, or multi-ligament reconstruction, recovery requires structured progression through distinct clinical phases. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides hands-on, protocol-compliant knee rehabilitation that ensures you achieve maximum knee flexion, confident stair climbing, and independent pain-free walking.",
+    whatItIs: "Knee rehabilitation may be recommended after an injury or surgery to help address movement, strength, and everyday activities. The plan and pace depend on the procedure or diagnosis and the instructions from the treating surgeon. At Dr. Hamid's Physio and Pain Clinic in Manikonda, rehabilitation is planned around the person's assessment and medical guidance; outcomes and timelines vary.",
     causes: [
       "Total Knee Replacement (TKR) or Unicompartmental Knee Arthroplasty (UKA) for end-stage arthritis",
       "Reconstructive surgery for multi-ligament knee injuries (ACL, PCL, MCL, LCL)",
@@ -452,7 +455,7 @@ export const kneeServices: ServiceDetail[] = [
       "Phase 4: Stair climbing mechanics, uneven surface walking, and outdoor community mobility",
       "Phase 5: Advanced endurance training, return-to-work, and independent home maintenance routine"
     ],
-    expectedRecovery: "Total Knee Replacement patients typically achieve independent walking with a single cane by week 3 to 4, and complete functional independence with 110-120 degrees of flexion by week 8 to 12.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Strict protocol compliance aligned with leading orthopedic hospital surgical guidelines",
       "Patient, compassionate bedside manner that builds confidence and eases recovery anxiety",
@@ -535,7 +538,7 @@ export const kneeServices: ServiceDetail[] = [
       "ITB, hamstring, and hip flexor stretching and foam rolling program",
       "Running form correction, cadence optimization, and gradual return-to-run program"
     ],
-    expectedRecovery: "Most runners experience significant pain reduction within 2 to 4 weeks of starting rehabilitation. Full return to pain-free running at previous distances typically occurs within 6 to 10 weeks with consistent exercise compliance.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical experience treating runners and endurance athletes in Hyderabad",
       "Specialized training in running biomechanics and sports injury rehabilitation",
@@ -621,7 +624,7 @@ export const kneeServices: ServiceDetail[] = [
       "Hip abductor and external rotator strengthening to control femoral rotation",
       "ITB and lateral structure stretching with foam rolling and specific stretches"
     ],
-    expectedRecovery: "Most patients experience noticeable improvement in tracking and pain reduction within 3 to 5 weeks. Long-term correction and full return to activities typically requires 6 to 10 weeks of consistent exercise.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical expertise in patellofemoral biomechanics and knee rehabilitation",
       "Specialized orthopedic training in patellar tracking disorders (MPT Orthopedics)",
@@ -655,7 +658,7 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "Will patellar taping fix the problem permanently?",
-        answer: "Taping provides temporary relief and improved tracking, allowing you to exercise pain-free. The permanent fix comes from strengthening exercises that correct the underlying muscle imbalances."
+        answer: "Taping may provide short-term symptom support for some people, but response varies and it does not permanently correct a cause. If used, it should be considered alongside an appropriate assessment and active rehabilitation plan."
       },
       {
         question: "Do you treat patellar tracking issues in athletes in Manikonda?",

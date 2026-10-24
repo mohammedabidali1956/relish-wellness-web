@@ -162,6 +162,8 @@ const BlogPostPage = () => {
                       <img 
                         src={relatedPost.imageUrl} 
                         alt={relatedPost.title}
+                        width={640}
+                        height={320}
                         className="w-full h-full object-cover"
                       />
                     </div>

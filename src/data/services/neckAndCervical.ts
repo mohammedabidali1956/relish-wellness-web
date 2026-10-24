@@ -11,7 +11,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     shortDescription: "Effective care for neck pain, stiffness, cervical strain, and posture-related neck problems caused by long hours of desk work or mobile use.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Neck pain physiotherapy and cervical care in Manikonda clinic",
-    whatItIs: "Neck pain affects millions of adults, particularly IT professionals, desk workers, and commuters across Hyderabad. The cervical spine consists of seven delicate vertebrae supporting the weight of the human head (approximately 5 kg). When posture deviates forward, effective head weight increases up to 27 kg, straining posterior cervical muscles, facet joints, and nerve roots. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we conduct precise musculoskeletal examinations to eliminate pain and restore full, unrestricted neck movement.",
+    whatItIs: "Neck pain is common and may be associated with prolonged time in one position, work demands, injury, or other health factors. Desk-based work and frequent device use can make symptoms more noticeable, but there is no single posture that explains every case. At Dr. Hamid's Physio and Pain Clinic in Manikonda, assessment considers symptoms, movement, and daily activities before discussing care options.",
     causes: [
       "Forward head posture ('text neck') from prolonged laptop, monitor, and smartphone usage",
       "Sleeping in awkward postures or using an unsupportive, overly high pillow",
@@ -27,7 +27,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Tension headaches radiating from the suboccipital region toward the temples or eyes",
       "Tight, painful muscle knots (trigger points) in the upper back and neck"
     ],
-    howPhysioHelps: "Physiotherapy relieves neck pain by restoring articular glide, releasing hypertonic muscle spasm, and retraining deep cervical postural flexors. Dr. Mohammed Hamid Ali (BPT) utilizes gentle Maitland cervical mobilizations, trigger point myofascial therapy, and targeted isometric postural retraining that permanently balances head position over the shoulder girdle.",
+    howPhysioHelps: "Physiotherapy may help some people with neck pain through advice, comfortable movement, and exercises selected after assessment. Hands-on treatment may be considered when appropriate. The plan can be adjusted to the person's symptoms, work demands, and goals; no specific technique guarantees a lasting result.",
     assessmentProcess: [
       "Cervical active and passive range of motion measurement (flexion, extension, rotation, lateral flexion)",
       "Spurling's test and cervical distraction test to rule out nerve root compression",
@@ -42,7 +42,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Thoracic spine mobilizations to alleviate compensatory cervical over-flexion",
       "Workplace ergonomic workstation review and customized home exercise program"
     ],
-    expectedRecovery: "Acute mechanical neck pain usually resolves within 3 to 6 sessions (1 to 2 weeks). Chronic postural neck pain achieves significant lasting relief within 3 to 5 weeks of guided strengthening.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical physiotherapy experience in Hyderabad",
       "Precise diagnostic hands-on assessment preventing unnecessary medical scans",
@@ -94,7 +94,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     shortDescription: "Targeted clinical care for cervical spine irritation, nerve root radiculopathy, and cervical discogenic pain.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Cervical pain physiotherapy and cervical spine rehabilitation in Manikonda",
-    whatItIs: "Cervical pain refers specifically to clinical conditions affecting the cervical spinal column, intervertebral discs, facet joints, and exiting spinal nerves (C1 through C8). When cervical disc spaces narrow or nerve roots become compressed (cervical radiculopathy), patients experience sharp neck pain accompanied by radiating numbness, tingling, or weakness into the shoulder, arm, or fingers. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide evidence-based cervical decompression and stabilization therapy that relieves nerve impingement safely without surgery.",
+    whatItIs: "Cervical pain can arise from several structures in the neck and may include pain, tingling, numbness, or weakness in the arm. Symptoms need to be assessed; they do not by themselves confirm a specific nerve problem. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help discuss whether physiotherapy is suitable and whether medical review is needed.",
     causes: [
       "Cervical disc herniation or protrusion (most frequently at C5-C6 and C6-C7)",
       "Cervical radiculopathy from foraminal narrowing compressing the nerve root",
@@ -109,7 +109,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Deep aching along the medial border of the scapula (shoulder blade)",
       "Pain aggravated by looking up (cervical extension) or turning toward the painful side"
     ],
-    howPhysioHelps: "Physiotherapy for cervical conditions focuses on neural decompression and mechanical opening of the intervertebral foramina. Dr. Mohammed Hamid Ali (BPT) applies gentle manual cervical traction, neural mobilization (neurodynamic glides of the median, radial, and ulnar nerves), and directional movement exercises that relieve nerve pressure and promote disc re-absorption.",
+    howPhysioHelps: "Depending on the assessment, physiotherapy may include comfortable movement, exercises, and advice for daily activities. Some people may be offered hands-on techniques. Response varies, and new or worsening weakness, numbness, or other concerning symptoms should be assessed by a medical professional.",
     assessmentProcess: [
       "Upper limb neurodynamic testing (ULNT 1, 2, 3) to evaluate peripheral nerve tension",
       "Detailed myotomal strength testing (deltoid, biceps, triceps, wrist flexors/extensors, hand intrinsics)",
@@ -124,7 +124,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Deep cervical flexor and scapular stabilizer muscle activation exercises",
       "Postural and sleeping position modifications with ergonomic cervical roll prescription"
     ],
-    expectedRecovery: "Cervical nerve root symptoms typically show significant centralization and tingling reduction within 3 to 4 weeks (8 to 12 sessions). Complete functional nerve recovery and motor power restoration takes 6 to 10 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Advanced clinical experience in non-surgical cervical spine rehabilitation",
       "Precise neurological testing ensuring safe, conservative recovery",
@@ -142,11 +142,11 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Apply moist warmth to the upper back and neck for 15 minutes daily",
       "Keep reading material and mobile devices elevated at chest and eye height"
     ],
-    whenToVisit: "Consult Dr. Hamid immediately if your neck pain is accompanied by tingling in the hand, loss of grip strength, or difficulty holding coffee cups or typing.",
+    whenToVisit: "Arrange medical assessment for neck pain with persistent tingling, numbness, or weakness in the arm or hand. Seek urgent care for sudden or worsening weakness, trouble walking, or other severe or rapidly changing symptoms.",
     faqs: [
       {
         question: "Can cervical radiculopathy heal without surgery?",
-        answer: "Yes, over 85-90% of cervical radiculopathy cases recover successfully through conservative physiotherapy, manual traction, and neural mobilization without surgical intervention."
+        answer: "Some people with cervical radiculopathy improve with non-surgical care, but the cause, severity, and response vary. An assessment can help determine whether physiotherapy is appropriate or whether medical review is needed."
       },
       {
         question: "Why do my fingers tingle when I have neck pain?",
@@ -154,7 +154,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       },
       {
         question: "Is cervical traction safe?",
-        answer: "Yes, when performed by a qualified physiotherapist like Dr. Hamid, gentle manual cervical traction is extremely safe, controlled, and provides immediate decompression relief."
+        answer: "Traction is not appropriate for everyone and may not be needed. A clinician should first assess the symptoms and relevant health history, explain options, and stop or adjust any technique that causes concerning discomfort."
       },
       {
         question: "Do you treat IT workers with cervical pain in Manikonda?",
@@ -206,7 +206,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Supportive heat therapy and gentle electrotherapy to soothe chronic muscular aching",
       "Ergonomic pillow prescription and posture pacing strategies for daily life"
     ],
-    expectedRecovery: "Most patients experience a significant reduction in stiffness and headache frequency within 3 to 4 weeks (8 to 10 sessions), with long-term comfort sustained through simple daily home maintenance exercises.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Extensive experience treating adult and senior cervical degenerative conditions",
       "Gentle, respectful clinical approach ensuring no aggressive or painful manipulations",
@@ -228,7 +228,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Can cervical spondylosis be permanently cured?",
-        answer: "While the structural bone spurs and disc changes are a permanent part of natural aging, the symptoms (pain, stiffness, headaches) can be completely resolved with regular physiotherapy and home exercises."
+        answer: "Physiotherapy does not reverse age-related bone or disc changes, and symptom relief cannot be guaranteed. An individual plan may help manage pain and stiffness and support everyday activity. Seek assessment for new weakness, worsening numbness, or other concerning symptoms."
       },
       {
         question: "What is the best pillow for cervical spondylosis?",
@@ -258,7 +258,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     shortDescription: "Specialized clinical rehabilitation for pinched cervical nerves, radiating arm pain, and nerve root compression.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Cervical radiculopathy physiotherapy and pinched nerve treatment in Manikonda clinic",
-    whatItIs: "Cervical radiculopathy, commonly known as a 'pinched nerve' in the neck, occurs when a nerve root in the cervical spine becomes compressed or irritated as it exits the spinal canal. This compression typically results from a herniated disc, bone spurs (osteophytes), or degenerative foraminal narrowing. The condition causes characteristic radiating pain, numbness, tingling, and weakness following specific dermatomal patterns into the shoulder, arm, and hand. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide evidence-based non-surgical treatment that decompresses the affected nerve root and restores comfortable, pain-free arm and neck function.",
+    whatItIs: "Cervical radiculopathy refers to irritation or compression of a nerve root in the neck and can cause pain, tingling, numbness, or weakness in the arm. Similar symptoms can have other causes, so an assessment is needed. At Dr. Hamid's Physio and Pain Clinic in Manikonda, care options are discussed after reviewing symptoms, movement, and medical history.",
     causes: [
       "Herniated or protruded cervical intervertebral disc (most commonly at C5-C6 or C6-C7)",
       "Degenerative disc disease with loss of disc height narrowing the intervertebral foramen",
@@ -273,7 +273,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Pain aggravated by looking up (cervical extension) or turning the head toward the painful side",
       "Deep aching in the medial border of the shoulder blade"
     ],
-    howPhysioHelps: "Cervical radiculopathy responds excellently to conservative physiotherapy. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) utilizes manual cervical traction to open the intervertebral foramen, neural mobilization techniques to restore free nerve gliding, and directional movement exercises that centralize symptoms. This multimodal approach decompresses the nerve root, reduces inflammation, and addresses the underlying mechanical dysfunction.",
+    howPhysioHelps: "Physiotherapy may help some people manage arm and neck symptoms through advice, comfortable movement, and individually selected exercises. Hands-on techniques may be considered when appropriate. The plan depends on the assessment and does not replace medical review where symptoms are severe, worsening, or unexplained.",
     assessmentProcess: [
       "Upper Limb Neurodynamic Tests (ULNT 1, 2, 3) to evaluate median, radial, and ulnar nerve tension",
       "Detailed myotomal strength testing for C5-T1 nerve root motor function",
@@ -288,10 +288,10 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Myofascial release of scalenes, levator scapulae, and pectoralis minor to reduce neural tension",
       "Deep cervical flexor strengthening and postural correction to maintain foraminal opening"
     ],
-    expectedRecovery: "Most patients with cervical radiculopathy experience significant reduction in radiating pain and tingling within 2 to 4 weeks (6 to 12 sessions). Complete resolution of symptoms and restoration of full arm strength typically occurs within 6 to 10 weeks of consistent therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "Specialized orthopedic training in cervical spine and nerve root disorders (MPT Orthopedics)",
-      "8+ years of clinical experience successfully treating radiculopathy without surgery",
+      "Experience assessing neck and arm symptoms and discussing suitable care options",
       "Gentle, precise manual therapy techniques that respect nerve sensitivity",
       "Convenient Manikonda clinic location with home visit options for severe cases"
     ],
@@ -306,11 +306,11 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Use a cervical roll or supportive pillow to maintain neutral neck alignment during sleep",
       "Keep your phone and reading material at eye level to avoid prolonged neck bending"
     ],
-    whenToVisit: "Seek immediate physiotherapy assessment if you experience radiating arm pain, numbness in your hand, or weakness when gripping objects. Early intervention prevents chronic nerve irritation.",
+    whenToVisit: "Arrange medical assessment for persistent arm pain, numbness, or reduced grip strength. Seek urgent medical care for sudden or worsening weakness or other severe symptoms.",
     faqs: [
       {
         question: "Can cervical radiculopathy heal without surgery?",
-        answer: "Yes, over 85-90% of cervical radiculopathy cases recover completely with conservative physiotherapy, manual traction, and neural mobilization. Surgery is rarely needed when treatment begins early."
+        answer: "Some people improve with non-surgical care, but the best approach depends on the cause and severity of symptoms. A clinician can assess whether physiotherapy is appropriate or whether another medical evaluation is needed."
       },
       {
         question: "How is cervical radiculopathy different from a regular neck strain?",
@@ -344,7 +344,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     shortDescription: "Specialized clinical rehabilitation for forward head posture, device-related cervical strain, and postural neck dysfunction.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Tech neck physiotherapy and forward head posture correction in Manikonda clinic",
-    whatItIs: "Tech neck, also known as text neck, is a modern repetitive strain injury caused by prolonged forward head flexion while viewing smartphones, tablets, and laptops. The human head weighs approximately 5 kg in neutral alignment, but for every inch the head tilts forward, the effective weight on the cervical spine increases dramatically—up to 27 kg at 60 degrees of flexion. This sustained postural stress strains the posterior cervical muscles, flattens the natural cervical lordosis, accelerates disc degeneration, and leads to chronic neck pain, headaches, and upper back tension. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide comprehensive posture correction and cervical rehabilitation to reverse tech neck damage.",
+    whatItIs: "“Tech neck” or “text neck” is an informal phrase for neck or upper-back discomfort people associate with device use or sustained positions; it is not a medical diagnosis. Symptoms can have several causes, and no single posture explains every case. Assessment can help decide whether changes in activity or physiotherapy may be useful.",
     causes: [
       "Prolonged smartphone and tablet use with the head tilted forward and down",
       "Laptop and desktop monitor positioned below eye level encouraging forward head posture",
@@ -359,7 +359,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Rounded shoulders and visible forward head posture when viewed from the side",
       "Tight, tender muscle knots (trigger points) in the upper trapezius and between the shoulder blades"
     ],
-    howPhysioHelps: "Tech neck is entirely reversible with targeted physiotherapy. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) addresses both the muscular imbalances and the underlying postural habit. Treatment includes myofascial release of tight anterior muscles, mobilization of stiff upper cervical and thoracic segments, deep neck flexor strengthening to restore the cervical curve, and ergonomic education to prevent recurrence during daily device use.",
+    howPhysioHelps: "For device-related neck discomfort, physiotherapy may include advice on varying positions, movement breaks, and exercises chosen for the person's symptoms and goals. The aim is to support comfortable activity, not to promise a permanent posture correction or prevent every recurrence.",
     assessmentProcess: [
       "Craniovertebral angle measurement using digital photography to quantify forward head posture",
       "Deep neck flexor endurance testing (craniocervical flexion test)",
@@ -374,7 +374,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Scapular retraction and stabilization exercises to support the shoulder girdle",
       "Ergonomic workstation assessment and smartphone usage habit modification"
     ],
-    expectedRecovery: "Most patients experience significant reduction in neck pain and headache frequency within 2 to 4 weeks. Long-term postural correction and symptom resolution typically develop over 4 to 8 weeks with consistent exercise practice.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical experience treating postural cervical disorders in Hyderabad's tech community",
       "Specialized orthopedic training in spinal biomechanics and posture correction",
@@ -396,11 +396,11 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Can tech neck be permanently corrected?",
-        answer: "Yes, tech neck is entirely reversible. With targeted physiotherapy to strengthen deep neck flexors, release tight muscles, and correct ergonomic habits, you can restore proper cervical alignment and eliminate pain permanently."
+        answer: "The phrase “tech neck” describes symptoms associated with device use or sustained positions; it is not a diagnosis. Varying position, taking breaks, and appropriate exercises may help, but there is no guaranteed permanent correction. Persistent or worsening symptoms should be assessed."
       },
       {
         question: "How long does it take to fix forward head posture?",
-        answer: "Most patients see noticeable postural improvement within 3 to 4 weeks. Full correction of chronic forward head posture typically takes 6 to 8 weeks of consistent exercise and ergonomic modification."
+        answer: "There is no single timetable for posture changes or symptom improvement. Varying position and taking movement breaks may be useful, and a physiotherapist can suggest exercises after assessment. Seek care if symptoms persist or worsen."
       },
       {
         question: "What is the best pillow for tech neck?",

@@ -19,6 +19,8 @@ const ConditionCard = ({ title, description, imageSrc, slug, altText }: Conditio
         <img
           src={imageSrc}
           alt={altText}
+          width={640}
+          height={480}
           loading="lazy"
           className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500 ease-out"
         />

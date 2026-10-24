@@ -190,6 +190,8 @@ const ConditionPage = () => {
                 <img
                   src={condition.imageSrc}
                   alt={condition.altText}
+                  width={640}
+                  height={480}
                   className="w-full aspect-[4/3] object-cover object-center"
                 />
                 <div className="p-4 bg-white border-t border-[#e5dec9] text-center">

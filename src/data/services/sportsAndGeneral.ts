@@ -42,7 +42,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Proprioceptive neuromuscular facilitation (PNF) and balance board training for joint stability",
       "Progressive functional return-to-play protocols including running biomechanics and agility ladders"
     ],
-    expectedRecovery: "Mild sports strains or contusions typically resolve in 2 to 4 weeks. Moderate ligament or muscle tears require 6 to 12 weeks of structured rehabilitation. Post-surgical reconstructions (such as ACL or labral repairs) take 6 to 9 months of systematic phased reconditioning to achieve full competitive clearance.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of expertise managing amateur runners, badminton players, and competitive gym athletes",
       "1-on-1 personalized sports conditioning programs tailored to your specific sporting discipline",
@@ -97,7 +97,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     shortDescription: "Doctor-supervised post-operative physical therapy restoring joint mobility, muscle activation, and independent functional living after orthopedic surgeries. Offers both clinic-based advanced therapy and dedicated home visit physiotherapy across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Post-surgical rehabilitation and orthopedic physiotherapy in Manikonda",
-    whatItIs: "Post-surgical rehabilitation is the structured, physician-aligned physical therapy protocol administered following orthopedic, spinal, or trauma surgery. Surgical procedures such as total knee replacement (TKR), total hip arthroplasty (THA), arthroscopic ligament reconstructions, lumbar discectomies, and open reduction internal fixation (ORIF) for bone fractures successfully repair structural anatomy; however, recovery depends entirely on rehabilitating the surrounding muscles, nerves, and joint capsules. At Dr. Hamid's Physio and Pain Clinic in Manikonda, post-op physiotherapy ensures rapid scar remodeling, eliminates surgical swelling, prevents deep vein thrombosis (DVT), and safely restores normal joint movement.",
+    whatItIs: "Post-surgical rehabilitation may support movement and daily activities after an operation. The appropriate exercises, precautions, and timeline depend on the procedure, healing, and instructions from the surgeon or hospital team. At Dr. Hamid's Physio and Pain Clinic in Manikonda, care is planned around the person's assessment and medical guidance; physiotherapy does not replace post-operative medical follow-up.",
     causes: [
       "Post-operative immobilization causing rapid muscular atrophy and capsular adhesions",
       "Surgical trauma leading to persistent joint effusion and arthrogenic muscle inhibition (AMI)",
@@ -112,7 +112,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Fear of weight-bearing and severe apprehension during initial walking attempts",
       "Difficulty navigating stairs, getting in and out of bed, or performing self-care independently"
     ],
-    howPhysioHelps: "Physiotherapy is the critical catalyst that turns a surgical procedure into functional success. Working in close alignment with your orthopedic surgeon's post-op protocol, Dr. Mohammed Hamid Ali (BPT) provides gentle manual passive mobilizations, targeted lymph drainage, electrical muscle stimulation to wake up dormant muscles, and progressive gait re-education. This eliminates painful joint contractures, restores normal walking without a walker or stick, and accelerates your return to active life.",
+    howPhysioHelps: "A physiotherapist can review the surgeon's restrictions and help plan suitable mobility, strength, and walking activities as recovery progresses. Exercises and hands-on care depend on the operation and the individual's symptoms. Progress varies, and the treating surgical team should guide post-operative precautions and any changes in symptoms.",
     assessmentProcess: [
       "Comprehensive review of surgical discharge summary, operative notes, and post-op X-rays",
       "Inspection of surgical incision healing, surgical wound integrity, and skin mobility",
@@ -127,7 +127,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Manual scar tissue mobilization once incisions are fully healed to restore tissue extensibility",
       "Progressive closed-kinetic-chain strengthening, balance retraining, and independent walking progression"
     ],
-    expectedRecovery: "Initial healing and basic independent household walking are usually achieved within 3 to 6 weeks. Complete recovery with full muscular strength, stamina, and outdoor independence spans 3 to 6 months depending on the specific surgical intervention.",
+    expectedRecovery: "Recovery timelines vary by surgery, healing, general health, and the surgeon's restrictions. Some procedures require several months of gradual rehabilitation. Follow the treating team's milestones rather than a fixed timetable.",
     whyChooseDoctor: [
       "8+ years of dedicated experience delivering orthopedic and trauma post-op rehabilitation",
       "Close coordination with leading orthopedic surgeons across Hyderabad and Secunderabad",
@@ -148,7 +148,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     faqs: [
       {
         question: "How soon after my knee or hip surgery should I begin physiotherapy?",
-        answer: "Bedside mobility exercises usually begin on postoperative day 1 in the hospital. Once discharged home, dedicated home physiotherapy or outpatient clinic sessions should begin within 48 to 72 hours to prevent debilitating joint contractures."
+        answer: "The hospital or surgeon will advise when to begin each movement and exercise. Some people start guided mobility in hospital, while restrictions and timing vary by procedure and individual recovery. Follow the discharge instructions and contact the surgical team with questions."
       },
       {
         question: "Do you offer home visit physiotherapy for post-surgery patients in Manikonda?",
@@ -156,7 +156,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "Will post-surgery physiotherapy be extremely painful?",
-        answer: "Rehabilitation involves focused effort to restore stiff joints, but it should never be agonizing or traumatic. Dr. Hamid employs gentle manual techniques, electrotherapy, and progressive pacing that respects your pain threshold while ensuring steady milestone progress."
+        answer: "Some discomfort can occur during recovery, but the appropriate level of activity depends on your operation and symptoms. Tell your physiotherapist if an exercise causes marked or worsening pain, and follow your surgeon's restrictions."
       },
       {
         question: "Do I need to follow my surgeon's specific rehabilitation protocol?",
@@ -164,11 +164,11 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "How long will I need a walker or walking stick after knee replacement?",
-        answer: "Most patients transition from a walker to a single stick within 2 to 3 weeks, and achieve completely independent walking without assistive aids by 4 to 6 weeks with consistent physiotherapy."
+        answer: "The time someone needs a walker or stick varies. Use the walking aid and progress only as advised by the hospital, surgeon, or physiotherapist; safety and the ability to walk steadily matter more than a set date."
       },
       {
         question: "Why can't I just do the hospital exercise handout on my own at home?",
-        answer: "Hospital handouts offer basic guidelines, but cannot monitor joint contractures, correct improper compensatory gait limps, safely progress resistance, or break down stubborn surgical scar tissue. Professional 1-on-1 supervision ensures optimal, lasting recovery."
+        answer: "Follow the hospital's exercise instructions and ask the treating team if you are unsure how to do them or how to progress. A physiotherapist can assess your movement and help adapt the plan when appropriate."
       }
     ]
   },
@@ -177,12 +177,12 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     category: "Sports, Post-Op & General",
     title: "Fracture Treatment & Rehabilitation",
     metaTitle: "Fracture Rehabilitation Physiotherapy in Manikonda | Dr. Hamid's Clinic",
-    metaDescription: "Restore bone strength, eliminate post-cast stiffness & rebuild mobility with expert fracture rehabilitation physiotherapy in Manikonda, Hyderabad. Call today!",
+    metaDescription: "Fracture rehabilitation in Manikonda, Hyderabad, with movement guidance after medical clearance. Contact Dr. Hamid's Physio and Pain Clinic.",
     h1: "Fracture Treatment Physiotherapy & Rehabilitation in Manikonda, Hyderabad",
-    shortDescription: "Specialized post-fracture physical therapy to eliminate joint stiffness, reverse muscle atrophy, and restore full functional strength following bone healing.",
+    shortDescription: "Physiotherapy after a fracture may help address stiffness, strength, and movement once activity is cleared by the treating medical team.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Post-fracture rehabilitation and limb mobilization therapy in Manikonda",
-    whatItIs: "Fracture rehabilitation is the essential therapeutic process undertaken after a broken bone has attained clinical and radiological union, whether managed conservatively via plaster casts and splints or surgically via plates, screws, and intramedullary rods. While immobilization is necessary for bone callus formation, it leads to severe secondary complications: joint contracture, muscular atrophy, tendon adhesion, osteopenia, and impaired proprioception. At Dr. Hamid's Physio and Pain Clinic in Manikonda, fracture rehabilitation systematically reverses these immobilization complications, restoring maximum joint range of motion, rebuilding bone density through safe weight-bearing, and returning patients to confident daily life.",
+    whatItIs: "Fracture rehabilitation may be considered after a broken bone, but the timing and safe activities depend on the fracture, treatment, and healing. Follow the treating clinician's advice about movement and weight-bearing. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help plan activity within those restrictions.",
     causes: [
       "Road traffic accidents, bike skids, and vehicular collisions causing complex skeletal fractures",
       "Slip and fall accidents at home or work leading to Colles fractures of the wrist or hip fractures",
@@ -197,7 +197,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Deep bone ache or soft tissue tenderness during initial attempts at weight-bearing",
       "Apprehension and loss of confidence when attempting functional tasks like writing, typing, or walking"
     ],
-    howPhysioHelps: "Once your orthopedic surgeon confirms bone union on follow-up X-rays, physiotherapy is crucial to unlock frozen joints and awaken wasted muscles. Dr. Mohammed Hamid Ali (BPT) uses gentle physiological and accessory joint mobilizations, therapeutic ultrasound to soften periarticular adhesions, and progressive resistance exercises. This safe, calibrated loading stimulates bone remodeling (Wolff's Law), prevents chronic regional pain syndrome (CRPS), and restores full limb dexterity.",
+    howPhysioHelps: "After the treating clinician has advised what movement and loading are appropriate, physiotherapy may help address stiffness, strength, balance, or daily tasks. The plan depends on the fracture, treatment, healing, and any restrictions. Report new or worsening pain, swelling, numbness, or colour changes to the medical team.",
     assessmentProcess: [
       "Thorough review of fracture type, reduction method, orthopedic fixation hardware, and recent union X-rays",
       "Detailed inspection of skin condition, cast-induced skin changes, surgical scars, and residual edema",
@@ -212,12 +212,12 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Calibrated progressive resistance training utilizing therapeutic bands, dumbbells, and body weight",
       "Dynamic balance retraining, gait re-education, and functional task simulation for complete independence"
     ],
-    expectedRecovery: "Upper limb fractures (wrist, forearm, humerus) typically regain functional mobility within 4 to 8 weeks post-cast removal. Lower limb fractures (ankle, tibia, femur) require 8 to 14 weeks of progressive weight-bearing and strength training to restore normal unassisted walking.",
+    expectedRecovery: "Recovery after a fracture varies with its location and severity, treatment, healing, and overall health. Your medical team will advise when to increase movement or weight-bearing; a physiotherapist can help progress activity within those restrictions.",
     whyChooseDoctor: [
       "8+ years of dedicated clinical experience in trauma and post-fracture physical rehabilitation",
       "Direct supervision by Dr. Mohammed Hamid Ali ensuring safe, gradual bone loading protocols",
-      "Advanced therapeutic modalities to quickly eliminate post-immobilization stiffness and swelling",
-      "Comprehensive patient education ensuring zero risk of re-fracture or hardware failure"
+      "Exercise and movement options can be adjusted to the fracture and medical restrictions",
+      "Progress is reviewed against comfort, function, and guidance from the treating medical team"
     ],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
@@ -233,7 +233,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     faqs: [
       {
         question: "When should physiotherapy start after a fracture?",
-        answer: "Gentle exercises for adjacent uninjured joints (such as fingers and shoulders during a forearm cast) start immediately. Full rehabilitation for the fractured area begins the very day your cast is removed or when your orthopedic surgeon confirms sufficient bone union."
+        answer: "Timing depends on the fracture, treatment, and healing. Follow your surgeon's or hospital team's advice about which joints may move, when to begin exercises, and when to start loading the injured area."
       },
       {
         question: "Why is my joint so stiff and painful after the plaster cast was removed?",
@@ -241,7 +241,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "Can physiotherapy cause the healing bone to break again?",
-        answer: "No, when supervised by a qualified physiotherapist. Dr. Hamid carefully reviews your latest X-rays and applies gentle, evidence-based joint mobilizations that respect bone callus healing without placing unsafe shear forces on the fracture line."
+        answer: "A physiotherapist should work within the restrictions given by your treating clinician. If pain or swelling worsens during or after activity, stop and ask the medical team for advice. No exercise can be guaranteed risk-free for every fracture or stage of healing."
       },
       {
         question: "How do you treat wrist stiffness following a Colles fracture?",
@@ -249,7 +249,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "Will I ever regain 100% strength and movement after a bone fracture?",
-        answer: "In the vast majority of cases, disciplined, early physiotherapy restores 90% to 100% of functional range of motion and muscular strength, enabling a complete return to sports, work, and daily activities."
+        answer: "The amount of movement and strength regained varies with the fracture, healing, and other health factors. Your treating team can discuss likely goals and review progress over time; a complete return to every activity cannot be promised."
       },
       {
         question: "Do you treat fractures fixed with internal metal plates and screws?",
@@ -282,7 +282,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Post-traumatic headaches, dizziness, neck pain, and cognitive fatigue",
       "Fear of movement (kinesiophobia), elevated pain sensitivity, and reduced physical stamina"
     ],
-    howPhysioHelps: "Recovering from an accident requires a gentle, staged approach that addresses both local tissue injuries and generalized nervous system hyper-sensitization. Dr. Mohammed Hamid Ali (BPT) evaluates your entire kinetic chain, applying gentle non-invasive modalities to extinguish acute pain, followed by graded desensitization, gentle manual mobilizations, and restorative postural strengthening. This prevents acute accident trauma from calcifying into permanent chronic pain syndromes.",
+    howPhysioHelps: "Rehabilitation after an accident depends on the injuries and any medical or surgical restrictions. Once serious injuries have been assessed, physiotherapy may include graded movement, strength and balance work, and support with daily activities. It cannot guarantee that persistent pain will be prevented or resolved.",
     assessmentProcess: [
       "Comprehensive multi-system clinical trauma evaluation reviewing hospital records and scan reports",
       "Cervical, thoracic, and lumbar spine clearance for stability, radiculopathy, and whiplash indicators",
@@ -297,7 +297,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Postural re-education and core stabilizing drills to counteract defensive antalgic postures",
       "Aerobic conditioning and functional endurance rebuilding to restore energy levels and confidence"
     ],
-    expectedRecovery: "Mild to moderate accident injuries (whiplash, contusions, simple sprains) typically improve significantly within 4 to 8 weeks. Complex polytrauma involving fractures, nerve stretch, or multiple surgical sites requires 3 to 6 months of comprehensive phased therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical expertise treating complex trauma, road accident, and polytrauma cases",
       "Holistic whole-body assessment looking beyond isolated symptoms to treat the full kinetic chain",
@@ -383,7 +383,7 @@ serviceAreas: [
       "Gait re-education including assistive device prescription and proper ergonomic walking technique",
       "Gentle therapeutic heat and pain-relieving electrotherapy to ease chronic morning stiffness"
     ],
-    expectedRecovery: "Significant improvements in balance confidence and pain relief are typically observed within 3 to 4 weeks. Sustained gains in lower limb strength, independent walking endurance, and fall risk reduction develop over 8 to 12 weeks of consistent therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of empathetic clinical experience dedicated to senior wellness and geriatric rehabilitation",
       "Patient, respectful communication style that puts elderly patients and their families at complete ease",
@@ -470,7 +470,7 @@ serviceAreas: [
       "Sensory-motor integration drills to encourage proper heel-toe walking mechanics",
       "Customized parental home exercise guidance and footwear recommendations for growing feet"
     ],
-    expectedRecovery: "Mild postural habits and developmental coordination delays often show remarkable progress within 4 to 8 weeks. Conditions requiring anatomical remodeling (such as torticollis or structural foot alignment) involve 3 to 6 months of gradual, play-based guided therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical physiotherapy experience with a warm, patient, and child-welcoming demeanor",
       "Child-friendly clinical atmosphere in Manikonda designed to make therapy feel like fun playtime",
@@ -555,7 +555,7 @@ serviceAreas: [
       "Stair climbing practice and balance retraining using real home architecture",
       "Detailed caregiver training empowering family members with safe transfer and support techniques"
     ],
-    expectedRecovery: "Home visit therapy typically transitions patients from bed-bound or chair-bound status to independent indoor walking within 2 to 4 weeks. Once adequate stamina and mobility are restored, patients may continue home wellness programs or transition to our outpatient clinic.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical excellence delivered by certified physiotherapists under Dr. Hamid's leadership",
       "Punctual, professional, and respectful home visits across Manikonda, Puppalguda, and Gachibowli",
@@ -625,7 +625,7 @@ serviceAreas: [
       "Recurrent flare-ups of joint or tendon pain whenever attempting new physical activities",
       "Loss of functional movement ranges, such as reaching overhead or squatting down comfortably"
     ],
-    howPhysioHelps: "While passive treatments like hot packs and electrotherapy soothe irritated nerves, only therapeutic exercise can permanently remodel biological tissues. Dr. Mohammed Hamid Ali (BPT) assesses your precise muscular weaknesses and movement restrictions, prescribing targeted exercises that lengthen shortened tissues, recruit dormant muscle fibers, and build progressive tensile strength in tendons and bones. Under clinical supervision, you learn correct movement biomechanics that protect your body for a lifetime.",
+    howPhysioHelps: "Depending on the condition, physiotherapy may include education and an exercise plan that is progressed to the person's ability and goals. Some people may also use supportive treatments. No exercise or movement pattern can guarantee lifelong protection from injury or pain.",
     assessmentProcess: [
       "Comprehensive movement screening evaluating joint mobility, kinetic chain alignment, and stability",
       "Manual Muscle Testing (MMT) and dynamometry to pinpoint focal muscular deficits",
@@ -640,7 +640,7 @@ serviceAreas: [
       "Neuromuscular re-education drills to re-establish proper motor unit firing patterns",
       "Progressive functional task conditioning simulating work, sporting, and home physical demands"
     ],
-    expectedRecovery: "Noticeable gains in flexibility and muscular activation occur within 2 to 3 weeks. Measurable structural muscle hypertrophy, improved tendon tensile strength, and lasting postural endurance develop across 6 to 10 weeks of progressive exercise.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical expertise prescribing medical-grade therapeutic exercise protocols",
       "Spacious, well-equipped exercise therapy floor in our Manikonda clinic",
@@ -677,7 +677,7 @@ serviceAreas: [
       },
       {
         question: "Will therapeutic exercise prevent my back or knee pain from coming back?",
-        answer: "Yes! Clinical studies consistently confirm that therapeutic strengthening of core, hip, and spinal stabilizing muscles is the single most effective intervention for preventing recurrent joint pain."
+        answer: "Strengthening may support function and activity for some people, but no single exercise approach prevents every recurrence. A suitable plan depends on the symptoms, health, and goals of the individual."
       },
       {
         question: "Are therapeutic exercises safe for seniors with osteoporosis or heart conditions?",
@@ -726,7 +726,7 @@ serviceAreas: [
       "Reactive stepping strategy training (forward, backward, and lateral crossover recovery steps)",
       "Lower extremity strengthening targeting gluteus medius, quadriceps, and ankle stabilizers"
     ],
-    expectedRecovery: "Patients typically experience improved balance confidence and steadier walking within 2 to 4 weeks. Meaningful reductions in objective fall risk scores and robust neuromuscular stability are achieved over 6 to 8 weeks of consistent therapy.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical expertise treating balance deficits, vestibular issues, and geriatric mobility",
       "Dedicated balance retraining equipment including wobble boards, balance pads, and agility markers",
@@ -755,7 +755,7 @@ serviceAreas: [
       },
       {
         question: "Is balance training safe for someone with a high fall risk?",
-        answer: "Yes, completely safe. At Dr. Hamid's clinic, high-risk patients are closely guarded by the therapist and perform exercises near secure support rails and soft safety mats to ensure total safety."
+        answer: "Exercise can often be adapted, but no activity is risk-free for everyone. A clinician should consider the person's health, balance, symptoms, and environment before suggesting suitable exercises or support."
       },
       {
         question: "How does diabetic neuropathy cause poor balance?",
@@ -797,7 +797,7 @@ serviceAreas: [
       "Disrupted, fragmented sleep caused by constant discomfort and inability to find a comfortable position",
       "Depression, anxiety, and frustration caused by years of unsuccessful medical treatments"
     ],
-    howPhysioHelps: "Physiotherapy offers the most effective, non-pharmacological, evidence-based pathway out of chronic pain. Dr. Mohammed Hamid Ali (BPT) combines modern Pain Neuroscience Education (PNE) with gentle therapeutic modalities that soothe the overactive nervous system. By systematically desensitizing hyper-reactive nerves, releasing deep myofascial tension, and guiding you through graded movement exposure, physiotherapy calms your internal alarm system and empowers you to reclaim an active life.",
+    howPhysioHelps: "For some people with persistent pain, physiotherapy may support activity, movement confidence, and day-to-day function. Care can include education and gradual activity planning, with other approaches considered according to the person's needs. Results vary, and persistent pain may need input from more than one healthcare professional.",
     assessmentProcess: [
       "Comprehensive chronic pain history, pain mapping, and evaluation of previous interventions and medications",
       "Neurological examination assessing allodynia, hyperalgesia, dermatomal sensation, and reflex integrity",
@@ -812,7 +812,7 @@ serviceAreas: [
       "Graded Motor Imagery and gentle pacing to expand movement boundaries without triggering flare-ups",
       "Aerobic conditioning, diaphragmatic breathing, and lifestyle pacing strategies to boost endorphins"
     ],
-    expectedRecovery: "Chronic pain is managed through gradual nervous system rewiring. Patients typically experience meaningful improvements in sleep quality, flare-up frequency, and daily function within 4 to 6 weeks, with sustained long-term management achieved over 8 to 12 weeks.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of dedicated clinical experience managing complex, persistent chronic pain syndromes",
       "Empathetic, compassionate listening approach that validates your pain experience without judgment",
@@ -845,7 +845,7 @@ serviceAreas: [
       },
       {
         question: "Can I stop taking pain medications with physiotherapy?",
-        answer: "Many patients significantly reduce or eliminate pain medications as physiotherapy restores natural movement and triggers internal endorphin release. Always coordinate medication changes with your prescribing physician."
+        answer: "Some people may review their medication needs with their prescriber as symptoms and activity change. Physiotherapy does not replace medication advice, and you should not change or stop prescribed medicines without consulting the prescribing clinician."
       },
       {
         question: "How is chronic pain different from acute pain?",
@@ -898,7 +898,7 @@ serviceAreas: [
       "Muscle Energy Techniques (MET) utilizing reciprocal inhibition to coax locked muscles into lengthening",
       "Gentle active mobilization and ergonomic guidance to prevent recurrence once the spasm unlocks"
     ],
-    expectedRecovery: "Acute muscle spasms typically show dramatic relief within 1 to 3 targeted physiotherapy sessions (24 to 72 hours). Underlying postural or spinal weaknesses are strengthened over 2 to 3 weeks to prevent future spasms.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of expertise delivering immediate, gentle relief for acute back and neck muscle locks",
       "Same-day emergency consultation availability in Manikonda for patients locked in acute agony",
@@ -983,7 +983,7 @@ serviceAreas: [
       "Progressive isometric progressing to eccentric resistance loading (the gold standard for muscle healing)",
       "High-velocity agility, plyometric drills, and sport-specific reconditioning for full clearance"
     ],
-    expectedRecovery: "Grade I mild muscle strains typically heal in 1 to 3 weeks. Grade II partial tears require 4 to 8 weeks of structured rehabilitation. Grade III complete tears or severe myotendinous avulsions take 3 to 6 months and may require orthopedic surgical consultation.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of clinical expertise treating competitive athletes, runners, and fitness enthusiasts",
       "Evidence-based eccentric loading protocols that drastically reduce reinjury rates",
@@ -1069,7 +1069,7 @@ serviceAreas: [
       "Deep transverse friction massage and myofascial release along the associated muscle belly",
       "Graduated energy-storage and plyometric reconditioning to restore sports-ready explosive springiness"
     ],
-    expectedRecovery: "Acute reactive tendonitis typically responds within 3 to 6 weeks. Chronic, degenerative tendinopathy that has persisted for months requires 8 to 12 weeks of progressive heavy slow resistance training to achieve complete cellular remodeling.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of expertise managing complex sports and occupational tendinopathies in Hyderabad",
       "Up-to-date with modern tendon science: no prolonged resting or harmful repetitive steroid injections",
@@ -1090,7 +1090,7 @@ serviceAreas: [
     faqs: [
       {
         question: "Why hasn't my tendonitis healed even after weeks of complete rest?",
-        answer: "Tendons have poor vascularity and rely on mechanical tension to stimulate cell turnover. Complete rest causes tendons to decondition and weaken further. Controlled, heavy progressive loading is the only proven cure for tendinopathy."
+        answer: "Progressive loading is commonly used in tendon rehabilitation, but the appropriate amount and pace depend on the tendon, symptoms, and other health factors. Complete rest is not suitable for every case, and loading is not a guaranteed cure; an assessment can help guide next steps."
       },
       {
         question: "Are cortisone (steroid) injections good for tendonitis?",
@@ -1139,7 +1139,7 @@ serviceAreas: [
       "Tenderness and rock-hard muscular spasms across the trapezius, levator scapulae, and rhomboids",
       "Shoulder and upper back aching, often accompanied by mild dizziness, jaw pain (TMJ), or arm tingling"
     ],
-    howPhysioHelps: "Clinical guidelines strictly advise against prolonged hard cervical collar use, which causes cervical muscle atrophy and delays recovery. Active physiotherapy is the gold standard for whiplash recovery. Dr. Mohammed Hamid Ali (BPT) uses gentle pain-relieving modalities to calm muscular guarding, followed by early gentle active cervical range of motion, craniocervical flexor retraining (deep neck flexors), and cervical proprioception drills. This restores natural neck mechanics and eliminates post-accident tension headaches.",
+    howPhysioHelps: "After whiplash, an appropriate plan depends on the injury and symptoms. A clinician may discuss comfortable movement and a gradual return to usual activities. Follow medical advice about collars, exercise, and activity, and seek assessment for worsening or concerning symptoms.",
     assessmentProcess: [
       "Thorough screening using the Canadian C-Spine Rule to verify absence of cervical fractures or instability",
       "Quebec Task Force classification of Whiplash-Associated Disorders (WAD Grade I, II, or III)",
@@ -1154,7 +1154,7 @@ serviceAreas: [
       "Craniocervical deep neck flexor retraining (chin tucks) to restore essential spinal postural stability",
       "Postural re-education, scapular stabilization, and gentle return to normal driving and desk work"
     ],
-    expectedRecovery: "WAD Grade I and II whiplash injuries typically improve significantly within 3 to 6 weeks of early, active physiotherapy. Complex cases with radiating nerve irritation or high stress take 8 to 12 weeks of comprehensive guided rehabilitation.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of dedicated clinical experience diagnosing and treating vehicular trauma and spinal whiplash",
       "Adherence to international Whiplash-Associated Disorder (WAD) clinical practice guidelines",
@@ -1241,7 +1241,7 @@ serviceAreas: [
       "Phase 4 (Weeks 12+): Advanced strengthening, endurance training, and return to recreational activities",
       "Manual scar tissue mobilization and joint mobilizations as needed"
     ],
-    expectedRecovery: "Most patients achieve independent walking with a cane by week 3 to 4, and walk without assistive devices by week 6 to 8. Functional knee flexion of 110-120 degrees is typically achieved by week 8 to 12. Full recovery of strength and endurance continues for 6 to 12 months.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of specialized orthopedic post-surgical rehabilitation experience",
       "Strict compliance with orthopedic surgical protocols and milestones",
@@ -1263,7 +1263,7 @@ serviceAreas: [
     faqs: [
       {
         question: "How soon after knee replacement surgery should physiotherapy start?",
-        answer: "Bedside exercises begin in the hospital on postoperative day 1. Formal outpatient or home physiotherapy should start within 3 to 5 days of discharge to prevent permanent stiffness."
+        answer: "Follow the hospital and surgeon's instructions about when to begin movement after knee replacement. Many people receive physiotherapy in hospital, but timing and restrictions after discharge depend on the procedure and individual recovery."
       },
       {
         question: "How much should I be able to bend my knee after knee replacement?",
@@ -1329,7 +1329,7 @@ serviceAreas: [
       "Phase 4 (Weeks 12+): Return to recreational activities, precaution weaning (if appropriate)",
       "Functional training for daily activities (dressing, bathing, transfers)"
     ],
-    expectedRecovery: "Most patients achieve independent walking with a cane by week 4 to 6, and walk without assistive devices by week 8 to 12. Full functional recovery and return to low-impact recreational activities typically occurs within 3 to 6 months.",
+    expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [
       "8+ years of specialized post-surgical orthopedic rehabilitation experience",
       "Strict compliance with hip precautions and surgeon protocols",

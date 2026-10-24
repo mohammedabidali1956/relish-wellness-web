@@ -83,6 +83,9 @@ const quickLinks = [
   { to: "/services/home-visit-physiotherapy-manikonda", label: "Home Physiotherapy Visits" },
   { to: "/reviews", label: "Reviews" },
   { to: "/blogs", label: "Blogs" },
+  { to: "/contact", label: "Contact the Clinic" },
+  { to: "/privacy-policy", label: "Privacy Policy" },
+  { to: "/terms-and-conditions", label: "Terms & Conditions" },
   { to: "/#appointment", label: "Book Appointment" },
 ];
 
@@ -97,6 +100,8 @@ const Footer = () => {
               <img
                 src="/images/logo/hamid-physio-logo.png"
                 alt="Dr. Hamid's Physio and Pain Clinic — physiotherapy in Manikonda, Hyderabad"
+                width={1414}
+                height={1414}
                 className="h-16 w-16 sm:h-20 sm:w-20 shrink-0 rounded-full object-cover border border-border"
               />
               <div>

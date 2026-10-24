@@ -305,6 +305,8 @@ export const ServiceDetailPage: React.FC = () => {
                   <img
                     src={service.imageSrc}
                     alt={service.altText}
+                    width={640}
+                    height={480}
                     className="w-full h-full object-cover"
                     loading="eager"
                   />
@@ -586,7 +588,10 @@ export const ServiceDetailPage: React.FC = () => {
                   <div className="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-[#8a5d24] mb-3 shadow-xs bg-[#f4ede0]">
                     <img
                       src="/images/doctor/dr-hamid-actual.png"
-                      alt="Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) - Consultant Physiotherapist in Manikonda"
+                      alt="Dr. Mohammed Hamid Ali, physiotherapist"
+                      width={682}
+                      height={1024}
+                      loading="lazy"
                       className="w-full h-full object-cover object-top"
                     />
                   </div>

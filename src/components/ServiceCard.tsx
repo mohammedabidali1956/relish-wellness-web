@@ -1,24 +1,29 @@
 
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 interface ServiceCardProps {
   title: string;
   description: string;
   imageSrc: string;
   altText: string;
+  to: string;
   className?: string;
 }
 
-const ServiceCard = ({ title, description, imageSrc, altText, className }: ServiceCardProps) => {
+const ServiceCard = ({ title, description, imageSrc, altText, to, className }: ServiceCardProps) => {
   return (
-    <article className={cn(
+    <Link to={to} className={cn(
       "group flex flex-col h-full bg-card border border-border rounded-md overflow-hidden hover:border-relish-300 transition-colors duration-300",
-      className
+      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-relish-600",
+      className,
     )}>
       <div className="h-52 overflow-hidden bg-muted">
         <img
           src={imageSrc}
           alt={altText}
+          width={640}
+          height={416}
           loading="lazy"
           className="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-500 ease-out"
         />
@@ -31,7 +36,7 @@ const ServiceCard = ({ title, description, imageSrc, altText, className }: Servi
           {description}
         </p>
       </div>
-    </article>
+    </Link>
   );
 };
 

@@ -15,6 +15,9 @@ import BlogsPage from "./pages/BlogsPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import ConditionPage from "./pages/ConditionPage";
 import ServiceDetailPage from "./pages/ServiceDetailPage";
+import ContactPage from "./pages/ContactPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +38,9 @@ export const AppContent = () => (
             <Route path="reviews" element={<ReviewsPage />} />
             <Route path="blogs" element={<BlogsPage />} />
             <Route path="blogs/:slug" element={<BlogPostPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="terms-and-conditions" element={<TermsAndConditionsPage />} />
             <Route path=":slug" element={<ServiceDetailPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
