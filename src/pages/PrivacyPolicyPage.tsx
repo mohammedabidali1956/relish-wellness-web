@@ -2,79 +2,125 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { PRIVACY_EMAIL } from "@/lib/privacyConfig";
 
-// TODO(privacy): Confirm the controller identity, privacy contact, enquiry handling, retention practices, third-party script behavior, and applicable visitor rights before publication.
+// TODO(privacy): Confirm the operating entity, enquiry purposes and handling, retention/deletion, third-party and hosting data practices, children's information safeguards, and applicable rights/complaint process before approval.
 const PrivacyPolicyPage = () => {
   const canonicalUrl = "https://www.drhamidphysio.in/privacy-policy";
+  const privacyEmailUrl = `mailto:${PRIVACY_EMAIL}`;
 
   return (
     <div id="privacy-policy-page" className="min-h-screen bg-[#faf6ed] px-4 py-12 sm:py-16">
       <Helmet>
         <title>Privacy Policy | Dr Hamid’s Physio and Pain Clinic</title>
-        <meta name="description" content="Draft privacy information for Dr Hamid’s Physio and Pain Clinic, Manikonda, Hyderabad." />
+        <meta name="description" content="privacy notice for Dr Hamid’s Physio and Pain Clinic, covering website enquiries, WhatsApp links, maps, fonts, and third-party services." />
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content="Privacy Policy | Dr Hamid’s Physio and Pain Clinic" />
-        <meta property="og:description" content="Draft privacy information for the clinic website and its contact options." />
+        <meta property="og:description" content="privacy notice for the clinic website and its contact options, pending confirmation of some operational details." />
         <meta property="og:url" content={canonicalUrl} />
       </Helmet>
 
       <article className="prose prose-slate mx-auto max-w-4xl rounded-2xl border border-[#e5dec9] bg-white px-6 py-8 shadow-sm sm:px-10 sm:py-12">
-        <p className="not-prose rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm leading-relaxed text-amber-950">
-          Draft for clinic review. Confirm the open items below before treating this page as the clinic’s final privacy notice.
-        </p>
-        <h1>Privacy Policy</h1>
-        <p><strong>Draft prepared:</strong> <time dateTime="2026-10-25">October 25, 2026</time></p>
+
+        <h1>
+          Privacy Policy
+        </h1>
         <p>
-          This draft describes what is visible in the website code reviewed for Dr Hamid’s Physio and Pain Clinic, Manikonda, Hyderabad, Telangana, India. It does not confirm the clinic’s off-site data-handling practices, hosting-provider settings, or the behavior of third-party services.
+          <strong>Last updated:</strong>{" "}
+          <time dateTime="2026-10-25">25 October 2026</time>
+        </p>
+        <p>
+          This notice concerns use of the website for Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, Telangana, India. It describes website features visible in the reviewed project. It does not confirm every practice of the clinic, its hosting provider, or external services.
         </p>
 
-        <h2>Information entered in website forms</h2>
+        <h2 id="information-in-forms">
+          Information entered in website forms
+        </h2>
         <p>
-          The appointment form asks for a name and phone number and offers an optional message. The callback form asks for a name and phone number. In the reviewed code, submitting either form opens WhatsApp with a prefilled message; it does not send the form fields to a clinic website form endpoint. The message reaches the clinic only if the visitor reviews and sends it in WhatsApp.
-        </p>
-        <p>
-          If you choose to send a WhatsApp message, WhatsApp/Meta and the clinic may process the information under their own services and practices. The clinic’s handling, access, and retention of WhatsApp messages have not been confirmed for this draft. Do not include sensitive health details unless you are comfortable sending them through that external messaging service.
+          The appointment form asks for your name and phone number and allows an optional message. The callback form asks for your name and phone number. Information typed into the optional message field may include health details, so please avoid entering sensitive information unless you are comfortable sharing it through the WhatsApp handoff described below.
         </p>
 
-        <h2>Third-party services visible in the website code</h2>
+        <h2 id="whatsapp-enquiries">
+          Appointment and callback enquiries
+        </h2>
+        <p>
+          In the reviewed application form handlers, submitting either form opens a WhatsApp link with the entered details in a pre-filled message. Those handlers do not submit the fields to a clinic-hosted form endpoint. The information is included in the link used to open WhatsApp; opening the link does not send a message to the clinic. You must review and press Send in WhatsApp for the clinic to receive the enquiry. WhatsApp and the clinic may then handle the message under their respective practices.
+        </p>
+        <p>
+          The forms are presented for appointment and callback enquiries. The clinic has not confirmed how enquiries are handled after receipt, who may access them, or how long they are kept. No retention period or deletion promise is made.
+        </p>
+
+        <h2 id="third-party-services">
+          Third-party services
+        </h2>
         <ul>
-          <li>Google Maps is embedded on the home and contact pages. Loading the map may send technical information, such as an IP address and browser request data, to Google.</li>
-          <li>Google Fonts are requested from Google Fonts when the site loads its selected typefaces.</li>
-          <li>WhatsApp links and prefilled message forms open WhatsApp outside this website when selected.</li>
-          <li>The site loads <code>https://cdn.gpteng.co/gptengineer.js</code>. Its current behavior and any data it may access or transmit have not been verified and require review before this draft is finalized.</li>
+          <li>
+            Google Maps is embedded on the home and contact pages. Loading an embedded map makes a request to Google; the information processed by Google has not been independently verified for this notice.
+          </li>
+          <li>
+            The site requests Google Fonts stylesheets for its typefaces. Google’s processing and logging for those requests have not been independently verified.
+          </li>
+          <li>
+            WhatsApp is opened through links, including links containing pre-filled enquiry text. The site also links to external services such as Practo and Google Business Profile.
+          </li>
+          <li>
+            The shared website HTML loads{" "}
+            <code>https://cdn.gpteng.co/gptengineer.js</code>. The current script could not be retrieved for static review, and it was not executed. Its purpose, browser access, and any additional data it may access or transmit remain unknown.
+          </li>
         </ul>
         <p>
-          These providers operate under their own policies and settings. This draft does not make claims about their cookies, retention, processing locations, or use of information.
+          These providers operate their own services and publish their own privacy information. This does not make claims about their cookies, retention, processing locations, or use of information. Following an external link takes you to that provider’s service.
         </p>
 
-        <h2>Analytics, advertising, cookies, and browser storage</h2>
+        <h2 id="cookies-analytics">
+          Cookies, analytics, and technical information
+        </h2>
         <p>
-          A source-code search of the active application and project configuration did not find an implementation of Google Analytics, Google Tag Manager, Meta Pixel, Google Ads conversion tracking, Vercel Analytics, or Cloudflare Analytics. It also did not find active-route use of <code>localStorage</code> or <code>sessionStorage</code>. The source does contain a sidebar UI component that can write a first-party <code>sidebar:state</code> cookie if mounted; the reviewed application routes do not import that component. This code review does not confirm the live hosting dashboard, provider behavior, browser storage used by embedded services, or future deployment configuration.
+          The reviewed repository did not identify an implementation of Google Analytics, Google Tag Manager, Meta Pixel, Google Ads conversion tracking, Vercel Analytics, or Cloudflare Analytics. The live hosting settings and the behavior of the external script and embedded services have not been verified. This does not claim that no cookies, analytics, identifiers, or other technical data are used. No cookie or analytics consent tool was identified in the reviewed application source.
         </p>
         <p>
-          No cookie-consent tool was found in the reviewed application source. The clinic should verify the deployed site and the third-party script and embeds, then add any disclosures or consent controls required for its actual configuration and applicable law.
-        </p>
-
-        <h2>Retention and privacy requests</h2>
-        <p>
-          The clinic’s retention periods and deletion practices for WhatsApp enquiries, appointment details, and other communications have not been confirmed. This policy does not promise a retention period or that information is used only for a particular purpose. Please ask the clinic before sending information if you need details about how it will be handled.
-        </p>
-        <p>
-          Privacy contact: <strong>{PRIVACY_EMAIL}</strong>. Replace this placeholder with a monitored clinic-approved contact before publication. The contact is not yet configured as a working email link.
+          A complete list of browser storage, cookies, and technical information used by the deployed website and its providers still needs to be confirmed before this notice is approved.
         </p>
 
-        <h2>Open items for clinic review</h2>
-        <ul>
-          <li>Confirm the legal data controller or operating entity and its approved privacy contact.</li>
-          <li>Confirm retention, access, deletion, and any other handling of WhatsApp messages and appointment enquiries.</li>
-          <li>Review the purpose and behavior of the GPTEngineer script and confirm hosting-provider logging and dashboard integrations.</li>
-          <li>Verify cookies and other storage used by Google Maps, Google Fonts, WhatsApp links, and any deployed third-party scripts.</li>
-          <li>Confirm the applicable privacy rights, complaint route, and response process for visitors in relevant jurisdictions.</li>
-          <li>Confirm whether this site is intended for children and whether any additional protections apply.</li>
-        </ul>
-
-        <h2>Changes and related information</h2>
+        <h2 id="security-retention">
+          Sharing, security, and retention
+        </h2>
         <p>
-          This draft should be updated after the clinic confirms the open items and whenever the site’s data flows materially change. Read the <Link to="/terms-and-conditions">Terms &amp; Conditions</Link> or <Link to="/contact">contact the clinic</Link>.
+          The clinic has not confirmed its arrangements for access to, sharing of, securing, retaining, or deleting enquiries after they arrive through WhatsApp or other contact channels. This does not promise a particular security measure, retention period, deletion process, or use limited to a particular purpose. Please contact the clinic before sending information if you need these details.
+        </p>
+
+        <h2 id="children-information">
+          Information about children
+        </h2>
+        <p>
+          The clinic has not yet confirmed the intended audience or any additional arrangements for enquiries involving children’s information.
+        </p>
+
+        <h2 id="privacy-contact">
+          Privacy questions and requests
+        </h2>
+        <p>
+          For privacy questions or requests, email the clinic at{" "}
+          <a
+            href={privacyEmailUrl}
+            className="font-medium text-relish-700 underline underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-relish-500"
+          >
+            {PRIVACY_EMAIL}
+          </a>
+          . The clinic has not confirmed a separate privacy officer or response timeline. Any applicable rights and complaint process should be confirmed with the clinic or qualified legal counsel.
+        </p>
+
+        <h2 id="policy-updates">
+          Changes to this notice
+        </h2>
+        <p>
+          This notice should be reviewed when website features or the clinic’s information-handling practices change. Read the{" "}
+          <Link to="/terms-and-conditions">
+            Terms &amp; Conditions
+          </Link>{" "}
+          or{" "}
+          <Link to="/contact">
+            contact the clinic
+          </Link>
+          .
         </p>
       </article>
     </div>

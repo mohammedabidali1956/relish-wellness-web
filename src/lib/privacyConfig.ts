@@ -1,3 +1,3 @@
-// Replace this placeholder with a monitored clinic-approved privacy contact before publication.
-export const PRIVACY_EMAIL = "PRIVACY_EMAIL";
+// Clinic-confirmed privacy contact. Update this value here if the contact changes.
+export const PRIVACY_EMAIL = "drhamidphysio@gmail.com";
 

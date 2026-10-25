@@ -28,6 +28,7 @@ try {
     ...conditions.map(({ slug }) => `/conditions/${slug}`),
     ...blogPosts.map(({ slug }) => `/blogs/${slug}`),
   ];
+  const indexableCanonicalUrls = new Set();
 
   for (const route of paths) {
     const { appHtml, head } = renderRoute(route);
@@ -44,6 +45,20 @@ try {
     const canonical = route !== "/" && helmetCanonical === "https://www.drhamidphysio.in/"
       ? routeCanonical
       : helmetCanonical || routeCanonical;
+    const robotsMetaTags = [...`${template}\n${head}`.matchAll(/<meta\b[^>]*>/gi)]
+      .map(([tag]) => tag);
+    const isNoindex = robotsMetaTags.some((tag) => {
+      const name = tag.match(/\bname=["']([^"']+)["']/i)?.[1]?.toLowerCase();
+      const content = tag.match(/\bcontent=["']([^"']+)["']/i)?.[1]?.toLowerCase() || "";
+      return /^(robots|googlebot(?:-[\w-]+)?|bingbot)$/.test(name || "")
+        && /(?:^|[,\s])(?:noindex|none)(?:$|[,\s])/.test(content);
+    });
+    const currentRouteUrl = route === "/"
+      ? "https://www.drhamidphysio.in/"
+      : `https://www.drhamidphysio.in${route}`;
+    if (canonical === currentRouteUrl && !isNoindex) {
+      indexableCanonicalUrls.add(canonical);
+    }
     const cleanHead = head.replace(/<link\b(?=[^>]*\brel="canonical")[^>]*>/gi, "");
     html = html.replace(/<link\b(?=[^>]*\brel="canonical")[^>]*>/gi, "");
     html = html.replace("</head>", `${cleanHead}\n<link rel="canonical" href="${canonical}" />\n</head>`);
@@ -54,24 +69,21 @@ try {
     await mkdir(path.dirname(outputPath), { recursive: true });
     await writeFile(outputPath, html);
   }
-  const canonicalPaths = [
-    "/",
-    "/about",
-    "/services",
-    "/reviews",
-    "/blogs",
-    "/contact",
-    "/privacy-policy",
-    "/terms-and-conditions",
-    ...allServices.map(({ slug }) => `/services/${slug}`),
-    ...conditions.map(({ slug }) => `/conditions/${slug}`),
-    ...blogPosts.map(({ slug }) => `/blogs/${slug}`),
-  ];
-  const lastModified = new Date().toISOString().slice(0, 10);
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${canonicalPaths.map((route) => `  <url><loc>https://www.drhamidphysio.in${route === "/" ? "/" : route}</loc><lastmod>${lastModified}</lastmod></url>`).join("\n")}\n</urlset>\n`;
+  const escapeXml = (value) => value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
+  const sitemapEntries = [...indexableCanonicalUrls]
+    .sort()
+    .map((url) => `  <url><loc>${escapeXml(url)}</loc></url>`)
+    .join("\n");
+  // Do not infer lastmod from build time; reliable per-URL content modification dates are not tracked for every page.
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries}\n</urlset>\n`;
   await writeFile(path.join(root, "public/sitemap.xml"), sitemap);
   await writeFile(path.join(root, "dist/sitemap.xml"), sitemap);
-  console.log(`Prerendered ${paths.length} routes.`);
+  console.log(`Prerendered ${paths.length} routes; sitemap contains ${indexableCanonicalUrls.size} canonical indexable URLs.`);
 } finally {
   await vite.close();
 }
