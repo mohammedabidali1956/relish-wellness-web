@@ -1,4 +1,4 @@
-# Dr. Hamid's Physio and Pain Clinic
+# Dr Hamid’s Physio and Pain Clinic
 
 > Physiotherapy and rehabilitation clinic in Puppalguda, Manikonda, Hyderabad, Telangana, India.
 
@@ -7,8 +7,18 @@
 - Website: https://www.drhamidphysio.in/
 - Address: 4-3/81, Opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad, Telangana 500089
 - Phone: +91 76010 26596
-- Physiotherapist: Dr. Mohammed Hamid Ali, BPT
-- Google Business Profile: https://maps.app.goo.gl/zGixCFnPJbKzKxy17
+- Founder and Consultant Physiotherapist: Dr. Mohammed Hamid Ali
+- Qualifications and registration: BPT, MPT (Ortho), Regd. No. 0413 (Government of Telangana)
+- Clinical experience: 8+ years
+- Established: 2021
+- Care model: Founder-operated, individualized one-to-one care
+- Consultation fee: ₹300
+- Physiotherapy treatment: Starts from ₹500; total cost varies by treatment
+- Home visits: Generally targeted within an approximate 15 km radius of Manikonda; actual availability depends on the patient's address and must be confirmed with the clinic
+- Priority home-visit target areas: Kokapet, Gandipet, Narsingi, Jubilee Hills, Banjara Hills, Gachibowli, Financial District, HITEC City, Puppalguda, Lanco Hills, Alkapur Township, Shaikpet, and Tolichowki, along with other nearby existing service areas
+- Google Business Profile: https://maps.app.goo.gl/9AbCjEWW1ALe6uFN8
+- Instagram: https://www.instagram.com/drhamidphysio/
+- YouTube: https://youtube.com/@dr.hamidsphysiopainclinic
 - Practo profile: https://www.practo.com/hyderabad/doctor/mohammed-hamid-ali-physiotherapist-1
 
 ## Main pages
@@ -17,6 +27,9 @@
 - About the clinic: https://www.drhamidphysio.in/about
 - Patient reviews: https://www.drhamidphysio.in/reviews
 - Articles: https://www.drhamidphysio.in/blogs
+- Contact: https://www.drhamidphysio.in/contact
+- Privacy Policy (clinic-review draft): https://www.drhamidphysio.in/privacy-policy
+- Terms & Conditions (clinic-review draft): https://www.drhamidphysio.in/terms-and-conditions
 
 ## Topics
 

@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className="container flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand Logo & Name exactly matching reference typography */}
         <div className="flex items-center min-w-0">
-          <NavLink to="/" className="flex items-center gap-3 min-w-0 group" aria-label="Dr Hamid's Physio and Pain Clinic – Home">
+          <NavLink to="/" className="flex items-center gap-3 min-w-0 group" aria-label="Dr Hamid’s Physio and Pain Clinic – Home">
             <img
               src="/images/logo/hamid-physio-logo.png"
               alt=""
@@ -55,7 +55,7 @@ const Navbar = () => {
             />
             <div className="flex flex-col min-w-0">
               <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-[#0a1f33] group-hover:text-[#183955] transition-colors leading-none">
-                Dr Hamid&apos;s
+                Dr Hamid’s
               </span>
               <span className="text-xs sm:text-sm font-sans font-medium text-[#183955] tracking-tight mt-1">
                 Physio and Pain Clinic

@@ -12,11 +12,11 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-[#faf6ed]">
       <Helmet>
-        <title>Contact a Physiotherapist in Manikonda | Dr. Hamid's Clinic</title>
-        <meta name="description" content="Contact Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda, Hyderabad. Call, WhatsApp, get directions or request an appointment." />
+        <title>Contact a Physiotherapist in Manikonda | Dr Hamid’s Physio and Pain Clinic</title>
+        <meta name="description" content="Contact Dr Hamid’s Physio and Pain Clinic in Puppalguda, Manikonda, Hyderabad. Call, WhatsApp, get directions or request an appointment." />
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content="Contact Dr. Hamid's Physio Clinic in Manikonda" />
-        <meta property="og:description" content="Clinic address, hours, directions and appointment contact options for Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad." />
+        <meta property="og:title" content="Contact Dr Hamid’s Physio and Pain Clinic in Manikonda" />
+        <meta property="og:description" content="Clinic address, hours, directions and appointment contact options for Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad." />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -24,12 +24,12 @@ const ContactPage = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            "name": "Contact Dr. Hamid's Physio and Pain Clinic",
+            "name": "Contact Dr Hamid’s Physio and Pain Clinic",
             "url": canonicalUrl,
             "mainEntity": {
               "@type": "MedicalClinic",
               "@id": "https://www.drhamidphysio.in",
-              "name": "Dr. Hamid's Physio and Pain Clinic",
+              "name": "Dr Hamid’s Physio and Pain Clinic",
               "telephone": "+917601026596",
               "email": "hamid.physio324@gmail.com",
               "address": {
@@ -51,7 +51,7 @@ const ContactPage = () => {
         <div className="container max-w-5xl px-4">
           <p className="text-xs font-bold uppercase tracking-widest text-[#8a5d24]">Contact and appointments</p>
           <h1 className="mt-3 font-serif text-4xl font-bold leading-tight text-[#081a2e] sm:text-5xl">
-            Contact Dr. Hamid&apos;s Physio and Pain Clinic
+            Contact Dr Hamid’s Physio and Pain Clinic
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-[#4a5568] sm:text-lg">
             Visit the clinic in Puppalguda, Manikonda, Hyderabad, or contact us about clinic consultations and physiotherapy home visits.

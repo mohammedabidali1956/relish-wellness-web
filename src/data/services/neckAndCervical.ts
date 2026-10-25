@@ -6,12 +6,12 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     category: "Neck & Cervical",
     title: "Neck Pain Physiotherapy",
     metaTitle: "Neck Pain Physiotherapy in Manikonda | Cervical Spine Relief Hyderabad",
-    metaDescription: "Relieve acute and chronic neck pain, stiffness, and tension headaches with specialized physiotherapy in Manikonda by Dr. Mohammed Hamid Ali, BPT. Book today!",
+    metaDescription: "Relieve acute and chronic neck pain, stiffness, and tension headaches with specialized physiotherapy in Manikonda by Dr. Mohammed Hamid Ali. Book today!",
     h1: "Neck Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Effective care for neck pain, stiffness, cervical strain, and posture-related neck problems caused by long hours of desk work or mobile use.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Neck pain physiotherapy and cervical care in Manikonda clinic",
-    whatItIs: "Neck pain is common and may be associated with prolonged time in one position, work demands, injury, or other health factors. Desk-based work and frequent device use can make symptoms more noticeable, but there is no single posture that explains every case. At Dr. Hamid's Physio and Pain Clinic in Manikonda, assessment considers symptoms, movement, and daily activities before discussing care options.",
+    whatItIs: "Neck pain is common and may be associated with prolonged time in one position, work demands, injury, or other health factors. Desk-based work and frequent device use can make symptoms more noticeable, but there is no single posture that explains every case. At Dr Hamid’s Physio and Pain Clinic in Manikonda, assessment considers symptoms, movement, and daily activities before discussing care options.",
     causes: [
       "Forward head posture ('text neck') from prolonged laptop, monitor, and smartphone usage",
       "Sleeping in awkward postures or using an unsupportive, overly high pillow",
@@ -43,12 +43,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Workplace ergonomic workstation review and customized home exercise program"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical physiotherapy experience in Hyderabad",
-      "Precise diagnostic hands-on assessment preventing unnecessary medical scans",
-      "Gentle, non-cracking manual therapy tailored to your comfort level",
-      "Convenient Manikonda clinic near Friends Colony Park with dedicated home visit options"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -76,7 +71,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       },
       {
         question: "Can I receive home physiotherapy for severe neck pain in Manikonda?",
-        answer: "Yes, Dr. Hamid offers home visit physiotherapy across Manikonda, Puppalguda, and nearby areas for patients experiencing severe acute neck spasms."
+        answer: "Yes, Dr. Hamid offers home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients experiencing severe acute neck spasms."
       },
       {
         question: "How do I book an appointment?",
@@ -89,12 +84,12 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     category: "Neck & Cervical",
     title: "Cervical Pain Physiotherapy",
     metaTitle: "Cervical Pain Physiotherapy in Manikonda | Cervical Spine Specialist Hyderabad",
-    metaDescription: "Specialized clinical physiotherapy for cervical spine pain, radiating arm tingling, and cervical radiculopathy in Manikonda by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Specialized clinical physiotherapy for cervical spine pain, radiating arm tingling, and cervical radiculopathy in Manikonda by Dr. Mohammed Hamid Ali.",
     h1: "Cervical Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Targeted clinical care for cervical spine irritation, nerve root radiculopathy, and cervical discogenic pain.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Cervical pain physiotherapy and cervical spine rehabilitation in Manikonda",
-    whatItIs: "Cervical pain can arise from several structures in the neck and may include pain, tingling, numbness, or weakness in the arm. Symptoms need to be assessed; they do not by themselves confirm a specific nerve problem. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help discuss whether physiotherapy is suitable and whether medical review is needed.",
+    whatItIs: "Cervical pain can arise from several structures in the neck and may include pain, tingling, numbness, or weakness in the arm. Symptoms need to be assessed; they do not by themselves confirm a specific nerve problem. At Dr Hamid’s Physio and Pain Clinic in Manikonda, an assessment can help discuss whether physiotherapy is suitable and whether medical review is needed.",
     causes: [
       "Cervical disc herniation or protrusion (most frequently at C5-C6 and C6-C7)",
       "Cervical radiculopathy from foraminal narrowing compressing the nerve root",
@@ -125,12 +120,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Postural and sleeping position modifications with ergonomic cervical roll prescription"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Advanced clinical experience in non-surgical cervical spine rehabilitation",
-      "Precise neurological testing ensuring safe, conservative recovery",
-      "Personalized 1-on-1 care directly with Dr. Mohammed Hamid Ali, BPT",
-      "Convenient location in Manikonda with emergency home visit availability"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -171,12 +161,12 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     category: "Neck & Cervical",
     title: "Cervical Spondylosis Physiotherapy",
     metaTitle: "Cervical Spondylosis Physiotherapy in Manikonda | Neck Arthritis Care",
-    metaDescription: "Relieve chronic neck stiffness, cervical spondylosis, and dizziness with evidence-based physiotherapy in Manikonda under Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Relieve chronic neck stiffness, cervical spondylosis, and dizziness with evidence-based physiotherapy in Manikonda under Dr. Mohammed Hamid Ali.",
     h1: "Cervical Spondylosis Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for age-related cervical spine degeneration, osteophytes, and facet joint arthritis.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Cervical spondylosis physiotherapy and neck arthritis care in Manikonda clinic",
-    whatItIs: "Cervical spondylosis is an age-related degenerative condition of the cervical spine involving wear and tear of intervertebral discs, formation of bone spurs (osteophytes), and facet joint arthrosis. Common in adults over 40 and increasingly seen in younger desk workers, it leads to chronic stiffness, reduced head turning range, suboccipital headaches, and occasionally lightheadedness. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, our clinical rehabilitation restores joint mobility, relieves muscular spasm, and retrains postural endurance to ensure comfortable, pain-free daily living.",
+    whatItIs: "Cervical spondylosis describes age-related changes in the neck, including changes to discs and joints. Some people have pain or stiffness, while others have no symptoms. An assessment can help consider whether physiotherapy may support movement and everyday activity; it cannot reverse age-related changes or guarantee pain-free function.",
     causes: [
       "Natural age-related dehydration and height loss of cervical intervertebral discs",
       "Development of marginal osteophytes (bone spurs) around vertebral bodies and facet joints",
@@ -191,7 +181,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Pain and heaviness in the neck and shoulders after prolonged sitting or computer work",
       "Occasional episodes of postural unsteadiness or lightheadedness when changing head positions"
     ],
-    howPhysioHelps: "Physiotherapy keeps arthritic cervical joints mobile, lubricates articular surfaces with synovial fluid, and removes excessive mechanical stress. Dr. Mohammed Hamid Ali (BPT) combines gentle oscillatory joint mobilizations, suboccipital myofascial release, supportive heat/electrotherapy, and progressive cervical isometric exercises that stabilize the neck without grinding the joints.",
+    howPhysioHelps: "Physiotherapy keeps arthritic cervical joints mobile, lubricates articular surfaces with synovial fluid, and removes excessive mechanical stress. Dr. Mohammed Hamid Ali combines gentle oscillatory joint mobilizations, suboccipital myofascial release, supportive heat/electrotherapy, and progressive cervical isometric exercises that stabilize the neck without grinding the joints.",
     assessmentProcess: [
       "Careful evaluation of cervical range of motion and joint end-feel",
       "Vertebral artery test (VBI screening) to ensure vascular safety during movement",
@@ -207,12 +197,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Ergonomic pillow prescription and posture pacing strategies for daily life"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Extensive experience treating adult and senior cervical degenerative conditions",
-      "Gentle, respectful clinical approach ensuring no aggressive or painful manipulations",
-      "Clear, actionable home exercise guidance tailored to your lifestyle",
-      "Dedicated clinic in Puppalguda, Manikonda with home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -240,7 +225,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for elderly patients with cervical spondylosis in Manikonda?",
-        answer: "Yes, Dr. Hamid provides compassionate home visits across Manikonda, Puppalguda, and neighbouring localities for seniors who find travelling difficult."
+        answer: "Yes, Dr. Hamid provides compassionate home visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for seniors who find travelling difficult."
       },
       {
         question: "How do I book an appointment?",
@@ -253,12 +238,12 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     category: "Neck & Cervical",
     title: "Cervical Radiculopathy Physiotherapy",
     metaTitle: "Cervical Radiculopathy Physiotherapy in Manikonda | Pinched Nerve Relief Hyderabad",
-    metaDescription: "Relieve radiating arm pain, tingling, and weakness from cervical radiculopathy with specialized physiotherapy in Manikonda. Expert care by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    metaDescription: "Relieve radiating arm pain, tingling, and weakness from cervical radiculopathy with specialized physiotherapy in Manikonda. Expert care by Dr. Mohammed Hamid Ali.",
     h1: "Cervical Radiculopathy Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for pinched cervical nerves, radiating arm pain, and nerve root compression.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Cervical radiculopathy physiotherapy and pinched nerve treatment in Manikonda clinic",
-    whatItIs: "Cervical radiculopathy refers to irritation or compression of a nerve root in the neck and can cause pain, tingling, numbness, or weakness in the arm. Similar symptoms can have other causes, so an assessment is needed. At Dr. Hamid's Physio and Pain Clinic in Manikonda, care options are discussed after reviewing symptoms, movement, and medical history.",
+    whatItIs: "Cervical radiculopathy refers to irritation or compression of a nerve root in the neck and can cause pain, tingling, numbness, or weakness in the arm. Similar symptoms can have other causes, so an assessment is needed. At Dr Hamid’s Physio and Pain Clinic in Manikonda, care options are discussed after reviewing symptoms, movement, and medical history.",
     causes: [
       "Herniated or protruded cervical intervertebral disc (most commonly at C5-C6 or C6-C7)",
       "Degenerative disc disease with loss of disc height narrowing the intervertebral foramen",
@@ -289,12 +274,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Deep cervical flexor strengthening and postural correction to maintain foraminal opening"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Specialized orthopedic training in cervical spine and nerve root disorders (MPT Orthopedics)",
-      "Experience assessing neck and arm symptoms and discussing suitable care options",
-      "Gentle, precise manual therapy techniques that respect nerve sensitivity",
-      "Convenient Manikonda clinic location with home visit options for severe cases"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -322,7 +302,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       },
       {
         question: "Is cervical traction safe for a pinched nerve?",
-        answer: "Yes, when performed by a qualified physiotherapist like Dr. Hamid, gentle manual cervical traction is extremely safe and provides immediate decompression relief by opening the narrowed nerve exit pathway."
+        answer: "Traction is not suitable for everyone, and evidence and response vary by condition. A clinician should assess symptoms and relevant precautions before discussing whether it is appropriate. Seek urgent care for sudden severe symptoms or new weakness."
       },
       {
         question: "Do you treat IT professionals with cervical radiculopathy in Manikonda?",
@@ -339,7 +319,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     category: "Neck & Cervical",
     title: "Tech Neck / Text Neck Physiotherapy",
     metaTitle: "Tech Neck Physiotherapy in Manikonda | Text Neck Treatment Hyderabad",
-    metaDescription: "Relieve tech neck pain, forward head posture, and cervical strain from smartphone and laptop use. Expert physiotherapy in Manikonda by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    metaDescription: "Relieve tech neck pain, forward head posture, and cervical strain from smartphone and laptop use. Expert physiotherapy in Manikonda by Dr. Mohammed Hamid Ali.",
     h1: "Tech Neck / Text Neck Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for forward head posture, device-related cervical strain, and postural neck dysfunction.",
     imageSrc: "/images/services/condition-neck-pain.webp",
@@ -375,12 +355,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Ergonomic workstation assessment and smartphone usage habit modification"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical experience treating postural cervical disorders in Hyderabad's tech community",
-      "Specialized orthopedic training in spinal biomechanics and posture correction",
-      "Practical ergonomic advice tailored to your specific devices and work setup",
-      "Convenient Manikonda clinic near IT hubs with flexible evening appointments"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"

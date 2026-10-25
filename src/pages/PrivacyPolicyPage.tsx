@@ -2,11 +2,12 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { PRIVACY_EMAIL } from "@/lib/privacyConfig";
 
+// TODO(privacy): Confirm the controller identity, privacy contact, enquiry handling, retention practices, third-party script behavior, and applicable visitor rights before publication.
 const PrivacyPolicyPage = () => {
   const canonicalUrl = "https://www.drhamidphysio.in/privacy-policy";
 
   return (
-    <main className="min-h-screen bg-[#faf6ed] px-4 py-12 sm:py-16">
+    <div id="privacy-policy-page" className="min-h-screen bg-[#faf6ed] px-4 py-12 sm:py-16">
       <Helmet>
         <title>Privacy Policy | Dr Hamid’s Physio and Pain Clinic</title>
         <meta name="description" content="Draft privacy information for Dr Hamid’s Physio and Pain Clinic, Manikonda, Hyderabad." />
@@ -47,7 +48,7 @@ const PrivacyPolicyPage = () => {
 
         <h2>Analytics, advertising, cookies, and browser storage</h2>
         <p>
-          A source-code search of the application and project configuration did not find an implementation of Google Analytics, Google Tag Manager, Meta Pixel, Google Ads conversion tracking, Vercel Analytics, or Cloudflare Analytics. It also did not find application code that sets cookies or uses <code>localStorage</code> or <code>sessionStorage</code>. This is a code review result, not confirmation about the live hosting dashboard, provider behavior, browser cookies set by embedded services, or future deployment configuration.
+          A source-code search of the active application and project configuration did not find an implementation of Google Analytics, Google Tag Manager, Meta Pixel, Google Ads conversion tracking, Vercel Analytics, or Cloudflare Analytics. It also did not find active-route use of <code>localStorage</code> or <code>sessionStorage</code>. The source does contain a sidebar UI component that can write a first-party <code>sidebar:state</code> cookie if mounted; the reviewed application routes do not import that component. This code review does not confirm the live hosting dashboard, provider behavior, browser storage used by embedded services, or future deployment configuration.
         </p>
         <p>
           No cookie-consent tool was found in the reviewed application source. The clinic should verify the deployed site and the third-party script and embeds, then add any disclosures or consent controls required for its actual configuration and applicable law.
@@ -76,7 +77,7 @@ const PrivacyPolicyPage = () => {
           This draft should be updated after the clinic confirms the open items and whenever the site’s data flows materially change. Read the <Link to="/terms-and-conditions">Terms &amp; Conditions</Link> or <Link to="/contact">contact the clinic</Link>.
         </p>
       </article>
-    </main>
+    </div>
   );
 };
 

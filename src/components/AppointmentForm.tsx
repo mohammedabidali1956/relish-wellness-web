@@ -12,7 +12,7 @@ const AppointmentForm = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const whatsappMessage = encodeURIComponent(
-      `Hello Dr. Mohammed Hamid Ali, I would like to book an appointment at Dr. Hamid's Physio and Pain Clinic. My name is ${name} and my phone number is ${phone}.${message ? ` Additional information: ${message}` : ""}`
+      `Hello Dr. Mohammed Hamid Ali, I would like to book an appointment at Dr Hamid’s Physio and Pain Clinic. My name is ${name} and my phone number is ${phone}.${message ? ` Additional information: ${message}` : ""}`
     );
     window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank", "noopener,noreferrer");
   };

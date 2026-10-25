@@ -6,13 +6,13 @@ export const supportingModalities: ServiceDetail[] = [
     category: "Supporting Modalities",
     isModality: true,
     title: "Therapeutic Ultrasound",
-    metaTitle: "Therapeutic Ultrasound in Manikonda | Deep Tissue Healing | Dr. Hamid",
+    metaTitle: "Therapeutic Ultrasound in Manikonda | Deep Tissue Healing | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Accelerate tendon healing, reduce inflammation & soften scar tissue with therapeutic ultrasound therapy in Manikonda, Hyderabad. Book an appointment today!",
     h1: "Therapeutic Ultrasound Therapy in Manikonda, Hyderabad",
     shortDescription: "High-frequency acoustic soundwave therapy stimulating deep tissue cellular repair, collagen synthesis, and rapid reduction of chronic inflammation.",
     imageSrc: "/images/services/ultrasound-therapy.webp",
     altText: "Therapeutic ultrasound therapy treatment session in Manikonda clinic",
-    whatItIs: "Therapeutic ultrasound is an established electro-physical modality that applies high-frequency sound waves (typically 1 MHz for deep tissues or 3 MHz for superficial structures) to injured biological tissues. Unlike diagnostic ultrasound used for imaging, therapeutic ultrasound transmits micro-vibrational acoustic energy deep into muscles, tendons, ligaments, and joint capsules. This produces both thermal effects (deep tissue warming, vasodilation, pain reduction) and non-thermal acoustic cavitation and microstreaming (accelerating cell membrane permeability, fibroblast proliferation, and cellular healing). At Dr. Hamid's Physio and Pain Clinic in Manikonda, ultrasound is expertly paired with active physical rehabilitation to supercharge tissue repair.",
+    whatItIs: "Therapeutic ultrasound is an established electro-physical modality that applies high-frequency sound waves (typically 1 MHz for deep tissues or 3 MHz for superficial structures) to injured biological tissues. Unlike diagnostic ultrasound used for imaging, therapeutic ultrasound transmits micro-vibrational acoustic energy deep into muscles, tendons, ligaments, and joint capsules. This produces both thermal effects (deep tissue warming, vasodilation, pain reduction) and non-thermal acoustic cavitation and microstreaming (accelerating cell membrane permeability, fibroblast proliferation, and cellular healing). At Dr Hamid’s Physio and Pain Clinic in Manikonda, ultrasound is expertly paired with active physical rehabilitation to supercharge tissue repair.",
     causes: [
       "Acute and chronic tendinopathies (Achilles tendonitis, patellar tendinopathy, rotator cuff irritation)",
       "Ligament sprains and post-traumatic joint capsule thickening (ankle sprains, wrist injuries)",
@@ -28,7 +28,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Persistent swelling and localized inflammatory fluid accumulation following a joint sprain",
       "Chronic ache in joints where superficial heat packs cannot penetrate deeply enough"
     ],
-    howPhysioHelps: "While topical balms and superficial heating pads only penetrate a few millimeters of skin, therapeutic ultrasound penetrates up to 3 to 5 centimeters into dense connective tissues. Dr. Mohammed Hamid Ali (BPT) applies an acoustic coupling gel and glides the soundhead in precise circular motions over the injured site. The acoustic micro-vibrations stimulate cell membrane metabolism, accelerate the synthesis of high-tensile Type I collagen, and break down fibrotic adhesions, preparing stiff tissues for painless manual stretching and strengthening.",
+    howPhysioHelps: "While topical balms and superficial heating pads only penetrate a few millimeters of skin, therapeutic ultrasound penetrates up to 3 to 5 centimeters into dense connective tissues. Dr. Mohammed Hamid Ali applies an acoustic coupling gel and glides the soundhead in precise circular motions over the injured site. The acoustic micro-vibrations stimulate cell membrane metabolism, accelerate the synthesis of high-tensile Type I collagen, and break down fibrotic adhesions, preparing stiff tissues for painless manual stretching and strengthening.",
     assessmentProcess: [
       "Clinical palpation to identify the exact depth, margin, and chronicity of injured tissue",
       "Selection of optimal soundwave frequency (1 MHz for deep muscles/tendons; 3 MHz for superficial joints)",
@@ -44,12 +44,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Immediate follow-up with targeted manual joint mobilization and active stretching while tissue is warm"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical physiotherapy experience with advanced electro-physical modalities",
-      "Modern, calibrated ultrasound technology with dual-frequency soundheads in Manikonda",
-      "Modalities are never used as a stand-alone passive shortcut; they are always integrated with active rehab",
-      "Precise clinical dosage calculation tailored to your specific tissue depth and injury phase"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -93,7 +88,7 @@ export const supportingModalities: ServiceDetail[] = [
     category: "Supporting Modalities",
     isModality: true,
     title: "Interferential Therapy (IFT)",
-    metaTitle: "Interferential Therapy (IFT) in Manikonda | Dr. Hamid's Physio Clinic",
+    metaTitle: "Interferential Therapy (IFT) in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Deep, soothing electrotherapy for back pain, sciatica & joint inflammation. Experience Interferential Therapy (IFT) in Manikonda, Hyderabad. Book now!",
     h1: "Interferential Therapy (IFT) in Manikonda, Hyderabad",
     shortDescription: "Advanced medium-frequency electrotherapy delivering deep, comfortable electrical stimulation to relieve pain, eliminate muscle spasm, and reduce inflammation.",
@@ -131,12 +126,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Immediate follow-up with active stabilization exercises while pain sensitivity is suppressed"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of expertise in clinical electrotherapy dosage and vector placement",
-      "State-of-the-art multi-channel IFT units with comfortable suction-cup electrode options in Manikonda",
-      "Patient-centered care: intensity is always customized to your exact personal comfort level",
-      "Modalities integrated seamlessly with doctor-guided active exercise for lasting results"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -159,7 +149,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "How many IFT sessions will I need?",
-        answer: "For acute spasms or flare-ups, 3 to 5 sessions often provide dramatic pain relief. For chronic osteoarthritis or disc bulges, 8 to 12 sessions are typically integrated with exercise therapy."
+        answer: "The number and frequency of sessions depend on the condition, symptoms, response, and goals. A clinician can discuss whether IFT is suitable and review progress over time."
       },
       {
         question: "Can IFT be used if I have metal screws or plates in my bone?",
@@ -171,7 +161,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Do you offer IFT during home visit physiotherapy in Manikonda?",
-        answer: "Yes, our team carries portable, clinic-grade IFT units for home visits across Manikonda, Puppalguda, and Gachibowli."
+        answer: "Yes, our team carries portable, clinic-grade IFT units for home visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       }
     ]
   },
@@ -180,13 +170,13 @@ export const supportingModalities: ServiceDetail[] = [
     category: "Supporting Modalities",
     isModality: true,
     title: "TENS Therapy",
-    metaTitle: "TENS Therapy in Manikonda | Fast Pain Relief | Dr. Hamid's Physio Clinic",
+    metaTitle: "TENS Therapy in Manikonda | Fast Pain Relief | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Safe, drug-free acute and chronic pain relief with TENS therapy in Manikonda, Hyderabad. Non-invasive neuromuscular pain modulation. Book a consultation today!",
     h1: "TENS Therapy (Transcutaneous Electrical Nerve Stimulation) in Manikonda",
     shortDescription: "Non-invasive electrical nerve stimulation designed to block pain signals, stimulate natural endorphin release, and provide immediate pain modulation.",
     imageSrc: "/images/services/interferential-therapy.webp",
     altText: "TENS therapy electrotherapy treatment session in Manikonda clinic",
-    whatItIs: "Transcutaneous Electrical Nerve Stimulation (TENS) is a clinically proven, non-invasive electro-analgesic therapy used worldwide for acute and chronic pain management. TENS units deliver small, controlled electrical pulses through adhesive skin electrode pads positioned over or adjacent to painful nerves or dermatomes. By selectively stimulating large-diameter sensory nerve fibers (A-beta fibers), TENS triggers the Gate Control Mechanism in the dorsal horn of the spinal cord, effectively closing the neurological 'gate' and preventing pain signals from traveling up to the brain. Furthermore, low-frequency acupuncture-like TENS stimulates the pituitary gland to release the body's natural opiate-like pain relievers: endorphins and enkephalins. At Dr. Hamid's clinic in Manikonda, TENS serves as a safe, drug-free pain management tool.",
+    whatItIs: "Transcutaneous Electrical Nerve Stimulation (TENS) is a clinically proven, non-invasive electro-analgesic therapy used worldwide for acute and chronic pain management. TENS units deliver small, controlled electrical pulses through adhesive skin electrode pads positioned over or adjacent to painful nerves or dermatomes. By selectively stimulating large-diameter sensory nerve fibers (A-beta fibers), TENS triggers the Gate Control Mechanism in the dorsal horn of the spinal cord, effectively closing the neurological 'gate' and preventing pain signals from traveling up to the brain. Furthermore, low-frequency acupuncture-like TENS stimulates the pituitary gland to release the body's natural opiate-like pain relievers: endorphins and enkephalins. At Dr Hamid’s Physio and Pain Clinic in Manikonda, TENS serves as a safe, drug-free pain management tool.",
     causes: [
       "Acute post-surgical pain (following knee arthroscopy, abdominal surgery, or fracture repair)",
       "Diabetic peripheral neuropathy and post-herpetic neuralgia",
@@ -202,7 +192,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Difficulty performing early post-operative rehabilitation exercises due to surgical wound pain",
       "Chronic nerve-related aches that feel resistant to standard heating pads"
     ],
-    howPhysioHelps: "TENS offers an immediate, drug-free analgesic option without gastrointestinal or kidney side effects. Dr. Mohammed Hamid Ali (BPT) tailors the pulse width, frequency, and electrode montage to your specific condition—using conventional high-frequency TENS (80–120 Hz) for immediate sensory pain-gating during active movement, or low-frequency burst TENS (2–10 Hz) for prolonged systemic endorphin release that lasts hours after treatment.",
+    howPhysioHelps: "TENS offers an immediate, drug-free analgesic option without gastrointestinal or kidney side effects. Dr. Mohammed Hamid Ali tailors the pulse width, frequency, and electrode montage to your specific condition—using conventional high-frequency TENS (80–120 Hz) for immediate sensory pain-gating during active movement, or low-frequency burst TENS (2–10 Hz) for prolonged systemic endorphin release that lasts hours after treatment.",
     assessmentProcess: [
       "Accurate dermatomal mapping to identify the spinal nerve roots and peripheral nerve branches supplying the pain area",
       "Selection of optimal TENS parameters (conventional sensory TENS vs motor acupuncture TENS)",
@@ -218,12 +208,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Prescription and training on home TENS devices for self-managed flare-ups when indicated"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical experience in neuromodulation and electro-analgesia techniques",
-      "Professional-grade digital TENS equipment with microsecond pulse precision in Manikonda",
-      "Comprehensive patient training empowering you to use personal TENS units safely at home",
-      "Supportive modalities may be combined with active exercise when appropriate"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -267,13 +252,13 @@ export const supportingModalities: ServiceDetail[] = [
     category: "Supporting Modalities",
     isModality: true,
     title: "Electrical Muscle Stimulation (EMS)",
-    metaTitle: "Electrical Muscle Stimulation (EMS) in Manikonda | Dr. Hamid's Clinic",
+    metaTitle: "Electrical Muscle Stimulation (EMS) in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Reactivate weak muscles, prevent atrophy & accelerate rehabilitation with Electrical Muscle Stimulation (EMS/NMES) in Manikonda, Hyderabad. Book today!",
     h1: "Electrical Muscle Stimulation (EMS / NMES) in Manikonda, Hyderabad",
     shortDescription: "Targeted neuromuscular electrical stimulation to overcome arthrogenic muscle inhibition, reverse disuse atrophy, and re-educate dormant motor units.",
     imageSrc: "/images/services/interferential-therapy.webp",
     altText: "Electrical muscle stimulation EMS neuromuscular rehabilitation in Manikonda clinic",
-    whatItIs: "Electrical Muscle Stimulation (EMS)—also known as Neuromuscular Electrical Stimulation (NMES) or Faradic/Galvanic Stimulation—is the therapeutic application of electrical impulses directly to motor nerves or muscle motor points to elicit involuntary, physiological muscular contractions. While TENS targets sensory nerves for pain relief, EMS specifically targets motor nerves to contract and strengthen muscles. Following surgery (such as knee replacement or ACL reconstruction), severe injury, prolonged cast immobilization, or nerve damage (such as Bell's palsy or foot drop), the brain's ability to recruit motor units is impaired by arthrogenic muscle inhibition. At Dr. Hamid's Physio and Pain Clinic in Manikonda, EMS bridges this neurological gap, re-educating muscles and preventing wasting.",
+    whatItIs: "Electrical Muscle Stimulation (EMS)—also known as Neuromuscular Electrical Stimulation (NMES) or Faradic/Galvanic Stimulation—is the therapeutic application of electrical impulses directly to motor nerves or muscle motor points to elicit involuntary, physiological muscular contractions. While TENS targets sensory nerves for pain relief, EMS specifically targets motor nerves to contract and strengthen muscles. Following surgery (such as knee replacement or ACL reconstruction), severe injury, prolonged cast immobilization, or nerve damage (such as Bell's palsy or foot drop), the brain's ability to recruit motor units is impaired by arthrogenic muscle inhibition. At Dr Hamid’s Physio and Pain Clinic in Manikonda, EMS bridges this neurological gap, re-educating muscles and preventing wasting.",
     causes: [
       "Post-operative quadriceps shutdown following knee arthroscopy, ACL repair, or total knee replacement",
       "Severe disuse muscle atrophy following prolonged plaster cast or splint immobilization",
@@ -289,7 +274,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Rapid onset of muscle trembling and failure during basic low-load movements",
       "Slow, delayed neurological recovery after cast removal or surgical trauma"
     ],
-    howPhysioHelps: "EMS bypasses voluntary neural pathways by sending electrical impulses directly through the motor point into the neuromuscular junction, forcing involuntary muscle contraction. This stimulates muscle protein synthesis, increases local blood supply, and re-establishes neuromuscular feedback loops. Dr. Mohammed Hamid Ali (BPT) pairs EMS contractions with voluntary patient effort (active-assisted biofeedback), rapidly breaking through arthrogenic inhibition and restoring voluntary motor control.",
+    howPhysioHelps: "EMS bypasses voluntary neural pathways by sending electrical impulses directly through the motor point into the neuromuscular junction, forcing involuntary muscle contraction. This stimulates muscle protein synthesis, increases local blood supply, and re-establishes neuromuscular feedback loops. Dr. Mohammed Hamid Ali pairs EMS contractions with voluntary patient effort (active-assisted biofeedback), rapidly breaking through arthrogenic inhibition and restoring voluntary motor control.",
     assessmentProcess: [
       "Accurate palpatory mapping to pinpoint the anatomical motor point of the inhibited muscle belly",
       "Determination of muscle innervation status (innervated muscles use faradic/surged EMS; denervated muscles use interrupted galvanic current)",
@@ -305,12 +290,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Gradual transition from passive electrical stimulation to unassisted active resistance exercises"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of expertise in neuro-rehabilitation and post-operative muscular reactivation",
-      "Advanced electrotherapy devices supporting both Faradic surge and Interrupted Galvanic waveforms",
-      "Individualized active-assisted protocols maximizing neuroplastic brain-muscle reconnection",
-      "Dedicated clinic and home visit options for post-surgical and paralyzed patients in Manikonda"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -354,13 +334,13 @@ export const supportingModalities: ServiceDetail[] = [
     category: "Supporting Modalities",
     isModality: true,
     title: "Infrared Radiation Therapy",
-    metaTitle: "Infrared Radiation Therapy in Manikonda | Dr. Hamid's Physio Clinic",
+    metaTitle: "Infrared Radiation Therapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Soothing thermal therapy to relieve muscle spasms, enhance circulation & ease chronic joint stiffness in Manikonda, Hyderabad. Book an appointment today!",
     h1: "Infrared Radiation (IRR) Therapy in Manikonda, Hyderabad",
     shortDescription: "Dry therapeutic thermal radiation providing superficial vasodilation, gentle muscle relaxation, and preparatory warmth before manual therapy in Manikonda.",
     imageSrc: "/images/services/ultrasound-therapy.webp",
     altText: "Infrared radiation lamp thermal physical therapy in Manikonda clinic",
-    whatItIs: "Infrared Radiation (IRR) Therapy is a therapeutic thermal modality utilizing electromagnetic radiation with wavelengths longer than visible red light (750 nm to 400,000 nm). When infrared waves strike biological tissues, their radiant electromagnetic energy is absorbed and converted directly into heat. Luminous and non-luminous infrared lamps provide comfortable, dry, penetrating warmth that increases superficial cutaneous and subcutaneous temperatures, dilates capillary beds, flushes out pain-producing metabolites, and reduces muscular hypertonicity. At Dr. Hamid's Physio and Pain Clinic in Manikonda, IRR therapy is utilized as an exceptional preparatory modality, softening tight muscular sheaths and lubricating stiff joints prior to hands-on manual therapy and exercise.",
+    whatItIs: "Infrared Radiation (IRR) Therapy is a therapeutic thermal modality utilizing electromagnetic radiation with wavelengths longer than visible red light (750 nm to 400,000 nm). When infrared waves strike biological tissues, their radiant electromagnetic energy is absorbed and converted directly into heat. Luminous and non-luminous infrared lamps provide comfortable, dry, penetrating warmth that increases superficial cutaneous and subcutaneous temperatures, dilates capillary beds, flushes out pain-producing metabolites, and reduces muscular hypertonicity. At Dr Hamid’s Physio and Pain Clinic in Manikonda, IRR therapy is utilized as an exceptional preparatory modality, softening tight muscular sheaths and lubricating stiff joints prior to hands-on manual therapy and exercise.",
     causes: [
       "Chronic cervical, thoracic, and lumbar paraspinal muscle tension and myofascial stiffness",
       "Subacute and chronic joint osteoarthritis causing morning stiffness and restricted joint play",
@@ -376,7 +356,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Persistent muscular guarding that resists initial attempts at manual stretching",
       "Sluggish local blood flow and sensation of chilliness in chronically injured extremities"
     ],
-    howPhysioHelps: "Applying radiant infrared warmth before hands-on physical therapy significantly enhances treatment outcomes. Dr. Mohammed Hamid Ali (BPT) positions calibrated infrared medical emitters at an optimal angle and distance (typically 45–60 cm). Within minutes, radiant heat triggers localized vasodilation via nitric oxide release, flooding tissues with oxygen and nutrients while clearing bradykinin and histamine. This relaxes tense muscle spindles and increases the extensibility of collagen fibers, allowing safe, deep, and pain-free joint mobilization.",
+    howPhysioHelps: "Applying radiant infrared warmth before hands-on physical therapy significantly enhances treatment outcomes. Dr. Mohammed Hamid Ali positions calibrated infrared medical emitters at an optimal angle and distance (typically 45–60 cm). Within minutes, radiant heat triggers localized vasodilation via nitric oxide release, flooding tissues with oxygen and nutrients while clearing bradykinin and histamine. This relaxes tense muscle spindles and increases the extensibility of collagen fibers, allowing safe, deep, and pain-free joint mobilization.",
     assessmentProcess: [
       "Comprehensive skin integrity and thermal sensitivity testing (hot/cold discrimination check) to ensure thermal safety",
       "Precise distance and beam angle measurement perpendicular to the target anatomical area",
@@ -392,12 +372,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Immediate transition to passive stretching, myofascial release, or joint mobilization while tissues are pliable"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical physiotherapy experience ensuring safe, calibrated thermal dosage",
-      "Modern medical infrared emitters with safety grids and adjustable stands in Manikonda",
-      "Used synergistically as a preparation for hands-on manual mobilizations, never as an isolated passive treatment",
-      "Strict clinical protocols preventing accidental skin overheating or burns"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -441,13 +416,13 @@ export const supportingModalities: ServiceDetail[] = [
     category: "Supporting Modalities",
     isModality: true,
     title: "Heat Therapy (Thermotherapy)",
-    metaTitle: "Heat Therapy in Manikonda | Moist Thermal Therapy | Dr. Hamid's Clinic",
+    metaTitle: "Heat Therapy in Manikonda | Moist Thermal Therapy | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Professional moist heat therapy (hydrocollator packs) in Manikonda, Hyderabad. Relieve chronic stiffness, spasms & joint aches. Book a session today!",
     h1: "Heat Therapy (Thermotherapy & Hydrocollator Packs) in Manikonda",
     shortDescription: "Clinical-grade moist heat pack therapy delivering deep thermal penetration to relieve muscular tension, increase blood flow, and enhance tissue elasticity.",
     imageSrc: "/images/services/ultrasound-therapy.webp",
     altText: "Clinical moist heat therapy hydrocollator pack treatment in Manikonda",
-    whatItIs: "Heat Therapy (clinically known as Thermotherapy) is the systematic application of moist or dry heat to the human body for therapeutic pain relief, circulatory enhancement, and connective tissue relaxation. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we utilize clinical-grade Hydrocollator Moist Heat Packs—heavy canvas packs filled with natural bentonite clay that absorb water and retain high therapeutic temperatures (70°C–75°C) within a specialized stainless steel heating tank. Moist heat is scientifically proven to penetrate tissues significantly deeper than dry electric heating pads, soothing irritable free nerve endings, relieving muscle guarding, and softening tight ligaments.",
+    whatItIs: "Heat Therapy (clinically known as Thermotherapy) is the systematic application of moist or dry heat to the human body for therapeutic pain relief, circulatory enhancement, and connective tissue relaxation. At Dr Hamid’s Physio and Pain Clinic in Manikonda, we utilize clinical-grade Hydrocollator Moist Heat Packs—heavy canvas packs filled with natural bentonite clay that absorb water and retain high therapeutic temperatures (70°C–75°C) within a specialized stainless steel heating tank. Moist heat is scientifically proven to penetrate tissues significantly deeper than dry electric heating pads, soothing irritable free nerve endings, relieving muscle guarding, and softening tight ligaments.",
     causes: [
       "Chronic low back aches and persistent lumbar paraspinal muscle guarding",
       "Cervical spondylosis stiffness, trapezius knots, and postural neck tension",
@@ -463,7 +438,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Sluggish circulation and cold sensation in extremities affected by chronic pain",
       "General physical fatigue and movement restriction that improves with a warm shower"
     ],
-    howPhysioHelps: "Moist heat therapy produces profound physiological responses: localized vasodilation, acceleration of cellular metabolism, reduction of muscle spindle sensitivity, and an increase in the viscoelastic extensibility of collagenous tissues by up to 300%. Dr. Mohammed Hamid Ali (BPT) wraps thick, sterile hydrocollator packs in multiple layers of terry cloth towels and places them securely over the target area. The penetrating moist warmth relieves pain, relaxes defensive muscle guarding, and primes stiff joints for effective hands-on manual mobilizations and corrective exercises.",
+    howPhysioHelps: "A warm pack may provide temporary comfort or help some people feel more at ease with movement. It does not treat every cause of pain and may not be suitable for everyone, including people with reduced skin sensation or circulation. A clinician should check whether heat is appropriate and advise on safe use.",
     assessmentProcess: [
       "Detailed thermal sensation and skin integrity assessment prior to heat application",
       "Selection of appropriately contoured hydrocollator pack (cervical contour, lumbar standard, or oversize)",
@@ -479,12 +454,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Education on safe home moist heat applications to maintain daily gains between clinic visits"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical physiotherapy excellence ensuring optimal, safe thermal therapy application",
-      "Clinical-grade stainless steel hydrocollator tanks maintaining sterile, consistent therapeutic heat",
-      "Contoured cervical and lumbar packs designed to conform anatomically to your body's curves",
-      "Thermotherapy is always paired with active hands-on mobilizations, never used as an isolated shortcut"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -499,15 +469,15 @@ export const supportingModalities: ServiceDetail[] = [
     faqs: [
       {
         question: "Why is moist heat better than a dry electric heating pad?",
-        answer: "Moist heat penetrates up to twice as deep into subcutaneous muscle layers compared to dry electric heat, without dehydrating the skin. It provides faster muscle relaxation and significantly greater pain relief."
+        answer: "Moist and dry heat can feel different, and effects vary. Use a comfortable temperature and avoid applying heat to skin with reduced sensation or circulation unless a clinician advises it."
       },
       {
         question: "When should I use ice instead of heat?",
-        answer: "Use ice for acute injuries (first 24 to 48 hours), fresh swelling, redness, or immediate post-workout inflammation. Use heat for chronic stiffness, muscle knots, morning aches, and before stretching."
+        answer: "Whether heat or cold is appropriate depends on the injury, symptoms, and the person's health. Ask a clinician for advice, particularly if the area is numb, swollen, recently injured, or has skin or circulation problems."
       },
       {
         question: "Can heat therapy burn my skin?",
-        answer: "Not under professional clinical supervision. At Dr. Hamid's clinic, hydrocollator packs are insulated in 6 to 8 layers of specialized terry cloth, and your skin is monitored to ensure pure comfort without risk of burns."
+        answer: "Yes. Excessive heat or prolonged contact can burn skin, especially when sensation or circulation is reduced. Use heat cautiously, follow a clinician's advice, and stop if the skin becomes uncomfortable or changes color."
       },
       {
         question: "Can I use heat therapy if I have high blood pressure?",
@@ -515,11 +485,11 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "How often can heat therapy be applied?",
-        answer: "Heat therapy can safely be applied 2 to 3 times daily for 15 to 20 minutes at a time, provided your skin is healthy and you allow at least 2 hours between applications."
+        answer: "There is no single schedule suitable for everyone. Follow product instructions or a clinician's advice, protect the skin, and stop if you notice discomfort or a skin reaction."
       },
       {
         question: "Do you offer moist heat therapy during home visit physiotherapy?",
-        answer: "Yes, our team brings portable moist heat packs and hydrocollator setups for home visit sessions across Manikonda and Puppalguda."
+        answer: "Yes, our team brings portable moist heat packs and hydrocollator setups for home visit sessions in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       }
     ]
   },
@@ -528,13 +498,13 @@ export const supportingModalities: ServiceDetail[] = [
     category: "Supporting Modalities",
     isModality: true,
     title: "Exercise Therapy",
-    metaTitle: "Exercise Therapy in Manikonda | Medical Rehabilitation | Dr. Hamid's Clinic",
-    metaDescription: "Evidence-based exercise therapy in Manikonda, Hyderabad. Rebuild strength, mobility, balance & functional independence. Expert supervision by Dr. Hamid, BPT.",
+    metaTitle: "Exercise Therapy in Manikonda | Medical Rehabilitation | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Evidence-based exercise therapy in Manikonda, Hyderabad. Rebuild strength, mobility, balance & functional independence. Expert supervision by Dr. Hamid.",
     h1: "Exercise Therapy & Medical Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Doctor-guided exercise and functional rehabilitation to support strength, mobility and daily activities.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Exercise therapy and functional medical training in Manikonda clinic",
-    whatItIs: "Exercise therapy is an important part of physiotherapy and physical rehabilitation. Depending on the condition and goals, a tailored exercise plan may support strength, mobility, balance, confidence, and day-to-day function over time. Other approaches, such as education, activity changes, or symptom relief strategies, may also form part of care. At Dr. Hamid's Physio and Pain Clinic in Manikonda, exercise options are adapted to the person's assessment findings, health, and functional goals.",
+    whatItIs: "Exercise therapy is an important part of physiotherapy and physical rehabilitation. Depending on the condition and goals, a tailored exercise plan may support strength, mobility, balance, confidence, and day-to-day function over time. Other approaches, such as education, activity changes, or symptom relief strategies, may also form part of care. At Dr Hamid’s Physio and Pain Clinic in Manikonda, exercise options are adapted to the person's assessment findings, health, and functional goals.",
     causes: [
       "Severe muscular deconditioning and postural muscle imbalances resulting from desk-bound lifestyles",
       "Post-operative joint contracture, arthrogenic muscle inhibition, and loss of walking stamina",
@@ -550,7 +520,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Recurring flare-ups of back, neck, or knee pain whenever attempting casual physical exercise",
       "Loss of confidence in your physical capabilities following an injury or surgical procedure"
     ],
-    howPhysioHelps: "Exercise therapy acts as medicine. Dr. Mohammed Hamid Ali (BPT) prescribes the exact 'dosage' of exercise—specifying joint angles, resistance levels, contraction types (isometric, concentric, eccentric), repetitions, and rest intervals. Under direct 1-on-1 supervision on our spacious exercise floor, you learn proper movement kinematics that offload stressed joints, rebuild stabilizing muscle tone, and stimulate long-term tissue resilience.",
+    howPhysioHelps: "Exercise therapy acts as medicine. Dr. Mohammed Hamid Ali prescribes the exact 'dosage' of exercise—specifying joint angles, resistance levels, contraction types (isometric, concentric, eccentric), repetitions, and rest intervals. Under direct 1-on-1 supervision on our spacious exercise floor, you learn proper movement kinematics that offload stressed joints, rebuild stabilizing muscle tone, and stimulate long-term tissue resilience.",
     assessmentProcess: [
       "Comprehensive functional movement assessment analyzing gait, squatting mechanics, and postural alignment",
       "Goniometric joint range-of-motion measurement (active vs passive limits)",
@@ -566,12 +536,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Sport-specific and functional task conditioning simulating real-world physical demands"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical expertise prescribing medical-grade exercise therapy protocols",
-      "1-on-1 personalized exercise coaching ensuring perfect form and complete safety",
-      "Spacious, modern exercise floor equipped with specialized rehabilitation apparatus in Manikonda",
-      "Digital home exercise programs with customized exercise video guidance for continuous home progress"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -598,7 +563,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Do I need to visit the clinic every single day for exercise therapy?",
-        answer: "Usually not. Most patients attend 2 to 3 clinic sessions per week for supervised progression and coaching, complemented by simple 15-minute home exercises on other days."
+        answer: "Session frequency and home exercises depend on the person's condition, goals, and progress. A clinician can discuss a suitable plan after assessment."
       },
       {
         question: "Is exercise therapy safe for seniors with osteoporosis or heart conditions?",
@@ -606,7 +571,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Do you offer exercise therapy during home visits in Manikonda?",
-        answer: "Yes, our team brings portable exercise equipment (resistance bands, balance discs, weights) directly to your home across Manikonda, Puppalguda, and nearby areas."
+        answer: "Yes, our team brings portable exercise equipment (resistance bands, balance discs, weights) directly to your home in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       }
     ]
   },
@@ -615,13 +580,13 @@ export const supportingModalities: ServiceDetail[] = [
     category: "Supporting Modalities",
     isModality: true,
     title: "Manual Therapy / Soft Tissue Mobilisation",
-    metaTitle: "Manual Therapy & Soft Tissue Mobilisation in Manikonda | Dr. Hamid",
-    metaDescription: "Hands-on spinal mobilization, myofascial release & joint manipulation in Manikonda, Hyderabad. Skilled clinical manual therapy by Dr. Hamid, BPT. Book now!",
+    metaTitle: "Manual Therapy & Soft Tissue Mobilisation in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Hands-on spinal mobilization, myofascial release & joint manipulation in Manikonda, Hyderabad. Skilled clinical manual therapy by Dr. Hamid. Book now!",
     h1: "Manual Therapy & Soft Tissue Mobilisation in Manikonda, Hyderabad",
     shortDescription: "Skilled, hands-on clinical techniques including joint mobilizations, myofascial release, trigger point therapy, and neural mobilization to restore mobility.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Manual therapy joint mobilization and soft tissue release in Manikonda clinic",
-    whatItIs: "Manual Therapy and Soft Tissue Mobilisation encompass a specialized category of skilled, hands-on physical therapy techniques delivered directly by the clinician's hands rather than machines. Recognizing that joints, muscles, fascia, and nerves are interconnected biological structures, manual physical therapy addresses biomechanical restrictions at their exact anatomical source. Techniques include Maitland and Kaltenborn joint mobilizations (rhythmic passive oscillations restoring capsular glide), Mulligan Mobilisation with Movement (MWM), Myofascial Release (MFR), deep transverse friction massage, and neural tissue mobilization (nerve gliding). At Dr. Hamid's Physio and Pain Clinic in Manikonda, skilled manual therapy provides rapid restoration of movement and immediate pain modulation.",
+    whatItIs: "Manual Therapy and Soft Tissue Mobilisation encompass a specialized category of skilled, hands-on physical therapy techniques delivered directly by the clinician's hands rather than machines. Recognizing that joints, muscles, fascia, and nerves are interconnected biological structures, manual physical therapy addresses biomechanical restrictions at their exact anatomical source. Techniques include Maitland and Kaltenborn joint mobilizations (rhythmic passive oscillations restoring capsular glide), Mulligan Mobilisation with Movement (MWM), Myofascial Release (MFR), deep transverse friction massage, and neural tissue mobilization (nerve gliding). At Dr Hamid’s Physio and Pain Clinic in Manikonda, skilled manual therapy provides rapid restoration of movement and immediate pain modulation.",
     causes: [
       "Facet joint locking and hypomobility in the cervical, thoracic, or lumbar spine",
       "Capsular contractures in peripheral joints (frozen shoulder, stiff post-op knee or ankle)",
@@ -637,7 +602,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Persistent joint stiffness that fails to improve with simple independent stretching exercises",
       "Tingling or tightness along nerve pathways during arm or leg elongation"
     ],
-    howPhysioHelps: "Manual therapy delivers targeted mechanical and neurophysiological effects that exercises or machines alone cannot duplicate. Dr. Mohammed Hamid Ali (BPT) applies precise, graded manual forces directly to restricted joint capsules and shortened fascial planes. This stimulates mechanoreceptors, inhibits nociceptive pain pathways in the spinal cord, breaks down microscopic cross-linked collagen adhesions, and restores normal accessory joint glide (arthrokinematics). Movement becomes smooth, fluid, and pain-free.",
+    howPhysioHelps: "Manual therapy delivers targeted mechanical and neurophysiological effects that exercises or machines alone cannot duplicate. Dr. Mohammed Hamid Ali applies precise, graded manual forces directly to restricted joint capsules and shortened fascial planes. This stimulates mechanoreceptors, inhibits nociceptive pain pathways in the spinal cord, breaks down microscopic cross-linked collagen adhesions, and restores normal accessory joint glide (arthrokinematics). Movement becomes smooth, fluid, and pain-free.",
     assessmentProcess: [
       "Detailed palpatory examination of joint glide, end-feel quality, and capsular restriction patterns",
       "Assessment of myofascial tissue texture, fascial sliding, and active trigger point locations",
@@ -653,12 +618,7 @@ export const supportingModalities: ServiceDetail[] = [
       "Gentle neural mobilization flossing techniques to free entrapped peripheral nerves"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of dedicated hands-on clinical mastery in orthopedic and spinal manual therapy",
-      "Gentle, respectful clinical approach prioritizing comfort and strictly avoiding aggressive cracking",
-      "Doctor-conducted 1-on-1 sessions ensuring skilled manual expertise on every visit",
-      "Seamless integration of manual therapy with corrective exercise to lock in mobility gains"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -681,7 +641,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "How soon will I feel results from manual therapy?",
-        answer: "Most patients experience immediate, noticeable improvement in joint freedom and pain relief before leaving the treatment table on their very first session."
+        answer: "Some people notice a short-term change after manual therapy; others do not. Its role depends on the condition and individual preferences, and it may be combined with other care. No result can be promised."
       },
       {
         question: "Can manual therapy help a frozen shoulder?",
@@ -689,11 +649,11 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Is manual therapy safe for patients with neck pain?",
-        answer: "Yes, when performed by a qualified physiotherapist. Dr. Hamid conducts comprehensive safety checks (including vertebral artery screening) and uses gentle, non-thrust mobilizations that are exceptionally safe."
+        answer: "Manual therapy is not suitable for everyone. A clinician should review symptoms, medical history, and relevant precautions before discussing options. Seek urgent medical advice for sudden severe symptoms or new neurological changes."
       },
       {
         question: "Do you offer manual therapy during home visits in Manikonda?",
-        answer: "Yes, Dr. Hamid and our senior physiotherapists provide expert hands-on manual therapy and soft tissue mobilization during home visits across Manikonda and Puppalguda."
+        answer: "Yes, Dr. Hamid and our senior physiotherapists provide expert hands-on manual therapy and soft tissue mobilization during home visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       }
     ]
   }

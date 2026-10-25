@@ -6,12 +6,12 @@ export const kneeServices: ServiceDetail[] = [
     category: "Knee",
     title: "Knee Pain Physiotherapy",
     metaTitle: "Knee Pain Physiotherapy in Manikonda | Expert Knee Care Hyderabad",
-    metaDescription: "Relieve acute and chronic knee pain with specialized physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali, BPT. Book today!",
+    metaDescription: "Relieve acute and chronic knee pain with specialized physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali. Book today!",
     h1: "Knee Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Comprehensive physiotherapy for knee pain, arthritis, ligament strain, stair-climbing difficulty, and sports-related knee problems. Aims to reduce pain and improve daily function.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Knee pain physiotherapy and knee joint rehabilitation in Manikonda clinic",
-    whatItIs: "Knee pain is one of the most disabling musculoskeletal complaints, directly impairing basic daily activities such as walking, descending stairs, squatting, and rising from low seats. The knee is a modified hinge joint that bears up to 3 to 5 times your body weight during stair climbing and squatting. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we evaluate the entire kinetic chain — from the hip abductors down to the foot and ankle — to pinpoint why your knee is absorbing abnormal mechanical stress.",
+    whatItIs: "Knee pain is one of the most disabling musculoskeletal complaints, directly impairing basic daily activities such as walking, descending stairs, squatting, and rising from low seats. The knee is a modified hinge joint that bears up to 3 to 5 times your body weight during stair climbing and squatting. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, we evaluate the entire kinetic chain — from the hip abductors down to the foot and ankle — to pinpoint why your knee is absorbing abnormal mechanical stress.",
     causes: [
       "Patellofemoral pain syndrome (runner's knee) caused by abnormal tracking of the kneecap in the femoral groove",
       "Quadriceps and vastus medialis obliquus (VMO) muscle weakness allowing patellar lateral tilt",
@@ -27,7 +27,7 @@ export const kneeServices: ServiceDetail[] = [
       "Localized tenderness and mild puffiness along the front or sides of the knee joint",
       "Hesitation or pain when standing up from deep sofas, chairs, or car seats"
     ],
-    howPhysioHelps: "Physiotherapy for knee pain corrects the biomechanical faults that cause joint friction. Dr. Mohammed Hamid Ali (BPT) uses targeted patellar mobilizations, kinesiology taping to offload the patella, progressive open and closed kinetic chain quadriceps strengthening, and hip stability retraining. This restores smooth patellar tracking and allows pain-free stair climbing and walking.",
+    howPhysioHelps: "Physiotherapy for knee pain may include activity advice, exercise, and movement practice selected after assessment. The plan depends on the cause of symptoms and individual goals; improvement and response vary between people.",
     assessmentProcess: [
       "Patellar tracking and glide assessment in supine and functional weight-bearing positions",
       "Quadriceps Q-angle measurement and vastus medialis obliquus (VMO) timing evaluation",
@@ -43,12 +43,7 @@ export const kneeServices: ServiceDetail[] = [
       "Biomechanical stair-climbing retraining and safe squatting mechanics education"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of dedicated orthopedic knee rehabilitation experience in Hyderabad",
-      "Precise kinetic-chain assessment identifying hip and foot causes of knee pain",
-      "Hands-on guided rehabilitation ensuring correct exercise form and safety",
-      "Dedicated clinic in Puppalguda, Manikonda with home visit options across Hyderabad"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -64,11 +59,11 @@ export const kneeServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Why does my knee hurt more going downstairs than upstairs?",
-        answer: "Descending stairs requires eccentric contraction of your quadriceps while absorbing up to 3.5 to 4 times your body weight, placing maximum compressive stress on the patellofemoral joint. Targeted physiotherapy restores eccentric strength and smooth tracking."
+        answer: "Stair descent can be demanding for the knee and may bring on symptoms for several reasons. A clinician can assess the person's symptoms and movement and discuss suitable ways to manage activity and build strength."
       },
       {
         question: "Does clicking or cracking in the knee mean I have arthritis?",
-        answer: "No. Painless cracking or popping is often simply gas bubbles or soft tissue snapping over bone. However, clicking accompanied by pain indicates joint friction or tracking issues that benefit greatly from physiotherapy."
+        answer: "Knee sounds can have several causes and do not necessarily indicate damage. Pain, swelling, locking, giving way, or difficulty bearing weight should be assessed by a clinician. Physiotherapy may be considered depending on the findings."
       },
       {
         question: "Can physiotherapy help knee pain without medications or injections?",
@@ -92,12 +87,12 @@ export const kneeServices: ServiceDetail[] = [
     ],
     title: "Arthritis Physiotherapy (Knee & Joints)",
     metaTitle: "Arthritis Physiotherapy in Manikonda | Knee Osteoarthritis Care Hyderabad",
-    metaDescription: "Relieve knee osteoarthritis pain and joint stiffness with evidence-based physiotherapy in Manikonda, Hyderabad. Expert care under Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Relieve knee osteoarthritis pain and joint stiffness with evidence-based physiotherapy in Manikonda, Hyderabad. Expert care under Dr. Mohammed Hamid Ali.",
     h1: "Arthritis Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized conservative joint preservation and exercise therapy for knee osteoarthritis, joint stiffness, and age-related cartilage wear.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Knee arthritis physiotherapy and osteoarthritis treatment in Manikonda clinic",
-    whatItIs: "Knee osteoarthritis can be associated with pain, stiffness, and changes in daily function. Symptoms differ between people and do not always match scan findings. NICE recommends therapeutic exercise tailored to a person's needs for osteoarthritis; exercise may initially cause some discomfort, and individual response varies. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help discuss appropriate options alongside any advice from the person's medical team.",
+    whatItIs: "Knee osteoarthritis can be associated with pain, stiffness, and changes in daily function. Symptoms differ between people and do not always match scan findings. NICE recommends therapeutic exercise tailored to a person's needs for osteoarthritis; exercise may initially cause some discomfort, and individual response varies. At Dr Hamid’s Physio and Pain Clinic in Manikonda, an assessment can help discuss appropriate options alongside any advice from the person's medical team.",
     causes: [
       "Age-related degeneration of articular cartilage and reduced synovial fluid lubrication",
       "Excess body weight placing multi-fold mechanical compressive load on knee joint compartments",
@@ -113,7 +108,7 @@ export const kneeServices: ServiceDetail[] = [
       "Gradual loss of joint range of motion (difficulty fully straightening or fully bending the knee)",
       "Bony enlargement around the joint line and progressive bow-legged (varus) deformity"
     ],
-    howPhysioHelps: "Physiotherapy works by building a muscular 'shock-absorber' around the arthritic joint. Strong quadriceps, hamstrings, and calves absorb ground impact forces before they reach the damaged cartilage. Dr. Mohammed Hamid Ali (BPT) prescribes low-impact strengthening, gentle joint distraction mobilizations to enhance synovial fluid circulation, and gait retraining that redistributes load across healthier joint compartments.",
+    howPhysioHelps: "Physiotherapy works by building a muscular 'shock-absorber' around the arthritic joint. Strong quadriceps, hamstrings, and calves absorb ground impact forces before they reach the damaged cartilage. Dr. Mohammed Hamid Ali prescribes low-impact strengthening, gentle joint distraction mobilizations to enhance synovial fluid circulation, and gait retraining that redistributes load across healthier joint compartments.",
     assessmentProcess: [
       "Kellgren-Lawrence radiographic grading correlation with functional clinical presentation",
       "Joint line palpation and assessment of medial vs lateral compartment wear",
@@ -129,12 +124,7 @@ export const kneeServices: ServiceDetail[] = [
       "Joint protection education, assistive cane gait training, and weight-management movement advice"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Strong clinical focus on conservative joint preservation to avoid or delay surgery",
-      "8+ years of dedicated clinical experience treating senior and adult joint conditions",
-      "Gentle, respectful, patient-paced exercise protocols that never cause joint flare-ups",
-      "Dedicated clinic in Manikonda with home visit options across Hyderabad"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -150,7 +140,7 @@ export const kneeServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Can physiotherapy help me avoid knee replacement surgery?",
-        answer: "Yes. High-quality international medical guidelines (OARSI, NICE) recommend exercise therapy as the primary treatment for knee osteoarthritis. Strengthening supporting muscles frequently provides sufficient pain relief and functional restoration to delay or completely avoid surgery."
+        answer: "Exercise is one option recommended in guidance for osteoarthritis and can be adapted to a person's needs and abilities. It may help with symptoms and function, but cannot guarantee that surgery will be avoided. Discuss treatment options with your clinician."
       },
       {
         question: "Is walking safe if I have bone-on-bone knee arthritis?",
@@ -158,7 +148,7 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for seniors with knee arthritis?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy across Manikonda, Puppalguda, Alkapur Township, and Gachibowli for elderly patients with restricted mobility."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for elderly patients with restricted mobility."
       },
       {
         question: "What exercises should I avoid with knee osteoarthritis?",
@@ -166,7 +156,7 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "How do I book a consultation with Dr. Hamid?",
-        answer: "Call +91 76010 26596 or reach out through WhatsApp to schedule an assessment at Dr. Hamid's Physio and Pain Clinic."
+        answer: "Call +91 76010 26596 or reach out through WhatsApp to schedule an assessment at Dr Hamid’s Physio and Pain Clinic."
       }
     ]
   },
@@ -175,12 +165,12 @@ export const kneeServices: ServiceDetail[] = [
     category: "Knee",
     title: "ACL Injury Physiotherapy & Rehabilitation",
     metaTitle: "ACL Injury Physiotherapy in Manikonda | ACL Rehab Hyderabad",
-    metaDescription: "Comprehensive ACL tear physiotherapy and post-op ACL reconstruction rehabilitation in Manikonda by Dr. Mohammed Hamid Ali, BPT. Return to sport safely!",
+    metaDescription: "Comprehensive ACL tear physiotherapy and post-op ACL reconstruction rehabilitation in Manikonda by Dr. Mohammed Hamid Ali. Return to sport safely!",
     h1: "ACL Injury Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Phase-based rehabilitation for anterior cruciate ligament (ACL) tears, pre-habilitation, and post-surgical ACL reconstruction return-to-sport recovery.",
     imageSrc: "/images/services/condition-sports-injury.webp",
     altText: "ACL injury physiotherapy and post-op ligament rehabilitation in Manikonda",
-    whatItIs: "The Anterior Cruciate Ligament (ACL) is a crucial stabilizer of the knee joint, preventing anterior translation of the tibia on the femur and controlling rotational stability. ACL injuries commonly occur in athletes and active individuals during non-contact deceleration, sudden pivoting, or awkward jump landings in cricket, football, badminton, and basketball. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide comprehensive evidence-based ACL rehabilitation — whether you are preparing for surgery (pre-hab), recovering conservatively without surgery (copers), or undergoing post-operative graft reconstruction rehabilitation.",
+    whatItIs: "The Anterior Cruciate Ligament (ACL) is a crucial stabilizer of the knee joint, preventing anterior translation of the tibia on the femur and controlling rotational stability. ACL injuries commonly occur in athletes and active individuals during non-contact deceleration, sudden pivoting, or awkward jump landings in cricket, football, badminton, and basketball. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, we provide comprehensive evidence-based ACL rehabilitation — whether you are preparing for surgery (pre-hab), recovering conservatively without surgery (copers), or undergoing post-operative graft reconstruction rehabilitation.",
     causes: [
       "Sudden rapid deceleration and pivot while the foot is planted firmly on the ground",
       "Awkward landing from a jump with the knee in a dynamic valgus (knock-knee) position",
@@ -195,7 +185,7 @@ export const kneeServices: ServiceDetail[] = [
       "Persistent feeling that the knee is 'unstable', 'loose', or about to buckle and give way",
       "Severe restriction of knee bending and inability to fully straighten the joint"
     ],
-    howPhysioHelps: "ACL rehabilitation follows structured biological healing phases. For post-surgical reconstruction patients, Dr. Mohammed Hamid Ali (BPT) guides you safely through graft protection, early full extension restoration, quadriceps reactivation, progressive strength loading, and advanced neuromuscular agility drills until objective return-to-play criteria are met.",
+    howPhysioHelps: "ACL rehabilitation follows structured biological healing phases. For post-surgical reconstruction patients, Dr. Mohammed Hamid Ali guides you safely through graft protection, early full extension restoration, quadriceps reactivation, progressive strength loading, and advanced neuromuscular agility drills until objective return-to-play criteria are met.",
     assessmentProcess: [
       "Lachman test and Anterior Drawer test to evaluate ligamentous laxity",
       "Pivot Shift test to assess rotational knee instability",
@@ -211,12 +201,7 @@ export const kneeServices: ServiceDetail[] = [
       "Phase 5: Sport-specific agility drills, cutting mechanics, and objective discharge testing"
     ],
     expectedRecovery: "Recovery after an ACL injury or reconstruction varies with the injury, procedure, and individual progress. Return to running or sport should follow the treating surgeon's and physiotherapist's criteria and rehabilitation plan rather than a fixed calendar alone.",
-    whyChooseDoctor: [
-      "Protocol-driven rehabilitation compliant with international orthopedic sports medicine standards",
-      "Objective functional milestone testing rather than arbitrary time-based clearances",
-      "Extensive experience treating athletic injuries in Hyderabad cricketers, footballers, and runners",
-      "Dedicated clinic in Manikonda equipped with modern rehabilitation tools"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -240,11 +225,11 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "When can I run again after ACL reconstruction surgery?",
-        answer: "Running is generally introduced around month 3 to 4, provided the knee has zero swelling, full range of motion, and quadriceps strength is at least 70-80% compared to the uninjured leg."
+        answer: "The timing of a return to running depends on the injury or procedure, symptoms, strength, function, and the treating team's plan. Do not use a fixed calendar or a single strength measure as clearance; ask your surgeon or physiotherapist for individual guidance."
       },
       {
         question: "Do you provide ACL rehabilitation in Manikonda?",
-        answer: "Yes, Dr. Hamid's Physio and Pain Clinic provides comprehensive pre-op and post-op ACL rehabilitation near Friends Colony Park, Puppalguda, Manikonda."
+        answer: "Yes, Dr Hamid’s Physio and Pain Clinic provides comprehensive pre-op and post-op ACL rehabilitation near Friends Colony Park, Puppalguda, Manikonda."
       },
       {
         question: "How do I schedule an ACL assessment?",
@@ -257,12 +242,12 @@ export const kneeServices: ServiceDetail[] = [
     category: "Knee",
     title: "PCL Injury Physiotherapy",
     metaTitle: "PCL Injury Physiotherapy in Manikonda | Posterior Cruciate Ligament Rehab",
-    metaDescription: "Evidence-based PCL injury physiotherapy and posterior cruciate ligament rehabilitation in Manikonda by Dr. Mohammed Hamid Ali, BPT. Call today!",
+    metaDescription: "Evidence-based PCL injury physiotherapy and posterior cruciate ligament rehabilitation in Manikonda by Dr. Mohammed Hamid Ali. Call today!",
     h1: "PCL Injury Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for posterior cruciate ligament (PCL) sprains, dashboard injuries, and posterior knee instability.",
     imageSrc: "/images/services/condition-sports-injury.webp",
     altText: "PCL injury physiotherapy and posterior knee stability in Manikonda",
-    whatItIs: "The Posterior Cruciate Ligament (PCL) is the strongest ligament in the knee joint, preventing backward translation of the tibia on the femur. PCL injuries occur less frequently than ACL tears and are commonly caused by high-energy trauma — such as a bent knee striking a car dashboard in a traffic collision, or falling heavily directly onto a flexed knee with the foot pointed downward. Fortunately, isolated Grade I and II PCL tears have tremendous intrinsic healing capacity. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide specialized conservative rehabilitation focused on aggressive quadriceps dynamic stabilization.",
+    whatItIs: "The Posterior Cruciate Ligament (PCL) is the strongest ligament in the knee joint, preventing backward translation of the tibia on the femur. PCL injuries occur less frequently than ACL tears and are commonly caused by high-energy trauma — such as a bent knee striking a car dashboard in a traffic collision, or falling heavily directly onto a flexed knee with the foot pointed downward. Fortunately, isolated Grade I and II PCL tears have tremendous intrinsic healing capacity. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, we provide specialized conservative rehabilitation focused on aggressive quadriceps dynamic stabilization.",
     causes: [
       "Direct blow to the anterior upper shin while the knee is bent (e.g. car dashboard collision)",
       "Falling hard onto a fully bent knee during football, kabaddi, or outdoor sports",
@@ -276,7 +261,7 @@ export const kneeServices: ServiceDetail[] = [
       "Instability or difficulty walking down declines, ramps, or stairs",
       "Pain during deep knee flexion (squatting, kneeling, sitting cross-legged)"
     ],
-    howPhysioHelps: "Unlike the ACL, where hamstrings act as agonists, in PCL rehabilitation the quadriceps is the primary muscular stabilizer that pulls the tibia forward, counteracting posterior sag. Dr. Mohammed Hamid Ali (BPT) prescribes intensive quadriceps strengthening, strict posterior tibial support, and gradual range of motion restoration while temporarily limiting open-chain hamstring contractions that would pull the healing ligament backward.",
+    howPhysioHelps: "Unlike the ACL, where hamstrings act as agonists, in PCL rehabilitation the quadriceps is the primary muscular stabilizer that pulls the tibia forward, counteracting posterior sag. Dr. Mohammed Hamid Ali prescribes intensive quadriceps strengthening, strict posterior tibial support, and gradual range of motion restoration while temporarily limiting open-chain hamstring contractions that would pull the healing ligament backward.",
     assessmentProcess: [
       "Posterior Drawer test at 90 degrees of knee flexion to grade posterior laxity",
       "Godfrey's test (posterior sag sign) evaluated with hips and knees at 90 degrees",
@@ -292,12 +277,7 @@ export const kneeServices: ServiceDetail[] = [
       "Advanced balance, proprioception, and functional athletic retraining"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "In-depth understanding of complex posterior knee biomechanics and contraindications",
-      "Safe, structured rehabilitation protocols protecting the healing PCL from posterior drawer forces",
-      "8+ years of clinical musculoskeletal experience in Hyderabad",
-      "Convenient clinic location in Manikonda near Friends Colony Park"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -325,7 +305,7 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer PCL rehabilitation in Manikonda?",
-        answer: "Yes, Dr. Hamid's Physio and Pain Clinic in Puppalguda, Manikonda provides specialized PCL conservative and post-op care."
+        answer: "Yes, Dr Hamid’s Physio and Pain Clinic in Puppalguda, Manikonda provides specialized PCL conservative and post-op care."
       },
       {
         question: "How do I book an appointment?",
@@ -338,12 +318,12 @@ export const kneeServices: ServiceDetail[] = [
     category: "Knee",
     title: "Meniscus Injury Physiotherapy",
     metaTitle: "Meniscus Injury Physiotherapy in Manikonda | Meniscus Tear Treatment",
-    metaDescription: "Conservative meniscus tear physiotherapy and post-arthroscopy rehabilitation in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali, BPT. Avoid unnecessary surgery!",
+    metaDescription: "Conservative meniscus tear physiotherapy and post-arthroscopy rehabilitation in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali. Avoid unnecessary surgery!",
     h1: "Meniscus Injury Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for medial and lateral meniscus tears, knee locking, joint line tenderness, and post-meniscectomy recovery.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Meniscus injury physiotherapy and meniscus tear recovery in Manikonda",
-    whatItIs: "The medial and lateral menisci are crescent-shaped fibrocartilaginous pads situated between the femoral condyles and tibial plateau. They act as essential shock absorbers, distribute 50% to 70% of joint loads, and enhance knee stability. Meniscus tears can occur traumatically in young athletes during twisting while weight-bearing, or degeneratively in middle-aged and older adults due to gradual tissue wear. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide evidence-based conservative rehabilitation that resolves swelling, eliminates mechanical irritation, and helps patients return to active living without unnecessary surgery.",
+    whatItIs: "The medial and lateral menisci are pads of cartilage between the thigh bone and shin bone that help distribute load in the knee. A meniscus injury can happen during a twisting movement or develop with age-related tissue changes. Symptoms and treatment options vary. Physiotherapy may be considered after assessment, alongside advice from the treating medical team.",
     causes: [
       "Forceful twisting or pivoting on a planted foot during sports or sudden turns",
       "Deep squatting or heavy lifting from the floor compressing the posterior meniscal horn",
@@ -358,7 +338,7 @@ export const kneeServices: ServiceDetail[] = [
       "Difficulty squatting, sitting cross-legged on the floor, or twisting the knee",
       "Feeling of knee instability or weakness when stepping on uneven ground"
     ],
-    howPhysioHelps: "Clinical trials published in prestigious medical journals (such as the New England Journal of Medicine) show that structured physiotherapy produces functional outcomes equal to or superior to arthroscopic partial meniscectomy for degenerative meniscus tears. Dr. Mohammed Hamid Ali (BPT) focuses on reducing joint effusion, restoring terminal extension, unloading the joint line through vastus medialis strengthening, and improving hip-knee stability.",
+    howPhysioHelps: "Clinical trials published in prestigious medical journals (such as the New England Journal of Medicine) show that structured physiotherapy produces functional outcomes equal to or superior to arthroscopic partial meniscectomy for degenerative meniscus tears. Dr. Mohammed Hamid Ali focuses on reducing joint effusion, restoring terminal extension, unloading the joint line through vastus medialis strengthening, and improving hip-knee stability.",
     assessmentProcess: [
       "McMurray's test with joint line palpation to detect meniscal clicks and pain",
       "Apley's compression and distraction test to differentiate ligament vs meniscal pathology",
@@ -374,12 +354,7 @@ export const kneeServices: ServiceDetail[] = [
       "Gradual functional progression into jogging, squatting, and sports drills"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Evidence-based conservative management to help patients avoid unnecessary arthroscopic surgery",
-      "8+ years of orthopedic musculoskeletal experience in Hyderabad",
-      "Personalized 1-on-1 guided exercise sessions directly under Dr. Mohammed Hamid Ali, BPT",
-      "Convenient clinic location in Manikonda with dedicated home visit options"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -395,7 +370,7 @@ export const kneeServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Can a torn meniscus heal without surgery?",
-        answer: "Tears in the outer third of the meniscus (the 'red-red zone') have a rich blood supply and can heal completely with conservative physiotherapy. Even tears in the inner zone often become completely asymptomatic and functional with targeted strengthening, avoiding surgery."
+        answer: "Whether a meniscus tear heals or needs surgery depends on the tear, symptoms, examination, and other factors. Physiotherapy may be an option for some people, while others need medical or surgical review. A clinician can discuss suitable next steps."
       },
       {
         question: "What is a 'locked knee' from a meniscus tear?",
@@ -406,7 +381,7 @@ export const kneeServices: ServiceDetail[] = [
         answer: "Yes, stationary cycling with low resistance is one of the best exercises for a meniscus injury because it provides smooth, low-impact joint lubrication without twisting forces."
       },
       {
-        question: "Where is Dr. Hamid's clinic located in Manikonda?",
+        question: "Where is Dr Hamid’s Physio and Pain Clinic located in Manikonda?",
         answer: "The clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
       },
       {
@@ -420,12 +395,12 @@ export const kneeServices: ServiceDetail[] = [
     category: "Knee",
     title: "Knee Rehabilitation",
     metaTitle: "Knee Rehabilitation in Manikonda | Post-Op & Injury Recovery Hyderabad",
-    metaDescription: "Comprehensive knee rehabilitation in Manikonda. Specialized protocols for joint replacement, ligament reconstruction, and sports injuries by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Comprehensive knee rehabilitation in Manikonda. Specialized protocols for joint replacement, ligament reconstruction, and sports injuries by Dr. Mohammed Hamid Ali.",
     h1: "Knee Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Complete, protocol-driven knee recovery covering post-total knee replacement (TKR), complex ligament trauma, and return to active lifestyle.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Comprehensive knee rehabilitation and post-surgical recovery in Manikonda clinic",
-    whatItIs: "Knee rehabilitation may be recommended after an injury or surgery to help address movement, strength, and everyday activities. The plan and pace depend on the procedure or diagnosis and the instructions from the treating surgeon. At Dr. Hamid's Physio and Pain Clinic in Manikonda, rehabilitation is planned around the person's assessment and medical guidance; outcomes and timelines vary.",
+    whatItIs: "Knee rehabilitation may be recommended after an injury or surgery to help address movement, strength, and everyday activities. The plan and pace depend on the procedure or diagnosis and the instructions from the treating surgeon. At Dr Hamid’s Physio and Pain Clinic in Manikonda, rehabilitation is planned around the person's assessment and medical guidance; outcomes and timelines vary.",
     causes: [
       "Total Knee Replacement (TKR) or Unicompartmental Knee Arthroplasty (UKA) for end-stage arthritis",
       "Reconstructive surgery for multi-ligament knee injuries (ACL, PCL, MCL, LCL)",
@@ -440,7 +415,7 @@ export const kneeServices: ServiceDetail[] = [
       "Difficulty walking without crutches, a walker, or a marked compensatory limp",
       "Apprehension, stiffness, and fear of falling during weight-bearing activities"
     ],
-    howPhysioHelps: "Our structured knee rehabilitation program focuses on restoring 0 to 120+ degrees of functional range of motion, activating inhibited quadriceps muscles through neuromuscular stimulation and biofeedback, clearing residual swelling, and retraining symmetrical gait mechanics. Dr. Mohammed Hamid Ali (BPT) works closely with your orthopedic surgeon's discharge protocol to guide you safely from early bedside mobility to complete community independence.",
+    howPhysioHelps: "Our structured knee rehabilitation program focuses on restoring 0 to 120+ degrees of functional range of motion, activating inhibited quadriceps muscles through neuromuscular stimulation and biofeedback, clearing residual swelling, and retraining symmetrical gait mechanics. Dr. Mohammed Hamid Ali works closely with your orthopedic surgeon's discharge protocol to guide you safely from early bedside mobility to complete community independence.",
     assessmentProcess: [
       "Goniometric measurement of knee active and passive flexion and extension range of motion",
       "Evaluation of active extension lag (inability of quadriceps to fully lock the knee straight)",
@@ -456,12 +431,7 @@ export const kneeServices: ServiceDetail[] = [
       "Phase 5: Advanced endurance training, return-to-work, and independent home maintenance routine"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Strict protocol compliance aligned with leading orthopedic hospital surgical guidelines",
-      "Patient, compassionate bedside manner that builds confidence and eases recovery anxiety",
-      "Available for personalized home visit physiotherapy across Manikonda during early post-op days",
-      "Over 8+ years of specialized orthopedic joint rehabilitation experience in Hyderabad"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -473,11 +443,11 @@ export const kneeServices: ServiceDetail[] = [
       "Practice prescribed heel slides daily, holding comfortable stretch at the end-range",
       "Use your walker or cane exactly as demonstrated until formally cleared by Dr. Hamid"
     ],
-    whenToVisit: "Begin post-surgery knee rehabilitation as soon as discharged from the hospital (typically day 3 to 5 post-op). Home visits can be arranged across Manikonda and Puppalguda.",
+    whenToVisit: "Begin post-surgery knee rehabilitation as soon as discharged from the hospital (typically day 3 to 5 post-op). Home visits can be arranged in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage.",
     faqs: [
       {
         question: "Can Dr. Hamid visit my home for knee replacement physiotherapy in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized home visit knee rehabilitation for post-TKR patients across Manikonda, Puppalguda, Narsingi, and Gachibowli who cannot easily travel to the clinic."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized home visit knee rehabilitation for post-TKR patients in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for people who cannot easily travel to the clinic."
       },
       {
         question: "How much knee bend should I achieve after knee replacement surgery?",
@@ -489,7 +459,7 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "How long will I need physiotherapy after knee replacement?",
-        answer: "Most patients require structured physiotherapy 3 to 5 times per week for the first 4 to 6 weeks, transitioning to an independent home exercise routine by weeks 8 to 12."
+        answer: "The frequency and duration of rehabilitation vary with the procedure, health, progress, and the surgeon's instructions. Ask the treating team to review an individual plan."
       },
       {
         question: "How do I book post-surgical knee rehabilitation?",
@@ -502,12 +472,12 @@ export const kneeServices: ServiceDetail[] = [
     category: "Knee",
     title: "Runner's Knee Physiotherapy",
     metaTitle: "Runner's Knee Physiotherapy in Manikonda | Patellofemoral Pain Treatment Hyderabad",
-    metaDescription: "Relieve runner's knee pain with specialized physiotherapy in Manikonda, Hyderabad. Expert care for runners and active individuals by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    metaDescription: "Relieve runner's knee pain with specialized physiotherapy in Manikonda, Hyderabad. Expert care for runners and active individuals by Dr. Mohammed Hamid Ali.",
     h1: "Runner's Knee Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for patellofemoral pain syndrome, anterior knee pain, and running-related knee injuries.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Runner's knee physiotherapy and patellofemoral pain treatment in Manikonda clinic",
-    whatItIs: "Runner's knee, medically known as patellofemoral pain syndrome (PFPS), is one of the most common overuse injuries affecting runners, joggers, cyclists, and fitness enthusiasts. The condition involves pain around or behind the kneecap (patella), particularly during activities that load the knee in flexion—such as running, squatting, climbing stairs, or sitting with bent knees for extended periods. The pain arises from abnormal tracking of the patella within the femoral groove, causing irritation to the cartilage and surrounding soft tissues. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide comprehensive gait analysis, biomechanical correction, and progressive rehabilitation to restore pain-free running.",
+    whatItIs: "Patellofemoral pain refers to pain around or behind the kneecap. It can be associated with running, squatting, stair climbing, or prolonged sitting, but causes vary and are not always explained by kneecap tracking alone. An assessment can help discuss suitable activity changes and care options.",
     causes: [
       "Weakness in the vastus medialis obliquus (VMO) allowing lateral patellar tracking",
       "Hip abductor and external rotator weakness causing dynamic knee valgus during running",
@@ -523,7 +493,7 @@ export const kneeServices: ServiceDetail[] = [
       "Crepitus or grinding sensation when bending and straightening the knee",
       "Mild swelling around the kneecap and tenderness along the patellar edges"
     ],
-    howPhysioHelps: "Runner's knee responds excellently to targeted physiotherapy addressing the underlying biomechanical causes. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) performs comprehensive kinetic chain assessment from the hip to the foot, identifying and correcting muscle imbalances, flexibility deficits, and movement pattern faults. Treatment includes patellar taping for immediate pain relief, hip strengthening to control knee alignment, and progressive running re-education to restore pain-free training.",
+    howPhysioHelps: "Care for pain around the kneecap may include a movement assessment, exercises, activity adjustments, or other options depending on the person's symptoms and goals. Taping may be considered in some cases, but its effect varies. A clinician can help plan a gradual return to activity.",
     assessmentProcess: [
       "Running gait analysis to identify biomechanical faults, cadence, and foot strike pattern",
       "Single-leg squat and step-down test to evaluate dynamic knee valgus and hip control",
@@ -532,25 +502,20 @@ export const kneeServices: ServiceDetail[] = [
       "Hip abductor and external rotator strength testing comparing both sides"
     ],
     treatmentApproach: [
-      "Patellar McConnell taping to improve tracking and provide immediate pain relief",
+      "Patellar taping may be considered where appropriate; response varies",
       "Targeted hip strengthening (gluteus medius, maximus, and external rotators)",
       "VMO-specific strengthening exercises to balance patellar tracking forces",
       "ITB, hamstring, and hip flexor stretching and foam rolling program",
       "Running form correction, cadence optimization, and gradual return-to-run program"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical experience treating runners and endurance athletes in Hyderabad",
-      "Specialized training in running biomechanics and sports injury rehabilitation",
-      "Comprehensive kinetic chain assessment addressing root causes, not just symptoms",
-      "Convenient Manikonda clinic near running tracks and fitness centers"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
     homeCare: [
-      "Reduce running mileage by 50% and avoid hills during the acute pain phase",
+      "Consider adjusting running volume, hills, or speed while symptoms are active; seek individual guidance if unsure",
       "Apply ice packs for 15 minutes after runs to control inflammation",
       "Perform prescribed hip strengthening exercises daily",
       "Consider a temporary switch to cycling or swimming to maintain fitness",
@@ -560,7 +525,7 @@ export const kneeServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Can I keep running with runner's knee?",
-        answer: "During the acute painful phase, reduce mileage by 50% and avoid hills and speed work. As symptoms improve with physiotherapy, gradually rebuild distance following a structured return-to-run program."
+        answer: "The amount and type of running to adjust depend on symptoms and the person's goals. A gradual return to activity may be discussed after assessment; there is no single mileage change that suits everyone."
       },
       {
         question: "How is runner's knee different from other knee pain?",
@@ -589,12 +554,12 @@ export const kneeServices: ServiceDetail[] = [
     category: "Knee",
     title: "Patellar Tracking Disorder Physiotherapy",
     metaTitle: "Patellar Tracking Disorder Physiotherapy in Manikonda | Kneecap Alignment Hyderabad",
-    metaDescription: "Specialized physiotherapy for patellar tracking disorder and kneecap alignment issues in Manikonda, Hyderabad. Expert care by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    metaDescription: "Specialized physiotherapy for patellar tracking disorder and kneecap alignment issues in Manikonda, Hyderabad. Expert care by Dr. Mohammed Hamid Ali.",
     h1: "Patellar Tracking Disorder Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for abnormal kneecap tracking, patellar malalignment, and anterior knee dysfunction.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Patellar tracking disorder physiotherapy and kneecap alignment treatment in Manikonda clinic",
-    whatItIs: "Patellar tracking disorder occurs when the kneecap (patella) does not move smoothly within its groove on the thigh bone (femoral trochlea) during knee bending and straightening. Instead of tracking centrally, the patella may shift laterally, tilt, or rotate abnormally, causing uneven pressure on the cartilage, pain, and potential joint damage over time. This condition commonly affects young active adults, women with wider pelvises, and individuals with muscle imbalances around the knee. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide specialized assessment and targeted rehabilitation to correct patellar mechanics and restore pain-free knee function.",
+    whatItIs: "Pain around the kneecap can occur with activity and may have different contributing factors. Kneecap movement is only one part of an assessment; symptoms do not establish a specific structural problem by themselves. A clinician can discuss whether physiotherapy may be appropriate.",
     causes: [
       "Weakness in the vastus medialis obliquus (VMO) failing to counteract lateral pull",
       "Tightness in the lateral retinaculum, ITB, or vastus lateralis pulling the patella outward",
@@ -609,7 +574,7 @@ export const kneeServices: ServiceDetail[] = [
       "Pain when sitting with bent knees for prolonged periods",
       "Visible lateral shifting of the patella when extending the knee"
     ],
-    howPhysioHelps: "Patellar tracking correction requires a comprehensive approach addressing the entire lower limb kinetic chain. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) combines patellar mobilization techniques to release tight lateral structures, targeted VMO strengthening to improve medial pull, hip stability training, and biomechanical correction. Patellar taping provides immediate symptom relief while the underlying muscle imbalances are corrected through progressive exercise.",
+    howPhysioHelps: "An assessment may consider knee, hip, and foot movement, activity, symptoms, and goals. If appropriate, a plan may include exercise or other options. Taping may offer short-term support for some people, but response varies and it does not guarantee lasting correction.",
     assessmentProcess: [
       "Patellar tracking observation during active knee extension in sitting and standing",
       "Patellar glide, tilt, and rotation mobility assessment",
@@ -619,18 +584,13 @@ export const kneeServices: ServiceDetail[] = [
     ],
     treatmentApproach: [
       "Patellar mobilization to release tight lateral retinaculum and improve medial glide",
-      "McConnell patellar taping to correct tracking and provide immediate pain relief",
+      "Patellar taping may be considered where appropriate; response varies",
       "Isolated VMO strengthening exercises (inner range quads, terminal knee extension)",
       "Hip abductor and external rotator strengthening to control femoral rotation",
       "ITB and lateral structure stretching with foam rolling and specific stretches"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical expertise in patellofemoral biomechanics and knee rehabilitation",
-      "Specialized orthopedic training in patellar tracking disorders (MPT Orthopedics)",
-      "Comprehensive kinetic chain approach addressing hip, knee, and foot contributions",
-      "Convenient Manikonda clinic with evening appointments for working professionals"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -646,7 +606,7 @@ export const kneeServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Can patellar tracking disorder be corrected without surgery?",
-        answer: "Yes, the vast majority of patellar tracking disorders are successfully corrected with specialized physiotherapy. Surgery is reserved only for cases with structural abnormalities or failed conservative management."
+        answer: "Treatment depends on the cause and severity of symptoms. Physiotherapy may be one option for some people, while others may need different assessment or care. A clinician can discuss options; no treatment can guarantee that surgery will be avoided."
       },
       {
         question: "Why is my kneecap tracking incorrectly?",

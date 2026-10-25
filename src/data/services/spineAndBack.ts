@@ -5,13 +5,13 @@ export const spineAndBackServices: ServiceDetail[] = [
     slug: "back-pain-physiotherapy-manikonda",
     category: "Spine & Back",
     title: "Back Pain Physiotherapy",
-    metaTitle: "Back Pain Physiotherapy in Manikonda | Dr. Hamid's Physio Clinic",
-    metaDescription: "Relieve acute and chronic back pain with evidence-based physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali, BPT. Book today!",
+    metaTitle: "Back Pain Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Relieve acute and chronic back pain with evidence-based physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali. Book today!",
     h1: "Back Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Clinical physiotherapy for acute and chronic lower back pain, muscle spasm, postural strain, and movement-related back discomfort in Manikonda. Focus on pain relief, mobility restoration, and preventing recurrence.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Back pain physiotherapy treatment and spinal care in Manikonda clinic",
-    whatItIs: "Back pain is the leading cause of activity restriction and workplace absence worldwide. It encompasses discomfort ranging from a dull, persistent ache in the lumbar spine to sudden, debilitating spasms that restrict simple daily movements such as bending, sitting, or standing up. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we look beyond surface symptoms to identify whether your back pain is rooted in disc pathology, facet joint irritation, ligamentous strain, or deep muscular imbalances.",
+    whatItIs: "Back pain is the leading cause of activity restriction and workplace absence worldwide. It encompasses discomfort ranging from a dull, persistent ache in the lumbar spine to sudden, debilitating spasms that restrict simple daily movements such as bending, sitting, or standing up. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, we look beyond surface symptoms to identify whether your back pain is rooted in disc pathology, facet joint irritation, ligamentous strain, or deep muscular imbalances.",
     causes: [
       "Prolonged sedentary sitting in non-ergonomic office chairs during software and desk work",
       "Improper lifting mechanics placing excessive shear stress on the lower lumbar vertebrae",
@@ -41,18 +41,13 @@ export const spineAndBackServices: ServiceDetail[] = [
     ],
     treatmentApproach: [
       "Hands-on spinal mobilization to restore hypomobile vertebral segment movement",
-      "Myofascial trigger point release to eliminate painful lumbar muscle spasms",
+      "Soft-tissue techniques may be considered to help manage muscle tenderness or guarding",
       "Core stabilization retraining utilizing low-load progressive stabilization exercises",
       "Directional preference exercises (Mckenzie method) to centralize and resolve symptoms",
       "Ergonomic workstation adjustments and safe lifting technique education"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of dedicated clinical experience diagnosing and treating spinal conditions",
-      "Direct 1-on-1 personalized treatment by Dr. Mohammed Hamid Ali, BPT",
-      "Evidence-based clinical approach avoiding unnecessary costly MRI imaging",
-      "Convenient Manikonda clinic location near Friends Colony Park with dedicated home visit options"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -72,11 +67,11 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "How many physiotherapy sessions will I need for my back pain?",
-        answer: "Most acute back strains improve substantially within 4 to 6 sessions. Chronic back pain usually requires a structured 3 to 5 week rehabilitation program to strengthen deep postural stabilizers and prevent future recurrence."
+        answer: "The number of sessions and pace of progress vary with the cause of pain, symptoms, health, and personal goals. An assessment can help discuss a plan and review progress over time."
       },
       {
         question: "Do you offer home visit physiotherapy for severe back pain in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy across Manikonda, Puppalguda, Alkapur Township, and surrounding Hyderabad neighborhoods for patients unable to travel to the clinic."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients unable to travel to the clinic."
       },
       {
         question: "Can physiotherapy help back pain caused by sitting at an IT desk job?",
@@ -97,12 +92,12 @@ export const spineAndBackServices: ServiceDetail[] = [
     category: "Spine & Back",
     title: "Sciatica Physiotherapy",
     metaTitle: "Sciatica Physiotherapy in Manikonda | Nerve Pain Relief Hyderabad",
-    metaDescription: "Relieve shooting sciatic nerve pain, leg numbness, and tingling with expert sciatica physiotherapy in Manikonda by Dr. Mohammed Hamid Ali, BPT. Call today!",
+    metaDescription: "Relieve shooting sciatic nerve pain, leg numbness, and tingling with expert sciatica physiotherapy in Manikonda by Dr. Mohammed Hamid Ali. Call today!",
     h1: "Sciatica Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Targeted treatment for sciatic nerve pain, radiating leg pain, tingling, numbness, and disc-related sciatica. Includes assessment, nerve mobility work, and progressive rehabilitation.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Sciatica physiotherapy and sciatic nerve decompression in Manikonda clinic",
-    whatItIs: "Sciatica is nerve pain caused by irritation, inflammation, or mechanical compression of the sciatic nerve — the largest nerve in the human body. The pain originates in the lower lumbar spine or buttock and radiates down through the back of the thigh, calf, and into the foot. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we pinpoint the exact anatomical site of sciatic nerve entrapment — whether from a lumbar disc herniation, spinal canal narrowing, or piriformis muscle impingement.",
+    whatItIs: "Sciatica is nerve pain caused by irritation, inflammation, or mechanical compression of the sciatic nerve — the largest nerve in the human body. The pain originates in the lower lumbar spine or buttock and radiates down through the back of the thigh, calf, and into the foot. At Dr Hamid’s Physio and Pain Clinic in Manikonda, we pinpoint the exact anatomical site of sciatic nerve entrapment — whether from a lumbar disc herniation, spinal canal narrowing, or piriformis muscle impingement.",
     causes: [
       "Herniation or protrusion of the L4-L5 or L5-S1 lumbar intervertebral disc compressing the nerve root",
       "Piriformis syndrome, where a tight piriformis muscle in the buttock compresses the passing sciatic nerve",
@@ -117,7 +112,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Weakness or heaviness in the affected leg making normal walking or toe-standing difficult",
       "Difficulty standing up straight or finding a comfortable sleeping posture"
     ],
-    howPhysioHelps: "Sciatica physiotherapy focuses on neural decompression, nerve desensitization, and addressing the mechanical source of compression. Through specific neural mobilization (neurodynamic sliders and tensioners), Dr. Mohammed Hamid Ali (BPT) restores smooth gliding of the sciatic nerve along its anatomical pathway while relieving mechanical disc pressure through directional extension and pelvic alignment.",
+    howPhysioHelps: "Sciatica physiotherapy focuses on neural decompression, nerve desensitization, and addressing the mechanical source of compression. Through specific neural mobilization (neurodynamic sliders and tensioners), Dr. Mohammed Hamid Ali restores smooth gliding of the sciatic nerve along its anatomical pathway while relieving mechanical disc pressure through directional extension and pelvic alignment.",
     assessmentProcess: [
       "Straight Leg Raise (SLR) and Slump neurodynamic tests to assess sciatic nerve sensitivity",
       "Detailed dermatomal sensory mapping and myotomal motor power evaluation (L4, L5, S1)",
@@ -133,12 +128,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Progressive lumbo-pelvic stabilization exercises to protect the nerve root from re-compression"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Proven expertise in non-surgical sciatic nerve decompression",
-      "Precise differentiation between disc herniation and deep gluteal piriformis syndrome",
-      "Careful, patient-paced neural mobilization ensuring exercises never flare up nerve irritation",
-      "Comprehensive home exercise protocols preventing future sciatic recurrences"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -154,7 +144,7 @@ export const spineAndBackServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Can physiotherapy cure sciatica without spinal surgery?",
-        answer: "Yes. Clinical research confirms that over 90% of sciatica cases recover completely with conservative physiotherapy. By centralizing the disc pressure and freeing the nerve root, surgery can almost always be avoided."
+        answer: "Some people with sciatica improve without surgery, but the course and appropriate care vary. Physiotherapy may help manage symptoms and support activity for some people. A medical assessment is important for severe or worsening symptoms, and treatment cannot guarantee that surgery will be avoided."
       },
       {
         question: "What is the difference between back pain and sciatica?",
@@ -162,7 +152,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Why does my sciatica hurt more when sitting down?",
-        answer: "Sitting increases intradiscal pressure in the lumbar spine by up to 40% compared to standing. This pushes bulging disc material backward directly against the sensitive sciatic nerve root."
+        answer: "Some people find that sitting changes or aggravates their symptoms. The reasons differ, and posture alone does not show whether a disc is pressing on a nerve. Varying position and taking movement breaks may be helpful; seek assessment for persistent symptoms."
       },
       {
         question: "What exercises should I avoid with active sciatica?",
@@ -170,11 +160,11 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Does Dr. Hamid provide home physiotherapy for severe sciatica in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali offers home visit physiotherapy across Puppalguda, Manikonda, and nearby Hyderabad areas for patients unable to travel due to severe sciatic pain."
+        answer: "Yes, Dr. Mohammed Hamid Ali offers home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients unable to travel due to severe sciatic pain."
       },
       {
         question: "How do I schedule a sciatica assessment at the Manikonda clinic?",
-        answer: "Call +91 76010 26596 or reach out via WhatsApp to book your consultation at Dr. Hamid's Physio and Pain Clinic."
+        answer: "Call +91 76010 26596 or reach out via WhatsApp to book your consultation at Dr Hamid’s Physio and Pain Clinic."
       }
     ]
   },
@@ -183,12 +173,12 @@ export const spineAndBackServices: ServiceDetail[] = [
     category: "Spine & Back",
     title: "Lumbar Pain Physiotherapy",
     metaTitle: "Lumbar Pain Physiotherapy in Manikonda | Lower Back Specialist Hyderabad",
-    metaDescription: "Expert lumbar pain physiotherapy in Manikonda. Clinical diagnosis and personalized rehabilitation for lower lumbar spine pain under Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Expert lumbar pain physiotherapy in Manikonda. Clinical diagnosis and personalized rehabilitation for lower lumbar spine pain under Dr. Mohammed Hamid Ali.",
     h1: "Lumbar Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Targeted clinical therapy for lumbar vertebral stiffness, mechanical lower back ache, and paraspinal muscle fatigue.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Lumbar pain physiotherapy and lower spine rehabilitation in Manikonda",
-    whatItIs: "Lumbar pain refers specifically to pain, stiffness, or functional limitation localized between the lower costal margin (ribs) and the gluteal folds. The five lumbar vertebrae (L1-L5) bear the majority of the human upper body's weight and absorb substantial ground reaction forces during locomotion. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we perform a thorough mechanical assessment to identify whether your lumbar symptoms originate from intervertebral disc degeneration, facet arthropathy, segmental instability, or postural exhaustion.",
+    whatItIs: "Lumbar pain refers specifically to pain, stiffness, or functional limitation localized between the lower costal margin (ribs) and the gluteal folds. The five lumbar vertebrae (L1-L5) bear the majority of the human upper body's weight and absorb substantial ground reaction forces during locomotion. At Dr Hamid’s Physio and Pain Clinic in Manikonda, we perform a thorough mechanical assessment to identify whether your lumbar symptoms originate from intervertebral disc degeneration, facet arthropathy, segmental instability, or postural exhaustion.",
     causes: [
       "Repetitive flexion and rotational loading on the lumbar motion segments",
       "Prolonged static desk postures creating cumulative creep in lumbar ligaments",
@@ -204,7 +194,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Difficulty sitting through long meetings, drives, or cinema screenings",
       "Protective paraspinal muscle tightness and painful tender points"
     ],
-    howPhysioHelps: "Physiotherapy restores harmonious biomechanics to the five lumbar motion segments. Dr. Mohammed Hamid Ali (BPT) employs hands-on Maitland and Mulligan joint mobilizations to restore pain-free segmental excursion, releases compensatory muscle guarding, and trains deep segmental stabilization muscles that shield the lumbar vertebrae from daily mechanical strain.",
+    howPhysioHelps: "Physiotherapy restores harmonious biomechanics to the five lumbar motion segments. Dr. Mohammed Hamid Ali employs hands-on Maitland and Mulligan joint mobilizations to restore pain-free segmental excursion, releases compensatory muscle guarding, and trains deep segmental stabilization muscles that shield the lumbar vertebrae from daily mechanical strain.",
     assessmentProcess: [
       "Segment-by-segment central and unilateral posterior-anterior (PA) lumbar joint spring tests",
       "Observation of the lumbar lordotic curve in static stance and functional movement",
@@ -220,12 +210,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Comprehensive workplace ergonomic modification and movement pacing strategies"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Precise segment-by-segment spinal palpation and clinical biomechanical diagnosis",
-      "8+ years of dedicated clinical musculoskeletal experience in Hyderabad",
-      "Personalized 1-on-1 attention with customized exercise progression",
-      "Focus on active self-management to prevent recurrent episodes"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -257,11 +242,11 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visits for lumbar pain?",
-        answer: "Yes, Dr. Hamid provides home visit physiotherapy across Manikonda, Puppalguda, and surrounding areas."
+        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       },
       {
         question: "How soon can I get an appointment?",
-        answer: "Same-day appointments are frequently available. Call +91 76010 26596 or contact us via WhatsApp."
+        answer: "Contact the clinic to ask about current appointment availability."
       }
     ]
   },
@@ -271,12 +256,12 @@ export const spineAndBackServices: ServiceDetail[] = [
     category: "Spine & Back",
     title: "Disc Bulge Physiotherapy",
     metaTitle: "Disc Bulge Physiotherapy in Manikonda | Herniated Disc Treatment",
-    metaDescription: "Evidence-based disc bulge and herniated disc physiotherapy in Manikonda, Hyderabad. Non-surgical recovery by Dr. Mohammed Hamid Ali, BPT. Book your consultation!",
+    metaDescription: "Evidence-based disc bulge and herniated disc physiotherapy in Manikonda, Hyderabad. Non-surgical recovery by Dr. Mohammed Hamid Ali. Book your consultation!",
     h1: "Disc Bulge Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialised physiotherapy for disc bulge and prolapsed intervertebral disc problems. Focuses on reducing nerve pressure, improving spinal stability, and restoring safe movement.",
     imageSrc: "/images/services/spine-care.svg",
     altText: "Disc bulge physiotherapy and herniated disc treatment in Manikonda clinic",
-    whatItIs: "An intervertebral disc bulge occurs when the tough outer ring of the spinal disc (annulus fibrosus) weakens or tears, allowing the soft gelatinous core (nucleus pulposus) to bulge outward into the spinal canal or intervertebral foramen. Most commonly occurring at the L4-L5 and L5-S1 lumbar levels, disc bulges can press against spinal nerves, causing severe localized back pain or radiating pain into the gluteal region and legs. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we provide specialized non-surgical disc decompression protocols designed to retract disc material and stimulate annular healing.",
+    whatItIs: "An intervertebral disc bulge occurs when the tough outer ring of the spinal disc (annulus fibrosus) weakens or tears, allowing the soft gelatinous core (nucleus pulposus) to bulge outward into the spinal canal or intervertebral foramen. Most commonly occurring at the L4-L5 and L5-S1 lumbar levels, disc bulges can press against spinal nerves, causing severe localized back pain or radiating pain into the gluteal region and legs. At Dr Hamid’s Physio and Pain Clinic in Manikonda, we provide specialized non-surgical disc decompression protocols designed to retract disc material and stimulate annular healing.",
     causes: [
       "Repeated forward bending and twisting under compressive load (e.g. lifting heavy luggage incorrectly)",
       "Years of poor slumped sitting posture causing gradual anterior disc compression and posterior displacement",
@@ -291,7 +276,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Pain relief when standing or lying flat on a firm surface",
       "Feeling that the lower back is 'locking up' or unstable"
     ],
-    howPhysioHelps: "Clinical physiotherapy utilizes hydrostatic spinal mechanics to guide disc material back toward its central position. Using the McKenzie Method of Mechanical Diagnosis and Therapy (MDT), Dr. Mohammed Hamid Ali (BPT) systematically assesses your directional preference. Repetitive extension and postural adjustments create negative intradiscal pressure, which encourages the bulge to retract while removing pressure from inflamed nerve roots.",
+    howPhysioHelps: "Clinical physiotherapy utilizes hydrostatic spinal mechanics to guide disc material back toward its central position. Using the McKenzie Method of Mechanical Diagnosis and Therapy (MDT), Dr. Mohammed Hamid Ali systematically assesses your directional preference. Repetitive extension and postural adjustments create negative intradiscal pressure, which encourages the bulge to retract while removing pressure from inflamed nerve roots.",
     assessmentProcess: [
       "Mechanical directional preference testing to find movements that centralize symptoms",
       "Detailed review of existing MRI or CT imaging to correlate findings with clinical presentation",
@@ -307,12 +292,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Progressive deep core bracing (drawing-in maneuver, bird-dog, side planks) to stabilize the segment"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Expertise in non-surgical McKenzie directional therapy for disc injuries",
-      "Clear explanation of disc mechanics so patients feel confident moving safely",
-      "Safe, protocol-driven rehabilitation that prevents unnecessary spinal surgery",
-      "Trusted clinical reputation with over 100+ five-star patient recovery stories"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -344,7 +324,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Can I receive home physiotherapy for a severe disc bulge?",
-        answer: "Yes, Dr. Hamid provides home visit physiotherapy across Manikonda, Puppalguda, and adjacent Hyderabad localities for patients with severe acute disc pain."
+        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with severe acute disc pain."
       },
       {
         question: "How do I book a consultation?",
@@ -358,12 +338,12 @@ export const spineAndBackServices: ServiceDetail[] = [
     category: "Spine & Back",
     title: "Lumbar Spondylosis Physiotherapy",
     metaTitle: "Lumbar Spondylosis Physiotherapy in Manikonda | Spine Arthritis Care",
-    metaDescription: "Relieve spinal stiffness and lumbar spondylosis pain with specialized physiotherapy in Manikonda, Hyderabad. Expert care by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Relieve spinal stiffness and lumbar spondylosis pain with specialized physiotherapy in Manikonda, Hyderabad. Expert care by Dr. Mohammed Hamid Ali.",
     h1: "Lumbar Spondylosis Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized geriatric and adult rehabilitation for lumbar spine arthritis, disc space narrowing, and osteophytic stiffness.",
     imageSrc: "/images/services/spine-care.svg",
     altText: "Lumbar spondylosis physiotherapy and spine arthritis care in Manikonda clinic",
-    whatItIs: "Lumbar spondylosis is an age-related degenerative condition affecting the discs, vertebral bodies, and facet joints of the lower spine. Over decades, gradual dehydration of intervertebral discs leads to reduced disc height, bone spur formation (osteophytes), and facet joint arthrosis. While natural with age, it can cause persistent morning stiffness, aching after walking, and reduced functional mobility. At Dr. Hamid's Physio and Pain Clinic in Manikonda, our focus is on keeping your spinal joints mobile, unweighting the facet joints, and strengthening muscular support to ensure an active, pain-free life.",
+    whatItIs: "Lumbar spondylosis describes age-related changes in the lower spine. Some people have pain or stiffness, while others have no symptoms. An assessment can help consider whether physiotherapy may support movement and everyday activity; it cannot reverse age-related changes or guarantee pain-free function.",
     causes: [
       "Natural age-related degenerative changes in lumbar discs and articular cartilage",
       "History of heavy physical labor or high-impact athletic pursuits",
@@ -378,7 +358,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Pain that improves when leaning forward slightly on a shopping cart or walker",
       "Occasional referred ache into the buttocks or outer hips"
     ],
-    howPhysioHelps: "While degenerative joint changes cannot be reversed, physiotherapy is remarkably effective at restoring pain-free function. Dr. Mohammed Hamid Ali (BPT) uses gentle rotational mobilizations to improve synovial fluid circulation within arthritic facet joints, applies soft-tissue therapy to relax chronic paraspinal tension, and prescribes low-impact strengthening exercises that build a muscular 'corset' around the spine.",
+    howPhysioHelps: "While degenerative joint changes cannot be reversed, physiotherapy is remarkably effective at restoring pain-free function. Dr. Mohammed Hamid Ali uses gentle rotational mobilizations to improve synovial fluid circulation within arthritic facet joints, applies soft-tissue therapy to relax chronic paraspinal tension, and prescribes low-impact strengthening exercises that build a muscular 'corset' around the spine.",
     assessmentProcess: [
       "Assessment of lumbar extension and facet joint compression tolerance (Kemp's test)",
       "Evaluation of spinal mobility in flexion, extension, and lateral rotation",
@@ -394,12 +374,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Low-impact aerobic conditioning program (stationary cycle, walking pacing)"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Gentle, respectful, patient-centered care for seniors and middle-aged adults",
-      "Extensive experience treating degenerative spinal conditions without painful manipulations",
-      "Clear home exercises that fit comfortably into your daily routine",
-      "Dedicated clinic and home visit options across Manikonda and Puppalguda"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -427,7 +402,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for elderly patients with spondylosis?",
-        answer: "Yes, Dr. Hamid provides compassionate home visits across Manikonda, Puppalguda, and adjacent areas for seniors who find clinic travel challenging."
+        answer: "Yes, Dr. Hamid provides compassionate home visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for seniors who find clinic travel challenging."
       },
       {
         question: "What should I wear for my physiotherapy session?",
@@ -445,12 +420,12 @@ export const spineAndBackServices: ServiceDetail[] = [
     category: "Spine & Back",
     title: "Spinal Injuries Rehabilitation",
     metaTitle: "Spinal Injuries Rehabilitation in Manikonda | Spine Trauma Recovery",
-    metaDescription: "Comprehensive spinal injury rehabilitation in Manikonda, Hyderabad. Specialized recovery for vertebral fractures, post-trauma spine care by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Comprehensive spinal injury rehabilitation in Manikonda, Hyderabad. Specialized recovery for vertebral fractures, post-trauma spine care by Dr. Mohammed Hamid Ali.",
     h1: "Spinal Injuries Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for post-traumatic spinal injuries, stable vertebral compression fractures, and post-brace spinal recovery.",
     imageSrc: "/images/services/spine-care.svg",
     altText: "Spinal injury rehabilitation and post-trauma recovery in Manikonda clinic",
-    whatItIs: "Spinal injuries — resulting from motor vehicle accidents, domestic falls, sports trauma, or osteoporotic compression fractures — require careful, protocol-driven clinical rehabilitation. Whether recovering from a conservative period of spinal bracing (such as a Taylor's or TLSO brace) or post-surgical internal stabilization, restoring spinal confidence, segmental mobility, and muscular endurance is critical. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT) provides safe, structured spinal rehabilitation that rebuilds functional independence step by step.",
+    whatItIs: "Spinal injuries — resulting from motor vehicle accidents, domestic falls, sports trauma, or osteoporotic compression fractures — require careful, protocol-driven clinical rehabilitation. Whether recovering from a conservative period of spinal bracing (such as a Taylor's or TLSO brace) or post-surgical internal stabilization, restoring spinal confidence, segmental mobility, and muscular endurance is critical. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali provides safe, structured spinal rehabilitation that rebuilds functional independence step by step.",
     causes: [
       "Motorcycle, car, or pedestrian traffic accidents causing sudden spinal deceleration trauma",
       "Falls from heights or domestic slip-and-fall injuries resulting in stable vertebral fractures",
@@ -465,7 +440,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Loss of upright postural endurance, with early fatigue when standing or sitting",
       "Reduced thoracic chest expansion and compensatory neck or hip stiffness"
     ],
-    howPhysioHelps: "Spinal injury rehabilitation adheres strictly to orthopedic healing timelines. Once bony consolidation is confirmed, Dr. Mohammed Hamid Ali (BPT) guides patients through gentle active-assisted range of motion, gradual weaning from external braces, isometric muscle activation, and progressive kinetic chain strengthening. This carefully controlled loading promotes bone remodeling and restores confident daily movement.",
+    howPhysioHelps: "Spinal injury rehabilitation adheres strictly to orthopedic healing timelines. Once bony consolidation is confirmed, Dr. Mohammed Hamid Ali guides patients through gentle active-assisted range of motion, gradual weaning from external braces, isometric muscle activation, and progressive kinetic chain strengthening. This carefully controlled loading promotes bone remodeling and restores confident daily movement.",
     assessmentProcess: [
       "Thorough review of radiographic imaging (X-rays, CT, MRI) and orthopedic surgeon clearance",
       "Gentle evaluation of protected spinal range of motion within prescribed safe limits",
@@ -481,12 +456,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Functional retraining for safe daily activities (getting in/out of bed, chairs, cars)"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Strict compliance with orthopedic surgical protocols and bone healing guidelines",
-      "Patient, reassuring approach that builds psychological confidence after trauma",
-      "Careful monitoring of vital biomechanical milestones at every session",
-      "Home visit options available for early post-injury recovery in Manikonda"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -527,12 +497,12 @@ export const spineAndBackServices: ServiceDetail[] = [
     category: "Spine & Back",
     title: "Spine Physiotherapy & Rehabilitation",
     metaTitle: "Spine Physiotherapy in Manikonda | Full Spine Rehabilitation Hyderabad",
-    metaDescription: "Comprehensive full spine physiotherapy in Manikonda, Hyderabad. Expert care for postural disorders, scoliosis, and vertebral stiffness by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Comprehensive full spine physiotherapy in Manikonda, Hyderabad. Expert care for postural disorders, scoliosis, and vertebral stiffness by Dr. Mohammed Hamid Ali.",
     h1: "Spine Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Whole-spine biomechanical assessment, postural alignment, and neuromuscular stabilization across cervical, thoracic, and lumbar regions.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Full spine physiotherapy and vertebral alignment in Manikonda clinic",
-    whatItIs: "The human spine functions as an integrated kinetic chain. A restriction or misalignment in the thoracic spine or pelvis inevitably creates compensatory overload in the cervical or lumbar regions. Spine Physiotherapy at Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad takes a holistic, whole-spine approach. Rather than treating isolated pain spots, Dr. Mohammed Hamid Ali (BPT) evaluates the global sagittal alignment, rib cage mechanics, pelvic levelness, and deep axial musculature to restore lasting spinal harmony.",
+    whatItIs: "The human spine functions as an integrated kinetic chain. A restriction or misalignment in the thoracic spine or pelvis inevitably creates compensatory overload in the cervical or lumbar regions. Spine Physiotherapy at Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad takes a holistic, whole-spine approach. Rather than treating isolated pain spots, Dr. Mohammed Hamid Ali evaluates the global sagittal alignment, rib cage mechanics, pelvic levelness, and deep axial musculature to restore lasting spinal harmony.",
     causes: [
       "Chronic desk-bound postural fatigue creating thoracic kyphosis and compensatory forward head posture",
       "Idiopathic or postural scoliosis causing asymmetrical spinal loading",
@@ -547,7 +517,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Shallow breathing due to stiff thoracic facet and costovertebral joints",
       "Recurrent episodic flare-ups of both neck and lower back discomfort"
     ],
-    howPhysioHelps: "Whole-spine physiotherapy combines articular mobilization, myofascial release, and neuromuscular re-education. Dr. Mohammed Hamid Ali (BPT) mobilizes stiff segments (frequently the thoracic spine), retrains diaphragmatic breathing, and activates deep stabilizing slings (anterior and posterior oblique slings) that hold your spine erect effortlessly without fatigue.",
+    howPhysioHelps: "Whole-spine physiotherapy combines articular mobilization, myofascial release, and neuromuscular re-education. Dr. Mohammed Hamid Ali mobilizes stiff segments (frequently the thoracic spine), retrains diaphragmatic breathing, and activates deep stabilizing slings (anterior and posterior oblique slings) that hold your spine erect effortlessly without fatigue.",
     assessmentProcess: [
       "Global spinal postural plumb line analysis in multiple planes",
       "Segmental assessment of cervical, thoracic, and lumbar mobility",
@@ -563,12 +533,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Personalized daily mobility routine and ergonomic workstation configuration"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Holistic whole-spine philosophy instead of quick, isolated symptom masking",
-      "8+ years of dedicated clinical experience in Hyderabad",
-      "Clear, patient-friendly guidance on spine health and ergonomics",
-      "Trusted clinical environment with modern rehabilitation equipment"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -609,12 +574,12 @@ export const spineAndBackServices: ServiceDetail[] = [
     category: "Spine & Back",
     title: "Spondylolisthesis Physiotherapy",
     metaTitle: "Spondylolisthesis Physiotherapy in Manikonda | Vertebral Slip Care Hyderabad",
-    metaDescription: "Specialized physiotherapy for spondylolisthesis and vertebral slippage in Manikonda, Hyderabad. Expert conservative care by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics). Book today!",
+    metaDescription: "Specialized physiotherapy for spondylolisthesis and vertebral slippage in Manikonda, Hyderabad. Expert conservative care by Dr. Mohammed Hamid Ali. Book today!",
     h1: "Spondylolisthesis Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for vertebral slippage, spinal instability, and nerve compression from spondylolisthesis.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Spondylolisthesis physiotherapy and vertebral slip rehabilitation in Manikonda clinic",
-    whatItIs: "Spondylolisthesis is a spinal condition where one vertebra slips forward over the vertebra below it, most commonly occurring at the L4-L5 or L5-S1 levels. This forward slippage can narrow the spinal canal, compress nerve roots, and cause persistent lower back pain, hamstring tightness, and radiating leg symptoms. The condition ranges from Grade I (mild, less than 25% slippage) to Grade V (complete displacement). At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide specialized conservative management for stable spondylolisthesis, focusing on core stabilization, spinal decompression, and functional strengthening to avoid or delay surgical intervention.",
+    whatItIs: "Spondylolisthesis is a spinal condition where one vertebra slips forward over the vertebra below it, most commonly occurring at the L4-L5 or L5-S1 levels. This forward slippage can narrow the spinal canal, compress nerve roots, and cause persistent lower back pain, hamstring tightness, and radiating leg symptoms. The condition ranges from Grade I (mild, less than 25% slippage) to Grade V (complete displacement). At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, we provide specialized conservative management for stable spondylolisthesis, focusing on core stabilization, spinal decompression, and functional strengthening to avoid or delay surgical intervention.",
     causes: [
       "Degenerative changes in the discs and facet joints leading to segmental instability",
       "Spondylolysis (stress fracture in the pars interarticularis) from repetitive hyperextension in athletes",
@@ -629,7 +594,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Weakness or heaviness in the legs after walking short distances",
       "Pain relief when sitting or bending forward (shopping cart sign)"
     ],
-    howPhysioHelps: "Conservative physiotherapy is highly effective for stable Grade I and II spondylolisthesis. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) implements a flexion-biased stabilization program that reduces shear forces on the slipped vertebra. Core bracing exercises, posterior pelvic tilt training, and neutral spine mechanics protect the unstable segment while strengthening the muscular corset that supports your spine during daily activities.",
+    howPhysioHelps: "Conservative physiotherapy is highly effective for stable Grade I and II spondylolisthesis. Dr. Mohammed Hamid Ali implements a flexion-biased stabilization program that reduces shear forces on the slipped vertebra. Core bracing exercises, posterior pelvic tilt training, and neutral spine mechanics protect the unstable segment while strengthening the muscular corset that supports your spine during daily activities.",
     assessmentProcess: [
       "Detailed review of standing lateral and flexion/extension X-rays to grade the slippage and assess stability",
       "Segmental spinal stability testing and postural deviation analysis",
@@ -645,12 +610,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Activity modification education and safe lifting mechanics training"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical experience managing spinal instability and degenerative conditions",
-      "Specialized training in orthopedic spinal biomechanics (MPT Orthopedics)",
-      "Evidence-based flexion-biased protocols tailored to your specific grade and symptoms",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -678,7 +638,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Do you provide home visit physiotherapy for spondylolisthesis in Manikonda?",
-        answer: "Yes, Dr. Hamid provides personalized home visit physiotherapy across Manikonda, Puppalguda, and surrounding areas for patients with spinal conditions requiring specialized care."
+        answer: "Yes, Dr. Hamid provides personalized home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with spinal conditions requiring specialized care."
       },
       {
         question: "How do I book a consultation for spondylolisthesis?",

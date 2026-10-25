@@ -64,6 +64,7 @@ try {
     "/privacy-policy",
     "/terms-and-conditions",
     ...allServices.map(({ slug }) => `/services/${slug}`),
+    ...conditions.map(({ slug }) => `/conditions/${slug}`),
     ...blogPosts.map(({ slug }) => `/blogs/${slug}`),
   ];
   const lastModified = new Date().toISOString().slice(0, 10);

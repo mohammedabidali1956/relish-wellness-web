@@ -18,7 +18,6 @@ const BlogPostPage = () => {
   const canonicalUrl = `https://www.drhamidphysio.in/blogs/${post.slug}`;
   const publishedDate = new Date(post.date).toISOString().slice(0, 10);
   const modifiedDate = post.lastUpdated ? new Date(post.lastUpdated).toISOString().slice(0, 10) : publishedDate;
-  const authorCredentials = post.author === "Dr. Mohammed Hamid Ali" ? "BPT" : undefined;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
@@ -26,8 +25,8 @@ const BlogPostPage = () => {
     description: post.excerpt,
     datePublished: publishedDate,
     dateModified: modifiedDate,
-    author: { "@type": post.author === "Clinic Education Team" ? "Organization" : "Person", name: post.author, ...(authorCredentials ? { hasCredential: authorCredentials } : {}) },
-    publisher: { "@type": "Organization", name: "Dr. Hamid's Physio and Pain Clinic" },
+    author: { "@type": post.author === "Clinic Education Team" ? "Organization" : "Person", name: post.author },
+    publisher: { "@type": "Organization", name: "Dr Hamid’s Physio and Pain Clinic" },
     mainEntityOfPage: canonicalUrl,
     about: { "@type": "Thing", name: post.category },
   };
@@ -46,7 +45,7 @@ const BlogPostPage = () => {
     <div>
       <StructuredData 
         type="blog" 
-        pageTitle={`${post.title} | Dr. Hamid's Physio and Pain Clinic`}
+        pageTitle={`${post.title} | Dr Hamid’s Physio and Pain Clinic`}
         pageDescription={post.excerpt}
       />
       <Helmet>
@@ -87,7 +86,12 @@ const BlogPostPage = () => {
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm sm:text-base text-muted-foreground">
               <div className="flex items-center gap-2">
                 <User className="w-5 h-5" />
-                <span className="font-medium">{post.author}{authorCredentials ? `, ${authorCredentials}` : ""}</span>
+                <span className="font-medium">{post.author}</span>
+                {post.author === "Dr. Mohammed Hamid Ali" && (
+                  <span className="font-medium text-[#8a5d24]">
+                    BPT, MPT (Ortho) · Regd. No. 0413 · Consultant Physiotherapist
+                  </span>
+                )}
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-5 h-5" />
@@ -114,11 +118,11 @@ const BlogPostPage = () => {
             <figure className="overflow-hidden rounded-md border border-border bg-muted">
               <img 
                 src={post.imageUrl} 
-                alt={`${post.title} - Dr. Hamid's Physio and Pain Clinic`}
+                alt={`${post.title} - Dr Hamid’s Physio and Pain Clinic`}
                 className="aspect-[5/4] w-full object-cover sm:aspect-[16/9]"
                 width="1000"
                 height="800"
-                {...{ fetchpriority: "high" }}
+                loading="eager"
               />
               {isKneeStairsArticle && <figcaption className="px-4 py-3 text-sm text-muted-foreground">Knee pain during stair climbing is common and can have several underlying causes.</figcaption>}
             </figure>
@@ -191,7 +195,7 @@ const BlogPostPage = () => {
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Ready to Start Your Recovery Journey?</h2>
             <p className="text-lg mb-8 text-white/90">
-              Book a consultation at Dr. Hamid's Physio and Pain Clinic in Manikonda and experience expert physiotherapy care.
+              Contact Dr Hamid’s Physio and Pain Clinic in Manikonda to ask about an assessment and current appointment availability.
             </p>
             <Link to="/#appointment">
               <Button className="bg-card text-relish-700 hover:bg-muted px-4 sm:px-8 py-3 font-medium text-lg">
@@ -199,6 +203,11 @@ const BlogPostPage = () => {
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+      <section className="bg-card px-4 py-8" aria-label="Health information disclaimer">
+        <div className="container max-w-4xl rounded-lg border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-950">
+          This article provides general health information. It is not a diagnosis or an individual treatment plan. Seek appropriate medical care for severe, sudden, or concerning symptoms.
         </div>
       </section>
     </div>

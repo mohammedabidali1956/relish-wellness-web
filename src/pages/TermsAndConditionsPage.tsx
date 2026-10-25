@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
+// TODO(legal): Confirm the operating entity, governing law, dispute process, and booking, fee, cancellation, refund, and home-visit terms before publication.
 const TermsAndConditionsPage = () => {
   const canonicalUrl = "https://www.drhamidphysio.in/terms-and-conditions";
 
   return (
-    <main className="min-h-screen bg-[#faf6ed] px-4 py-12 sm:py-16">
+    <div id="terms-and-conditions-page" className="min-h-screen bg-[#faf6ed] px-4 py-12 sm:py-16">
       <Helmet>
         <title>Terms &amp; Conditions | Dr Hamid’s Physio and Pain Clinic</title>
         <meta name="description" content="Draft website terms for Dr Hamid’s Physio and Pain Clinic, Manikonda, Hyderabad." />
@@ -70,7 +71,7 @@ const TermsAndConditionsPage = () => {
           For clinic enquiries, use the <Link to="/contact">contact page</Link>. For privacy questions, use the placeholder contact shown in the <Link to="/privacy-policy">Privacy Policy draft</Link> after it has been replaced with a monitored address.
         </p>
       </article>
-    </main>
+    </div>
   );
 };
 

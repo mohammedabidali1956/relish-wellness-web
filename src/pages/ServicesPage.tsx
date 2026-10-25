@@ -9,7 +9,6 @@ import {
 } from "@/data/services";
 import { Button } from "@/components/ui/button";
 import { openWhatsApp } from "@/lib/whatsapp";
-import { PRACTO_CONSULTATION_FEE_INR, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 import {
   ArrowRight,
   Phone,
@@ -58,13 +57,13 @@ const ServicesPage: React.FC = () => {
         "@type": "MedicalWebPage",
         "@id": "https://www.drhamidphysio.in/services#webpage",
         url: canonicalUrl,
-        name: "Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic",
+        name: "Physiotherapy Services in Manikonda | Dr Hamid’s Physio and Pain Clinic",
         description:
-          "Comprehensive condition-based physiotherapy in Manikonda, Hyderabad: Spine, Neck, Knee, Shoulder, Neuro Rehab, Sports Injuries & Home Visits by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+          "Physiotherapy and rehabilitation services in Manikonda, Hyderabad, including care for spine, neck, knee, shoulder, neurological, sports, and post-surgery needs.",
         inLanguage: "en-IN",
         about: {
           "@type": "Physiotherapy",
-          name: "Dr. Hamid's Physio and Pain Clinic",
+          name: "Dr Hamid’s Physio and Pain Clinic",
           telephone: "+917601026596",
           address: {
             "@type": "PostalAddress",
@@ -94,7 +93,7 @@ const ServicesPage: React.FC = () => {
         <title>Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder &amp; Home Visits</title>
         <meta
           name="description"
-          content="Explore physiotherapy for back, neck, knee and shoulder pain, sports injuries and recovery after surgery in Manikonda. Home visits available."
+          content="Explore physiotherapy for back, neck, knee and shoulder pain, sports injuries and recovery after surgery in Manikonda. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage."
         />
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content="Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder & Home Visits" />
@@ -105,8 +104,8 @@ const ServicesPage: React.FC = () => {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Physiotherapy Services in Manikonda | Dr. Hamid's Physio Clinic" />
-        <meta name="twitter:description" content="Physiotherapy programs for back, neck, knee and shoulder pain, sports injuries and post-surgery recovery. Home visits available." />
+        <meta name="twitter:title" content="Physiotherapy Services in Manikonda | Dr Hamid’s Physio and Pain Clinic" />
+        <meta name="twitter:description" content="Physiotherapy programs for back, neck, knee and shoulder pain, sports injuries and post-surgery recovery in Manikonda. Home visits generally target locations within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage." />
         <meta name="twitter:image" content="https://www.drhamidphysio.in/images/logo/og-image.png" />
         <script type="application/ld+json">{JSON.stringify(servicesStructuredData)}</script>
       </Helmet>
@@ -125,7 +124,7 @@ const ServicesPage: React.FC = () => {
             </h1>
 
             <p className="text-base sm:text-lg text-[#4a5568] leading-relaxed">
-              At Dr Hamid’s Physio and Pain Clinic, we provide doctor-led physiotherapy for back pain, neck pain, knee pain, shoulder problems, sciatica, sports injuries, post-surgical rehabilitation and neurological conditions. Our clinic is located in Manikonda, Hyderabad, and we also offer home physiotherapy visits in Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas. Every treatment plan is individualised after proper assessment by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413, Consultant Physiotherapist.
+              Dr Hamid’s Physio and Pain Clinic lists physiotherapy services for back pain, neck pain, knee pain, shoulder problems, sciatica, sports injuries, post-surgical rehabilitation, and neurological conditions. The clinic is in Manikonda, Hyderabad. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage and availability.
             </p>
 
             <div id="services-cta-top" className="services-cta bg-white border border-[#e5dec9] rounded-xl p-5 text-left space-y-2">
@@ -133,13 +132,13 @@ const ServicesPage: React.FC = () => {
                 Ready to start your recovery?
               </h2>
               <p className="text-sm text-[#4a5568] leading-relaxed">
-                Book a consultation or home visit with Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413.
+                Contact the clinic to ask about appointments and home visits.
               </p>
               <p className="text-sm font-semibold text-[#081a2e]">
                 Call or WhatsApp: <a href="tel:+917601026596" className="text-[#8a5d24] hover:underline">+91 76010 26596</a>
               </p>
               <p className="text-xs text-[#64748b]">
-                Serving Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas.
+                Clinic visits serve Manikonda and nearby areas. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage.
               </p>
               <div className="flex flex-col sm:flex-row gap-2 pt-1">
                 <Button onClick={handleCall} className="bg-[#081a2e] hover:bg-[#122842] text-white text-sm">
@@ -155,38 +154,11 @@ const ServicesPage: React.FC = () => {
 
 
             <div id="consultation-fee" className="mt-4 rounded-xl border border-[#e5dec9] bg-[#fffbf2] p-4 text-left">
-              <h2 className="font-serif text-lg font-bold text-[#081a2e]">Consultation fee</h2>
+              <h2 className="font-serif text-lg font-bold text-[#081a2e]">Fees and availability</h2>
               <p className="mt-1 text-sm leading-relaxed text-[#4a5568]">
-                Practo currently lists a consultation fee of ₹{PRACTO_CONSULTATION_FEE_INR}. Please confirm the current fee when booking; treatment sessions and home visits may be priced separately.
+                Consultation fee: ₹300. Physiotherapy treatment starts from ₹500; the total cost varies by treatment. Contact the clinic to confirm appointment availability and home-visit details.
               </p>
-              <a
-                href={PRACTO_PROFILE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-flex text-sm font-semibold text-[#8a5d24] hover:underline"
-              >
-                View Dr. Hamid's Practo profile
-              </a>
-            </div>
-
-            {/* Quick Stats Banner */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 max-w-2xl mx-auto text-left">
-              <div className="bg-white/80 border border-[#e5dec9] p-3 rounded-xl">
-                <p className="text-xl sm:text-2xl font-bold text-[#081a2e]">40+</p>
-                <p className="text-xs text-[#64748b]">Specific Conditions</p>
-              </div>
-              <div className="bg-white/80 border border-[#e5dec9] p-3 rounded-xl">
-                <p className="text-xl sm:text-2xl font-bold text-[#8a5d24]">1-on-1</p>
-                <p className="text-xs text-[#64748b]">Doctor Attention</p>
-              </div>
-              <div className="bg-white/80 border border-[#e5dec9] p-3 rounded-xl">
-                <p className="text-xl sm:text-2xl font-bold text-[#081a2e]">Home Physio</p>
-                <p className="text-xs text-[#64748b]">Visits in Manikonda</p>
-              </div>
-              <div className="bg-white/80 border border-[#e5dec9] p-3 rounded-xl">
-                <p className="text-xl sm:text-2xl font-bold text-[#8a5d24]">8+ Yrs</p>
-                <p className="text-xs text-[#64748b]">Clinical Mastery</p>
-              </div>
+              <Link to="/contact" className="mt-2 inline-flex text-sm font-semibold text-[#8a5d24] hover:underline">Contact the clinic</Link>
             </div>
 
             {/* Search Input Box */}
@@ -242,7 +214,7 @@ const ServicesPage: React.FC = () => {
       )}
 
       {/* Main Content Area */}
-      <main className="py-12 sm:py-16 md:py-20">
+      <section id="services-list" className="py-12 sm:py-16 md:py-20">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6 space-y-16">
           {/* Active Search Results View */}
           {filteredServices && (
@@ -273,7 +245,7 @@ const ServicesPage: React.FC = () => {
                     No exact match found
                   </h3>
                   <p className="text-sm text-[#4a5568] max-w-md mx-auto">
-                    We treat almost all musculoskeletal, spinal, and neurological conditions. Call Dr. Hamid directly to discuss your specific symptoms.
+                    The clinic lists musculoskeletal, spinal, and neurological physiotherapy services. Call to ask whether an assessment may be appropriate for your symptoms.
                   </p>
                   <Button onClick={handleCall} className="bg-[#081a2e] text-white text-xs mt-2">
                     <Phone className="w-3.5 h-3.5 mr-1 text-[#8a5d24]" />
@@ -359,7 +331,7 @@ const ServicesPage: React.FC = () => {
                       )}
                     </div>
                     <span className="text-xs font-semibold text-[#64748b] bg-white border border-[#e5dec9] px-3 py-1 rounded-full self-start sm:self-auto">
-                      {group.services.length} Specialized Programs
+                      {group.services.length} Services
                     </span>
                   </div>
 
@@ -434,7 +406,7 @@ const ServicesPage: React.FC = () => {
                     Supporting Therapies &amp; Electro-Physical Modalities
                   </h2>
                   <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed">
-                    At Dr. Hamid's clinic, modalities are used selectively as supportive tools to alleviate acute pain, reduce muscle spasms, and soften tight tissues—preparing your body for active, doctor-guided exercise rehabilitation.
+                    At Dr Hamid’s Physio and Pain Clinic, modalities are used selectively as supportive tools to alleviate acute pain, reduce muscle spasms, and soften tight tissues—preparing your body for active, doctor-guided exercise rehabilitation.
                   </p>
                 </div>
 
@@ -486,13 +458,13 @@ const ServicesPage: React.FC = () => {
                 Ready to start your recovery?
               </h2>
               <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
-                Book a consultation or home visit with Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413.
+                Contact the clinic to ask about appointments and home visits.
               </p>
               <p className="text-sm sm:text-base font-semibold">
                 Call or WhatsApp: +91 76010 26596
               </p>
               <p className="text-xs sm:text-sm text-slate-300">
-                Serving Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and nearby areas.
+                Clinic visits serve Manikonda and nearby areas. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button
@@ -516,10 +488,10 @@ const ServicesPage: React.FC = () => {
             </div>
           </section>
         </div>
-      </main>
+      </section>
       <section aria-label="Treatment standard" className="container max-w-6xl mx-auto px-4 sm:px-6 py-4">
         <p className="text-center text-sm text-[#5f6872]">
-          All treatments are provided after individual assessment by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Regd. No. 0413, Consultant Physiotherapist.
+          Website information is general and does not replace an individual assessment. Contact the clinic to discuss suitable care.
         </p>
       </section>
     </div>

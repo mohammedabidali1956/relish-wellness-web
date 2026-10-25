@@ -10,18 +10,18 @@ const AboutPage = () => {
     <div className="min-h-screen">
       <StructuredData 
         type="about" 
-        pageTitle="About Dr. Hamid's Physio Clinic | Physiotherapist in Manikonda"
-        pageDescription="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), physiotherapist at Dr. Hamid's clinic in Manikonda, Hyderabad."
+        pageTitle="About Dr Hamid’s Physio and Pain Clinic | Physiotherapist in Manikonda"
+        pageDescription="Meet Dr. Mohammed Hamid Ali, founder and Consultant Physiotherapist at Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad."
       />
       <Helmet>
-        <meta property="og:title" content="About Dr. Hamid's Physio Clinic | Manikonda, Hyderabad" />
-        <meta property="og:description" content="Meet Dr. Mohammed Hamid Ali and learn about the physiotherapy clinic in Puppalguda, Manikonda." />
+        <meta property="og:title" content="About Dr Hamid’s Physio and Pain Clinic | Manikonda, Hyderabad" />
+        <meta property="og:description" content="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Regd. No. 0413, Consultant Physiotherapist and founder of the clinic in Manikonda." />
         <meta property="og:url" content="https://www.drhamidphysio.in/about" />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://www.drhamidphysio.in/images/doctor/dr-mohammed-hamid-ali.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Dr. Hamid's Physio Clinic | Manikonda" />
-        <meta name="twitter:description" content="Learn about Dr. Mohammed Hamid Ali and his physiotherapy clinic in Manikonda, Hyderabad." />
+        <meta name="twitter:title" content="About Dr Hamid’s Physio and Pain Clinic | Manikonda" />
+        <meta name="twitter:description" content="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Regd. No. 0413, Consultant Physiotherapist and founder of the clinic in Manikonda." />
         <meta name="twitter:image" content="https://www.drhamidphysio.in/images/doctor/dr-mohammed-hamid-ali.webp" />
       </Helmet>
       {/* Hero Section */}
@@ -29,7 +29,7 @@ const AboutPage = () => {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-gray-900">
-              About Dr. Hamid's Physio and Pain Clinic
+              About Dr Hamid’s Physio and Pain Clinic
             </h1>
             
           </div>
@@ -42,68 +42,30 @@ const AboutPage = () => {
           <div className="prose prose-lg max-w-none">
             <div className="bg-card border border-border rounded-md p-8 md:p-12 mb-12">
               <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                Founded in 2021 by Dr. Mohammed Hamid Ali, Dr. Hamid's Physio and Pain Clinic offers advanced physiotherapy and evidence-based rehabilitation in a modern, patient-centred environment. Operating from Puppalguda, Manikonda (Opposite HDFC Bank ATM, near Friends Colony Park), the clinic focuses on accurate diagnosis, personalized treatment plans, and consistent, measurable recovery outcomes.
+                Dr Hamid’s Physio and Pain Clinic is located in Manikonda, Hyderabad. The clinic’s website lists physiotherapy and rehabilitation services for local patients.
               </p>
               <p className="text-base leading-relaxed text-gray-600">
-                Our clinic serves as a primary, trusted physiotherapy center for patients across Manikonda and Puppalaguda, as well as neighbouring West Hyderabad communities including Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda, and the Seven Tombs area.
+                The clinic lists Puppalguda, Manikonda, and nearby West Hyderabad areas among its service locations. Contact the clinic to confirm current availability.
               </p>
             </div>
 
-            {/* About Dr. Mohammed Hamid Ali - E-E-A-T Section */}
+            {/* Clinic profile */}
             <div className="rounded-md border border-border bg-white p-8 md:p-12 mb-12">
               <div className="flex items-center mb-6">
                 <div className="bg-relish-600 p-3 rounded-full mr-4">
                   <Award className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">About Dr. Mohammed Hamid Ali</h2>
+                <h2 className="text-3xl font-bold text-gray-900">Clinic profile</h2>
               </div>
-
-              <div className="space-y-6">
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-sand-50 border border-border">
-                  <div className="bg-relish-100 p-2 rounded-lg">
-                    <Star className="h-5 w-5 text-relish-700" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 text-lg">Full Qualifications</h3>
-                    <p className="text-gray-700">BPT, MPT (Orthopedics)</p>
-                    <p className="text-sm text-gray-500 mt-1">BPT education is listed with Dr. NTR University of Health Sciences (2018) on Practo.</p>
-                    <a
-                      href={PRACTO_PROFILE_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 inline-flex text-sm font-medium text-relish-700 hover:underline"
-                    >
-                      View education details on Practo
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-sand-50 border border-border">
-                  <div className="bg-relish-100 p-2 rounded-lg">
-                    <Users className="h-5 w-5 text-relish-700" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 text-lg">Professional Designation</h3>
-                    <p className="text-gray-700">Founder, Consultant Physiotherapist</p>
-                    <p className="text-sm text-gray-500 mt-1">Registration number listed: <span className="font-medium text-gray-700">0413</span></p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-sand-50 border border-border">
-                  <div className="bg-relish-100 p-2 rounded-lg">
-                    <Heart className="h-5 w-5 text-relish-700" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 text-lg">Clinical Experience</h3>
-                    <p className="text-gray-700">8+ years of clinical practice in Hyderabad</p>
-                    <p className="text-sm text-gray-500 mt-1">Specializing in spinal biomechanics, joint preservation, post-surgical recovery, and sports rehabilitation</p>
-                  </div>
-                </div>
-              </div>
-
-              <p className="text-gray-700 mt-6 leading-relaxed">
-                Dr. Mohammed Hamid Ali is a certified physiotherapist with over eight years of rigorous clinical practice. His patient-first methodology eliminates guesswork through detailed physical examination and clear communication. Rather than rushing patients into passive cycles of machines, Dr. Hamid designs individualized exercise programs that empower patients to understand their condition, recover functional confidence, and prevent future recurrences.
+              <p className="text-gray-700 leading-relaxed">
+                Dr. Mohammed Hamid Ali is the founder and Consultant Physiotherapist at Dr Hamid’s Physio and Pain Clinic. His confirmed qualifications are BPT and MPT (Ortho), with Registration No. 0413 under the Government of Telangana.
               </p>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                He has 8+ years of clinical experience. The clinic was established in 2021 and is founder-operated, with individualized one-to-one care. Appointment and service suitability depend on an individual assessment.
+              </p>
+              <a href={PRACTO_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex text-sm font-medium text-relish-700 hover:underline">
+                View Dr. Mohammed Hamid Ali’s professional profile on Practo
+              </a>
             </div>
 
             {/* Our Mission */}

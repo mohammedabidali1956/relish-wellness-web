@@ -6,12 +6,12 @@ export const neurologicalServices: ServiceDetail[] = [
     category: "Neurological & Special",
     title: "Stroke Physiotherapy & Rehabilitation",
     metaTitle: "Stroke Physiotherapy in Manikonda | Paralysis & Neuro Rehab Hyderabad",
-    metaDescription: "Comprehensive stroke rehabilitation and paralysis physiotherapy in Manikonda, Hyderabad. Neuroplasticity recovery by Dr. Mohammed Hamid Ali, BPT. Call today!",
+    metaDescription: "Comprehensive stroke rehabilitation and paralysis physiotherapy in Manikonda, Hyderabad. Neuroplasticity recovery by Dr. Mohammed Hamid Ali. Call today!",
     h1: "Stroke Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical neuro-rehabilitation for post-stroke hemiplegia, paralysis, gait retraining, and upper limb functional recovery.",
     imageSrc: "/images/services/condition-neuro-rehab.webp",
     altText: "Stroke physiotherapy and neurological rehabilitation in Manikonda clinic",
-    whatItIs: "A stroke (cerebrovascular accident, CVA) occurs when blood flow to a part of the brain is interrupted by an ischemic clot or hemorrhage, resulting in neuronal cell damage. Patients frequently experience hemiplegia (paralysis of one side of the body), spasticity, loss of balance, facial weakness, and difficulty walking. Fortunately, the human brain possesses remarkable neuroplasticity — the ability to rewire surviving neural pathways through repetitive, meaningful practice. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides specialized, compassionate neuro-rehabilitation that maximizes recovery potential and restores dignified functional independence.",
+    whatItIs: "A stroke (cerebrovascular accident, CVA) occurs when blood flow to a part of the brain is interrupted by an ischemic clot or hemorrhage, resulting in neuronal cell damage. Patients frequently experience hemiplegia (paralysis of one side of the body), spasticity, loss of balance, facial weakness, and difficulty walking. Fortunately, the human brain possesses remarkable neuroplasticity — the ability to rewire surviving neural pathways through repetitive, meaningful practice. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali provides specialized, compassionate neuro-rehabilitation that maximizes recovery potential and restores dignified functional independence.",
     causes: [
       "Ischemic stroke caused by arterial thrombosis or embolism depriving brain tissue of oxygen",
       "Hemorrhagic stroke resulting from ruptured cerebral blood vessels or aneurysms",
@@ -25,7 +25,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Hemiplegic gait pattern characterized by hip circumduction and foot drop during walking",
       "Difficulty performing basic activities of daily living (bathing, dressing, feeding, transfers)"
     ],
-    howPhysioHelps: "Neuro-rehabilitation utilizes task-specific training and neuroplastic stimulation. Dr. Mohammed Hamid Ali (BPT) incorporates Bobath (NDT) principles, Motor Relearning Programmes (MRP), proprioceptive neuromuscular facilitation (PNF), and constraint-induced movement techniques. Therapy systematically progresses from bed mobility and sitting balance to supported standing, symmetrical weight-bearing, and independent community ambulation.",
+    howPhysioHelps: "Neuro-rehabilitation utilizes task-specific training and neuroplastic stimulation. Dr. Mohammed Hamid Ali incorporates Bobath (NDT) principles, Motor Relearning Programmes (MRP), proprioceptive neuromuscular facilitation (PNF), and constraint-induced movement techniques. Therapy systematically progresses from bed mobility and sitting balance to supported standing, symmetrical weight-bearing, and independent community ambulation.",
     assessmentProcess: [
       "Fugl-Meyer assessment of motor recovery and sensory impairment",
       "Modified Ashworth Scale to quantify spasticity in flexor and extensor muscle synergies",
@@ -41,12 +41,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Caregiver education on safe transferring techniques, positioning, and home exercise assistance"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of dedicated clinical experience in neurological and stroke rehabilitation",
-      "Compassionate, dignified, patient-paced therapy tailored to individual recovery potential",
-      "Comprehensive home visit physiotherapy available across Manikonda and Puppalguda",
-      "Structured family and caregiver training to ensure continuous recovery at home"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -58,7 +53,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Practice supported sit-to-stand repetitions from a firm chair 2-3 times daily",
       "Keep walking pathways at home free of loose rugs, wires, and furniture obstacles"
     ],
-    whenToVisit: "Begin stroke physiotherapy as soon as the patient is medically stable in the hospital or discharged home. Early intervention yields the highest neuroplastic gains. Home visits are available across Manikonda.",
+    whenToVisit: "Begin stroke physiotherapy as soon as the patient is medically stable in the hospital or discharged home. Early intervention yields the highest neuroplastic gains. Home visits are available in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage.",
     faqs: [
       {
         question: "When should physiotherapy start after a stroke?",
@@ -70,7 +65,7 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Do you provide home visit stroke physiotherapy in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized, compassionate in-home stroke rehabilitation across Manikonda, Puppalguda, Alkapur Township, and Gachibowli."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized, compassionate in-home stroke rehabilitation in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       },
       {
         question: "How do you treat spasticity and tight fist in stroke patients?",
@@ -87,12 +82,12 @@ export const neurologicalServices: ServiceDetail[] = [
     category: "Neurological & Special",
     title: "Neurological Physiotherapy",
     metaTitle: "Neurological Physiotherapy in Manikonda | Parkinson's & Neuro Care",
-    metaDescription: "Expert neurological physiotherapy in Manikonda, Hyderabad. Specialized care for Parkinson's, Guillain-Barré, spinal cord injuries, and neuropathy by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Expert neurological physiotherapy in Manikonda, Hyderabad. Specialized care for Parkinson's, Guillain-Barré, spinal cord injuries, and neuropathy by Dr. Mohammed Hamid Ali.",
     h1: "Neurological Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for Parkinson's disease, peripheral neuropathy, multiple sclerosis, and motor neuron conditions.",
     imageSrc: "/images/services/condition-neuro-rehab.webp",
     altText: "Neurological physiotherapy and nervous system rehabilitation in Manikonda clinic",
-    whatItIs: "Neurological physiotherapy is a dedicated discipline focusing on assessing and treating individuals who experience movement, balance, and postural disorders arising from damage to the central or peripheral nervous system. Conditions such as Parkinson's disease, Guillain-Barré Syndrome (GBS), Multiple Sclerosis (MS), peripheral neuropathies, and traumatic brain injuries can severely compromise mobility, gait rhythm, and independence. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) delivers structured neuro-rehabilitation aimed at retraining motor coordination, preventing falls, and maintaining high functional capacity.",
+    whatItIs: "Neurological physiotherapy is a dedicated discipline focusing on assessing and treating individuals who experience movement, balance, and postural disorders arising from damage to the central or peripheral nervous system. Conditions such as Parkinson's disease, Guillain-Barré Syndrome (GBS), Multiple Sclerosis (MS), peripheral neuropathies, and traumatic brain injuries can severely compromise mobility, gait rhythm, and independence. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali delivers structured neuro-rehabilitation aimed at retraining motor coordination, preventing falls, and maintaining high functional capacity.",
     causes: [
       "Neurodegenerative disorders such as Parkinson's disease leading to dopamine depletion and motor rigidity",
       "Peripheral neuropathies (diabetic, alcoholic, or idiopathic) causing sensory ataxia and muscle weakness",
@@ -107,7 +102,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Impaired postural reflexes leading to frequent domestic falls and unsteadiness",
       "Peripheral numbness, burning, and loss of proprioceptive position sense in the feet"
     ],
-    howPhysioHelps: "Neurological physiotherapy uses evidence-based motor learning principles and sensory cueing. For Parkinson's patients, Dr. Mohammed Hamid Ali (BPT) employs high-amplitude movement training (LSVT BIG concepts), visual floor cues, and auditory metronome pacing to overcome bradykinesia. For peripheral neuropathies, balance retraining and sensory compensatory strategies restore confident, safe walking.",
+    howPhysioHelps: "Neurological physiotherapy uses evidence-based motor learning principles and sensory cueing. For Parkinson's patients, Dr. Mohammed Hamid Ali employs high-amplitude movement training (LSVT BIG concepts), visual floor cues, and auditory metronome pacing to overcome bradykinesia. For peripheral neuropathies, balance retraining and sensory compensatory strategies restore confident, safe walking.",
     assessmentProcess: [
       "Unified Parkinson's Disease Rating Scale (UPDRS) motor examination criteria",
       "Comprehensive sensory testing (light touch, pinprick, vibration sense, joint position sense)",
@@ -123,12 +118,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Energy conservation techniques and adaptive equipment recommendations"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of dedicated clinical experience in neurological movement disorders",
-      "Empathetic, encouraging clinical approach that motivates patients and families",
-      "Comprehensive clinic sessions and home visit services across Manikonda and Puppalguda",
-      "Integration of modern sensory cueing and balance retraining protocols"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -152,7 +142,7 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit neurological physiotherapy in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy across Manikonda, Puppalguda, and surrounding Hyderabad neighborhoods."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       },
       {
         question: "Where is your clinic located?",
@@ -169,12 +159,12 @@ export const neurologicalServices: ServiceDetail[] = [
     category: "Neurological & Special",
     title: "Vestibular Rehabilitation / Vertigo Physiotherapy",
     metaTitle: "Vestibular Rehabilitation in Manikonda | Vertigo & Dizziness Treatment",
-    metaDescription: "Relieve vertigo, BPPV dizziness, and balance disorders with expert vestibular rehabilitation in Manikonda by Dr. Mohammed Hamid Ali, BPT. Fast relief!",
+    metaDescription: "Information about physiotherapy assessment and vestibular rehabilitation options for vertigo and BPPV in Manikonda, Hyderabad. Suitability depends on the cause of symptoms.",
     h1: "Vestibular Rehabilitation / Vertigo Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical canalith repositioning maneuvers and vestibular adaptation therapy for BPPV, labyrinthitis, and chronic dizziness.",
     imageSrc: "/images/services/condition-neuro-rehab.webp",
     altText: "Vestibular rehabilitation and vertigo physiotherapy treatment in Manikonda clinic",
-    whatItIs: "Vertigo and balance disorders affect millions of people, causing terrifying sensations that the room is spinning violently, nausea, lightheadedness, and profound unsteadiness. The most common cause is Benign Paroxysmal Positional Vertigo (BPPV), where microscopic calcium carbonate crystals (otoconia) detach and become displaced into one of the semicircular canals of the inner ear. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides specialized Vestibular Rehabilitation Therapy (VRT) and canalith repositioning maneuvers (such as the Epley maneuver) that frequently resolve BPPV vertigo completely in just 1 to 3 sessions.",
+    whatItIs: "Vertigo and balance disorders affect millions of people, causing terrifying sensations that the room is spinning violently, nausea, lightheadedness, and profound unsteadiness. The most common cause is Benign Paroxysmal Positional Vertigo (BPPV), where microscopic calcium carbonate crystals (otoconia) detach and become displaced into one of the semicircular canals of the inner ear. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali provides specialized Vestibular Rehabilitation Therapy (VRT) and canalith repositioning maneuvers (such as the Epley maneuver) that frequently resolve BPPV vertigo completely in just 1 to 3 sessions.",
     causes: [
       "Benign Paroxysmal Positional Vertigo (BPPV) with canalithiasis in the posterior or horizontal semicircular canal",
       "Vestibular neuritis or labyrinthitis following a viral inner ear infection",
@@ -190,7 +180,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Loss of balance and unsteadiness, feeling as though you are being pulled to one side",
       "Difficulty focusing eyes clearly when turning your head rapidly (oscillopsia)"
     ],
-    howPhysioHelps: "Vestibular physiotherapy works with remarkable precision. For BPPV, Dr. Mohammed Hamid Ali (BPT) performs accurate diagnostic testing to determine which ear and canal are involved, followed immediately by gentle, evidence-based particle repositioning maneuvers (Epley, Semont, or BBQ roll) that use gravity to guide the loose crystals back to their safe home in the utricle. For chronic dizziness, vestibular adaptation and habituation exercises retrain the brain to process balance signals smoothly.",
+    howPhysioHelps: "Vestibular physiotherapy works with remarkable precision. For BPPV, Dr. Mohammed Hamid Ali performs accurate diagnostic testing to determine which ear and canal are involved, followed immediately by gentle, evidence-based particle repositioning maneuvers (Epley, Semont, or BBQ roll) that use gravity to guide the loose crystals back to their safe home in the utricle. For chronic dizziness, vestibular adaptation and habituation exercises retrain the brain to process balance signals smoothly.",
     assessmentProcess: [
       "Dix-Hallpike test to assess the posterior semicircular canals and observe nystagmus",
       "Supine Roll test to evaluate the horizontal semicircular canals",
@@ -206,12 +196,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Gentle upper cervical manual therapy if cervicogenic dizziness is identified"
     ],
     expectedRecovery: "Response and time to improvement vary. Some people with benign paroxysmal positional vertigo (BPPV) improve after a clinician-guided repositioning procedure; other vestibular conditions may need a different assessment and rehabilitation plan.",
-    whyChooseDoctor: [
-      "Precise clinical diagnostic testing to pinpoint the exact affected inner ear canal",
-      "Safe, comfortable execution of repositioning maneuvers without medication side effects",
-      "8+ years of clinical musculoskeletal and neuro-rehabilitation experience in Hyderabad",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -231,14 +216,14 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Can vertigo medication cure BPPV?",
-        answer: "No. Vestibular suppressant medications (such as cinnarizine or betahistine) only dull the nausea symptoms temporarily; they cannot physically move the displaced crystals out of the semicircular canal. The Epley maneuver is the definitive mechanical cure."
+        answer: "Some medicines may be used to manage symptoms, but they do not reposition inner-ear particles. A clinician can assess whether a repositioning maneuver is suitable. No single treatment can be described as a guaranteed cure."
       },
       {
         question: "Can vertigo come back after successful treatment?",
-        answer: "BPPV has a recurrence rate of around 15-20% over a lifetime. If it ever returns, it can easily be cleared again in a single clinic session."
+        answer: "BPPV can recur in some people. If dizziness returns, a clinician can reassess the cause and decide whether a repositioning maneuver or another evaluation is appropriate."
       },
       {
-        question: "Where is Dr. Hamid's clinic located in Manikonda?",
+        question: "Where is Dr Hamid’s Physio and Pain Clinic located in Manikonda?",
         answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
       },
       {
@@ -252,12 +237,12 @@ export const neurologicalServices: ServiceDetail[] = [
     category: "Neurological & Special",
     title: "Foot Drop Physiotherapy",
     metaTitle: "Foot Drop Physiotherapy in Manikonda | Peroneal Nerve & Gait Rehab",
-    metaDescription: "Comprehensive foot drop physiotherapy in Manikonda, Hyderabad. Specialized rehabilitation for common peroneal nerve palsy and stroke gait recovery under Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Comprehensive foot drop physiotherapy in Manikonda, Hyderabad. Specialized rehabilitation for common peroneal nerve palsy and stroke gait recovery under Dr. Mohammed Hamid Ali.",
     h1: "Foot Drop Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for ankle dorsiflexor paralysis, common peroneal nerve injury, steppage gait, and AFO splint management.",
     imageSrc: "/images/services/condition-neuro-rehab.webp",
     altText: "Foot drop physiotherapy and peroneal nerve recovery in Manikonda clinic",
-    whatItIs: "Foot drop (drop foot) is an incapacitating neuromuscular condition characterized by the inability to actively lift the front part of the foot (dorsiflexion) due to weakness or paralysis of the anterior tibialis and peroneal muscles. When walking, patients are forced to lift their knee abnormally high ('steppage gait') to prevent their toes from dragging on the ground, creating a severe tripping and fall hazard. Foot drop can result from peripheral nerve compression (common peroneal nerve palsy at the fibular head), lumbar disc herniation compressing the L4-L5 nerve root, or central neurological conditions like stroke. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides targeted neuromuscular stimulation, manual therapy, and gait training to re-activate dormant dorsiflexors.",
+    whatItIs: "Foot drop (drop foot) is an incapacitating neuromuscular condition characterized by the inability to actively lift the front part of the foot (dorsiflexion) due to weakness or paralysis of the anterior tibialis and peroneal muscles. When walking, patients are forced to lift their knee abnormally high ('steppage gait') to prevent their toes from dragging on the ground, creating a severe tripping and fall hazard. Foot drop can result from peripheral nerve compression (common peroneal nerve palsy at the fibular head), lumbar disc herniation compressing the L4-L5 nerve root, or central neurological conditions like stroke. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali provides targeted neuromuscular stimulation, manual therapy, and gait training to re-activate dormant dorsiflexors.",
     causes: [
       "Common peroneal nerve compression at the fibular neck (from prolonged leg crossing, casts, or trauma)",
       "Lumbar disc herniation or spinal stenosis at the L4-L5 level compressing the L5 nerve root",
@@ -272,7 +257,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Slapping of the foot onto the floor ('foot slap') with each step due to loss of eccentric control",
       "Numbness or tingling over the top of the foot and outer lower leg"
     ],
-    howPhysioHelps: "Physiotherapy for foot drop focuses on preventing contracture of the opposing calf muscles, stimulating the paralyzed anterior tibialis muscle, and ensuring safe gait. Dr. Mohammed Hamid Ali (BPT) utilizes Electrical Muscle Stimulation (EMS/NMES) to re-educate the peroneal nerve, prescribes custom Ankle-Foot Orthoses (AFO), applies neural mobilization, and guides intensive biofeedback exercises.",
+    howPhysioHelps: "Physiotherapy for foot drop focuses on preventing contracture of the opposing calf muscles, stimulating the paralyzed anterior tibialis muscle, and ensuring safe gait. Dr. Mohammed Hamid Ali utilizes Electrical Muscle Stimulation (EMS/NMES) to re-educate the peroneal nerve, prescribes custom Ankle-Foot Orthoses (AFO), applies neural mobilization, and guides intensive biofeedback exercises.",
     assessmentProcess: [
       "Manual Muscle Testing (MMT) of the anterior tibialis, extensor hallucis longus, and peroneals (0-5 scale)",
       "Sensory testing over the lateral lower leg and dorsum of the foot (superficial and deep peroneal nerve)",
@@ -288,12 +273,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Overground functional gait retraining with obstacle clearance and balance drills"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical neuro-rehabilitation and electrotherapy experience in Hyderabad",
-      "Accurate differential diagnosis between lumbar spine radiculopathy and peripheral fibular nerve entrapment",
-      "Comprehensive AFO splint selection and gait training preventing dangerous domestic falls",
-      "Dedicated clinic in Manikonda with personalized home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -309,7 +289,7 @@ export const neurologicalServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Can a common peroneal nerve foot drop fully recover?",
-        answer: "Yes! Many cases caused by temporary compression (neuropraxia or axonotmesis) recover completely over a few months as the nerve heals. Electrical muscle stimulation keeps the muscles healthy while the nerve regenerates."
+        answer: "Recovery from foot drop depends on its cause and severity. Some causes may improve while others need medical or surgical management. New or worsening weakness needs prompt medical assessment; a clinician can advise whether physiotherapy is appropriate."
       },
       {
         question: "What is an AFO, and do I have to wear it forever?",
@@ -321,7 +301,7 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for foot drop in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy across Manikonda, Puppalguda, and neighbouring areas for patients with walking difficulties."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with walking difficulties."
       },
       {
         question: "How do I book a consultation?",
@@ -334,12 +314,12 @@ export const neurologicalServices: ServiceDetail[] = [
     category: "Neurological & Special",
     title: "Nerve Rehabilitation",
     metaTitle: "Nerve Rehabilitation in Manikonda | Peripheral Nerve & Neuropathy Care",
-    metaDescription: "Comprehensive peripheral nerve injury and neuropathy rehabilitation in Manikonda, Hyderabad. Advanced neurodynamic therapy by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Comprehensive peripheral nerve injury and neuropathy rehabilitation in Manikonda, Hyderabad. Advanced neurodynamic therapy by Dr. Mohammed Hamid Ali.",
     h1: "Nerve Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical therapy for peripheral nerve injuries, entrapment neuropathies, carpal tunnel syndrome, and neural hypersensitivity.",
     imageSrc: "/images/services/condition-neuro-rehab.webp",
     altText: "Nerve rehabilitation and neurodynamic physiotherapy in Manikonda clinic",
-    whatItIs: "Peripheral nerves are remarkable living structures that must slide, glide, and elongate up to 20 mm along complex anatomical tunnels during normal human movement. When a nerve becomes compressed, entrapped, stretched, or chemically irritated (as in Carpal Tunnel Syndrome, Cubital Tunnel Syndrome, Meralgia Paresthetica, or post-surgical nerve trauma), patients experience severe neuropathic pain, burning, pins-and-needles, and motor weakness. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) specializes in clinical neurodynamics — restoring free, unhindered nerve gliding, reducing neural mechanosensitivity, and facilitating axonal regeneration.",
+    whatItIs: "Peripheral nerves are remarkable living structures that must slide, glide, and elongate up to 20 mm along complex anatomical tunnels during normal human movement. When a nerve becomes compressed, entrapped, stretched, or chemically irritated (as in Carpal Tunnel Syndrome, Cubital Tunnel Syndrome, Meralgia Paresthetica, or post-surgical nerve trauma), patients experience severe neuropathic pain, burning, pins-and-needles, and motor weakness. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali specializes in clinical neurodynamics — restoring free, unhindered nerve gliding, reducing neural mechanosensitivity, and facilitating axonal regeneration.",
     causes: [
       "Entrapment neuropathies such as Carpal Tunnel Syndrome (median nerve) or Cubital Tunnel (ulnar nerve)",
       "Post-traumatic nerve stretch, crush, or contusion injuries from sports, falls, or fractures",
@@ -354,7 +334,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Muscle wasting and motor weakness in the specific muscle groups innervated by the affected nerve",
       "Loss of fine motor dexterity, clumsiness when buttoning shirts or holding cutlery"
     ],
-    howPhysioHelps: "Physiotherapy for nerve rehabilitation focuses on removing mechanical entrapments and restoring neural fluid circulation. Dr. Mohammed Hamid Ali (BPT) applies precise neurodynamic sliders and tensioners that gently move the nerve through its anatomical container without over-stretching it. Therapy also includes targeted manual decompression of anatomical entrapment sites and sensory desensitization techniques.",
+    howPhysioHelps: "Physiotherapy for nerve rehabilitation focuses on removing mechanical entrapments and restoring neural fluid circulation. Dr. Mohammed Hamid Ali applies precise neurodynamic sliders and tensioners that gently move the nerve through its anatomical container without over-stretching it. Therapy also includes targeted manual decompression of anatomical entrapment sites and sensory desensitization techniques.",
     assessmentProcess: [
       "Comprehensive neurodynamic provocative testing (Upper Limb Neurodynamic Tests 1-3, Straight Leg Raise, Slump Test, Prone Knee Bend)",
       "Sensory testing using Semmes-Weinstein monofilaments and two-point discrimination",
@@ -370,12 +350,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Prescription of functional resting splints to prevent nerve compression during sleep"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of dedicated clinical experience in musculoskeletal and peripheral nerve rehabilitation",
-      "Advanced certification in clinical neurodynamics and non-surgical nerve decompression",
-      "Personalized 1-on-1 care ensuring exercises are performed with gentle, precise technique",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -402,7 +377,7 @@ export const neurologicalServices: ServiceDetail[] = [
         answer: "Neurodynamic gliding is a gentle physical therapy technique where joints are moved in coordinated sequence to slide the nerve back and forth through its surrounding tissues, reducing adhesions and improving internal blood flow."
       },
       {
-        question: "Where is Dr. Hamid's clinic located?",
+        question: "Where is Dr Hamid’s Physio and Pain Clinic located?",
         answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
       },
       {

@@ -5,13 +5,13 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     slug: "sports-injury-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Sports Injury Rehabilitation",
-    metaTitle: "Sports Injury Rehabilitation in Manikonda | Dr. Hamid's Physio Clinic",
-    metaDescription: "Comprehensive sports injury rehabilitation in Manikonda, Hyderabad. Fast-track recovery for runners, badminton players, cricketers & gym athletes. Book now!",
+    metaTitle: "Sports Injury Rehabilitation in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Sports injury physiotherapy and rehabilitation in Manikonda, Hyderabad, for runners, badminton players, cricketers, and other active people. Return to activity varies by injury and progress.",
     h1: "Sports Injury Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Specialized sports physiotherapy, biomechanical correction, and progressive return-to-sport conditioning for athletes and active individuals in Manikonda.",
     imageSrc: "/images/services/condition-sports-injury.webp",
     altText: "Sports injury rehabilitation and athlete conditioning in Manikonda clinic",
-    whatItIs: "Sports injuries encompass acute traumas (such as ligament tears, muscle sprains, and joint dislocations) and chronic overuse syndromes (including stress fractures, shin splints, and tendonitis) sustained during athletic activity, gym workouts, or recreational sports. In dynamic sports-loving communities across Manikonda, Puppalguda, and Gachibowli, athletes frequently present with running injuries, badminton-related shoulder strains, cricket bowling stresses, and football ankle twists. At Dr. Hamid's Physio and Pain Clinic, sports rehabilitation bridges the gap between acute clinical recovery and peak athletic performance, focusing on tissue healing, kinetic chain re-alignment, and sport-specific reconditioning.",
+    whatItIs: "Sports injuries encompass acute traumas (such as ligament tears, muscle sprains, and joint dislocations) and chronic overuse syndromes (including stress fractures, shin splints, and tendonitis) sustained during athletic activity, gym workouts, or recreational sports. In dynamic sports-loving communities across Manikonda, Puppalguda, and Gachibowli, athletes frequently present with running injuries, badminton-related shoulder strains, cricket bowling stresses, and football ankle twists. At Dr Hamid’s Physio and Pain Clinic, sports rehabilitation bridges the gap between acute clinical recovery and peak athletic performance, focusing on tissue healing, kinetic chain re-alignment, and sport-specific reconditioning.",
     causes: [
       "Sudden explosive pivoting, jumping, or rapid deceleration without adequate muscular pre-activation",
       "Overuse and training errors such as sudden spikes in mileage or excessive weight progression at the gym",
@@ -27,7 +27,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Inability to bear full weight or generate explosive power through the injured limb",
       "Dull persistent post-workout ache and stiffness that lingers for days after exercise"
     ],
-    howPhysioHelps: "Physiotherapy for sports injuries restores injured tissues safely through structured clinical phases: acute inflammatory control, progressive tissue remodeling, functional kinetic chain strengthening, and dynamic plyometric drills. Dr. Mohammed Hamid Ali (BPT) conducts comprehensive functional movement screens to isolate the mechanical flaws that caused the injury, ensuring not only complete tissue healing but also long-term protection against reinjury when returning to competitive play.",
+    howPhysioHelps: "Rehabilitation after a sports injury depends on the injury, symptoms, and sporting goals. After assessment, a plan may include activity adjustments, progressive strength and movement practice, and sport-specific work when appropriate. No plan can guarantee complete healing or prevent every recurrence.",
     assessmentProcess: [
       "Detailed review of mechanism of injury, sporting demands, training volume, and equipment used",
       "Selective tissue provocation testing (ligamentous stress tests, muscle tendon palpatory tests)",
@@ -43,12 +43,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Progressive functional return-to-play protocols including running biomechanics and agility ladders"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of expertise managing amateur runners, badminton players, and competitive gym athletes",
-      "1-on-1 personalized sports conditioning programs tailored to your specific sporting discipline",
-      "State-of-the-art rehabilitation equipment and spacious exercise floor in Manikonda",
-      "Proven track record of safe return-to-sport transitions minimizing recurrence rates"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Gachibowli", "Financial District",
       "Kokapet", "Narsingi", "Alkapur Township", "Shaikpet", "Jubilee Hills"
@@ -67,7 +62,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "Can physiotherapy help me return to running or playing badminton without pain?",
-        answer: "Yes. Our sports rehabilitation programs include video gait analysis, racket sport footwork assessment, and progressive plyometric loading tailored specifically to running and badminton mechanics to ensure pain-free performance."
+        answer: "A gradual return to activity may include movement and strength practice related to the sport, depending on symptoms and assessment. The timing and content of rehabilitation vary, and pain-free performance cannot be guaranteed."
       },
       {
         question: "Do you treat gym workout injuries like deadlift back strains or shoulder impingement?",
@@ -91,13 +86,13 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     slug: "post-surgical-rehabilitation-manikonda",
     category: "Sports, Post-Op & General",
     title: "Post-Surgical Rehabilitation",
-    metaTitle: "Post-Surgical Physiotherapy in Manikonda | Dr. Hamid's Physio Clinic",
-    metaDescription: "Expert post-operative rehabilitation in Manikonda, Hyderabad. Accelerated recovery for knee replacement, hip surgery, spine fusion & fractures. Book a session!",
+    metaTitle: "Post-Surgical Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Post-operative physiotherapy in Manikonda, Hyderabad, for rehabilitation after knee replacement, hip surgery, spinal procedures, and fractures. Follow the treating team's advice.",
     h1: "Post-Surgical Physiotherapy & Rehabilitation in Manikonda, Hyderabad",
-    shortDescription: "Doctor-supervised post-operative physical therapy restoring joint mobility, muscle activation, and independent functional living after orthopedic surgeries. Offers both clinic-based advanced therapy and dedicated home visit physiotherapy across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas.",
+    shortDescription: "Doctor-supervised post-operative physical therapy restoring joint mobility, muscle activation, and independent functional living after orthopedic surgeries. Offers both clinic-based advanced therapy and dedicated home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Post-surgical rehabilitation and orthopedic physiotherapy in Manikonda",
-    whatItIs: "Post-surgical rehabilitation may support movement and daily activities after an operation. The appropriate exercises, precautions, and timeline depend on the procedure, healing, and instructions from the surgeon or hospital team. At Dr. Hamid's Physio and Pain Clinic in Manikonda, care is planned around the person's assessment and medical guidance; physiotherapy does not replace post-operative medical follow-up.",
+    whatItIs: "Post-surgical rehabilitation may support movement and daily activities after an operation. The appropriate exercises, precautions, and timeline depend on the procedure, healing, and instructions from the surgeon or hospital team. At Dr Hamid’s Physio and Pain Clinic in Manikonda, care is planned around the person's assessment and medical guidance; physiotherapy does not replace post-operative medical follow-up.",
     causes: [
       "Post-operative immobilization causing rapid muscular atrophy and capsular adhesions",
       "Surgical trauma leading to persistent joint effusion and arthrogenic muscle inhibition (AMI)",
@@ -128,12 +123,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Progressive closed-kinetic-chain strengthening, balance retraining, and independent walking progression"
     ],
     expectedRecovery: "Recovery timelines vary by surgery, healing, general health, and the surgeon's restrictions. Some procedures require several months of gradual rehabilitation. Follow the treating team's milestones rather than a fixed timetable.",
-    whyChooseDoctor: [
-      "8+ years of dedicated experience delivering orthopedic and trauma post-op rehabilitation",
-      "Close coordination with leading orthopedic surgeons across Hyderabad and Secunderabad",
-      "Availability of both clinic-based advanced therapy and dedicated home visit physiotherapy",
-      "Strict compliance with evidence-based surgical protocols and patient safety guidelines"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
       "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
@@ -152,7 +142,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for post-surgery patients in Manikonda?",
-        answer: "Yes, Dr. Hamid's team provides comprehensive home visit physiotherapy across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and surrounding areas for patients who cannot travel comfortably to the clinic during early post-op recovery."
+        answer: "Yes, Dr. Hamid's team provides comprehensive home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients who cannot travel comfortably to the clinic during early post-operative recovery."
       },
       {
         question: "Will post-surgery physiotherapy be extremely painful?",
@@ -176,13 +166,13 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     slug: "fracture-treatment-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Fracture Treatment & Rehabilitation",
-    metaTitle: "Fracture Rehabilitation Physiotherapy in Manikonda | Dr. Hamid's Clinic",
-    metaDescription: "Fracture rehabilitation in Manikonda, Hyderabad, with movement guidance after medical clearance. Contact Dr. Hamid's Physio and Pain Clinic.",
+    metaTitle: "Fracture Rehabilitation Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Fracture rehabilitation in Manikonda, Hyderabad, with movement guidance after medical clearance. Contact Dr Hamid’s Physio and Pain Clinic.",
     h1: "Fracture Treatment Physiotherapy & Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Physiotherapy after a fracture may help address stiffness, strength, and movement once activity is cleared by the treating medical team.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Post-fracture rehabilitation and limb mobilization therapy in Manikonda",
-    whatItIs: "Fracture rehabilitation may be considered after a broken bone, but the timing and safe activities depend on the fracture, treatment, and healing. Follow the treating clinician's advice about movement and weight-bearing. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help plan activity within those restrictions.",
+    whatItIs: "Fracture rehabilitation may be considered after a broken bone, but the timing and safe activities depend on the fracture, treatment, and healing. Follow the treating clinician's advice about movement and weight-bearing. At Dr Hamid’s Physio and Pain Clinic in Manikonda, an assessment can help plan activity within those restrictions.",
     causes: [
       "Road traffic accidents, bike skids, and vehicular collisions causing complex skeletal fractures",
       "Slip and fall accidents at home or work leading to Colles fractures of the wrist or hip fractures",
@@ -213,12 +203,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Dynamic balance retraining, gait re-education, and functional task simulation for complete independence"
     ],
     expectedRecovery: "Recovery after a fracture varies with its location and severity, treatment, healing, and overall health. Your medical team will advise when to increase movement or weight-bearing; a physiotherapist can help progress activity within those restrictions.",
-    whyChooseDoctor: [
-      "8+ years of dedicated clinical experience in trauma and post-fracture physical rehabilitation",
-      "Direct supervision by Dr. Mohammed Hamid Ali ensuring safe, gradual bone loading protocols",
-      "Exercise and movement options can be adjusted to the fracture and medical restrictions",
-      "Progress is reviewed against comfort, function, and guidance from the treating medical team"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -261,13 +246,13 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     slug: "accident-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Accident Physiotherapy",
-    metaTitle: "Accident & Trauma Physiotherapy in Manikonda | Dr. Hamid's Physio Clinic",
+    metaTitle: "Accident & Trauma Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Comprehensive accident and polytrauma physiotherapy in Manikonda, Hyderabad. Specialized recovery for road accidents, falls & complex injuries. Book now!",
     h1: "Accident & Trauma Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Multidisciplinary physical rehabilitation for vehicular accident survivors, fall trauma, polytrauma recovery, and chronic post-injury physical impairments in Manikonda.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Accident and trauma physical therapy rehabilitation in Manikonda clinic",
-    whatItIs: "Accident physiotherapy provides specialized, compassionate physical rehabilitation for individuals recovering from motor vehicle collisions, bike skids, workplace accidents, and high-impact physical trauma. Motor vehicle and pedestrian accidents in busy metropolitan corridors like Manikonda, Outer Ring Road (ORR), and Gachibowli frequently result in complex polytrauma—combining soft tissue contusions, multiple joint sprains, spinal whiplash, nerve impingement, and post-surgical fractures. At Dr. Hamid's Physio and Pain Clinic, accident rehabilitation offers an integrated, empathetic treatment pathway designed to eliminate chronic multi-site pain, rebuild nervous system confidence, and restore functional independence.",
+    whatItIs: "Accident physiotherapy provides specialized, compassionate physical rehabilitation for individuals recovering from motor vehicle collisions, bike skids, workplace accidents, and high-impact physical trauma. Motor vehicle and pedestrian accidents in busy metropolitan corridors like Manikonda, Outer Ring Road (ORR), and Gachibowli frequently result in complex polytrauma—combining soft tissue contusions, multiple joint sprains, spinal whiplash, nerve impingement, and post-surgical fractures. At Dr Hamid’s Physio and Pain Clinic, accident rehabilitation offers an integrated, empathetic treatment pathway designed to eliminate chronic multi-site pain, rebuild nervous system confidence, and restore functional independence.",
     causes: [
       "Motor vehicle collisions, two-wheeler skids, and sudden automotive impact shocks",
       "Pedestrian trauma involving vehicular contact leading to multiple skeletal and muscular contusions",
@@ -298,12 +283,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       "Aerobic conditioning and functional endurance rebuilding to restore energy levels and confidence"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical expertise treating complex trauma, road accident, and polytrauma cases",
-      "Holistic whole-body assessment looking beyond isolated symptoms to treat the full kinetic chain",
-      "Empathetic, reassuring patient-centered approach that builds trust and overcomes movement fear",
-      "Convenient Manikonda clinic with easy ground-level access and dedicated home therapy visits"
-    ],
+    whyChooseDoctor: [],
 serviceAreas: [
       "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
       "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
@@ -338,7 +318,7 @@ serviceAreas: [
       },
       {
         question: "What if I am too sore or unable to travel to the clinic in Manikonda?",
-        answer: "We provide professional home visit physiotherapy across Manikonda, Puppalguda, and nearby localities so you can begin recovering in the comfort and safety of your own home."
+        answer: "We provide professional home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage so you can begin recovering in the comfort and safety of your own home."
       }
     ]
   },
@@ -346,13 +326,13 @@ serviceAreas: [
     slug: "geriatric-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Geriatric Physiotherapy",
-    metaTitle: "Geriatric Physiotherapy in Manikonda | Senior Care | Dr. Hamid's Clinic",
+    metaTitle: "Geriatric Physiotherapy in Manikonda | Senior Care | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Compassionate geriatric physiotherapy in Manikonda, Hyderabad. Fall prevention, arthritis care, mobility & balance therapy for seniors. Home visits available!",
     h1: "Geriatric Physiotherapy & Senior Mobility Care in Manikonda, Hyderabad",
     shortDescription: "Specialized, compassionate physical therapy for senior citizens addressing balance deficits, osteoporosis, degenerative arthritis, and functional independence in Manikonda.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Geriatric physiotherapy and senior balance mobility care in Manikonda clinic",
-    whatItIs: "Geriatric physiotherapy is the specialized branch of physical rehabilitation tailored to the physiological, biomechanical, and psychological needs of aging adults. As our bodies age, progressive changes occur in musculoskeletal density, joint cartilage lubrication, cardiovascular reserve, and neurological balance reflexes. Common conditions affecting seniors in our Hyderabad communities include multi-joint osteoarthritis, osteoporosis, age-related sarcopenia (muscle loss), spinal stenosis, Parkinson's disease, and post-fall mobility loss. At Dr. Hamid's Physio and Pain Clinic, geriatric care focuses on restoring dignity, maintaining autonomous living, preventing catastrophic falls, and ensuring seniors live active, pain-free lives.",
+    whatItIs: "Geriatric physiotherapy is the specialized branch of physical rehabilitation tailored to the physiological, biomechanical, and psychological needs of aging adults. As our bodies age, progressive changes occur in musculoskeletal density, joint cartilage lubrication, cardiovascular reserve, and neurological balance reflexes. Common conditions affecting seniors in our Hyderabad communities include multi-joint osteoarthritis, osteoporosis, age-related sarcopenia (muscle loss), spinal stenosis, Parkinson's disease, and post-fall mobility loss. At Dr Hamid’s Physio and Pain Clinic, geriatric care focuses on restoring dignity, maintaining autonomous living, preventing catastrophic falls, and ensuring seniors live active, pain-free lives.",
     causes: [
       "Age-related sarcopenia leading to progressive loss of skeletal muscle mass and lower limb power",
       "Degenerative wear of articular cartilage in weight-bearing knees, hips, and spinal facet joints",
@@ -368,7 +348,7 @@ serviceAreas: [
       "General exhaustion, muscle weakness, and inability to climb stairs without breathlessness",
       "Loss of confidence in leaving the house alone, relying heavily on family members for basic errands"
     ],
-    howPhysioHelps: "Physiotherapy is transformative for seniors, proving that strength, flexibility, and balance can be improved at any age. Dr. Mohammed Hamid Ali (BPT) designs low-impact, functional exercise programs that strengthen hip extensors, awaken dormant balance reflexes, and gently mobilize arthritic joints. Under expert clinical supervision, elderly patients regain muscle tone, stabilize their gait, and rediscover the joy of independent walking without fear of falling.",
+    howPhysioHelps: "Physiotherapy is transformative for seniors, proving that strength, flexibility, and balance can be improved at any age. Dr. Mohammed Hamid Ali designs low-impact, functional exercise programs that strengthen hip extensors, awaken dormant balance reflexes, and gently mobilize arthritic joints. Under expert clinical supervision, elderly patients regain muscle tone, stabilize their gait, and rediscover the joy of independent walking without fear of falling.",
     assessmentProcess: [
       "Comprehensive geriatric health screening including fall risk evaluation (Timed Up and Go / Berg Balance Test)",
       "Range of motion and flexibility assessment across cervical spine, hips, knees, and ankles",
@@ -384,12 +364,7 @@ serviceAreas: [
       "Gentle therapeutic heat and pain-relieving electrotherapy to ease chronic morning stiffness"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of empathetic clinical experience dedicated to senior wellness and geriatric rehabilitation",
-      "Patient, respectful communication style that puts elderly patients and their families at complete ease",
-      "Dedicated home visit physiotherapy available across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and surrounding suburbs",
-      "Holistic approach combining pain relief, fall prevention, and functional lifestyle independence"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
       "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
@@ -404,19 +379,19 @@ serviceAreas: [
     faqs: [
       {
         question: "Is my elderly parent too old to benefit from physiotherapy?",
-        answer: "Never. Clinical research confirms that skeletal muscles and neurological balance pathways retain plasticity well into a person's 80s and 90s. With safe, calibrated geriatric exercises, seniors make dramatic gains in strength and balance."
+        answer: "Age alone does not determine whether exercise is suitable. The person's health, symptoms, balance, and goals should guide the plan. A clinician can discuss options and any precautions after assessment."
       },
       {
         question: "Do you offer home visit physiotherapy for seniors in Manikonda?",
-        answer: "Yes, we have a dedicated home visit physiotherapy service across Manikonda, Puppalguda, Narsingi, and nearby areas, bringing specialized geriatric equipment directly to your elderly parent's bedside."
+        answer: "Yes, we have a dedicated home visit physiotherapy service in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage and equipment availability. Home visits may support older adults who have difficulty travelling."
       },
       {
         question: "How does physiotherapy prevent falls in senior citizens?",
-        answer: "We assess the three balance pillars—visual, vestibular, and somatosensory—and strengthen anti-gravity muscles (quadriceps, glutes, calf muscles) to ensure quick, stable corrective stepping when balance is challenged."
+        answer: "A physiotherapy assessment may review balance, strength, mobility, vision or inner-ear symptoms, and home-safety concerns. Exercises can be selected to address individual findings, but fall risk has multiple causes and cannot be eliminated by exercise alone."
       },
       {
         question: "Can physiotherapy help with severe knee arthritis in seniors who want to avoid surgery?",
-        answer: "Yes. Strengthening the surrounding muscle envelope absorbs shock, reduces joint friction, and improves synovial lubrication, often delaying or eliminating the need for joint replacement surgery in medically fragile seniors."
+        answer: "Exercise may be one part of osteoarthritis care and can be adjusted to a person's needs. It cannot guarantee that surgery will be avoided. Discuss treatment choices with the person's medical team."
       },
       {
         question: "What should an elderly patient wear during their physiotherapy session?",
@@ -432,7 +407,7 @@ serviceAreas: [
     slug: "paediatric-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Paediatric Physiotherapy",
-    metaTitle: "Paediatric Physiotherapy in Manikonda | Child Rehab | Dr. Hamid's Clinic",
+    metaTitle: "Paediatric Physiotherapy in Manikonda | Child Rehab | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Gentle, play-based paediatric physiotherapy in Manikonda, Hyderabad. Developmental delay, toe walking, posture & pediatric rehabilitation. Book an assessment!",
     h1: "Paediatric Physiotherapy & Child Physical Therapy in Manikonda, Hyderabad",
     shortDescription: "Specialized, child-friendly physiotherapy fostering motor milestone achievement, postural alignment, and physical confidence in infants, children, and adolescents.",
@@ -455,7 +430,7 @@ serviceAreas: [
       "Complaints of growing pains, heel ache, or knee pain after playing sports or running at school",
       "Rounded shoulders, forward head poke, and slouching postures during homework and screen use"
     ],
-    howPhysioHelps: "Paediatric physiotherapy taps into the incredible neuroplasticity and adaptability of a growing child. By structuring therapeutic movements into enjoyable games, obstacle courses, and balance challenges, Dr. Mohammed Hamid Ali (BPT) promotes motor coordination without inducing fear or boredom. Physiotherapy gently normalizes muscle tone, corrects joint alignment, enhances core stability, and provides parents with actionable handling strategies that nurture healthy physical development at home.",
+    howPhysioHelps: "Paediatric physiotherapy taps into the incredible neuroplasticity and adaptability of a growing child. By structuring therapeutic movements into enjoyable games, obstacle courses, and balance challenges, Dr. Mohammed Hamid Ali promotes motor coordination without inducing fear or boredom. Physiotherapy gently normalizes muscle tone, corrects joint alignment, enhances core stability, and provides parents with actionable handling strategies that nurture healthy physical development at home.",
     assessmentProcess: [
       "Developmental motor milestone screening benchmarked against age-appropriate gross motor scales",
       "Observational gait analysis assessing foot strike, pelvic tilt, knee tracking, and arm swing",
@@ -471,12 +446,7 @@ serviceAreas: [
       "Customized parental home exercise guidance and footwear recommendations for growing feet"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical physiotherapy experience with a warm, patient, and child-welcoming demeanor",
-      "Child-friendly clinical atmosphere in Manikonda designed to make therapy feel like fun playtime",
-      "Close partnership with parents, providing practical, easy-to-implement home stimulation routines",
-      "Holistic approach avoiding unnecessary medical interventions while promoting natural physical growth"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
       "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
@@ -519,13 +489,13 @@ serviceAreas: [
     slug: "home-visit-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Home Physiotherapy Visits",
-    metaTitle: "Home Physiotherapy Visits in Manikonda & Hyderabad | Dr. Hamid's Clinic",
-    metaDescription: "Professional home physiotherapy visits in Manikonda, Puppalguda, Gachibowli & Hyderabad. Expert 1-on-1 care in your home or apartment. Call +91 76010 26596 to book!",
+    metaTitle: "Home Visit Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda. Contact the clinic to confirm location coverage and appointment availability.",
     h1: "Home Physiotherapy Visits in Manikonda, Hyderabad",
-    shortDescription: "Professional physiotherapy at your home in Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas. Ideal for patients who prefer treatment in the comfort of their home.",
+    shortDescription: "Home physiotherapy visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda. Contact the clinic to confirm location coverage and availability.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Home physiotherapy visits and apartment rehabilitation in Manikonda",
-    whatItIs: "Home physiotherapy visits bring clinical-grade physical rehabilitation directly to your residence and apartment. For many patients—including elderly individuals with severe mobility limitations, patients immediately discharged after major orthopedic or spinal surgery, stroke survivors requiring bed mobility training, or busy professionals suffering acute back spasms—traveling to an outpatient clinic in traffic can be exhausting, painful, or logistically impossible. At Dr. Hamid's Physio and Pain Clinic, our dedicated home visit physiotherapy service delivers comprehensive, 1-on-1 personalized physical therapy right in the comfort, safety, and familiar surroundings of your home in Manikonda and neighboring Hyderabad suburbs.",
+    whatItIs: "Home physiotherapy visits may bring rehabilitation to a person's residence when travelling to the clinic is difficult. At Dr Hamid’s Physio and Pain Clinic, the suitability, available services, and location for a home visit are confirmed individually; visits are generally targeted within an approximate 15 km radius of Manikonda.",
     causes: [
       "Immediate post-operative recovery (knee/hip replacement, spinal fusion) where patient transit is restricted",
       "Acute, severe back spasm or sciatica making sitting in a car or walking downstairs unbearable",
@@ -540,7 +510,7 @@ serviceAreas: [
       "Bed-bound or chair-bound status due to recent hospitalization, illness, or acute trauma",
       "Exhaustion and anxiety experienced by elderly patients when navigating crowded medical clinics"
     ],
-    howPhysioHelps: "Home visit physiotherapy eliminates the stress, discomfort, and physical exhaustion of navigating Hyderabad traffic and climbing clinic stairs. Dr. Mohammed Hamid Ali (BPT) brings portable clinical modalities (including TENS, muscle stimulators, therapeutic ultrasound, resistance bands, and mobilization tools) directly to your home. Most importantly, therapy is customized to your actual real-world living space—practicing transfers into your specific bed, climbing your actual apartment stairs, and optimizing your home ergonomics.",
+    howPhysioHelps: "Home visit physiotherapy eliminates the stress, discomfort, and physical exhaustion of navigating Hyderabad traffic and climbing clinic stairs. Dr. Mohammed Hamid Ali brings portable clinical modalities (including TENS, muscle stimulators, therapeutic ultrasound, resistance bands, and mobilization tools) directly to your home. Most importantly, therapy is customized to your actual real-world living space—practicing transfers into your specific bed, climbing your actual apartment stairs, and optimizing your home ergonomics.",
     assessmentProcess: [
       "Comprehensive initial bedside clinical history, physical assessment, and medical documentation review",
       "Evaluation of functional home transfers (bed-to-chair, chair-to-standing, toilet transfers)",
@@ -556,15 +526,27 @@ serviceAreas: [
       "Detailed caregiver training empowering family members with safe transfer and support techniques"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical excellence delivered by certified physiotherapists under Dr. Hamid's leadership",
-      "Punctual, professional, and respectful home visits across Manikonda, Puppalguda, and Gachibowli",
-      "Full portable clinical equipment ensuring zero compromise on therapy quality compared to clinic visits",
-      "Comprehensive caregiver empowerment and tailored home exercise programs for lasting results"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
-      "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
-      "Alkapur Township", "Kokapet", "Gachibowli", "Hitec City", "Financial District"
+      "Manikonda",
+      "Puppalguda",
+      "Lanco Hills",
+      "Tolichowki",
+      "Seven Tombs",
+      "Narsingi",
+      "Alkapur Township",
+      "Kokapet",
+      "Shaikpet",
+      "OU Colony",
+      "Khajaguda",
+      "Neknampur",
+      "Golconda",
+      "Gandipet",
+      "Jubilee Hills",
+      "Banjara Hills",
+      "Gachibowli",
+      "Financial District",
+      "HITEC City"
     ],
     homeCare: [
       "Ensure a clear, well-lit pathway in hallways and between the bed and bathroom",
@@ -576,19 +558,19 @@ serviceAreas: [
     faqs: [
       {
         question: "Which areas in Hyderabad do you cover for home visit physiotherapy?",
-        answer: "We provide home physiotherapy across Manikonda, Puppalguda, Narsingi, Alkapur Township, Shaikpet, Kokapet, Gandipet, Financial District, and Gachibowli."
+        answer: "Home visits are generally targeted within an approximate 15 km radius of Manikonda. Priority target areas include Kokapet, Gandipet, Narsingi, Jubilee Hills, Banjara Hills, Gachibowli, the Financial District, HITEC City, Puppalguda, Lanco Hills, Alkapur Township, Shaikpet, and Tolichowki, along with other nearby existing service areas. Actual availability depends on the patient's exact address; contact the clinic to confirm. The approximate radius does not guarantee a particular road distance."
       },
       {
         question: "Is home physiotherapy as effective as clinic-based physiotherapy?",
-        answer: "Yes, and for many conditions, it is even more effective! We bring portable modalities directly to you, and we train you in your actual living environment—navigating your own stairs, bed, and bathroom—which yields superior functional results."
+        answer: "Home visits and clinic appointments have different practical considerations. Suitability depends on the person's condition, goals, home environment, and available services. Contact the clinic to discuss options; no particular result is guaranteed."
       },
       {
         question: "What equipment does the physiotherapist bring to my home?",
-        answer: "Our physiotherapist carries portable electrotherapy units (TENS, IFT, EMS), therapeutic ultrasound, resistance bands, balance equipment, measurement tools, and cold/hot therapeutic packs."
+        answer: "The equipment used, if any, depends on the person's needs and the clinic's current availability. Contact the clinic before booking if you need to confirm a particular device or service."
       },
       {
         question: "How long does each home physiotherapy session last?",
-        answer: "Each home visit session lasts approximately 45 to 60 minutes of dedicated, uninterrupted 1-on-1 care."
+        answer: "Session length and arrangements should be confirmed directly with the clinic when booking."
       },
       {
         question: "How do I schedule a home visit in Manikonda?",
@@ -596,7 +578,7 @@ serviceAreas: [
       },
       {
         question: "Can home visit patients later transition to your Manikonda clinic?",
-        answer: "Yes. Many post-surgical and stroke patients begin with 2 to 3 weeks of home visits, and once their mobility and vehicular comfort improve, they transition to our clinic for advanced gym rehabilitation."
+        answer: "A change from home visits to clinic appointments depends on the person's needs, mobility, goals, and available services. Discuss timing with the clinic and the treating medical team."
       }
     ]
   },
@@ -604,13 +586,13 @@ serviceAreas: [
     slug: "therapeutic-exercise-therapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Therapeutic Exercise Therapy",
-    metaTitle: "Therapeutic Exercise Therapy in Manikonda | Dr. Hamid's Physio Clinic",
+    metaTitle: "Therapeutic Exercise Therapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Prescription therapeutic exercise therapy in Manikonda, Hyderabad. Restore strength, flexibility, endurance & postural balance. Evidence-based care. Book now!",
     h1: "Therapeutic Exercise Therapy in Manikonda, Hyderabad",
     shortDescription: "Scientifically prescribed, individualized movement protocols designed to remediate physical impairments, restore muscular function, and optimize musculoskeletal health.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Therapeutic exercise therapy and functional rehabilitation in Manikonda clinic",
-    whatItIs: "Therapeutic exercise is the systematic, planned performance of specialized bodily movements, postures, and physical activities intended to remediate physical impairments, improve musculoskeletal and cardiovascular function, prevent complications, and optimize overall physical health. Unlike generic gym workouts, therapeutic exercise is a medical prescription: precise in dosage, vector, plane of movement, repetition count, and physiological loading. At Dr. Hamid's Physio and Pain Clinic in Manikonda, therapeutic exercise represents the cornerstone of long-term healing, transitioning patients from passive pain relief to active, resilient strength.",
+    whatItIs: "Therapeutic exercise is the systematic, planned performance of specialized bodily movements, postures, and physical activities intended to remediate physical impairments, improve musculoskeletal and cardiovascular function, prevent complications, and optimize overall physical health. Unlike generic gym workouts, therapeutic exercise is a medical prescription: precise in dosage, vector, plane of movement, repetition count, and physiological loading. At Dr Hamid’s Physio and Pain Clinic in Manikonda, therapeutic exercise represents the cornerstone of long-term healing, transitioning patients from passive pain relief to active, resilient strength.",
     causes: [
       "Post-injury muscular deconditioning and arthrogenic muscle inhibition",
       "Prolonged sedentary work lifestyles creating profound postural muscle imbalances",
@@ -641,12 +623,7 @@ serviceAreas: [
       "Progressive functional task conditioning simulating work, sporting, and home physical demands"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical expertise prescribing medical-grade therapeutic exercise protocols",
-      "Spacious, well-equipped exercise therapy floor in our Manikonda clinic",
-      "1-on-1 personalized exercise coaching ensuring safe form and zero risk of aggravation",
-      "Clear digital exercise plans and video guidance provided for consistent home execution"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -689,13 +666,13 @@ serviceAreas: [
     slug: "balance-exercise-therapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Balance Exercise Therapy",
-    metaTitle: "Balance Exercise Therapy in Manikonda | Fall Prevention | Dr. Hamid's Clinic",
-    metaDescription: "Improve stability, overcome dizziness & prevent falls with targeted balance exercise therapy in Manikonda, Hyderabad. Certified clinical care. Book today!",
+    metaTitle: "Balance Exercise Therapy in Manikonda | Fall Prevention | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Balance exercise therapy in Manikonda, Hyderabad. Contact the clinic to ask about an assessment and options for strength, balance, and mobility.",
     h1: "Balance Exercise Therapy & Fall Prevention in Manikonda, Hyderabad",
     shortDescription: "Specialized neuromuscular balance rehabilitation, proprioceptive retraining, and fall-risk reduction therapy for seniors and neurological patients in Manikonda.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Balance exercise therapy and wobble board stability training in Manikonda",
-    whatItIs: "Balance exercise therapy is a specialized physical rehabilitation discipline aimed at enhancing postural equilibrium, joint proprioception, and dynamic stability. Human balance is a complex neurological process requiring seamless real-time coordination between three key sensory systems: the visual system (eyes), the vestibular system (inner ear), and the somatosensory system (proprioceptive nerve endings in muscles and joints), integrated by the brain and executed by musculoskeletal effectors. Balance deficits can arise from aging, stroke, peripheral neuropathy, vestibular neuritis, joint replacements, or prolonged disuse. At Dr. Hamid's Physio and Pain Clinic in Manikonda, balance therapy rebuilds physical confidence and prevents debilitating falls.",
+    whatItIs: "Balance exercise therapy is a specialized physical rehabilitation discipline aimed at enhancing postural equilibrium, joint proprioception, and dynamic stability. Human balance is a complex neurological process requiring seamless real-time coordination between three key sensory systems: the visual system (eyes), the vestibular system (inner ear), and the somatosensory system (proprioceptive nerve endings in muscles and joints), integrated by the brain and executed by musculoskeletal effectors. Balance deficits can arise from aging, stroke, peripheral neuropathy, vestibular neuritis, joint replacements, or prolonged disuse. At Dr Hamid’s Physio and Pain Clinic in Manikonda, balance therapy rebuilds physical confidence and prevents debilitating falls.",
     causes: [
       "Age-related degeneration of inner ear vestibular hair cells and peripheral nerve proprioceptors",
       "Diabetic peripheral neuropathy impairing sensory feedback from the soles of the feet",
@@ -711,7 +688,7 @@ serviceAreas: [
       "A constant fear of falling that restricts walking outdoors, climbing stairs, or social outings",
       "Difficulty maintaining balance when reaching for objects or stepping onto curbs"
     ],
-    howPhysioHelps: "Balance can be trained and restored through targeted physiological stimulation. Dr. Mohammed Hamid Ali (BPT) isolates which sensory system is lagging and challenges your neuromuscular pathways through progressively demanding balance tasks. Using wobble boards, foam pads, tandem stance drills, and dual-task cognitive challenges, therapy awakens rapid postural correction reflexes, strengthens stabilizing muscles, and drastically reduces your risk of experiencing a catastrophic fall.",
+    howPhysioHelps: "Balance care may include an assessment of movement, strength, symptoms, and relevant health factors. If appropriate, a plan may use balance or strength exercises and practical safety advice. Exercise may help some people, but cannot eliminate falls or replace assessment of other causes.",
     assessmentProcess: [
       "Standardized clinical balance testing using the Berg Balance Scale and Timed Up & Go (TUG) test",
       "Romberg and Sharpened Romberg testing to evaluate visual versus proprioceptive balance dominance",
@@ -727,12 +704,7 @@ serviceAreas: [
       "Lower extremity strengthening targeting gluteus medius, quadriceps, and ankle stabilizers"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical expertise treating balance deficits, vestibular issues, and geriatric mobility",
-      "Dedicated balance retraining equipment including wobble boards, balance pads, and agility markers",
-      "Safe, supportive environment with hands-on clinician guarding ensuring zero risk of falling during sessions",
-      "Comprehensive fall-prevention home audits and practical safety guidance for family members"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -763,11 +735,11 @@ serviceAreas: [
       },
       {
         question: "How long does a balance therapy program take?",
-        answer: "Most patients attend 2 to 3 sessions per week for 6 to 8 weeks, accompanied by simple daily 10-minute home exercises."
+        answer: "Session frequency and duration vary with symptoms, health, goals, and progress. A clinician can discuss an individual plan and whether home exercises are suitable."
       },
       {
         question: "Do you offer balance therapy home visits in Manikonda?",
-        answer: "Yes, we provide home visit balance and fall prevention therapy across Manikonda and Puppalguda for patients who cannot travel to the clinic."
+        answer: "Yes, we provide home visit balance and fall prevention therapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients who cannot travel to the clinic."
       }
     ]
   },
@@ -775,13 +747,13 @@ serviceAreas: [
     slug: "chronic-pain-management-manikonda",
     category: "Sports, Post-Op & General",
     title: "Chronic Pain Management",
-    metaTitle: "Chronic Pain Management Physiotherapy in Manikonda | Dr. Hamid's Clinic",
+    metaTitle: "Chronic Pain Management Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Overcome persistent pain with advanced chronic pain management physiotherapy in Manikonda, Hyderabad. Non-invasive, holistic care by Dr. Hamid. Call today!",
     h1: "Chronic Pain Management Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Multimodal, non-opioid physical rehabilitation addressing persistent musculoskeletal pain, central sensitization, fibromyalgia, and chronic spinal syndromes in Manikonda.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Chronic pain management physiotherapy consultation and therapy in Manikonda",
-    whatItIs: "Chronic pain is defined as pain that persists or recurs for longer than three months, outlasting normal biological tissue healing times. Unlike acute pain, which acts as a protective alarm signal for fresh tissue damage, chronic pain often involves changes in the central and peripheral nervous system known as central sensitization—where pain processing pathways become hyper-responsive, amplifying minor sensations into severe discomfort. Common chronic conditions include fibromyalgia, chronic low back syndrome, chronic tension headaches, failed back surgery syndrome, and persistent myofascial pain. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we utilize evidence-based neuroscience, gentle manual therapy, electrotherapy, and graded motor imagery to retrain your nervous system and restore your quality of life.",
+    whatItIs: "Chronic pain is defined as pain that persists or recurs for longer than three months, outlasting normal biological tissue healing times. Unlike acute pain, which acts as a protective alarm signal for fresh tissue damage, chronic pain often involves changes in the central and peripheral nervous system known as central sensitization—where pain processing pathways become hyper-responsive, amplifying minor sensations into severe discomfort. Common chronic conditions include fibromyalgia, chronic low back syndrome, chronic tension headaches, failed back surgery syndrome, and persistent myofascial pain. At Dr Hamid’s Physio and Pain Clinic in Manikonda, we utilize evidence-based neuroscience, gentle manual therapy, electrotherapy, and graded motor imagery to retrain your nervous system and restore your quality of life.",
     causes: [
       "Central sensitization where the brain and spinal cord amplify sensory signals into persistent pain",
       "Prolonged muscular guarding, chronic postural strain, and myofascial trigger point development",
@@ -813,12 +785,7 @@ serviceAreas: [
       "Aerobic conditioning, diaphragmatic breathing, and lifestyle pacing strategies to boost endorphins"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of dedicated clinical experience managing complex, persistent chronic pain syndromes",
-      "Empathetic, compassionate listening approach that validates your pain experience without judgment",
-      "Non-opioid, non-invasive treatment plans prioritizing active recovery and long-term autonomy",
-      "Convenient Manikonda clinic with serene, supportive treatment environments"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
       "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
@@ -833,7 +800,7 @@ serviceAreas: [
     faqs: [
 {
         question: "Do you offer chronic pain therapy home visits in Manikonda?",
-        answer: "Yes, for patients whose severe chronic pain restricts them from traveling to the clinic, we offer dedicated home visit physiotherapy across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas."
+        answer: "Yes, for patients whose severe chronic pain restricts them from traveling to the clinic, we offer dedicated home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       },
       {
         question: "Can physiotherapy help with fibromyalgia?",
@@ -853,7 +820,7 @@ serviceAreas: [
       },
       {
         question: "Do you offer chronic pain therapy home visits in Manikonda?",
-        answer: "Yes, for patients whose severe chronic pain restricts them from traveling to the clinic, we offer dedicated home visit physiotherapy across Manikonda, Puppalguda, and nearby areas."
+        answer: "Yes, for patients whose severe chronic pain restricts them from traveling to the clinic, we offer dedicated home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       }
     ]
   },
@@ -861,13 +828,13 @@ serviceAreas: [
     slug: "muscle-spasm-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Muscle Spasm Physiotherapy",
-    metaTitle: "Muscle Spasm Physiotherapy in Manikonda | Dr. Hamid's Physio Clinic",
-    metaDescription: "Instant relief from acute back, neck & leg muscle spasms with specialized physiotherapy in Manikonda, Hyderabad. Gentle, fast recovery. Book your relief now!",
+    metaTitle: "Muscle Spasm Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Physiotherapy information for back, neck, and leg muscle spasms in Manikonda, Hyderabad. An assessment can help discuss symptoms and suitable next steps.",
     h1: "Muscle Spasm Physiotherapy & Relief in Manikonda, Hyderabad",
     shortDescription: "Rapid-acting, non-invasive physical therapy to release painful involuntary muscle contractions, eliminate trigger points, and restore pain-free movement in Manikonda.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Muscle spasm physiotherapy and myofascial release in Manikonda clinic",
-    whatItIs: "A muscle spasm (also known as an acute muscle cramp, knot, or involuntary muscle guarding) is a sudden, sustained, and uncontrollable contraction of one or more muscle fibers. Muscle spasms commonly attack the lower back (lumbar paraspinal spasm), neck (acute torticollis or 'crick in the neck'), calves (nighttime charley horse), and shoulder blades (rhomboid/trapezius knots). In a protective attempt to splint an irritated spine or joint, surrounding muscles lock down in hyper-contraction, pinching localized blood vessels, starving tissues of oxygen (ischemia), and triggering severe, sharp pain. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we break the vicious spasm-pain-spasm cycle quickly and gently.",
+    whatItIs: "A muscle spasm (also known as an acute muscle cramp, knot, or involuntary muscle guarding) is a sudden, sustained, and uncontrollable contraction of one or more muscle fibers. Muscle spasms commonly attack the lower back (lumbar paraspinal spasm), neck (acute torticollis or 'crick in the neck'), calves (nighttime charley horse), and shoulder blades (rhomboid/trapezius knots). In a protective attempt to splint an irritated spine or joint, surrounding muscles lock down in hyper-contraction, pinching localized blood vessels, starving tissues of oxygen (ischemia), and triggering severe, sharp pain. At Dr Hamid’s Physio and Pain Clinic in Manikonda, we break the vicious spasm-pain-spasm cycle quickly and gently.",
     causes: [
       "Protective neuromuscular guarding secondary to an underlying spinal disc bulge or facet joint sprain",
       "Sudden awkward twisting, bending, or unaccustomed heavy lifting overloading cold muscle tissues",
@@ -883,7 +850,7 @@ serviceAreas: [
       "Visible twitching or fasciculation in the contracted muscle belly",
       "Radiating dull ache spreading into neighboring joint areas and causing severe movement restriction"
     ],
-    howPhysioHelps: "Relying solely on muscle relaxant pills often causes extreme drowsiness while leaving the mechanical trigger untouched. Physiotherapy provides immediate, localized relief. Dr. Mohammed Hamid Ali (BPT) utilizes targeted electrotherapy (IFT and TENS) to fatigue and relax hyper-contracted motor units, followed by gentle moist heat, ischemic compression, and specialized reciprocal inhibition techniques. This flushes out inflammatory lactic acid, restores blood flow, and frees your locked spine or limbs.",
+    howPhysioHelps: "Care for a muscle spasm depends on its cause and symptoms. After assessment, a clinician may discuss comfortable movement, exercise, advice, or other options. Treatment response varies, and physiotherapy cannot promise immediate relief or identify every cause without appropriate evaluation.",
     assessmentProcess: [
       "Immediate palpatory examination to map the exact location of taut muscular bands and active trigger points",
       "Gentle cervical, thoracic, or lumbar spine screening to identify underlying disc or joint irritation triggers",
@@ -899,12 +866,7 @@ serviceAreas: [
       "Gentle active mobilization and ergonomic guidance to prevent recurrence once the spasm unlocks"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of expertise delivering immediate, gentle relief for acute back and neck muscle locks",
-      "Same-day emergency consultation availability in Manikonda for patients locked in acute agony",
-      "Holistic approach that diagnoses and treats the underlying trigger, not just the surface cramp",
-      "Gentle hands-on techniques that avoid aggressive cracking or painful forceful manipulation"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -919,7 +881,7 @@ serviceAreas: [
     faqs: [
       {
         question: "How fast can physiotherapy relieve an acute back muscle spasm?",
-        answer: "Most patients experience significant, noticeable relief and unlock their movement within the very first 45-minute clinical session using a combination of IFT, heat, and gentle myofascial release."
+        answer: "Response to treatment varies. If a spasm is severe, recurrent, follows an injury, or occurs with weakness, numbness, fever, or other concerning symptoms, seek medical advice. A clinician can assess possible causes and discuss care options."
       },
       {
         question: "Should I apply ice or heat on a muscle spasm?",
@@ -927,7 +889,7 @@ serviceAreas: [
       },
       {
         question: "Why does my back keep going into muscle spasms every few months?",
-        answer: "Recurrent spasms almost always indicate an underlying mechanical issue—such as an irritated spinal disc, weak core stabilizers, or poor desk posture. The muscle goes into spasm to 'protect' the spine. We treat the root cause to end the cycle."
+        answer: "Recurring spasms can have different causes. A clinician can review symptoms, health history, and movement to decide whether further assessment or treatment is needed."
       },
       {
         question: "Can stress really cause neck and shoulder muscle spasms?",
@@ -939,7 +901,7 @@ serviceAreas: [
       },
       {
         question: "Can I get home physiotherapy if I cannot stand up to come to the clinic?",
-        answer: "Yes, we offer emergency home visit physiotherapy across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas for patients whose severe muscle spasms prevent them from driving or climbing stairs."
+        answer: "Yes, we offer emergency home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for people whose severe muscle spasms prevent them from driving or climbing stairs."
       }
     ]
   },
@@ -947,13 +909,13 @@ serviceAreas: [
     slug: "muscle-strain-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Muscle Tear / Strain Physiotherapy",
-    metaTitle: "Muscle Tear & Strain Physiotherapy in Manikonda | Dr. Hamid's Physio",
-    metaDescription: "Accelerated healing for hamstring, calf, quad & groin muscle tears in Manikonda, Hyderabad. Specialized physiotherapy by Dr. Hamid, BPT. Book today!",
+    metaTitle: "Muscle Tear & Strain Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Accelerated healing for hamstring, calf, quad & groin muscle tears in Manikonda, Hyderabad. Specialized physiotherapy by Dr. Hamid. Book today!",
     h1: "Muscle Tear & Strain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for Grade I, II, and III muscle strains, hamstring pulls, calf tears, and groin injuries in Manikonda.",
     imageSrc: "/images/services/condition-sports-injury.webp",
     altText: "Muscle tear and strain physiotherapy treatment and rehabilitation in Manikonda",
-    whatItIs: "A muscle strain (commonly known as a pulled muscle or muscle tear) occurs when skeletal muscle fibers are subjected to excessive tensile stretch, violent contraction, or eccentric overload, causing microscopic or macroscopic fiber disruption. Muscle tears commonly affect high-velocity biarticular muscles such as the hamstrings, gastrocnemius (calf / 'tennis leg'), quadriceps (rectus femoris), and adductors (groin pull). Strains are clinically categorized into Grade I (mild micro-tears), Grade II (moderate partial tear with swelling and loss of strength), and Grade III (complete structural muscle rupture). At Dr. Hamid's Physio and Pain Clinic in Manikonda, muscle strain physiotherapy ensures proper collagen fiber alignment during healing, preventing weak, disorganized scar tissue and chronic recurring tears.",
+    whatItIs: "A muscle strain can involve injury to muscle fibres or the tendon and may cause pain, swelling, or weakness. Severity and the right care vary. Significant bruising, inability to use the limb, or concern about a serious injury should be assessed by a medical clinician.",
     causes: [
       "Sudden explosive sprinting, jumping, or rapid direction changes without adequate warm-up",
       "Violent eccentric muscle contractions (where muscle lengthens while under high tension)",
@@ -968,7 +930,7 @@ serviceAreas: [
       "Severe pain when attempting to actively contract the muscle or stretch it into elongation",
       "A palpable defect, dip, or localized fullness in the muscle belly in moderate to severe tears"
     ],
-    howPhysioHelps: "Improperly managed muscle tears heal with disorganized, weak scar tissue that leaves athletes prone to recurrent tears for years. Physiotherapy guides the biological healing phases: controlling initial bleeding and edema, stimulating organized linear collagen synthesis through therapeutic ultrasound, and introducing calibrated eccentric loading. Dr. Mohammed Hamid Ali (BPT) restores muscle tensile strength, elasticity, and power to ensure safe, confident return to physical activities.",
+    howPhysioHelps: "Rehabilitation for a muscle strain depends on the injury and its stage. A clinician may discuss comfortable movement, gradual strengthening, and a stepwise return to activity when appropriate. Assessment is important if symptoms are severe or worsening; recovery and recurrence risk vary.",
     assessmentProcess: [
       "Detailed clinical mechanism-of-injury analysis and classification of strain grade (Grade I, II, or III)",
       "Gentle palpation to locate the exact anatomical site of the tear (myotendinous junction vs muscle belly)",
@@ -977,19 +939,14 @@ serviceAreas: [
       "Functional movement screening to identify biomechanical predisposing factors across the kinetic chain"
     ],
     treatmentApproach: [
-      "Initial PEACE & LOVE protocols with therapeutic ultrasound to promote cellular proliferation",
-      "Gentle lymphatic drainage and soft tissue effleurage to clear bruising and metabolic waste",
-      "Transverse friction massage once acute bleeding ceases to prevent chaotic, fibrous scar adhesions",
-      "Progressive isometric progressing to eccentric resistance loading (the gold standard for muscle healing)",
-      "High-velocity agility, plyometric drills, and sport-specific reconditioning for full clearance"
+      "Follow medical advice about protection and movement after the injury",
+      "Progress activity and strengthening according to symptoms and clinical assessment",
+      "Discuss sport-specific movement and return-to-activity steps when appropriate",
+      "Review the plan if pain, swelling, or function worsens",
+      "Return to sport should follow the treating team's advice and individual progress"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical expertise treating competitive athletes, runners, and fitness enthusiasts",
-      "Evidence-based eccentric loading protocols that drastically reduce reinjury rates",
-      "State-of-the-art modalities including therapeutic ultrasound and electrotherapy in Manikonda",
-      "Objective return-to-sport testing ensuring complete physiological recovery before full play"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
       "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
@@ -997,8 +954,8 @@ serviceAreas: [
     homeCare: [
       "Protect and elevate the injured limb during the first 48 hours; avoid aggressive stretching",
       "Apply ice packs wrapped in a cloth for 15 minutes, 3 times daily, to control acute swelling",
-      "Do NOT take NSAIDs (like ibuprofen) in the first 48 hours as they can impair initial collagen repair",
-      "Follow Dr. Hamid's progressive loading instructions rather than remaining completely immobilized"
+      "Ask a medical clinician or pharmacist before taking medicine, especially if you have other conditions or take other medicines",
+      "Follow your treating clinician's advice about movement, loading, and activity"
     ],
     whenToVisit: "Consult Dr. Hamid immediately if you felt a sudden pop or pull in your muscle while running or lifting, have visible bruising spreading down your leg or arm, or cannot bear weight without sharp pain.",
     faqs: [
@@ -1008,19 +965,19 @@ serviceAreas: [
       },
       {
         question: "Why should I avoid aggressive stretching immediately after a muscle tear?",
-        answer: "Stretching an acutely torn muscle tears newly forming collagen bridges and re-opens internal capillary bleeding, worsening the injury. Protected rest and gentle contraction are required first."
+        answer: "The right level of movement depends on the injury and symptoms. Avoid forcing a painful stretch and seek assessment if pain or swelling is significant, worsening, or limiting function."
       },
       {
         question: "How do you prevent a hamstring strain from tearing again?",
-        answer: "Hamstrings have a notorious 30% reinjury rate if rehabilitated poorly. We use evidence-based eccentric strengthening exercises (like Nordic hamstring curls) and fix pelvic tilt to build durable muscle resilience."
+        answer: "A previous hamstring injury can be one factor in future injury risk. Rehabilitation may include progressive strengthening and sport-specific activity, with the plan adjusted to symptoms and goals. No program can guarantee that an injury will not recur."
       },
       {
         question: "Can therapeutic ultrasound help heal a torn muscle faster?",
-        answer: "Yes. Therapeutic ultrasound stimulates cellular fibroblast proliferation, increases local blood supply, and encourages newly synthesized collagen fibers to align along lines of stress."
+        answer: "Evidence for therapeutic ultrasound varies by condition. A clinician can discuss whether it is appropriate; no treatment can guarantee faster healing."
       },
       {
         question: "How soon can I start running again after a calf tear?",
-        answer: "You can transition to light jogging once you have full pain-free calf stretching, equal calf raise strength compared to the uninjured side, and can perform single-leg hopping without discomfort."
+        answer: "Return to running depends on the injury, symptoms, strength, and functional progress. Ask the treating clinician for an individual plan rather than using a single test as clearance."
       },
       {
         question: "Do you treat gym-related chest or bicep muscle strains?",
@@ -1032,13 +989,13 @@ serviceAreas: [
     slug: "tendonitis-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Tendonitis Physiotherapy",
-    metaTitle: "Tendonitis Physiotherapy in Manikonda | Dr. Hamid's Physio Clinic",
+    metaTitle: "Tendonitis Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Expert tendonitis & tendinopathy rehabilitation in Manikonda, Hyderabad. Relief for Achilles, patellar, rotator cuff & wrist tendons. Book your session!",
     h1: "Tendonitis Physiotherapy & Tendinopathy Care in Manikonda, Hyderabad",
     shortDescription: "Specialized, progressive tendon loading therapy, collagen remodeling, and biomechanical correction for acute tendonitis and chronic tendinopathy in Manikonda.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Tendonitis physiotherapy and tendon rehabilitation in Manikonda clinic",
-    whatItIs: "Tendonitis (and its chronic counterpart, tendinopathy or tendinosis) is a painful musculoskeletal condition characterized by inflammation, micro-trauma, cellular disorganization, and degenerative breakdown of tendon tissue. Tendons are dense, fibrous connective bands that transmit mechanical force from skeletal muscles to bones. Common clinical presentations treated at Dr. Hamid's Physio and Pain Clinic in Manikonda include Achilles tendonitis (heel cord), Patellar tendonitis ('Jumper's knee'), Rotator Cuff tendonitis (shoulder), De Quervain's tenosynovitis (thumb/wrist), and Biceps tendonitis. Because tendons have low vascularity, conservative rest alone fails; tendons require scientifically calibrated mechanical loading to stimulate cellular collagen repair.",
+    whatItIs: "Tendonitis (and its chronic counterpart, tendinopathy or tendinosis) is a painful musculoskeletal condition characterized by inflammation, micro-trauma, cellular disorganization, and degenerative breakdown of tendon tissue. Tendons are dense, fibrous connective bands that transmit mechanical force from skeletal muscles to bones. Common clinical presentations treated at Dr Hamid’s Physio and Pain Clinic in Manikonda include Achilles tendonitis (heel cord), Patellar tendonitis ('Jumper's knee'), Rotator Cuff tendonitis (shoulder), De Quervain's tenosynovitis (thumb/wrist), and Biceps tendonitis. Because tendons have low vascularity, conservative rest alone fails; tendons require scientifically calibrated mechanical loading to stimulate cellular collagen repair.",
     causes: [
       "Sudden increases in training volume, running mileage, or repetitive workplace mechanical load",
       "Biomechanical movement faults causing abnormal shear and friction forces on the tendon",
@@ -1054,7 +1011,7 @@ serviceAreas: [
       "Pain aggravated by explosive loading, jumping, uphill walking, or repetitive gripping",
       "Gradual loss of muscle power and endurance in the associated extremity"
     ],
-    howPhysioHelps: "Tendon rehabilitation has evolved dramatically: complete rest actually weakens tendons by inducing cellular catabolism. Tendons need load! Dr. Mohammed Hamid Ali (BPT) implements modern Heavy Slow Resistance (HSR) and progressive eccentric loading protocols. Combined with targeted electrotherapy to reduce localized neurovascular ingrowth and pain, this structured loading stimulates tenocytes to produce healthy, organized Type I collagen, restoring the tendon's energy-storing spring capacity.",
+    howPhysioHelps: "Tendon rehabilitation has evolved dramatically: complete rest actually weakens tendons by inducing cellular catabolism. Tendons need load! Dr. Mohammed Hamid Ali implements modern Heavy Slow Resistance (HSR) and progressive eccentric loading protocols. Combined with targeted electrotherapy to reduce localized neurovascular ingrowth and pain, this structured loading stimulates tenocytes to produce healthy, organized Type I collagen, restoring the tendon's energy-storing spring capacity.",
     assessmentProcess: [
       "Precise anatomical palpation and localized tendon provocation testing to isolate the affected structure",
       "Classification of tendinopathy stage: reactive tendinopathy, tendon disrepair, or degenerative tendinopathy",
@@ -1070,12 +1027,7 @@ serviceAreas: [
       "Graduated energy-storage and plyometric reconditioning to restore sports-ready explosive springiness"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of expertise managing complex sports and occupational tendinopathies in Hyderabad",
-      "Up-to-date with modern tendon science: no prolonged resting or harmful repetitive steroid injections",
-      "Equipped with advanced therapeutic modalities and specialized loading equipment in Manikonda",
-      "Personalized loading spreadsheets and exercise tracking ensuring safe, continuous progress"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
       "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
@@ -1118,13 +1070,13 @@ serviceAreas: [
     slug: "whiplash-injuries-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
     title: "Whiplash Injuries Physiotherapy",
-    metaTitle: "Whiplash Physiotherapy in Manikonda | Neck Sprain Care | Dr. Hamid's",
+    metaTitle: "Whiplash Physiotherapy in Manikonda | Neck Sprain Care | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Relieve neck pain, stiffness & headaches after car accidents with whiplash physiotherapy in Manikonda, Hyderabad. Fast, gentle care by Dr. Hamid. Book today!",
     h1: "Whiplash Injuries Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for cervical acceleration-deceleration (CAD) injuries, neck sprains, and post-accident cervicogenic headaches in Manikonda.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Whiplash neck injury physiotherapy and cervical rehabilitation in Manikonda",
-    whatItIs: "A whiplash injury (clinically termed Cervical Acceleration-Deceleration or CAD syndrome) is a traumatic injury to the cervical spine caused by rapid, violent forward-and-backward whipping motion of the head. Most frequently sustained during rear-end automobile collisions, bike skids, sporting impacts, or severe slips, whiplash strains cervical muscles, sprains anterior and posterior spinal ligaments, irritates facet joints, and can compress exiting cervical nerve roots. At Dr. Hamid's Physio and Pain Clinic in Manikonda, whiplash physiotherapy delivers gentle, evidence-based physical care that prevents acute post-accident neck trauma from becoming debilitating chronic pain.",
+    whatItIs: "A whiplash injury (clinically termed Cervical Acceleration-Deceleration or CAD syndrome) is a traumatic injury to the cervical spine caused by rapid, violent forward-and-backward whipping motion of the head. Most frequently sustained during rear-end automobile collisions, bike skids, sporting impacts, or severe slips, whiplash strains cervical muscles, sprains anterior and posterior spinal ligaments, irritates facet joints, and can compress exiting cervical nerve roots. At Dr Hamid’s Physio and Pain Clinic in Manikonda, whiplash physiotherapy delivers gentle, evidence-based physical care that prevents acute post-accident neck trauma from becoming debilitating chronic pain.",
     causes: [
       "Rear-end or side-impact motor vehicle collisions causing sudden acceleration-deceleration of the head",
       "Two-wheeler skids and sudden braking forcing the rider's neck through violent hyper-flexion and extension",
@@ -1155,12 +1107,7 @@ serviceAreas: [
       "Postural re-education, scapular stabilization, and gentle return to normal driving and desk work"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of dedicated clinical experience diagnosing and treating vehicular trauma and spinal whiplash",
-      "Adherence to international Whiplash-Associated Disorder (WAD) clinical practice guidelines",
-      "Gentle, reassuring treatment environment with zero forceful neck twisting or cracking",
-      "Complete medical documentation to assist with accurate personal insurance claim records"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Narsingi",
       "Alkapur Township", "Kokapet", "Gachibowli", "Jubilee Hills"
@@ -1195,7 +1142,7 @@ serviceAreas: [
       },
       {
         question: "Do you offer home visit physiotherapy for whiplash patients in Manikonda?",
-        answer: "Yes, if post-accident pain makes driving or riding in a car unbearable, our team provides home visit physiotherapy across Manikonda, Puppalguda, and Gachibowli."
+        answer: "Yes, if post-accident pain makes driving or riding in a car unbearable, our team provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
       }
     ]
   },
@@ -1204,12 +1151,12 @@ serviceAreas: [
     category: "Sports, Post-Op & General",
     title: "Post Knee Replacement Rehabilitation",
     metaTitle: "Post Knee Replacement Rehabilitation in Manikonda | TKR Recovery Hyderabad",
-    metaDescription: "Expert post knee replacement rehabilitation in Manikonda, Hyderabad. Accelerated recovery after total knee replacement (TKR) by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    metaDescription: "Physiotherapy after knee replacement surgery in Manikonda, Hyderabad. Rehabilitation should follow the surgeon's advice and the person's health, symptoms, and progress.",
     h1: "Post Knee Replacement Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Specialized, protocol-driven rehabilitation following total knee replacement (TKR) and partial knee replacement surgery.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Post knee replacement rehabilitation and TKR recovery in Manikonda clinic",
-    whatItIs: "Post knee replacement rehabilitation is the critical structured physiotherapy program following Total Knee Replacement (TKR) or Unicompartmental Knee Arthroplasty (UKA). While the surgical procedure replaces the damaged joint surfaces with metal and plastic components, successful functional recovery depends entirely on systematic rehabilitation. Post-operative physiotherapy restores knee range of motion, rebuilds quadriceps strength, normalizes walking gait, and enables patients to return to independent daily activities. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) provides comprehensive, surgeon-aligned rehabilitation protocols ensuring optimal outcomes after knee replacement surgery.",
+    whatItIs: "Rehabilitation after knee replacement may support movement, strength, walking, and daily activities. The plan depends on the operation, the person's health and progress, and the surgeon's advice. Physiotherapy does not guarantee a particular outcome.",
     causes: [
       "Post-surgical joint stiffness and capsular contracture from tissue healing",
       "Quadriceps inhibition and weakness following surgical trauma",
@@ -1226,7 +1173,7 @@ serviceAreas: [
       "Pain and apprehension during weight-bearing activities",
       "Struggling with stairs, getting in and out of chairs, or car transfers"
     ],
-    howPhysioHelps: "Structured post-operative physiotherapy dramatically accelerates knee replacement recovery. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) implements phased rehabilitation protocols: early mobilization to prevent stiffness, progressive range of motion exercises to achieve functional flexion, quadriceps strengthening to restore stable walking, and functional training for stairs and daily activities. This evidence-based approach ensures you achieve maximum knee function, typically reaching 110-120 degrees of bending within 6 to 12 weeks.",
+    howPhysioHelps: "Rehabilitation after knee replacement may include movement practice, strength exercises, walking and daily-activity training, following the surgeon's instructions. The plan and pace should reflect the procedure, health, symptoms, and progress of the individual. No particular range of motion or outcome can be promised.",
     assessmentProcess: [
       "Goniometric measurement of knee flexion and extension range of motion",
       "Assessment of active extension lag and quadriceps activation",
@@ -1235,19 +1182,14 @@ serviceAreas: [
       "Gait analysis with or without assistive devices"
     ],
     treatmentApproach: [
-      "Phase 1 (Weeks 0-2): Edema control, patellar mobilization, quadriceps setting, and heel slides",
-      "Phase 2 (Weeks 2-6): Progressive flexion to 90-110 degrees, stationary cycling, and walker weaning",
-      "Phase 3 (Weeks 6-12): Closed kinetic chain strengthening, stair climbing, and outdoor walking",
-      "Phase 4 (Weeks 12+): Advanced strengthening, endurance training, and return to recreational activities",
+      "Early rehabilitation follows the surgeon's instructions for swelling management and comfortable movement",
+      "Progressive mobility and strengthening guided by symptoms, function, and the treating team's plan",
+      "Walking and daily-activity practice, with mobility aids used as advised by the treating team",
+      "Further strengthening and activity progression when appropriate for the person's recovery",
       "Manual scar tissue mobilization and joint mobilizations as needed"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of specialized orthopedic post-surgical rehabilitation experience",
-      "Strict compliance with orthopedic surgical protocols and milestones",
-      "Available for home visit physiotherapy during early post-operative weeks",
-      "Specialized training in joint replacement rehabilitation (MPT Orthopedics)"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -1259,7 +1201,7 @@ serviceAreas: [
       "Perform prescribed heel slides and knee bends 3 to 4 times daily",
       "Never place a pillow directly under the knee when resting—place it under the calf"
     ],
-    whenToVisit: "Begin rehabilitation immediately after hospital discharge (typically day 3 to 5 post-surgery). Home visits are strongly recommended for the first 2 to 3 weeks for patients who cannot travel to the clinic.",
+    whenToVisit: "Follow the surgeon's instructions about when to start rehabilitation and which precautions apply. Contact the treating team if pain, swelling, wound changes, or mobility concerns worsen.",
     faqs: [
       {
         question: "How soon after knee replacement surgery should physiotherapy start?",
@@ -1267,11 +1209,11 @@ serviceAreas: [
       },
       {
         question: "How much should I be able to bend my knee after knee replacement?",
-        answer: "The goal is to achieve at least 90 degrees of flexion by week 2 to 3, and 110 to 120+ degrees by week 6 to 8, which allows comfortable stair climbing and sitting in normal chairs."
+        answer: "Knee movement goals and progress vary after surgery. Follow the surgeon's and physiotherapist's plan, and ask the treating team about stiffness, pain, swelling, or concerns with movement."
       },
       {
         question: "Do you offer home visit physiotherapy after knee replacement in Manikonda?",
-        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation across Manikonda, Puppalguda, and surrounding areas during the early post-operative period when travel is difficult."
+        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage during the early post-operative period when travel is difficult."
       },
       {
         question: "Will rehabilitation be painful after knee replacement?",
@@ -1279,7 +1221,7 @@ serviceAreas: [
       },
       {
         question: "How long will I need a walker or cane after knee replacement?",
-        answer: "Most patients progress from a walker to a single cane within 2 to 3 weeks, and walk without assistive devices by week 4 to 6 with consistent rehabilitation."
+        answer: "The time someone uses a walker or cane varies with balance, strength, symptoms, surgery, and the treating team's advice. Do not stop using an aid until the treating team considers it safe."
       },
       {
         question: "How do I book post-knee replacement rehabilitation?",
@@ -1292,12 +1234,12 @@ serviceAreas: [
     category: "Sports, Post-Op & General",
     title: "Post Hip Replacement Rehabilitation",
     metaTitle: "Post Hip Replacement Rehabilitation in Manikonda | THA Recovery Hyderabad",
-    metaDescription: "Expert post hip replacement rehabilitation in Manikonda, Hyderabad. Safe recovery after total hip arthroplasty (THA) by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    metaDescription: "Expert post hip replacement rehabilitation in Manikonda, Hyderabad. Safe recovery after total hip arthroplasty (THA) by Dr. Mohammed Hamid Ali.",
     h1: "Post Hip Replacement Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Specialized, protocol-driven rehabilitation following total hip replacement (THA) and hip arthroplasty surgery.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Post hip replacement rehabilitation and THA recovery in Manikonda clinic",
-    whatItIs: "Post hip replacement rehabilitation is the essential structured physiotherapy program following Total Hip Arthroplasty (THA) or hemiarthroplasty. Hip replacement surgery replaces the damaged ball-and-socket joint with prosthetic components, but restoring normal walking, hip strength, and functional independence requires dedicated rehabilitation. Post-operative physiotherapy addresses hip precautions, restores muscle strength, improves gait mechanics, and enables safe return to daily activities. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) provides surgeon-coordinated rehabilitation protocols with strict adherence to hip precautions for optimal outcomes.",
+    whatItIs: "Rehabilitation after hip replacement may support movement, strength, walking, and daily activities. The plan depends on the operation, the person's health and progress, and the surgeon's advice. Follow any approach-specific precautions provided by the treating team; physiotherapy does not guarantee a particular outcome.",
     causes: [
       "Post-surgical muscle weakness, particularly in gluteal and hip abductor muscles",
       "Altered gait patterns developed during years of pre-operative hip arthritis",
@@ -1314,7 +1256,7 @@ serviceAreas: [
       "Struggling with stairs, getting in and out of bed, or car transfers",
       "Persistent swelling or discomfort around the surgical site"
     ],
-    howPhysioHelps: "Post-hip replacement rehabilitation requires careful attention to surgical approach-specific precautions while progressively restoring function. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) implements phased protocols: early protected weight-bearing with assistive devices, hip precautions education and enforcement, progressive hip strengthening (especially abductors), gait retraining, and functional independence training. This evidence-based approach ensures safe healing while rapidly restoring mobility and confidence.",
+    howPhysioHelps: "Rehabilitation after hip replacement may include movement practice, strength exercises, walking, and daily-activity training, while following the surgeon's instructions. The plan and pace should reflect the procedure, health, symptoms, and individual progress. No particular outcome can be promised.",
     assessmentProcess: [
       "Review of surgical approach (posterior, anterior, lateral) and specific precautions",
       "Hip range of motion measurement within safe limits",
@@ -1323,19 +1265,14 @@ serviceAreas: [
       "Functional transfer assessment (bed, chair, toilet, car)"
     ],
     treatmentApproach: [
-      "Phase 1 (Weeks 0-2): Hip precautions education, protected weight-bearing, gentle exercises",
-      "Phase 2 (Weeks 2-6): Progressive strengthening, walker to cane transition, gait normalization",
-      "Phase 3 (Weeks 6-12): Advanced strengthening, balance training, stair negotiation",
-      "Phase 4 (Weeks 12+): Return to recreational activities, precaution weaning (if appropriate)",
+      "Follow the surgeon's approach-specific precautions and weight-bearing instructions",
+      "Progress movement, strength, and walking practice in line with symptoms and the treating team's advice",
+      "Build daily-activity skills and balance when appropriate for the person's recovery",
+      "Discuss progression toward recreational activity with the treating team",
       "Functional training for daily activities (dressing, bathing, transfers)"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of specialized post-surgical orthopedic rehabilitation experience",
-      "Strict compliance with hip precautions and surgeon protocols",
-      "Available for home visit physiotherapy during early post-operative weeks",
-      "Specialized training in joint replacement rehabilitation (MPT Orthopedics)"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -1347,7 +1284,7 @@ serviceAreas: [
       "Perform prescribed ankle pumps and gentle hip exercises daily",
       "Apply ice packs for 15-20 minutes after activities to reduce swelling"
     ],
-    whenToVisit: "Begin rehabilitation within 3 to 5 days of hospital discharge. Home visits are strongly recommended for the first 2 to 4 weeks while hip precautions are strict and mobility is limited.",
+    whenToVisit: "Follow the surgeon's instructions about when to start rehabilitation and which precautions apply. Contact the treating team if pain, swelling, wound changes, or mobility concerns worsen.",
     faqs: [
       {
         question: "What are hip precautions and why are they important?",
@@ -1355,15 +1292,15 @@ serviceAreas: [
       },
       {
         question: "How soon can I walk after hip replacement?",
-        answer: "Most patients begin walking with a walker the day after surgery. You'll progressively transition to a cane over 4 to 6 weeks, and walk independently by week 8 to 12 with consistent rehabilitation."
+        answer: "Walking aids and progression after hip replacement depend on the operation, balance, symptoms, and surgeon's instructions. Use the aid recommended by the treating team and ask them when to progress."
       },
       {
         question: "Do you offer home visit physiotherapy after hip replacement in Manikonda?",
-        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation across Manikonda, Puppalguda, and surrounding areas. Home visits are especially valuable during the early weeks when hip precautions limit your mobility."
+        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage. Home visits are especially valuable during the early weeks when hip precautions limit your mobility."
       },
       {
         question: "When can I drive after hip replacement?",
-        answer: "For right hip replacement, you can typically drive by week 4 to 6 once off narcotic pain medications and able to move your leg safely. For left hip replacement, driving may be permitted earlier."
+        answer: "Ask your surgeon when it is safe to drive. Timing depends on the operation, recovery, mobility, medicines, and ability to control the vehicle safely; do not rely on a fixed timeline."
       },
       {
         question: "When can I sleep on my side after hip replacement?",

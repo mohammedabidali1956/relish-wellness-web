@@ -6,12 +6,12 @@ export const otherJointsServices: ServiceDetail[] = [
     category: "Other Joints & Pain",
     title: "Hip Pain Physiotherapy",
     metaTitle: "Hip Pain Physiotherapy in Manikonda | Hip Bursitis & Arthritis Care",
-    metaDescription: "Relieve hip pain, bursitis, and joint stiffness with expert physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali, BPT. Call today!",
+    metaDescription: "Relieve hip pain, bursitis, and joint stiffness with expert physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali. Call today!",
     h1: "Hip Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for greater trochanteric pain, hip bursitis, hip osteoarthritis, labral tears, and groin strain.",
     imageSrc: "/images/services/hip-joint-care.svg",
     altText: "Hip pain physiotherapy and hip joint rehabilitation in Manikonda clinic",
-    whatItIs: "The hip is a robust ball-and-socket joint designed to bear heavy compressive and rotational loads during walking, running, and stair climbing. Hip pain can originate from the joint capsule itself, surrounding bursae (trochanteric bursitis), the labrum, or be referred from the lumbar spine and sacroiliac joint. Patients often complain of pain deep in the groin, lateral hip ache that prevents sleeping on their side, or stiffness when standing up from a chair. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides specialized hip rehabilitation that offloads irritated tissues and restores natural walking mechanics.",
+    whatItIs: "The hip is a robust ball-and-socket joint designed to bear heavy compressive and rotational loads during walking, running, and stair climbing. Hip pain can originate from the joint capsule itself, surrounding bursae (trochanteric bursitis), the labrum, or be referred from the lumbar spine and sacroiliac joint. Patients often complain of pain deep in the groin, lateral hip ache that prevents sleeping on their side, or stiffness when standing up from a chair. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali provides specialized hip rehabilitation that offloads irritated tissues and restores natural walking mechanics.",
     causes: [
       "Greater trochanteric pain syndrome (GTPS) / trochanteric bursitis and gluteal tendinopathy",
       "Hip osteoarthritis with gradual loss of joint space and femoral head cartilage wear",
@@ -43,12 +43,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Gait retraining and advice on sleeping modifications with supportive pillows"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical musculoskeletal experience in Hyderabad",
-      "Precise clinical differentiation between spine-referred pain, bursitis, and true hip joint pathology",
-      "Personalized 1-on-1 hands-on care directly with Dr. Mohammed Hamid Ali, BPT",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -76,7 +71,7 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for hip pain in Manikonda?",
-        answer: "Yes, Dr. Hamid provides home visit physiotherapy across Manikonda, Puppalguda, and surrounding areas for patients with difficulty walking."
+        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with difficulty walking."
       },
       {
         question: "How do I book an appointment?",
@@ -89,12 +84,12 @@ export const otherJointsServices: ServiceDetail[] = [
     category: "Other Joints & Pain",
     title: "Elbow Pain Physiotherapy",
     metaTitle: "Elbow Pain Physiotherapy in Manikonda | Golfer's & Joint Relief",
-    metaDescription: "Relieve acute and chronic elbow pain, golfer's elbow, and joint stiffness with expert physiotherapy in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Relieve acute and chronic elbow pain, golfer's elbow, and joint stiffness with expert physiotherapy in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali.",
     h1: "Elbow Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for medial epicondylalgia, golfer's elbow, olecranon bursitis, and elbow joint stiffness.",
     imageSrc: "/images/services/upper-limb-care.svg",
     altText: "Elbow pain physiotherapy and elbow joint treatment in Manikonda clinic",
-    whatItIs: "Elbow pain frequently affects desk workers, gym lifters, badminton players, and manual workers across Hyderabad. The elbow is a complex hinge and pivot joint linking the upper arm to the forearm and hand. When tendons attaching to the epicondyles become overloaded or inflamed, gripping, lifting, typing, and turning doorknobs become intensely painful. At Dr. Hamid's Physio and Pain Clinic in Manikonda, we provide clinical assessment and targeted therapy for medial epicondylitis (golfer's elbow), olecranon bursitis, elbow arthritis, and post-fracture joint stiffness.",
+    whatItIs: "Elbow pain frequently affects desk workers, gym lifters, badminton players, and manual workers across Hyderabad. The elbow is a complex hinge and pivot joint linking the upper arm to the forearm and hand. When tendons attaching to the epicondyles become overloaded or inflamed, gripping, lifting, typing, and turning doorknobs become intensely painful. At Dr Hamid’s Physio and Pain Clinic in Manikonda, we provide clinical assessment and targeted therapy for medial epicondylitis (golfer's elbow), olecranon bursitis, elbow arthritis, and post-fracture joint stiffness.",
     causes: [
       "Medial epicondylalgia (golfer's elbow) from repetitive wrist flexion and pronation overload",
       "Olecranon bursitis (student's elbow) caused by direct trauma or prolonged leaning on hard desks",
@@ -110,7 +105,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Tingling or numbness radiating down the inner forearm into the ring and little fingers (ulnar nerve)",
       "Weakness when shaking hands, carrying grocery bags, or turning keys and doorknobs"
     ],
-    howPhysioHelps: "Physiotherapy for elbow pain targets tendon remodelling, neural decompression, and joint mobilization. Dr. Mohammed Hamid Ali (BPT) combines deep transverse friction massage, gentle humeroulnar and radiocapitellar joint mobilizations, progressive eccentric strengthening of the forearm musculature, and supportive therapeutic ultrasound to stimulate collagen repair.",
+    howPhysioHelps: "Physiotherapy for elbow pain targets tendon remodelling, neural decompression, and joint mobilization. Dr. Mohammed Hamid Ali combines deep transverse friction massage, gentle humeroulnar and radiocapitellar joint mobilizations, progressive eccentric strengthening of the forearm musculature, and supportive therapeutic ultrasound to stimulate collagen repair.",
     assessmentProcess: [
       "Resisted wrist flexion and pronation testing to assess medial epicondyle tendon integrity",
       "Tinel's sign at the cubital tunnel to evaluate ulnar nerve sensitivity",
@@ -126,12 +121,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Ergonomic workstation mouse configuration and counterforce elbow strap education"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of hands-on clinical musculoskeletal experience in Hyderabad",
-      "Expertise in modern eccentric tendon loading and manual therapy protocols",
-      "Personalized 1-on-1 care ensuring correct biomechanical execution of exercises",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -172,12 +162,12 @@ export const otherJointsServices: ServiceDetail[] = [
     category: "Other Joints & Pain",
     title: "Tennis Elbow Physiotherapy",
     metaTitle: "Tennis Elbow Physiotherapy in Manikonda | Lateral Epicondylitis Care",
-    metaDescription: "Fast, lasting relief for tennis elbow and lateral epicondylitis with evidence-based physiotherapy in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Fast, lasting relief for tennis elbow and lateral epicondylitis with evidence-based physiotherapy in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali.",
     h1: "Tennis Elbow Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for lateral epicondylalgia, extensor carpi radialis brevis tendinopathy, and mouse-elbow pain in Manikonda.",
     imageSrc: "/images/services/upper-limb-care.svg",
     altText: "Tennis elbow physiotherapy and lateral epicondylitis treatment in Manikonda clinic",
-    whatItIs: "Tennis elbow, medically termed Lateral Epicondylalgia, is a painful degenerative overuse condition affecting the common extensor tendon origin at the lateral epicondyle of the humerus — most specifically the Extensor Carpi Radialis Brevis (ECRB) tendon. Despite its name, over 95% of patients diagnosed with tennis elbow are not tennis players; they are computer professionals, homemakers, cooks, carpenters, and gym athletes who perform repetitive wrist extension and gripping. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides specialized tendon-remodeling physiotherapy that resolves chronic pain and restores pain-free grip strength.",
+    whatItIs: "Tennis elbow, also called lateral elbow tendinopathy, can cause pain around the outside of the elbow, often with gripping or wrist activity. It can affect people who do and do not play tennis. Symptoms and contributing factors vary; an assessment can help discuss suitable care options.",
     causes: [
       "Repetitive wrist extension and forceful gripping during computer mouse use, typing, or gaming",
       "Repeated manual twisting actions such as wringing clothes, opening tight jar lids, or turning screwdrivers",
@@ -208,12 +198,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Prescription of a specialized counterforce brace worn 2-3 cm below the lateral epicondyle"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical musculoskeletal experience treating tennis elbow in IT professionals and athletes",
-      "Application of modern Mulligan Mobilization with Movement providing immediate pain relief",
-      "Proven eccentric exercise protocols backed by clinical sports medicine evidence",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -245,7 +230,7 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "How do I book an appointment?",
-        answer: "Call +91 76010 26596 or reach out through WhatsApp to book a consultation at Dr. Hamid's Physio and Pain Clinic."
+        answer: "Call +91 76010 26596 or reach out through WhatsApp to book a consultation at Dr Hamid’s Physio and Pain Clinic."
       }
     ]
   },
@@ -255,12 +240,12 @@ export const otherJointsServices: ServiceDetail[] = [
     category: "Other Joints & Pain",
     title: "Heel Pain Physiotherapy",
     metaTitle: "Heel Pain Physiotherapy in Manikonda | Morning Heel Ache Relief Hyderabad",
-    metaDescription: "Relieve severe morning heel pain and weight-bearing discomfort with specialized physiotherapy in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Relieve severe morning heel pain and weight-bearing discomfort with specialized physiotherapy in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali.",
     h1: "Heel Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical diagnosis and rehabilitation for acute and chronic heel pain, fat pad atrophy, and Achilles insertion ache.",
     imageSrc: "/images/services/foot-and-ankle-care.svg",
     altText: "Heel pain physiotherapy and calcaneal pain treatment in Manikonda clinic",
-    whatItIs: "Heel pain is a remarkably common and disabling condition that causes intense, stabbing discomfort under or behind the heel. Every step you take transfers forces up to 1.5 times your body weight through the calcaneus (heel bone). When the supportive structures — including the plantar fascia, subcalcaneal fat pad, or Achilles tendon — become inflamed or degenerate, simple walking turns excruciating. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides targeted clinical care that identifies the exact anatomical source of your heel pain and restores pain-free, comfortable walking.",
+    whatItIs: "Heel pain can occur under or behind the heel and may have several causes, including conditions affecting the plantar fascia, fat pad, or Achilles tendon. A clinical assessment can help consider possible causes and discuss care options; symptoms alone may not identify the exact source.",
     causes: [
       "Micro-tears and chronic degeneration at the calcaneal attachment of the plantar fascia",
       "Subcalcaneal fat pad atrophy or contusion ('stone bruise') reducing shock absorption",
@@ -276,7 +261,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Deep tenderness when pressing directly on the underside of the calcaneus",
       "Swelling, redness, or heat around the back or bottom of the heel"
     ],
-    howPhysioHelps: "Physiotherapy for heel pain focuses on reducing localized tissue tension, improving foot biomechanics, and rebuilding tissue tolerance. Dr. Mohammed Hamid Ali (BPT) uses deep plantar tissue release, gastrocnemius-soleus stretching, low-dye taping to immediately offload the heel, and progressive loading protocols that stimulate tissue healing.",
+    howPhysioHelps: "Physiotherapy for heel pain focuses on reducing localized tissue tension, improving foot biomechanics, and rebuilding tissue tolerance. Dr. Mohammed Hamid Ali uses deep plantar tissue release, gastrocnemius-soleus stretching, low-dye taping to immediately offload the heel, and progressive loading protocols that stimulate tissue healing.",
     assessmentProcess: [
       "Palpation of the medial calcaneal tubercle, retrocalcaneal bursa, and Achilles insertion",
       "Windlass test evaluating plantar fascia mechanical tension during big toe dorsiflexion",
@@ -292,12 +277,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Customized silicone heel cup and orthotic footwear guidance"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical musculoskeletal experience in Hyderabad",
-      "Accurate differentiation between plantar fascia, fat pad syndrome, and nerve entrapment",
-      "Practical home exercise and taping routines that deliver rapid morning relief",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -339,12 +319,12 @@ export const otherJointsServices: ServiceDetail[] = [
     category: "Other Joints & Pain",
     title: "Plantar Fasciitis Physiotherapy",
     metaTitle: "Plantar Fasciitis Physiotherapy in Manikonda | Foot Pain Specialist Hyderabad",
-    metaDescription: "Relieve chronic plantar fasciitis and morning heel pain with evidence-based physiotherapy in Manikonda, Hyderabad under Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Relieve chronic plantar fasciitis and morning heel pain with evidence-based physiotherapy in Manikonda, Hyderabad under Dr. Mohammed Hamid Ali.",
     h1: "Plantar Fasciitis Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for plantar fasciitis, arch pain, Windlass mechanism dysfunction, and plantar aponeurosis strain.",
     imageSrc: "/images/services/foot-and-ankle-care.svg",
     altText: "Plantar fasciitis physiotherapy and arch pain treatment in Manikonda clinic",
-    whatItIs: "Plantar fasciitis is a degenerative overuse condition affecting the thick band of connective tissue (plantar aponeurosis) that runs across the bottom of the foot, connecting the heel bone to the toes. It functions as a dynamic shock-absorbing bowstring supporting the longitudinal arch of the foot. When subjected to repetitive tensile overload, micro-tears develop near its insertion into the medial calcaneal tuberosity. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides proven clinical protocols that promote collagen healing, offload the plantar fascia, and restore pain-free walking.",
+    whatItIs: "Plantar heel pain can involve the band of tissue under the foot, though other causes are possible. Pain is often noticed with standing or walking. Assessment may help discuss activity, exercise, footwear, or other care options that suit the individual.",
     causes: [
       "Severe calf and Achilles tendon tightness limiting ankle dorsiflexion and overloading the arch",
       "Overpronation (flat feet) causing excessive tensile strain on the medial plantar fascia",
@@ -360,7 +340,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Tenderness when pressing directly on the inner underside of the heel bone",
       "Limping or walking on the toes or outer edge of the foot to avoid putting weight on the heel"
     ],
-    howPhysioHelps: "Research shows that plantar fasciitis responds exceptionally well to mechanical loading and tissue mobilization. Dr. Mohammed Hamid Ali (BPT) combines specific plantar fascia stretching, the proven Rathleff high-load strength protocol, gastrocnemius-soleus soft tissue release, and low-dye arch taping. This stimulates collagen remodelling and restores the foot's natural Windlass mechanism.",
+    howPhysioHelps: "Research shows that plantar fasciitis responds exceptionally well to mechanical loading and tissue mobilization. Dr. Mohammed Hamid Ali combines specific plantar fascia stretching, the proven Rathleff high-load strength protocol, gastrocnemius-soleus soft tissue release, and low-dye arch taping. This stimulates collagen remodelling and restores the foot's natural Windlass mechanism.",
     assessmentProcess: [
       "Windlass test: Passive dorsiflexion of the first metatarsophalangeal (MTP) joint to reproduce pain",
       "Palpation of the medial calcaneal tubercle and entire central band of the plantar fascia",
@@ -376,12 +356,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Prescription of custom arch-support orthotics and night splint guidance"
     ],
     expectedRecovery: "The time to improvement varies with the cause, symptom duration, activity, and chosen plan. Follow-up can help review comfort and function and adjust activity or exercise as needed.",
-    whyChooseDoctor: [
-      "Progressive foot and ankle loading may be included when suitable for the person's symptoms and goals",
-      "8+ years of dedicated orthopedic rehabilitation experience in Hyderabad",
-      "Personalized 1-on-1 guided therapy ensuring exercises are performed correctly",
-      "Convenient clinic location in Puppalguda, Manikonda with dedicated home visit options"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -401,7 +376,7 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "Do night splints help plantar fasciitis?",
-        answer: "Yes, night splints hold the foot and ankle in a gentle dorsiflexed position while you sleep, preventing the plantar fascia from contracting and eliminating the sharp pain of the first morning steps."
+        answer: "Some people may consider a night splint, but suitability and response vary. It may not be needed or appropriate for everyone; discuss options with a clinician."
       },
       {
         question: "Can flat feet cause plantar fasciitis?",
@@ -409,7 +384,7 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for plantar fasciitis in Manikonda?",
-        answer: "Yes, Dr. Hamid provides home visit physiotherapy across Manikonda, Puppalguda, and nearby areas for patients with severe heel pain."
+        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with severe heel pain."
       },
       {
         question: "How do I book an appointment?",
@@ -423,12 +398,12 @@ export const otherJointsServices: ServiceDetail[] = [
     category: "Other Joints & Pain",
     title: "Heel Spur Physiotherapy",
     metaTitle: "Heel Spur Physiotherapy in Manikonda | Calcaneal Spur Treatment",
-    metaDescription: "Relieve calcaneal heel spur pain and plantar tenderness with specialized physiotherapy in Manikonda, Hyderabad under Dr. Mohammed Hamid Ali, BPT. Call today!",
+    metaDescription: "Relieve calcaneal heel spur pain and plantar tenderness with specialized physiotherapy in Manikonda, Hyderabad under Dr. Mohammed Hamid Ali. Call today!",
     h1: "Heel Spur Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for calcaneal spur pain, chronic heel inflammation, and plantar traction bone spurs.",
     imageSrc: "/images/services/foot-and-ankle-care.svg",
     altText: "Heel spur physiotherapy and calcaneal spur treatment in Manikonda clinic",
-    whatItIs: "A heel spur (calcaneal spur) is a bony outgrowth that may be seen on an X-ray. Its presence does not necessarily explain a person's heel pain; symptoms can also relate to surrounding soft tissues and other causes. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment considers symptoms, activity, and function to discuss whether physiotherapy may help and whether further medical evaluation is needed.",
+    whatItIs: "A heel spur (calcaneal spur) is a bony outgrowth that may be seen on an X-ray. Its presence does not necessarily explain a person's heel pain; symptoms can also relate to surrounding soft tissues and other causes. At Dr Hamid’s Physio and Pain Clinic in Manikonda, an assessment considers symptoms, activity, and function to discuss whether physiotherapy may help and whether further medical evaluation is needed.",
     causes: [
       "Months or years of untreated chronic plantar fasciitis pulling continuously on the calcaneus",
       "Excessive mechanical traction on the calcaneal periosteum stimulating osteoblast bone deposition",
@@ -460,12 +435,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Prescription of shock-absorbing silicone heel cups with central cut-outs for the spur"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical musculoskeletal experience treating chronic foot conditions in Hyderabad",
-      "Accurate biomechanical approach treating the soft-tissue cause rather than rushing into surgery",
-      "Personalized 1-on-1 care directly with Dr. Mohammed Hamid Ali, BPT",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -481,7 +451,7 @@ export const otherJointsServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Does the heel spur need to be surgically removed to stop the pain?",
-        answer: "No! Studies show that the bone spur itself is rarely the source of pain; the pain is caused by the inflamed soft tissue and periosteum surrounding it. Once physiotherapy relieves the tension, patients live completely pain-free with the spur remaining harmlessly in place."
+        answer: "A heel spur seen on imaging does not always explain heel pain. Symptoms can have different causes, so assessment may help identify suitable options. Physiotherapy and footwear changes may help some people manage symptoms, but results vary."
       },
       {
         question: "Can a heel spur disappear on its own?",
@@ -492,7 +462,7 @@ export const otherJointsServices: ServiceDetail[] = [
         answer: "Shoes with good arch support, a firm heel counter, and a well-cushioned sole with a slight heel raise (12-15 mm) are best to offload the heel spur."
       },
       {
-        question: "Where is Dr. Hamid's clinic located?",
+        question: "Where is Dr Hamid’s Physio and Pain Clinic located?",
         answer: "The clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
       },
       {
@@ -507,12 +477,12 @@ export const otherJointsServices: ServiceDetail[] = [
     category: "Other Joints & Pain",
     title: "Foot and Ankle Pain Physiotherapy",
     metaTitle: "Foot and Ankle Pain Physiotherapy in Manikonda | Ankle Specialist Hyderabad",
-    metaDescription: "Relieve foot and ankle pain, tendonitis, arthritis, and stiffness with specialized physiotherapy in Manikonda, Hyderabad under Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Relieve foot and ankle pain, tendonitis, arthritis, and stiffness with specialized physiotherapy in Manikonda, Hyderabad under Dr. Mohammed Hamid Ali.",
     h1: "Foot and Ankle Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for ankle sprains, posterior tibial tendonitis, metatarsalgia, and chronic ankle instability.",
     imageSrc: "/images/services/foot-and-ankle-care.svg",
     altText: "Foot and ankle pain physiotherapy and rehabilitation in Manikonda clinic",
-    whatItIs: "The human foot and ankle complex contains 26 bones, 33 joints, and over 100 muscles, tendons, and ligaments working in intricate harmony. It is the body's primary shock absorber and propulsion mechanism. Ankle sprains, tendonitis (Achilles, posterior tibial, peroneal), flat foot collapse, and post-fracture stiffness can disrupt your entire gait and refer pain upward to the knee, hip, and lower back. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) provides specialized foot and ankle rehabilitation that restores joint mobility, strengthens dynamic stabilizers, and rebuilds balance.",
+    whatItIs: "The human foot and ankle complex contains 26 bones, 33 joints, and over 100 muscles, tendons, and ligaments working in intricate harmony. It is the body's primary shock absorber and propulsion mechanism. Ankle sprains, tendonitis (Achilles, posterior tibial, peroneal), flat foot collapse, and post-fracture stiffness can disrupt your entire gait and refer pain upward to the knee, hip, and lower back. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali provides specialized foot and ankle rehabilitation that restores joint mobility, strengthens dynamic stabilizers, and rebuilds balance.",
     causes: [
       "Inversion ankle sprains causing tears of the anterior talofibular (ATFL) and calcaneofibular (CFL) ligaments",
       "Posterior tibial tendon dysfunction (PTTD) leading to progressive arch collapse and inner ankle pain",
@@ -528,7 +498,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Stiffness and inability to fully bend the ankle upward (reduced dorsiflexion)",
       "Burning pain in the ball of the foot or arch after standing for extended periods"
     ],
-    howPhysioHelps: "Physiotherapy for foot and ankle pain focuses on restoring talocrural and subtalar joint mobilization, rebuilding peroneal and posterior tibial muscle strength, and retraining proprioception. Dr. Mohammed Hamid Ali (BPT) uses manual mobilizations with movement (Mulligan technique), progressive resistance exercises, and wobble-board balance training to eliminate instability and restore confident walking.",
+    howPhysioHelps: "Physiotherapy for foot and ankle pain focuses on restoring talocrural and subtalar joint mobilization, rebuilding peroneal and posterior tibial muscle strength, and retraining proprioception. Dr. Mohammed Hamid Ali uses manual mobilizations with movement (Mulligan technique), progressive resistance exercises, and wobble-board balance training to eliminate instability and restore confident walking.",
     assessmentProcess: [
       "Anterior drawer and talar tilt stress tests to evaluate ankle ligamentous laxity",
       "Single-leg calf raise and heel-raise tests to assess posterior tibial and Achilles tendon function",
@@ -544,12 +514,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Kinesiology taping for ankle stability and footwear or insole guidance when appropriate"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical musculoskeletal experience treating foot and ankle disorders in Hyderabad",
-      "Application of modern Mulligan manual therapy techniques for fast range of motion recovery",
-      "Comprehensive balance and agility training preventing recurrent ankle sprains",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -591,12 +556,12 @@ export const otherJointsServices: ServiceDetail[] = [
     category: "Other Joints & Pain",
     title: "Ankle Rehabilitation",
     metaTitle: "Ankle Rehabilitation in Manikonda | Post-Fracture & Sprain Recovery",
-    metaDescription: "Comprehensive ankle rehabilitation in Manikonda. Specialized protocols for post-fracture surgery, ligament tears, and athletic recovery under Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Comprehensive ankle rehabilitation in Manikonda. Specialized protocols for post-fracture surgery, ligament tears, and athletic recovery under Dr. Mohammed Hamid Ali.",
     h1: "Ankle Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Complete, protocol-driven recovery for post-surgical bimalleolar/trimalleolar ankle fractures, syndesmotic tears, and athletic return-to-play.",
     imageSrc: "/images/services/foot-and-ankle-care.svg",
     altText: "Comprehensive ankle rehabilitation and post-surgical recovery in Manikonda clinic",
-    whatItIs: "Ankle rehabilitation may be considered after a fracture, sprain, surgery, or a period of reduced movement. The appropriate exercises and weight-bearing depend on the injury, healing, and medical restrictions. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help plan suitable movement and activity goals.",
+    whatItIs: "Ankle rehabilitation may be considered after a fracture, sprain, surgery, or a period of reduced movement. The appropriate exercises and weight-bearing depend on the injury, healing, and medical restrictions. At Dr Hamid’s Physio and Pain Clinic in Manikonda, an assessment can help plan suitable movement and activity goals.",
     causes: [
       "Post-operative recovery following Open Reduction and Internal Fixation (ORIF) of ankle fractures",
       "Surgical repair or conservative management of Achilles tendon ruptures",
@@ -611,7 +576,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Limping and inability to push off normally during walking",
       "Apprehension and lack of balance when attempting to bear full weight without crutches"
     ],
-    howPhysioHelps: "Our ankle rehabilitation program progresses through phased milestones aligned with orthopedic healing protocols. Dr. Mohammed Hamid Ali (BPT) applies talocrural posterior glide mobilizations to restore critical dorsiflexion, uses retrograde lymphatic massage to clear post-surgical swelling, guides progressive weight-bearing weaning, and retrains dynamic neuromuscular agility on wobble boards and agility ladders.",
+    howPhysioHelps: "Our ankle rehabilitation program progresses through phased milestones aligned with orthopedic healing protocols. Dr. Mohammed Hamid Ali applies talocrural posterior glide mobilizations to restore critical dorsiflexion, uses retrograde lymphatic massage to clear post-surgical swelling, guides progressive weight-bearing weaning, and retrains dynamic neuromuscular agility on wobble boards and agility ladders.",
     assessmentProcess: [
       "Review of post-op surgical X-rays confirming bony consolidation and hardware placement",
       "Goniometric measurement of talocrural dorsiflexion and subtalar inversion/eversion",
@@ -627,12 +592,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "Phase 5: Jogging progression, plyometric hops, and sport-specific return-to-play testing"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Strict compliance with orthopedic surgical protocols ensuring safe recovery",
-      "8+ years of dedicated clinical musculoskeletal experience in Hyderabad",
-      "Personalized 1-on-1 hands-on guidance at every session",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -652,11 +612,11 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "When can I walk without a limp after an ankle fracture?",
-        answer: "Most patients regain a normal, limp-free walking gait within 4 to 6 weeks of starting active physical therapy, once ankle dorsiflexion and calf push-off strength are restored."
+        answer: "Walking progress after an ankle fracture depends on the injury, treatment, healing, and weight-bearing instructions. Follow the treating clinician's guidance and ask for an individual progression plan."
       },
       {
         question: "Can Dr. Hamid visit my home for post-fracture ankle rehabilitation in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy across Manikonda, Puppalguda, and surrounding areas for patients unable to travel to the clinic."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients unable to travel to the clinic."
       },
       {
         question: "Where is the clinic located?",
@@ -705,11 +665,7 @@ export const otherJointsServices: ServiceDetail[] = [
       "A broader exercise or rehabilitation plan when clinically appropriate"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Assessment considers the whole foot and ankle, footwear, and activity rather than the device alone",
-      "Practical options are discussed in the context of your symptoms and goals",
-      "Convenient clinic location in Puppalguda, Manikonda"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: ["Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township", "Narsingi", "Gandipet", "Kokapet", "Gachibowli"],
     homeCare: [
       "Bring the shoes you use most often to your assessment",

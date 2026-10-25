@@ -57,7 +57,8 @@ const ConditionPage = () => {
       `https://wa.me/917601026596?text=Hi%20Dr.%20Hamid%2C%20I%20would%20like%20to%20enquire%20about%20${encodeURIComponent(
         condition.title
       )}%20treatment%20at%20your%20Manikonda%20clinic.`,
-      "_blank"
+      "_blank",
+      "noopener,noreferrer"
     );
   };
 
@@ -79,24 +80,18 @@ const ConditionPage = () => {
   const conditionSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    headline: `${condition.title} in Manikonda | Dr. Mohammed Hamid Ali, BPT, MPT`,
+    headline: `${condition.title} in Manikonda | Dr. Mohammed Hamid Ali`,
     description: condition.shortDescription,
     url: canonicalUrl,
     mainEntityOfPage: canonicalUrl,
     author: {
       "@type": "Person",
       name: "Dr. Mohammed Hamid Ali",
-      jobTitle: "Consultant Physiotherapist",
-      hasCredential: "BPT, MPT (Orthopedics)",
-      identifier: {
-        "@type": "PropertyValue",
-        name: "Registration Number",
-        value: "0413"
-      }
+      jobTitle: "Physiotherapist"
     },
     publisher: {
       "@type": "Physiotherapy",
-      name: "Dr. Hamid's Physio and Pain Clinic",
+      name: "Dr Hamid’s Physio and Pain Clinic",
       url: "https://www.drhamidphysio.in",
       telephone: "+917601026596"
     },
@@ -123,13 +118,13 @@ const ConditionPage = () => {
     <div className="min-h-screen pb-20 md:pb-0 bg-[#faf6ed]">
       <StructuredData
         type="service"
-        pageTitle={`${condition.title} in Manikonda | Dr. Hamid's Physio Clinic`}
-        pageDescription={`${condition.shortDescription} Expert treatment in Puppalguda, Manikonda, Hyderabad under Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).`}
+        pageTitle={`${condition.title} in Manikonda | Dr Hamid’s Physio and Pain Clinic`}
+        pageDescription={`${condition.shortDescription} Physiotherapy information for Puppalguda and Manikonda, Hyderabad. Contact the clinic to ask about an assessment.`}
       />
 
       <Helmet>
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content={`${condition.title} in Manikonda | Dr. Hamid's Physio Clinic`} />
+        <meta property="og:title" content={`${condition.title} in Manikonda | Dr Hamid’s Physio and Pain Clinic`} />
         <meta property="og:description" content={condition.shortDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <script type="application/ld+json">{JSON.stringify(conditionSchema)}</script>
@@ -181,7 +176,7 @@ const ConditionPage = () => {
               </div>
 
               <p className="text-xs text-[#718096] pt-1">
-                ⭐ Looking for physiotherapy near me? Walk-in consultations &amp; home visits available across Manikonda.
+                ⭐ Looking for physiotherapy near me? Visit the clinic in Manikonda. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage.
               </p>
             </div>
 
@@ -196,7 +191,7 @@ const ConditionPage = () => {
                 />
                 <div className="p-4 bg-white border-t border-[#e5dec9] text-center">
                   <p className="text-xs font-bold text-[#081a2e]">
-                    Clinical Assessment under Dr. Mohammed Hamid Ali, BPT, MPT
+                    Clinical Assessment under Dr. Mohammed Hamid Ali
                   </p>
                   <p className="text-[11px] text-[#718096] mt-0.5">
                     Near Friends Colony Park, Puppalguda, Manikonda
@@ -249,7 +244,7 @@ const ConditionPage = () => {
           <div className="bg-white p-8 md:p-10 rounded-2xl border border-[#e5dec9] shadow-sm space-y-6">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">
-                Evidence-Based Protocol
+                Condition information
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#081a2e] mt-1 mb-3">
                 How Physiotherapy Helps &amp; Our Treatment Approach
@@ -276,33 +271,19 @@ const ConditionPage = () => {
               <div className="p-4 rounded-xl bg-[#f0f7f3] border border-[#c3dfd1] text-xs sm:text-sm text-[#1b4332] flex items-center gap-3">
                 <ShieldCheck className="w-5 h-5 text-[#2a5d45] shrink-0" />
                 <div>
-                  <strong>Expected Recovery Timeline: </strong>
+                  <strong>Recovery and progress: </strong>
                   <span>{condition.expectedRecovery}</span>
                 </div>
               </div>
             )}
           </div>
 
-          {/* Why Choose Dr. Hamid & Service Areas */}
+          {/* Clinic contact and service area */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-7 rounded-2xl border border-[#e5dec9] shadow-xs">
-              <h2 className="font-serif text-xl font-bold text-[#081a2e] mb-4 flex items-center gap-2">
-                <Award className="w-5 h-5 text-[#8a5d24]" />
-                Why Choose Dr. Hamid&apos;s Physio Clinic
-              </h2>
-              <ul className="space-y-3">
-                {(condition.whyChooseDoctor || [
-                  "8+ years of musculoskeletal and spinal rehabilitation experience",
-                  "Direct 1-on-1 care under Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics)",
-                  "Patient-first approach with clear biomechanical explanations",
-                  "Over 100+ positive patient reviews across Hyderabad"
-                ]).map((reason, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5 text-sm text-[#4a5568]">
-                    <CheckCircle2 className="w-4 h-4 text-[#2a5d45] mt-1 shrink-0" />
-                    <span>{reason}</span>
-                  </li>
-                ))}
-              </ul>
+              <h2 className="font-serif text-xl font-bold text-[#081a2e] mb-3">Ask about this service</h2>
+              <p className="text-sm leading-relaxed text-[#4a5568]">Contact the clinic to ask about appointments, current service availability, and home visits.</p>
+              <Link to="/contact" className="mt-4 inline-flex rounded-md bg-[#081a2e] px-4 py-3 text-sm font-semibold text-white hover:bg-[#122842]">Contact the clinic</Link>
             </div>
 
             <div className="bg-white p-7 rounded-2xl border border-[#e5dec9] shadow-xs">
@@ -333,7 +314,7 @@ const ConditionPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-[#fffbf2] p-7 rounded-2xl border border-[#e5dec9]">
               <h2 className="font-serif text-xl font-bold text-[#081a2e] mb-3">
-                Home Care &amp; Ergonomic Tips
+                General Home-Care Information
               </h2>
               <ul className="space-y-2.5">
                 {condition.homeCare.map((tip, idx) => (
@@ -387,6 +368,11 @@ const ConditionPage = () => {
               ))}
             </Accordion>
           </div>
+
+          <section id="condition-health-disclaimer" className="rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-950">
+            <h2 className="font-semibold">Health information</h2>
+            <p className="mt-2">This page provides general information, not a diagnosis or individual treatment plan. Follow your treating clinician’s advice, especially after an injury or operation. Seek urgent medical care for sudden severe or concerning symptoms.</p>
+          </section>
 
           {/* Internal Linking: Related Blog Guides */}
           {relatedBlogs.length > 0 && (
@@ -443,10 +429,10 @@ const ConditionPage = () => {
           {/* Book Appointment CTA Card */}
           <div className="p-8 md:p-12 rounded-2xl bg-[#081a2e] text-white text-center space-y-4">
             <h2 className="font-serif text-2xl sm:text-3xl font-bold">
-              Ready to Overcome Your Pain?
+              Discuss your care options
             </h2>
             <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              Schedule your 1-on-1 assessment with Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) at our Manikonda clinic, or request an in-home physiotherapy session.
+              Contact the clinic to ask about appointments or home visits. Treatment suitability and progress depend on an individual assessment.
             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-3">
               <Button

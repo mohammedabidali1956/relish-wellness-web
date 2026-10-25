@@ -11,8 +11,8 @@ const BlogsPage = () => {
     <div>
       <StructuredData 
         type="blog" 
-        pageTitle="Health & Wellness Blog | Dr. Hamid's Physio and Pain Clinic Manikonda" 
-        pageDescription="Expert physiotherapy advice and health tips from Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad. Learn about pain management, rehabilitation, and wellness."
+        pageTitle="Health & Wellness Blog | Dr Hamid’s Physio and Pain Clinic Manikonda"
+        pageDescription="Health information and physiotherapy articles from Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, covering pain, movement, and rehabilitation."
       />
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-14 md:py-20">
@@ -22,7 +22,7 @@ const BlogsPage = () => {
               Health & Wellness <span className="text-relish-700">Insights</span>
             </h1>
             <p className="text-lg sm:text-xl leading-relaxed text-gray-700 max-w-3xl mx-auto">
-              Expert advice, research-backed information, and practical tips from Dr. Hamid's Physio and Pain Clinic to help you live pain-free and stay healthy.
+              General health information and practical articles about pain, movement, physiotherapy, and rehabilitation.
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ const BlogsPage = () => {
                 <Link to={`/blogs/${post.slug}`} className="relative block aspect-[16/10] overflow-hidden bg-muted" aria-label={`Read ${post.title}`}>
                   <img 
                     src={post.imageUrl} 
-                    alt={`${post.title} - Dr. Hamid's Physio and Pain Clinic`}
+                    alt={`${post.title} - Dr Hamid’s Physio and Pain Clinic`}
                     width={640}
                     height={400}
                     className="h-full w-full object-cover transition-transform duration-300 motion-reduce:transition-none hover:scale-[1.03]"
@@ -71,7 +71,7 @@ const BlogsPage = () => {
                   <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                     <div className="flex items-center gap-2 text-sm text-gray-600">
                       <User className="w-4 h-4" />
-                      <span>{post.author}{post.author === "Dr. Mohammed Hamid Ali" ? ", BPT" : ""}</span>
+                      <span>{post.author}</span>
                     </div>
                     
                     <Link to={`/blogs/${post.slug}`}>

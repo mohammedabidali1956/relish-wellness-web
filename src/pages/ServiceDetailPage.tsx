@@ -1,5 +1,5 @@
 import { openWhatsApp } from "@/lib/whatsapp";
-import React, { useMemo } from "react";
+import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { getServiceBySlug, allServices, primaryServices } from "@/data/services";
@@ -40,7 +40,7 @@ import NotFound from "@/pages/NotFound";
 
 export const ServiceDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const service = useMemo(() => (slug ? getServiceBySlug(slug) : undefined), [slug]);
+  const service = slug ? getServiceBySlug(slug) : undefined;
 
   if (!service) {
     return <NotFound />;
@@ -60,7 +60,7 @@ export const ServiceDetailPage: React.FC = () => {
   const canonicalUrl = `https://www.drhamidphysio.in/services/${service.slug}`;
 
   // Find 3 closely related services in same or complementary category
-  const relatedServices = useMemo(() => {
+  const relatedServices = (() => {
     const selectedServices = (service.relatedServiceSlugs ?? []).flatMap((relatedSlug) => {
       const relatedService = getServiceBySlug(relatedSlug);
       return relatedService && relatedService.slug !== service.slug ? [relatedService] : [];
@@ -77,10 +77,10 @@ export const ServiceDetailPage: React.FC = () => {
       .slice(0, Math.max(0, 3 - selectedServices.length));
 
     return [...selectedServices, ...additionalServices];
-  }, [service]);
+  })();
 
   // Find relevant blogs for internal linking
-  const relatedBlogs = useMemo(() => {
+  const relatedBlogs = (() => {
     const serviceTitle = service.title.toLowerCase();
     let relevantTopics: string[] = [];
 
@@ -102,7 +102,7 @@ export const ServiceDetailPage: React.FC = () => {
         return relevantTopics.some((topic) => articleText.includes(topic));
       })
       .slice(0, 2);
-  }, [service]);
+  })();
 
   // Schema.org MedicalWebPage + Physiotherapy + FAQPage JSON-LD
   const structuredData = {
@@ -129,21 +129,15 @@ export const ServiceDetailPage: React.FC = () => {
         author: {
           "@type": "Person",
           name: "Dr. Mohammed Hamid Ali",
-          jobTitle: "Consultant Physiotherapist",
-          hasCredential: "BPT, MPT (Orthopedics)",
-          identifier: {
-            "@type": "PropertyValue",
-            name: "Registration Number",
-            value: "0413"
-          },
+          jobTitle: "Physiotherapist",
           worksFor: {
             "@type": "MedicalClinic",
-            name: "Dr. Hamid's Physio and Pain Clinic"
+            name: "Dr Hamid’s Physio and Pain Clinic"
           }
         },
         publisher: {
           "@type": "MedicalClinic",
-          name: "Dr. Hamid's Physio and Pain Clinic",
+          name: "Dr Hamid’s Physio and Pain Clinic",
           url: "https://www.drhamidphysio.in",
           logo: "https://www.drhamidphysio.in/images/logo/logo-main.webp",
           telephone: "+917601026596",
@@ -172,10 +166,9 @@ export const ServiceDetailPage: React.FC = () => {
       {
         "@type": "Physiotherapy",
         "@id": "https://www.drhamidphysio.in/#clinic",
-        name: "Dr. Hamid's Physio and Pain Clinic",
-        image: "https://www.drhamidphysio.in/images/doctor/dr-hamid-actual.png",
+        name: "Dr Hamid’s Physio and Pain Clinic",
+        image: "https://www.drhamidphysio.in/images/doctor/dr-hamid-hero.webp",
         telephone: "+917601026596",
-        priceRange: "₹₹",
         address: {
           "@type": "PostalAddress",
           streetAddress: "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda",
@@ -216,7 +209,7 @@ export const ServiceDetailPage: React.FC = () => {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={`https://www.drhamidphysio.in${service.imageSrc}`} />
-        <link rel="preload" as="image" href={service.imageSrc} fetchpriority="high" />
+        <link rel="preload" as="image" href={service.imageSrc} fetchPriority="high" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={service.metaTitle} />
         <meta name="twitter:description" content={service.metaDescription} />
@@ -258,22 +251,6 @@ export const ServiceDetailPage: React.FC = () => {
                 {service.shortDescription}
               </p>
 
-              {/* Trust Badges */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-[#4a5568]">
-                <div className="flex items-center gap-2 bg-white/80 border border-[#e5dec9] px-3 py-2 rounded-lg">
-                  <ShieldCheck className="w-4 h-4 text-[#8a5d24] shrink-0" />
-                  <span>Dr. Hamid, BPT, MPT (8+ Yrs)</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/80 border border-[#e5dec9] px-3 py-2 rounded-lg">
-                  <Award className="w-4 h-4 text-[#8a5d24] shrink-0" />
-                  <span>Evidence-Based Care</span>
-                </div>
-                <div className="col-span-2 sm:col-span-1 flex items-center gap-2 bg-white/80 border border-[#e5dec9] px-3 py-2 rounded-lg">
-                  <Building2 className="w-4 h-4 text-[#8a5d24] shrink-0" />
-                  <span>Home Physiotherapy Visits</span>
-                </div>
-              </div>
-
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-3 pt-3">
                 <Button
@@ -294,7 +271,7 @@ export const ServiceDetailPage: React.FC = () => {
               </div>
 
               <p className="text-xs text-[#64748b]">
-                📍 Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda. Same-day appointments available.
+                📍 Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda. Contact the clinic to ask about appointment availability.
               </p>
             </div>
 
@@ -314,20 +291,26 @@ export const ServiceDetailPage: React.FC = () => {
                 <div className="p-4 bg-white space-y-1">
                   <div className="flex items-center justify-between text-xs font-semibold text-[#8a5d24]">
                     <span>{service.category}</span>
-                    <span>Verified Clinical Protocol</span>
+                    <span>Service information</span>
                   </div>
                   <p className="text-xs text-[#64748b] leading-relaxed">
-                    1-on-1 personalized sessions by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics). Complete assessment and progressive milestone recovery.
+                    This page is general information. Suitability and progress depend on an individual assessment.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div className="container mx-auto mt-10 max-w-6xl px-4 sm:px-6">
+          <section id="health-information-disclaimer" className="rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-950">
+            <h2 className="font-semibold">Health information</h2>
+            <p className="mt-2">This page provides general information and is not a diagnosis or individual treatment plan. Suitability and progress vary. Follow your treating clinician’s or surgeon’s instructions, especially after an injury or operation, and seek urgent medical care for sudden severe or concerning symptoms.</p>
+          </section>
+        </div>
       </section>
 
       {/* Main Educational Long-Form Content Area */}
-      <main className="py-12 sm:py-16 md:py-20">
+      <section id="service-details" className="py-12 sm:py-16 md:py-20">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             {/* Left Primary Article Content */}
@@ -430,7 +413,7 @@ export const ServiceDetailPage: React.FC = () => {
                   Our Diagnostic Evaluation in Manikonda
                 </h2>
                 <p className="text-sm sm:text-base text-[#4a5568] leading-relaxed">
-                  Before applying any treatment, Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) conducts a comprehensive 45-minute clinical evaluation to pinpoint the exact musculoskeletal root cause.
+                  An assessment may include discussion of your symptoms and goals, plus movement checks selected for your individual needs.
                 </p>
 
                 <div className="space-y-3">
@@ -475,7 +458,7 @@ export const ServiceDetailPage: React.FC = () => {
                 <div className="mt-6 p-5 rounded-xl bg-gradient-to-r from-[#081a2e] to-[#122842] text-white space-y-2">
                   <div className="flex items-center gap-2 text-[#e5dec9] text-xs font-bold uppercase tracking-wider">
                     <Clock className="w-4 h-4" />
-                    <span>Expected Recovery Timeline</span>
+                    <span>Recovery and progress</span>
                   </div>
                   <p className="text-sm sm:text-base leading-relaxed text-slate-100">
                     {service.expectedRecovery}
@@ -587,7 +570,7 @@ export const ServiceDetailPage: React.FC = () => {
                 <div className="text-center pb-4 border-b border-[#e5dec9]">
                   <div className="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-[#8a5d24] mb-3 shadow-xs bg-[#f4ede0]">
                     <img
-                      src="/images/doctor/dr-hamid-actual.png"
+                      src="/images/doctor/dr-hamid-hero.webp"
                       alt="Dr. Mohammed Hamid Ali, physiotherapist"
                       width={682}
                       height={1024}
@@ -598,26 +581,14 @@ export const ServiceDetailPage: React.FC = () => {
                   <h3 className="font-serif text-xl font-bold text-[#081a2e]">
                     Dr. Mohammed Hamid Ali
                   </h3>
-                  <p className="text-xs font-semibold text-[#8a5d24]">
-                    Consultant Physiotherapist • BPT, MPT (Ortho)
-                  </p>
-                  <p className="text-xs text-[#64748b] mt-1">
-                    8+ Years Clinical Experience in Hyderabad
-                  </p>
+                  <p className="text-xs font-semibold text-[#8a5d24]">Physiotherapy clinic in Manikonda</p>
                 </div>
 
                 <div className="space-y-3">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-[#081a2e]">
-                    Why Consult Dr. Hamid:
+                    Ask about this service
                   </h4>
-                  <ul className="space-y-2 text-xs text-[#4a5568]">
-                    {service.whyChooseDoctor.map((reason, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <Check className="w-3.5 h-3.5 text-[#8a5d24] shrink-0 mt-0.5" />
-                        <span>{reason}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-xs leading-relaxed text-[#4a5568]">Contact the clinic to discuss appointment options and whether the listed service may be appropriate for you.</p>
                 </div>
 
                 {/* Booking Action Buttons */}
@@ -686,7 +657,7 @@ export const ServiceDetailPage: React.FC = () => {
             </aside>
           </div>
         </div>
-      </main>
+      </section>
 
       {/* Bottom Sticky Action Bar on Mobile */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#e5dec9] p-3 shadow-xl">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
@@ -24,7 +25,12 @@ import ContactMap from "@/components/ContactMap";
 import { conditions } from "@/data/conditions";
 import { getRecentPosts } from "@/data/blogPosts";
 import { getServiceBySlug } from "@/data/services";
-import { GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_REVIEW_SUMMARY } from "@/lib/businessInfo";
+import { GOOGLE_BUSINESS_PROFILE_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
+
+const getConditionDestination = (slug: string) => {
+  const matchingService = getServiceBySlug(slug);
+  return matchingService ? `/services/${matchingService.slug}` : `/conditions/${slug}`;
+};
 
 // Medical SVG icons styled to match reference image cards
 const NeckIcon = () => (
@@ -148,27 +154,6 @@ const HomePage = () => {
     (c) => c.slug === "ultrasound-therapy" || c.slug === "interferential-therapy-ift"
   );
 
-  const testimonials = [
-    {
-      quote:
-        "After months of back pain and numbness, I found relief after just 5 sessions at Dr. Hamid's clinic in Manikonda. Dr. Hamid took the time to assess the exact spinal cause and demonstrated targeted exercises that worked.",
-      author: "Srikishan S.",
-      location: "Puppalguda, Manikonda"
-    },
-    {
-      quote:
-        "My mother was suffering from severe knee pain on stairs. Alhamdulillah, Dr. Hamid's physiotherapy sessions gave her 70% relief and improved her walking balance without surgery.",
-      author: "Sania M.",
-      location: "Manikonda"
-    },
-    {
-      quote:
-        "Very humble, punctual and scientifically sound doctor. He explained my shoulder impingement clearly and created an exercise schedule that healed my arm in 2 weeks. Highly recommended!",
-      author: "Abdul B.",
-      location: "Gachibowli"
-    },
-  ];
-
   const scrollToAppointment = () => {
     const el = document.getElementById("appointment");
     if (el) {
@@ -182,6 +167,9 @@ const HomePage = () => {
 
   return (
     <div className="pb-16 md:pb-0 bg-[#faf6ed] text-[#1a202c]">
+      <Helmet>
+        <link rel="preload" as="image" href="/images/doctor/dr-hamid-hero.webp" fetchPriority="high" />
+      </Helmet>
       <StructuredData type="homepage" />
 
       {/* =========================================================
@@ -207,7 +195,7 @@ const HomePage = () => {
 
               {/* Subheading */}
               <p className="text-base sm:text-lg lg:text-xl text-[#4a5568] leading-relaxed max-w-xl font-normal">
-                Helping you move better, feel stronger and live an active life with personalized physiotherapy treatment under Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).
+                Physiotherapy services and rehabilitation options at Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad.
               </p>
 
               {/* Two CTA Buttons Side by Side */}
@@ -231,16 +219,8 @@ const HomePage = () => {
                 </Button>
               </div>
 
-              {/* Key Credibility Micro-signals */}
+              {/* Clinic service information */}
               <div className="pt-6 flex flex-wrap items-center gap-6 text-xs sm:text-sm text-[#4a5568] border-t border-[#e2d8c0]/80">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#2a5d45]" />
-                  <span>8+ Years Clinical Experience</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Star className="w-4 h-4 text-[#c28e28] fill-[#c28e28]" />
-                  <span>{GOOGLE_REVIEW_SUMMARY.reviewCount} Google reviews · {GOOGLE_REVIEW_SUMMARY.rating}/5</span>
-                </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#2a5d45]" />
                   <span>Home Physiotherapy Visits in Manikonda &amp; Puppalguda</span>
@@ -252,7 +232,7 @@ const HomePage = () => {
             <div className="lg:col-span-5 flex justify-center lg:justify-end">
               <div className="relative w-full max-w-[420px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-b from-[#fbf7ee] to-[#ede2cd]">
                 <img
-                  src="/images/doctor/dr-hamid-actual.png"
+                  src="/images/doctor/dr-hamid-hero.webp"
                   alt="Dr. Mohammed Hamid Ali holding an anatomical spine model"
                   width={682}
                   height={1024}
@@ -261,9 +241,9 @@ const HomePage = () => {
                   {...{ fetchpriority: "high" }}
                 />
                 
-                {/* Subtle overlay badge for credentials */}
+                {/* Doctor name overlay */}
                 <div className="absolute bottom-3 right-3 bg-[#081a2e]/90 backdrop-blur-md text-white px-3.5 py-1.5 rounded-lg text-xs font-medium shadow-md">
-                  Dr. Mohammed Hamid Ali, BPT, MPT
+                  Dr. Mohammed Hamid Ali
                 </div>
               </div>
             </div>
@@ -322,7 +302,7 @@ const HomePage = () => {
               <span>+91 76010 26596</span>
             </a>
             <span className="text-[#8a5d24]">•</span>
-            <span className="text-[#2a5d45] font-semibold">Home Physiotherapy Visits Available</span>
+            <span className="text-[#2a5d45] font-semibold">Home Physiotherapy Visits in Manikonda</span>
           </div>
         </div>
       </section>
@@ -343,7 +323,7 @@ const HomePage = () => {
               Condition-Based Physiotherapy Services in Manikonda
             </h2>
             <p className="text-[#4a5568] text-base sm:text-lg leading-relaxed">
-              We focus on diagnosing the root biomechanical cause of your pain rather than masking symptoms with machines. Each treatment protocol is customized to your body, daily routine, and personal recovery goals.
+              An assessment can help discuss the factors affecting your movement and daily activities. Physiotherapy options may include exercise, activity advice, and other approaches selected for your symptoms and goals.
             </p>
           </div>
 
@@ -354,7 +334,7 @@ const HomePage = () => {
                 className="group flex flex-col bg-[#fffbf2] border border-[#e5dec9] rounded-2xl overflow-hidden hover:border-[#8c6b3e] hover:shadow-xl transition-all duration-300"
               >
                 <Link
-                  to={`/services/${getServiceBySlug(service.slug)?.slug ?? service.slug}`}
+                  to={getConditionDestination(service.slug)}
                   className="block rounded-t-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#8a5d24]"
                 >
                 <div className="aspect-[16/10] overflow-hidden bg-muted relative">
@@ -384,7 +364,7 @@ const HomePage = () => {
                 <div className="px-6 pb-6 mt-auto">
                   <div className="pt-4 border-t border-[#e2d8c0]/60 flex items-center justify-between">
                     <Link
-                      to={`/services/${getServiceBySlug(service.slug)?.slug ?? service.slug}`}
+                      to={getConditionDestination(service.slug)}
                       className="inline-flex items-center text-sm font-semibold text-[#8a5d24] hover:text-[#5c3e17] transition-colors"
                     >
                       <span>Explore Treatment &amp; FAQs</span>
@@ -421,7 +401,7 @@ const HomePage = () => {
             {supportiveModalities.map((modality) => (
               <Link
                 key={modality.slug}
-                to={`/services/${getServiceBySlug(modality.slug)?.slug ?? modality.slug}`}
+                to={getConditionDestination(modality.slug)}
                 className="flex flex-col sm:flex-row items-center gap-4 p-5 rounded-xl border border-[#e5dec9] bg-white shadow-2xs hover:border-[#8c6b3e]/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24]"
               >
                 <img
@@ -451,7 +431,7 @@ const HomePage = () => {
       </section>
 
       {/* =========================================================
-          5. ABOUT DR. MOHAMMED HAMID ALI, BPT (E-E-A-T CREDIBILITY)
+          5. ABOUT DR. MOHAMMED HAMID ALI (E-E-A-T CREDIBILITY)
       ========================================================= */}
       <section id="patient-info" className="py-16 md:py-24 px-4 bg-white border-b border-[#e5dec9]">
         <div className="container">
@@ -461,7 +441,7 @@ const HomePage = () => {
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-md rounded-2xl overflow-hidden border-2 border-[#e5dec9] bg-gradient-to-b from-[#fbf7ee] to-[#ede2cd] shadow-lg">
                 <img
-                  src="/images/doctor/dr-hamid-actual.png"
+                  src="/images/doctor/dr-hamid-hero.webp"
                   alt="Dr. Mohammed Hamid Ali, physiotherapist"
                   width={682}
                   height={1024}
@@ -473,10 +453,10 @@ const HomePage = () => {
                     Dr. Mohammed Hamid Ali
                   </h3>
                   <p className="text-sm font-medium text-[#8a5d24]">
-                    BPT, MPT (Orthopedics) · Regd. No. 0413 · 8+ Years Experience
+                    BPT, MPT (Ortho) · Regd. No. 0413 · 8+ years’ clinical experience
                   </p>
                   <p className="text-xs text-[#718096] mt-2">
-                    Consultant Physiotherapist &amp; Founder, Dr. Hamid&apos;s Physio and Pain Clinic
+                    Consultant Physiotherapist &amp; Founder, Dr Hamid’s Physio and Pain Clinic
                   </p>
                 </div>
               </div>
@@ -484,39 +464,26 @@ const HomePage = () => {
 
             {/* Doctor Bio & Treatment Philosophy */}
             <div className="lg:col-span-7 space-y-5">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">
-                Doctor Bio &amp; Clinical Credentials
-              </span>
+              <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">About the clinic</span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e]">
-                Dedicated to Your Pain Relief &amp; Lasting Movement Health
+                Physiotherapy in Manikonda
               </h2>
 
               <p className="text-base text-[#4a5568] leading-relaxed">
-                Dr. Mohammed Hamid Ali is a certified physiotherapist with over eight years of rigorous clinical practice in Hyderabad. Specializing in spinal biomechanics, joint preservation, post-surgical recovery, and sports rehabilitation, his patient-first methodology eliminates guesswork through detailed physical examination and clear communication.
+                Dr Hamid’s Physio and Pain Clinic was established in 2021 and is led by its founder, Dr. Mohammed Hamid Ali. The clinic provides individualized, one-to-one physiotherapy and rehabilitation in Manikonda, Hyderabad.
               </p>
 
               <p className="text-base text-[#4a5568] leading-relaxed">
-                Rather than rushing patients into passive cycles of machines or unnecessary diagnostic imaging, Dr. Hamid designs individualized exercise programs that empower you to understand your condition, recover functional confidence, and prevent future recurrences.
+                Visit the services page to review the clinic’s listed services, or contact the clinic to ask whether an appointment or home visit is suitable for your needs.
               </p>
-
-              {/* 3 Credential Badges */}
-              <div className="grid grid-cols-3 gap-3 pt-3">
-                <div className="p-4 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-center">
-                  <Award className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
-                  <p className="font-bold text-[#081a2e] text-sm">BPT, MPT</p>
-                  <p className="text-[11px] text-[#718096]">Orthopedics Specialist</p>
-                </div>
-                <div className="p-4 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-center">
-                  <Clock className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
-                  <p className="font-bold text-[#081a2e] text-sm">8+ Years</p>
-                  <p className="text-[11px] text-[#718096]">Clinical Experience</p>
-                </div>
-                <div className="p-4 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-center">
-                  <ShieldCheck className="w-5 h-5 text-[#8a5d24] mx-auto mb-1" />
-                  <p className="font-bold text-[#081a2e] text-sm">Regd. No. 0413</p>
-                  <p className="text-[11px] text-[#718096]">Licensed Therapist</p>
-                </div>
-              </div>
+              <a
+                href={PRACTO_PROFILE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex text-sm font-semibold text-[#8a5d24] hover:underline"
+              >
+                View Dr. Mohammed Hamid Ali’s professional profile on Practo
+              </a>
 
               {/* Direct Booking Links */}
               <div className="pt-3 flex flex-wrap gap-4 items-center">
@@ -563,34 +530,14 @@ const HomePage = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-semibold text-[#8a5d24] hover:underline"
             >
-              <span>Read {GOOGLE_REVIEW_SUMMARY.reviewCount} reviews on Google</span>
+              <span>Read clinic reviews on Google</span>
               <ArrowRight className="w-4 h-4 ml-1" />
             </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t, idx) => (
-              <div
-                key={idx}
-                className="bg-white p-7 rounded-2xl border border-[#e5dec9] shadow-xs flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center gap-1 mb-3">
-                    {[1, 2, 3, 4, 5].map((s) => (
-                      <Star key={s} className="w-4 h-4 text-[#c28e28] fill-[#c28e28]" />
-                    ))}
-                  </div>
-                  <p className="text-sm text-[#4a5568] leading-relaxed italic">
-                    &ldquo;{t.quote}&rdquo;
-                  </p>
-                </div>
-                <div className="pt-4 mt-4 border-t border-[#f0e7d3]">
-                  <p className="font-bold text-[#081a2e] text-sm">{t.author}</p>
-                  <p className="text-xs text-[#718096]">{t.location}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="max-w-2xl rounded-2xl border border-[#e5dec9] bg-white p-6 text-sm leading-relaxed text-[#4a5568]">
+            Patient feedback is hosted on Google. Follow the link above to read reviews on the original profile.
+          </p>
         </div>
       </section>
 
@@ -672,7 +619,7 @@ const HomePage = () => {
               Book Your Physiotherapy Appointment in Puppalguda, Manikonda
             </h2>
             <p className="text-[#4a5568] text-base leading-relaxed">
-              Appointments available Mon – Sun: 10:00 AM – 10:00 PM. Clinic consultations in Puppalguda and personalized home physiotherapy visits available across Manikonda and surrounding areas.
+              Appointments are available Monday to Sunday, 10:00 AM to 10:00 PM. Clinic consultations are in Puppalguda, Manikonda. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage.
             </p>
           </div>
 
@@ -680,7 +627,7 @@ const HomePage = () => {
             <AppointmentForm />
             <ContactMap
               mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.7!2d78.390221!3d17.3989817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97c8eb026f65%3A0x5e83196a16a5e123!2sDr.%20Hamid's%20Physio%20%26%20Pain%20Clinic!5e0!3m2!1sen!2sin!4v1727624000000"
-              externalMapUrl="https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
+              externalMapUrl={GOOGLE_BUSINESS_PROFILE_URL}
               className="h-full min-h-[380px]"
             />
           </div>
@@ -699,7 +646,7 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <span className="text-xs text-[#718096] bg-[#faf6ed] border border-[#e5dec9] px-3 py-1.5 rounded-full font-medium self-start sm:self-auto">
-                  📍  Physio Clinic in Manikonda
+                  📍 Physio Clinic in Manikonda
                 </span>
               </div>
 
@@ -772,10 +719,10 @@ const HomePage = () => {
 
               <div className="mt-5 pt-4 border-t border-[#e5dec9] flex flex-wrap items-center justify-between gap-3 text-xs text-[#5c4928]">
                 <span>
-                  💡 <em>Home Physiotherapy Visits:</em> Dedicated in-home rehabilitation is available across Manikonda and Puppalguda for elderly and post-operative patients.
+                  💡 <em>Home Physiotherapy Visits:</em> Visits are generally targeted within an approximate 15 km radius of Manikonda for patients who have difficulty travelling; contact the clinic to confirm coverage and availability.
                 </span>
                 <a
-                  href="https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
+                  href={GOOGLE_BUSINESS_PROFILE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-[#081a2e] hover:text-[#8a5d24] inline-flex items-center gap-1 transition-colors"

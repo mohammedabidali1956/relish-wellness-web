@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, ExternalLink } from "lucide-react";
-import { GOOGLE_BUSINESS_PROFILE_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
+import { FACEBOOK_PROFILE_URL, GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
 
 const WhatsAppIcon = ({ className = "h-5 w-5" }: { className?: string }) => (
   <svg
@@ -28,7 +28,7 @@ const socialLinks = [
     label: "Instagram",
     subtext: "Exercise & Clinic Updates",
     handle: "@drhamidphysio",
-    href: "https://www.instagram.com/drhamidphysio",
+    href: INSTAGRAM_PROFILE_URL,
     icon: Instagram,
     hoverBg: "hover:bg-[#E4405F] hover:text-white hover:border-[#E4405F]",
     accentColor: "text-[#E4405F]",
@@ -37,7 +37,7 @@ const socialLinks = [
     label: "YouTube",
     subtext: "Rehab & Recovery Guides",
     handle: "@dr.hamidsphysiopainclinic",
-    href: "https://www.youtube.com/@dr.hamidsphysiopainclinic",
+    href: YOUTUBE_CHANNEL_URL,
     icon: Youtube,
     hoverBg: "hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000]",
     accentColor: "text-[#FF0000]",
@@ -46,7 +46,7 @@ const socialLinks = [
     label: "Facebook",
     subtext: "Official Facebook Page",
     handle: "Dr. Hamid's Physio Clinic",
-    href: "https://www.facebook.com/profile.php?id=61587086612280",
+    href: FACEBOOK_PROFILE_URL,
     icon: Facebook,
     hoverBg: "hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2]",
     accentColor: "text-[#1877F2]",
@@ -54,7 +54,7 @@ const socialLinks = [
   {
     label: "Google Maps",
     subtext: "Clinic details and reviews",
-    handle: "Dr. Hamid's Physio & Pain Clinic",
+    handle: "Dr Hamid’s Physio and Pain Clinic",
     href: GOOGLE_BUSINESS_PROFILE_URL,
     icon: MapPin,
     hoverBg: "hover:bg-[#4285F4] hover:text-white hover:border-[#4285F4]",
@@ -62,7 +62,7 @@ const socialLinks = [
   },
   {
     label: "Practo",
-    subtext: "Profile and consultation fee",
+    subtext: "Professional profile",
     handle: "Dr. Mohammed Hamid Ali",
     href: PRACTO_PROFILE_URL,
     icon: ExternalLink,
@@ -84,8 +84,6 @@ const quickLinks = [
   { to: "/reviews", label: "Reviews" },
   { to: "/blogs", label: "Blogs" },
   { to: "/contact", label: "Contact the Clinic" },
-  { to: "/privacy-policy", label: "Privacy Policy" },
-  { to: "/terms-and-conditions", label: "Terms & Conditions" },
   { to: "/#appointment", label: "Book Appointment" },
 ];
 
@@ -99,22 +97,22 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <img
                 src="/images/logo/hamid-physio-logo.png"
-                alt="Dr. Hamid's Physio and Pain Clinic — physiotherapy in Manikonda, Hyderabad"
+                alt="Dr Hamid’s Physio and Pain Clinic — physiotherapy in Manikonda, Hyderabad"
                 width={1414}
                 height={1414}
                 className="h-16 w-16 sm:h-20 sm:w-20 shrink-0 rounded-full object-cover border border-border"
               />
               <div>
                 <span className="font-display text-base sm:text-lg font-semibold text-relish-900 leading-tight block">
-                  Dr. Hamid's Physio and Pain Clinic
+                  Dr Hamid’s Physio and Pain Clinic
                 </span>
                 <span className="text-xs text-muted-foreground block mt-0.5">
-                  Dr. Mohammed Hamid Ali, BPT, MPT (Ortho)
+                  Physiotherapy in Manikonda, Hyderabad
                 </span>
               </div>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground max-w-sm">
-              Professional physiotherapy, advanced rehabilitation, and specialized pain management in Manikonda & Puppalguda, Hyderabad.
+              Physiotherapy, rehabilitation, and pain-management services in Manikonda and Puppalguda, Hyderabad.
             </p>
 
             {/* Quick Icon Row */}
@@ -125,8 +123,8 @@ const Footer = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Visit Dr. Hamid's Physio on ${label}`}
-                  title={`${label} - Dr. Hamid's Physio`}
+                  aria-label={`Visit Dr Hamid’s Physio and Pain Clinic on ${label}`}
+                  title={`${label} - Dr Hamid’s Physio and Pain Clinic`}
                   className={`inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-card text-muted-foreground transition-all duration-200 shadow-sm ${hoverBg}`}
                 >
                   <Icon className="h-5 w-5" />
@@ -159,7 +157,7 @@ const Footer = () => {
               <li className="flex gap-3">
                 <MapPin className="h-4 w-4 shrink-0 mt-1 text-relish-600" />
                 <a
-                  href="https://maps.app.goo.gl/zGixCFnPJbKzKxy17"
+                  href={GOOGLE_BUSINESS_PROFILE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm leading-relaxed text-muted-foreground hover:text-relish-700 transition-colors"
@@ -200,7 +198,7 @@ const Footer = () => {
             <h3 className="text-xs font-semibold uppercase tracking-wider text-relish-900 flex items-center justify-between">
               <span>Connect With Us</span>
               <span className="text-[11px] font-normal normal-case text-relish-700 bg-relish-50 px-2 py-0.5 rounded border border-relish-200">
-                Official Channels
+                Profiles &amp; Contact
               </span>
             </h3>
             <p className="mt-2 text-xs text-muted-foreground">
@@ -244,7 +242,7 @@ const Footer = () => {
               📍 Clinic Location: Puppalguda, Manikonda, Hyderabad
             </span>
             <span className="text-[11px] leading-relaxed text-muted-foreground">
-              Accessible for patients from Puppalguda, Manikonda, Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda &amp; the Seven Tombs area.
+              Clinic visitors come from Puppalguda, Manikonda, Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda &amp; the Seven Tombs area. Home visits are generally targeted within an approximate 15 km radius of Manikonda; actual availability depends on the patient's address, so contact the clinic to confirm coverage.
             </span>
           </div>
         </div>
@@ -252,9 +250,11 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground text-center sm:text-left">
-            &copy; {new Date().getFullYear()} Dr. Hamid's Physio and Pain Clinic. All rights reserved.
+            &copy; {new Date().getFullYear()} Dr Hamid’s Physio and Pain Clinic. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-muted-foreground">
+            <NavLink to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</NavLink>
+            <NavLink to="/terms-and-conditions" className="hover:text-foreground transition-colors">Terms &amp; Conditions</NavLink>
             <span>Follow us:</span>
             <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
               {socialLinks.map(({ label, href, icon: Icon, accentColor }) => (

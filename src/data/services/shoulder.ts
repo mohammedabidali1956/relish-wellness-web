@@ -6,12 +6,12 @@ export const shoulderServices: ServiceDetail[] = [
     category: "Shoulder",
     title: "Shoulder Pain Physiotherapy",
     metaTitle: "Shoulder Pain Physiotherapy in Manikonda | Rotator Cuff Relief Hyderabad",
-    metaDescription: "Relieve shoulder pain, rotator cuff tendonitis, and impingement with specialized physiotherapy in Manikonda, Hyderabad. Care by Dr. Mohammed Hamid Ali, BPT.",
+    metaDescription: "Relieve shoulder pain, rotator cuff tendonitis, and impingement with specialized physiotherapy in Manikonda, Hyderabad. Care by Dr. Mohammed Hamid Ali.",
     h1: "Shoulder Pain Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Clinical treatment for shoulder pain, rotator cuff problems, impingement, and restricted shoulder movement to help restore strength and daily function.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Shoulder pain physiotherapy and rotator cuff treatment in Manikonda clinic",
-    whatItIs: "The shoulder is the most mobile joint in the human body, relying primarily on a dynamic cuff of four muscles (supraspinatus, infraspinatus, teres minor, subscapularis) and scapulothoracic stabilizers rather than deep bony sockets. This mobility leaves it susceptible to impingement, tendinitis, and bursitis. When you experience shoulder pain, simple tasks like reaching overhead, putting on a shirt, fastening a seatbelt, or sleeping on your side become agonizing. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we evaluate the entire shoulder girdle, thoracic spine, and neck to identify the exact source of your pain and restore smooth, pain-free overhead reach.",
+    whatItIs: "Shoulder pain can affect reaching, dressing, or sleeping and may have several causes. A clinical assessment can help consider possible contributors and whether physiotherapy or another type of care may be appropriate. Symptoms do not always identify the source by themselves.",
     causes: [
       "Subacromial impingement syndrome where the supraspinatus tendon is pinched under the acromion",
       "Rotator cuff tendinopathy or partial micro-tears from repetitive overhead lifting or sports",
@@ -43,12 +43,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Ergonomic sleeping modification and functional reach pacing advice"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical musculoskeletal experience treating shoulder disorders in Hyderabad",
-      "Precise differentiation between neck-referred pain, rotator cuff tears, and frozen shoulder",
-      "Safe, guided exercise progressions avoiding painful pinching of vulnerable tendons",
-      "Convenient Manikonda clinic near Friends Colony Park with dedicated home visit options"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -89,15 +84,15 @@ export const shoulderServices: ServiceDetail[] = [
     category: "Shoulder",
     title: "Frozen Shoulder Physiotherapy",
     metaTitle: "Frozen Shoulder Physiotherapy in Manikonda | Adhesive Capsulitis Care",
-    metaDescription: "Gentle, effective frozen shoulder physiotherapy in Manikonda, Hyderabad. Restore overhead reach and rotation with Dr. Mohammed Hamid Ali, BPT. Call today!",
+    metaDescription: "Frozen shoulder physiotherapy in Manikonda, Hyderabad, for pain, stiffness, and reduced shoulder movement. Assessment and progress vary by person.",
     h1: "Frozen Shoulder Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Structured rehabilitation for frozen shoulder (adhesive capsulitis), including pain management, progressive mobility exercises, and restoration of overhead movement.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Frozen shoulder physiotherapy and adhesive capsulitis treatment in Manikonda clinic",
-    whatItIs: "Frozen shoulder (adhesive capsulitis) can cause shoulder pain and stiffness that develop gradually and limit movement. Symptoms and recovery time vary. At Dr. Hamid's Physio and Pain Clinic in Manikonda, an assessment can help discuss suitable activity changes and exercises based on the person's symptoms and movement.",
+    whatItIs: "Frozen shoulder (adhesive capsulitis) can cause shoulder pain and stiffness that develop gradually and limit movement. Symptoms and recovery time vary. At Dr Hamid’s Physio and Pain Clinic in Manikonda, an assessment can help discuss suitable activity changes and exercises based on the person's symptoms and movement.",
     causes: [
       "Idiopathic thickening and contracture of the glenohumeral joint capsule and coracohumeral ligament",
-      "High prevalence in individuals with diabetes mellitus (up to 20% higher risk) and thyroid disorders",
+      "Frozen shoulder is associated with diabetes and thyroid conditions, although causes and risk vary between people",
       "Prolonged immobilization following shoulder trauma, wrist fracture, or post-cardiac/breast surgery",
       "Autoimmune inflammatory reactions in the synovial lining of the joint capsule",
       "History of previous untreated rotator cuff tendinopathy or minor trauma"
@@ -109,7 +104,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Difficulty reaching overhead to wash hair, reach high shelves, or comb hair",
       "Dull, constant deep aching in the shoulder and upper arm even at complete rest"
     ],
-    howPhysioHelps: "Stage-specific physiotherapy is the cornerstone of frozen shoulder recovery. During the painful Freezing stage, aggressive stretching is contraindicated; Dr. Mohammed Hamid Ali (BPT) focuses on pain management, gentle pendular movements, and supportive electrotherapy. As the condition transitions into the Frozen and Thawing stages, intensive Maitland Grade III-IV capsular glides, physiological stretching, and progressive strengthening are systematically introduced to expand the contracted joint volume.",
+    howPhysioHelps: "Care for frozen shoulder depends on symptoms, movement, health, and personal goals. After assessment, a physiotherapist may discuss comfortable movement, activity changes, and suitable exercises. The plan can be adjusted if symptoms change; no particular technique or recovery outcome is guaranteed.",
     assessmentProcess: [
       "Precise goniometric measurement of active and passive shoulder external rotation, abduction, and internal rotation",
       "Verification of the classic capsular pattern of restriction (external rotation > abduction > internal rotation)",
@@ -118,47 +113,39 @@ export const shoulderServices: ServiceDetail[] = [
       "Assessment of medical history (diabetes, thyroid levels, recent surgeries)"
     ],
     treatmentApproach: [
-      "Stage 1 (Freezing): Pain relief, gentle Grade I-II joint oscillations, moist heat, and pain-free pendular exercises",
-      "Stage 2 (Frozen): Grade III-IV inferior, anterior, and posterior capsular mobilizations to stretch contracted tissues",
-      "End-range sustained capsular stretching (sleeper stretch, doorway stretch, pulley exercises)",
-      "Stage 3 (Thawing): Progressive strengthening of rotator cuff and scapular muscles throughout newly gained range",
-      "Functional retraining for personal grooming, dressing, and daily reaching activities"
+      "Discuss symptoms, shoulder movement, health history, and functional goals",
+      "Consider comfortable movement and exercises suited to the person's symptoms and stage",
+      "Review activity and adjust the plan as symptoms and function change",
+      "Follow the treating clinician's advice if another condition or injury is suspected"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Gentle, stage-appropriate manual mobilization that respects your pain threshold",
-      "Extensive experience treating diabetic frozen shoulder patients in Hyderabad",
-      "Clear home exercise programs using pulleys and resistance bands",
-      "Dedicated clinic in Puppalguda, Manikonda with personalized home visits available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
     homeCare: [
-      "Apply moist warm compresses for 15 minutes prior to performing your prescribed home stretches",
-      "Perform gentle Codman's pendulum exercises 3-4 times daily to maintain joint circulation",
-      "Use an overhead shoulder pulley daily as demonstrated by Dr. Hamid to gently regain flexion",
-      "Support the painful arm on a pillow while watching TV or sleeping to reduce capsular traction",
-      "Avoid forceful, jerky attempts to break through extreme stiffness at home"
+      "Use only movements or exercises recommended for your symptoms and health after assessment.",
+      "Avoid forcing painful shoulder movement; ask a clinician how to adapt daily activities.",
+      "Seek medical advice for sudden severe pain, injury, or concerning changes."
     ],
-    whenToVisit: "Seek physiotherapy as early as possible when you first notice progressive loss of shoulder rotation or persistent night pain. Early intervention prevents dense fibrotic contracture.",
+    whenToVisit: "Arrange an assessment if shoulder pain, stiffness, or loss of movement is persistent or affecting daily activities. Seek prompt medical advice after a significant injury or for sudden severe symptoms.",
     faqs: [
       {
         question: "Why is frozen shoulder more common in people with diabetes?",
-        answer: "High blood sugar levels cause collagen molecules in the shoulder capsule to cross-link and thicken through a process called non-enzymatic glycation, making the capsule dense, tight, and prone to adhesive capsulitis."
+        answer: "Frozen shoulder is more common in people with diabetes, but the reasons and individual risk vary. A clinician can discuss how a person's health history may relate to their symptoms."
       },
       {
         question: "Can physiotherapy thaw a frozen shoulder without surgery or manipulation under anesthesia?",
-        answer: "Yes! High-quality medical studies confirm that non-invasive physiotherapy combining skilled manual joint mobilization and home stretching successfully restores functional mobility in over 90% of frozen shoulder cases."
+        answer: "Physiotherapy may be one part of care for frozen shoulder. The suitable approach and likely progress vary between people; a clinician can discuss options after assessment."
       },
       {
         question: "How long does each stage of frozen shoulder last?",
-        answer: "The Freezing phase typically lasts 2 to 6 months, the Frozen phase lasts 4 to 8 months, and the Thawing phase lasts 6 to 12 months. Physiotherapy substantially shortens each of these phases."
+        answer: "The course of frozen shoulder varies, and symptoms can persist for an extended period. A clinician can assess the shoulder and discuss suitable ways to manage symptoms and function."
       },
       {
         question: "Does Dr. Hamid provide home visit physiotherapy for frozen shoulder in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy across Manikonda, Puppalguda, and nearby Hyderabad areas for patients with severe pain or mobility limitations."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with severe pain or mobility limitations."
       },
       {
         question: "How do I book an appointment?",
@@ -171,12 +158,12 @@ export const shoulderServices: ServiceDetail[] = [
     category: "Shoulder",
     title: "Shoulder Rehabilitation",
     metaTitle: "Shoulder Rehabilitation in Manikonda | Post-Op & Dislocation Recovery",
-    metaDescription: "Comprehensive post-surgical and post-dislocation shoulder rehabilitation in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali, BPT. Rebuild stability and strength!",
+    metaDescription: "Comprehensive post-surgical and post-dislocation shoulder rehabilitation in Manikonda, Hyderabad by Dr. Mohammed Hamid Ali. Rebuild stability and strength!",
     h1: "Shoulder Rehabilitation in Manikonda, Hyderabad",
     shortDescription: "Complete clinical rehabilitation for post-arthroscopic rotator cuff repair, recurrent shoulder dislocation, Labral/SLAP tears, and fracture recovery.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Comprehensive shoulder rehabilitation and post-op stabilization in Manikonda clinic",
-    whatItIs: "Shoulder Rehabilitation is an advanced, protocol-guided physical therapy program tailored for patients recovering from major shoulder surgery, anterior dislocations, Labral/Bankart lesions, SLAP tears, or proximal humerus fractures. Because the shoulder sacrifice bony stability for multi-planar mobility, rehabilitation must systematically restore active dynamic stabilization. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali (BPT) leads you safely through phased surgical protocols — protecting healing repairs while systematically rebuilding overhead strength, joint proprioception, and throwing/lifting capability.",
+    whatItIs: "Shoulder Rehabilitation is an advanced, protocol-guided physical therapy program tailored for patients recovering from major shoulder surgery, anterior dislocations, Labral/Bankart lesions, SLAP tears, or proximal humerus fractures. Because the shoulder sacrifice bony stability for multi-planar mobility, rehabilitation must systematically restore active dynamic stabilization. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, Dr. Mohammed Hamid Ali leads you safely through phased surgical protocols — protecting healing repairs while systematically rebuilding overhead strength, joint proprioception, and throwing/lifting capability.",
     causes: [
       "Post-operative recovery following arthroscopic or open rotator cuff tendon repair",
       "Post-surgical rehabilitation after Bankart repair, Latarjet procedure, or SLAP repair",
@@ -191,7 +178,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Inability to lift objects, drive, or return to recreational sports and fitness activities",
       "Persistent ache around the surgical portals or anterior joint capsule"
     ],
-    howPhysioHelps: "Our structured shoulder rehabilitation adheres strictly to biological tissue healing phases. In early phases, Dr. Mohammed Hamid Ali (BPT) uses gentle passive range of motion to prevent arthrofibrosis without placing tension on surgical anchors. Once biological tendon-to-bone or labral healing is secure, active-assisted exercises, closed-chain kinetic loading, dynamic rhythmic stabilization, and functional sport-specific training are systematically integrated.",
+    howPhysioHelps: "Our structured shoulder rehabilitation adheres strictly to biological tissue healing phases. In early phases, Dr. Mohammed Hamid Ali uses gentle passive range of motion to prevent arthrofibrosis without placing tension on surgical anchors. Once biological tendon-to-bone or labral healing is secure, active-assisted exercises, closed-chain kinetic loading, dynamic rhythmic stabilization, and functional sport-specific training are systematically integrated.",
     assessmentProcess: [
       "Verification of orthopedic surgical operative report, anchor locations, and immobilization guidelines",
       "Passive range of motion measurement strictly respecting surgical safety parameters",
@@ -207,12 +194,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Phase 5: Plyometrics, throwing/overhead athletic drills, and return-to-sport functional clearance"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "Strict compliance with orthopedic surgical protocols ensuring repair integrity",
-      "8+ years of dedicated clinical musculoskeletal experience in Hyderabad",
-      "Personalized 1-on-1 attention with hands-on guided movement at every session",
-      "Convenient Manikonda clinic with dedicated home visit options available"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -236,7 +218,7 @@ export const shoulderServices: ServiceDetail[] = [
       },
       {
         question: "Can Dr. Hamid visit my home for post-op shoulder physiotherapy in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized in-home shoulder rehabilitation across Manikonda, Puppalguda, and nearby areas for post-surgical patients."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized in-home shoulder rehabilitation in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for post-surgical patients."
       },
       {
         question: "Where is the clinic located?",
@@ -253,12 +235,12 @@ export const shoulderServices: ServiceDetail[] = [
     category: "Shoulder",
     title: "Rotator Cuff Physiotherapy",
     metaTitle: "Rotator Cuff Physiotherapy in Manikonda | Shoulder Tendonitis Treatment Hyderabad",
-    metaDescription: "Expert rotator cuff physiotherapy in Manikonda, Hyderabad. Non-surgical treatment for rotator cuff tears, tendonitis, and impingement by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics).",
+    metaDescription: "Expert rotator cuff physiotherapy in Manikonda, Hyderabad. Non-surgical treatment for rotator cuff tears, tendonitis, and impingement by Dr. Mohammed Hamid Ali.",
     h1: "Rotator Cuff Physiotherapy in Manikonda, Hyderabad",
     shortDescription: "Specialized clinical rehabilitation for rotator cuff tears, tendonitis, impingement, and shoulder weakness.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Rotator cuff physiotherapy and shoulder tendon treatment in Manikonda clinic",
-    whatItIs: "The rotator cuff is a group of four deep muscles (supraspinatus, infraspinatus, teres minor, and subscapularis) that surround the shoulder joint, providing dynamic stability and enabling smooth rotation of the arm. Rotator cuff injuries are among the most common shoulder problems, ranging from tendonitis and impingement to partial or complete tears. These injuries cause pain during overhead activities, difficulty sleeping on the affected side, and weakness when lifting or rotating the arm. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Hyderabad, we provide evidence-based conservative management for rotator cuff conditions, helping patients avoid surgery and regain full shoulder function.",
+    whatItIs: "The rotator cuff is a group of muscles and tendons around the shoulder. Problems affecting this area can cause pain or weakness, including during reaching or lifting. Symptoms can have different causes; assessment may help discuss care options. Physiotherapy cannot guarantee that surgery will be avoided or that full function will return.",
     causes: [
       "Repetitive overhead activities in sports (badminton, tennis, swimming, cricket) or occupations",
       "Age-related tendon degeneration and reduced blood supply after age 40",
@@ -274,7 +256,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Weakness when lifting objects or rotating the arm against resistance",
       "Clicking, popping, or catching sensations during shoulder movement"
     ],
-    howPhysioHelps: "Rotator cuff rehabilitation focuses on restoring the balance between the deltoid and rotator cuff, improving scapular stability, and progressively loading the tendons to stimulate healing. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics) uses targeted manual therapy to mobilize stiff joints, soft tissue techniques to release tight structures, and a structured progressive strengthening program that rebuilds tendon health and shoulder function without surgery.",
+    howPhysioHelps: "Care may include gradual movement and strengthening, activity advice, or other options depending on the assessment and goals. Progress and response vary, and treatment cannot guarantee tendon healing or that surgery will not be needed.",
     assessmentProcess: [
       "Empty Can (Jobe's) and Full Can tests to isolate supraspinatus function",
       "External rotation and internal rotation strength testing against resistance",
@@ -290,12 +272,7 @@ export const shoulderServices: ServiceDetail[] = [
       "Functional retraining for overhead activities and return to sport or work"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
-    whyChooseDoctor: [
-      "8+ years of clinical experience treating rotator cuff injuries in Hyderabad",
-      "Specialized orthopedic training in shoulder biomechanics (MPT Orthopedics)",
-      "Evidence-based progressive loading protocols avoiding unnecessary surgery",
-      "Convenient Manikonda clinic with home visit options for acute painful shoulders"
-    ],
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"

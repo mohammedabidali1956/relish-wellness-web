@@ -24,7 +24,7 @@ export const conditions: Condition[] = [
     shortDescription: "Specialized physiotherapy treatment for neck pain, cervical spondylosis, stiffness, and postural strain in Manikonda.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Neck pain physiotherapy treatment showing cervical spine care in Manikonda clinic",
-    overview: "Neck pain and stiffness can have several causes, including long periods in one position, an injury, or age-related changes. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT, MPT) assesses symptoms and movement before discussing whether physiotherapy may help manage pain and improve function. Care is tailored to the individual and may include activity advice and exercise.",
+    overview: "Neck pain and stiffness can have several causes, including long periods in one position, an injury, or age-related changes. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali assesses symptoms and movement before discussing whether physiotherapy may help manage pain and improve function. Care is tailored to the individual and may include activity advice and exercise.",
     causes: [
       "Forward head posture and ergonomic strain from long computer or mobile use",
       "Cervical spondylosis (age-related disc and facet joint wear)",
@@ -48,13 +48,8 @@ export const conditions: Condition[] = [
       "Targeted electro-modalities for rapid anti-inflammatory pain relief",
       "Workstation ergonomic advice and personalized preventive home exercises"
     ],
-    expectedRecovery: "Most patients experience noticeable pain reduction within 3 to 5 sessions. Full mobility and postural endurance are typically restored over 2 to 4 weeks of consistent clinic and home exercise routines.",
-    whyChooseDoctor: [
-      "8+ years of dedicated clinical musculoskeletal experience",
-      "Precise differential diagnosis to rule out cervical nerve root impingement",
-      "Personalized 1-on-1 care directly by Dr. Mohammed Hamid Ali, BPT",
-      "Convenient Manikonda clinic location with dedicated home visit options"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -78,7 +73,7 @@ export const conditions: Condition[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for severe neck pain in Manikonda?",
-        answer: "Yes, Dr. Hamid provides home visit physiotherapy across Manikonda, Puppalguda, Alkapur Township, and Gachibowli for patients experiencing acute, debilitating neck pain."
+        answer: "Home visits may be available for people with severe symptoms who have difficulty travelling. They are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm location coverage and availability."
       }
     ]
   },
@@ -88,7 +83,7 @@ export const conditions: Condition[] = [
     shortDescription: "Comprehensive clinical physiotherapy for lower back pain, disc bulge, sciatica, and spinal rehabilitation in Manikonda.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Back pain physiotherapy treatment showing spine rehabilitation in Manikonda clinic",
-    overview: "Lower back pain is the number one cause of mobility impairment and missed work in Hyderabad. Whether caused by prolonged sitting in IT jobs, heavy lifting, herniated discs, or lumbar canal stenosis, back pain requires precise clinical assessment. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT) focuses on identifying the mechanical driver of your back pain and building spinal resilience through evidence-based manual therapy, core stabilization, and neural mobilization.",
+    overview: "Lower back pain is the number one cause of mobility impairment and missed work in Hyderabad. Whether caused by prolonged sitting in IT jobs, heavy lifting, herniated discs, or lumbar canal stenosis, back pain requires precise clinical assessment. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali focuses on identifying the mechanical driver of your back pain and building spinal resilience through evidence-based manual therapy, core stabilization, and neural mobilization.",
     causes: [
       "Prolonged static sitting and poor ergonomic posture during desk work",
       "Herniated or bulging lumbar discs (L4-L5, L5-S1)",
@@ -112,13 +107,8 @@ export const conditions: Condition[] = [
       "Safe lifting mechanics and ergonomic sitting posture education",
       "Gradual return-to-activity and sports conditioning protocol"
     ],
-    expectedRecovery: "Acute back strain often resolves within 1 to 2 weeks (4-6 sessions). Chronic disc-related pain or sciatica typically shows significant relief in 3 to 6 weeks with consistent guided exercises.",
-    whyChooseDoctor: [
-      "Accurate clinical evaluation avoiding unnecessary costly MRIs",
-      "8+ years of hands-on spinal rehabilitation experience",
-      "Individualized treatment plans tailored to your daily routine",
-      "Trusted by over 100+ five-star patient reviews in Hyderabad"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -134,15 +124,15 @@ export const conditions: Condition[] = [
     faqs: [
       {
         question: "Can physiotherapy heal a herniated or slipped disc without surgery?",
-        answer: "Yes, studies show that over 90% of herniated disc cases recover successfully with conservative physiotherapy. Our targeted exercises relieve pressure on the nerve root and allow the disc to heal."
+        answer: "Some people with a herniated disc improve without surgery, but the course and appropriate care vary. Physiotherapy may help manage symptoms and support activity for some people. A medical assessment is important for severe or worsening symptoms; treatment cannot guarantee that surgery will be avoided."
       },
       {
         question: "Is bed rest recommended for severe back pain?",
         answer: "No, strict bed rest beyond 24-48 hours weakens spinal muscles and delays recovery. Controlled, gentle movement and targeted physiotherapy lead to much faster healing."
       },
       {
-        question: "Where is Dr. Hamid's physiotherapy clinic located?",
-        answer: "The clinic is located at 4-3/81, Opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad. Home visits are also available across Manikonda and neighbouring areas."
+        question: "Where is Dr Hamid’s Physio and Pain Clinic located?",
+        answer: "The clinic is located at 4-3/81, Opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage."
       }
     ]
   },
@@ -152,7 +142,7 @@ export const conditions: Condition[] = [
     shortDescription: "Specialized knee rehabilitation for osteoarthritis, ligament injuries, runner's knee, and post-surgery recovery in Manikonda.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Knee pain physiotherapy and arthritis rehabilitation in Manikonda clinic",
-    overview: "Knee pain makes basic activities like climbing stairs, sitting cross-legged, walking, and squatting painful and exhausting. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT) specializes in conservative knee pain treatment, osteoarthritis management, meniscus recovery, patellofemoral pain syndrome, and post-operative joint rehabilitation. By restoring joint mechanics, strengthening quadriceps and hip stabilizers, and improving cartilage load distribution, we help patients avoid premature surgical intervention.",
+    overview: "Knee pain can affect activities such as climbing stairs, walking, and squatting, and can have several causes. An assessment at Dr Hamid’s Physio and Pain Clinic in Manikonda can help discuss whether physiotherapy may be appropriate for symptoms, function, and personal goals. Treatment options and progress vary, and physiotherapy cannot guarantee that surgery will be avoided.",
     causes: [
       "Knee osteoarthritis and age-related cartilage degeneration",
       "Patellofemoral pain syndrome (runner's knee, chondromalacia patellae)",
@@ -176,13 +166,8 @@ export const conditions: Condition[] = [
       "Proprioception, balance, and stair-climbing biomechanics training",
       "Weight management and lifestyle joint protection strategies"
     ],
-    expectedRecovery: "Patellofemoral pain and mild-to-moderate osteoarthritis typically show substantial improvement within 6 to 8 sessions. Post-surgical or ligament rehabilitation follows structured 8 to 12-week protocols.",
-    whyChooseDoctor: [
-      "Specialized clinical expertise in conservative knee preservation",
-      "Structured rehabilitation protocols for pre and post-total knee replacement (TKR)",
-      "Hands-on guidance ensuring correct exercise biomechanics",
-      "Comprehensive patient education with dedicated exercise handouts"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -213,10 +198,10 @@ export const conditions: Condition[] = [
   {
     slug: "sports-injuries",
     title: "Sports Injury Rehabilitation & Athletic Performance",
-    shortDescription: "Fast-track recovery and return-to-play rehabilitation for athletes and active individuals in Manikonda, Hyderabad.",
+    shortDescription: "Sports injury assessment and rehabilitation options for athletes and active people in Manikonda, Hyderabad. Return to activity depends on the injury and individual progress.",
     imageSrc: "/images/services/condition-sports-injury.webp",
     altText: "Sports injury physiotherapy and rehabilitation for athletes in Manikonda",
-    overview: "From weekend cricket and badminton enthusiasts to competitive runners and gym athletes, sports injuries demand rapid, structured, and resilient recovery. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT) provides specialized sports injury physiotherapy targeting ligament sprains, muscle tears, tendinopathies, and joint instability. We don't just treat the injury — we restore biomechanics and athletic endurance to prevent re-injury.",
+    overview: "Sports injuries can affect people who play recreationally or competitively. At Dr Hamid’s Physio and Pain Clinic in Manikonda, an assessment can help discuss rehabilitation options for symptoms affecting movement and activity. The plan and return to sport depend on the injury, health, symptoms, and progress; no timeline or prevention of recurrence can be promised.",
     causes: [
       "Sudden acceleration, deceleration, or rapid change of direction",
       "Inadequate warm-up or sudden spikes in training volume",
@@ -238,13 +223,8 @@ export const conditions: Condition[] = [
       "Agility, balance, and proprioceptive neuromuscular drills",
       "Sport-specific testing prior to full clearance for match play"
     ],
-    expectedRecovery: "Grade I sprains and strains typically resolve within 2 to 3 weeks. Grade II injuries require 4 to 8 weeks. Post-operative ligament repairs follow phased 3 to 6-month protocols.",
-    whyChooseDoctor: [
-      "Experience treating cricket, badminton, football, and running injuries",
-      "Objective return-to-play criteria to safeguard against recurrence",
-      "Active exercise-based rehab philosophy",
-      "Convenient clinic hours in Manikonda with personalized attention"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -273,7 +253,7 @@ export const conditions: Condition[] = [
     shortDescription: "Structured post-operative physiotherapy for knee replacement, hip surgery, fracture recovery, and spinal procedures.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Post-surgery physiotherapy rehabilitation in Manikonda clinic",
-    overview: "Orthopedic surgery is only half the recovery journey — optimal functional outcome depends on structured post-operative physiotherapy. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT) offers protocol-driven post-surgery rehabilitation for Total Knee Replacement (TKR), Total Hip Replacement (THR), ACL reconstruction, fracture fixation, and spinal decompression. We guide you safely from gentle bedside mobility to complete independent walking and stair climbing.",
+    overview: "Orthopedic surgery is only half the recovery journey — optimal functional outcome depends on structured post-operative physiotherapy. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali offers protocol-driven post-surgery rehabilitation for Total Knee Replacement (TKR), Total Hip Replacement (THR), ACL reconstruction, fracture fixation, and spinal decompression. We guide you safely from gentle bedside mobility to complete independent walking and stair climbing.",
     causes: [
       "Total or partial knee arthroplasty (TKR/PKR)",
       "Total hip replacement (THR)",
@@ -297,43 +277,36 @@ export const conditions: Condition[] = [
       "Gait training with progressive wean-off from walker or cane",
       "Functional step, balance, and independence retraining"
     ],
-    expectedRecovery: "Post-surgery recovery timeline depends on the procedure: TKR patients typically achieve functional independence in 6 to 12 weeks; fracture recovery averages 6 to 8 weeks.",
-    whyChooseDoctor: [
-      "Protocol-compliant post-surgical care with surgical team alignment",
-      "Gentle, patient, and compassionate bedside manner",
-      "Home visit physiotherapy available for early post-operative days in Manikonda",
-      "Consistent tracking of range of motion and functional milestones"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
     homeCare: [
-      "Perform hourly ankle pumps and quad sets to prevent deep vein thrombosis (DVT)",
-      "Elevate the operated limb above heart level when resting to reduce swelling",
-      "Follow prescribed ice application guidelines (15-20 min every 2-3 hours)",
-      "Use assistive walking devices exactly as demonstrated until cleared",
-      "Keep surgical incisions clean and dry according to hospital discharge instructions"
+      "Follow your hospital discharge instructions and the surgeon's advice about movement, swelling, wound care, and mobility aids.",
+      "Use only exercises and activity levels recommended for your operation and current stage of recovery.",
+      "Contact your surgical team if you have concerns about pain, swelling, wound changes, or mobility."
     ],
-    whenToVisit: "Begin post-surgery physiotherapy immediately upon hospital discharge (typically day 3 to 5 post-op). Home visits can be arranged in Manikonda and Puppalguda.",
+    whenToVisit: "Ask your surgeon or hospital team when rehabilitation should start and which precautions apply. Contact the clinic to ask about an assessment and current home-visit availability.",
     faqs: [
       {
         question: "Can Dr. Hamid visit my home for post-knee replacement physiotherapy?",
-        answer: "Yes, we provide dedicated home visit physiotherapy across Manikonda, Puppalguda, Narsingi, and Gachibowli for patients recovering from knee or hip replacement who cannot travel to the clinic."
+        answer: "Home visits may be available for people recovering from surgery who cannot travel to the clinic. They are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm location coverage and availability."
       },
       {
         question: "How long after knee replacement will I be able to walk independently?",
-        answer: "Most patients transition from a walker to a single cane within 2 to 3 weeks, and walk comfortably without aids within 4 to 6 weeks under consistent physiotherapy supervision."
+        answer: "The time someone uses a walker or cane varies with balance, strength, symptoms, surgery, and the treating team's advice. Do not stop using an aid until the treating team considers it safe."
       }
     ]
   },
   {
     slug: "home-visit-services",
     title: "Home Physiotherapy Visits",
-    shortDescription: "Professional in-home physiotherapy treatment across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas for elderly, post-op, and acute patients.",
+    shortDescription: "Home physiotherapy visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda. Contact the clinic to confirm location coverage and availability.",
     imageSrc: "/images/services/exercise-therapy.webp",
     altText: "Physiotherapist providing home visit physiotherapy service in Manikonda",
-    overview: "For elderly seniors, post-operative patients, or individuals experiencing debilitating back spasms or neurological conditions, travelling to a clinic can be painful and impractical. Dr. Hamid's Physio and Pain Clinic offers trusted Home Visit Physiotherapy Services across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs, Narsingi, Alkapur Township, Kokapet, Shaikpet and nearby areas. Dr. Mohammed Hamid Ali (BPT) brings professional medical equipment, portable modalities, and customized rehabilitation right to the comfort and safety of your home.",
+    overview: "Home visit physiotherapy may be an option for people who have difficulty travelling to a clinic. Visits are generally targeted within an approximate 15 km radius of Manikonda; contact Dr Hamid’s Physio and Pain Clinic to confirm current coverage, availability, and what a visit can include.",
     causes: [
       "Recent orthopedic surgery (knee/hip replacement, spinal surgery, fractures)",
       "Severe acute back spasm or sciatic pain preventing sitting or travel",
@@ -347,21 +320,15 @@ export const conditions: Condition[] = [
       "General frailty, balance loss, or high risk of domestic falls",
       "Neurological hemiplegia or Parkinsonian gait difficulty"
     ],
-    howPhysioHelps: "Home visit physiotherapy delivers identical clinical excellence directly to your bedside or living room. We assess your home environment for fall hazards, assist with bed transfers, retrain balance and stair navigation using your own furniture, and provide gentle manual therapy and portable electrotherapy.",
+    howPhysioHelps: "A home visit assessment may consider movement, daily activities, goals, and the home environment. Options depend on the person's condition, the assessment, and what services are available; contact the clinic to confirm details.",
     treatmentApproach: [
-      "Comprehensive in-home safety, mobility, and pain assessment",
-      "Bedside manual therapy, passive/active joint mobilization",
-      "Portable electrotherapy (IFT/TENS/Ultrasound) for pain relief",
-      "Real-world functional training (bed-to-chair, bathroom transfers, stairs)",
-      "Caregiver education on safe lifting and transfer techniques"
+      "Discuss symptoms, relevant medical instructions, mobility, and goals",
+      "Consider practical activity and movement options based on assessment",
+      "Coordinate exercise or daily-activity advice with the person's treating team when needed",
+      "Confirm the visit location, available services, and any equipment directly with the clinic"
     ],
-    expectedRecovery: "Home visit patients often transition to clinic visits or independent self-management within 2 to 4 weeks as their strength and mobility improve.",
-    whyChooseDoctor: [
-      "Punctual, dignified, and compassionate home visits by Dr. Mohammed Hamid Ali",
-      "Portable medical equipment brought directly to your home",
-      "Tailored home exercise programs using your existing living space",
-      "Trusted by families across Manikonda, Puppalguda, Lanco Hills, Tolichowki, Seven Tombs and surrounding areas"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Lanco Hills", "Tolichowki", "Seven Tombs",
       "Narsingi", "Alkapur Township", "Kokapet", "Shaikpet", "nearby areas"
@@ -381,7 +348,7 @@ export const conditions: Condition[] = [
       },
       {
         question: "Do you bring treatment equipment for home visits?",
-        answer: "Yes, Dr. Hamid carries portable electrotherapy modalities, exercise resistance bands, taping supplies, and assessment tools for comprehensive in-home sessions."
+        answer: "Equipment and services vary. Contact the clinic before booking to confirm whether a particular device or item is available for your visit."
       },
       {
         question: "How do I schedule a physiotherapy home visit?",
@@ -392,10 +359,10 @@ export const conditions: Condition[] = [
   {
     slug: "shoulder-pain",
     title: "Shoulder Pain & Frozen Shoulder Treatment",
-    shortDescription: "Expert physiotherapy for frozen shoulder, rotator cuff injuries, and impingement syndrome in Manikonda.",
+    shortDescription: "Physiotherapy information for frozen shoulder, rotator cuff injuries, and impingement symptoms in Manikonda.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Shoulder pain and frozen shoulder treatment in Manikonda clinic",
-    overview: "Shoulder pain turns routine actions like reaching overhead, combing hair, or sleeping on your side into agonizing challenges. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT) treats adhesive capsulitis (frozen shoulder), rotator cuff tendinopathies, subacromial impingement, and bursitis with targeted joint mobilizations, scapular stabilization, and gentle stretching protocols that restore comfortable shoulder reach.",
+    overview: "Shoulder pain turns routine actions like reaching overhead, combing hair, or sleeping on your side into agonizing challenges. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali treats adhesive capsulitis (frozen shoulder), rotator cuff tendinopathies, subacromial impingement, and bursitis with targeted joint mobilizations, scapular stabilization, and gentle stretching protocols that restore comfortable shoulder reach.",
     causes: [
       "Frozen shoulder (adhesive capsulitis), often associated with diabetes or thyroid conditions",
       "Rotator cuff tears or supraspinatus tendinitis",
@@ -418,12 +385,8 @@ export const conditions: Condition[] = [
       "Ultrasound or IFT therapy for pain relief and tendon relaxation",
       "Postural and ergonomic sleeping modification guidance"
     ],
-    expectedRecovery: "Subacromial impingement often improves in 3 to 6 weeks. Frozen shoulder recovery depends on the stage, with most patients gaining major range of motion within 8 to 12 weeks of guided care.",
-    whyChooseDoctor: [
-      "Gentle, graded mobilizations that avoid painful joint irritation",
-      "Comprehensive rehab addressing shoulder, thoracic spine, and posture together",
-      "Proven track record with diabetic and chronic frozen shoulder patients"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -442,7 +405,7 @@ export const conditions: Condition[] = [
       },
       {
         question: "How many sessions are typically required for shoulder impingement?",
-        answer: "Most patients with shoulder impingement or tendinitis feel marked improvement within 6 to 10 sessions as scapular mechanics and rotator cuff strength improve."
+        answer: "Symptoms and response to treatment vary. An assessment can help discuss options, goals, and how progress may be reviewed over time."
       }
     ]
   },
@@ -452,7 +415,7 @@ export const conditions: Condition[] = [
     shortDescription: "Specialized clinical physiotherapy for cervical, thoracic, and lumbar spine disorders, scoliosis, and degenerative disc disease.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Spine physiotherapy and postural correction in Manikonda clinic",
-    overview: "Your spine protects your central nervous system and supports every movement of your day. Spinal conditions — ranging from thoracic stiffness and scoliosis to degenerative disc disease and spondylolisthesis — require holistic spinal biomechanics care. At Dr. Hamid's Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali (BPT) provides specialized spine physiotherapy integrating vertebral decompression, postural alignment, and core stabilization.",
+    overview: "Your spine protects your central nervous system and supports every movement of your day. Spinal conditions — ranging from thoracic stiffness and scoliosis to degenerative disc disease and spondylolisthesis — require holistic spinal biomechanics care. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Dr. Mohammed Hamid Ali provides specialized spine physiotherapy integrating vertebral decompression, postural alignment, and core stabilization.",
     causes: [
       "Desk job sedentary lifestyles causing thoracic kyphosis and lumbar flattening",
       "Degenerative disc disease and spinal stenosis",
@@ -474,12 +437,8 @@ export const conditions: Condition[] = [
       "Dynamic workstation posture correction and lifting education",
       "Long-term spinal maintenance exercise prescription"
     ],
-    expectedRecovery: "Postural spine fatigue typically improves in 2 to 3 weeks (4-6 sessions). Chronic degenerative spinal conditions achieve sustained pain management within 4 to 8 weeks.",
-    whyChooseDoctor: [
-      "Holistic whole-spine approach rather than treating localized symptoms in isolation",
-      "Clear, patient-friendly explanations of spinal mechanics",
-      "Modern clinic equipped with evidence-based rehabilitation tools"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -508,7 +467,7 @@ export const conditions: Condition[] = [
     shortDescription: "Deep tissue acoustic wave modality used as a supporting therapy for acute tendonitis, ligament sprains, and muscle spasm.",
     imageSrc: "/images/services/ultrasound-therapy.webp",
     altText: "Therapeutic ultrasound therapy being administered on patient limb in Manikonda",
-    overview: "Therapeutic Ultrasound is a secondary supportive modality utilized at Dr. Hamid's Physio and Pain Clinic to accelerate tissue repair and manage acute inflammation. By delivering high-frequency sound waves into injured soft tissues, ultrasound produces gentle microscopic acoustic streaming and deep cellular stimulation. At our Manikonda clinic, ultrasound therapy is always integrated into a broader, condition-specific rehabilitation program alongside active manual therapy and corrective exercise.",
+    overview: "Therapeutic Ultrasound is a secondary supportive modality utilized at Dr Hamid’s Physio and Pain Clinic to accelerate tissue repair and manage acute inflammation. By delivering high-frequency sound waves into injured soft tissues, ultrasound produces gentle microscopic acoustic streaming and deep cellular stimulation. At our Manikonda clinic, ultrasound therapy is always integrated into a broader, condition-specific rehabilitation program alongside active manual therapy and corrective exercise.",
     causes: [
       "Acute tendonitis (Achilles, patellar, bicipital tendinitis)",
       "Ligament sprains with persistent localized inflammatory swelling",
@@ -527,12 +486,8 @@ export const conditions: Condition[] = [
       "Continuous or pulsed sound wave delivery tailored to acute vs chronic states",
       "Immediate follow-up with targeted stretching and active mobility exercises"
     ],
-    expectedRecovery: "Typically administered for 4 to 6 sessions during the acute or subacute phase of soft-tissue recovery as part of a comprehensive treatment plan.",
-    whyChooseDoctor: [
-      "Calibrated, modern electrotherapy equipment",
-      "Used appropriately as an adjunct therapy — never as a passive standalone replacement for exercise",
-      "Administered safely under Dr. Hamid's direct supervision"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
@@ -549,7 +504,7 @@ export const conditions: Condition[] = [
       },
       {
         question: "Is ultrasound therapy used alone for treatment?",
-        answer: "No, at Dr. Hamid's clinic we prioritize active rehabilitation. Ultrasound is used selectively to accelerate tissue healing alongside manual therapy and targeted exercise."
+        answer: "No, at Dr Hamid’s Physio and Pain Clinic we prioritize active rehabilitation. Ultrasound is used selectively to accelerate tissue healing alongside manual therapy and targeted exercise."
       }
     ]
   },
@@ -559,7 +514,7 @@ export const conditions: Condition[] = [
     shortDescription: "Advanced dual-frequency electrical modality used as a supportive therapy for deep musculoskeletal pain and inflammation relief.",
     imageSrc: "/images/services/interferential-therapy.webp",
     altText: "Interferential therapy IFT electrodes applied on patient in Manikonda clinic",
-    overview: "Interferential Therapy (IFT) is a comfortable electrotherapeutic modality utilized at Dr. Hamid's Physio and Pain Clinic to relieve acute musculoskeletal pain, reduce chronic swelling, and calm hyperactive muscle spasms. By crossing two medium-frequency currents deep within the tissues, IFT stimulates endorphin release and blocks pain signals via the neurological gate control mechanism. At our clinic, IFT serves as a valuable comfort adjunct to help patients transition comfortably into active exercise rehabilitation.",
+    overview: "Interferential Therapy (IFT) is a comfortable electrotherapeutic modality utilized at Dr Hamid’s Physio and Pain Clinic to relieve acute musculoskeletal pain, reduce chronic swelling, and calm hyperactive muscle spasms. By crossing two medium-frequency currents deep within the tissues, IFT stimulates endorphin release and blocks pain signals via the neurological gate control mechanism. At our clinic, IFT serves as a valuable comfort adjunct to help patients transition comfortably into active exercise rehabilitation.",
     causes: [
       "Severe acute back spasm or neck stiffness making movement difficult",
       "Osteoarthritis flare-ups with persistent joint line ache",
@@ -577,12 +532,8 @@ export const conditions: Condition[] = [
       "Frequency sweep calibration tailored to sensory comfort and pain relief",
       "Integration with gentle active movement once pain levels subside"
     ],
-    expectedRecovery: "Provides immediate post-treatment pain relief; typically applied across 3 to 6 sessions to facilitate active mobility work.",
-    whyChooseDoctor: [
-      "Well-maintained, medical-grade IFT equipment",
-      "Applied thoughtfully to optimize comfort without delaying active movement",
-      "Patient-centered dosing matching individual sensitivity"
-    ],
+    expectedRecovery: "Recovery time and progress vary by condition, symptoms, overall health, treatment, and individual circumstances. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
+    whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
