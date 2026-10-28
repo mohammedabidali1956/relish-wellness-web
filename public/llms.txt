@@ -1,44 +1,131 @@
 # Dr Hamid’s Physio and Pain Clinic
 
-> Physiotherapy and rehabilitation clinic in Puppalguda, Manikonda, Hyderabad, Telangana, India.
+Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad provides physiotherapy for back and neck pain, joint and sports injuries, post-surgery rehabilitation, and neurological rehabilitation.
 
-## Clinic
+## Clinic information
 
 - Website: https://www.drhamidphysio.in/
-- Address: 4-3/81, Opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad, Telangana 500089
+- Location: Puppalguda, Manikonda, Hyderabad, Telangana, India.
+- Address: 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089
 - Phone: +91 76010 26596
-- Founder and Consultant Physiotherapist: Dr. Mohammed Hamid Ali
-- Qualifications and registration: BPT, MPT (Ortho), Regd. No. 0413 (Government of Telangana)
-- Clinical experience: 8+ years
-- Established: 2021
-- Care model: Founder-operated, individualized one-to-one care
-- Consultation fee: ₹300
-- Physiotherapy treatment: Starts from ₹500; total cost varies by treatment
-- Home visits: Generally targeted within an approximate 15 km radius of Manikonda; actual availability depends on the patient's address and must be confirmed with the clinic
-- Priority home-visit target areas: Kokapet, Gandipet, Narsingi, Jubilee Hills, Banjara Hills, Gachibowli, Financial District, HITEC City, Puppalguda, Lanco Hills, Alkapur Township, Shaikpet, and Tolichowki, along with other nearby existing service areas
 - Google Business Profile: https://maps.app.goo.gl/9AbCjEWW1ALe6uFN8
+- Practitioner: Dr. Mohammed Hamid Ali is the founder and Consultant Physiotherapist at Dr Hamid’s Physio and Pain Clinic. His confirmed qualifications are BPT and MPT (Ortho), with Registration No. 0413 under the Government of Telangana.
+- Clinical experience: 8+ years of clinical experience.
+- Clinic established: 2021.
+- Care model: founder-operated, with individualized one-to-one care.
+- Listed prices: As of October 2026, consultation fee: ₹300. Physiotherapy treatment starts from ₹500; the total cost varies by treatment. Contact the clinic to confirm appointment availability and home-visit details.
+- Home visits: generally targeted within an approximate 15 km radius of Manikonda; actual availability depends on the patient’s address and should be confirmed with the clinic. Priority target areas include Kokapet, Gandipet, Narsingi, Jubilee Hills, Banjara Hills, Gachibowli, Financial District, HITEC City, Puppalguda, Lanco Hills, Alkapur Township, Shaikpet, Tolichowki, along with the clinic’s other existing nearby areas. This is not a claim that each location is exactly within 15 km by road.
 - Instagram: https://www.instagram.com/drhamidphysio/
+- Facebook: https://www.facebook.com/profile.php?id=61587086612280
 - YouTube: https://youtube.com/@dr.hamidsphysiopainclinic
-- Practo profile: https://www.practo.com/hyderabad/doctor/mohammed-hamid-ali-physiotherapist-1
+- Practo: https://www.practo.com/hyderabad/doctor/mohammed-hamid-ali-physiotherapist-1
 
 ## Main pages
 
-- Services: https://www.drhamidphysio.in/services
-- About the clinic: https://www.drhamidphysio.in/about
-- Patient reviews: https://www.drhamidphysio.in/reviews
-- Articles: https://www.drhamidphysio.in/blogs
-- Contact: https://www.drhamidphysio.in/contact
-- Privacy Policy (clinic-review draft): https://www.drhamidphysio.in/privacy-policy
-- Terms & Conditions (clinic-review draft): https://www.drhamidphysio.in/terms-and-conditions
+- [Home](https://www.drhamidphysio.in/) · [Markdown](https://www.drhamidphysio.in/markdown/index.md)
+- [About the clinic](https://www.drhamidphysio.in/about) · [Markdown](https://www.drhamidphysio.in/markdown/about.md)
+- [Services](https://www.drhamidphysio.in/services) · [Markdown](https://www.drhamidphysio.in/markdown/services.md)
+- [Conditions](https://www.drhamidphysio.in/conditions) · [Markdown](https://www.drhamidphysio.in/markdown/conditions.md)
+- [Reviews](https://www.drhamidphysio.in/reviews) · [Markdown](https://www.drhamidphysio.in/markdown/reviews.md)
+- [Articles](https://www.drhamidphysio.in/blogs) · [Markdown](https://www.drhamidphysio.in/markdown/blogs.md)
+- [Contact](https://www.drhamidphysio.in/contact) · [Markdown](https://www.drhamidphysio.in/markdown/contact.md)
+- [Privacy Policy (clinic-review draft)](https://www.drhamidphysio.in/privacy-policy)
+- [Terms & Conditions (clinic-review draft)](https://www.drhamidphysio.in/terms-and-conditions)
 
-## Topics
+## Services
 
-The website provides information about physiotherapy services for back and neck pain, joint and sports injuries, rehabilitation after surgery, neurological rehabilitation, exercise therapy, and related assessment services. Individual pages describe available care and service areas.
+- [Back Pain Physiotherapy](https://www.drhamidphysio.in/services/back-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/back-pain-physiotherapy-manikonda.md)
+- [Sciatica Physiotherapy](https://www.drhamidphysio.in/services/sciatica-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/sciatica-physiotherapy-manikonda.md)
+- [Lumbar Pain Physiotherapy](https://www.drhamidphysio.in/services/lumbar-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/lumbar-pain-physiotherapy-manikonda.md)
+- [Disc Bulge Physiotherapy](https://www.drhamidphysio.in/services/disc-bulge-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/disc-bulge-physiotherapy-manikonda.md)
+- [Lumbar Spondylosis Physiotherapy](https://www.drhamidphysio.in/services/lumbar-spondylosis-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/lumbar-spondylosis-physiotherapy-manikonda.md)
+- [Spinal Injuries Rehabilitation](https://www.drhamidphysio.in/services/spinal-injuries-rehabilitation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/spinal-injuries-rehabilitation-manikonda.md)
+- [Spine Physiotherapy & Rehabilitation](https://www.drhamidphysio.in/services/spine-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/spine-physiotherapy-manikonda.md)
+- [Spondylolisthesis Physiotherapy](https://www.drhamidphysio.in/services/spondylolisthesis-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/spondylolisthesis-physiotherapy-manikonda.md)
+- [Neck Pain Physiotherapy](https://www.drhamidphysio.in/services/neck-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/neck-pain-physiotherapy-manikonda.md)
+- [Cervical Pain Physiotherapy](https://www.drhamidphysio.in/services/cervical-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/cervical-pain-physiotherapy-manikonda.md)
+- [Cervical Spondylosis Physiotherapy](https://www.drhamidphysio.in/services/cervical-spondylosis-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/cervical-spondylosis-physiotherapy-manikonda.md)
+- [Cervical Radiculopathy Physiotherapy](https://www.drhamidphysio.in/services/cervical-radiculopathy-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/cervical-radiculopathy-physiotherapy-manikonda.md)
+- [Tech Neck / Text Neck Physiotherapy](https://www.drhamidphysio.in/services/tech-neck-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/tech-neck-physiotherapy-manikonda.md)
+- [Knee Pain Physiotherapy](https://www.drhamidphysio.in/services/knee-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/knee-pain-physiotherapy-manikonda.md)
+- [Arthritis Physiotherapy (Knee & Joints)](https://www.drhamidphysio.in/services/arthritis-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/arthritis-physiotherapy-manikonda.md)
+- [ACL Injury Physiotherapy & Rehabilitation](https://www.drhamidphysio.in/services/acl-injury-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/acl-injury-physiotherapy-manikonda.md)
+- [PCL Injury Physiotherapy](https://www.drhamidphysio.in/services/pcl-injury-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/pcl-injury-physiotherapy-manikonda.md)
+- [Meniscus Injury Physiotherapy](https://www.drhamidphysio.in/services/meniscus-injury-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/meniscus-injury-physiotherapy-manikonda.md)
+- [Knee Rehabilitation](https://www.drhamidphysio.in/services/knee-rehabilitation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/knee-rehabilitation-manikonda.md)
+- [Runner's Knee Physiotherapy](https://www.drhamidphysio.in/services/runner-knee-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/runner-knee-physiotherapy-manikonda.md)
+- [Patellar Tracking Disorder Physiotherapy](https://www.drhamidphysio.in/services/patellar-tracking-disorder-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/patellar-tracking-disorder-physiotherapy-manikonda.md)
+- [Shoulder Pain Physiotherapy](https://www.drhamidphysio.in/services/shoulder-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/shoulder-pain-physiotherapy-manikonda.md)
+- [Frozen Shoulder Physiotherapy](https://www.drhamidphysio.in/services/frozen-shoulder-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/frozen-shoulder-physiotherapy-manikonda.md)
+- [Shoulder Rehabilitation](https://www.drhamidphysio.in/services/shoulder-rehabilitation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/shoulder-rehabilitation-manikonda.md)
+- [Rotator Cuff Physiotherapy](https://www.drhamidphysio.in/services/rotator-cuff-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/rotator-cuff-physiotherapy-manikonda.md)
+- [Hip Pain Physiotherapy](https://www.drhamidphysio.in/services/hip-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/hip-pain-physiotherapy-manikonda.md)
+- [Elbow Pain Physiotherapy](https://www.drhamidphysio.in/services/elbow-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/elbow-pain-physiotherapy-manikonda.md)
+- [Tennis Elbow Physiotherapy](https://www.drhamidphysio.in/services/tennis-elbow-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/tennis-elbow-physiotherapy-manikonda.md)
+- [Heel Pain Physiotherapy](https://www.drhamidphysio.in/services/heel-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/heel-pain-physiotherapy-manikonda.md)
+- [Plantar Fasciitis Physiotherapy](https://www.drhamidphysio.in/services/plantar-fasciitis-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/plantar-fasciitis-physiotherapy-manikonda.md)
+- [Heel Spur Physiotherapy](https://www.drhamidphysio.in/services/heel-spur-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/heel-spur-physiotherapy-manikonda.md)
+- [Foot and Ankle Pain Physiotherapy](https://www.drhamidphysio.in/services/foot-and-ankle-pain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/foot-and-ankle-pain-physiotherapy-manikonda.md)
+- [Ankle Rehabilitation](https://www.drhamidphysio.in/services/ankle-rehabilitation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/ankle-rehabilitation-manikonda.md)
+- [Orthotics and Insole Assessment](https://www.drhamidphysio.in/services/orthotics-insole-assessment-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/orthotics-insole-assessment-manikonda.md)
+- [Stroke Physiotherapy & Rehabilitation](https://www.drhamidphysio.in/services/stroke-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/stroke-physiotherapy-manikonda.md)
+- [Neurological Physiotherapy](https://www.drhamidphysio.in/services/neurological-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/neurological-physiotherapy-manikonda.md)
+- [Vestibular Rehabilitation / Vertigo Physiotherapy](https://www.drhamidphysio.in/services/vestibular-rehabilitation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/vestibular-rehabilitation-manikonda.md)
+- [Foot Drop Physiotherapy](https://www.drhamidphysio.in/services/foot-drop-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/foot-drop-physiotherapy-manikonda.md)
+- [Nerve Rehabilitation](https://www.drhamidphysio.in/services/nerve-rehabilitation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/nerve-rehabilitation-manikonda.md)
+- [Sports Injury Rehabilitation](https://www.drhamidphysio.in/services/sports-injury-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/sports-injury-physiotherapy-manikonda.md)
+- [Post-Surgical Rehabilitation](https://www.drhamidphysio.in/services/post-surgical-rehabilitation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/post-surgical-rehabilitation-manikonda.md)
+- [Fracture Treatment & Rehabilitation](https://www.drhamidphysio.in/services/fracture-treatment-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/fracture-treatment-physiotherapy-manikonda.md)
+- [Accident Physiotherapy](https://www.drhamidphysio.in/services/accident-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/accident-physiotherapy-manikonda.md)
+- [Geriatric Physiotherapy](https://www.drhamidphysio.in/services/geriatric-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/geriatric-physiotherapy-manikonda.md)
+- [Paediatric Physiotherapy](https://www.drhamidphysio.in/services/paediatric-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/paediatric-physiotherapy-manikonda.md)
+- [Home Physiotherapy Visits](https://www.drhamidphysio.in/services/home-visit-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/home-visit-physiotherapy-manikonda.md)
+- [Therapeutic Exercise Therapy](https://www.drhamidphysio.in/services/therapeutic-exercise-therapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/therapeutic-exercise-therapy-manikonda.md)
+- [Balance Exercise Therapy](https://www.drhamidphysio.in/services/balance-exercise-therapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/balance-exercise-therapy-manikonda.md)
+- [Chronic Pain Management](https://www.drhamidphysio.in/services/chronic-pain-management-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/chronic-pain-management-manikonda.md)
+- [Muscle Spasm Physiotherapy](https://www.drhamidphysio.in/services/muscle-spasm-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/muscle-spasm-physiotherapy-manikonda.md)
+- [Muscle Tear / Strain Physiotherapy](https://www.drhamidphysio.in/services/muscle-strain-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/muscle-strain-physiotherapy-manikonda.md)
+- [Tendonitis Physiotherapy](https://www.drhamidphysio.in/services/tendonitis-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/tendonitis-physiotherapy-manikonda.md)
+- [Whiplash Injuries Physiotherapy](https://www.drhamidphysio.in/services/whiplash-injuries-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/whiplash-injuries-physiotherapy-manikonda.md)
+- [Post Knee Replacement Rehabilitation](https://www.drhamidphysio.in/services/post-knee-replacement-rehabilitation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/post-knee-replacement-rehabilitation-manikonda.md)
+- [Post Hip Replacement Rehabilitation](https://www.drhamidphysio.in/services/post-hip-replacement-rehabilitation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/post-hip-replacement-rehabilitation-manikonda.md)
+- [Therapeutic Ultrasound](https://www.drhamidphysio.in/services/therapeutic-ultrasound-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/therapeutic-ultrasound-manikonda.md)
+- [Interferential Therapy (IFT)](https://www.drhamidphysio.in/services/interferential-therapy-ift-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/interferential-therapy-ift-manikonda.md)
+- [TENS Therapy](https://www.drhamidphysio.in/services/tens-therapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/tens-therapy-manikonda.md)
+- [Electrical Muscle Stimulation (EMS)](https://www.drhamidphysio.in/services/electrical-muscle-stimulation-ems-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/electrical-muscle-stimulation-ems-manikonda.md)
+- [Infrared Radiation Therapy](https://www.drhamidphysio.in/services/infrared-radiation-therapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/infrared-radiation-therapy-manikonda.md)
+- [Heat Therapy (Thermotherapy)](https://www.drhamidphysio.in/services/heat-therapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/heat-therapy-manikonda.md)
+- [Exercise Therapy](https://www.drhamidphysio.in/services/exercise-therapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/exercise-therapy-manikonda.md)
+- [Manual Therapy / Soft Tissue Mobilisation](https://www.drhamidphysio.in/services/manual-therapy-soft-tissue-mobilisation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/manual-therapy-soft-tissue-mobilisation-manikonda.md)
 
-## Use of health information
+## Conditions and patient resources
 
-Website articles provide general educational information. They are not a diagnosis or a substitute for an individual assessment or medical advice. Seek urgent medical care for severe, sudden, or concerning symptoms.
+- [Neck Pain Physiotherapy & Cervical Care](https://www.drhamidphysio.in/conditions/neck-pain) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/neck-pain.md)
+- [Back Pain Physiotherapy & Sciatica Care](https://www.drhamidphysio.in/conditions/back-pain) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/back-pain.md)
+- [Knee Pain Physiotherapy & Arthritis Care](https://www.drhamidphysio.in/conditions/knee-pain) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/knee-pain.md)
+- [Sports Injury Rehabilitation & Athletic Performance](https://www.drhamidphysio.in/conditions/sports-injuries) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/sports-injuries.md)
+- [Post-Surgery Rehabilitation](https://www.drhamidphysio.in/conditions/post-surgery-rehab) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/post-surgery-rehab.md)
+- [Home Physiotherapy Visits](https://www.drhamidphysio.in/conditions/home-visit-services) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/home-visit-services.md)
+- [Shoulder Pain & Frozen Shoulder Treatment](https://www.drhamidphysio.in/conditions/shoulder-pain) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/shoulder-pain.md)
+- [Spine Physiotherapy & Posture Rehabilitation](https://www.drhamidphysio.in/conditions/spine-physiotherapy) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/spine-physiotherapy.md)
+- [Therapeutic Ultrasound Therapy](https://www.drhamidphysio.in/conditions/ultrasound-therapy) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/ultrasound-therapy.md)
+- [Interferential Therapy (IFT) & Electro-Analgesia](https://www.drhamidphysio.in/conditions/interferential-therapy-ift) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/interferential-therapy-ift.md)
 
-## Canonical URLs and crawling
+## Blog articles
 
-Use the canonical URLs provided in page metadata. The XML sitemap is available at https://www.drhamidphysio.in/sitemap.xml.
+- [Why Does My Knee Hurt When Climbing Stairs? Causes & What to Do](https://www.drhamidphysio.in/blogs/knee-pain-when-climbing-stairs) · [Markdown](https://www.drhamidphysio.in/markdown/blogs/knee-pain-when-climbing-stairs.md)
+- [Yoga and Physical Therapy: The Key Differences You Need to Know](https://www.drhamidphysio.in/blogs/yoga-vs-physical-therapy) · [Markdown](https://www.drhamidphysio.in/markdown/blogs/yoga-vs-physical-therapy.md)
+- [Why Choose a Physiotherapist Over a GP for Musculoskeletal Conditions](https://www.drhamidphysio.in/blogs/physiotherapist-vs-gp-for-pain) · [Markdown](https://www.drhamidphysio.in/markdown/blogs/physiotherapist-vs-gp-for-pain.md)
+- [Are Physiotherapy Exercises the Same as Gym Workouts?](https://www.drhamidphysio.in/blogs/physiotherapy-vs-gym-exercises) · [Markdown](https://www.drhamidphysio.in/markdown/blogs/physiotherapy-vs-gym-exercises.md)
+- [The Role of Physiotherapy in Daily Life](https://www.drhamidphysio.in/blogs/role-of-physiotherapy-in-daily-life) · [Markdown](https://www.drhamidphysio.in/markdown/blogs/role-of-physiotherapy-in-daily-life.md)
+- [Sciatica and Disc Bulge: What Is the Difference?](https://www.drhamidphysio.in/blogs/sciatica-vs-disc-bulge) · [Markdown](https://www.drhamidphysio.in/markdown/blogs/sciatica-vs-disc-bulge.md)
+- [Desk Work and Back Pain: Small Changes That May Help](https://www.drhamidphysio.in/blogs/desk-work-and-back-pain) · [Markdown](https://www.drhamidphysio.in/markdown/blogs/desk-work-and-back-pain.md)
+- [Morning Heel Pain: Could It Be Plantar Fasciitis?](https://www.drhamidphysio.in/blogs/morning-heel-pain-plantar-fasciitis) · [Markdown](https://www.drhamidphysio.in/markdown/blogs/morning-heel-pain-plantar-fasciitis.md)
+
+## Full content and format notes
+
+- Full text for eligible public pages: [llms-full.txt](https://www.drhamidphysio.in/llms-full.txt)
+- AI discovery notes: [ai.txt](https://www.drhamidphysio.in/ai.txt)
+- XML sitemap: https://www.drhamidphysio.in/sitemap.xml
+- Linked Markdown copies are generated at build time from eligible prerendered canonical HTML pages. The two pages labeled “clinic-review draft” above remain linked as HTML only; their draft text is not copied into Markdown files.
+- The website’s health information is general education, not an individual diagnosis or medical advice.

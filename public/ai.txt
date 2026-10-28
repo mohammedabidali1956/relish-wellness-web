@@ -1,0 +1,9 @@
+# AI-readable site information
+
+Canonical website: https://www.drhamidphysio.in/
+Site summary and page directory: https://www.drhamidphysio.in/llms.txt
+Full text of eligible public pages: https://www.drhamidphysio.in/llms-full.txt
+XML sitemap of canonical indexable HTML pages: https://www.drhamidphysio.in/sitemap.xml
+
+The Markdown copies are generated during the production build from prerendered public HTML. They are publicly accessible, carry an HTTP X-Robots-Tag: noindex, follow header, and are excluded from the XML sitemap. Normal canonical HTML pages remain the authoritative indexable versions.
+The clinic’s educational content does not replace an individual health assessment or medical advice. Follow the canonical page links for the current published HTML content.
