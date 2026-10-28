@@ -202,6 +202,14 @@
     @apply my-10 border-y border-relish-200 bg-relish-50 px-5 py-7 md:px-8;
   }
 
+  .blog-article .article-cta {
+    @apply my-10 grid grid-cols-1 gap-3 rounded-md border border-relish-200 bg-relish-50 p-5 sm:grid-cols-3 md:p-6;
+  }
+
+  .blog-article .article-cta__link {
+    @apply inline-flex min-h-12 items-center justify-center rounded-md bg-relish-700 px-4 py-3 text-center font-semibold text-white no-underline transition-colors hover:bg-relish-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-relish-700;
+  }
+
   .blog-article .article-local-cta h2 {
     @apply mt-0 border-0 pt-0;
   }

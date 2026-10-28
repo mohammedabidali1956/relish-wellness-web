@@ -5,6 +5,12 @@ import { Button } from "@/components/ui/button";
 import StructuredData from "@/components/StructuredData";
 import { Helmet } from "react-helmet";
 
+const toIsoDate = (date?: string): string | undefined => {
+  if (!date) return undefined;
+  const parsedDate = new Date(date);
+  return Number.isNaN(parsedDate.getTime()) ? undefined : parsedDate.toISOString().slice(0, 10);
+};
+
 const BlogPostPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getBlogPost(slug) : undefined;
@@ -16,18 +22,21 @@ const BlogPostPage = () => {
 
   const isKneeStairsArticle = post.slug === "knee-pain-when-climbing-stairs";
   const canonicalUrl = `https://www.drhamidphysio.in/blogs/${post.slug}`;
-  const publishedDate = new Date(post.date).toISOString().slice(0, 10);
-  const modifiedDate = post.lastUpdated ? new Date(post.lastUpdated).toISOString().slice(0, 10) : publishedDate;
+  const publishedDate = toIsoDate(post.date);
+  const modifiedDate = toIsoDate(post.lastUpdated) ?? publishedDate;
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    datePublished: publishedDate,
-    dateModified: modifiedDate,
+    image: `https://www.drhamidphysio.in${post.imageUrl}`,
+    ...(publishedDate ? { datePublished: publishedDate } : {}),
+    ...(modifiedDate ? { dateModified: modifiedDate } : {}),
     author: { "@type": post.author === "Clinic Education Team" ? "Organization" : "Person", name: post.author },
     publisher: { "@type": "Organization", name: "Dr Hamid’s Physio and Pain Clinic" },
     mainEntityOfPage: canonicalUrl,
+    articleSection: post.category,
+    inLanguage: "en-IN",
     about: { "@type": "Thing", name: post.category },
   };
   const faqSchema = {
@@ -93,14 +102,18 @@ const BlogPostPage = () => {
                   </span>
                 )}
               </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="w-5 h-5" />
-                <span>{post.date}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5" />
-                <span>{post.readTime}</span>
-              </div>
+              {post.date && (
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-5 h-5" />
+                  <span>{post.date}</span>
+                </div>
+              )}
+              {post.readTime && (
+                <div className="flex items-center gap-2">
+                  <Clock className="w-5 h-5" />
+                  <span>{post.readTime}</span>
+                </div>
+              )}
               {post.lastUpdated && (
                 <div className="flex items-center gap-2">
                   <span>Updated {post.lastUpdated}</span>
@@ -112,23 +125,31 @@ const BlogPostPage = () => {
       </section>
 
       {/* Featured Image */}
-      <section className="bg-card py-5 md:py-8">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <figure className="overflow-hidden rounded-md border border-border bg-muted">
-              <img 
-                src={post.imageUrl} 
-                alt={`${post.title} - Dr Hamid’s Physio and Pain Clinic`}
-                className="aspect-[5/4] w-full object-cover sm:aspect-[16/9]"
-                width="1000"
-                height="800"
-                loading="eager"
-              />
-              {isKneeStairsArticle && <figcaption className="px-4 py-3 text-sm text-muted-foreground">Knee pain during stair climbing is common and can have several underlying causes.</figcaption>}
-            </figure>
+      {!post.heroImageInContent && (
+        <section className="bg-card py-5 md:py-8">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <figure className="overflow-hidden rounded-md border border-border bg-muted">
+                <img
+                  src={post.imageUrl}
+                  srcSet={post.imageSrcSet}
+                  sizes={post.imageSizes}
+                  alt={`${post.title} - Dr Hamid’s Physio and Pain Clinic`}
+                  className="aspect-[5/4] w-full object-cover sm:aspect-[16/9]"
+                  width="1000"
+                  height="800"
+                  loading="eager"
+                />
+                {isKneeStairsArticle && (
+                  <figcaption className="px-4 py-3 text-sm text-muted-foreground">
+                    Knee pain during stair climbing is common and can have several underlying causes.
+                  </figcaption>
+                )}
+              </figure>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Blog Content */}
       <section className="bg-card py-8 md:py-12">
@@ -165,6 +186,8 @@ const BlogPostPage = () => {
                     <div className="relative h-48 overflow-hidden">
                       <img 
                         src={relatedPost.imageUrl} 
+                        srcSet={relatedPost.imageSrcSet}
+                        sizes={relatedPost.imageSizes}
                         alt={relatedPost.title}
                         width={640}
                         height={320}
@@ -173,7 +196,9 @@ const BlogPostPage = () => {
                     </div>
                     
                     <div className="p-6">
-                      <div className="text-sm text-muted-foreground mb-2">{relatedPost.date}</div>
+                      {relatedPost.date && (
+                        <div className="text-sm text-muted-foreground mb-2">{relatedPost.date}</div>
+                      )}
                       <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
                         {relatedPost.title}
                       </h3>

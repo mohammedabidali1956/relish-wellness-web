@@ -37,6 +37,8 @@ const BlogsPage = () => {
                 <Link to={`/blogs/${post.slug}`} className="relative block aspect-[16/10] overflow-hidden bg-muted" aria-label={`Read ${post.title}`}>
                   <img 
                     src={post.imageUrl} 
+                    srcSet={post.imageSrcSet}
+                    sizes={post.imageSizes}
                     alt={`${post.title} - Dr Hamid’s Physio and Pain Clinic`}
                     width={640}
                     height={400}
@@ -51,16 +53,22 @@ const BlogsPage = () => {
                 </Link>
                 
                 <div className="p-6 flex flex-col flex-grow">
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs sm:text-sm text-muted-foreground mb-3">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      <span>{post.date}</span>
+                  {(post.date || post.readTime) && (
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs sm:text-sm text-muted-foreground mb-3">
+                      {post.date && (
+                        <div className="flex items-center gap-1">
+                          <Calendar className="w-4 h-4" />
+                          <span>{post.date}</span>
+                        </div>
+                      )}
+                      {post.readTime && (
+                        <div className="flex items-center gap-1">
+                          <Clock className="w-4 h-4" />
+                          <span>{post.readTime}</span>
+                        </div>
+                      )}
                     </div>
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
-                      <span>{post.readTime}</span>
-                    </div>
-                  </div>
+                  )}
                   
                   <h2 className="text-xl font-bold text-foreground mb-3 line-clamp-3"><Link to={`/blogs/${post.slug}`} className="hover:text-relish-700">{post.title}</Link></h2>
                   

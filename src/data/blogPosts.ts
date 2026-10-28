@@ -1,3 +1,5 @@
+import { additionalBlogPosts } from "./additionalBlogPosts";
+
 const kneePainHero = { url: "/images/blog/knee-pain-when-climbing-stairs/knee-pain-climbing-stairs-dr-hamid-physio.jpg" };
 const kneePainComparison = { url: "/images/blog/knee-pain-when-climbing-stairs/patellofemoral-knee-pain-comparison-dr-hamid-physio.webp" };
 const patellofemoralAnatomy = { url: "/images/blog/knee-pain-when-climbing-stairs/patellofemoral-joint-anatomy-dr-hamid-physio.webp" };
@@ -11,11 +13,14 @@ export interface BlogPost {
   excerpt: string;
   content: string;
   author: string;
-  date: string;
+  date?: string;
   category: string;
   imageUrl: string;
-  readTime: string;
+  readTime?: string;
   lastUpdated?: string;
+  imageSrcSet?: string;
+  imageSizes?: string;
+  heroImageInContent?: boolean;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -629,7 +634,8 @@ export const blogPosts: BlogPost[] = [
 <p>For heel or foot pain, Dr Hamid’s Physio and Pain Clinic is located in Puppalguda, Manikonda, Hyderabad. <a href="/services/orthotics-insole-assessment-manikonda">Learn about foot and insole assessment</a>.</p>
 <p><strong>Medical information:</strong> This article is for general education and does not replace an individual medical or physiotherapy assessment.</p>
     `
-  }
+  },
+  ...additionalBlogPosts,
 ];
 
 export const getBlogPost = (slug: string): BlogPost | undefined => {
@@ -638,7 +644,12 @@ export const getBlogPost = (slug: string): BlogPost | undefined => {
 
 export const getRecentPosts = (limit: number = 3): BlogPost[] => {
   return [...blogPosts]
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime() || Number(b.id) - Number(a.id))
+    .sort((a, b) => {
+      if (!a.date && !b.date) return Number(b.id) - Number(a.id);
+      if (!a.date) return -1;
+      if (!b.date) return 1;
+      return new Date(b.date).getTime() - new Date(a.date).getTime() || Number(b.id) - Number(a.id);
+    })
     .slice(0, limit);
 };
 

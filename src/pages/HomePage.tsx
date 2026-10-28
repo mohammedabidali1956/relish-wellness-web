@@ -734,6 +734,8 @@ const HomePage = () => {
                 <Link to={`/blogs/${post.slug}`} className="aspect-[16/10] overflow-hidden bg-muted">
                   <img
                     src={post.imageUrl}
+                    srcSet={post.imageSrcSet}
+                    sizes={post.imageSizes}
                     alt={post.title}
                     width={640}
                     height={400}
@@ -744,8 +746,9 @@ const HomePage = () => {
                 <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-center gap-2 text-xs text-[#718096] mb-2">
                     <span>{post.category}</span>
-                    <span>•</span>
-                    <span>{post.readTime}</span>
+                    {post.readTime && (
+                      <span>• {post.readTime}</span>
+                    )}
                   </div>
                   <h3 className="font-serif text-base font-bold text-[#081a2e] group-hover:text-[#8a5d24] transition-colors line-clamp-2 mb-2">
                     <Link to={`/blogs/${post.slug}`}>{post.title}</Link>
