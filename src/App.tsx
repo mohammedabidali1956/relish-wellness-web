@@ -12,6 +12,7 @@ import ServicesPage from "./pages/ServicesPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import BlogsPage from "./pages/BlogsPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import ConditionsPage from "./pages/ConditionsPage";
 import ConditionPage from "./pages/ConditionPage";
 import ServiceDetailPage from "./pages/ServiceDetailPage";
 import ContactPage from "./pages/ContactPage";
@@ -33,6 +34,7 @@ export const AppContent = () => (
             <Route path="about" element={<AboutPage />} />
             <Route path="services" element={<ServicesPage />} />
             <Route path="services/:slug" element={<ServiceDetailPage />} />
+            <Route path="conditions" element={<ConditionsPage />} />
             <Route path="conditions/:slug" element={<ConditionPage />} />
             <Route path="reviews" element={<ReviewsPage />} />
             <Route path="blogs" element={<BlogsPage />} />

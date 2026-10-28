@@ -1,9 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "@/components/ui/button";
 import {
   MapPin,
+  ArrowLeft,
   ArrowRight,
   Phone,
   MessageCircle,
@@ -15,22 +17,60 @@ import {
   Sparkles,
   Award,
   Users,
-  Compass
+  Compass,
+  Pause,
+  Play
 } from "lucide-react";
 import StructuredData from "@/components/StructuredData";
 import StickyCTA from "@/components/StickyCTA";
-import PainPointGuide from "@/components/PainPointGuide";
 import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
-import { conditions } from "@/data/conditions";
 import { getRecentPosts } from "@/data/blogPosts";
-import { getServiceBySlug } from "@/data/services";
 import { GOOGLE_BUSINESS_PROFILE_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 
-const getConditionDestination = (slug: string) => {
-  const matchingService = getServiceBySlug(slug);
-  return matchingService ? `/services/${matchingService.slug}` : `/conditions/${slug}`;
-};
+// Verbatim review excerpts and five-star ratings transcribed from the supplied Google profile screenshots.
+const googleReviewExcerpts = [
+  {
+    reviewer: "Aisha Quadri",
+    excerpt: "He is a good doctor",
+    rating: 5,
+  },
+  {
+    reviewer: "syed waheed multani",
+    excerpt: "He listens attentively, explains the treatment process clearly, and provides care with patience and genuine concern for the patient’s well-being.",
+    rating: 5,
+  },
+  {
+    reviewer: "shameer",
+    excerpt: "He patiently listens to every concern, explains the treatment clearly, and ensures that I feel comfortable throughout the process.",
+    rating: 5,
+  },
+  {
+    reviewer: "salim riyaz",
+    excerpt: "best physio in manikonda",
+    rating: 5,
+  },
+  {
+    reviewer: "Dr. Haleem Khan Khan",
+    excerpt: "he understands and listens carefully",
+    rating: 5,
+  },
+  {
+    reviewer: "Irfan Shaik",
+    excerpt: "Very much satisfied with the way treatment has been done with care and transparency.",
+    rating: 5,
+  },
+  {
+    reviewer: "shravaniAS AS",
+    excerpt: "Gives good suggestions for better improvement.",
+    rating: 5,
+  },
+  {
+    reviewer: "Raghav reddy",
+    excerpt: "Dr. Hamid is professional, knowledgeable, and takes the time to understand the problem before starting treatment.",
+    rating: 5,
+  },
+] as const;
 
 // Medical SVG icons styled to match reference image cards
 const NeckIcon = () => (
@@ -106,6 +146,121 @@ const ApartmentBuildingIcon = () => (
 );
 
 const HomePage = () => {
+  const reviewSectionRef = React.useRef<HTMLElement | null>(null);
+  const reviewCarouselOptions = React.useMemo(
+    () => ({ align: "center" as const, loop: true }),
+    []
+  );
+  const [reviewCarouselRef, reviewCarouselApi] = useEmblaCarousel(reviewCarouselOptions);
+  const [selectedReviewIndex, setSelectedReviewIndex] = React.useState(0);
+  const [isReviewSectionVisible, setIsReviewSectionVisible] = React.useState(false);
+  const [isDocumentVisible, setIsDocumentVisible] = React.useState(true);
+  const [prefersReducedMotion, setPrefersReducedMotion] = React.useState(false);
+  const [isReviewHovered, setIsReviewHovered] = React.useState(false);
+  const [isReviewFocused, setIsReviewFocused] = React.useState(false);
+  const [isReviewPointerDown, setIsReviewPointerDown] = React.useState(false);
+  const [isAutoplayPausedByUser, setIsAutoplayPausedByUser] = React.useState(false);
+  const [reviewAutoplayResetKey, setReviewAutoplayResetKey] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!reviewCarouselApi) {
+      return;
+    }
+
+    const updateSelectedReview = () => {
+      setSelectedReviewIndex(reviewCarouselApi.selectedScrollSnap());
+    };
+
+    updateSelectedReview();
+    reviewCarouselApi.on("select", updateSelectedReview);
+    reviewCarouselApi.on("reInit", updateSelectedReview);
+
+    return () => {
+      reviewCarouselApi.off("select", updateSelectedReview);
+      reviewCarouselApi.off("reInit", updateSelectedReview);
+    };
+  }, [reviewCarouselApi]);
+
+  React.useEffect(() => {
+    const section = reviewSectionRef.current;
+    if (!section) {
+      return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      setIsReviewSectionVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsReviewSectionVisible(entry.isIntersecting);
+    }, { threshold: 0.15 });
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
+  React.useEffect(() => {
+    const updateDocumentVisibility = () => {
+      setIsDocumentVisible(document.visibilityState === "visible");
+    };
+
+    updateDocumentVisibility();
+    document.addEventListener("visibilitychange", updateDocumentVisibility);
+    return () => document.removeEventListener("visibilitychange", updateDocumentVisibility);
+  }, []);
+
+  React.useEffect(() => {
+    const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const updateMotionPreference = () => setPrefersReducedMotion(motionPreference.matches);
+
+    updateMotionPreference();
+    motionPreference.addEventListener("change", updateMotionPreference);
+    return () => motionPreference.removeEventListener("change", updateMotionPreference);
+  }, []);
+
+  React.useEffect(() => {
+    if (
+      !reviewCarouselApi ||
+      !isReviewSectionVisible ||
+      !isDocumentVisible ||
+      prefersReducedMotion ||
+      isReviewHovered ||
+      isReviewFocused ||
+      isReviewPointerDown ||
+      isAutoplayPausedByUser
+    ) {
+      return;
+    }
+
+    const autoplayTimer = window.setInterval(() => {
+      if (document.visibilityState === "visible") {
+        reviewCarouselApi.scrollNext();
+      }
+    }, 4500);
+
+    return () => window.clearInterval(autoplayTimer);
+  }, [
+    reviewCarouselApi,
+    reviewAutoplayResetKey,
+    isReviewSectionVisible,
+    isDocumentVisible,
+    prefersReducedMotion,
+    isReviewHovered,
+    isReviewFocused,
+    isReviewPointerDown,
+    isAutoplayPausedByUser,
+  ]);
+
+  const navigateReviewCarousel = (direction: "previous" | "next") => {
+    setReviewAutoplayResetKey((currentKey) => currentKey + 1);
+    if (direction === "previous") {
+      reviewCarouselApi?.scrollPrev(prefersReducedMotion);
+    } else {
+      reviewCarouselApi?.scrollNext(prefersReducedMotion);
+    }
+  };
+
   // 6 Horizontal Highlight Cards matching reference image exactly
   const heroHighlightCards = [
     {
@@ -145,14 +300,6 @@ const HomePage = () => {
       hint: "Apartment & in-home physio in Manikonda"
     },
   ];
-
-  const primaryConditionServices = conditions.filter(
-    (c) => c.slug !== "ultrasound-therapy" && c.slug !== "interferential-therapy-ift"
-  );
-
-  const supportiveModalities = conditions.filter(
-    (c) => c.slug === "ultrasound-therapy" || c.slug === "interferential-therapy-ift"
-  );
 
   const scrollToAppointment = () => {
     const el = document.getElementById("appointment");
@@ -307,131 +454,32 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Interactive Body Symptom Map Guide */}
-      <PainPointGuide />
-
       {/* =========================================================
-          3. HIGH-INTENT CONDITION SERVICES
+          3. CONDITIONS GUIDE LINK
       ========================================================= */}
       <section id="conditions" className="py-16 md:py-24 px-4 bg-white border-b border-[#e5dec9]">
-        <div className="container">
-          <div className="max-w-3xl mb-12">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">
-              High-Intent Clinical Treatments
-            </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-2 mb-4">
-              Condition-Based Physiotherapy Services in Manikonda
-            </h2>
-            <p className="text-[#4a5568] text-base sm:text-lg leading-relaxed">
-              An assessment can help discuss the factors affecting your movement and daily activities. Physiotherapy options may include exercise, activity advice, and other approaches selected for your symptoms and goals.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {primaryConditionServices.map((service) => (
-              <article
-                key={service.slug}
-                className="group flex flex-col bg-[#fffbf2] border border-[#e5dec9] rounded-2xl overflow-hidden hover:border-[#8c6b3e] hover:shadow-xl transition-all duration-300"
-              >
-                <Link
-                  to={getConditionDestination(service.slug)}
-                  className="block rounded-t-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#8a5d24]"
-                >
-                <div className="aspect-[16/10] overflow-hidden bg-muted relative">
-                  <img
-                    src={service.imageSrc}
-                    alt={service.altText}
-                    width={640}
-                    height={400}
-                    loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute top-3 left-3 bg-[#081a2e]/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
-                    Manikonda Clinic &amp; Home Visit
-                  </div>
-                </div>
-
-                <div className="p-6 pb-0">
-                  <h3 className="font-serif text-xl font-bold text-[#081a2e] mb-2 group-hover:text-[#8a5d24] transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5">
-                    {service.shortDescription}
-                  </p>
-                </div>
-                </Link>
-
-                <div className="px-6 pb-6 mt-auto">
-                  <div className="pt-4 border-t border-[#e2d8c0]/60 flex items-center justify-between">
-                    <Link
-                      to={getConditionDestination(service.slug)}
-                      className="inline-flex items-center text-sm font-semibold text-[#8a5d24] hover:text-[#5c3e17] transition-colors"
-                    >
-                      <span>Explore Treatment &amp; FAQs</span>
-                      <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
+        <div className="container max-w-4xl mx-auto text-center">
+          <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">
+            Body Map
+          </span>
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-2 mb-4">
+            Explore Common Pain Conditions
+          </h2>
+          <p className="text-[#4a5568] text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+            Choose an area on the interactive body map to read general information about common pain conditions and physiotherapy options.
+          </p>
+          <Link
+            to="/conditions"
+            className="mt-7 inline-flex items-center justify-center gap-2 rounded-lg bg-[#0b1d33] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#132c4d] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24] focus-visible:ring-offset-2"
+          >
+            <span>In Pain? Explore the Body Map</span>
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </section>
 
       {/* =========================================================
-          4. SUPPORTING THERAPIES & MODALITIES (DISCREET / SECONDARY)
-      ========================================================= */}
-      <section className="py-14 px-4 bg-[#fbf8f0] border-b border-[#e5dec9]">
-        <div className="container">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-            <div>
-              <span className="text-xs uppercase tracking-widest font-bold text-[#718096]">
-                Secondary Modalities
-              </span>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#081a2e] mt-1">
-                Supporting Therapies &amp; Modalities
-              </h2>
-              <p className="text-sm text-[#4a5568] mt-1 max-w-2xl">
-                Ultrasound and Interferential Therapy (IFT) are used selectively as soothing adjuncts to alleviate acute inflammation and muscle spasms, supporting active exercise and manual therapy.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
-            {supportiveModalities.map((modality) => (
-              <Link
-                key={modality.slug}
-                to={getConditionDestination(modality.slug)}
-                className="flex flex-col sm:flex-row items-center gap-4 p-5 rounded-xl border border-[#e5dec9] bg-white shadow-2xs hover:border-[#8c6b3e]/60 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24]"
-              >
-                <img
-                  src={modality.imageSrc}
-                  alt={modality.altText}
-                  width={96}
-                  height={96}
-                  loading="lazy"
-                  className="w-24 h-24 rounded-lg object-cover shrink-0"
-                />
-                <div className="min-w-0">
-                  <h3 className="font-bold text-base text-[#081a2e]">
-                    {modality.title}
-                  </h3>
-                  <p className="text-xs text-[#4a5568] mt-1 line-clamp-2">
-                    {modality.shortDescription}
-                  </p>
-                  <span className="inline-flex items-center text-xs font-semibold text-[#8a5d24] hover:underline mt-2.5">
-                    <span>Read modality overview</span>
-                    <ArrowRight className="w-3 h-3 ml-1" />
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          5. ABOUT DR. MOHAMMED HAMID ALI (E-E-A-T CREDIBILITY)
+          4. ABOUT DR. MOHAMMED HAMID ALI (E-E-A-T CREDIBILITY)
       ========================================================= */}
       <section id="patient-info" className="py-16 md:py-24 px-4 bg-white border-b border-[#e5dec9]">
         <div className="container">
@@ -511,18 +559,25 @@ const HomePage = () => {
       </section>
 
       {/* =========================================================
-          6. PATIENT REVIEWS & REAL EVIDENCE
+          5. PATIENT REVIEWS & REAL EVIDENCE
       ========================================================= */}
-      <section className="py-16 md:py-24 px-4 bg-[#faf6ed] border-b border-[#e5dec9]">
+      <section
+        id="google-reviews"
+        ref={reviewSectionRef}
+        className="py-16 md:py-24 px-4 bg-[#faf6ed] border-b border-[#e5dec9]"
+      >
         <div className="container">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">
-                Patient feedback
+                Google reviews
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-1">
                 What Manikonda Patients Say
               </h2>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#4a5568]">
+                Selected excerpts from reviews posted on the clinic’s Google Business Profile.
+              </p>
             </div>
             <a
               href={GOOGLE_BUSINESS_PROFILE_URL}
@@ -530,19 +585,125 @@ const HomePage = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-semibold text-[#8a5d24] hover:underline"
             >
-              <span>Read clinic reviews on Google</span>
+              <span>Read more reviews on Google</span>
               <ArrowRight className="w-4 h-4 ml-1" />
             </a>
           </div>
 
-          <p className="max-w-2xl rounded-2xl border border-[#e5dec9] bg-white p-6 text-sm leading-relaxed text-[#4a5568]">
-            Patient feedback is hosted on Google. Follow the link above to read reviews on the original profile.
-          </p>
+          <div className="relative">
+            <div
+              ref={reviewCarouselRef}
+              className="overflow-hidden px-1"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Selected Google review excerpts"
+              aria-live="off"
+              tabIndex={0}
+              onKeyDownCapture={(event) => {
+                if (event.key === "ArrowLeft") {
+                  event.preventDefault();
+                  navigateReviewCarousel("previous");
+                }
+                if (event.key === "ArrowRight") {
+                  event.preventDefault();
+                  navigateReviewCarousel("next");
+                }
+              }}
+              onMouseEnter={() => setIsReviewHovered(true)}
+              onMouseLeave={() => setIsReviewHovered(false)}
+              onFocusCapture={() => setIsReviewFocused(true)}
+              onBlurCapture={(event) => {
+                if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                  setIsReviewFocused(false);
+                }
+              }}
+              onPointerDown={() => setIsReviewPointerDown(true)}
+              onPointerUp={() => setIsReviewPointerDown(false)}
+              onPointerCancel={() => setIsReviewPointerDown(false)}
+            >
+              <div className="flex touch-pan-y">
+                {googleReviewExcerpts.map((review, index) => (
+                  <div
+                    key={review.reviewer}
+                    className={`min-w-0 shrink-0 grow-0 basis-[90%] px-2 transition-transform duration-500 ease-out sm:basis-[84%] lg:basis-[80%] motion-reduce:transition-none ${
+                      selectedReviewIndex === index
+                        ? "scale-100 opacity-100"
+                        : "scale-[0.97] opacity-75"
+                    }`}
+                    role="group"
+                    aria-roledescription="slide"
+                    aria-label={`Review ${index + 1} of ${googleReviewExcerpts.length}`}
+                    data-active={selectedReviewIndex === index}
+                  >
+                    <article className="flex h-full min-h-56 flex-col rounded-2xl border border-[#e5dec9] bg-white p-6 shadow-sm md:p-8">
+                      <div className="flex items-center justify-between gap-3">
+                        <span className="text-xs font-semibold uppercase tracking-widest text-[#718096]">
+                          Google review
+                        </span>
+                        <div
+                          className="flex shrink-0 items-center gap-0.5 text-[#c28e28]"
+                          role="img"
+                          aria-label={`${review.rating} out of 5 stars`}
+                        >
+                          {Array.from({ length: review.rating }, (_, starIndex) => (
+                            <Star key={starIndex} className="h-4 w-4 fill-current" />
+                          ))}
+                        </div>
+                      </div>
+                      <blockquote className="mt-5 flex-1 text-sm leading-relaxed text-[#4a5568] sm:text-base">
+                        “{review.excerpt}”
+                      </blockquote>
+                      <p className="mt-6 border-t border-[#e5dec9] pt-4 text-sm font-semibold text-[#081a2e]">
+                        {review.reviewer}
+                      </p>
+                    </article>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-6 flex items-center justify-center gap-3" aria-label="Review carousel controls">
+              <button
+                type="button"
+                aria-label="Previous Google review"
+                title="Previous review"
+                onClick={() => navigateReviewCarousel("previous")}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e5dec9] bg-white text-[#081a2e] shadow-sm transition-colors hover:bg-[#f4ede0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24] focus-visible:ring-offset-2"
+              >
+                <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+              </button>
+              {!prefersReducedMotion && (
+                <button
+                  type="button"
+                  aria-label={isAutoplayPausedByUser ? "Resume automatic review rotation" : "Pause automatic review rotation"}
+                  aria-pressed={isAutoplayPausedByUser}
+                  title={isAutoplayPausedByUser ? "Resume automatic review rotation" : "Pause automatic review rotation"}
+                  onClick={() => setIsAutoplayPausedByUser((paused) => !paused)}
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e5dec9] bg-white text-[#081a2e] shadow-sm transition-colors hover:bg-[#f4ede0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24] focus-visible:ring-offset-2"
+                >
+                  {isAutoplayPausedByUser ? (
+                    <Play className="h-4 w-4" aria-hidden="true" />
+                  ) : (
+                    <Pause className="h-4 w-4" aria-hidden="true" />
+                  )}
+                </button>
+              )}
+              <button
+                type="button"
+                aria-label="Next Google review"
+                title="Next review"
+                onClick={() => navigateReviewCarousel("next")}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e5dec9] bg-white text-[#081a2e] shadow-sm transition-colors hover:bg-[#f4ede0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24] focus-visible:ring-offset-2"
+              >
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* =========================================================
-          7. HEALTH BLOGS & RECOVERY GUIDES (INTERNAL LINKING SUPPORT)
+          6. HEALTH BLOGS & RECOVERY GUIDES (INTERNAL LINKING SUPPORT)
       ========================================================= */}
       <section className="py-16 md:py-24 px-4 bg-white border-b border-[#e5dec9]">
         <div className="container">
@@ -607,7 +768,7 @@ const HomePage = () => {
       </section>
 
       {/* =========================================================
-          8. APPOINTMENT & GOOGLE MAPS SECTION
+          7. APPOINTMENT & GOOGLE MAPS SECTION
       ========================================================= */}
       <section id="appointment" className="py-16 md:py-24 px-4 bg-[#faf6ed]">
         <div id="contact" className="container">

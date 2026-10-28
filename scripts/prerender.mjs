@@ -19,6 +19,7 @@ try {
     "/",
     "/about",
     "/services",
+    "/conditions",
     "/reviews",
     "/blogs",
     "/contact",
