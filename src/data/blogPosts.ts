@@ -235,7 +235,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: "2",
-    title: "Why Choose a Physiotherapist Over a GP for Musculoskeletal Conditions",
+    title: "Why Choose a Physiotherapist Over a General Physician for Musculoskeletal Conditions",
     slug: "physiotherapist-vs-gp-for-pain",
     excerpt: "Learn why consulting a physiotherapist first for musculoskeletal pain can save you time, money, and lead to faster recovery.",
     date: "January 27, 2021",
@@ -245,7 +245,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "10 min read",
     content: `
 <h2>Who Should Be Your First Stop for Musculoskeletal Pain?</h2>
-<p>Welcome back to Dr Hamid’s Physio and Pain Clinic! Today we're addressing an important question: When experiencing musculoskeletal pain, should you see a GP or go directly to a physiotherapist?</p>
+<p>Welcome back to Dr Hamid’s Physio and Pain Clinic! Today we're addressing an important question: When experiencing musculoskeletal pain, should you see a general physician or go directly to a physiotherapist?</p>
 
 <h3>The Growing Problem of Musculoskeletal Conditions</h3>
 <p>Due to ever-increasing workloads, our bodies face constant stress. We push ourselves to fulfill commitments while taking inadequate care of our bodies, resulting in musculoskeletal (MSK) conditions.</p>
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
 </ol>
 
 <h3>Why See a Physiotherapist First?</h3>
-<p>While GPs are trained to diagnose and treat a wide range of disorders, they often must refer MSK patients to specialists — frequently to physiotherapists. Research shows that individuals who don't consult a physiotherapist first spend thousands of dollars unnecessarily on treatments like MRIs and medications that may not address the root cause.</p>
+<p>While general physicians are trained to diagnose and treat a wide range of disorders, they often must refer MSK patients to specialists — frequently to physiotherapists. Research shows that individuals who don't consult a physiotherapist first spend thousands of dollars unnecessarily on treatments like MRIs and medications that may not address the root cause.</p>
 
 <p><strong>Benefits of Consulting a Physiotherapist First:</strong></p>
 <ul>
@@ -277,7 +277,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h3>The Changing Healthcare Landscape</h3>
-<p>Many national and international healthcare organizations are recognizing this important factor. They're making crucial changes to allow easier access to physiotherapists, which also decreases GP caseloads and allows doctors to focus on patients who need them most — those with diabetes, hypertension, infections, metabolic disorders, and other systemic conditions.</p>
+<p>Many national and international healthcare organizations are recognizing this important factor. They're making crucial changes to allow easier access to physiotherapists, which also decreases general physician caseloads and allows doctors to focus on patients who need them most — those with diabetes, hypertension, infections, metabolic disorders, and other systemic conditions.</p>
 
 <h3>Making the Right Choice</h3>
 <p>When you experience musculoskeletal pain, going directly to a qualified orthopedic physiotherapist at Dr Hamid’s Physio and Pain Clinic in Puppalguda, Manikonda saves time and ensures direct, evidence-based care. Located near Friends Colony Park, our clinic is easily accessible for residents across Manikonda, Lanco Hills, Shaikpet, Tolichowki, OU Colony, and Alkapur Township.</p>

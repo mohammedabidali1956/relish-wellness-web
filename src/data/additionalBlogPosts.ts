@@ -36,9 +36,9 @@ const withClinicCtas = (
 export const additionalBlogPosts: BlogPost[] = [
   {
     id: "17",
-    title: "Should I Visit a GP or Physio for My Pain?",
+    title: "Should I Visit a General Physician or Physiotherapist for My Pain?",
     slug: "should-i-visit-a-gp-or-physio-for-my-pain",
-    excerpt: "Having difficulty deciding? For suitable muscle, joint, neck or back pain, you can often start with a physiotherapist. Learn when to see a GP, physiotherapist or specialist in Manikonda, Hyderabad.",
+    excerpt: "Having difficulty deciding? For suitable muscle, joint, neck or back pain, you can often start with a physiotherapist. Learn when to see a general physician, physiotherapist or specialist in Manikonda, Hyderabad.",
     content: withClinicCtas(
       should_i_visit_a_gp_or_physio_for_my_painContent,
       sourceArticleCta("https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20book%20a%20physiotherapy%20consultation."),
@@ -62,8 +62,8 @@ export const additionalBlogPosts: BlogPost[] = [
     ),
     author: "Dr. Mohammed Hamid Ali",
     category: "Patient Guidance",
-    imageUrl: "/images/blog/physiotherapy-sessions/physiotherapy-sessions-consultation-manikonda.webp",
-    imageSrcSet: "/images/blog/physiotherapy-sessions/physiotherapy-sessions-consultation-manikonda-480.webp 480w, /images/blog/physiotherapy-sessions/physiotherapy-sessions-consultation-manikonda-768.webp 768w, /images/blog/physiotherapy-sessions/physiotherapy-sessions-consultation-manikonda-1200.webp 1200w, /images/blog/physiotherapy-sessions/physiotherapy-sessions-consultation-manikonda.webp 1536w",
+    imageUrl: "/images/blog/physiotherapy-sessions/personalized-physiotherapy-treatment-plan.webp",
+    imageSrcSet: "/images/blog/physiotherapy-sessions/personalized-physiotherapy-treatment-plan-480.webp 480w, /images/blog/physiotherapy-sessions/personalized-physiotherapy-treatment-plan-768.webp 768w, /images/blog/physiotherapy-sessions/personalized-physiotherapy-treatment-plan-1200.webp 1200w, /images/blog/physiotherapy-sessions/personalized-physiotherapy-treatment-plan.webp 1536w",
     imageSizes: "(max-width: 640px) 100vw, (max-width: 1024px) 92vw, 800px",
   },
   {
@@ -171,7 +171,7 @@ export const additionalBlogPosts: BlogPost[] = [
     content: withClinicCtas(sciatica_pain_causes_symptoms_treatmentContent),
     author: "Dr. Mohammed Hamid Ali",
     category: "Back Pain & Sciatica",
-    imageUrl: "/images/blog/sciatica-pain-causes-symptoms-treatment/09-when-mri-may-be-considered.png",
+    imageUrl: "/images/blog/sciatica-pain-causes-symptoms-treatment/09-when-mri-may-be-considered.webp",
     heroImageInContent: true,
   }
 ];
