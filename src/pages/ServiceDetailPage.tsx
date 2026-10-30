@@ -35,6 +35,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { scrollToAppointmentSection } from "@/lib/navigation";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 import NotFound from "@/pages/NotFound";
 
@@ -47,6 +48,7 @@ export const ServiceDetailPage: React.FC = () => {
   }
 
   const handleCall = () => {
+    trackAnalyticsEvent("phone_call_click");
     window.location.href = "tel:+917601026596";
   };
 

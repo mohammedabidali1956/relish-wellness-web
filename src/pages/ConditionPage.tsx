@@ -25,6 +25,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 const ConditionPage = () => {
   const { slug } = useParams();
@@ -49,6 +50,7 @@ const ConditionPage = () => {
   }
 
   const handleCall = () => {
+    trackAnalyticsEvent("phone_call_click");
     window.location.href = "tel:+917601026596";
   };
 

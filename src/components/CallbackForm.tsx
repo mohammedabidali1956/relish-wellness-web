@@ -2,12 +2,14 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Phone } from "lucide-react";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 const CallbackForm = () => {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackAnalyticsEvent("callback_whatsapp_click");
 
     // Open WhatsApp with pre-filled callback request
     const message = `Callback Request:\nName: ${name}\nPhone: ${phone}\n\nPlease call me back at your earliest convenience.`;

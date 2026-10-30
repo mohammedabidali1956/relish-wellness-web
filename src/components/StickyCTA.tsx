@@ -1,8 +1,11 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import { trackAnalyticsEvent } from "@/lib/analytics";
+
 const StickyCTA = () => {
   const handleCall = () => {
+    trackAnalyticsEvent("phone_call_click");
     window.location.href = "tel:+917601026596";
   };
 

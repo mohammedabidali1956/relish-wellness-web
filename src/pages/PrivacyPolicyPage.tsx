@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { PRIVACY_EMAIL } from "@/lib/privacyConfig";
 
-// TODO(privacy): Confirm the operating entity, enquiry purposes and handling, retention/deletion, third-party and hosting data practices, children's information safeguards, and applicable rights/complaint process before approval.
+// TODO(privacy): Confirm consent/legal-basis requirements for the intended audiences and any applicable cookie consent before publishing GA4. Also confirm enquiry handling, retention/deletion, children's information safeguards, and applicable rights/complaint process.
 const PrivacyPolicyPage = () => {
   const canonicalUrl = "https://www.drhamidphysio.in/privacy-policy";
   const privacyEmailUrl = `mailto:${PRIVACY_EMAIL}`;
@@ -74,10 +74,10 @@ const PrivacyPolicyPage = () => {
           Cookies, analytics, and technical information
         </h2>
         <p>
-          The reviewed repository did not identify an implementation of Google Analytics, Google Tag Manager, Meta Pixel, Google Ads conversion tracking, Vercel Analytics, or Cloudflare Analytics. The live hosting settings and the behavior of the external script and embedded services have not been verified. This does not claim that no cookies, analytics, identifiers, or other technical data are used. No cookie or analytics consent tool was identified in the reviewed application source.
+          When a GA4 Measurement ID is configured for the production build and the site is opened on the clinic’s production domain, the website loads Google Analytics 4 using Google’s gtag.js. It sends an initial page view and records page changes detected through Google Analytics Enhanced Measurement browser-history tracking. It may use cookies or similar identifiers and Google may process technical information such as page and device data under its own terms. Development and preview hosts, and builds without a Measurement ID, do not initialize this implementation. No Google Tag Manager, Meta Pixel, Google Ads conversion tracking, Vercel Analytics, or Cloudflare Analytics implementation was identified in the application source.
         </p>
         <p>
-          A complete list of browser storage, cookies, and technical information used by the deployed website and its providers still needs to be confirmed before this notice is approved.
+          The website sends only the event names appointment_whatsapp_click, callback_whatsapp_click, and phone_call_click for the corresponding actions, with no event parameters. Form field values and prefilled WhatsApp links are not sent as custom event data. Automatic outbound-click and form-interaction measurement are intended to remain disabled in the GA4 web data stream. No cookie or analytics consent tool was identified in the application source; consent requirements and the appropriate legal basis must be reviewed before production analytics is enabled. The deployed GA4 configuration and actual Google processing have not been independently verified.
         </p>
 
         <h2 id="security-retention">

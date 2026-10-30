@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 const AppointmentForm = () => {
   const [name, setName] = useState("");
@@ -11,6 +12,7 @@ const AppointmentForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    trackAnalyticsEvent("appointment_whatsapp_click");
     const whatsappMessage = encodeURIComponent(
       `Hello Dr. Mohammed Hamid Ali, I would like to book an appointment at Dr Hamid’s Physio and Pain Clinic. My name is ${name} and my phone number is ${phone}.${message ? ` Additional information: ${message}` : ""}`
     );

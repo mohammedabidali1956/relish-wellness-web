@@ -9,6 +9,7 @@ import {
 } from "@/data/services";
 import { Button } from "@/components/ui/button";
 import { openWhatsApp } from "@/lib/whatsapp";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 import {
   ArrowRight,
   Phone,
@@ -31,6 +32,7 @@ const ServicesPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   const handleCall = () => {
+    trackAnalyticsEvent("phone_call_click");
     window.location.href = "tel:+917601026596";
   };
 
