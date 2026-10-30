@@ -83,6 +83,100 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     ]
   },
   {
+    slug: "gym-injuries-physiotherapy-manikonda",
+    category: "Sports, Post-Op & General",
+    relatedServiceSlugs: [
+      "sports-injury-physiotherapy-manikonda",
+      "muscle-strain-physiotherapy-manikonda",
+      "shoulder-pain-physiotherapy-manikonda"
+    ],
+    conditionSchemaName: "Gym-related musculoskeletal injuries",
+    title: "Gym Injury Physiotherapy",
+    metaTitle: "Gym Injury Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+    metaDescription: "Physiotherapy assessment and individualised rehabilitation for gym-related muscle strains, tendon symptoms, shoulder, knee and lower-back pain in Manikonda, Hyderabad.",
+    h1: "Gym Injuries Physiotherapy in Manikonda, Hyderabad",
+    shortDescription: "Assessment-led physiotherapy for workout-related muscle strains, tendon symptoms, shoulder, knee and lower-back pain, and overuse injuries. Rehabilitation is tailored to your symptoms and exercise goals.",
+    imageSrc: "/images/services/condition-sports-injury.webp",
+    altText: "Physiotherapy service information for gym and exercise-related injuries",
+    whatItIs: "Gym-related pain or injury can involve muscles, tendons, joints or other structures, and similar symptoms can have different causes. Muscle strains, tendon symptoms, shoulder or knee pain, lower-back pain and problems that build up with repeated exercise may need different approaches. This page provides general information about physiotherapy in Manikonda, Hyderabad; it is not an individual diagnosis. A physiotherapist can discuss whether an assessment is suitable and whether medical review is needed.",
+    causes: [
+      "A sudden increase in exercise load, frequency, range or intensity beyond current tolerance",
+      "Repeated movements or training sessions without enough adjustment for symptoms and recovery",
+      "Changes in lifting technique, equipment or exercise selection that alter how a movement feels",
+      "Returning to training after a break, illness or injury without gradually rebuilding capacity",
+      "An underlying muscle, tendon, joint or other health problem that needs individual assessment"
+    ],
+    symptoms: [
+      "Localised muscle pain, tenderness or stiffness during or after a workout",
+      "Tendon-area discomfort that is aggravated by particular movements or loading",
+      "Shoulder, knee or lower-back pain that limits lifting, exercise or everyday tasks",
+      "Reduced movement, strength or confidence compared with usual activity",
+      "Symptoms that persist, worsen, recur, or do not settle after modifying the activity"
+    ],
+    howPhysioHelps: "After discussing your symptoms, health history and training goals, a physiotherapist may assess relevant movement, mobility, strength and activity tolerance. If physiotherapy is appropriate, an individual plan may use symptom-guided activity changes, mobility work and progressive strengthening, with exercise selection and load adjusted over time. A gradual return to gym activity depends on the injury, assessment findings and response; no specific result or return date can be guaranteed.",
+    assessmentProcess: [
+      "Discuss how the symptoms began, relevant health history, exercise routine and current goals",
+      "Check for signs that need medical assessment or referral before exercise-based rehabilitation",
+      "Assess relevant movement, joint mobility, strength and functional tolerance as appropriate",
+      "Review training movements or loads that are relevant to the reported problem, when suitable",
+      "Agree on next steps, which may include physiotherapy, activity changes or medical review"
+    ],
+    treatmentApproach: [
+      "Modify aggravating exercise or training load according to symptoms and assessment findings",
+      "Use individualised mobility or movement practice where relevant to the person's needs",
+      "Build strength progressively with suitable exercise selection, load and range",
+      "Review response and adjust the plan as function and exercise tolerance change",
+      "Plan a gradual return to relevant gym movements when appropriate and consistent with medical advice"
+    ],
+    expectedRecovery: "The time course and response vary with the cause of symptoms, severity, health and individual progress. An assessment can help discuss goals and review the plan; no fixed recovery time or outcome can be promised.",
+    whyChooseDoctor: [],
+    serviceAreas: [
+      "Manikonda",
+      "Puppalguda",
+      "Lanco Hills",
+      "Narsingi",
+      "Alkapur Township",
+      "Shaikpet",
+      "Tolichowki",
+      "Kokapet",
+      "Gandipet",
+      "Jubilee Hills",
+      "Banjara Hills",
+      "Gachibowli",
+      "Financial District",
+      "HITEC City"
+    ],
+    homeCare: [
+      "Do not force movements that cause severe or rapidly worsening pain; modify the activity and seek advice",
+      "Avoid using a generic online exercise plan as a substitute for an assessment of persistent symptoms",
+      "Follow any activity restrictions or advice provided by your treating clinician",
+      "Seek medical review if symptoms persist, worsen, recur or affect normal daily activities"
+    ],
+    whenToVisit: "Seek urgent medical assessment after a gym injury if there is severe pain, visible deformity, rapidly increasing swelling, inability to use the affected limb or bear weight, sudden numbness or weakness, or another serious or rapidly worsening symptom. Persistent or recurring pain also warrants assessment. Physiotherapy may not be appropriate until a medical professional has reviewed some injuries.",
+    faqs: [
+      {
+        question: "What gym injuries can physiotherapy assess in Manikonda?",
+        answer: "A physiotherapist can discuss muscle strains, tendon symptoms, shoulder or knee pain, lower-back pain and exercise-related overuse symptoms. These symptoms can have different causes, so an individual assessment is needed to discuss suitable care."
+      },
+      {
+        question: "Do I need to stop all exercise if I have gym-related pain?",
+        answer: "Not everyone needs to stop all activity, but the appropriate adjustment depends on the symptoms and cause. Avoid forcing painful movements and seek assessment if the pain is severe, worsening or persistent."
+      },
+      {
+        question: "How does physiotherapy support a return to gym training?",
+        answer: "When appropriate, rehabilitation may include individualised mobility and progressive strengthening, followed by a gradual return to relevant exercises. Progression depends on assessment findings, symptoms and response; a pain-free or specific return date cannot be guaranteed."
+      },
+      {
+        question: "Do I need an X-ray or MRI before an assessment?",
+        answer: "Imaging is not required for every exercise-related problem. Whether a medical assessment or imaging is appropriate depends on symptoms and clinical findings; seek urgent medical care for serious or rapidly worsening symptoms."
+      },
+      {
+        question: "Where is gym injury physiotherapy available?",
+        answer: "The clinic is in Puppalguda, Manikonda, Hyderabad. Contact the clinic to ask about appointment availability and whether an assessment is suitable for your concern."
+      }
+    ]
+  },
+  {
     slug: "post-surgical-rehabilitation-manikonda",
     category: "Sports, Post-Op & General",
     title: "Post-Surgical Rehabilitation",

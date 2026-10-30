@@ -120,7 +120,7 @@ export const ServiceDetailPage: React.FC = () => {
         inLanguage: "en-IN",
         about: {
           "@type": "MedicalCondition",
-          name: service.title,
+          name: service.conditionSchemaName ?? service.title,
           possibleTreatment: [
             {
               "@type": "MedicalTherapy",

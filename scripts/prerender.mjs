@@ -315,8 +315,8 @@ try {
   const privacyPage = canonicalPage("/privacy-policy");
   const termsPage = canonicalPage("/terms-and-conditions");
   const legalPageLinks = [
-    privacyPage && `- [Privacy Policy (clinic-review draft)](${privacyPage.canonicalUrl})`,
-    termsPage && `- [Terms & Conditions (clinic-review draft)](${termsPage.canonicalUrl})`,
+    privacyPage && `- [Privacy Policy](${privacyPage.canonicalUrl})`,
+    termsPage && `- [Terms & Conditions](${termsPage.canonicalUrl})`,
   ].filter(Boolean);
 
   const serviceLinks = allServices.map((service) => {
@@ -392,7 +392,7 @@ try {
     `- Full text for eligible public pages: [llms-full.txt](${canonicalOrigin}/llms-full.txt)`,
     `- AI discovery notes: [ai.txt](${canonicalOrigin}/ai.txt)`,
     `- XML sitemap: ${canonicalOrigin}/sitemap.xml`,
-    "- Linked Markdown copies are generated at build time from eligible prerendered canonical HTML pages. The two pages labeled “clinic-review draft” above remain linked as HTML only; their draft text is not copied into Markdown files.",
+    "- Linked Markdown copies are generated at build time from eligible prerendered canonical HTML pages. Privacy and Terms remain linked as HTML only while their clinic-specific legal details are confirmed; their text is not copied into Markdown files.",
     "- The website’s health information is general education, not an individual diagnosis or medical advice.",
     "",
   ].join("\n");
@@ -400,7 +400,7 @@ try {
   const llmsFullText = [
     "# Full text of eligible public pages",
     "",
-    `Markdown copies are generated at build time from prerendered canonical HTML pages. Prices shown below are dated as of ${priceAsOf}. Pages labeled “clinic-review draft” are omitted from this file.`,
+    `Markdown copies are generated at build time from prerendered canonical HTML pages. Prices shown below are dated as of ${priceAsOf}. Privacy and Terms pages are omitted until their clinic-specific legal details are confirmed.`,
     "",
     ...markdownPages.map((page) => page.markdown),
   ].join("\n\n---\n\n");

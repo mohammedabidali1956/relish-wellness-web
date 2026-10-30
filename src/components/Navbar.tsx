@@ -103,6 +103,26 @@ const Navbar = () => {
           </Button>
         </nav>
 
+        {/* Compact direct links for tablet widths; the full menu remains available on small screens. */}
+        <nav aria-label="Quick links" className="hidden sm:flex lg:hidden items-center gap-3">
+          <NavLink to="/services" className="text-xs font-semibold text-[#4a5568] hover:text-[#0a1f33]">
+            Services
+          </NavLink>
+          <NavLink to="/blogs" className="text-xs font-semibold text-[#4a5568] hover:text-[#0a1f33]">
+            Blogs
+          </NavLink>
+          <NavLink to="/about" className="text-xs font-semibold text-[#4a5568] hover:text-[#0a1f33]">
+            About
+          </NavLink>
+          <Button
+            size="sm"
+            className="bg-[#0b1d33] hover:bg-[#132c4d] text-white text-xs px-3 h-9 rounded-md"
+            onClick={scrollToAppointment}
+          >
+            Book
+          </Button>
+        </nav>
+
         {/* Mobile Menu Button */}
         <div className="lg:hidden flex items-center gap-2">
           <Button

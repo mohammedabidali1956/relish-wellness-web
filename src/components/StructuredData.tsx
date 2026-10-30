@@ -108,13 +108,42 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
         "name": "Seven Tombs"
       },
       {
+        "@type": "AdministrativeArea",
+        "name": "Kokapet"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Gandipet"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Jubilee Hills"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Banjara Hills"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Gachibowli"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Financial District"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "HITEC City"
+      },
+      {
         "@type": "GeoCircle",
+        "description": "Approximate target radius for home visits; availability depends on the patient's exact address.",
         "geoMidpoint": {
           "@type": "GeoCoordinates",
           "latitude": 17.3989817,
           "longitude": 78.390221
         },
-        "geoRadius": "10000"
+        "geoRadius": "15000"
       }
     ],
     "medicalSpecialty": [

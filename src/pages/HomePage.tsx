@@ -5,21 +5,12 @@ import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "@/components/ui/button";
 import {
   MapPin,
-  ArrowLeft,
   ArrowRight,
   Phone,
   MessageCircle,
-  Clock,
   Star,
-  ShieldCheck,
   CheckCircle2,
-  Calendar,
-  Sparkles,
-  Award,
-  Users,
-  Compass,
-  Pause,
-  Play
+  Compass
 } from "lucide-react";
 import StructuredData from "@/components/StructuredData";
 import StickyCTA from "@/components/StickyCTA";
@@ -28,138 +19,202 @@ import ContactMap from "@/components/ContactMap";
 import { getRecentPosts } from "@/data/blogPosts";
 import { GOOGLE_BUSINESS_PROFILE_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 
-// Verbatim review excerpts and five-star ratings transcribed from the supplied Google profile screenshots.
-const googleReviewExcerpts = [
+// Full review wording and five-star ratings transcribed from the supplied Google profile screenshots.
+const googleReviews = [
   {
     reviewer: "Aisha Quadri",
-    excerpt: "He is a good doctor",
+    text: "He is a good doctor . Liked the service hear . Mostly it is affordable for every one .",
     rating: 5,
   },
   {
     reviewer: "syed waheed multani",
-    excerpt: "He listens attentively, explains the treatment process clearly, and provides care with patience and genuine concern for the patient’s well-being.",
+    text: "I highly appreciate the physiotherapy services provided by Dr. Hamid. His professional expertise is complemented by his exceptionally humble, courteous, and compassionate approach towards patients. He listens attentively, explains the treatment process clearly, and provides care with patience and genuine concern for the patient’s well-being.\n\nHis reassuring manner and systematic approach to physiotherapy create a strong sense of confidence and comfort during the course of treatment. I sincerely recommend visiting his clinic, particularly for those seeking professional physiotherapy with compassionate care and a positive outlook towards recovery. Patients can approach the clinic with confidence and trust in his dedicated services.",
     rating: 5,
   },
   {
     reviewer: "shameer",
-    excerpt: "He patiently listens to every concern, explains the treatment clearly, and ensures that I feel comfortable throughout the process.",
+    text: "I had an exceptional experience at Dr. Hamid’s Physio & Pain Clinic. The doctor is not only highly skilled but also very approachable. He patiently listens to every concern, explains the treatment clearly, and ensures that I feel comfortable throughout the process. His well-mannered approach and genuine care made my recovery journey smooth and reassuring. I would strongly recommend this clinic to anyone seeking effective and compassionate physiotherapy care",
     rating: 5,
   },
   {
     reviewer: "salim riyaz",
-    excerpt: "best physio in manikonda",
+    text: "I took frozen shoulder treatment and recovered completely recommended for everyone thanks dr hamid sir best physio in manikonda",
     rating: 5,
   },
   {
     reviewer: "Dr. Haleem Khan Khan",
-    excerpt: "he understands and listens carefully",
+    text: "Very efficient doctor.. he understands and listens carefully.. treats accordingly.. very happy that my treatment went smoothly.. thank you Dr Hamid",
     rating: 5,
   },
   {
     reviewer: "Irfan Shaik",
-    excerpt: "Very much satisfied with the way treatment has been done with care and transparency.",
+    text: "Very much satisfied with the way treatment has been done with care and transparency. Found this place when I was suffering from severe neck stiffness and right shoulder pain and walked away with utmost relief and comfort. Highly recommended! Dr.Hamid is exceptionally professional both in physio and hospitality.",
     rating: 5,
   },
   {
     reviewer: "shravaniAS AS",
-    excerpt: "Gives good suggestions for better improvement.",
+    text: "He is a good physiotherapist doctor. He will do treatment with lots of patients. Understands exact problem and gave good treatment to me Gives good suggestions for better improvement.",
     rating: 5,
   },
   {
     reviewer: "Raghav reddy",
-    excerpt: "Dr. Hamid is professional, knowledgeable, and takes the time to understand the problem before starting treatment.",
+    text: "Excellent physiotherapy and pain relief clinic! My wife had a very good experience at Dr. Hamid’s Physio & Pain Clinic. Dr. Hamid is professional, knowledgeable, and takes the time to understand the problem before starting treatment. The treatment was explained clearly, and I noticed good improvement with the sessions.",
     rating: 5,
   },
 ] as const;
 
-// Medical SVG icons styled to match reference image cards
-const NeckIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" className="w-10 h-10 text-[#a06b32]" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M32 10a8 8 0 0 0-8 8v6a8 8 0 0 0 16 0v-6a8 8 0 0 0-8-8z" />
-    <path d="M24 28c-4 2-8 7-8 14v4h32v-4c0-7-4-12-8-14" />
-    <path d="M29 34h6" />
-    <path d="M29 39h6" />
-    <path d="M32 14v4" />
-  </svg>
-);
+const homepageServiceIcons = [
+  {
+    label: "Neck Pain",
+    href: "/services/neck-pain-physiotherapy-manikonda",
+    src: "/images/services/circular-icons/neck-pain.webp",
+    alt: "Neck pain physiotherapy service",
+  },
+  {
+    label: "Back Pain",
+    href: "/services/back-pain-physiotherapy-manikonda",
+    src: "/images/services/circular-icons/back-pain.webp",
+    alt: "Back pain physiotherapy service",
+  },
+  {
+    label: "Shoulder Pain",
+    href: "/services/shoulder-pain-physiotherapy-manikonda",
+    src: "/images/services/circular-icons/shoulder.webp",
+    alt: "Shoulder pain physiotherapy service",
+  },
+  {
+    label: "Knee Pain",
+    href: "/services/knee-pain-physiotherapy-manikonda",
+    src: "/images/services/circular-icons/knee.webp",
+    alt: "Knee pain physiotherapy service",
+  },
+  {
+    label: "Sciatica",
+    href: "/services/sciatica-physiotherapy-manikonda",
+    src: "/images/services/circular-icons/sciatica.webp",
+    alt: "Sciatica physiotherapy service",
+  },
+  {
+    label: "Home Visits",
+    href: "/services/home-visit-physiotherapy-manikonda",
+    src: "/images/services/circular-icons/home-visits.webp",
+    alt: "Home visit physiotherapy service",
+  },
+  {
+    label: "Sports Injury Rehabilitation",
+    href: "/services/sports-injury-physiotherapy-manikonda",
+    src: "/images/services/circular-icons/sports-injury-rehab.webp",
+    alt: "Sports injury rehabilitation service",
+  },
+  {
+    label: "Post-Surgery Rehabilitation",
+    href: "/services/post-surgical-rehabilitation-manikonda",
+    src: "/images/services/circular-icons/post-surgery-rehab.webp",
+    alt: "Post-surgery rehabilitation service",
+  },
+  {
+    label: "Stroke and Neurological Rehabilitation",
+    href: "/services/stroke-physiotherapy-manikonda",
+    src: "/images/services/circular-icons/stroke-neuro-rehab.webp",
+    alt: "Stroke and neurological rehabilitation service",
+  },
+  {
+    label: "Gym Injuries",
+    href: "/services/gym-injuries-physiotherapy-manikonda",
+    src: "/images/services/circular-icons/gym-injuries.webp",
+    alt: "Gym injury physiotherapy services",
+  },
+] as const;
 
-const SpineBackIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" className="w-10 h-10 text-[#a06b32]" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M24 16c-3 3-5 8-5 14v16h26V30c0-6-2-11-5-14" />
-    <circle cx="32" cy="18" r="2" fill="currentColor" />
-    <circle cx="32" cy="24" r="2" fill="currentColor" />
-    <circle cx="32" cy="30" r="2" fill="currentColor" />
-    <circle cx="32" cy="36" r="2" fill="currentColor" />
-    <circle cx="32" cy="42" r="2" fill="currentColor" />
-    <path d="M28 24h8M28 30h8M28 36h8" strokeWidth="2" />
-  </svg>
-);
+const neighborhoodAreas = [
+  { name: "Puppalguda", detail: "Primary Clinic", travel: "Walk-in / 2 min" },
+  { name: "Manikonda", detail: "Primary Location", travel: "Local / 3–5 min" },
+  { name: "Lanco Hills", detail: "Via Main Road", travel: "~5 min drive" },
+  { name: "Tolichowki", detail: "Via Shaikpet", travel: "~10 min drive" },
+  { name: "Shaikpet", detail: "Via Dargah Road", travel: "~7 min drive" },
+  { name: "OU Colony", detail: "Via Manikonda Rd", travel: "~6 min drive" },
+  { name: "Alkapur Township", detail: "Direct Access", travel: "~5 min drive" },
+  { name: "Khajaguda", detail: "Via Lake Road", travel: "~8 min drive" },
+  { name: "Narsingi", detail: "Puppalguda Junc.", travel: "~8 min drive" },
+  { name: "Neknampur", detail: "Via Neknampur Rd", travel: "~6 min drive" },
+  { name: "Golconda", detail: "Direct Route", travel: "~12 min drive" },
+  { name: "Seven Tombs", detail: "Via Shaikpet", travel: "~10 min drive" },
+] as const;
 
-const KneeIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" className="w-10 h-10 text-[#a06b32]" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M24 12c2 8 4 14 4 20 0 6-2 12-4 20" />
-    <path d="M40 12c-2 8-4 14-4 20 0 6 2 12 4 20" />
-    <ellipse cx="32" cy="32" rx="7" ry="9" strokeWidth="2.5" />
-    <path d="M30 29c1-1 3-1 4 0" />
-  </svg>
-);
+const ServiceAreasSection = () => (
+  <section id="service-areas" className="py-10 px-4 bg-white border-b border-[#e5dec9]">
+    <div className="container">
+      <div className="bg-white/80 border border-[#e5dec9] rounded-2xl p-6 sm:p-8 shadow-xs">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+          <div>
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#8a5d24] uppercase tracking-wider mb-1">
+              <MapPin className="w-3.5 h-3.5 text-[#8a5d24]" />
+              <span>Neighbourhood Accessibility</span>
+            </div>
+            <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#081a2e]">
+              Home physiotherapy in Hyderabad: areas we visit
+            </h2>
+          </div>
+          <span className="text-xs text-[#718096] bg-[#faf6ed] border border-[#e5dec9] px-3 py-1.5 rounded-full font-medium self-start sm:self-auto">
+            📍 Physio Clinic in Manikonda
+          </span>
+        </div>
 
-const RunningAthleteIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" className="w-10 h-10 text-[#a06b32]" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="38" cy="14" r="5" />
-    <path d="M28 26l8-4 6 7 7 2" />
-    <path d="M34 23l-7 11 8 4-3 12" />
-    <path d="M27 34l-9 4-4-5" />
-  </svg>
-);
+        <p className="text-sm text-[#4a5568] leading-relaxed mb-4">
+          The clinic is at <strong>4-3/81, opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda</strong>. Existing nearby areas include Puppalguda, Manikonda, Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda and Seven Tombs.
+        </p>
+        <p className="text-sm text-[#4a5568] leading-relaxed mb-6">
+          Home-visit enquiries are generally targeted within an approximate 15 km radius of Manikonda. Priority areas include Kokapet, Gandipet, Narsingi, Jubilee Hills, Banjara Hills, Gachibowli, the Financial District, HITEC City, Puppalguda, Lanco Hills, Alkapur Township, Shaikpet and Tolichowki. Availability depends on the exact address; contact the clinic to confirm. This is not a road-distance guarantee.
+        </p>
 
-const RehabBedIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" className="w-10 h-10 text-[#a06b32]" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="22" cy="22" r="4" />
-    <path d="M16 34c4-3 9-4 15-4h18" />
-    <path d="M14 38h38v4H14z" fill="currentColor" fillOpacity="0.1" />
-    <path d="M18 42v10M48 42v10" />
-    <path d="M34 22c2 3 5 5 8 5" />
-  </svg>
-);
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          {neighborhoodAreas.map((area) => (
+            <div key={area.name} className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
+              <p className="font-bold text-[#081a2e] text-xs sm:text-sm">
+                {area.name}
+              </p>
+              <p className="text-[11px] text-[#8a5d24] font-medium mt-0.5">
+                {area.detail}
+              </p>
+              <p className="text-[10px] text-[#718096] mt-1">
+                {area.travel}
+              </p>
+            </div>
+          ))}
+        </div>
 
-const ApartmentBuildingIcon = () => (
-  <svg viewBox="0 0 64 64" fill="none" className="w-10 h-10 text-[#a06b32]" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    {/* Base ground line */}
-    <path d="M8 54h48" />
-    {/* Luxury high-rise residential apartment tower */}
-    <rect x="18" y="12" width="28" height="42" rx="2" strokeWidth="2.5" />
-    {/* Architectural penthouse crown & spire */}
-    <path d="M25 12V7h14v5" strokeWidth="2" />
-    <path d="M32 7V4" strokeWidth="2" />
-    {/* Symmetrical luxury apartment balcony / window suites */}
-    <rect x="23" y="17" width="6" height="5" rx="0.5" strokeWidth="1.8" />
-    <rect x="35" y="17" width="6" height="5" rx="0.5" strokeWidth="1.8" />
-    <rect x="23" y="26" width="6" height="5" rx="0.5" strokeWidth="1.8" />
-    <rect x="35" y="26" width="6" height="5" rx="0.5" strokeWidth="1.8" />
-    <rect x="23" y="35" width="6" height="5" rx="0.5" strokeWidth="1.8" />
-    <rect x="35" y="35" width="6" height="5" rx="0.5" strokeWidth="1.8" />
-    {/* Grand entrance / lobby canopy */}
-    <path d="M28 54v-8h8v8" strokeWidth="2" />
-    <path d="M26 46h12" strokeWidth="2" />
-  </svg>
+        <div className="mt-5 pt-4 border-t border-[#e5dec9] flex flex-wrap items-center justify-between gap-3 text-xs text-[#5c4928]">
+          <span>
+            <em>Home Physiotherapy Visits:</em> Contact the clinic to confirm coverage and availability for your address.
+          </span>
+          <a
+            href={GOOGLE_BUSINESS_PROFILE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-[#081a2e] hover:text-[#8a5d24] inline-flex items-center gap-1 transition-colors"
+          >
+            <span>Open Directions on Google Maps</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 );
 
 const HomePage = () => {
-  const reviewSectionRef = React.useRef<HTMLElement | null>(null);
   const reviewCarouselOptions = React.useMemo(
     () => ({ align: "center" as const, loop: true }),
     []
   );
   const [reviewCarouselRef, reviewCarouselApi] = useEmblaCarousel(reviewCarouselOptions);
   const [selectedReviewIndex, setSelectedReviewIndex] = React.useState(0);
-  const [isReviewSectionVisible, setIsReviewSectionVisible] = React.useState(false);
   const [isDocumentVisible, setIsDocumentVisible] = React.useState(true);
-  const [prefersReducedMotion, setPrefersReducedMotion] = React.useState(false);
-  const [isReviewHovered, setIsReviewHovered] = React.useState(false);
-  const [isReviewFocused, setIsReviewFocused] = React.useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = React.useState(() =>
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  );
   const [isReviewPointerDown, setIsReviewPointerDown] = React.useState(false);
-  const [isAutoplayPausedByUser, setIsAutoplayPausedByUser] = React.useState(false);
   const [reviewAutoplayResetKey, setReviewAutoplayResetKey] = React.useState(0);
 
   React.useEffect(() => {
@@ -180,25 +235,6 @@ const HomePage = () => {
       reviewCarouselApi.off("reInit", updateSelectedReview);
     };
   }, [reviewCarouselApi]);
-
-  React.useEffect(() => {
-    const section = reviewSectionRef.current;
-    if (!section) {
-      return;
-    }
-
-    if (!("IntersectionObserver" in window)) {
-      setIsReviewSectionVisible(true);
-      return;
-    }
-
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsReviewSectionVisible(entry.isIntersecting);
-    }, { threshold: 0.15 });
-
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
 
   React.useEffect(() => {
     const updateDocumentVisibility = () => {
@@ -222,13 +258,9 @@ const HomePage = () => {
   React.useEffect(() => {
     if (
       !reviewCarouselApi ||
-      !isReviewSectionVisible ||
       !isDocumentVisible ||
       prefersReducedMotion ||
-      isReviewHovered ||
-      isReviewFocused ||
-      isReviewPointerDown ||
-      isAutoplayPausedByUser
+      isReviewPointerDown
     ) {
       return;
     }
@@ -237,19 +269,15 @@ const HomePage = () => {
       if (document.visibilityState === "visible") {
         reviewCarouselApi.scrollNext();
       }
-    }, 4500);
+    }, 3000);
 
     return () => window.clearInterval(autoplayTimer);
   }, [
     reviewCarouselApi,
     reviewAutoplayResetKey,
-    isReviewSectionVisible,
     isDocumentVisible,
     prefersReducedMotion,
-    isReviewHovered,
-    isReviewFocused,
     isReviewPointerDown,
-    isAutoplayPausedByUser,
   ]);
 
   const navigateReviewCarousel = (direction: "previous" | "next") => {
@@ -260,46 +288,6 @@ const HomePage = () => {
       reviewCarouselApi?.scrollNext(prefersReducedMotion);
     }
   };
-
-  // 6 Horizontal Highlight Cards matching reference image exactly
-  const heroHighlightCards = [
-    {
-      title: "Neck Pain Treatment",
-      slug: "neck-pain-physiotherapy-manikonda",
-      icon: <NeckIcon />,
-      hint: "Cervical care & text neck"
-    },
-    {
-      title: "Back Pain Treatment",
-      slug: "back-pain-physiotherapy-manikonda",
-      icon: <SpineBackIcon />,
-      hint: "Sciatica & disc decompression"
-    },
-    {
-      title: "Knee Pain Treatment",
-      slug: "knee-pain-physiotherapy-manikonda",
-      icon: <KneeIcon />,
-      hint: "Stair pain & arthritis care"
-    },
-    {
-      title: "Sports Injuries Rehab",
-      slug: "sports-injury-physiotherapy-manikonda",
-      icon: <RunningAthleteIcon />,
-      hint: "Sprains, tears & return-to-play"
-    },
-    {
-      title: "Post-Surgery Rehab",
-      slug: "post-surgical-rehabilitation-manikonda",
-      icon: <RehabBedIcon />,
-      hint: "TKR, THR & fracture protocol"
-    },
-    {
-      title: "Home Physiotherapy Visits",
-      slug: "home-visit-physiotherapy-manikonda",
-      icon: <ApartmentBuildingIcon />,
-      hint: "Apartment & in-home physio in Manikonda"
-    },
-  ];
 
   const scrollToAppointment = () => {
     const el = document.getElementById("appointment");
@@ -315,9 +303,11 @@ const HomePage = () => {
   return (
     <div className="pb-16 md:pb-0 bg-[#faf6ed] text-[#1a202c]">
       <Helmet>
-        <meta property="og:title" content="Dr Hamid’s Physio and Pain Clinic | Physiotherapy in Manikonda" />
+        <title>Physio in Manikonda | Dr Hamid’s Physio and Pain Clinic</title>
+        <meta name="description" content="Physiotherapy for back, neck, knee pain and more in Manikonda, Hyderabad. Clinic and home visits; open daily 10 AM to 10 PM. Rated 5.0 on Google from 100+ patient reviews." />
+        <meta property="og:title" content="Physio in Manikonda | Dr Hamid’s Physio and Pain Clinic" />
         <meta property="og:url" content="https://www.drhamidphysio.in/" />
-        <link rel="preload" as="image" href="/images/doctor/dr-hamid-hero.webp" fetchPriority="high" />
+        <link rel="preload" as="image" href="/images/doctor/dr-hamid-transparent.webp" fetchPriority="high" />
       </Helmet>
       <StructuredData type="homepage" />
 
@@ -326,10 +316,10 @@ const HomePage = () => {
       ========================================================= */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#faf6ed] via-[#f7f2e5] to-[#f4ede0] pt-8 sm:pt-12 pb-16 lg:pb-24 border-b border-[#e5dec9]">
         <div className="container px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 sm:gap-9 lg:gap-4 items-center">
             
             {/* Left Column: Headlines & CTAs */}
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-7 space-y-5 sm:space-y-6">
               
               {/* Location Badge */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#ece5d4] border border-[#dfd6be] text-[#5c4928] text-xs sm:text-sm font-medium shadow-2xs">
@@ -339,12 +329,14 @@ const HomePage = () => {
 
               {/* Main Headline */}
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-[3.65rem] font-bold text-[#081a2e] tracking-tight leading-[1.12]">
-                Physiotherapy in Manikonda
+                Trusted Physiotherapy in Manikonda, Hyderabad
               </h1>
 
               {/* Subheading */}
               <p className="text-base sm:text-lg lg:text-xl text-[#4a5568] leading-relaxed max-w-xl font-normal">
-                Physiotherapy services and rehabilitation options at Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad.
+                Physiotherapy for back, neck and knee pain, and <Link to="/services" style={{ color: "blue", textDecoration: "underline" }}>
+                  more
+                </Link>, including sports injuries and post-surgery rehabilitation. One-to-one sessions with Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), with 8+ years’ experience. Clinic and home visits around Manikonda; home-visit availability depends on your address. Open daily from 10 AM to 10 PM.
               </p>
 
               {/* Two CTA Buttons Side by Side */}
@@ -368,6 +360,10 @@ const HomePage = () => {
                 </Button>
               </div>
 
+              <p className="pt-3 text-sm font-semibold text-[#5c4928]">
+                ⭐️⭐️⭐️⭐️⭐️ 5.0 on Google, 100+ patient reviews
+              </p>
+
               {/* Clinic service information */}
               <div className="pt-6 flex flex-wrap items-center gap-6 text-xs sm:text-sm text-[#4a5568] border-t border-[#e2d8c0]/80">
                 <div className="flex items-center gap-2">
@@ -377,51 +373,49 @@ const HomePage = () => {
               </div>
             </div>
 
-            {/* Right Column: Hero Doctor Image with Spine Model */}
-            <div className="lg:col-span-5 flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-[420px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-b from-[#fbf7ee] to-[#ede2cd]">
-                <img
-                  src="/images/doctor/dr-hamid-hero.webp"
-                  alt="Dr. Mohammed Hamid Ali holding an anatomical spine model"
-                  width={682}
-                  height={1024}
-                  className="w-full h-auto aspect-[3/4] object-cover object-top drop-shadow-sm"
-                  loading="eager"
-                  {...{ fetchpriority: "high" }}
-                />
-                
-                {/* Doctor name overlay */}
-                <div className="absolute bottom-3 right-3 bg-[#081a2e]/90 backdrop-blur-md text-white px-3.5 py-1.5 rounded-lg text-xs font-medium shadow-md">
-                  Dr. Mohammed Hamid Ali
-                </div>
-              </div>
+            {/* Transparent portrait blends into the shared hero background without a separate image card. */}
+            <div className="relative lg:col-span-5 flex min-h-[19rem] items-end justify-center lg:min-h-[32rem] lg:justify-end">
+              <div
+                aria-hidden="true"
+                className="absolute bottom-5 left-1/2 h-56 w-56 -translate-x-1/2 rounded-full bg-[#e9dfc9]/75 sm:h-72 sm:w-72 lg:bottom-8 lg:left-auto lg:right-[-1rem] lg:h-[26rem] lg:w-[26rem] lg:translate-x-0"
+              />
+              <img
+                src="/images/doctor/dr-hamid-transparent.webp"
+                alt="Dr. Mohammed Hamid Ali holding an anatomical spine model"
+                width={682}
+                height={1024}
+                className="relative z-10 h-[19rem] w-auto max-w-full object-contain object-bottom drop-shadow-xl sm:h-[25rem] lg:h-[32rem]"
+                loading="eager"
+                {...{ fetchpriority: "high" }}
+              />
             </div>
 
           </div>
 
           {/* =========================================================
-              HORIZONTAL 6-CARD ROW (EXACT MATCH TO REFERENCE)
+              RESPONSIVE 5+5 SERVICE ICON GRID
           ========================================================= */}
-          <section className="mt-14 lg:mt-20" aria-labelledby="featured-services-heading">
-            <h2 id="featured-services-heading" className="sr-only">
-              Popular physiotherapy services in Manikonda
+          <section id="featured-services" className="mt-14 lg:mt-20" aria-labelledby="featured-services-heading">
+            <h2 id="featured-services-heading" className="mb-5 text-center font-serif text-xl sm:text-2xl font-bold text-[#081a2e]">
+              Physiotherapy services in Manikonda, Hyderabad
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3.5 sm:gap-4">
-              {heroHighlightCards.map((card) => (
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 lg:gap-5">
+              {homepageServiceIcons.map((icon) => (
                 <Link
-                  key={card.slug}
-                  to={`/services/${card.slug}`}
-                  className="group flex flex-col items-center text-center p-5 rounded-2xl bg-[#fffbf2]/90 hover:bg-white border border-[#e5dec9] hover:border-[#8c6b3e]/60 shadow-xs hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                  key={icon.label}
+                  to={icon.href}
+                  aria-label={`Explore ${icon.label} physiotherapy`}
+                  className="group flex min-h-11 min-w-0 items-center justify-center rounded-full p-1 transition-transform duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8c6b3e] focus-visible:ring-offset-2"
                 >
-                  <div className="w-16 h-16 rounded-full bg-[#f6eddb] group-hover:bg-[#efe3c8] flex items-center justify-center mb-3 transition-colors">
-                    {card.icon}
-                  </div>
-                  <h3 className="text-sm font-bold text-[#081a2e] group-hover:text-[#8a5d24] transition-colors leading-snug">
-                    {card.title}
-                  </h3>
-                  <span className="text-[11px] text-[#718096] mt-1 line-clamp-1 group-hover:text-[#4a5568]">
-                    {card.hint}
-                  </span>
+                  <img
+                    src={icon.src}
+                    alt={icon.alt}
+                    width={1024}
+                    height={1024}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-auto w-full max-w-32 sm:max-w-36 md:max-w-40"
+                  />
                 </Link>
               ))}
             </div>
@@ -465,7 +459,9 @@ const HomePage = () => {
             Body Map
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-2 mb-4">
-            Explore Common Pain Conditions
+            Conditions we treat: back, neck, knee, shoulder, sciatica pain and <Link to="/services" style={{ color: "blue", textDecoration: "underline" }}>
+              more
+            </Link>
           </h2>
           <p className="text-[#4a5568] text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
             Choose an area on the interactive body map to read general information about common pain conditions and physiotherapy options.
@@ -516,7 +512,7 @@ const HomePage = () => {
             <div className="lg:col-span-7 space-y-5">
               <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">About the clinic</span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e]">
-                Physiotherapy in Manikonda
+                About Dr Hamid’s Physio and Pain Clinic
               </h2>
 
               <p className="text-base text-[#4a5568] leading-relaxed">
@@ -565,7 +561,6 @@ const HomePage = () => {
       ========================================================= */}
       <section
         id="google-reviews"
-        ref={reviewSectionRef}
         className="py-16 md:py-24 px-4 bg-[#faf6ed] border-b border-[#e5dec9]"
       >
         <div className="container">
@@ -575,7 +570,7 @@ const HomePage = () => {
                 Google reviews
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-1">
-                What Manikonda Patients Say
+                Rated 5.0 on Google: what patients say
               </h2>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#4a5568]">
                 Selected excerpts from reviews posted on the clinic’s Google Business Profile.
@@ -598,7 +593,8 @@ const HomePage = () => {
               className="overflow-hidden px-1"
               role="region"
               aria-roledescription="carousel"
-              aria-label="Selected Google review excerpts"
+              aria-label="Selected Google review carousel"
+              aria-keyshortcuts="ArrowLeft ArrowRight"
               aria-live="off"
               tabIndex={0}
               onKeyDownCapture={(event) => {
@@ -611,33 +607,26 @@ const HomePage = () => {
                   navigateReviewCarousel("next");
                 }
               }}
-              onMouseEnter={() => setIsReviewHovered(true)}
-              onMouseLeave={() => setIsReviewHovered(false)}
-              onFocusCapture={() => setIsReviewFocused(true)}
-              onBlurCapture={(event) => {
-                if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
-                  setIsReviewFocused(false);
-                }
-              }}
               onPointerDown={() => setIsReviewPointerDown(true)}
               onPointerUp={() => setIsReviewPointerDown(false)}
               onPointerCancel={() => setIsReviewPointerDown(false)}
             >
               <div className="flex touch-pan-y">
-                {googleReviewExcerpts.map((review, index) => (
+                {googleReviews.map((review, index) => (
                   <div
                     key={review.reviewer}
-                    className={`min-w-0 shrink-0 grow-0 basis-[90%] px-2 transition-transform duration-500 ease-out sm:basis-[84%] lg:basis-[80%] motion-reduce:transition-none ${
+                    className={`min-w-0 shrink-0 grow-0 basis-[82%] px-2 transition-transform duration-500 ease-out motion-reduce:transition-none sm:basis-[80%] ${
                       selectedReviewIndex === index
                         ? "scale-100 opacity-100"
                         : "scale-[0.97] opacity-75"
                     }`}
                     role="group"
                     aria-roledescription="slide"
-                    aria-label={`Review ${index + 1} of ${googleReviewExcerpts.length}`}
+                    aria-label={`Review ${index + 1} of ${googleReviews.length}`}
+                    aria-hidden={selectedReviewIndex !== index}
                     data-active={selectedReviewIndex === index}
                   >
-                    <article className="flex h-full min-h-56 flex-col rounded-2xl border border-[#e5dec9] bg-white p-6 shadow-sm md:p-8">
+                    <article className="flex min-h-56 flex-col rounded-2xl border border-[#e5dec9] bg-white p-6 shadow-sm md:p-8">
                       <div className="flex items-center justify-between gap-3">
                         <span className="text-xs font-semibold uppercase tracking-widest text-[#718096]">
                           Google review
@@ -652,8 +641,8 @@ const HomePage = () => {
                           ))}
                         </div>
                       </div>
-                      <blockquote className="mt-5 flex-1 text-sm leading-relaxed text-[#4a5568] sm:text-base">
-                        “{review.excerpt}”
+                      <blockquote className="mt-5 flex-1 whitespace-pre-line text-sm leading-relaxed text-[#4a5568] sm:text-base">
+                        “{review.text}”
                       </blockquote>
                       <p className="mt-6 border-t border-[#e5dec9] pt-4 text-sm font-semibold text-[#081a2e]">
                         {review.reviewer}
@@ -664,42 +653,6 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="mt-6 flex items-center justify-center gap-3" aria-label="Review carousel controls">
-              <button
-                type="button"
-                aria-label="Previous Google review"
-                title="Previous review"
-                onClick={() => navigateReviewCarousel("previous")}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e5dec9] bg-white text-[#081a2e] shadow-sm transition-colors hover:bg-[#f4ede0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24] focus-visible:ring-offset-2"
-              >
-                <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-              </button>
-              {!prefersReducedMotion && (
-                <button
-                  type="button"
-                  aria-label={isAutoplayPausedByUser ? "Resume automatic review rotation" : "Pause automatic review rotation"}
-                  aria-pressed={isAutoplayPausedByUser}
-                  title={isAutoplayPausedByUser ? "Resume automatic review rotation" : "Pause automatic review rotation"}
-                  onClick={() => setIsAutoplayPausedByUser((paused) => !paused)}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e5dec9] bg-white text-[#081a2e] shadow-sm transition-colors hover:bg-[#f4ede0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24] focus-visible:ring-offset-2"
-                >
-                  {isAutoplayPausedByUser ? (
-                    <Play className="h-4 w-4" aria-hidden="true" />
-                  ) : (
-                    <Pause className="h-4 w-4" aria-hidden="true" />
-                  )}
-                </button>
-              )}
-              <button
-                type="button"
-                aria-label="Next Google review"
-                title="Next review"
-                onClick={() => navigateReviewCarousel("next")}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#e5dec9] bg-white text-[#081a2e] shadow-sm transition-colors hover:bg-[#f4ede0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24] focus-visible:ring-offset-2"
-              >
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </button>
-            </div>
           </div>
         </div>
       </section>
@@ -715,7 +668,7 @@ const HomePage = () => {
                 Educational Articles
               </span>
               <h2 className="font-serif text-3xl font-bold text-[#081a2e] mt-1">
-                Knee Pain, Spine &amp; Exercise Recovery Guides
+                Physiotherapy guides: knee, spine and exercise
               </h2>
             </div>
             <Link
@@ -772,8 +725,76 @@ const HomePage = () => {
         </div>
       </section>
 
+      <section id="home-faq" className="py-16 md:py-24 px-4 bg-[#faf6ed] border-b border-[#e5dec9]">
+        <div className="container max-w-4xl mx-auto">
+          <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">
+            Frequently asked questions
+          </span>
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-1 mb-7">
+            Physiotherapy in Manikonda: your questions answered
+          </h2>
+
+          <div className="space-y-3">
+            <details className="rounded-xl border border-[#e5dec9] bg-white p-5">
+              <summary className="cursor-pointer font-semibold text-[#081a2e]">
+                Where is the nearest physiotherapy clinic in Manikonda?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-[#4a5568]">
+                Dr Hamid’s Physio and Pain Clinic is at 4-3/81, opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad 500089. The clinic is open daily from 10 AM to 10 PM.
+              </p>
+            </details>
+
+            <details className="rounded-xl border border-[#e5dec9] bg-white p-5">
+              <summary className="cursor-pointer font-semibold text-[#081a2e]">
+                Do I need a doctor’s referral for physiotherapy?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-[#4a5568]">
+                No referral is needed to contact the clinic or request an appointment. If your symptoms should be medically assessed before physiotherapy, the clinic can advise you to seek that review.
+              </p>
+            </details>
+
+            <details className="rounded-xl border border-[#e5dec9] bg-white p-5">
+              <summary className="cursor-pointer font-semibold text-[#081a2e]">
+                Do you offer home physiotherapy visits in Hyderabad?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-[#4a5568]">
+                Home visits are generally targeted within about 15 km of Manikonda. Availability depends on your exact address, so please confirm by phone or WhatsApp.
+              </p>
+            </details>
+
+            <details className="rounded-xl border border-[#e5dec9] bg-white p-5">
+              <summary className="cursor-pointer font-semibold text-[#081a2e]">
+                How much does physiotherapy cost?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-[#4a5568]">
+                In-clinic consultations are ₹300, and treatments start from ₹500; the total depends on the treatment needed. Home visits start from ₹1,200 and vary with your treatment needs and travel distance from the clinic.
+              </p>
+              <a
+                href="https://wa.me/917601026596?text=Hi%20Dr.%20Hamid,%20I%20would%20like%20to%20request%20a%20home%20visit.%0A%0AMy%20location/area%20is:%20%0A%0AMy%20problem%20is:%20"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex font-semibold text-blue-700 underline underline-offset-2 hover:text-blue-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700 focus-visible:ring-offset-2"
+              >
+                Request a home visit on WhatsApp
+              </a>
+            </details>
+
+            <details className="rounded-xl border border-[#e5dec9] bg-white p-5">
+              <summary className="cursor-pointer font-semibold text-[#081a2e]">
+                How can I book an appointment?
+              </summary>
+              <p className="mt-3 text-sm leading-relaxed text-[#4a5568]">
+                Call the clinic at +91 76010 26596 or use the appointment form below. The form opens WhatsApp with a prepared message; review it and send it from WhatsApp to complete your enquiry.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <ServiceAreasSection />
+
       {/* =========================================================
-          7. APPOINTMENT & GOOGLE MAPS SECTION
+          8. APPOINTMENT & GOOGLE MAPS SECTION
       ========================================================= */}
       <section id="appointment" className="py-16 md:py-24 px-4 bg-[#faf6ed]">
         <div id="contact" className="container">
@@ -798,107 +819,6 @@ const HomePage = () => {
             />
           </div>
 
-          {/* Areas We Serve & Neighbourhood Accessibility */}
-          <div className="mt-12 pt-10 border-t border-[#e2d8c0]">
-            <div className="bg-white/80 border border-[#e5dec9] rounded-2xl p-6 sm:p-8 shadow-xs">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
-                <div>
-                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#8a5d24] uppercase tracking-wider mb-1">
-                    <MapPin className="w-3.5 h-3.5 text-[#8a5d24]" />
-                    <span>Neighbourhood Accessibility</span>
-                  </div>
-                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#081a2e]">
-                    Areas We Serve Around Puppalguda &amp; Manikonda
-                  </h3>
-                </div>
-                <span className="text-xs text-[#718096] bg-[#faf6ed] border border-[#e5dec9] px-3 py-1.5 rounded-full font-medium self-start sm:self-auto">
-                  📍 Physio Clinic in Manikonda
-                </span>
-              </div>
-
-              <p className="text-sm text-[#4a5568] leading-relaxed mb-6">
-                Our specialized clinic is conveniently located at <strong>Friends Colony, Puppalguda, Manikonda</strong> (Opposite HDFC Bank ATM, near Friends Colony Park). With direct road connectivity across West Hyderabad, patients regularly visit us for in-clinic physiotherapy and pain relief from:
-              </p>
-
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Puppalguda</p>
-                  <p className="text-[11px] text-[#8a5d24] font-medium mt-0.5">Primary Clinic</p>
-                  <p className="text-[10px] text-[#718096] mt-1">Walk-in / 2 min</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Manikonda</p>
-                  <p className="text-[11px] text-[#8a5d24] font-medium mt-0.5">Primary Location</p>
-                  <p className="text-[10px] text-[#718096] mt-1">Local / 3–5 min</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Lanco Hills</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Via Main Road</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~5 min drive</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Tolichowki</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Via Shaikpet</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~10 min drive</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Shaikpet</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Via Dargah Road</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~7 min drive</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">OU Colony</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Via Manikonda Rd</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~6 min drive</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Alkapur Township</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Direct Access</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~5 min drive</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Khajaguda</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Via Lake Road</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~8 min drive</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Narsingi</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Puppalguda Junc.</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~8 min drive</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Neknampur</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Via Neknampur Rd</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~6 min drive</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Golconda</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Direct Route</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~12 min drive</p>
-                </div>
-                <div className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-                  <p className="font-bold text-[#081a2e] text-xs sm:text-sm">Seven Tombs</p>
-                  <p className="text-[11px] text-[#718096] mt-0.5">Via Shaikpet</p>
-                  <p className="text-[10px] text-[#8a5d24] font-medium mt-1">~10 min drive</p>
-                </div>
-              </div>
-
-              <div className="mt-5 pt-4 border-t border-[#e5dec9] flex flex-wrap items-center justify-between gap-3 text-xs text-[#5c4928]">
-                <span>
-                  💡 <em>Home Physiotherapy Visits:</em> Visits are generally targeted within an approximate 15 km radius of Manikonda for patients who have difficulty travelling; contact the clinic to confirm coverage and availability.
-                </span>
-                <a
-                  href={GOOGLE_BUSINESS_PROFILE_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-[#081a2e] hover:text-[#8a5d24] inline-flex items-center gap-1 transition-colors"
-                >
-                  <span>Open Directions on Google Maps</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
