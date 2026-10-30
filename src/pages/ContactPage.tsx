@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
-import { GOOGLE_BUSINESS_PROFILE_URL } from "@/lib/businessInfo";
+import { GOOGLE_BUSINESS_PROFILE_URL, OFFICIAL_CLINIC_EMAIL } from "@/lib/businessInfo";
 
 const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.7!2d78.390221!3d17.3989817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97c8eb026f65%3A0x5e83196a16a5e123!2sDr.%20Hamid's%20Physio%20%26%20Pain%20Clinic!5e0!3m2!1sen!2sin!4v1727624000000";
 
@@ -31,7 +31,7 @@ const ContactPage = () => {
               "@id": "https://www.drhamidphysio.in",
               "name": "Dr Hamid’s Physio and Pain Clinic",
               "telephone": "+917601026596",
-              "email": "hamid.physio324@gmail.com",
+              "email": OFFICIAL_CLINIC_EMAIL,
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda",
@@ -79,7 +79,7 @@ const ContactPage = () => {
             </div>
             <div className="flex gap-3">
               <Mail className="mt-0.5 h-5 w-5 shrink-0 text-[#8a5d24]" aria-hidden="true" />
-              <a href="mailto:hamid.physio324@gmail.com" className="break-all text-[#8a5d24] hover:underline">hamid.physio324@gmail.com</a>
+              <a href={`mailto:${OFFICIAL_CLINIC_EMAIL}`} className="break-all text-[#8a5d24] hover:underline">{OFFICIAL_CLINIC_EMAIL}</a>
             </div>
             <div className="flex flex-wrap gap-3 pt-2">
               <a href={GOOGLE_BUSINESS_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="rounded-md bg-[#081a2e] px-4 py-3 text-sm font-semibold text-white hover:bg-[#122842] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24]">

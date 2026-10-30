@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
-import { GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
+import { GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, OFFICIAL_CLINIC_EMAIL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
 
 interface StructuredDataProps {
   type?: "homepage" | "service" | "blog" | "about";
@@ -20,7 +20,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     "@id": "https://www.drhamidphysio.in",
     "foundingDate": "2021",
     "telephone": "+917601026596",
-    "email": "hamid.physio324@gmail.com",
+    "email": OFFICIAL_CLINIC_EMAIL,
     "sameAs": [
       YOUTUBE_CHANNEL_URL,
       INSTAGRAM_PROFILE_URL,

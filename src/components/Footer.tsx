@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, ExternalLink } from "lucide-react";
-import { FACEBOOK_PROFILE_URL, GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
+import { FACEBOOK_PROFILE_URL, GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, OFFICIAL_CLINIC_EMAIL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
 
 const WhatsAppIcon = ({ className = "h-5 w-5" }: { className?: string }) => (
   <svg
@@ -184,10 +184,10 @@ const Footer = () => {
               <li className="flex gap-3">
                 <Mail className="h-4 w-4 shrink-0 mt-0.5 text-relish-600" />
                 <a
-                  href="mailto:hamid.physio324@gmail.com"
+                  href={`mailto:${OFFICIAL_CLINIC_EMAIL}`}
                   className="text-sm break-all text-muted-foreground transition-colors hover:text-relish-700"
                 >
-                  hamid.physio324@gmail.com
+                  {OFFICIAL_CLINIC_EMAIL}
                 </a>
               </li>
             </ul>

@@ -4,11 +4,16 @@ import { getBlogPostsNewestFirst } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 
 import StructuredData from "@/components/StructuredData";
+import { Helmet } from "react-helmet";
 
 const BlogsPage = () => {
   const posts = getBlogPostsNewestFirst();
   return (
     <div>
+      <Helmet>
+        <meta property="og:title" content="Health & Wellness Blog | Dr Hamid’s Physio and Pain Clinic Manikonda" />
+        <meta property="og:url" content="https://www.drhamidphysio.in/blogs" />
+      </Helmet>
       <StructuredData 
         type="blog" 
         pageTitle="Health & Wellness Blog | Dr Hamid’s Physio and Pain Clinic Manikonda"

@@ -315,6 +315,8 @@ const HomePage = () => {
   return (
     <div className="pb-16 md:pb-0 bg-[#faf6ed] text-[#1a202c]">
       <Helmet>
+        <meta property="og:title" content="Dr Hamid’s Physio and Pain Clinic | Physiotherapy in Manikonda" />
+        <meta property="og:url" content="https://www.drhamidphysio.in/" />
         <link rel="preload" as="image" href="/images/doctor/dr-hamid-hero.webp" fetchPriority="high" />
       </Helmet>
       <StructuredData type="homepage" />
