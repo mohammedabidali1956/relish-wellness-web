@@ -26,8 +26,10 @@ export const initializeAnalytics = () => {
 
   window.__clinicAnalyticsReady = true;
   window.dataLayer = window.dataLayer || [];
-  window.gtag = (...args) => {
-    window.dataLayer?.push(args);
+  window.gtag = function () {
+    // Match Google's gtag.js bootstrap: preserve the Arguments object in the queue.
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer?.push(arguments);
   };
 
   const scriptId = "google-analytics-gtag";
