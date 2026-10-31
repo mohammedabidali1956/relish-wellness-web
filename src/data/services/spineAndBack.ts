@@ -238,7 +238,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Where is the clinic located for lumbar physiotherapy in Manikonda?",
-        answer: "Our clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
+        answer: "Our clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India."
       },
       {
         question: "Do you offer home visits for lumbar pain?",
@@ -561,7 +561,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Where is the clinic located in Manikonda?",
-        answer: "Our clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
+        answer: "Our clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India."
       },
       {
         question: "How can I book a full spine consultation?",

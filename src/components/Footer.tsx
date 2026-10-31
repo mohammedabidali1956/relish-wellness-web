@@ -162,8 +162,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-sm leading-relaxed text-muted-foreground hover:text-relish-700 transition-colors"
                 >
-                  4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony,
-                  Puppalguda, Manikonda, Hyderabad, Telangana 500089
+                  4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India.
                 </a>
               </li>
               <li className="flex gap-3">

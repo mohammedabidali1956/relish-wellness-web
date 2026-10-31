@@ -27,6 +27,7 @@ import {
 import { Helmet } from "react-helmet";
 import { trackAnalyticsEvent } from "@/lib/analytics";
 import { uppercasePainTerm } from "@/lib/seoText";
+import { CLINIC_BUSINESS_SCHEMA } from "@/lib/businessInfo";
 
 const ConditionPage = () => {
   const { slug } = useParams();
@@ -97,9 +98,7 @@ const ConditionPage = () => {
     },
     publisher: {
       "@type": "MedicalBusiness",
-      name: "Dr Hamid’s Physio and Pain Clinic",
-      url: "https://www.drhamidphysio.in",
-      telephone: "+917601026596"
+      ...CLINIC_BUSINESS_SCHEMA
     },
     about: {
       "@type": "MedicalCondition",

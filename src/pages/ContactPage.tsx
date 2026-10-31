@@ -2,9 +2,7 @@ import { Helmet } from "react-helmet";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
-import { GOOGLE_BUSINESS_PROFILE_URL, OFFICIAL_CLINIC_EMAIL } from "@/lib/businessInfo";
-
-const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.7!2d78.390221!3d17.3989817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97c8eb026f65%3A0x5e83196a16a5e123!2sDr.%20Hamid's%20Physio%20%26%20Pain%20Clinic!5e0!3m2!1sen!2sin!4v1727624000000";
+import { CLINIC_BUSINESS_SCHEMA, GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_MAPS_EMBED_URL, OFFICIAL_CLINIC_EMAIL } from "@/lib/businessInfo";
 
 const ContactPage = () => {
   const canonicalUrl = "https://www.drhamidphysio.in/contact";
@@ -29,17 +27,7 @@ const ContactPage = () => {
             "mainEntity": {
               "@type": "MedicalClinic",
               "@id": "https://www.drhamidphysio.in",
-              "name": "Dr Hamid’s Physio and Pain Clinic",
-              "telephone": "+917601026596",
-              "email": OFFICIAL_CLINIC_EMAIL,
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda",
-                "addressLocality": "Manikonda, Hyderabad",
-                "addressRegion": "Telangana",
-                "postalCode": "500089",
-                "addressCountry": "IN"
-              },
+              ...CLINIC_BUSINESS_SCHEMA,
               "openingHours": "Mo-Su 10:00-22:00",
               "hasMap": GOOGLE_BUSINESS_PROFILE_URL
             }
@@ -66,7 +54,7 @@ const ContactPage = () => {
             <div className="flex gap-3">
               <MapPin className="mt-1 h-5 w-5 shrink-0 text-[#8a5d24]" aria-hidden="true" />
               <p className="leading-relaxed text-[#4a5568]">
-                4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089
+                4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India.
               </p>
             </div>
             <div className="flex gap-3">
@@ -92,7 +80,7 @@ const ContactPage = () => {
           </div>
 
           <div className="min-h-[360px]">
-            <ContactMap mapEmbedUrl={mapEmbedUrl} externalMapUrl={GOOGLE_BUSINESS_PROFILE_URL} className="min-h-[360px]" />
+            <ContactMap mapEmbedUrl={GOOGLE_MAPS_EMBED_URL} externalMapUrl={GOOGLE_BUSINESS_PROFILE_URL} className="min-h-[360px]" />
           </div>
         </div>
       </section>

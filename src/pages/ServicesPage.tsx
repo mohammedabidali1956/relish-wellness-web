@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { openWhatsApp } from "@/lib/whatsapp";
 import { trackAnalyticsEvent } from "@/lib/analytics";
+import { CLINIC_BUSINESS_SCHEMA } from "@/lib/businessInfo";
 import {
   ArrowRight,
   Phone,
@@ -65,16 +66,7 @@ const ServicesPage: React.FC = () => {
         inLanguage: "en-IN",
         about: {
           "@type": "MedicalBusiness",
-          name: "Dr Hamid’s Physio and Pain Clinic",
-          telephone: "+917601026596",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda",
-            addressLocality: "Manikonda, Hyderabad",
-            addressRegion: "Telangana",
-            postalCode: "500089",
-            addressCountry: "IN"
-          }
+          ...CLINIC_BUSINESS_SCHEMA
         }
       },
       {

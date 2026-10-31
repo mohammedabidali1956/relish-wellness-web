@@ -17,7 +17,7 @@ import StickyCTA from "@/components/StickyCTA";
 import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
 import { getRecentPosts } from "@/data/blogPosts";
-import { GOOGLE_BUSINESS_PROFILE_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
+import { GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_MAPS_EMBED_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 
 // Full review wording and five-star ratings transcribed from the supplied Google profile screenshots.
 const googleReviews = [
@@ -161,7 +161,7 @@ const ServiceAreasSection = () => (
         </div>
 
         <p className="text-sm text-[#4a5568] leading-relaxed mb-4">
-          The clinic is at <strong>4-3/81, opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda</strong>. Existing nearby areas include Puppalguda, Manikonda, Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda and Seven Tombs.
+          The clinic is at <strong>4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India.</strong> Existing nearby areas include Puppalguda, Manikonda, Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda and Seven Tombs.
         </p>
         <p className="text-sm text-[#4a5568] leading-relaxed mb-6">
           Home-visit enquiries are generally targeted within an approximate 15 km radius of Manikonda. Priority areas include Kokapet, Gandipet, Narsingi, Jubilee Hills, Banjara Hills, Gachibowli, the Financial District, HITEC City, Puppalguda, Lanco Hills, Alkapur Township, Shaikpet and Tolichowki. Availability depends on the exact address; contact the clinic to confirm. This is not a road-distance guarantee.
@@ -740,7 +740,7 @@ const HomePage = () => {
                 Where is the nearest physiotherapy clinic in Manikonda?
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-[#4a5568]">
-                Dr Hamid’s Physio and Pain Clinic is at 4-3/81, opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad 500089. The clinic is open daily from 10 AM to 10 PM.
+                Dr Hamid’s Physio and Pain Clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India. The clinic is open daily from 10 AM to 10 PM.
               </p>
             </details>
 
@@ -813,7 +813,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             <AppointmentForm />
             <ContactMap
-              mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.7!2d78.390221!3d17.3989817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97c8eb026f65%3A0x5e83196a16a5e123!2sDr.%20Hamid's%20Physio%20%26%20Pain%20Clinic!5e0!3m2!1sen!2sin!4v1727624000000"
+              mapEmbedUrl={GOOGLE_MAPS_EMBED_URL}
               externalMapUrl={GOOGLE_BUSINESS_PROFILE_URL}
               className="h-full min-h-[380px]"
             />

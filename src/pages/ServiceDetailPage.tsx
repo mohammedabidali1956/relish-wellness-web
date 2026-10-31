@@ -37,6 +37,7 @@ import {
 import { scrollToAppointmentSection } from "@/lib/navigation";
 import { trackAnalyticsEvent } from "@/lib/analytics";
 import { uppercasePainTerm } from "@/lib/seoText";
+import { CLINIC_BUSINESS_SCHEMA } from "@/lib/businessInfo";
 
 import NotFound from "@/pages/NotFound";
 
@@ -138,23 +139,14 @@ export const ServiceDetailPage: React.FC = () => {
           jobTitle: "Physiotherapist",
           worksFor: {
             "@type": "MedicalClinic",
-            name: "Dr Hamid’s Physio and Pain Clinic"
+            "@id": "https://www.drhamidphysio.in/#clinic",
+            ...CLINIC_BUSINESS_SCHEMA
           }
         },
         publisher: {
           "@type": "MedicalClinic",
-          name: "Dr Hamid’s Physio and Pain Clinic",
-          url: "https://www.drhamidphysio.in",
+          ...CLINIC_BUSINESS_SCHEMA,
           logo: "https://www.drhamidphysio.in/images/logo/logo-main.webp",
-          telephone: "+917601026596",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda",
-            addressLocality: "Manikonda, Hyderabad",
-            addressRegion: "Telangana",
-            postalCode: "500089",
-            addressCountry: "IN"
-          }
         }
       },
       {
@@ -172,22 +164,8 @@ export const ServiceDetailPage: React.FC = () => {
       {
         "@type": "MedicalBusiness",
         "@id": "https://www.drhamidphysio.in/#clinic",
-        name: "Dr Hamid’s Physio and Pain Clinic",
+        ...CLINIC_BUSINESS_SCHEMA,
         image: "https://www.drhamidphysio.in/images/doctor/dr-hamid-hero.webp",
-        telephone: "+917601026596",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda",
-          addressLocality: "Manikonda, Hyderabad",
-          addressRegion: "Telangana",
-          postalCode: "500089",
-          addressCountry: "IN"
-        },
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: "17.4011",
-          longitude: "78.3789"
-        },
         areaServed: service.serviceAreas.map((area) => ({
           "@type": "AdministrativeArea",
           name: area
@@ -277,7 +255,7 @@ export const ServiceDetailPage: React.FC = () => {
               </div>
 
               <p className="text-xs text-[#64748b]">
-                📍 Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda. Contact the clinic to ask about appointment availability.
+                📍 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India. Contact the clinic to ask about appointment availability.
               </p>
             </div>
 
@@ -637,7 +615,7 @@ export const ServiceDetailPage: React.FC = () => {
                 {/* Clinic Location Box */}
                 <div className="p-3.5 rounded-xl bg-[#faf6ed] border border-[#e5dec9] text-xs text-[#4a5568] space-y-1">
                   <p className="font-semibold text-[#081a2e]">Clinic Address:</p>
-                  <p>4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad 500089.</p>
+                  <p>4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India.</p>
                   <p className="pt-1 text-[#8a5d24] font-medium">🕒 Mon – Sun: 10:00 AM – 10:00 PM</p>
                 </div>
 

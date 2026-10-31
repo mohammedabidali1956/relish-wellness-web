@@ -146,7 +146,7 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Where is your clinic located?",
-        answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
+        answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India."
       },
       {
         question: "How do I book an appointment?",
@@ -224,7 +224,7 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Where is Dr Hamid’s Physio and Pain Clinic located in Manikonda?",
-        answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
+        answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India."
       },
       {
         question: "How do I book a vertigo assessment?",
@@ -378,7 +378,7 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Where is Dr Hamid’s Physio and Pain Clinic located?",
-        answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
+        answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India."
       },
       {
         question: "How do I book a consultation?",

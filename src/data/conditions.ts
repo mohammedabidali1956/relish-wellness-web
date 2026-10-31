@@ -132,7 +132,7 @@ export const conditions: Condition[] = [
       },
       {
         question: "Where is Dr Hamid’s Physio and Pain Clinic located?",
-        answer: "The clinic is located at 4-3/81, Opposite HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage."
+        answer: "The clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage."
       }
     ]
   },

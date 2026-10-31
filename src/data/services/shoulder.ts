@@ -222,7 +222,7 @@ export const shoulderServices: ServiceDetail[] = [
       },
       {
         question: "Where is the clinic located?",
-        answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
+        answer: "Our clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India."
       },
       {
         question: "How do I book an appointment?",

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
-import { GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, OFFICIAL_CLINIC_EMAIL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
+import { CLINIC_BUSINESS_INFO, CLINIC_BUSINESS_SCHEMA, GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
 import { uppercasePainTerm } from "@/lib/seoText";
 
 interface StructuredDataProps {
@@ -15,33 +15,16 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "name": "Dr Hamid’s Physio and Pain Clinic",
+    ...CLINIC_BUSINESS_SCHEMA,
     "image": "/images/logo/og-image.png",
-    "url": "https://www.drhamidphysio.in",
     "@id": "https://www.drhamidphysio.in",
     "foundingDate": "2021",
-    "telephone": "+917601026596",
-    "email": OFFICIAL_CLINIC_EMAIL,
     "sameAs": [
       YOUTUBE_CHANNEL_URL,
       INSTAGRAM_PROFILE_URL,
       GOOGLE_BUSINESS_PROFILE_URL,
       PRACTO_PROFILE_URL
     ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park",
-      "addressSubLocality": "Friends Colony, Puppalguda, Manikonda",
-      "addressLocality": "Hyderabad",
-      "addressRegion": "Telangana",
-      "postalCode": "500089",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 17.3989817,
-      "longitude": 78.390221
-    },
     "hasMap": GOOGLE_BUSINESS_PROFILE_URL,
     "openingHoursSpecification": [
       {
@@ -141,8 +124,8 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
         "description": "Approximate target radius for home visits; availability depends on the patient's exact address.",
         "geoMidpoint": {
           "@type": "GeoCoordinates",
-          "latitude": 17.3989817,
-          "longitude": 78.390221
+          "latitude": CLINIC_BUSINESS_INFO.latitude,
+          "longitude": CLINIC_BUSINESS_INFO.longitude
         },
         "geoRadius": "15000"
       }
@@ -181,12 +164,13 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Dr Hamid’s Physio and Pain Clinic",
-    "url": "https://www.drhamidphysio.in",
+    "name": CLINIC_BUSINESS_INFO.name,
+    "url": CLINIC_BUSINESS_INFO.website,
     "logo": "/images/logo/og-image.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+917601026596",
+      "telephone": CLINIC_BUSINESS_INFO.telephone,
+      "email": CLINIC_BUSINESS_INFO.email,
       "contactType": "customer service",
       "areaServed": "IN",
       "availableLanguage": ["en", "hi", "te"]

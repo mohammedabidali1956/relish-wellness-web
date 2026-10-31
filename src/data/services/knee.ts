@@ -382,7 +382,7 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "Where is Dr Hamid’s Physio and Pain Clinic located in Manikonda?",
-        answer: "The clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Puppalguda, Manikonda, Hyderabad."
+        answer: "The clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India."
       },
       {
         question: "How can I book a meniscus consultation?",
