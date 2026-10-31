@@ -11,13 +11,13 @@ const BlogsPage = () => {
   return (
     <div>
       <Helmet>
-        <meta property="og:title" content="Health & Wellness Blog | Dr Hamid’s Physio and Pain Clinic Manikonda" />
+        <meta property="og:title" content="Health & Wellness Blog | Dr Hamid’s Physio and PAIN Clinic Manikonda" />
         <meta property="og:url" content="https://www.drhamidphysio.in/blogs" />
       </Helmet>
       <StructuredData 
         type="blog" 
-        pageTitle="Health & Wellness Blog | Dr Hamid’s Physio and Pain Clinic Manikonda"
-        pageDescription="Health information and physiotherapy articles from Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, covering pain, movement, and rehabilitation."
+        pageTitle="Health & Wellness Blog | Dr Hamid’s Physio and PAIN Clinic Manikonda"
+        pageDescription="Health information and physiotherapy articles from Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad, covering PAIN, movement, and rehabilitation."
       />
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-14 md:py-20">

@@ -10,10 +10,10 @@ const TermsAndConditionsPage = () => {
   return (
     <div id="terms-and-conditions-page" className="min-h-screen bg-[#faf6ed] px-4 py-12 sm:py-16">
       <Helmet>
-        <title>Terms &amp; Conditions | Dr Hamid’s Physio and Pain Clinic</title>
-        <meta name="description" content="website terms for Dr Hamid’s Physio and Pain Clinic, including health information, WhatsApp enquiries, and service availability." />
+        <title>Terms &amp; Conditions | Dr Hamid’s Physio and PAIN Clinic</title>
+        <meta name="description" content="website terms for Dr Hamid’s Physio and PAIN Clinic, including health information, WhatsApp enquiries, and service availability." />
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content="Terms &amp; Conditions | Dr Hamid’s Physio and Pain Clinic" />
+        <meta property="og:title" content="Terms &amp; Conditions | Dr Hamid’s Physio and PAIN Clinic" />
         <meta property="og:description" content="terms for using the clinic website and contacting the clinic, pending confirmation of service and legal details." />
         <meta property="og:url" content={canonicalUrl} />
       </Helmet>

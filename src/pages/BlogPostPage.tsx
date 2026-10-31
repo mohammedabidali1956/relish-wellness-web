@@ -4,6 +4,7 @@ import { getBlogPost, getRecentPosts } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import StructuredData from "@/components/StructuredData";
 import { Helmet } from "react-helmet";
+import { uppercasePainTerm } from "@/lib/seoText";
 
 const toIsoDate = (date?: string): string | undefined => {
   if (!date) return undefined;
@@ -22,13 +23,15 @@ const BlogPostPage = () => {
 
   const isKneeStairsArticle = post.slug === "knee-pain-when-climbing-stairs";
   const canonicalUrl = `https://www.drhamidphysio.in/blogs/${post.slug}`;
+  const pageTitle = uppercasePainTerm(post.title);
+  const pageDescription = uppercasePainTerm(post.excerpt);
   const publishedDate = toIsoDate(post.date);
   const modifiedDate = toIsoDate(post.lastUpdated) ?? publishedDate;
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: post.title,
-    description: post.excerpt,
+    headline: pageTitle,
+    description: pageDescription,
     image: `https://www.drhamidphysio.in${post.imageUrl}`,
     ...(publishedDate ? { datePublished: publishedDate } : {}),
     ...(modifiedDate ? { dateModified: modifiedDate } : {}),
@@ -54,19 +57,19 @@ const BlogPostPage = () => {
     <div>
       <StructuredData 
         type="blog" 
-        pageTitle={`${post.title} | Dr Hamid’s Physio and Pain Clinic`}
-        pageDescription={post.excerpt}
+        pageTitle={`${pageTitle} | Dr Hamid’s Physio and PAIN Clinic`}
+        pageDescription={pageDescription}
       />
       <Helmet>
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:image" content={`https://www.drhamidphysio.in${post.imageUrl}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={`https://www.drhamidphysio.in${post.imageUrl}`} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         {isKneeStairsArticle && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
@@ -89,7 +92,7 @@ const BlogPostPage = () => {
             </div>
             
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5 text-foreground leading-tight">
-              {post.title}
+              {pageTitle}
             </h1>
             
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm sm:text-base text-muted-foreground">

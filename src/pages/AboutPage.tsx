@@ -10,17 +10,17 @@ const AboutPage = () => {
     <div className="min-h-screen">
       <StructuredData 
         type="about" 
-        pageTitle="About Dr Hamid’s Physio and Pain Clinic | Physiotherapist in Manikonda"
-        pageDescription="Meet Dr. Mohammed Hamid Ali, founder and Consultant Physiotherapist at Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad."
+        pageTitle="About Dr Hamid’s Physio and PAIN Clinic | Physiotherapist in Manikonda"
+        pageDescription="Meet Dr. Mohammed Hamid Ali, founder and Consultant Physiotherapist at Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad."
       />
       <Helmet>
-        <meta property="og:title" content="About Dr Hamid’s Physio and Pain Clinic | Manikonda, Hyderabad" />
+        <meta property="og:title" content="About Dr Hamid’s Physio and PAIN Clinic | Manikonda, Hyderabad" />
         <meta property="og:description" content="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Regd. No. 0413, Consultant Physiotherapist and founder of the clinic in Manikonda." />
         <meta property="og:url" content="https://www.drhamidphysio.in/about" />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://www.drhamidphysio.in/images/doctor/dr-mohammed-hamid-ali.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Dr Hamid’s Physio and Pain Clinic | Manikonda" />
+        <meta name="twitter:title" content="About Dr Hamid’s Physio and PAIN Clinic | Manikonda" />
         <meta name="twitter:description" content="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Regd. No. 0413, Consultant Physiotherapist and founder of the clinic in Manikonda." />
         <meta name="twitter:image" content="https://www.drhamidphysio.in/images/doctor/dr-mohammed-hamid-ali.webp" />
       </Helmet>
@@ -29,7 +29,7 @@ const AboutPage = () => {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-6 text-gray-900">
-              About Dr Hamid’s Physio and Pain Clinic
+              About Dr Hamid’s Physio and PAIN Clinic
             </h1>
             
           </div>

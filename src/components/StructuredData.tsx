@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import { GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, OFFICIAL_CLINIC_EMAIL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
+import { uppercasePainTerm } from "@/lib/seoText";
 
 interface StructuredDataProps {
   type?: "homepage" | "service" | "blog" | "about";
@@ -13,7 +14,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
   const canonicalUrl = `https://www.drhamidphysio.in${pathname === "/" ? "/" : pathname}`;
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "Physiotherapy",
+    "@type": "MedicalBusiness",
     "name": "Dr Hamid’s Physio and Pain Clinic",
     "image": "/images/logo/og-image.png",
     "url": "https://www.drhamidphysio.in",
@@ -207,8 +208,8 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
         {JSON.stringify(organizationSchema)}
       </script>
       <link rel="canonical" href={canonicalUrl} />
-      {pageTitle && <title>{pageTitle}</title>}
-      {pageDescription && <meta name="description" content={pageDescription} />}
+      {pageTitle && <title>{uppercasePainTerm(pageTitle)}</title>}
+      {pageDescription && <meta name="description" content={uppercasePainTerm(pageDescription)} />}
     </Helmet>
   );
 };

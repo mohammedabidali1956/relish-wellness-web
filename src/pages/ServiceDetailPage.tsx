@@ -36,6 +36,7 @@ import {
 } from "@/components/ui/accordion";
 import { scrollToAppointmentSection } from "@/lib/navigation";
 import { trackAnalyticsEvent } from "@/lib/analytics";
+import { uppercasePainTerm } from "@/lib/seoText";
 
 import NotFound from "@/pages/NotFound";
 
@@ -60,6 +61,9 @@ export const ServiceDetailPage: React.FC = () => {
   };
 
   const canonicalUrl = `https://www.drhamidphysio.in/services/${service.slug}`;
+  const pageTitle = uppercasePainTerm(service.metaTitle);
+  const pageDescription = uppercasePainTerm(service.metaDescription);
+  const pageHeading = uppercasePainTerm(service.h1);
 
   // Find 3 closely related services in same or complementary category
   const relatedServices = (() => {
@@ -114,9 +118,9 @@ export const ServiceDetailPage: React.FC = () => {
         "@type": "MedicalWebPage",
         "@id": `${canonicalUrl}#webpage`,
         url: canonicalUrl,
-        name: service.metaTitle,
-        description: service.metaDescription,
-        headline: service.h1,
+        name: pageTitle,
+        description: pageDescription,
+        headline: pageHeading,
         inLanguage: "en-IN",
         about: {
           "@type": "MedicalCondition",
@@ -166,7 +170,7 @@ export const ServiceDetailPage: React.FC = () => {
         }))
       },
       {
-        "@type": "Physiotherapy",
+        "@type": "MedicalBusiness",
         "@id": "https://www.drhamidphysio.in/#clinic",
         name: "Dr Hamid’s Physio and Pain Clinic",
         image: "https://www.drhamidphysio.in/images/doctor/dr-hamid-hero.webp",
@@ -203,18 +207,18 @@ export const ServiceDetailPage: React.FC = () => {
   return (
     <div className="bg-[#faf6ed] min-h-screen">
       <Helmet>
-        <title>{service.metaTitle}</title>
-        <meta name="description" content={service.metaDescription} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content={service.metaTitle} />
-        <meta property="og:description" content={service.metaDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={`https://www.drhamidphysio.in${service.imageSrc}`} />
         <link rel="preload" as="image" href={service.imageSrc} fetchPriority="high" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={service.metaTitle} />
-        <meta name="twitter:description" content={service.metaDescription} />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={`https://www.drhamidphysio.in${service.imageSrc}`} />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
@@ -246,7 +250,7 @@ export const ServiceDetailPage: React.FC = () => {
               </div>
 
               <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] tracking-tight leading-[1.15]">
-                {service.h1}
+                {pageHeading}
               </h1>
 
               <p className="text-base sm:text-lg text-[#334155] leading-relaxed">

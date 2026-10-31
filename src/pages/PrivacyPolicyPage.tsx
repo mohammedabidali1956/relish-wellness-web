@@ -10,10 +10,10 @@ const PrivacyPolicyPage = () => {
   return (
     <div id="privacy-policy-page" className="min-h-screen bg-[#faf6ed] px-4 py-12 sm:py-16">
       <Helmet>
-        <title>Privacy Policy | Dr Hamid’s Physio and Pain Clinic</title>
-        <meta name="description" content="privacy notice for Dr Hamid’s Physio and Pain Clinic, covering website enquiries, WhatsApp links, maps, fonts, and third-party services." />
+        <title>Privacy Policy | Dr Hamid’s Physio and PAIN Clinic</title>
+        <meta name="description" content="privacy notice for Dr Hamid’s Physio and PAIN Clinic, covering website enquiries, WhatsApp links, maps, fonts, and third-party services." />
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content="Privacy Policy | Dr Hamid’s Physio and Pain Clinic" />
+        <meta property="og:title" content="Privacy Policy | Dr Hamid’s Physio and PAIN Clinic" />
         <meta property="og:description" content="privacy notice for the clinic website and its contact options, pending confirmation of some operational details." />
         <meta property="og:url" content={canonicalUrl} />
       </Helmet>

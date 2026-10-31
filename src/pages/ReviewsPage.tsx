@@ -9,10 +9,10 @@ const ReviewsPage = () => {
   return (
     <section id="clinic-reviews" className="min-h-screen bg-[#faf6ed] px-4 py-14 md:py-20">
       <Helmet>
-        <title>Clinic Reviews | Dr Hamid’s Physio and Pain Clinic</title>
-        <meta name="description" content="Open the clinic’s Google profile to view patient reviews for Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad." />
+        <title>Clinic Reviews | Dr Hamid’s Physio and PAIN Clinic</title>
+        <meta name="description" content="Open the clinic’s Google profile to view patient reviews for Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad." />
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content="Clinic Reviews | Dr Hamid’s Physio and Pain Clinic" />
+        <meta property="og:title" content="Clinic Reviews | Dr Hamid’s Physio and PAIN Clinic" />
         <meta property="og:description" content="View patient reviews on the clinic’s Google profile." />
         <meta property="og:url" content={canonicalUrl} />
       </Helmet>

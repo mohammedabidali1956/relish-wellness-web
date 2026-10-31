@@ -64,7 +64,7 @@ const ServicesPage: React.FC = () => {
           "Physiotherapy and rehabilitation services in Manikonda, Hyderabad, including care for spine, neck, knee, shoulder, neurological, sports, and post-surgery needs.",
         inLanguage: "en-IN",
         about: {
-          "@type": "Physiotherapy",
+          "@type": "MedicalBusiness",
           name: "Dr Hamid’s Physio and Pain Clinic",
           telephone: "+917601026596",
           address: {
@@ -95,19 +95,19 @@ const ServicesPage: React.FC = () => {
         <title>Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder &amp; Home Visits</title>
         <meta
           name="description"
-          content="Explore physiotherapy for back, neck, knee and shoulder pain, sports injuries and recovery after surgery in Manikonda. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage."
+          content="Explore physiotherapy for back, neck, knee and shoulder PAIN, sports injuries and recovery after surgery in Manikonda. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage."
         />
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content="Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder & Home Visits" />
         <meta
           property="og:description"
-          content="Browse physiotherapy programs for back, neck, knee and shoulder pain, sports injuries and post-surgery recovery in Manikonda, Hyderabad."
+          content="Browse physiotherapy programs for back, neck, knee and shoulder PAIN, sports injuries and post-surgery recovery in Manikonda, Hyderabad."
         />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Physiotherapy Services in Manikonda | Dr Hamid’s Physio and Pain Clinic" />
-        <meta name="twitter:description" content="Physiotherapy programs for back, neck, knee and shoulder pain, sports injuries and post-surgery recovery in Manikonda. Home visits generally target locations within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage." />
+        <meta name="twitter:title" content="Physiotherapy Services in Manikonda | Dr Hamid’s Physio and PAIN Clinic" />
+        <meta name="twitter:description" content="Physiotherapy programs for back, neck, knee and shoulder PAIN, sports injuries and post-surgery recovery in Manikonda. Home visits generally target locations within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage." />
         <meta name="twitter:image" content="https://www.drhamidphysio.in/images/logo/og-image.png" />
         <script type="application/ld+json">{JSON.stringify(servicesStructuredData)}</script>
       </Helmet>
@@ -122,7 +122,7 @@ const ServicesPage: React.FC = () => {
             </div>
 
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] tracking-tight leading-[1.18]">
-              Physiotherapy Services in Manikonda | Pain Relief &amp; Rehabilitation
+              Physiotherapy Services in Manikonda | PAIN Relief &amp; Rehabilitation
             </h1>
 
             <p className="text-base sm:text-lg text-[#4a5568] leading-relaxed">

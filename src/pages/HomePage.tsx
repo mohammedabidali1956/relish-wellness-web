@@ -303,9 +303,9 @@ const HomePage = () => {
   return (
     <div className="pb-16 md:pb-0 bg-[#faf6ed] text-[#1a202c]">
       <Helmet>
-        <title>Physio in Manikonda | Dr Hamid’s Physio and Pain Clinic</title>
-        <meta name="description" content="Physiotherapy for back, neck, knee pain and more in Manikonda, Hyderabad. Clinic and home visits; open daily 10 AM to 10 PM. Rated 5.0 on Google from 100+ patient reviews." />
-        <meta property="og:title" content="Physio in Manikonda | Dr Hamid’s Physio and Pain Clinic" />
+        <title>Physio in Manikonda | Dr Hamid’s Physio and PAIN Clinic</title>
+        <meta name="description" content="Physiotherapy for back, neck, knee PAIN and more in Manikonda, Hyderabad. Clinic and home visits; open daily 10 AM to 10 PM. Rated 5.0 on Google from 100+ patient reviews." />
+        <meta property="og:title" content="Physio in Manikonda | Dr Hamid’s Physio and PAIN Clinic" />
         <meta property="og:url" content="https://www.drhamidphysio.in/" />
         <link rel="preload" as="image" href="/images/doctor/dr-hamid-transparent.webp" fetchPriority="high" />
       </Helmet>

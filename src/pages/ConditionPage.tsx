@@ -26,6 +26,7 @@ import {
 } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
 import { trackAnalyticsEvent } from "@/lib/analytics";
+import { uppercasePainTerm } from "@/lib/seoText";
 
 const ConditionPage = () => {
   const { slug } = useParams();
@@ -65,6 +66,9 @@ const ConditionPage = () => {
   };
 
   const canonicalUrl = `https://www.drhamidphysio.in/conditions/${condition.slug}`;
+  const pageTitle = uppercasePainTerm(`${condition.title} in Manikonda | Dr Hamid’s Physio and Pain Clinic`);
+  const pageDescription = uppercasePainTerm(`${condition.shortDescription} Physiotherapy information for Puppalguda and Manikonda, Hyderabad. Contact the clinic to ask about an assessment.`);
+  const pageHeading = uppercasePainTerm(condition.title);
 
   // Find relevant blogs for internal linking
   const relatedBlogs = blogPosts.filter((post) => {
@@ -82,8 +86,8 @@ const ConditionPage = () => {
   const conditionSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    headline: `${condition.title} in Manikonda | Dr. Mohammed Hamid Ali`,
-    description: condition.shortDescription,
+    headline: pageTitle,
+    description: uppercasePainTerm(condition.shortDescription),
     url: canonicalUrl,
     mainEntityOfPage: canonicalUrl,
     author: {
@@ -92,14 +96,14 @@ const ConditionPage = () => {
       jobTitle: "Physiotherapist"
     },
     publisher: {
-      "@type": "Physiotherapy",
+      "@type": "MedicalBusiness",
       name: "Dr Hamid’s Physio and Pain Clinic",
       url: "https://www.drhamidphysio.in",
       telephone: "+917601026596"
     },
     about: {
       "@type": "MedicalCondition",
-      name: condition.title
+        name: pageHeading
     }
   };
 
@@ -120,14 +124,14 @@ const ConditionPage = () => {
     <div className="min-h-screen pb-20 md:pb-0 bg-[#faf6ed]">
       <StructuredData
         type="service"
-        pageTitle={`${condition.title} in Manikonda | Dr Hamid’s Physio and Pain Clinic`}
-        pageDescription={`${condition.shortDescription} Physiotherapy information for Puppalguda and Manikonda, Hyderabad. Contact the clinic to ask about an assessment.`}
+        pageTitle={pageTitle}
+        pageDescription={pageDescription}
       />
 
       <Helmet>
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content={`${condition.title} in Manikonda | Dr Hamid’s Physio and Pain Clinic`} />
-        <meta property="og:description" content={condition.shortDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={uppercasePainTerm(condition.shortDescription)} />
         <meta property="og:url" content={canonicalUrl} />
         <script type="application/ld+json">{JSON.stringify(conditionSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -152,7 +156,7 @@ const ConditionPage = () => {
               </div>
 
               <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] leading-tight">
-                {condition.title}{" "}
+                {pageHeading}{" "}
                 <span className="text-[#8a5d24] block sm:inline">in Manikonda</span>
               </h1>
 
