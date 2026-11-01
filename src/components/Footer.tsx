@@ -45,7 +45,7 @@ const socialLinks = [
   {
     label: "Facebook",
     subtext: "Official Facebook Page",
-    handle: "Dr. Hamid's Physio Clinic",
+    handle: "Dr. Hamid's Physio and Pain Clinic",
     href: FACEBOOK_PROFILE_URL,
     icon: Facebook,
     hoverBg: "hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2]",
