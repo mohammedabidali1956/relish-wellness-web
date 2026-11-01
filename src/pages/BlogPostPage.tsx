@@ -1,6 +1,6 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Calendar, Clock, User, ArrowLeft, ArrowRight, ShieldAlert } from "lucide-react";
-import { getBlogPost, getRecentPosts } from "@/data/blogPosts";
+import { getBlogPost, getRecentPosts, readBlogPostContent } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import StructuredData from "@/components/StructuredData";
 import { Helmet } from "react-helmet";
@@ -21,6 +21,7 @@ const BlogPostPage = () => {
     return <Navigate to="/blogs" replace />;
   }
 
+  const postContent = readBlogPostContent(post);
   const isKneeStairsArticle = post.slug === "knee-pain-when-climbing-stairs";
   const canonicalUrl = `https://www.drhamidphysio.in/blogs/${post.slug}`;
   const pageTitle = uppercasePainTerm(post.title);
@@ -166,7 +167,7 @@ const BlogPostPage = () => {
             )}
             <article 
               className="blog-article prose max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-relish-700"
-              dangerouslySetInnerHTML={{ __html: post.content }}
+              dangerouslySetInnerHTML={{ __html: postContent }}
             />
           </div>
         </div>

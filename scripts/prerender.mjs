@@ -220,7 +220,7 @@ try {
   const indexablePages = new Map();
 
   for (const route of paths) {
-    const { appHtml, head } = renderRoute(route);
+    const { appHtml, head } = await renderRoute(route);
     let html = template.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
     const hasHelmetTitle = /<title[^>]*>\s*[^<\s][\s\S]*?<\/title>/i.test(head);
     const hasHelmetDescription = /<meta\b(?=[^>]*\bname="description")/i.test(head);

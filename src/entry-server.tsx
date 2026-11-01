@@ -3,8 +3,10 @@ import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import { Helmet } from "react-helmet";
 import { AppContent } from "./App";
+import { preloadRoute } from "./lib/routeModules";
 
-export function renderRoute(url: string) {
+export async function renderRoute(url: string) {
+  await preloadRoute(url);
   const appHtml = renderToString(
     <StaticRouter location={url}>
       <AppContent />

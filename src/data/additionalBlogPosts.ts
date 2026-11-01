@@ -1,15 +1,4 @@
 import type { BlogPost } from "./blogPosts";
-import should_i_visit_a_gp_or_physio_for_my_painContent from "./blogContent/should-i-visit-a-gp-or-physio-for-my-pain.html?raw";
-import should_i_visit_an_orthopaedician_or_physiotherapist_for_my_painContent from "./blogContent/should-i-visit-an-orthopaedician-or-physiotherapist-for-my-pain.html?raw";
-import chiropractic_care_or_physiotherapy_for_spine_problemsContent from "./blogContent/chiropractic-care-or-physiotherapy-for-spine-problems.html?raw";
-import orthopaedician_or_physiotherapist_for_lower_back_painContent from "./blogContent/orthopaedician-or-physiotherapist-for-lower-back-pain.html?raw";
-import neck_pain_orthopaedician_or_physiotherapistContent from "./blogContent/neck-pain-orthopaedician-or-physiotherapist.html?raw";
-import neck_pain_after_waking_upContent from "./blogContent/neck-pain-after-waking-up.html?raw";
-import why_does_my_lower_back_hurt_10_common_causesContent from "./blogContent/why-does-my-lower-back-hurt-10-common-causes.html?raw";
-import sciatica_pain_causes_symptoms_treatmentContent from "./blogContent/sciatica-pain-causes-symptoms-treatment.html?raw";
-import knee_pain_without_injury_physiotherapy_near_me_manikondaContent from "./blogContent/knee-pain-without-injury-physiotherapy-near-me-manikonda.html?raw";
-import frozen_shoulder_physiotherapy_near_me_manikondaContent from "./blogContent/frozen-shoulder-physiotherapy-near-me-manikonda.html?raw";
-import how_many_physiotherapy_sessions_needed_manikondaContent from "./blogContent/how-many-physiotherapy-sessions-needed-manikonda.html?raw";
 
 const clinicCta = `
 <div class="article-cta" aria-label="Contact Dr Hamid’s Physio and Pain Clinic">
@@ -33,17 +22,53 @@ const withClinicCtas = (
   .replace("<!-- BLOG_CTA_OPENING -->", openingCta)
   .replace("<!-- BLOG_CTA_CLOSING -->", closingCta);
 
+const additionalArticleLoaders: Record<string, () => Promise<string>> = {
+  "should-i-visit-a-gp-or-physio-for-my-pain": () =>
+    import("./blogContent/should-i-visit-a-gp-or-physio-for-my-pain.html?raw").then(({ default: content }) =>
+      withClinicCtas(
+        content,
+        sourceArticleCta("https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20book%20a%20physiotherapy%20consultation."),
+        sourceArticleCta("https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20physiotherapy%20consultation."),
+      ),
+    ),
+  "should-i-visit-an-orthopaedician-or-physiotherapist-for-my-pain": () =>
+    import("./blogContent/should-i-visit-an-orthopaedician-or-physiotherapist-for-my-pain.html?raw").then(({ default: content }) =>
+      withClinicCtas(
+        content,
+        sourceArticleCta("https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20physiotherapy%20consultation."),
+        sourceArticleCta("https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20physiotherapy%20consultation."),
+      ),
+    ),
+  "chiropractic-care-or-physiotherapy-for-spine-problems": () =>
+    import("./blogContent/chiropractic-care-or-physiotherapy-for-spine-problems.html?raw").then(({ default: content }) => withClinicCtas(content)),
+  "orthopaedician-or-physiotherapist-for-lower-back-pain": () =>
+    import("./blogContent/orthopaedician-or-physiotherapist-for-lower-back-pain.html?raw").then(({ default: content }) => withClinicCtas(content)),
+  "neck-pain-orthopaedician-or-physiotherapist": () =>
+    import("./blogContent/neck-pain-orthopaedician-or-physiotherapist.html?raw").then(({ default: content }) => withClinicCtas(content)),
+  "neck-pain-after-waking-up": () =>
+    import("./blogContent/neck-pain-after-waking-up.html?raw").then(({ default: content }) => withClinicCtas(content)),
+  "why-does-my-lower-back-hurt-10-common-causes": () =>
+    import("./blogContent/why-does-my-lower-back-hurt-10-common-causes.html?raw").then(({ default: content }) => withClinicCtas(content)),
+  "knee-pain-without-injury-physiotherapy-near-me-manikonda": () =>
+    import("./blogContent/knee-pain-without-injury-physiotherapy-near-me-manikonda.html?raw").then(({ default: content }) => withClinicCtas(content)),
+  "frozen-shoulder-physiotherapy-near-me-manikonda": () =>
+    import("./blogContent/frozen-shoulder-physiotherapy-near-me-manikonda.html?raw").then(({ default: content }) => withClinicCtas(content)),
+  "how-many-physiotherapy-sessions-needed-manikonda": () =>
+    import("./blogContent/how-many-physiotherapy-sessions-needed-manikonda.html?raw").then(({ default: content }) => withClinicCtas(content)),
+  "sciatica-pain-causes-symptoms-treatment": () =>
+    import("./blogContent/sciatica-pain-causes-symptoms-treatment.html?raw").then(({ default: content }) => withClinicCtas(content)),
+};
+
+export const loadAdditionalBlogPostContent = (slug: string): Promise<string> =>
+  additionalArticleLoaders[slug]?.() ?? Promise.resolve("");
+
 export const additionalBlogPosts: BlogPost[] = [
   {
     id: "17",
     title: "Should I Visit a General Physician or Physiotherapist for My Pain?",
     slug: "should-i-visit-a-gp-or-physio-for-my-pain",
     excerpt: "Having difficulty deciding? For suitable muscle, joint, neck or back pain, you can often start with a physiotherapist. Learn when to see a general physician, physiotherapist or specialist in Manikonda, Hyderabad.",
-    content: withClinicCtas(
-      should_i_visit_a_gp_or_physio_for_my_painContent,
-      sourceArticleCta("https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20book%20a%20physiotherapy%20consultation."),
-      sourceArticleCta("https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20physiotherapy%20consultation."),
-    ),
+    loadContent: () => loadAdditionalBlogPostContent("should-i-visit-a-gp-or-physio-for-my-pain"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Patient Guidance",
     imageUrl: "/images/blog/physiotherapy-sessions/physiotherapy-sessions-consultation-manikonda.webp",
@@ -55,11 +80,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "Should I Visit an Orthopaedician or Physiotherapist for My Pain?",
     slug: "should-i-visit-an-orthopaedician-or-physiotherapist-for-my-pain",
     excerpt: "Need help? For suitable movement-related pain, you can often start with a physiotherapist. Learn when an orthopaedic specialist may be the right first step in Manikonda, Hyderabad.",
-    content: withClinicCtas(
-      should_i_visit_an_orthopaedician_or_physiotherapist_for_my_painContent,
-      sourceArticleCta("https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20physiotherapy%20consultation."),
-      sourceArticleCta("https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20physiotherapy%20consultation."),
-    ),
+    loadContent: () => loadAdditionalBlogPostContent("should-i-visit-an-orthopaedician-or-physiotherapist-for-my-pain"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Patient Guidance",
     imageUrl: "/images/blog/physiotherapy-sessions/personalized-physiotherapy-treatment-plan.webp",
@@ -71,7 +92,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "Chiropractic Care or Physiotherapy for Spine Problems: What Should You Choose?",
     slug: "chiropractic-care-or-physiotherapy-for-spine-problems",
     excerpt: "Understand how chiropractic care and physiotherapy differ, when physiotherapy may help spine problems, and when specialist assessment is important in Manikonda, Hyderabad.",
-    content: withClinicCtas(chiropractic_care_or_physiotherapy_for_spine_problemsContent),
+    loadContent: () => loadAdditionalBlogPostContent("chiropractic-care-or-physiotherapy-for-spine-problems"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Spine Health",
     imageUrl: "/images/neck-pain-after-waking/cervical-spine-neck-anatomy.webp",
@@ -83,7 +104,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "Should I Consult an Orthopaedician or Physiotherapist for Lower Back Pain?",
     slug: "orthopaedician-or-physiotherapist-for-lower-back-pain",
     excerpt: "Learn when physiotherapy can help lower back pain, when specialist assessment may be needed, and how to seek care in Manikonda, Hyderabad.",
-    content: withClinicCtas(orthopaedician_or_physiotherapist_for_lower_back_painContent),
+    loadContent: () => loadAdditionalBlogPostContent("orthopaedician-or-physiotherapist-for-lower-back-pain"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Back Pain",
     imageUrl: "/images/low-back-pain/01-lumbar-spine-anatomy.webp",
@@ -93,7 +114,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "Neck Pain: Should I Consult an Orthopaedician or Physiotherapist?",
     slug: "neck-pain-orthopaedician-or-physiotherapist",
     excerpt: "Learn how physiotherapy can help suitable neck pain cases, when specialist assessment may be needed, and how to enquire at a clinic in Manikonda, Hyderabad.",
-    content: withClinicCtas(neck_pain_orthopaedician_or_physiotherapistContent),
+    loadContent: () => loadAdditionalBlogPostContent("neck-pain-orthopaedician-or-physiotherapist"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Neck Pain",
     imageUrl: "/images/neck-pain-after-waking/cervical-spine-neck-anatomy.webp",
@@ -105,7 +126,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "Why Does My Neck Hurt After Waking Up? Causes & What to Do",
     slug: "neck-pain-after-waking-up",
     excerpt: "Waking up with neck pain or stiffness? Learn common causes, pillow and sleeping-position tips, safe relief measures, warning signs, and when to seek physiotherapy in Manikonda, Hyderabad.",
-    content: withClinicCtas(neck_pain_after_waking_upContent),
+    loadContent: () => loadAdditionalBlogPostContent("neck-pain-after-waking-up"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Neck Pain",
     imageUrl: "/images/neck-pain-after-waking/cervical-spine-neck-anatomy.webp",
@@ -118,7 +139,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "Why Does My Lower Back Hurt? 10 Common Causes of Low Back Pain",
     slug: "why-does-my-lower-back-hurt-10-common-causes",
     excerpt: "Learn 10 possible causes of lower back pain, warning signs that need medical attention, and how assessment and physiotherapy may help in Manikonda, Hyderabad.",
-    content: withClinicCtas(why_does_my_lower_back_hurt_10_common_causesContent),
+    loadContent: () => loadAdditionalBlogPostContent("why-does-my-lower-back-hurt-10-common-causes"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Back Pain",
     imageUrl: "/images/low-back-pain/01-lumbar-spine-anatomy.webp",
@@ -129,7 +150,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "Knee Pain Without Injury: 8 Possible Causes",
     slug: "knee-pain-without-injury-physiotherapy-near-me-manikonda",
     excerpt: "Why does your knee hurt without an injury? Learn 8 possible causes, warning signs, self-care tips and how physiotherapy in Manikonda, Hyderabad may help.",
-    content: withClinicCtas(knee_pain_without_injury_physiotherapy_near_me_manikondaContent),
+    loadContent: () => loadAdditionalBlogPostContent("knee-pain-without-injury-physiotherapy-near-me-manikonda"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Knee Pain",
     imageUrl: "/images/blog/knee-pain-without-injury-hero.webp",
@@ -142,7 +163,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "Frozen Shoulder: 7 Signs You Should Not Ignore",
     slug: "frozen-shoulder-physiotherapy-near-me-manikonda",
     excerpt: "Learn 7 signs of frozen shoulder, common risk factors, diagnosis and treatment options. Explore frozen shoulder physiotherapy near Manikonda, Hyderabad.",
-    content: withClinicCtas(frozen_shoulder_physiotherapy_near_me_manikondaContent),
+    loadContent: () => loadAdditionalBlogPostContent("frozen-shoulder-physiotherapy-near-me-manikonda"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Shoulder Pain",
     imageUrl: "/images/blog/frozen-shoulder-physiotherapy-near-me-manikonda/frozen-shoulder-joint-anatomy-960.webp",
@@ -155,7 +176,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "How Many Physiotherapy Sessions Do You Actually Need?",
     slug: "how-many-physiotherapy-sessions-needed-manikonda",
     excerpt: "How many physiotherapy sessions do you actually need? Learn what affects recovery time, how progress is assessed, and when to review your plan in Manikonda, Hyderabad.",
-    content: withClinicCtas(how_many_physiotherapy_sessions_needed_manikondaContent),
+    loadContent: () => loadAdditionalBlogPostContent("how-many-physiotherapy-sessions-needed-manikonda"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Physiotherapy",
     imageUrl: "/images/blog/physiotherapy-sessions/physiotherapy-sessions-consultation-manikonda.webp",
@@ -168,7 +189,7 @@ export const additionalBlogPosts: BlogPost[] = [
     title: "Sciatica Pain: Causes, Symptoms & Physiotherapy Treatment",
     slug: "sciatica-pain-causes-symptoms-treatment",
     excerpt: "Learn why sciatica causes pain from the lower back to the leg, common symptoms, warning signs and how physiotherapy may help in Manikonda, Hyderabad.",
-    content: withClinicCtas(sciatica_pain_causes_symptoms_treatmentContent),
+    loadContent: () => loadAdditionalBlogPostContent("sciatica-pain-causes-symptoms-treatment"),
     author: "Dr. Mohammed Hamid Ali",
     category: "Back Pain & Sciatica",
     imageUrl: "/images/blog/sciatica-pain-causes-symptoms-treatment/09-when-mri-may-be-considered.webp",

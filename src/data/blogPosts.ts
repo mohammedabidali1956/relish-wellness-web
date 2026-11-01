@@ -11,7 +11,8 @@ export interface BlogPost {
   title: string;
   slug: string;
   excerpt: string;
-  content: string;
+  content?: string;
+  loadContent?: () => Promise<string>;
   author: string;
   date?: string;
   category: string;
@@ -640,6 +641,43 @@ export const blogPosts: BlogPost[] = [
 
 export const getBlogPost = (slug: string): BlogPost | undefined => {
   return blogPosts.find(post => post.slug === slug);
+};
+
+const loadedBlogContent = new Map<string, string>();
+const pendingBlogContent = new Map<string, Promise<string>>();
+
+export const loadBlogPostContent = (post: BlogPost): Promise<string> => {
+  if (post.content !== undefined) return Promise.resolve(post.content);
+
+  const loadedContent = loadedBlogContent.get(post.slug);
+  if (loadedContent !== undefined) return Promise.resolve(loadedContent);
+
+  const pendingContent = pendingBlogContent.get(post.slug);
+  if (pendingContent) return pendingContent;
+  if (!post.loadContent) return Promise.resolve("");
+
+  const contentPromise = post.loadContent().then((content) => {
+    loadedBlogContent.set(post.slug, content);
+    return content;
+  }).finally(() => {
+    pendingBlogContent.delete(post.slug);
+  });
+  pendingBlogContent.set(post.slug, contentPromise);
+  return contentPromise;
+};
+
+export const readBlogPostContent = (post: BlogPost): string => {
+  if (post.content !== undefined) return post.content;
+
+  const loadedContent = loadedBlogContent.get(post.slug);
+  if (loadedContent !== undefined) return loadedContent;
+
+  throw loadBlogPostContent(post);
+};
+
+export const preloadBlogPostContent = (slug: string): Promise<string> => {
+  const post = getBlogPost(slug);
+  return post ? loadBlogPostContent(post) : Promise.resolve("");
 };
 
 export const getRecentPosts = (limit: number = 3): BlogPost[] => {
