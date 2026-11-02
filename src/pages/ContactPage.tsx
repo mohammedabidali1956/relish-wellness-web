@@ -2,17 +2,18 @@ import { Helmet } from "react-helmet";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
-import { CLINIC_BUSINESS_SCHEMA, GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_MAPS_EMBED_URL, OFFICIAL_CLINIC_EMAIL } from "@/lib/businessInfo";
+import StructuredData from "@/components/StructuredData";
+import { CLINIC_BUSINESS_SCHEMA_ID, GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_MAPS_EMBED_URL, OFFICIAL_CLINIC_EMAIL } from "@/lib/businessInfo";
 
 const ContactPage = () => {
   const canonicalUrl = "https://www.drhamidphysio.in/contact";
 
   return (
     <div className="min-h-screen bg-[#faf6ed]">
+      <StructuredData type="about" />
       <Helmet>
         <title>Contact a Physiotherapist in Manikonda | Dr Hamid’s Physio and PAIN Clinic</title>
         <meta name="description" content="Contact Dr Hamid’s Physio and PAIN Clinic in Puppalguda, Manikonda, Hyderabad. Call, WhatsApp, get directions or request an appointment." />
-        <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content="Contact Dr Hamid’s Physio and PAIN Clinic in Manikonda" />
         <meta property="og:description" content="Clinic address, hours, directions and appointment contact options for Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad." />
         <meta property="og:url" content={canonicalUrl} />
@@ -25,11 +26,7 @@ const ContactPage = () => {
             "name": "Contact Dr Hamid’s Physio and Pain Clinic",
             "url": canonicalUrl,
             "mainEntity": {
-              "@type": "MedicalClinic",
-              "@id": "https://www.drhamidphysio.in",
-              ...CLINIC_BUSINESS_SCHEMA,
-              "openingHours": "Mo-Su 10:00-22:00",
-              "hasMap": GOOGLE_BUSINESS_PROFILE_URL
+              "@id": CLINIC_BUSINESS_SCHEMA_ID
             }
           })}
         </script>

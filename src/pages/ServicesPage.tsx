@@ -10,7 +10,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { openWhatsApp } from "@/lib/whatsapp";
 import { trackAnalyticsEvent } from "@/lib/analytics";
-import { CLINIC_BUSINESS_SCHEMA } from "@/lib/businessInfo";
+import { CLINIC_BUSINESS_SCHEMA_ID, CLINIC_LOGO_URL } from "@/lib/businessInfo";
+import StructuredData from "@/components/StructuredData";
 import {
   ArrowRight,
   Phone,
@@ -64,10 +65,7 @@ const ServicesPage: React.FC = () => {
         description:
           "Physiotherapy and rehabilitation services in Manikonda, Hyderabad, including care for spine, neck, knee, shoulder, neurological, sports, and post-surgery needs.",
         inLanguage: "en-IN",
-        about: {
-          "@type": "MedicalBusiness",
-          ...CLINIC_BUSINESS_SCHEMA
-        }
+        about: { "@id": CLINIC_BUSINESS_SCHEMA_ID }
       },
       {
         "@type": "ItemList",
@@ -83,6 +81,7 @@ const ServicesPage: React.FC = () => {
 
   return (
     <div className="bg-[#faf6ed] min-h-screen">
+      <StructuredData type="service" includeCanonical={false} />
       <Helmet>
         <title>Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder &amp; Home Visits</title>
         <meta
@@ -100,7 +99,7 @@ const ServicesPage: React.FC = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Physiotherapy Services in Manikonda | Dr Hamid’s Physio and PAIN Clinic" />
         <meta name="twitter:description" content="Physiotherapy programs for back, neck, knee and shoulder PAIN, sports injuries and post-surgery recovery in Manikonda. Home visits generally target locations within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage." />
-        <meta name="twitter:image" content="https://www.drhamidphysio.in/images/logo/og-image.png" />
+        <meta name="twitter:image" content={CLINIC_LOGO_URL} />
         <script type="application/ld+json">{JSON.stringify(servicesStructuredData)}</script>
       </Helmet>
 

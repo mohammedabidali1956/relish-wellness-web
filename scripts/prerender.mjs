@@ -191,6 +191,7 @@ const vite = await createServer({
 
 try {
   const { renderRoute } = await vite.ssrLoadModule("/src/entry-server.tsx");
+  const { googleReviews } = await vite.ssrLoadModule("/src/pages/HomePage.tsx");
   const { allServices } = await vite.ssrLoadModule("/src/data/services/index.ts");
   const { blogPosts } = await vite.ssrLoadModule("/src/data/blogPosts.ts");
   const { conditions } = await vite.ssrLoadModule("/src/data/conditions.ts");
@@ -283,7 +284,40 @@ try {
   const markdownPages = [...indexablePages.values()]
     .filter(({ canonicalUrl }) => !clinicReviewDraftUrls.has(canonicalUrl))
     .sort((left, right) => left.canonicalUrl.localeCompare(right.canonicalUrl))
-    .map((page) => ({ ...page, markdown: datePricing(createMarkdownPage(page)) }));
+    .map((page) => {
+      let body = page.body;
+      if (page.route === "/") {
+        const reviewSectionStart = body.indexOf("Google reviews");
+        const reviewSectionEnd = body.indexOf("Educational Articles", reviewSectionStart);
+        if (reviewSectionStart < 0 || reviewSectionEnd < 0) {
+          throw new Error("Could not locate the homepage review section while generating Markdown.");
+        }
+
+        const completeReviews = [
+          "Google reviews",
+          "",
+          "## Rated 5.0 on Google: what patients say",
+          "",
+          "Selected excerpts from reviews posted on the clinic’s Google Business Profile.",
+          "",
+          `[Read more reviews on Google](${GOOGLE_BUSINESS_PROFILE_URL})`,
+          "",
+          ...googleReviews.flatMap(({ reviewer, text }) => [
+            "Google review",
+            "",
+            `“${text}”`,
+            "",
+            reviewer,
+            "",
+          ]),
+        ].join("\n");
+
+        body = `${body.slice(0, reviewSectionStart)}${completeReviews}\n${body.slice(reviewSectionEnd)}`;
+      }
+
+      const markdownPage = { ...page, body };
+      return { ...markdownPage, markdown: datePricing(createMarkdownPage(markdownPage)) };
+    });
   const markdownByCanonicalUrl = new Map(markdownPages.map((page) => [page.canonicalUrl, page]));
 
   for (const page of markdownPages) {

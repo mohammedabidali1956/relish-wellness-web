@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { scrollToAppointmentSection } from "@/lib/navigation";
+import { CLINIC_LOGO_PATH } from "@/lib/businessInfo";
 
 const navLinks = [
   { title: "Home", path: "/" },
@@ -47,7 +48,7 @@ const Navbar = () => {
         <div className="flex items-center min-w-0">
           <NavLink to="/" className="flex items-center gap-3 min-w-0 group" aria-label="Dr Hamid’s Physio and Pain Clinic – Home">
             <img
-              src="/images/logo/hamid-physio-logo.png"
+              src={CLINIC_LOGO_PATH}
               alt=""
               width={48}
               height={48}

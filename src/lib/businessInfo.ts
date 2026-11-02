@@ -4,11 +4,13 @@ export const YOUTUBE_CHANNEL_URL = "https://youtube.com/@dr.hamidsphysiopainclin
 export const FACEBOOK_PROFILE_URL = "https://www.facebook.com/profile.php?id=61587086612280";
 export const PRACTO_PROFILE_URL = "https://www.practo.com/hyderabad/doctor/mohammed-hamid-ali-physiotherapist-1";
 export const OFFICIAL_CLINIC_EMAIL = "drhamidphysio@gmail.com";
+export const CLINIC_BUSINESS_SCHEMA_ID = "https://www.drhamidphysio.in/#clinic";
+export const CLINIC_LOGO_PATH = "/images/logo/hamid-physio-logo.webp";
+export const CLINIC_LOGO_URL = `https://www.drhamidphysio.in${CLINIC_LOGO_PATH}`;
 
 export const CLINIC_POSTAL_ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park",
-  addressSubLocality: "Friends Colony, Puppalguda, Manikonda",
+  streetAddress: "4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda",
   addressLocality: "Hyderabad",
   addressRegion: "Telangana",
   postalCode: "500089",
@@ -20,7 +22,7 @@ export const CLINIC_BUSINESS_INFO = {
   website: "https://www.drhamidphysio.in",
   telephone: "+917601026596",
   email: OFFICIAL_CLINIC_EMAIL,
-  fullAddress: `${CLINIC_POSTAL_ADDRESS.streetAddress}, ${CLINIC_POSTAL_ADDRESS.addressSubLocality}, ${CLINIC_POSTAL_ADDRESS.addressLocality}, ${CLINIC_POSTAL_ADDRESS.addressRegion} ${CLINIC_POSTAL_ADDRESS.postalCode}, India.`,
+  fullAddress: `${CLINIC_POSTAL_ADDRESS.streetAddress}, ${CLINIC_POSTAL_ADDRESS.addressLocality}, ${CLINIC_POSTAL_ADDRESS.addressRegion} ${CLINIC_POSTAL_ADDRESS.postalCode}, India.`,
   plusCode: "99XR+H3X Hyderabad, Telangana",
   latitude: 17.39899,
   longitude: 78.390219,

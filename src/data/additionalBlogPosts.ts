@@ -193,6 +193,7 @@ export const additionalBlogPosts: BlogPost[] = [
     author: "Dr. Mohammed Hamid Ali",
     category: "Back Pain & Sciatica",
     imageUrl: "/images/blog/sciatica-pain-causes-symptoms-treatment/09-when-mri-may-be-considered.webp",
+    imageSrcSet: "/images/blog/sciatica-pain-causes-symptoms-treatment/09-when-mri-may-be-considered-480.webp 480w, /images/blog/sciatica-pain-causes-symptoms-treatment/09-when-mri-may-be-considered-768.webp 768w, /images/blog/sciatica-pain-causes-symptoms-treatment/09-when-mri-may-be-considered-1200.webp 1200w, /images/blog/sciatica-pain-causes-symptoms-treatment/09-when-mri-may-be-considered.webp 1536w",
     heroImageInContent: true,
   }
 ];

@@ -1,23 +1,25 @@
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
-import { CLINIC_BUSINESS_INFO, CLINIC_BUSINESS_SCHEMA, GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
+import { CLINIC_BUSINESS_INFO, CLINIC_BUSINESS_SCHEMA, CLINIC_BUSINESS_SCHEMA_ID, CLINIC_LOGO_URL, GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
 import { uppercasePainTerm } from "@/lib/seoText";
 
 interface StructuredDataProps {
   type?: "homepage" | "service" | "blog" | "about";
   pageTitle?: string;
   pageDescription?: string;
+  includeCanonical?: boolean;
 }
 
-const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: StructuredDataProps) => {
+const StructuredData = ({ type = "homepage", pageTitle, pageDescription, includeCanonical = true }: StructuredDataProps) => {
   const { pathname } = useLocation();
   const canonicalUrl = `https://www.drhamidphysio.in${pathname === "/" ? "/" : pathname}`;
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
+    "@type": "MedicalClinic",
     ...CLINIC_BUSINESS_SCHEMA,
-    "image": "/images/logo/og-image.png",
-    "@id": "https://www.drhamidphysio.in",
+    "image": [CLINIC_LOGO_URL, "https://www.drhamidphysio.in/images/doctor/dr-hamid-hero.webp"],
+    "logo": CLINIC_LOGO_URL,
+    "@id": CLINIC_BUSINESS_SCHEMA_ID,
     "foundingDate": "2021",
     "sameAs": [
       YOUTUBE_CHANNEL_URL,
@@ -26,6 +28,15 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
       PRACTO_PROFILE_URL
     ],
     "hasMap": GOOGLE_BUSINESS_PROFILE_URL,
+    "openingHours": "Mo-Su 10:00-22:00",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": CLINIC_BUSINESS_INFO.telephone,
+      "email": CLINIC_BUSINESS_INFO.email,
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["en", "hi", "te"]
+    },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -131,11 +142,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
       }
     ],
     "medicalSpecialty": [
-      "Physiotherapy",
-      "Physical Therapy",
-      "Rehabilitation Medicine",
-      "Sports Medicine",
-      "Pain Management"
+      "https://schema.org/Physiotherapy"
     ],
     "availableService": [
       {
@@ -161,37 +168,12 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription }: Struc
     ]
   };
 
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": CLINIC_BUSINESS_INFO.name,
-    "url": CLINIC_BUSINESS_INFO.website,
-    "logo": "/images/logo/og-image.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": CLINIC_BUSINESS_INFO.telephone,
-      "email": CLINIC_BUSINESS_INFO.email,
-      "contactType": "customer service",
-      "areaServed": "IN",
-      "availableLanguage": ["en", "hi", "te"]
-    },
-    "sameAs": [
-      YOUTUBE_CHANNEL_URL,
-      INSTAGRAM_PROFILE_URL,
-      GOOGLE_BUSINESS_PROFILE_URL,
-      PRACTO_PROFILE_URL
-    ]
-  };
-
   return (
     <Helmet>
       <script type="application/ld+json">
         {JSON.stringify(localBusinessSchema)}
       </script>
-      <script type="application/ld+json">
-        {JSON.stringify(organizationSchema)}
-      </script>
-      <link rel="canonical" href={canonicalUrl} />
+      {includeCanonical && <link rel="canonical" href={canonicalUrl} />}
       {pageTitle && <title>{uppercasePainTerm(pageTitle)}</title>}
       {pageDescription && <meta name="description" content={uppercasePainTerm(pageDescription)} />}
     </Helmet>

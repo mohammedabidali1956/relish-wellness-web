@@ -27,7 +27,7 @@ import {
 import { Helmet } from "react-helmet";
 import { trackAnalyticsEvent } from "@/lib/analytics";
 import { uppercasePainTerm } from "@/lib/seoText";
-import { CLINIC_BUSINESS_SCHEMA } from "@/lib/businessInfo";
+import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
 
 const ConditionPage = () => {
   const { slug } = useParams();
@@ -96,10 +96,7 @@ const ConditionPage = () => {
       name: "Dr. Mohammed Hamid Ali",
       jobTitle: "Physiotherapist"
     },
-    publisher: {
-      "@type": "MedicalBusiness",
-      ...CLINIC_BUSINESS_SCHEMA
-    },
+    publisher: { "@id": CLINIC_BUSINESS_SCHEMA_ID },
     about: {
       "@type": "MedicalCondition",
         name: pageHeading

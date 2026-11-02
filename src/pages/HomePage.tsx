@@ -20,7 +20,7 @@ import { getRecentPosts } from "@/data/blogPosts";
 import { GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_MAPS_EMBED_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 
 // Full review wording and five-star ratings transcribed from the supplied Google profile screenshots.
-const googleReviews = [
+export const googleReviews = [
   {
     reviewer: "Aisha Quadri",
     text: "He is a good doctor . Liked the service hear . Mostly it is affordable for every one .",
@@ -62,6 +62,23 @@ const googleReviews = [
     rating: 5,
   },
 ] as const;
+
+const REVIEW_PREVIEW_LIMIT = 313;
+
+const getReviewPreview = (text: string) => {
+  if (text.length <= REVIEW_PREVIEW_LIMIT) {
+    return { text, isTruncated: false };
+  }
+
+  const previewLimit = REVIEW_PREVIEW_LIMIT - 1;
+  let wordBoundary = previewLimit;
+
+  while (wordBoundary > 0 && !/\s/.test(text[wordBoundary])) {
+    wordBoundary -= 1;
+  }
+
+  return { text: `${text.slice(0, wordBoundary).trimEnd()}…`, isTruncated: true };
+};
 
 const homepageServiceIcons = [
   {
@@ -155,7 +172,7 @@ const ServiceAreasSection = () => (
               Home physiotherapy in Hyderabad: areas we visit
             </h2>
           </div>
-          <span className="text-xs text-[#718096] bg-[#faf6ed] border border-[#e5dec9] px-3 py-1.5 rounded-full font-medium self-start sm:self-auto">
+          <span className="text-xs text-[#5e6b78] bg-[#faf6ed] border border-[#e5dec9] px-3 py-1.5 rounded-full font-medium self-start sm:self-auto">
             📍 Physio Clinic in Manikonda
           </span>
         </div>
@@ -176,7 +193,7 @@ const ServiceAreasSection = () => (
               <p className="text-[11px] text-[#8a5d24] font-medium mt-0.5">
                 {area.detail}
               </p>
-              <p className="text-[10px] text-[#718096] mt-1">
+              <p className="text-[10px] text-[#5e6b78] mt-1">
                 {area.travel}
               </p>
             </div>
@@ -216,6 +233,28 @@ const HomePage = () => {
   );
   const [isReviewPointerDown, setIsReviewPointerDown] = React.useState(false);
   const [reviewAutoplayResetKey, setReviewAutoplayResetKey] = React.useState(0);
+  const [expandedReviewIndex, setExpandedReviewIndex] = React.useState<number | null>(null);
+  const expandedReviewIndexRef = React.useRef<number | null>(null);
+
+  React.useEffect(() => {
+    expandedReviewIndexRef.current = expandedReviewIndex;
+  }, [expandedReviewIndex]);
+
+  React.useEffect(() => {
+    let previousScrollY = window.scrollY;
+
+    const collapseOnDownwardPageScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > previousScrollY && expandedReviewIndexRef.current !== null) {
+        expandedReviewIndexRef.current = null;
+        setExpandedReviewIndex(null);
+      }
+      previousScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", collapseOnDownwardPageScroll, { passive: true });
+    return () => window.removeEventListener("scroll", collapseOnDownwardPageScroll);
+  }, []);
 
   React.useEffect(() => {
     if (!reviewCarouselApi) {
@@ -224,6 +263,7 @@ const HomePage = () => {
 
     const updateSelectedReview = () => {
       setSelectedReviewIndex(reviewCarouselApi.selectedScrollSnap());
+      setExpandedReviewIndex(null);
     };
 
     updateSelectedReview();
@@ -260,7 +300,8 @@ const HomePage = () => {
       !reviewCarouselApi ||
       !isDocumentVisible ||
       prefersReducedMotion ||
-      isReviewPointerDown
+      isReviewPointerDown ||
+      expandedReviewIndex !== null
     ) {
       return;
     }
@@ -278,6 +319,7 @@ const HomePage = () => {
     isDocumentVisible,
     prefersReducedMotion,
     isReviewPointerDown,
+    expandedReviewIndex,
   ]);
 
   const navigateReviewCarousel = (direction: "previous" | "next") => {
@@ -334,9 +376,9 @@ const HomePage = () => {
 
               {/* Subheading */}
               <p className="text-base sm:text-lg lg:text-xl text-[#4a5568] leading-relaxed max-w-xl font-normal">
-                Physiotherapy for back, neck and knee pain, and <Link to="/services" style={{ color: "blue", textDecoration: "underline" }}>
-                  more
-                </Link>, including sports injuries and post-surgery rehabilitation. One-to-one sessions with Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), with 8+ years’ experience. Clinic and home visits around Manikonda; home-visit availability depends on your address. Open daily from 10 AM to 10 PM.
+                Physiotherapy for back, neck and knee pain, sports injuries and post-surgery rehabilitation. Browse our <Link to="/services" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">
+                  complete list of physiotherapy services
+                </Link>. One-to-one sessions with Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), with 8+ years’ experience. Clinic and home visits around Manikonda; home-visit availability depends on your address. Open daily from 10 AM to 10 PM.
               </p>
 
               {/* Two CTA Buttons Side by Side */}
@@ -409,6 +451,8 @@ const HomePage = () => {
                 >
                   <img
                     src={icon.src}
+                    srcSet={`${icon.src.replace(/\.webp$/, "-320.webp")} 320w, ${icon.src.replace(/\.webp$/, "-480.webp")} 480w, ${icon.src} 1024w`}
+                    sizes="(max-width: 639px) 128px, (max-width: 767px) 144px, 160px"
                     alt={icon.alt}
                     width={1024}
                     height={1024}
@@ -459,12 +503,10 @@ const HomePage = () => {
             Body Map
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-2 mb-4">
-            Conditions we treat: back, neck, knee, shoulder, sciatica pain and <Link to="/services" style={{ color: "blue", textDecoration: "underline" }}>
-              more
-            </Link>
+            Conditions we treat: back, neck, knee, shoulder and sciatica pain.
           </h2>
           <p className="text-[#4a5568] text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
-            Choose an area on the interactive body map to read general information about common pain conditions and physiotherapy options.
+            Choose an area on the interactive body map to read general information about common pain conditions and physiotherapy options. View our <Link to="/services" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">physiotherapy services</Link> for more detail.
           </p>
           <Link
             to="/conditions"
@@ -501,7 +543,7 @@ const HomePage = () => {
                   <p className="text-sm font-medium text-[#8a5d24]">
                     BPT, MPT (Ortho) · Regd. No. 0413 · 8+ years’ clinical experience
                   </p>
-                  <p className="text-xs text-[#718096] mt-2">
+                  <p className="text-xs text-[#5e6b78] mt-2">
                     Consultant Physiotherapist &amp; Founder, Dr Hamid’s Physio and Pain Clinic
                   </p>
                 </div>
@@ -626,13 +668,13 @@ const HomePage = () => {
                     aria-hidden={selectedReviewIndex !== index}
                     data-active={selectedReviewIndex === index}
                   >
-                    <article className="flex min-h-56 flex-col rounded-2xl border border-[#e5dec9] bg-white p-6 shadow-sm md:p-8">
+                    <article className="flex h-full min-h-56 flex-col rounded-2xl border border-[#e5dec9] bg-white p-6 shadow-sm md:p-8">
                       <div className="flex items-center justify-between gap-3">
-                        <span className="text-xs font-semibold uppercase tracking-widest text-[#718096]">
+                        <span className="text-xs font-semibold uppercase tracking-widest text-[#5e6b78]">
                           Google review
                         </span>
                         <div
-                          className="flex shrink-0 items-center gap-0.5 text-[#c28e28]"
+                          className="flex shrink-0 items-center gap-0.5 text-[#8a5d24]"
                           role="img"
                           aria-label={`${review.rating} out of 5 stars`}
                         >
@@ -641,9 +683,27 @@ const HomePage = () => {
                           ))}
                         </div>
                       </div>
-                      <blockquote className="mt-5 flex-1 whitespace-pre-line text-sm leading-relaxed text-[#4a5568] sm:text-base">
-                        “{review.text}”
+                      <blockquote id={`review-body-${index}`} className="mt-5 flex-1 whitespace-pre-line text-sm leading-relaxed text-[#4a5568] sm:text-base">
+                        “{expandedReviewIndex === index ? review.text : getReviewPreview(review.text).text}”
                       </blockquote>
+                      {getReviewPreview(review.text).isTruncated && (
+                        <button
+                          type="button"
+                          className="mt-3 self-start text-sm font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24] focus-visible:ring-offset-2"
+                          aria-controls={`review-body-${index}`}
+                          aria-expanded={expandedReviewIndex === index}
+                          aria-label={`${expandedReviewIndex === index ? "Show less" : "Read full"} review by ${review.reviewer}`}
+                          tabIndex={selectedReviewIndex === index ? 0 : -1}
+                          onClick={() => {
+                            const nextIndex = expandedReviewIndex === index ? null : index;
+                            setExpandedReviewIndex(nextIndex);
+                            expandedReviewIndexRef.current = nextIndex;
+                            setReviewAutoplayResetKey((currentKey) => currentKey + 1);
+                          }}
+                        >
+                          {expandedReviewIndex === index ? "Read less" : "Read more"}
+                        </button>
+                      )}
                       <p className="mt-6 border-t border-[#e5dec9] pt-4 text-sm font-semibold text-[#081a2e]">
                         {review.reviewer}
                       </p>
@@ -690,7 +750,7 @@ const HomePage = () => {
                   <img
                     src={post.imageUrl}
                     srcSet={post.imageSrcSet}
-                    sizes={post.imageSizes}
+                    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1279px) calc((100vw - 5rem) / 3), 400px"
                     alt={post.title}
                     width={640}
                     height={400}
@@ -699,7 +759,7 @@ const HomePage = () => {
                   />
                 </Link>
                 <div className="p-5 flex flex-col flex-grow">
-                  <div className="flex items-center gap-2 text-xs text-[#718096] mb-2">
+                  <div className="flex items-center gap-2 text-xs text-[#5e6b78] mb-2">
                     <span>{post.category}</span>
                     {post.readTime && (
                       <span>• {post.readTime}</span>

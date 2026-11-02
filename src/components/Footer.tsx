@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, ExternalLink } from "lucide-react";
-import { FACEBOOK_PROFILE_URL, GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, OFFICIAL_CLINIC_EMAIL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
+import { CLINIC_LOGO_PATH, FACEBOOK_PROFILE_URL, GOOGLE_BUSINESS_PROFILE_URL, INSTAGRAM_PROFILE_URL, OFFICIAL_CLINIC_EMAIL, PRACTO_PROFILE_URL, YOUTUBE_CHANNEL_URL } from "@/lib/businessInfo";
 
 const WhatsAppIcon = ({ className = "h-5 w-5" }: { className?: string }) => (
   <svg
@@ -96,10 +96,10 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-4">
             <div className="flex items-center gap-3">
               <img
-                src="/images/logo/hamid-physio-logo.png"
+                src={CLINIC_LOGO_PATH}
                 alt="Dr Hamid’s Physio and Pain Clinic — physiotherapy in Manikonda, Hyderabad"
-                width={1414}
-                height={1414}
+                width={80}
+                height={80}
                 className="h-16 w-16 sm:h-20 sm:w-20 shrink-0 rounded-full object-cover border border-border"
               />
               <div>

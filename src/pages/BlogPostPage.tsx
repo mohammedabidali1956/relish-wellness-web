@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import StructuredData from "@/components/StructuredData";
 import { Helmet } from "react-helmet";
 import { uppercasePainTerm } from "@/lib/seoText";
+import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
 
 const toIsoDate = (date?: string): string | undefined => {
   if (!date) return undefined;
@@ -37,7 +38,7 @@ const BlogPostPage = () => {
     ...(publishedDate ? { datePublished: publishedDate } : {}),
     ...(modifiedDate ? { dateModified: modifiedDate } : {}),
     author: { "@type": post.author === "Clinic Education Team" ? "Organization" : "Person", name: post.author },
-    publisher: { "@type": "Organization", name: "Dr Hamid’s Physio and Pain Clinic" },
+    publisher: { "@id": CLINIC_BUSINESS_SCHEMA_ID },
     mainEntityOfPage: canonicalUrl,
     articleSection: post.category,
     inLanguage: "en-IN",

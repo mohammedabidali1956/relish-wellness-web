@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { getServiceBySlug, allServices, primaryServices } from "@/data/services";
 import { blogPosts } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
+import StructuredData from "@/components/StructuredData";
 import {
   ArrowLeft,
   Phone,
@@ -37,7 +38,7 @@ import {
 import { scrollToAppointmentSection } from "@/lib/navigation";
 import { trackAnalyticsEvent } from "@/lib/analytics";
 import { uppercasePainTerm } from "@/lib/seoText";
-import { CLINIC_BUSINESS_SCHEMA } from "@/lib/businessInfo";
+import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
 
 import NotFound from "@/pages/NotFound";
 
@@ -123,6 +124,9 @@ export const ServiceDetailPage: React.FC = () => {
         description: pageDescription,
         headline: pageHeading,
         inLanguage: "en-IN",
+        mainEntity: {
+          "@id": `${canonicalUrl}#service`
+        },
         about: {
           "@type": "MedicalCondition",
           name: service.conditionSchemaName ?? service.title,
@@ -137,17 +141,9 @@ export const ServiceDetailPage: React.FC = () => {
           "@type": "Person",
           name: "Dr. Mohammed Hamid Ali",
           jobTitle: "Physiotherapist",
-          worksFor: {
-            "@type": "MedicalClinic",
-            "@id": "https://www.drhamidphysio.in/#clinic",
-            ...CLINIC_BUSINESS_SCHEMA
-          }
+          worksFor: { "@id": CLINIC_BUSINESS_SCHEMA_ID }
         },
-        publisher: {
-          "@type": "MedicalClinic",
-          ...CLINIC_BUSINESS_SCHEMA,
-          logo: "https://www.drhamidphysio.in/images/logo/logo-main.webp",
-        }
+        publisher: { "@id": CLINIC_BUSINESS_SCHEMA_ID }
       },
       {
         "@type": "FAQPage",
@@ -162,28 +158,22 @@ export const ServiceDetailPage: React.FC = () => {
         }))
       },
       {
-        "@type": "MedicalBusiness",
-        "@id": "https://www.drhamidphysio.in/#clinic",
-        ...CLINIC_BUSINESS_SCHEMA,
-        image: "https://www.drhamidphysio.in/images/doctor/dr-hamid-hero.webp",
+        "@type": "Service",
+        "@id": `${canonicalUrl}#service`,
+        name: service.title,
+        image: `https://www.drhamidphysio.in${service.imageSrc}`,
+        provider: { "@id": CLINIC_BUSINESS_SCHEMA_ID },
         areaServed: service.serviceAreas.map((area) => ({
           "@type": "AdministrativeArea",
           name: area
-        })),
-        openingHoursSpecification: [
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            opens: "10:00",
-            closes: "22:00"
-          }
-        ]
+        }))
       }
     ]
   };
 
   return (
     <div className="bg-[#faf6ed] min-h-screen">
+      <StructuredData type="service" includeCanonical={false} />
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
