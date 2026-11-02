@@ -8,6 +8,7 @@
     "build": "vite build && node scripts/prerender.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
+    "indexnow:submit": "node scripts/submit-indexnow.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
