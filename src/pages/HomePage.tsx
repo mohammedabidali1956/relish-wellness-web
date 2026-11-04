@@ -458,7 +458,7 @@ const HomePage = () => {
                     height={1024}
                     loading="lazy"
                     decoding="async"
-                    className="h-auto w-full max-w-32 rounded-full border border-black sm:max-w-36 md:max-w-40"
+                    className="h-auto w-full max-w-32 rounded-full outline outline-[3px] outline-[#111111] outline-offset-0 sm:max-w-36 md:max-w-40"
                   />
                 </Link>
               ))}
