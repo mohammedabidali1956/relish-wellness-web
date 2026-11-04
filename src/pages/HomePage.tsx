@@ -449,17 +449,23 @@ const HomePage = () => {
                   aria-label={`Explore ${icon.label} physiotherapy`}
                   className="group flex min-h-11 min-w-0 items-center justify-center rounded-full p-1 transition-transform duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8c6b3e] focus-visible:ring-offset-2"
                 >
-                  <img
-                    src={icon.src}
-                    srcSet={`${icon.src.replace(/\.webp$/, "-320.webp")} 320w, ${icon.src.replace(/\.webp$/, "-480.webp")} 480w, ${icon.src} 1024w`}
-                    sizes="(max-width: 639px) 128px, (max-width: 767px) 144px, 160px"
-                    alt={icon.alt}
-                    width={1024}
-                    height={1024}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-auto w-full max-w-32 rounded-full outline outline-[3px] outline-[#111111] outline-offset-0 sm:max-w-36 md:max-w-40"
-                  />
+                  <span className="relative block h-auto w-full max-w-32 sm:max-w-36 md:max-w-40">
+                    <img
+                      src={icon.src}
+                      srcSet={`${icon.src.replace(/\.webp$/, "-320.webp")} 320w, ${icon.src.replace(/\.webp$/, "-480.webp")} 480w, ${icon.src} 1024w`}
+                      sizes="(max-width: 639px) 128px, (max-width: 767px) 144px, 160px"
+                      alt={icon.alt}
+                      width={1024}
+                      height={1024}
+                      loading="lazy"
+                      decoding="async"
+                      className="block h-auto w-full rounded-full"
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-[calc(0.5%-3px)] rounded-full border-[3px] border-[#111111]"
+                    />
+                  </span>
                 </Link>
               ))}
             </div>
