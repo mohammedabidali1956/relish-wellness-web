@@ -464,6 +464,7 @@ const HomePage = () => {
                     <span
                       aria-hidden="true"
                       className="pointer-events-none absolute inset-[calc(0.5%-3px)] rounded-full border-[3px] border-[#111111]"
+                      style={icon.label === "Shoulder Pain" ? { transform: "translateX(0.8%) scale(0.995)" } : undefined}
                     />
                   </span>
                 </Link>
