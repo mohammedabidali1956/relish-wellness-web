@@ -38,7 +38,6 @@ export const ReviewsPage = lazyPage(() => import("@/pages/ReviewsPage"));
 export const BlogsPage = lazyPage(() => import("@/pages/BlogsPage"));
 export const BlogPostPage = lazyPage(() => import("@/pages/BlogPostPage"));
 export const ConditionsPage = lazyPage(() => import("@/pages/ConditionsPage"));
-export const ConditionPage = lazyPage(() => import("@/pages/ConditionPage"));
 export const ServiceDetailPage = lazyPage(() => import("@/pages/ServiceDetailPage"));
 export const ContactPage = lazyPage(() => import("@/pages/ContactPage"));
 export const PrivacyPolicyPage = lazyPage(() => import("@/pages/PrivacyPolicyPage"));
@@ -68,7 +67,6 @@ export async function preloadRoute(url: string): Promise<void> {
   if (segments.length === 2) {
     switch (section) {
       case "services": return void (await ServiceDetailPage.preload());
-      case "conditions": return void (await ConditionPage.preload());
       case "blogs":
         await Promise.all([
           BlogPostPage.preload(),

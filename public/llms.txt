@@ -99,19 +99,6 @@ Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad provides physiothera
 - [Exercise Therapy](https://www.drhamidphysio.in/services/exercise-therapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/exercise-therapy-manikonda.md)
 - [Manual Therapy / Soft Tissue Mobilisation](https://www.drhamidphysio.in/services/manual-therapy-soft-tissue-mobilisation-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/manual-therapy-soft-tissue-mobilisation-manikonda.md)
 
-## Conditions and patient resources
-
-- [Neck Pain Physiotherapy & Cervical Care](https://www.drhamidphysio.in/conditions/neck-pain) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/neck-pain.md)
-- [Back Pain Physiotherapy & Sciatica Care](https://www.drhamidphysio.in/conditions/back-pain) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/back-pain.md)
-- [Knee Pain Physiotherapy & Arthritis Care](https://www.drhamidphysio.in/conditions/knee-pain) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/knee-pain.md)
-- [Sports Injury Rehabilitation & Athletic Performance](https://www.drhamidphysio.in/conditions/sports-injuries) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/sports-injuries.md)
-- [Post-Surgery Rehabilitation](https://www.drhamidphysio.in/conditions/post-surgery-rehab) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/post-surgery-rehab.md)
-- [Home Physiotherapy Visits](https://www.drhamidphysio.in/conditions/home-visit-services) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/home-visit-services.md)
-- [Shoulder Pain & Frozen Shoulder Treatment](https://www.drhamidphysio.in/conditions/shoulder-pain) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/shoulder-pain.md)
-- [Spine Physiotherapy & Posture Rehabilitation](https://www.drhamidphysio.in/conditions/spine-physiotherapy) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/spine-physiotherapy.md)
-- [Therapeutic Ultrasound Therapy](https://www.drhamidphysio.in/conditions/ultrasound-therapy) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/ultrasound-therapy.md)
-- [Interferential Therapy (IFT) & Electro-Analgesia](https://www.drhamidphysio.in/conditions/interferential-therapy-ift) · [Markdown](https://www.drhamidphysio.in/markdown/conditions/interferential-therapy-ift.md)
-
 ## Blog articles
 
 - [Why Does My Knee Hurt When Climbing Stairs? Causes & What to Do](https://www.drhamidphysio.in/blogs/knee-pain-when-climbing-stairs) · [Markdown](https://www.drhamidphysio.in/markdown/blogs/knee-pain-when-climbing-stairs.md)

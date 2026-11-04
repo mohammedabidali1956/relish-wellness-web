@@ -1,6 +1,18 @@
 
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/conditions/neck-pain", "destination": "/services/neck-pain-physiotherapy-manikonda", "statusCode": 301 },
+    { "source": "/conditions/back-pain", "destination": "/services/back-pain-physiotherapy-manikonda", "statusCode": 301 },
+    { "source": "/conditions/knee-pain", "destination": "/services/knee-pain-physiotherapy-manikonda", "statusCode": 301 },
+    { "source": "/conditions/sports-injuries", "destination": "/services/sports-injury-physiotherapy-manikonda", "statusCode": 301 },
+    { "source": "/conditions/post-surgery-rehab", "destination": "/services/post-surgical-rehabilitation-manikonda", "statusCode": 301 },
+    { "source": "/conditions/home-visit-services", "destination": "/services/home-visit-physiotherapy-manikonda", "statusCode": 301 },
+    { "source": "/conditions/shoulder-pain", "destination": "/services/shoulder-pain-physiotherapy-manikonda", "statusCode": 301 },
+    { "source": "/conditions/spine-physiotherapy", "destination": "/services/spine-physiotherapy-manikonda", "statusCode": 301 },
+    { "source": "/conditions/ultrasound-therapy", "destination": "/services/therapeutic-ultrasound-manikonda", "statusCode": 301 },
+    { "source": "/conditions/interferential-therapy-ift", "destination": "/services/interferential-therapy-ift-manikonda", "statusCode": 301 }
+  ],
   "rewrites": [
     {
       "source": "/google5d006f26e5daf13c.html",

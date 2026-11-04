@@ -194,7 +194,6 @@ try {
   const { googleReviews } = await vite.ssrLoadModule("/src/pages/HomePage.tsx");
   const { allServices } = await vite.ssrLoadModule("/src/data/services/index.ts");
   const { blogPosts } = await vite.ssrLoadModule("/src/data/blogPosts.ts");
-  const { conditions } = await vite.ssrLoadModule("/src/data/conditions.ts");
   const {
     FACEBOOK_PROFILE_URL,
     GOOGLE_BUSINESS_PROFILE_URL,
@@ -214,7 +213,6 @@ try {
     "/privacy-policy",
     "/terms-and-conditions",
     ...allServices.flatMap(({ slug }) => [`/services/${slug}`, `/${slug}`]),
-    ...conditions.map(({ slug }) => `/conditions/${slug}`),
     ...blogPosts.map(({ slug }) => `/blogs/${slug}`),
   ];
   const indexableCanonicalUrls = new Set();
@@ -357,10 +355,6 @@ try {
     const canonicalUrl = `${canonicalOrigin}/services/${service.slug}`;
     return `- [${service.title}](${canonicalUrl})${markdownLink(canonicalUrl)}`;
   });
-  const conditionLinks = conditions.map((condition) => {
-    const canonicalUrl = `${canonicalOrigin}/conditions/${condition.slug}`;
-    return `- [${condition.title}](${canonicalUrl})${markdownLink(canonicalUrl)}`;
-  });
   const blogLinks = blogPosts.map((post) => {
     const canonicalUrl = `${canonicalOrigin}/blogs/${post.slug}`;
     return `- [${post.title}](${canonicalUrl})${markdownLink(canonicalUrl)}`;
@@ -412,10 +406,6 @@ try {
     "## Services",
     "",
     ...serviceLinks,
-    "",
-    "## Conditions and patient resources",
-    "",
-    ...conditionLinks,
     "",
     "## Blog articles",
     "",

@@ -13,7 +13,6 @@ import {
   BlogsPage,
   BlogPostPage,
   ConditionsPage,
-  ConditionPage,
   ServiceDetailPage,
   ContactPage,
   PrivacyPolicyPage,
@@ -45,7 +44,6 @@ export const AppContent = () => (
         <Route path="services" element={<LazyRoute Page={ServicesPage} />} />
         <Route path="services/:slug" element={<LazyRoute Page={ServiceDetailPage} />} />
         <Route path="conditions" element={<LazyRoute Page={ConditionsPage} />} />
-        <Route path="conditions/:slug" element={<LazyRoute Page={ConditionPage} />} />
         <Route path="reviews" element={<LazyRoute Page={ReviewsPage} />} />
         <Route path="blogs" element={<LazyRoute Page={BlogsPage} />} />
         <Route path="blogs/:slug" element={<LazyRoute Page={BlogPostPage} />} />
