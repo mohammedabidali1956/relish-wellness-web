@@ -79,7 +79,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Can I get ultrasound therapy during a home visit in Manikonda?",
-        answer: "Yes, Dr. Hamid's team carries portable clinical ultrasound units for home visit patients in Manikonda, Puppalguda, and surrounding localities."
+        answer: "The clinic can confirm whether ultrasound can be provided during a home visit. Suitability depends on clinical needs, location, and current equipment availability."
       }
     ]
   },
@@ -161,7 +161,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Do you offer IFT during home visit physiotherapy in Manikonda?",
-        answer: "Yes, our team carries portable, clinic-grade IFT units for home visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
+        answer: "The clinic can confirm whether IFT can be provided during a home visit. Suitability depends on clinical needs, location, and current equipment availability."
       }
     ]
   },
@@ -325,7 +325,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Do you provide EMS therapy for home visit patients in Manikonda?",
-        answer: "Yes, our team carries portable clinical EMS stimulators to deliver bedside muscle rehabilitation across Manikonda, Puppalguda, and surrounding areas."
+        answer: "The clinic can confirm whether EMS can be provided during a home visit. Suitability depends on clinical needs, location, and current equipment availability."
       }
     ]
   },
@@ -407,7 +407,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Do you offer infrared therapy during home visits in Manikonda?",
-        answer: "For home visits, we use portable therapeutic moist heat systems and infrared emitters depending on patient setup and electrical safety."
+        answer: "The clinic can confirm whether infrared therapy can be provided during a home visit. Suitability depends on clinical needs, location, and current equipment availability."
       }
     ]
   },
@@ -489,7 +489,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Do you offer moist heat therapy during home visit physiotherapy?",
-        answer: "Yes, our team brings portable moist heat packs and hydrocollator setups for home visit sessions in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
+        answer: "The clinic can confirm whether moist heat therapy can be provided during a home visit. Suitability depends on clinical needs, location, and current equipment availability."
       }
     ]
   },
@@ -571,7 +571,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Do you offer exercise therapy during home visits in Manikonda?",
-        answer: "Yes, our team brings portable exercise equipment (resistance bands, balance discs, weights) directly to your home in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
+        answer: "Exercise-based home rehabilitation may be discussed after an assessment. The plan and any equipment depend on clinical needs, location, and current availability; contact the clinic to confirm."
       }
     ]
   },
@@ -653,7 +653,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "Do you offer manual therapy during home visits in Manikonda?",
-        answer: "Yes, Dr. Hamid and our senior physiotherapists provide expert hands-on manual therapy and soft tissue mobilization during home visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
+        answer: "Manual therapy may be considered after an assessment when clinically appropriate. Home visit suitability and availability depend on the person's needs and location; contact the clinic to confirm."
       }
     ]
   }

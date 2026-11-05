@@ -6,6 +6,8 @@ import { getServiceBySlug, allServices, primaryServices } from "@/data/services"
 import { blogPosts } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import StructuredData from "@/components/StructuredData";
+import MedicalReviewByline from "@/components/MedicalReviewByline";
+import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
 import {
   ArrowLeft,
   Phone,
@@ -124,6 +126,8 @@ export const ServiceDetailPage: React.FC = () => {
         description: pageDescription,
         headline: pageHeading,
         inLanguage: "en-IN",
+        lastReviewed: MEDICAL_REVIEW_DATE,
+        reviewedBy: MEDICAL_REVIEWER_SCHEMA,
         mainEntity: {
           "@id": `${canonicalUrl}#service`
         },
@@ -220,6 +224,7 @@ export const ServiceDetailPage: React.FC = () => {
               <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] tracking-tight leading-[1.15]">
                 {pageHeading}
               </h1>
+              <MedicalReviewByline />
 
               <p className="text-base sm:text-lg text-[#334155] leading-relaxed">
                 {service.shortDescription}

@@ -241,7 +241,7 @@ const Footer = () => {
               📍 Clinic Location: Puppalguda, Manikonda, Hyderabad
             </span>
             <span className="text-[11px] leading-relaxed text-muted-foreground">
-              Clinic visitors come from Puppalguda, Manikonda, Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda &amp; the Seven Tombs area. Home visits are generally targeted within an approximate 15 km radius of Manikonda; actual availability depends on the patient's address, so contact the clinic to confirm coverage.
+              Clinic visitors come from Manikonda and nearby West Hyderabad areas. Home visits are available for suitable needs; coverage and appointment availability depend on your address and clinical requirements. <NavLink to="/services/home-visit-physiotherapy-manikonda" className="font-semibold text-relish-800 underline underline-offset-2">View home-visit details</NavLink>.
             </span>
           </div>
         </div>

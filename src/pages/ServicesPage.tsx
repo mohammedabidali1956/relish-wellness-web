@@ -12,6 +12,8 @@ import { openWhatsApp } from "@/lib/whatsapp";
 import { trackAnalyticsEvent } from "@/lib/analytics";
 import { CLINIC_BUSINESS_SCHEMA_ID, CLINIC_LOGO_URL } from "@/lib/businessInfo";
 import StructuredData from "@/components/StructuredData";
+import MedicalReviewByline from "@/components/MedicalReviewByline";
+import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
 import {
   ArrowRight,
   Phone,
@@ -64,6 +66,8 @@ const ServicesPage: React.FC = () => {
         name: "Physiotherapy Services in Manikonda | Dr Hamid’s Physio and Pain Clinic",
         description:
           "Physiotherapy and rehabilitation services in Manikonda, Hyderabad, including care for spine, neck, knee, shoulder, neurological, sports, and post-surgery needs.",
+        lastReviewed: MEDICAL_REVIEW_DATE,
+        reviewedBy: MEDICAL_REVIEWER_SCHEMA,
         inLanguage: "en-IN",
         about: { "@id": CLINIC_BUSINESS_SCHEMA_ID }
       },
@@ -115,6 +119,7 @@ const ServicesPage: React.FC = () => {
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] tracking-tight leading-[1.18]">
               Physiotherapy Services in Manikonda | PAIN Relief &amp; Rehabilitation
             </h1>
+            <MedicalReviewByline />
 
             <p className="text-base sm:text-lg text-[#4a5568] leading-relaxed">
               Dr Hamid’s Physio and Pain Clinic lists physiotherapy services for back pain, neck pain, knee pain, shoulder problems, sciatica, sports injuries, post-surgical rehabilitation, and neurological conditions. The clinic is in Manikonda, Hyderabad. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage and availability.

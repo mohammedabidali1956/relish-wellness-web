@@ -236,7 +236,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for post-surgery patients in Manikonda?",
-        answer: "Yes, Dr. Hamid's team provides comprehensive home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients who cannot travel comfortably to the clinic during early post-operative recovery."
+        answer: "A home visit may be an option for people who cannot travel comfortably after surgery. Location, clinical suitability, and appointment availability need to be confirmed with the clinic."
       },
       {
         question: "Will post-surgery physiotherapy be extremely painful?",
@@ -604,7 +604,7 @@ serviceAreas: [
       "Bed-bound or chair-bound status due to recent hospitalization, illness, or acute trauma",
       "Exhaustion and anxiety experienced by elderly patients when navigating crowded medical clinics"
     ],
-    howPhysioHelps: "Home visit physiotherapy eliminates the stress, discomfort, and physical exhaustion of navigating Hyderabad traffic and climbing clinic stairs. Dr. Mohammed Hamid Ali brings portable clinical modalities (including TENS, muscle stimulators, therapeutic ultrasound, resistance bands, and mobilization tools) directly to your home. Most importantly, therapy is customized to your actual real-world living space—practicing transfers into your specific bed, climbing your actual apartment stairs, and optimizing your home ergonomics.",
+    howPhysioHelps: "A home visit may make assessment and rehabilitation more accessible when travelling to the clinic is difficult. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Consultant Physiotherapist, assesses whether a visit is suitable and discusses available care. Recommendations depend on the person's needs, the home setting, and equipment availability.",
     assessmentProcess: [
       "Comprehensive initial bedside clinical history, physical assessment, and medical documentation review",
       "Evaluation of functional home transfers (bed-to-chair, chair-to-standing, toilet transfers)",
@@ -613,7 +613,7 @@ serviceAreas: [
       "Collaborative goal setting with patient and family members focusing on real-world daily independence"
     ],
     treatmentApproach: [
-      "Portable electrotherapy (TENS, EMS, ultrasound) for targeted home pain relief and muscle stimulation",
+      "Individualized therapeutic exercise and mobility work based on assessment, goals, and tolerance",
       "Bedside passive, active-assisted, and resisted joint mobilizations to prevent joint contractures",
       "Functional transfer training and safe gait re-education using walkers, crutches, or canes in hallways",
       "Stair climbing practice and balance retraining using real home architecture",
@@ -648,7 +648,7 @@ serviceAreas: [
       "Have previous medical discharge summaries, surgical notes, and X-rays ready for the physiotherapist",
       "Encourage the patient to perform gentle bedside prescribed breathing and circulation drills between visits"
     ],
-    whenToVisit: "Book a home visit if you or a family member cannot comfortably travel to a clinic due to recent surgery, severe pain, neurological weakness, or elderly frailty. Call Dr. Hamid directly at +91 76010 26596 to schedule your home consultation.",
+    whenToVisit: "Ask about a home visit if you or a family member cannot comfortably travel to a clinic due to recent surgery, pain, mobility limitations, or frailty. Contact the clinic at +91 76010 26596 to confirm whether a visit is suitable and currently available for your location.",
     faqs: [
       {
         question: "Which areas in Hyderabad do you cover for home visit physiotherapy?",
@@ -668,7 +668,7 @@ serviceAreas: [
       },
       {
         question: "How do I schedule a home visit in Manikonda?",
-        answer: "Simply call or WhatsApp our clinic at +91 76010 26596. We will discuss your condition, review your location, and arrange a convenient appointment slot that fits your schedule."
+        answer: "Call or WhatsApp the clinic at +91 76010 26596 to ask about a home visit. The clinic can review your enquiry and address; suitability and appointment availability depend on clinical needs, location, and the current schedule."
       },
       {
         question: "Can home visit patients later transition to your Manikonda clinic?",
@@ -1236,7 +1236,7 @@ serviceAreas: [
       },
       {
         question: "Do you offer home visit physiotherapy for whiplash patients in Manikonda?",
-        answer: "Yes, if post-accident pain makes driving or riding in a car unbearable, our team provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
+        answer: "If symptoms make travelling difficult, a home visit may be considered. Location, clinical suitability, and appointment availability need to be confirmed with the clinic."
       }
     ]
   },

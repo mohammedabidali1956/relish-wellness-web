@@ -3,6 +3,8 @@ import { Calendar, Clock, User, ArrowLeft, ArrowRight, ShieldAlert } from "lucid
 import { getBlogPost, getRecentPosts, readBlogPostContent } from "@/data/blogPosts";
 import { Button } from "@/components/ui/button";
 import StructuredData from "@/components/StructuredData";
+import MedicalReviewByline from "@/components/MedicalReviewByline";
+import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
 import { Helmet } from "react-helmet";
 import { uppercasePainTerm } from "@/lib/seoText";
 import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
@@ -39,7 +41,13 @@ const BlogPostPage = () => {
     ...(modifiedDate ? { dateModified: modifiedDate } : {}),
     author: { "@type": post.author === "Clinic Education Team" ? "Organization" : "Person", name: post.author },
     publisher: { "@id": CLINIC_BUSINESS_SCHEMA_ID },
-    mainEntityOfPage: canonicalUrl,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+      url: canonicalUrl,
+      lastReviewed: MEDICAL_REVIEW_DATE,
+      reviewedBy: MEDICAL_REVIEWER_SCHEMA,
+    },
     articleSection: post.category,
     inLanguage: "en-IN",
     about: { "@type": "Thing", name: post.category },
@@ -96,6 +104,7 @@ const BlogPostPage = () => {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-5 text-foreground leading-tight">
               {pageTitle}
             </h1>
+            <MedicalReviewByline />
             
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm sm:text-base text-muted-foreground">
               <div className="flex items-center gap-2">

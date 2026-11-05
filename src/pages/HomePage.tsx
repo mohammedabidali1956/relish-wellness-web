@@ -13,6 +13,8 @@ import {
   Compass
 } from "lucide-react";
 import StructuredData from "@/components/StructuredData";
+import MedicalReviewByline from "@/components/MedicalReviewByline";
+import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
 import StickyCTA from "@/components/StickyCTA";
 import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
@@ -143,21 +145,6 @@ const homepageServiceIcons = [
   },
 ] as const;
 
-const neighborhoodAreas = [
-  { name: "Puppalguda", detail: "Primary Clinic", travel: "Walk-in / 2 min" },
-  { name: "Manikonda", detail: "Primary Location", travel: "Local / 3–5 min" },
-  { name: "Lanco Hills", detail: "Via Main Road", travel: "~5 min drive" },
-  { name: "Tolichowki", detail: "Via Shaikpet", travel: "~10 min drive" },
-  { name: "Shaikpet", detail: "Via Dargah Road", travel: "~7 min drive" },
-  { name: "OU Colony", detail: "Via Manikonda Rd", travel: "~6 min drive" },
-  { name: "Alkapur Township", detail: "Direct Access", travel: "~5 min drive" },
-  { name: "Khajaguda", detail: "Via Lake Road", travel: "~8 min drive" },
-  { name: "Narsingi", detail: "Puppalguda Junc.", travel: "~8 min drive" },
-  { name: "Neknampur", detail: "Via Neknampur Rd", travel: "~6 min drive" },
-  { name: "Golconda", detail: "Direct Route", travel: "~12 min drive" },
-  { name: "Seven Tombs", detail: "Via Shaikpet", travel: "~10 min drive" },
-] as const;
-
 const ServiceAreasSection = () => (
   <section id="service-areas" className="py-10 px-4 bg-white border-b border-[#e5dec9]">
     <div className="container">
@@ -166,10 +153,10 @@ const ServiceAreasSection = () => (
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#8a5d24] uppercase tracking-wider mb-1">
               <MapPin className="w-3.5 h-3.5 text-[#8a5d24]" />
-              <span>Neighbourhood Accessibility</span>
+              <span>Clinic location and home visits</span>
             </div>
             <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#081a2e]">
-              Home physiotherapy in Hyderabad: areas we visit
+              Physiotherapy in Puppalguda, Manikonda
             </h2>
           </div>
           <span className="text-xs text-[#5e6b78] bg-[#faf6ed] border border-[#e5dec9] px-3 py-1.5 rounded-full font-medium self-start sm:self-auto">
@@ -178,26 +165,20 @@ const ServiceAreasSection = () => (
         </div>
 
         <p className="text-sm text-[#4a5568] leading-relaxed mb-4">
-          The clinic is at <strong>4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India.</strong> Existing nearby areas include Puppalguda, Manikonda, Lanco Hills, Tolichowki, Shaikpet, OU Colony, Alkapur Township, Khajaguda, Narsingi, Neknampur, Golconda and Seven Tombs.
+          The clinic is at <strong>4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India.</strong>
         </p>
         <p className="text-sm text-[#4a5568] leading-relaxed mb-6">
-          Home-visit enquiries are generally targeted within an approximate 15 km radius of Manikonda. Priority areas include Kokapet, Gandipet, Narsingi, Jubilee Hills, Banjara Hills, Gachibowli, the Financial District, HITEC City, Puppalguda, Lanco Hills, Alkapur Township, Shaikpet and Tolichowki. Availability depends on the exact address; contact the clinic to confirm. This is not a road-distance guarantee.
+          Home physiotherapy visits are available for suitable needs in selected nearby locations. Coverage and appointment availability depend on your address and clinical requirements; contact the clinic to confirm.
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-          {neighborhoodAreas.map((area) => (
-            <div key={area.name} className="bg-[#faf6ed] border border-[#e5dec9] rounded-xl p-3 text-center">
-              <p className="font-bold text-[#081a2e] text-xs sm:text-sm">
-                {area.name}
-              </p>
-              <p className="text-[11px] text-[#8a5d24] font-medium mt-0.5">
-                {area.detail}
-              </p>
-              <p className="text-[10px] text-[#5e6b78] mt-1">
-                {area.travel}
-              </p>
-            </div>
-          ))}
+        <div className="mb-5">
+          <Link
+            to="/services/home-visit-physiotherapy-manikonda"
+            className="inline-flex items-center gap-1 font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2 hover:text-[#8a5d24]"
+          >
+            <span>View home-visit physiotherapy details</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
         </div>
 
         <div className="mt-5 pt-4 border-t border-[#e5dec9] flex flex-wrap items-center justify-between gap-3 text-xs text-[#5c4928]">
@@ -349,6 +330,18 @@ const HomePage = () => {
         <meta name="description" content="Physiotherapy for back, neck, knee PAIN and more in Manikonda, Hyderabad. Clinic and home visits; open daily 10 AM to 10 PM. Rated 5.0 on Google from 100+ patient reviews." />
         <meta property="og:title" content="Physio in Manikonda | Dr Hamid’s Physio and PAIN Clinic" />
         <meta property="og:url" content="https://www.drhamidphysio.in/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://www.drhamidphysio.in/#webpage",
+            url: "https://www.drhamidphysio.in/",
+            name: "Physio in Manikonda | Dr Hamid’s Physio and PAIN Clinic",
+            headline: "Trusted Physiotherapy in Manikonda, Hyderabad",
+            lastReviewed: MEDICAL_REVIEW_DATE,
+            reviewedBy: MEDICAL_REVIEWER_SCHEMA,
+          })}
+        </script>
         <link rel="preload" as="image" href="/images/doctor/dr-hamid-transparent.webp" fetchPriority="high" />
       </Helmet>
       <StructuredData type="homepage" />
@@ -373,12 +366,14 @@ const HomePage = () => {
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-[3.65rem] font-bold text-[#081a2e] tracking-tight leading-[1.12]">
                 Trusted Physiotherapy in Manikonda, Hyderabad
               </h1>
+              <MedicalReviewByline />
 
               {/* Subheading */}
               <p className="text-base sm:text-lg lg:text-xl text-[#4a5568] leading-relaxed max-w-xl font-normal">
                 Physiotherapy for back, neck and knee pain, sports injuries and post-surgery rehabilitation. Browse our <Link to="/services" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">
                   complete list of physiotherapy services
                 </Link>. One-to-one sessions with Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), with 8+ years’ experience. Clinic and home visits around Manikonda; home-visit availability depends on your address. Open daily from 10 AM to 10 PM.
+                {" "}<Link to="/services/home-visit-physiotherapy-manikonda" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">Learn about home visits</Link>.
               </p>
 
               {/* Two CTA Buttons Side by Side */}
@@ -825,7 +820,7 @@ const HomePage = () => {
                 Do you offer home physiotherapy visits in Hyderabad?
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-[#4a5568]">
-                Home visits are generally targeted within about 15 km of Manikonda. Availability depends on your exact address, so please confirm by phone or WhatsApp.
+                Home visits are available for suitable needs; your location, clinical requirements, and appointment availability are confirmed by the clinic. See the <Link to="/services/home-visit-physiotherapy-manikonda" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">home-visit service details</Link>.
               </p>
             </details>
 
@@ -873,7 +868,7 @@ const HomePage = () => {
               Book Your Physiotherapy Appointment in Puppalguda, Manikonda
             </h2>
             <p className="text-[#4a5568] text-base leading-relaxed">
-              Appointments are available Monday to Sunday, 10:00 AM to 10:00 PM. Clinic consultations are in Puppalguda, Manikonda. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage.
+              Appointments are available Monday to Sunday, 10:00 AM to 10:00 PM. Clinic consultations are in Puppalguda, Manikonda. Home visits are available for suitable needs; location, clinical requirements, and appointment availability are confirmed by the clinic. See the <Link to="/services/home-visit-physiotherapy-manikonda" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">home-visit service details</Link>.
             </p>
           </div>
 

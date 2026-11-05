@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet";
 import PainPointGuide from "@/components/PainPointGuide";
 import StructuredData from "@/components/StructuredData";
+import MedicalReviewByline from "@/components/MedicalReviewByline";
+import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
 
 const canonicalUrl = "https://www.drhamidphysio.in/conditions";
 const pageTitle = "Conditions and Body PAIN Guide in Manikonda | Dr Hamid’s Physio and PAIN Clinic";
@@ -24,6 +26,18 @@ const ConditionsPage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${canonicalUrl}#webpage`,
+            url: canonicalUrl,
+            name: pageTitle,
+            description: pageDescription,
+            lastReviewed: MEDICAL_REVIEW_DATE,
+            reviewedBy: MEDICAL_REVIEWER_SCHEMA,
+          })}
+        </script>
       </Helmet>
 
       <section
@@ -37,6 +51,7 @@ const ConditionsPage = () => {
           <h1 className="font-serif text-3xl sm:text-4xl font-bold text-[#081a2e] mt-3">
             Interactive Body PAIN Guide
           </h1>
+          <MedicalReviewByline />
           <p className="text-[#4a5568] text-base sm:text-lg leading-relaxed mt-4 max-w-3xl mx-auto">
             Select a body area to explore general information about common pain conditions and physiotherapy. The guide is educational and does not replace an individual clinical assessment.
           </p>
