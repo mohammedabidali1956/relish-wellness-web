@@ -28,7 +28,7 @@ const AppointmentForm = () => {
         id="appointment-request-form"
         onSubmit={handleSubmit}
         className="space-y-5"
-        data-clarity-mask="true"
+        data-clarity-mask="True"
       >
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">

@@ -20,6 +20,7 @@ import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
 import { getRecentPosts } from "@/data/blogPosts";
 import { GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_MAPS_EMBED_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 // Full review wording and five-star ratings transcribed from the supplied Google profile screenshots.
 export const googleReviews = [
@@ -320,6 +321,10 @@ const HomePage = () => {
   };
 
   const handleDirections = () => {
+    trackAnalyticsEvent("directions_click", {
+      page_category: "home",
+      cta_location: "page_content",
+    });
     window.open(GOOGLE_BUSINESS_PROFILE_URL, "_blank", "noopener,noreferrer");
   };
 

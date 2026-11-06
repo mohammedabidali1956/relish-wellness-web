@@ -32,7 +32,7 @@ const CallbackForm = () => {
       <p className="text-gray-600 mb-6">
         Continue in WhatsApp with a prepared callback request. Review it and press Send to contact the clinic.
       </p>
-      <form onSubmit={handleSubmit} className="space-y-4" data-clarity-mask="true">
+      <form onSubmit={handleSubmit} className="space-y-4" data-clarity-mask="True">
         <label htmlFor="callback-name" className="sr-only">Your name</label>
         <Input
           type="text"
