@@ -568,12 +568,14 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     content: `
 <p class="article-lead">People often use “sciatica” and “disc bulge” as if they mean the same thing. They do not. Sciatica describes symptoms that may follow irritation or compression of a nerve in the lower back; a disc bulge is a description of the shape of a disc, usually reported on a scan.</p>
+<h2>Are a Disc Bulge and Sciatica the Same Thing?</h2>
+<p><strong>No. A disc bulge is a structural imaging finding, while sciatica describes a pattern of radiating leg pain. A person can have a disc bulge without experiencing sciatica, and leg symptoms need clinical context rather than a scan label alone.</strong></p>
 <h2>What does sciatica mean?</h2>
 <p>Sciatica commonly causes pain that travels from the lower back or buttock down one leg. Some people also experience tingling, numbness, or weakness. Symptoms and their severity vary, and pain in the leg can have causes other than sciatica.</p>
 <h2>What is a disc bulge?</h2>
 <p>A disc is a cushion between the bones of the spine. A scan may describe a disc as bulging, but that finding alone does not show whether it is causing symptoms. The result needs to be considered alongside a person's history and clinical examination.</p>
 <h2>Can a disc bulge cause sciatica?</h2>
-<p>It can be one cause if it irritates a nearby nerve, but a scan finding does not automatically explain pain. Some people have disc changes without symptoms, and sciatica may arise for other reasons. A clinician can help interpret symptoms and decide whether imaging or another assessment is appropriate.</p>
+<p>It can be one cause if it irritates a nearby nerve, but a scan finding does not automatically explain pain. Some people have disc changes without symptoms, and sciatica may arise for other reasons. A clinician can help interpret symptoms and decide whether imaging or another assessment is appropriate. If radiating leg pain is affecting daily activity, learn about the clinic’s <a href="/services/sciatica-physiotherapy-manikonda">sciatica physiotherapy assessment in Manikonda</a>.</p>
 <h2>What can I do?</h2>
 <p>For many people with low back pain, guidance supports staying active as tolerated, self-management, and exercise selected for the person's needs. A physiotherapist can assess movement, strength, function, and symptoms, then discuss options. Treatment should be adapted to the individual; no single exercise or hands-on technique is right for everyone.</p>
 <p>Read more about <a href="https://www.nhs.uk/conditions/sciatica/" rel="noopener noreferrer">sciatica from the NHS</a> and the <a href="https://www.nice.org.uk/guidance/ng59/chapter/recommendations" rel="noopener noreferrer">NICE recommendations for low back pain and sciatica</a>.</p>

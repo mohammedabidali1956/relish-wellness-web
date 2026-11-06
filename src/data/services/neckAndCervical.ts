@@ -3,44 +3,45 @@ import { ServiceDetail } from "./types";
 export const neckAndCervicalServices: ServiceDetail[] = [
   {
     slug: "neck-pain-physiotherapy-manikonda",
+    relatedServiceSlugs: ["cervical-pain-physiotherapy-manikonda", "cervical-spondylosis-physiotherapy-manikonda", "cervical-radiculopathy-physiotherapy-manikonda"],
     category: "Neck & Cervical",
     title: "Neck Pain Physiotherapy",
     metaTitle: "Neck Pain Physiotherapy in Manikonda | Cervical Spine Relief Hyderabad",
     metaDescription: "Relieve acute and chronic neck pain, stiffness, and tension headaches with specialized physiotherapy in Manikonda by Dr. Mohammed Hamid Ali. Book today!",
     h1: "Neck Pain Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Effective care for neck pain, stiffness, cervical strain, and posture-related neck problems caused by long hours of desk work or mobile use.",
+    shortDescription: "Assessment-led physiotherapy information for neck pain, stiffness and movement limitations, including discomfort associated with prolonged device or desk work.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Neck pain physiotherapy and cervical care in Manikonda clinic",
-    whatItIs: "Neck pain is common and may be associated with prolonged time in one position, work demands, injury, or other health factors. Desk-based work and frequent device use can make symptoms more noticeable, but there is no single posture that explains every case. At Dr Hamid’s Physio and Pain Clinic in Manikonda, assessment considers symptoms, movement, and daily activities before discussing care options.",
+    whatItIs: "Neck pain can affect turning your head, working at a screen, driving, sleeping, or other daily activities. It may occur with sustained activity, a sudden increase in load, an injury, or without one clear cause; a particular posture or scan finding does not explain every case. At Dr Hamid’s Physio and Pain Clinic in Manikonda, assessment considers your history, symptoms, movement, and goals before discussing suitable care. If symptoms are mainly in the lower back or middle back, see the clinic’s back pain physiotherapy information.",
     causes: [
-      "Forward head posture ('text neck') from prolonged laptop, monitor, and smartphone usage",
+      "Device or desk use that involves staying in one position for a long time",
       "Sleeping in awkward postures or using an unsupportive, overly high pillow",
       "Acute cervical muscle strain from sudden head turning, driving jolts, or heavy lifting",
       "Emotional stress and workplace tension accumulating in the upper trapezius and levator scapulae",
-      "Facet joint irritation and joint capsule micro-trauma from repetitive rotational strain",
-      "Cervical disc bulges or degenerative disc disease creating localized neck ache"
+      "A recent change in activity, work demands, or exercise load",
+      "Different health or musculoskeletal factors, which require assessment rather than assumption"
     ],
     symptoms: [
       "Stiffness and restricted head rotation, especially when checking blind spots while driving",
       "Persistent dull, burning ache across the base of the skull, neck, and shoulder tops",
       "Sharp pinching pain during neck extension (looking up) or lateral bending",
       "Tension headaches radiating from the suboccipital region toward the temples or eyes",
-      "Tight, painful muscle knots (trigger points) in the upper back and neck"
+      "Discomfort during screen use, reading, driving, or other sustained activities"
     ],
-    howPhysioHelps: "Physiotherapy may help some people with neck pain through advice, comfortable movement, and exercises selected after assessment. Hands-on treatment may be considered when appropriate. The plan can be adjusted to the person's symptoms, work demands, and goals; no specific technique guarantees a lasting result.",
+    howPhysioHelps: "Physiotherapy may help some people through clear advice, gradual return to comfortable movement, activity adjustments, and exercises selected after assessment. Hands-on treatment may be considered when appropriate. For device-related discomfort sometimes called Tech Neck or Text Neck, varying positions, taking movement breaks, and adjusting screen setup may be useful; posture alone does not explain every person's pain. See the cervical pain page for information about pain in the neck region and its different presentations.",
     assessmentProcess: [
       "Cervical active and passive range of motion measurement (flexion, extension, rotation, lateral flexion)",
-      "Spurling's test and cervical distraction test to rule out nerve root compression",
-      "Palpation of cervical facet joints (C1 to C7) for hypomobility and local tenderness",
-      "Deep neck flexor endurance testing (craniocervical flexion test)",
-      "Evaluation of scapulothoracic posture, rounded shoulders, and upper thoracic mobility"
+      "Review of your symptoms, health history, daily activities, and relevant previous care",
+      "Neck and upper-back movement and the activities that matter to you",
+      "Strength, sensation, reflexes, or other neurological checks if your symptoms call for them",
+      "Discussion of whether physiotherapy is suitable or medical review is needed"
     ],
     treatmentApproach: [
-      "Gentle manual cervical joint mobilizations to restore pain-free segmental movement",
-      "Myofascial release of tight upper trapezius, levator scapulae, and suboccipitals",
-      "Retraining of the longus capitis and longus colli (deep neck flexors) for postural support",
-      "Thoracic spine mobilizations to alleviate compensatory cervical over-flexion",
-      "Workplace ergonomic workstation review and customized home exercise program"
+      "Practical advice on pacing and varying sustained desk, device, or driving positions",
+      "Comfortable neck and upper-back movement, progressed to suit your symptoms",
+      "Strength and endurance exercises matched to your activities and goals",
+      "Workstation or device-use suggestions where these fit your situation",
+      "Hands-on care only when appropriate, with progress reviewed together"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
@@ -48,54 +49,47 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
-    homeCare: [
-      "Position your computer monitor so the top third of the screen is at eye level",
-      "Take micro-breaks every 30 to 45 minutes to perform gentle chin tucks",
-      "Use an ergonomic contour pillow that supports the natural curve of your neck",
-      "Apply moist warm towels for 15 minutes to soothe tight neck muscles before bed",
-      "Avoid cradling mobile phones between your ear and shoulder"
-    ],
-    whenToVisit: "Schedule an assessment if neck pain persists for more than 48 hours, causes severe headaches, radiates into your arms, or prevents normal driving and work.",
+    homeCare: ["Vary your position during longer periods of desk, device, or driving activity", "Take comfortable movement breaks when practical", "Adjust screen placement for comfort rather than holding one posture rigidly", "Use movements or exercises only if they feel suitable for your symptoms", "Seek assessment if symptoms persist, worsen, or limit daily activities"],
+    whenToVisit: "Consider an assessment if neck pain or stiffness is persistent, recurring, or limiting sleep, work, driving, or other activities. Seek prompt medical assessment after significant trauma, for progressive weakness or numbness, new problems with balance or hand coordination, or other severe or rapidly changing symptoms.",
     faqs: [
       {
         question: "Can neck pain cause headaches?",
-        answer: "Yes, cervicogenic headaches originate from irritated cervical joints and suboccipital muscles in the upper neck. Physiotherapy effectively relieves both the neck stiffness and the associated headaches."
+        answer: "Neck pain and headache can occur together, but one does not automatically prove the other is caused by a neck joint or muscle. An assessment can help consider possible contributors and whether medical review is appropriate."
       },
       {
         question: "What is text neck syndrome, and how do you treat it?",
-        answer: "Text neck is a repetitive strain injury caused by tilting the head forward over smartphones or laptops. We treat it with cervical joint mobilizations, deep flexor strengthening, and ergonomic retraining."
+        answer: "Tech Neck or Text Neck is an informal phrase for neck or upper-back discomfort associated with device use or sustained positions; it is not a diagnosis. Varying positions, taking movement breaks, adjusting screen setup, and suitable exercises may help, depending on the person."
       },
       {
         question: "Do you crack or pop the neck during treatment?",
-        answer: "No. Dr. Hamid utilizes gentle, evidence-based joint mobilizations, myofascial release, and progressive exercises that are extremely safe, controlled, and comfortable without high-velocity thrusts."
+        answer: "Treatment options depend on assessment and preference. Hands-on care is not required for everyone; the clinician should explain any proposed technique and adjust or stop it if it is unsuitable or uncomfortable."
       },
       {
         question: "Can I receive home physiotherapy for severe neck pain in Manikonda?",
-        answer: "Yes, Dr. Hamid offers home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients experiencing severe acute neck spasms."
+        answer: "Contact the clinic to ask about current appointment options and whether an in-clinic visit or another arrangement is available for your situation."
       },
       {
         question: "How do I book an appointment?",
-        answer: "Call our clinic at +91 76010 26596 or contact us via WhatsApp to book your consultation."
+        answer: "Use the Book a Clinic Appointment link to open the existing appointment request form, or contact the clinic by phone or WhatsApp if you need help coordinating a visit."
       }
     ]
   },
   {
     slug: "cervical-pain-physiotherapy-manikonda",
+    relatedServiceSlugs: ["neck-pain-physiotherapy-manikonda", "cervical-spondylosis-physiotherapy-manikonda", "cervical-radiculopathy-physiotherapy-manikonda"],
     category: "Neck & Cervical",
     title: "Cervical Pain Physiotherapy",
     metaTitle: "Cervical Pain Physiotherapy in Manikonda | Cervical Spine Specialist Hyderabad",
     metaDescription: "Specialized clinical physiotherapy for cervical spine pain, radiating arm tingling, and cervical radiculopathy in Manikonda by Dr. Mohammed Hamid Ali.",
     h1: "Cervical Pain Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Targeted clinical care for cervical spine irritation, nerve root radiculopathy, and cervical discogenic pain.",
+    shortDescription: "Assessment-led information for pain and movement limitations in the cervical region, with care options based on symptoms and clinical findings.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Cervical pain physiotherapy and cervical spine rehabilitation in Manikonda",
-    whatItIs: "Cervical pain can arise from several structures in the neck and may include pain, tingling, numbness, or weakness in the arm. Symptoms need to be assessed; they do not by themselves confirm a specific nerve problem. At Dr Hamid’s Physio and Pain Clinic in Manikonda, an assessment can help discuss whether physiotherapy is suitable and whether medical review is needed.",
+    whatItIs: "Cervical pain means pain in the neck region. Its onset and presentation vary: some people have local pain or stiffness, while others report symptoms around the shoulder or arm. These symptoms do not by themselves confirm a disc, joint, or nerve diagnosis. At Dr Hamid’s Physio and Pain Clinic in Manikonda, assessment considers the history, movement, function, and any need for medical review before discussing rehabilitation.",
     causes: [
-      "Cervical disc herniation or protrusion (most frequently at C5-C6 and C6-C7)",
-      "Cervical radiculopathy from foraminal narrowing compressing the nerve root",
-      "Cervical facet joint arthrosis and osteophytic spur formation",
-      "Chronic cervical postural fatigue in desk workers and software developers",
-      "Traumatic whiplash from motor vehicle collisions or sudden head deceleration"
+      "Cervical-region pain can have multiple contributors, including changes in activity or a recent injury",
+      "Symptoms may occur with or without an identifiable structural finding",
+      "A clinician should not infer a specific cause from symptoms alone"
     ],
     symptoms: [
       "Sharp, electric-like or burning pain travelling down the arm into the hand or fingers",
@@ -104,20 +98,19 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Deep aching along the medial border of the scapula (shoulder blade)",
       "Pain aggravated by looking up (cervical extension) or turning toward the painful side"
     ],
-    howPhysioHelps: "Depending on the assessment, physiotherapy may include comfortable movement, exercises, and advice for daily activities. Some people may be offered hands-on techniques. Response varies, and new or worsening weakness, numbness, or other concerning symptoms should be assessed by a medical professional.",
+    howPhysioHelps: "Depending on assessment, physiotherapy may include information, comfortable movement, exercises, activity adjustments, and hands-on care when appropriate. This page focuses on pain in the cervical region; the broader neck pain page covers common symptom and activity questions. If symptoms suggest possible nerve-root involvement, see the cervical radiculopathy information. New or progressive neurological symptoms need prompt medical assessment.",
     assessmentProcess: [
-      "Upper limb neurodynamic testing (ULNT 1, 2, 3) to evaluate peripheral nerve tension",
-      "Detailed myotomal strength testing (deltoid, biceps, triceps, wrist flexors/extensors, hand intrinsics)",
-      "Dermatomal sensory mapping to pinpoint the specific affected cervical nerve root",
-      "Deep tendon reflex testing (biceps C5, brachioradialis C6, triceps C7)",
-      "Spurling's and cervical distraction maneuvers to confirm nerve root involvement"
+      "Symptom history, onset, relevant health history, and functional priorities",
+      "Cervical and upper-back movement and how symptoms respond",
+      "Neurological screening where arm symptoms or examination findings make it appropriate",
+      "Discussion of whether rehabilitation or medical review should come next"
     ],
     treatmentApproach: [
-      "Gentle manual cervical axial traction to open neural foramina and relieve nerve pressure",
-      "Neurodynamic nerve gliding to restore free movement of sensitive peripheral nerves",
-      "Manual myofascial release of scalenes, levator scapulae, and pectoralis minor",
-      "Deep cervical flexor and scapular stabilizer muscle activation exercises",
-      "Postural and sleeping position modifications with ergonomic cervical roll prescription"
+      "Advice and activity changes tailored to the person's daily routine",
+      "Gradual neck and upper-back movement within a tolerable range",
+      "Individualised strength and functional exercises, progressed as appropriate",
+      "Hands-on techniques only when indicated and acceptable to the patient",
+      "Review of goals, response, and whether additional medical assessment is needed"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
@@ -125,76 +118,52 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
-    homeCare: [
-      "Avoid sleeping on multiple stacked pillows; maintain a neutral horizontal neck alignment",
-      "Never push through sharp shooting arm pain during daily tasks",
-      "Perform gentle prescribed nerve gliding exercises smoothly without straining",
-      "Apply moist warmth to the upper back and neck for 15 minutes daily",
-      "Keep reading material and mobile devices elevated at chest and eye height"
-    ],
+    homeCare: ["Keep track of activities that affect your symptoms without assuming one cause", "Vary positions and take comfortable movement breaks when practical", "Avoid forcing movements that cause sharp or worsening symptoms", "Bring relevant medical reports to an appointment if you already have them", "Seek medical review for progressive weakness or numbness"],
     whenToVisit: "Arrange medical assessment for neck pain with persistent tingling, numbness, or weakness in the arm or hand. Seek urgent care for sudden or worsening weakness, trouble walking, or other severe or rapidly changing symptoms.",
     faqs: [
-      {
-        question: "Can cervical radiculopathy heal without surgery?",
-        answer: "Some people with cervical radiculopathy improve with non-surgical care, but the cause, severity, and response vary. An assessment can help determine whether physiotherapy is appropriate or whether medical review is needed."
-      },
-      {
-        question: "Why do my fingers tingle when I have neck pain?",
-        answer: "Nerves that control sensation and muscle strength in your arms and fingers originate from the cervical spine. Pressure on these nerve roots in the neck manifests as tingling or numbness down in the hand."
-      },
-      {
-        question: "Is cervical traction safe?",
-        answer: "Traction is not appropriate for everyone and may not be needed. A clinician should first assess the symptoms and relevant health history, explain options, and stop or adjust any technique that causes concerning discomfort."
-      },
-      {
-        question: "Do you treat IT workers with cervical pain in Manikonda?",
-        answer: "Yes, we treat hundreds of tech professionals from Manikonda, Gachibowli, and the Financial District with customized postural and cervical rehabilitation programs."
-      },
-      {
-        question: "How do I book an appointment?",
-        answer: "Call +91 76010 26596 or send a WhatsApp message to book your consultation at our Manikonda clinic."
-      }
-    ]
+      { question: "Does cervical pain always mean a nerve problem?", answer: "No. Cervical-region pain has different presentations. Arm symptoms can have several causes and do not by themselves confirm nerve-root involvement; assessment helps determine appropriate next steps." },
+      { question: "What can physiotherapy include?", answer: "When suitable, it may include education, comfortable movement, activity guidance, and individualised exercises. Hands-on care is considered only when appropriate." },
+      { question: "When should I seek medical review?", answer: "Seek prompt medical assessment for progressive weakness or numbness, new difficulty with balance or walking, significant trauma, or other severe or rapidly changing symptoms." },
+      { question: "Do I need imaging before an assessment?", answer: "Imaging is not required for every episode of neck pain. A healthcare professional can advise based on symptoms and examination; bring relevant existing reports if you have them." },
+      { question: "How do I request a clinic appointment?", answer: "Use the Book a Clinic Appointment link to open the existing appointment request form, or contact the clinic by phone or WhatsApp for help coordinating a visit." }
+    ],
   },
   {
     slug: "cervical-spondylosis-physiotherapy-manikonda",
+    relatedServiceSlugs: ["neck-pain-physiotherapy-manikonda", "cervical-radiculopathy-physiotherapy-manikonda"],
     category: "Neck & Cervical",
     title: "Cervical Spondylosis Physiotherapy",
     metaTitle: "Cervical Spondylosis Physiotherapy in Manikonda | Neck Arthritis Care",
     metaDescription: "Relieve chronic neck stiffness, cervical spondylosis, and dizziness with evidence-based physiotherapy in Manikonda under Dr. Mohammed Hamid Ali.",
     h1: "Cervical Spondylosis Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Specialized clinical rehabilitation for age-related cervical spine degeneration, osteophytes, and facet joint arthritis.",
+    shortDescription: "Assessment-led rehabilitation information for diagnosed degenerative cervical changes and related functional limitations.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Cervical spondylosis physiotherapy and neck arthritis care in Manikonda clinic",
     whatItIs: "Cervical spondylosis describes age-related changes in the neck, including changes to discs and joints. Some people have pain or stiffness, while others have no symptoms. An assessment can help consider whether physiotherapy may support movement and everyday activity; it cannot reverse age-related changes or guarantee pain-free function.",
     causes: [
       "Natural age-related dehydration and height loss of cervical intervertebral discs",
       "Development of marginal osteophytes (bone spurs) around vertebral bodies and facet joints",
-      "Decades of sustained forward head posture accelerating cervical joint wear",
-      "Loss of cervical lordosis ('straightening' of the normal neck curve)",
-      "Muscular atrophy and fatigue of the deep cervical stabilizing musculature"
+      "Imaging findings may or may not be related to a person's symptoms",
+      "Daily activity, health, and function vary between individuals"
     ],
     symptoms: [
       "Persistent stiffness and difficulty turning the head while driving or looking behind",
-      "Crepitation, cracking, or grinding sensations during head rotation",
-      "Suboccipital headaches radiating from the base of the skull toward the temples",
-      "Pain and heaviness in the neck and shoulders after prolonged sitting or computer work",
-      "Occasional episodes of postural unsteadiness or lightheadedness when changing head positions"
+      "Pain, stiffness, or reduced tolerance for turning or holding the head in one position",
+      "Changes in arm sensation, strength, balance, or coordination warrant clinical assessment"
     ],
-    howPhysioHelps: "Physiotherapy keeps arthritic cervical joints mobile, lubricates articular surfaces with synovial fluid, and removes excessive mechanical stress. Dr. Mohammed Hamid Ali combines gentle oscillatory joint mobilizations, suboccipital myofascial release, supportive heat/electrotherapy, and progressive cervical isometric exercises that stabilize the neck without grinding the joints.",
+    howPhysioHelps: "Physiotherapy cannot reverse cervical spondylosis or guarantee symptom relief. It may support function through education, comfortable movement, and strength or endurance exercises selected for the person's symptoms and goals. Imaging changes do not always correspond directly with pain or disability, so assessment considers the whole clinical picture. Degenerative findings do not inevitably cause nerve-root symptoms; new or progressive neurological changes need medical review.",
     assessmentProcess: [
-      "Careful evaluation of cervical range of motion and joint end-feel",
-      "Vertebral artery test (VBI screening) to ensure vascular safety during movement",
-      "Palpation of upper cervical facet joints (C2-C3, C3-C4) and cervicothoracic junction",
-      "Assessment of thoracic kyphosis and rounded shoulder posture contributing to cervical stress",
-      "Review of cervical X-ray or MRI findings to understand disc height and osteophyte locations"
+      "Review of symptoms, daily function, relevant history, and any available imaging report",
+      "Neck and upper-back movement, strength, and activity tolerance",
+      "Neurological checks where symptoms or examination findings indicate them",
+      "Discussion of what imaging can and cannot explain and whether medical review is appropriate"
     ],
     treatmentApproach: [
-      "Gentle Grade I-III oscillatory joint mobilizations to lubricate degenerative facet joints",
-      "Suboccipital release to eliminate cervicogenic tension headaches",
-      "Isometric neck strengthening (multi-directional resistance without joint movement)",
-      "Supportive heat therapy and gentle electrotherapy to soothe chronic muscular aching",
-      "Ergonomic pillow prescription and posture pacing strategies for daily life"
+      "Education about the diagnosis and the limits of interpreting imaging alone",
+      "Gradual neck movement and mobility exercises when tolerated",
+      "Strength and endurance work matched to symptoms and meaningful activities",
+      "Practical pacing or activity changes that fit daily life",
+      "Regular review and adjustment based on function and response"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
@@ -202,54 +171,31 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
-    homeCare: [
-      "Perform gentle neck isometric presses (forward, back, side) for 5 seconds each daily",
-      "Apply moist warmth to your neck for 15 minutes every morning to loosen overnight stiffness",
-      "Choose a pillow that matches the distance between your ear and shoulder tip when on your side",
-      "Avoid keeping your neck turned to one side for prolonged periods while watching TV or reading",
-      "Incorporate daily gentle shoulder rolls and shoulder blade squeezes"
-    ],
-    whenToVisit: "Schedule a consultation if neck stiffness limits your daily activities, causes frequent morning headaches, or makes turning your head uncomfortable.",
+    homeCare: ["Continue comfortable daily activity as tolerated", "Vary positions during sustained tasks when practical", "Use exercises only when they have been selected for your needs", "Bring relevant imaging reports to an appointment for discussion in context", "Seek prompt medical review for progressive weakness, numbness, balance, or coordination changes"],
+    whenToVisit: "Consider assessment when neck pain, stiffness, or a diagnosed imaging change is affecting activity or function. Seek prompt medical review for progressive weakness or numbness, new difficulty with balance or hand coordination, or other severe or rapidly changing symptoms.",
     faqs: [
-      {
-        question: "Can cervical spondylosis be permanently cured?",
-        answer: "Physiotherapy does not reverse age-related bone or disc changes, and symptom relief cannot be guaranteed. An individual plan may help manage pain and stiffness and support everyday activity. Seek assessment for new weakness, worsening numbness, or other concerning symptoms."
-      },
-      {
-        question: "What is the best pillow for cervical spondylosis?",
-        answer: "A medium-firm contour cervical pillow that supports the hollow of your neck and keeps your head in neutral alignment with your spine is ideal."
-      },
-      {
-        question: "Can cervical spondylosis cause dizziness?",
-        answer: "Yes, irritation of cervical sympathetic nerves and tight suboccipital muscles can trigger cervicogenic dizziness. Physiotherapy treats the underlying neck dysfunction to resolve this."
-      },
-      {
-        question: "Do you offer home visit physiotherapy for elderly patients with cervical spondylosis in Manikonda?",
-        answer: "Yes, Dr. Hamid provides compassionate home visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for seniors who find travelling difficult."
-      },
-      {
-        question: "How do I book an appointment?",
-        answer: "Call our clinic at +91 76010 26596 or reach out via WhatsApp to schedule an assessment."
-      }
-    ]
+      { question: "Can physiotherapy reverse cervical spondylosis?", answer: "Physiotherapy does not reverse age-related structural changes, and symptom relief cannot be guaranteed. Individualised advice and rehabilitation may support mobility, strength, and everyday function." },
+      { question: "Do imaging findings always explain neck pain?", answer: "No. Cervical imaging findings do not always correspond directly to symptoms, so they should be interpreted alongside history and clinical assessment." },
+      { question: "Can cervical spondylosis cause dizziness?", answer: "Dizziness has many possible causes and should not be attributed to cervical spondylosis without appropriate assessment. Seek medical advice for new, persistent, severe, or concerning dizziness, particularly with neurological symptoms." },
+      { question: "When should I seek medical review?", answer: "Seek prompt medical assessment for progressive weakness or numbness, new difficulty with balance or hand coordination, or other severe or rapidly changing symptoms." },
+      { question: "How do I book an appointment?", answer: "Use the Book a Clinic Appointment link to open the existing appointment request form, or contact the clinic by phone or WhatsApp for help coordinating a visit." }
+    ],
   },
   {
     slug: "cervical-radiculopathy-physiotherapy-manikonda",
+    relatedServiceSlugs: ["neck-pain-physiotherapy-manikonda", "cervical-pain-physiotherapy-manikonda", "cervical-spondylosis-physiotherapy-manikonda"],
     category: "Neck & Cervical",
     title: "Cervical Radiculopathy Physiotherapy",
     metaTitle: "Cervical Radiculopathy Physiotherapy in Manikonda | Pinched Nerve Relief Hyderabad",
     metaDescription: "Relieve radiating arm pain, tingling, and weakness from cervical radiculopathy with specialized physiotherapy in Manikonda. Expert care by Dr. Mohammed Hamid Ali.",
     h1: "Cervical Radiculopathy Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Specialized clinical rehabilitation for pinched cervical nerves, radiating arm pain, and nerve root compression.",
+    shortDescription: "Assessment-led information for neck pain with radiating arm symptoms and possible cervical nerve-root involvement.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Cervical radiculopathy physiotherapy and pinched nerve treatment in Manikonda clinic",
     whatItIs: "Cervical radiculopathy refers to irritation or compression of a nerve root in the neck and can cause pain, tingling, numbness, or weakness in the arm. Similar symptoms can have other causes, so an assessment is needed. At Dr Hamid’s Physio and Pain Clinic in Manikonda, care options are discussed after reviewing symptoms, movement, and medical history.",
     causes: [
-      "Herniated or protruded cervical intervertebral disc (most commonly at C5-C6 or C6-C7)",
-      "Degenerative disc disease with loss of disc height narrowing the intervertebral foramen",
-      "Cervical osteophytes (bone spurs) encroaching on the nerve root exit pathway",
-      "Uncovertebral joint hypertrophy and facet joint arthrosis",
-      "Acute cervical disc injury from trauma or sudden neck movements"
+      "Possible contributors include disc or joint changes, but symptoms alone do not identify a specific cause",
+      "Other conditions can also cause arm pain, tingling, numbness, or weakness and may need consideration"
     ],
     symptoms: [
       "Sharp, electric-like or burning pain shooting from the neck down into the shoulder, arm, or hand",
@@ -258,20 +204,19 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Pain aggravated by looking up (cervical extension) or turning the head toward the painful side",
       "Deep aching in the medial border of the shoulder blade"
     ],
-    howPhysioHelps: "Physiotherapy may help some people manage arm and neck symptoms through advice, comfortable movement, and individually selected exercises. Hands-on techniques may be considered when appropriate. The plan depends on the assessment and does not replace medical review where symptoms are severe, worsening, or unexplained.",
+    howPhysioHelps: "Radicular pain describes pain that may arise from irritation or involvement of a nerve root. Radiculopathy refers to nerve-root dysfunction that may include sensory, motor, or reflex changes; the terms are related but not interchangeable. Assessment may include a neurological examination and consideration of other causes. Physiotherapy can include advice, movement, and exercises if suitable. Neural mobilisation is considered only when examination supports it and the person tolerates it. It does not replace medical assessment for progressive weakness, worsening neurological signs, or other concerning symptoms.",
     assessmentProcess: [
-      "Upper Limb Neurodynamic Tests (ULNT 1, 2, 3) to evaluate median, radial, and ulnar nerve tension",
-      "Detailed myotomal strength testing for C5-T1 nerve root motor function",
-      "Dermatomal sensory mapping to identify the specific compressed nerve root",
-      "Deep tendon reflex testing (biceps C5, brachioradialis C6, triceps C7)",
-      "Spurling's test and cervical distraction test to confirm nerve root involvement"
+      "History of neck and arm symptoms, progression, health history, and functional impact",
+      "Appropriate checks of arm strength, sensation, reflexes, movement, and function",
+      "Consideration of other possible causes and whether medical review or investigation is needed",
+      "Discussion of treatment suitability and warning signs to monitor"
     ],
     treatmentApproach: [
-      "Gentle manual cervical traction to open the intervertebral foramen and relieve nerve compression",
-      "Neural mobilization (neurodynamic glides) to restore free movement of the affected nerve",
-      "Cervical retraction and directional exercises to centralize radiating symptoms",
-      "Myofascial release of scalenes, levator scapulae, and pectoralis minor to reduce neural tension",
-      "Deep cervical flexor strengthening and postural correction to maintain foraminal opening"
+      "Advice and activity adjustment based on symptoms and examination findings",
+      "Comfortable neck, shoulder, and arm movement when appropriate",
+      "Individualised strength and functional exercises with response monitored",
+      "Neural mobilisation only when clinically appropriate and tolerated",
+      "Coordination with medical care or referral when symptoms require it"
     ],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
@@ -279,40 +224,15 @@ export const neckAndCervicalServices: ServiceDetail[] = [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
-    homeCare: [
-      "Avoid sleeping on multiple high pillows that push your neck into flexion",
-      "Never push through sharp shooting arm pain during daily activities",
-      "Perform gentle prescribed nerve gliding exercises smoothly without forcing",
-      "Use a cervical roll or supportive pillow to maintain neutral neck alignment during sleep",
-      "Keep your phone and reading material at eye level to avoid prolonged neck bending"
-    ],
+    homeCare: ["Avoid forcing movements or stretches that worsen arm symptoms", "Vary sustained positions and activities as tolerated", "Use nerve or neck exercises only if recommended after assessment", "Record changes in strength, sensation, or function to discuss with a clinician", "Seek prompt medical care for progressive weakness or other severe neurological changes"],
     whenToVisit: "Arrange medical assessment for persistent arm pain, numbness, or reduced grip strength. Seek urgent medical care for sudden or worsening weakness or other severe symptoms.",
     faqs: [
-      {
-        question: "Can cervical radiculopathy heal without surgery?",
-        answer: "Some people improve with non-surgical care, but the best approach depends on the cause and severity of symptoms. A clinician can assess whether physiotherapy is appropriate or whether another medical evaluation is needed."
-      },
-      {
-        question: "How is cervical radiculopathy different from a regular neck strain?",
-        answer: "A neck strain affects only muscles and causes localized pain. Cervical radiculopathy involves compression of a nerve root, causing radiating pain, numbness, and weakness that travels down the arm into specific fingers."
-      },
-      {
-        question: "Why do my fingers tingle when I have neck pain?",
-        answer: "Nerves that control sensation in your arms and fingers exit from your cervical spine. When a disc or bone spur compresses these nerve roots in the neck, the symptoms appear as tingling or numbness in specific finger patterns."
-      },
-      {
-        question: "Is cervical traction safe for a pinched nerve?",
-        answer: "Traction is not suitable for everyone, and evidence and response vary by condition. A clinician should assess symptoms and relevant precautions before discussing whether it is appropriate. Seek urgent care for sudden severe symptoms or new weakness."
-      },
-      {
-        question: "Do you treat IT professionals with cervical radiculopathy in Manikonda?",
-        answer: "Yes, we frequently treat tech professionals from Manikonda, Gachibowli, and the Financial District who develop cervical radiculopathy from prolonged desk work and forward head posture."
-      },
-      {
-        question: "How do I book a cervical radiculopathy consultation?",
-        answer: "Call +91 76010 26596 or message us on WhatsApp to schedule your assessment. Bring any cervical MRI or X-ray reports if available."
-      }
-    ]
+      { question: "Are radicular pain and radiculopathy the same?", answer: "They are related but not interchangeable. Radicular pain is pain associated with nerve-root irritation or involvement; radiculopathy refers to nerve-root dysfunction that may include sensory, motor, or reflex changes." },
+      { question: "Does tingling in the hand prove a cervical nerve-root problem?", answer: "No. Tingling has several possible causes. Assessment may include checks of strength, sensation, reflexes, and other relevant factors." },
+      { question: "Will treatment include neural mobilisation or traction?", answer: "Not necessarily. These techniques are considered only if the assessment supports them, they are appropriate for the person, and the person tolerates them." },
+      { question: "When should I seek urgent medical care?", answer: "Seek prompt medical assessment for progressive weakness or numbness, new balance or walking problems, or other severe or rapidly changing symptoms. Sudden-onset weakness requires urgent medical evaluation." },
+      { question: "How can I book an assessment?", answer: "Use the Book a Clinic Appointment link to open the existing appointment request form. Call or message the clinic if you need help coordinating a visit." }
+    ],
   },
   {
     slug: "tech-neck-physiotherapy-manikonda",

@@ -9,8 +9,6 @@ const CallbackForm = () => {
   const [name, setName] = useState("");
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    trackAnalyticsEvent("callback_whatsapp_click");
-
     // Open WhatsApp with pre-filled callback request
     const message = `Callback Request:\nName: ${name}\nPhone: ${phone}\n\nPlease call me back at your earliest convenience.`;
     window.open(
@@ -18,6 +16,9 @@ const CallbackForm = () => {
       "_blank",
       "noopener,noreferrer"
     );
+    trackAnalyticsEvent("whatsapp_click", {
+      cta_location: "page_content",
+    });
   };
 
   return (
@@ -31,7 +32,7 @@ const CallbackForm = () => {
       <p className="text-gray-600 mb-6">
         Continue in WhatsApp with a prepared callback request. Review it and press Send to contact the clinic.
       </p>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4" data-clarity-mask="true">
         <label htmlFor="callback-name" className="sr-only">Your name</label>
         <Input
           type="text"

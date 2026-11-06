@@ -5,7 +5,9 @@ import { trackAnalyticsEvent } from "@/lib/analytics";
 
 const StickyCTA = () => {
   const handleCall = () => {
-    trackAnalyticsEvent("phone_call_click");
+    trackAnalyticsEvent("phone_click", {
+      cta_location: "sticky",
+    });
     window.location.href = "tel:+917601026596";
   };
 
@@ -14,6 +16,9 @@ const StickyCTA = () => {
       "https://wa.me/917601026596?text=Hi,%20I%20would%20like%20to%20book%20a%20physiotherapy%20appointment.",
       "_blank"
     );
+    trackAnalyticsEvent("whatsapp_click", {
+      cta_location: "sticky",
+    });
   };
 
   return (

@@ -53,7 +53,10 @@ export const ServiceDetailPage: React.FC = () => {
   }
 
   const handleCall = () => {
-    trackAnalyticsEvent("phone_call_click");
+    trackAnalyticsEvent("phone_click", {
+      page_category: "service",
+      cta_location: "service_page",
+    });
     window.location.href = "tel:+917601026596";
   };
 
@@ -62,6 +65,10 @@ export const ServiceDetailPage: React.FC = () => {
       `Hello Dr. Hamid, I would like to book a consultation for ${service.title} at your Manikonda clinic.`
     );
     openWhatsApp(decodeURIComponent(text));
+    trackAnalyticsEvent("whatsapp_click", {
+      page_category: "service",
+      cta_location: "service_page",
+    });
   };
 
   const canonicalUrl = `https://www.drhamidphysio.in/services/${service.slug}`;
@@ -233,11 +240,21 @@ export const ServiceDetailPage: React.FC = () => {
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-3 pt-3">
                 <Button
-                  onClick={handleCall}
+                  asChild
                   className="bg-[#081a2e] hover:bg-[#122842] text-white font-semibold px-6 py-6 rounded-xl flex items-center justify-center gap-2 text-base shadow-md transition-all hover:scale-[1.02]"
                 >
+                  <Link to="/contact#appointment-request">
+                    <Calendar className="w-5 h-5 text-[#e5c58a]" />
+                    <span>Book a Clinic Appointment</span>
+                  </Link>
+                </Button>
+                <Button
+                  onClick={handleCall}
+                  variant="outline"
+                  className="border-[#081a2e] text-[#081a2e] hover:bg-[#f4ede0] font-semibold px-6 py-6 rounded-xl flex items-center justify-center gap-2 text-base"
+                >
                   <Phone className="w-5 h-5 text-[#8a5d24]" />
-                  <span>Call +91 76010 26596</span>
+                  <span>Call the clinic</span>
                 </Button>
                 <Button
                   onClick={handleWhatsApp}
@@ -286,6 +303,11 @@ export const ServiceDetailPage: React.FC = () => {
             <p className="mt-2">This page provides general information and is not a diagnosis or individual treatment plan. Suitability and progress vary. Follow your treating clinician’s or surgeon’s instructions, especially after an injury or operation, and seek urgent medical care for sudden severe or concerning symptoms.</p>
           </section>
         </div>
+      </section>
+      <section id="clinic-visit-expectations" className="mt-4 rounded-xl border border-[#e5dec9] bg-white p-5 text-sm leading-relaxed text-[#334155]">
+        <h2 className="font-semibold text-[#081a2e]">What to expect at a clinic appointment</h2>
+        <p className="mt-2">The visit starts with a discussion of your symptoms, health history, and goals. Dr. Hamid may assess relevant movement, strength, sensation, and daily activities, then explain the findings and appropriate next steps. A treatment plan is discussed only if physiotherapy is suitable; referral or further medical assessment may be recommended when needed.</p>
+        <Link to="/contact#appointment-request" className="mt-3 inline-flex font-semibold text-[#8a5d24] underline-offset-2 hover:underline">Book a Clinic Appointment</Link>
       </section>
 
       {/* Main Educational Long-Form Content Area */}
@@ -337,6 +359,29 @@ export const ServiceDetailPage: React.FC = () => {
                 </div>
               </article>
 
+              {service.slug === "neck-pain-physiotherapy-manikonda" && (
+                                <article id="tech-neck-text-neck" className="bg-white border border-[#e5dec9] rounded-2xl p-6 sm:p-8 shadow-xs space-y-4">
+                  <h2 className="font-serif text-2xl font-bold text-[#081a2e]">Tech Neck or Text Neck: Can Device Use Contribute to Neck Pain?</h2>
+                  <p className="text-sm sm:text-base leading-relaxed text-[#334155]">Tech Neck or Text Neck is an informal term for neck or upper-back discomfort associated with device use or staying in one position. It is not a diagnosis, and posture alone does not explain every person's pain.</p>
+                  <p className="text-sm sm:text-base leading-relaxed text-[#334155]">Try varying positions, taking comfortable movement breaks, and adjusting your phone, laptop, or monitor to make screen use more comfortable. If symptoms persist, an assessment can help identify suitable activity changes and exercises. Read more about <Link to="/services/cervical-pain-physiotherapy-manikonda" className="text-[#8a5d24] underline">cervical-region pain assessment</Link>.</p>
+                </article>
+              )}
+
+              {service.slug === "neck-pain-physiotherapy-manikonda" && (
+                <aside id="cervical-case-study-resource" className="rounded-xl border border-[#e5dec9] bg-white p-5">
+                  <p className="text-sm leading-relaxed text-[#334155]">Read the anonymised cervical case study, including its measurements, assessment, documented care, and follow-up, in Patient Resources.</p>
+                  <Link to="/conditions" className="mt-3 inline-flex font-semibold text-[#8a5d24] underline underline-offset-2">View the cervical case study in Patient Resources</Link>
+                </aside>
+              )}
+
+
+              {service.slug === "back-pain-physiotherapy-manikonda" && (
+                <aside id="lumbar-case-study-resource" className="rounded-xl border border-[#e5dec9] bg-white p-5">
+                  <p className="text-sm leading-relaxed text-[#334155]">Read the anonymised lumbar case study, including its measurements, assessment, documented care, and follow-up, in Patient Resources.</p>
+                  <Link to="/conditions" className="mt-3 inline-flex font-semibold text-[#8a5d24] underline underline-offset-2">View the lumbar case study in Patient Resources</Link>
+                </aside>
+              )}
+
               {/* Section 2: Causes & Symptoms Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Causes */}
@@ -345,10 +390,10 @@ export const ServiceDetailPage: React.FC = () => {
                     <div className="w-8 h-8 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center text-[#8a5d24]">
                       <AlertCircle className="w-4 h-4" />
                     </div>
-                    <h2 className="font-serif text-xl font-bold">Common Causes</h2>
+                    <h2 className="font-serif text-xl font-bold">{service.slug === "home-visit-physiotherapy-manikonda" ? "Who May Benefit From a Home Visit?" : "Possible Contributors"}</h2>
                   </div>
                   <p className="text-xs text-[#64748b]">
-                    Primary mechanical, postural, and physiological factors observed in our Manikonda clinic:
+                    Possible contributors vary between people and cannot be confirmed from symptoms alone:
                   </p>
                   <ul className="space-y-2.5 text-sm text-[#334155]">
                     {service.causes.map((cause, idx) => (
@@ -366,10 +411,10 @@ export const ServiceDetailPage: React.FC = () => {
                     <div className="w-8 h-8 rounded-lg bg-rose-50 border border-rose-200 flex items-center justify-center text-rose-700">
                       <Activity className="w-4 h-4" />
                     </div>
-                    <h2 className="font-serif text-xl font-bold">Frequent Symptoms</h2>
+                    <h2 className="font-serif text-xl font-bold">Symptoms and Functional Difficulties</h2>
                   </div>
                   <p className="text-xs text-[#64748b]">
-                    Signs and functional limitations indicating need for physical therapy:
+                    Symptoms that may make an assessment useful:
                   </p>
                   <ul className="space-y-2.5 text-sm text-[#334155]">
                     {service.symptoms.map((symptom, idx) => (
@@ -389,10 +434,10 @@ export const ServiceDetailPage: React.FC = () => {
                   <span>Step-by-Step Clinical Assessment</span>
                 </div>
                 <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#081a2e]">
-                  Our Diagnostic Evaluation in Manikonda
+                  How a Physiotherapy Assessment Works
                 </h2>
                 <p className="text-sm sm:text-base text-[#4a5568] leading-relaxed">
-                  An assessment may include discussion of your symptoms and goals, plus movement checks selected for your individual needs.
+                  A physiotherapy assessment starts with your symptoms, relevant health history, and goals, then checks movement and function that fit your needs.
                 </p>
 
                 <div className="space-y-3">
@@ -416,13 +461,13 @@ export const ServiceDetailPage: React.FC = () => {
               <div className="bg-white border border-[#e5dec9] rounded-2xl p-6 sm:p-8 md:p-10 shadow-xs space-y-6">
                 <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#8a5d24]">
                   <Layers className="w-4 h-4" />
-                  <span>Multimodal Treatment Protocol</span>
+                  <span>Individualised Rehabilitation</span>
                 </div>
                 <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#081a2e]">
-                  Evidence-Based Treatment Approach
+                  What Physiotherapy May Involve
                 </h2>
                 <p className="text-sm sm:text-base text-[#4a5568] leading-relaxed">
-                  We integrate hands-on manual mobilizations, targeted electro-physical modalities, and progressive active exercise therapy:
+                  Treatment options depend on the assessment, your preferences, and how you respond; no single technique is right for everyone.
                 </p>
 
                 <div className="grid grid-cols-1 gap-3">
@@ -465,17 +510,13 @@ export const ServiceDetailPage: React.FC = () => {
                 <div className="bg-white border border-[#e5dec9] rounded-2xl p-6 shadow-xs space-y-4">
                   <h3 className="font-serif text-lg font-bold text-[#081a2e] flex items-center gap-2">
                     <AlertCircle className="w-5 h-5 text-rose-600" />
-                    <span>When to Consult Dr. Hamid</span>
+                  <span>When to Seek an Assessment</span>
                   </h3>
                   <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed">
                     {service.whenToVisit}
                   </p>
-                  <Button
-                    onClick={handleCall}
-                    size="sm"
-                    className="w-full bg-[#081a2e] hover:bg-[#122842] text-white text-xs mt-2"
-                  >
-                    Schedule Assessment Today
+                  <Button asChild size="sm" className="w-full bg-[#081a2e] hover:bg-[#122842] text-white text-xs mt-2">
+                    <Link to="/contact#appointment-request">Book a Clinic Appointment</Link>
                   </Button>
                 </div>
               </div>
@@ -572,12 +613,19 @@ export const ServiceDetailPage: React.FC = () => {
 
                 {/* Booking Action Buttons */}
                 <div className="space-y-2.5 pt-2">
+                  <Button asChild className="w-full bg-[#081a2e] hover:bg-[#122842] text-white font-semibold py-5 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md">
+                    <Link to="/contact#appointment-request">
+                      <Calendar className="w-4 h-4 text-[#e5c58a]" />
+                      <span>Book a Clinic Appointment</span>
+                    </Link>
+                  </Button>
                   <Button
                     onClick={handleCall}
-                    className="w-full bg-[#081a2e] hover:bg-[#122842] text-white font-semibold py-5 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md"
+                    variant="outline"
+                    className="w-full border-[#081a2e] text-[#081a2e] hover:bg-[#f4ede0] font-semibold py-5 rounded-xl flex items-center justify-center gap-2 text-sm"
                   >
                     <Phone className="w-4 h-4 text-[#8a5d24]" />
-                    <span>Call +91 76010 26596</span>
+                    <span>Call the clinic</span>
                   </Button>
                   <Button
                     onClick={handleWhatsApp}
@@ -641,9 +689,16 @@ export const ServiceDetailPage: React.FC = () => {
       {/* Bottom Sticky Action Bar on Mobile */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#e5dec9] p-3 shadow-xl">
         <div className="flex gap-2 max-w-md mx-auto">
+          <Button asChild className="flex-1 bg-[#081a2e] hover:bg-[#122842] text-white text-xs font-semibold py-5 rounded-xl flex items-center justify-center gap-1.5">
+            <Link to="/contact#appointment-request">
+              <Calendar className="w-4 h-4 text-[#e5c58a]" />
+              <span>Book Appointment</span>
+            </Link>
+          </Button>
           <Button
             onClick={handleCall}
-            className="flex-1 bg-[#081a2e] hover:bg-[#122842] text-white text-xs font-semibold py-5 rounded-xl flex items-center justify-center gap-1.5"
+            variant="outline"
+            className="flex-1 border-[#081a2e] text-[#081a2e] hover:bg-[#f4ede0] text-xs font-semibold py-5 rounded-xl flex items-center justify-center gap-1.5"
           >
             <Phone className="w-4 h-4 text-[#8a5d24]" />
             <span>Call Clinic</span>

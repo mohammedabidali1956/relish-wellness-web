@@ -1,8 +1,8 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useRef } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
@@ -19,6 +19,24 @@ import {
   TermsAndConditionsPage,
   NotFound,
 } from "@/lib/routeModules";
+import { trackPageView } from "@/lib/analytics";
+
+const AnalyticsRouteTracker = () => {
+  const location = useLocation();
+  const previousPathRef = useRef<string | null>(null);
+  const lastLocationRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    const currentPath = `${location.pathname}${location.search}`;
+    if (lastLocationRef.current === currentPath) return;
+
+    trackPageView(location.pathname, previousPathRef.current ?? undefined);
+    previousPathRef.current = location.pathname;
+    lastLocationRef.current = currentPath;
+  }, [location.pathname, location.search]);
+
+  return null;
+};
 
 const LazyRoute = ({ Page }: { Page: React.ComponentType }) => (
   <Suspense
@@ -34,6 +52,7 @@ const LazyRoute = ({ Page }: { Page: React.ComponentType }) => (
 
 export const AppContent = () => (
   <TooltipProvider>
+    <AnalyticsRouteTracker />
     <Toaster />
     <Sonner />
     <ScrollToTop />

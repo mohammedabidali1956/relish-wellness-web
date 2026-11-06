@@ -8,76 +8,31 @@ export const kneeServices: ServiceDetail[] = [
     metaTitle: "Knee Pain Physiotherapy in Manikonda | Expert Knee Care Hyderabad",
     metaDescription: "Relieve acute and chronic knee pain with specialized physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali. Book today!",
     h1: "Knee Pain Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Comprehensive physiotherapy for knee pain, arthritis, ligament strain, stair-climbing difficulty, and sports-related knee problems. Aims to reduce pain and improve daily function.",
+    shortDescription: "Assessment-led physiotherapy information for knee pain, stiffness, and movement limitations that affect walking, stairs, sports, work, or daily activities.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Knee pain physiotherapy and knee joint rehabilitation in Manikonda clinic",
-    whatItIs: "Knee pain is one of the most disabling musculoskeletal complaints, directly impairing basic daily activities such as walking, descending stairs, squatting, and rising from low seats. The knee is a modified hinge joint that bears up to 3 to 5 times your body weight during stair climbing and squatting. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, we evaluate the entire kinetic chain — from the hip abductors down to the foot and ankle — to pinpoint why your knee is absorbing abnormal mechanical stress.",
-    causes: [
-      "Patellofemoral pain syndrome (runner's knee) caused by abnormal tracking of the kneecap in the femoral groove",
-      "Quadriceps and vastus medialis obliquus (VMO) muscle weakness allowing patellar lateral tilt",
-      "Hip abductor (gluteus medius) weakness causing excessive knee valgus during walking or running",
-      "Patellar tendinitis (jumper's knee) from repetitive jumping, squatting, or athletic loading",
-      "Pes anserine bursitis causing localized tenderness on the inner upper shin",
-      "Sudden increases in running mileage, step counts, or gym squatting without adequate progressive conditioning"
-    ],
-    symptoms: [
-      "Aching or burning pain behind or around the kneecap when climbing or descending stairs",
-      "Stiffness and discomfort when sitting for long periods with bent knees ('theater sign')",
-      "Grinding, clicking, or crunching sensations (crepitus) during knee bending and straightening",
-      "Localized tenderness and mild puffiness along the front or sides of the knee joint",
-      "Hesitation or pain when standing up from deep sofas, chairs, or car seats"
-    ],
-    howPhysioHelps: "Physiotherapy for knee pain may include activity advice, exercise, and movement practice selected after assessment. The plan depends on the cause of symptoms and individual goals; improvement and response vary between people.",
-    assessmentProcess: [
-      "Patellar tracking and glide assessment in supine and functional weight-bearing positions",
-      "Quadriceps Q-angle measurement and vastus medialis obliquus (VMO) timing evaluation",
-      "Single-leg squat and step-down test to assess dynamic knee valgus and hip abductor control",
-      "Palpation of the joint line, patellar tendon, pes anserine bursa, and fat pad",
-      "Gait and foot posture evaluation to detect overpronation contributing to internal tibial rotation"
-    ],
-    treatmentApproach: [
-      "Patellar mobilization techniques to release tight lateral retinacular tissues",
-      "Kinesiology patellar taping (McConnell taping) to instantly offload irritated joint surfaces",
-      "Isolated and functional strengthening of the vastus medialis and quadriceps muscle group",
-      "Gluteus medius and hip external rotator strengthening to stabilize knee alignment",
-      "Biomechanical stair-climbing retraining and safe squatting mechanics education"
-    ],
+    whatItIs: "Knee pain can make walking, stairs, squatting, sport, or getting up from a chair difficult. It can have several causes, and symptoms alone do not identify a specific structure or diagnosis. At Dr Hamid’s Physio and PAIN Clinic in Manikonda, assessment considers your history, pain, movement, strength, function, and goals before discussing whether physiotherapy is suitable.",
+    causes: ["A recent change in activity, exercise, or work demands", "A previous or recent knee injury", "Joint, tendon, or other musculoskeletal conditions that require assessment", "Knee pain can also occur without one clear cause"],
+    symptoms: ["Pain or stiffness during walking, stairs, squatting, or standing from a chair", "Reduced confidence or tolerance for sport, work, or daily movement", "Swelling, locking, giving way, or difficulty bearing weight that should be assessed", "Symptoms that vary with activity and may change over time"],
+    howPhysioHelps: "A physiotherapy assessment can help identify which movements and activities are affected and whether rehabilitation is appropriate. A plan may include advice, graded activity, strength or movement exercises, and progress review. The exercises and other options depend on findings and goals; no single technique suits every knee problem.",
+    assessmentProcess: ["Discuss when symptoms began, any injury, health history, and activities affected", "Assess knee movement and relevant strength and function", "Observe tasks such as walking, stairs, or getting up from a chair when appropriate", "Check for signs that require medical review or further investigation", "Agree on suitable goals and next steps"],
+    treatmentApproach: ["Advice on managing activity and load based on your symptoms", "Individualised strength, mobility, and functional exercises", "Gradual practice of tasks such as walking or stairs when suitable", "Hands-on care only when appropriate and discussed", "Review progress and adapt the plan to your response"],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
-    homeCare: [
-      "Avoid deep squats past 90 degrees during the acute pain phase",
-      "Perform straight leg raises and isometric quad sets daily to maintain muscle tone",
-      "Wear supportive athletic footwear with firm arch support instead of flat slippers",
-      "Use handrails when navigating stairs, leading with the stronger leg when climbing",
-      "Apply cold packs for 15 minutes after extended walking if local warmth or puffiness occurs"
-    ],
-    whenToVisit: "Consult Dr. Hamid if knee pain persists beyond 5 days, makes climbing stairs difficult, prevents normal walking, or creates grinding discomfort.",
+    homeCare: ["Adjust or pace activities that noticeably increase symptoms", "Use a handrail or other support if it makes stairs feel safer", "Avoid forcing exercises that increase pain or swelling", "Use exercises selected for your needs after assessment", "Seek medical assessment for a major injury, marked swelling, inability to bear weight, or other severe symptoms"],
+    whenToVisit: "Consider assessment if knee pain is persistent, recurring, or limiting walking, stairs, work, sport, or daily activities. Seek prompt medical assessment after significant injury, if the knee is markedly swollen or hot, if you cannot bear weight, or if symptoms are severe or rapidly worsening.",
     faqs: [
-      {
-        question: "Why does my knee hurt more going downstairs than upstairs?",
-        answer: "Stair descent can be demanding for the knee and may bring on symptoms for several reasons. A clinician can assess the person's symptoms and movement and discuss suitable ways to manage activity and build strength."
-      },
-      {
-        question: "Does clicking or cracking in the knee mean I have arthritis?",
-        answer: "Knee sounds can have several causes and do not necessarily indicate damage. Pain, swelling, locking, giving way, or difficulty bearing weight should be assessed by a clinician. Physiotherapy may be considered depending on the findings."
-      },
-      {
-        question: "Can physiotherapy help knee pain without medications or injections?",
-        answer: "Yes. Clinical studies consistently prove that strengthening quadriceps and hip stabilizers provides lasting pain relief and cartilage protection far superior to temporary painkiller tablets."
-      },
-      {
-        question: "Do you have educational articles on knee pain on stairs?",
-        answer: "Yes! Read our comprehensive blog post 'Why Does My Knee Hurt When Climbing Stairs?' for detailed anatomical illustrations and step-by-step home advice."
-      },
-      {
-        question: "How do I book a knee consultation at the Manikonda clinic?",
-        answer: "Call +91 76010 26596 or click the WhatsApp button on this page to schedule an appointment with Dr. Hamid."
-      }
-    ]
+      { question: "Does knee pain on stairs mean I have arthritis?", answer: "No. Pain on stairs can have several causes and the symptom alone does not confirm arthritis. A clinician can assess the history, movement, and function." },
+      { question: "What happens during a knee physiotherapy assessment?", answer: "The physiotherapist discusses your symptoms and goals, checks relevant movement, strength, and function, and explains whether physiotherapy or medical review is appropriate." },
+      { question: "Do I need an MRI before a knee assessment?", answer: "Imaging is not necessary for every knee problem. A medical professional can advise based on symptoms, examination, and whether the result would change care." },
+      { question: "How many sessions will I need?", answer: "The number and pace of appointments depend on the condition, goals, and response. Progress is reviewed and the plan adjusted; no fixed number suits everyone." },
+      { question: "When should I seek medical care instead?", answer: "Seek prompt medical assessment after significant injury, for marked swelling or heat, inability to bear weight, locking, or rapidly worsening symptoms." },
+      { question: "How do I request an appointment?", answer: "Use the Book a Clinic Appointment link to open the existing appointment request form. Phone and WhatsApp are supporting options for coordinating a visit." }
+    ],
   },
   {
     slug: "arthritis-physiotherapy-manikonda",

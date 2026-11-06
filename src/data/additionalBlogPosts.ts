@@ -2,6 +2,7 @@ import type { BlogPost } from "./blogPosts";
 
 const clinicCta = `
 <div class="article-cta" aria-label="Contact Dr Hamid’s Physio and Pain Clinic">
+  <a class="article-cta__link article-cta__link--appointment" href="/contact#appointment-request">Book a Clinic Appointment</a>
   <a class="article-cta__link article-cta__link--call" href="tel:+917601026596">Call the clinic</a>
   <a class="article-cta__link article-cta__link--whatsapp" href="https://wa.me/917601026596?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20physiotherapy%20consultation." target="_blank" rel="noopener noreferrer">Enquire on WhatsApp</a>
   <a class="article-cta__link article-cta__link--maps" href="https://maps.app.goo.gl/9AbCjEWW1ALe6uFN8" target="_blank" rel="noopener noreferrer">Find the clinic on Google Maps</a>
@@ -9,6 +10,7 @@ const clinicCta = `
 
 const sourceArticleCta = (whatsappHref: string) => `
 <div class="article-cta" aria-label="Contact Dr Hamid’s Physio and Pain Clinic">
+  <a class="article-cta__link article-cta__link--appointment" href="/contact#appointment-request">Book a Clinic Appointment</a>
   <a class="article-cta__link article-cta__link--call" href="tel:+917601026596">Call the clinic</a>
   <a class="article-cta__link article-cta__link--whatsapp" href="${whatsappHref}" target="_blank" rel="noopener noreferrer">WhatsApp the clinic</a>
   <a class="article-cta__link article-cta__link--maps" href="https://maps.app.goo.gl/9AbCjEWW1ALe6uFN8" target="_blank" rel="noopener noreferrer">View clinic on Google Maps</a>

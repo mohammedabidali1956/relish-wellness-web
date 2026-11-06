@@ -370,10 +370,7 @@ const HomePage = () => {
 
               {/* Subheading */}
               <p className="text-base sm:text-lg lg:text-xl text-[#4a5568] leading-relaxed max-w-xl font-normal">
-                Physiotherapy for back, neck and knee pain, sports injuries and post-surgery rehabilitation. Browse our <Link to="/services" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">
-                  complete list of physiotherapy services
-                </Link>. One-to-one sessions with Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), with 8+ years’ experience. Clinic and home visits around Manikonda; home-visit availability depends on your address. Open daily from 10 AM to 10 PM.
-                {" "}<Link to="/services/home-visit-physiotherapy-manikonda" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">Learn about home visits</Link>.
+                Dr Hamid’s Physio and PAIN Clinic provides one-to-one physiotherapy in Puppalguda, Manikonda, led by Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Telangana State Board Registered Consultant Physiotherapist. Explore the <Link to="/services" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">existing physiotherapy services</Link> or ask the clinic whether a <Link to="/services/home-visit-physiotherapy-manikonda" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">Home Visit Physiotherapy appointment</Link> is suitable for your address.
               </p>
 
               {/* Two CTA Buttons Side by Side */}
@@ -383,7 +380,7 @@ const HomePage = () => {
                   onClick={scrollToAppointment}
                   className="bg-[#081a2e] hover:bg-[#122842] text-white px-7 py-3.5 h-13 text-base font-semibold rounded-lg shadow-md transition-all flex items-center gap-2 group cursor-pointer"
                 >
-                  <span>Book Appointment</span>
+                  <span>Book a Clinic Appointment</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
 
@@ -543,7 +540,7 @@ const HomePage = () => {
                     Dr. Mohammed Hamid Ali
                   </h3>
                   <p className="text-sm font-medium text-[#8a5d24]">
-                    BPT, MPT (Ortho) · Regd. No. 0413 · 8+ years’ clinical experience
+                    BPT, MPT (Ortho) · Telangana State Board Registered · Professional Registration No. 0413 · 8+ years’ clinical experience
                   </p>
                   <p className="text-xs text-[#5e6b78] mt-2">
                     Consultant Physiotherapist &amp; Founder, Dr Hamid’s Physio and Pain Clinic
@@ -560,7 +557,7 @@ const HomePage = () => {
               </h2>
 
               <p className="text-base text-[#4a5568] leading-relaxed">
-                Dr Hamid’s Physio and Pain Clinic was established in 2021 and is led by its founder, Dr. Mohammed Hamid Ali. The clinic provides individualized, one-to-one physiotherapy and rehabilitation in Manikonda, Hyderabad.
+                Dr Hamid’s Physio and PAIN Clinic provides one-to-one physiotherapy and rehabilitation in Manikonda, Hyderabad, led by Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Telangana State Board Registered Consultant Physiotherapist. The clinic was established in 2021.
               </p>
 
               <p className="text-base text-[#4a5568] leading-relaxed">
@@ -581,7 +578,7 @@ const HomePage = () => {
                   onClick={scrollToAppointment}
                   className="bg-[#081a2e] hover:bg-[#122842] text-white px-6 h-11 rounded-lg"
                 >
-                  Book with Dr. Hamid
+                  Book a Clinic Appointment
                 </Button>
                 <a
                   href="https://wa.me/917601026596?text=Hi%20Dr.%20Hamid%2C%20I%20would%20like%20to%20consult%20you%20regarding%20physiotherapy"

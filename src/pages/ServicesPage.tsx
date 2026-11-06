@@ -36,11 +36,20 @@ const ServicesPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
   const handleCall = () => {
-    trackAnalyticsEvent("phone_call_click");
+    trackAnalyticsEvent("phone_click", {
+      page_category: "service",
+      cta_location: "service_page",
+    });
     window.location.href = "tel:+917601026596";
   };
 
-  const handleWhatsApp = () => openWhatsApp();
+  const handleWhatsApp = () => {
+    openWhatsApp();
+    trackAnalyticsEvent("whatsapp_click", {
+      page_category: "service",
+      cta_location: "service_page",
+    });
+  };
 
   // Filtered services if user searches
   const filteredServices = useMemo(() => {
@@ -113,24 +122,24 @@ const ServicesPage: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <div className="inline-flex items-center gap-2 bg-[#f4ede0] border border-[#e5dec9] px-3.5 py-1 rounded-full text-xs font-semibold text-[#8a5d24]">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Dedicated Clinical Programs • Zero Shared Treatments</span>
+              <span>Physiotherapy Services in Manikonda</span>
             </div>
 
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] tracking-tight leading-[1.18]">
-              Physiotherapy Services in Manikonda | PAIN Relief &amp; Rehabilitation
+              Explore Physiotherapy Services in Manikonda
             </h1>
             <MedicalReviewByline />
 
             <p className="text-base sm:text-lg text-[#4a5568] leading-relaxed">
-              Dr Hamid’s Physio and Pain Clinic lists physiotherapy services for back pain, neck pain, knee pain, shoulder problems, sciatica, sports injuries, post-surgical rehabilitation, and neurological conditions. The clinic is in Manikonda, Hyderabad. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage and availability.
+              Browse the clinic’s existing physiotherapy services by problem area, including back, neck, knee, shoulder, sciatica, sports, post-surgical, and neurological rehabilitation. Dr Hamid’s Physio and PAIN Clinic is in Puppalguda, Manikonda; home visit coverage and availability are confirmed with the clinic.
             </p>
 
             <div id="services-cta-top" className="services-cta bg-white border border-[#e5dec9] rounded-xl p-5 text-left space-y-2">
               <h2 className="font-serif text-lg sm:text-xl font-bold text-[#081a2e]">
-                Ready to start your recovery?
+                Want help choosing a service?
               </h2>
               <p className="text-sm text-[#4a5568] leading-relaxed">
-                Contact the clinic to ask about appointments and home visits.
+                A physiotherapist can discuss your symptoms and whether an appointment is suitable.
               </p>
               <p className="text-sm font-semibold text-[#081a2e]">
                 Call or WhatsApp: <a href="tel:+917601026596" className="text-[#8a5d24] hover:underline">+91 76010 26596</a>
@@ -139,6 +148,12 @@ const ServicesPage: React.FC = () => {
                 Clinic visits serve Manikonda and nearby areas. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage.
               </p>
               <div className="flex flex-col sm:flex-row gap-2 pt-1">
+                <Button asChild className="bg-[#081a2e] hover:bg-[#122842] text-white text-sm">
+                  <Link to="/contact#appointment-request">
+                    <Calendar className="w-4 h-4 mr-1.5" />
+                    <span>Book a Clinic Appointment</span>
+                  </Link>
+                </Button>
                 <Button onClick={handleCall} className="bg-[#081a2e] hover:bg-[#122842] text-white text-sm">
                   <Phone className="w-4 h-4 mr-1.5" />
                   <span>Call +91 76010 26596</span>
@@ -350,7 +365,7 @@ const ServicesPage: React.FC = () => {
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                           <div className="absolute top-3 left-3 bg-[#081a2e]/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-md backdrop-blur-xs">
-                            Manikonda &amp; Home Visit
+                            {service.slug === "home-visit-physiotherapy-manikonda" ? "Home Visit Physiotherapy" : "Manikonda Clinic"}
                           </div>
                         </div>
 
@@ -453,10 +468,10 @@ const ServicesPage: React.FC = () => {
                 Clinic Consultation &amp; Home Visits
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
-                Ready to start your recovery?
+                Explore a clinic appointment
               </h2>
               <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
-                Contact the clinic to ask about appointments and home visits.
+                The clinic can discuss whether an assessment or home visit is appropriate for your needs.
               </p>
               <p className="text-sm sm:text-base font-semibold">
                 Call or WhatsApp: +91 76010 26596
@@ -465,6 +480,12 @@ const ServicesPage: React.FC = () => {
                 Clinic visits serve Manikonda and nearby areas. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                <Button asChild className="bg-[#8a5d24] hover:bg-[#a67232] text-white font-semibold px-6 py-5 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md">
+                  <Link to="/contact#appointment-request">
+                    <Calendar className="w-4 h-4" />
+                    <span>Book a Clinic Appointment</span>
+                  </Link>
+                </Button>
                 <Button
                   onClick={handleCall}
                   className="bg-[#8a5d24] hover:bg-[#a67232] text-white font-semibold px-6 py-5 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md"

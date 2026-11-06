@@ -12,17 +12,24 @@ const AppointmentForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    trackAnalyticsEvent("appointment_whatsapp_click");
     const whatsappMessage = encodeURIComponent(
       `Hello Dr. Mohammed Hamid Ali, I would like to book an appointment at Dr Hamid’s Physio and Pain Clinic. My name is ${name} and my phone number is ${phone}.${message ? ` Additional information: ${message}` : ""}`
     );
     window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank", "noopener,noreferrer");
+    trackAnalyticsEvent("whatsapp_click", {
+      cta_location: "appointment_form",
+    });
   };
 
   return (
     <div className="bg-card border border-border rounded-md p-6 md:p-8">
       <h3 className="font-display text-xl sm:text-2xl font-semibold mb-6 text-relish-900">Book an Appointment</h3>
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form
+        id="appointment-request-form"
+        onSubmit={handleSubmit}
+        className="space-y-5"
+        data-clarity-mask="true"
+      >
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
             Your Name*

@@ -8,84 +8,34 @@ export const spineAndBackServices: ServiceDetail[] = [
     metaTitle: "Back Pain Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Relieve acute and chronic back pain with evidence-based physiotherapy in Manikonda, Hyderabad. Personalized care by Dr. Mohammed Hamid Ali. Book today!",
     h1: "Back Pain Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Clinical physiotherapy for acute and chronic lower back pain, muscle spasm, postural strain, and movement-related back discomfort in Manikonda. Focus on pain relief, mobility restoration, and preventing recurrence.",
+    shortDescription: "Assessment-led information for pain and movement limitations affecting the upper, middle, or lower back, with rehabilitation tailored to the person.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Back pain physiotherapy treatment and spinal care in Manikonda clinic",
-    whatItIs: "Back pain is the leading cause of activity restriction and workplace absence worldwide. It encompasses discomfort ranging from a dull, persistent ache in the lumbar spine to sudden, debilitating spasms that restrict simple daily movements such as bending, sitting, or standing up. At Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad, we look beyond surface symptoms to identify whether your back pain is rooted in disc pathology, facet joint irritation, ligamentous strain, or deep muscular imbalances.",
-    causes: [
-      "Prolonged sedentary sitting in non-ergonomic office chairs during software and desk work",
-      "Improper lifting mechanics placing excessive shear stress on the lower lumbar vertebrae",
-      "Weakness in deep spinal stabilizing musculature (transversus abdominis and multifidus)",
-      "Lumbar facet joint degeneration and age-related spinal wear",
-      "Sudden awkward twisting movements or sports-related muscular overload",
-      "Hip joint stiffness transferring excessive compensatory movement to the lumbar spine"
-    ],
-    symptoms: [
-      "Continuous aching or sharp pain across the lower back after sitting or standing",
-      "Stiffness and inability to bend forward to tie shoes or pick objects from the floor",
-      "Pain aggravated by prolonged driving or working long hours at a laptop",
-      "Muscle guarding, spasms, and tenderness along the lumbar paraspinal muscles",
-      "Difficulty standing fully erect immediately after getting out of bed or a chair"
-    ],
+    whatItIs: "Back pain can affect the upper, middle, or lower back and may make lifting, reaching, sitting, walking, or sleep difficult. A muscle spasm can accompany pain, but it is a symptom or sign rather than a complete diagnosis. Many cases do not have one confirmed structural cause. Assessment at Dr Hamid’s Physio and Pain Clinic in Manikonda considers your symptoms, movement, function, and goals before discussing suitable care. For pain specifically in the lower back, see the lumbar pain service information.",
+    causes: ["Changes in work, activity, sleep, or exercise demands", "A recent injury or physical overload", "A range of health and musculoskeletal factors that may need consideration"],
+    symptoms: ["Pain or stiffness in the upper, middle, or lower back", "Difficulty with reaching, lifting, turning, sitting, walking, or other daily activities", "Symptoms that vary with activity, rest, or time", "Pain with or without muscle guarding or spasm"],
     howPhysioHelps: "Guidelines support advice, self-management, continued activity and exercise for many people with low back pain. After an assessment, Dr. Mohammed Hamid Ali can discuss an individual plan that may include progressive exercise and manual therapy as part of an active rehabilitation program.",
     evidenceSources: [
       { label: "NICE guideline: low back pain and sciatica", url: "https://www.nice.org.uk/guidance/ng59/chapter/recommendations" },
       { label: "NHS: Back pain", url: "https://www.nhs.uk/conditions/back-pain/" }
     ],
-    assessmentProcess: [
-      "Detailed clinical history of pain onset, daily aggravating factors, and previous treatments",
-      "Postural alignment and pelvic tilt assessment in standing and sitting positions",
-      "Active and passive lumbar range of motion testing (flexion, extension, lateral flexion, rotation)",
-      "Neurological screening including sensory testing, reflex integrity, and motor power",
-      "Palpation for facet joint tenderness, paraspinal spasm, and sacroiliac joint mobility"
-    ],
-    treatmentApproach: [
-      "Hands-on spinal mobilization to restore hypomobile vertebral segment movement",
-      "Soft-tissue techniques may be considered to help manage muscle tenderness or guarding",
-      "Core stabilization retraining utilizing low-load progressive stabilization exercises",
-      "Directional preference exercises (Mckenzie method) to centralize and resolve symptoms",
-      "Ergonomic workstation adjustments and safe lifting technique education"
-    ],
+    assessmentProcess: ["History of symptoms, health, relevant investigations, and previous care", "Movement and function assessment focused on the back region and activities affected", "Strength, sensation, or other neurological checks when indicated by symptoms", "Discussion of whether physiotherapy is suitable or medical review is needed"],
+    treatmentApproach: ["Advice on activity and comfortable movement based on the assessment", "Gradual mobility and strength exercises matched to function and goals", "Pacing and task adjustments for work, sleep, lifting, or sport where relevant", "Hands-on care only when appropriate and discussed with the patient", "Progress review with changes to the plan based on response"],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
-    homeCare: [
-      "Avoid prolonged bed rest and keep gently active as your symptoms allow",
-      "Use a supportive lumbar cushion behind your lower back while seated",
-      "Take standing breaks every 35 to 45 minutes to perform gentle standing lumbar extensions",
-      "Apply moist warmth for 15 minutes before daily prescribed stretches",
-      "Bend at your knees and hips rather than rounding your back when picking up items"
-    ],
-    whenToVisit: "Schedule a consultation if your back pain lasts more than 3 days, disrupts your sleep, makes sitting at work unbearable, or recurs whenever you increase your activity level.",
+    homeCare: ["Continue comfortable daily activity as symptoms allow", "Vary your position during longer periods of sitting or standing", "Adjust lifting or work tasks to a comfortable level while symptoms settle", "Use exercises that have been selected for your symptoms and goals", "Seek urgent care for new bladder or bowel changes, saddle-area numbness, or rapidly worsening weakness"],
+    whenToVisit: "Consider assessment when back pain is persistent, recurring, or limiting daily activity. Seek urgent medical care for severe back pain with new bladder or bowel changes, numbness around the genitals or buttocks, or rapidly worsening weakness. Significant trauma or other severe symptoms also need prompt medical assessment.",
     faqs: [
-      {
-        question: "Is bed rest recommended for severe acute back pain?",
-        answer: "Prolonged bed rest is generally not recommended for back pain. Staying gently active as your symptoms allow is usually encouraged; seek individual advice if movement is difficult or symptoms are worsening."
-      },
-      {
-        question: "How many physiotherapy sessions will I need for my back pain?",
-        answer: "The number of sessions and pace of progress vary with the cause of pain, symptoms, health, and personal goals. An assessment can help discuss a plan and review progress over time."
-      },
-      {
-        question: "Do you offer home visit physiotherapy for severe back pain in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients unable to travel to the clinic."
-      },
-      {
-        question: "Can physiotherapy help back pain caused by sitting at an IT desk job?",
-        answer: "Yes. IT professionals in Hyderabad frequently suffer from postural back ache. We combine manual spinal mobilization with ergonomic correction and targeted core exercises designed specifically for desk workers."
-      },
-      {
-        question: "Do I need an MRI scan before starting back pain physiotherapy?",
-        answer: "In the majority of back pain cases, an MRI is not necessary before beginning conservative physiotherapy. Dr. Hamid conducts a thorough clinical orthopedic assessment to pinpoint the cause safely."
-      },
-      {
-        question: "How can I book an appointment with Dr. Hamid?",
-        answer: "You can book directly by calling +91 76010 26596 or clicking the WhatsApp button on this page. Our clinic is conveniently located near Friends Colony Park, Puppalguda, Manikonda."
-      }
-    ]
+      { question: "Do I need an MRI before a back-pain assessment?", answer: "Imaging is not needed for every episode of back pain. A medical professional can advise whether it is appropriate based on symptoms, examination, and whether a result would change management." },
+      { question: "Can a muscle spasm explain all of my back pain?", answer: "No. A spasm is a symptom or sign and does not by itself establish the cause of pain. Assessment considers the wider history, function, and relevant findings." },
+      { question: "How many physiotherapy visits will I need?", answer: "The number and pace of visits vary with your symptoms, goals, and response. Progress can be reviewed and the plan adjusted; a fixed number is not appropriate for everyone." },
+      { question: "When should I seek urgent medical care?", answer: "Seek urgent care for new bladder or bowel dysfunction, numbness around the genitals or buttocks, or rapidly worsening weakness." },
+      { question: "How do I request an appointment?", answer: "Use the Book a Clinic Appointment link to open the existing appointment request form. Phone and WhatsApp are supporting options for coordinating a visit." }
+    ],
   },
   {
     slug: "sciatica-physiotherapy-manikonda",
@@ -94,17 +44,11 @@ export const spineAndBackServices: ServiceDetail[] = [
     metaTitle: "Sciatica Physiotherapy in Manikonda | Nerve Pain Relief Hyderabad",
     metaDescription: "Relieve shooting sciatic nerve pain, leg numbness, and tingling with expert sciatica physiotherapy in Manikonda by Dr. Mohammed Hamid Ali. Call today!",
     h1: "Sciatica Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Targeted treatment for sciatic nerve pain, radiating leg pain, tingling, numbness, and disc-related sciatica. Includes assessment, nerve mobility work, and progressive rehabilitation.",
+    shortDescription: "Assessment-led physiotherapy information for radiating leg pain, altered sensation, or weakness that may follow a sciatic nerve pathway.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Sciatica physiotherapy and sciatic nerve decompression in Manikonda clinic",
-    whatItIs: "Sciatica is nerve pain caused by irritation, inflammation, or mechanical compression of the sciatic nerve — the largest nerve in the human body. The pain originates in the lower lumbar spine or buttock and radiates down through the back of the thigh, calf, and into the foot. At Dr Hamid’s Physio and Pain Clinic in Manikonda, we pinpoint the exact anatomical site of sciatic nerve entrapment — whether from a lumbar disc herniation, spinal canal narrowing, or piriformis muscle impingement.",
-    causes: [
-      "Herniation or protrusion of the L4-L5 or L5-S1 lumbar intervertebral disc compressing the nerve root",
-      "Piriformis syndrome, where a tight piriformis muscle in the buttock compresses the passing sciatic nerve",
-      "Lumbar canal stenosis causing neural narrowing around the exiting nerve roots",
-      "Degenerative disc disease leading to reduced neuroforaminal space in the lumbar spine",
-      "Sacroiliac joint dysfunction creating compensatory pelvic torsion and neural irritation"
-    ],
+    whatItIs: "Sciatica commonly describes pain that travels from the lower back or buttock down the leg along a sciatic nerve pathway. Some people also report tingling, numbness, or weakness, but patterns vary and other conditions can cause similar symptoms. A disc bulge on a scan does not automatically mean a person has sciatica. At Dr Hamid’s Physio and Pain Clinic in Manikonda, assessment considers symptoms, neurological function, movement, and daily activities before discussing whether physiotherapy is suitable.",
+    causes: ["Several spinal and non-spinal causes may contribute to radiating leg symptoms", "A scan finding alone cannot establish the cause of a person’s symptoms", "Clinical history and examination help determine what should be considered next"],
     symptoms: [
       "Electric shock-like, burning, or shooting pain radiating from the lower back or buttock down the leg",
       "Persistent numbness, tingling ('pins and needles') in the calf, heel, or toes",
@@ -112,61 +56,24 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Weakness or heaviness in the affected leg making normal walking or toe-standing difficult",
       "Difficulty standing up straight or finding a comfortable sleeping posture"
     ],
-    howPhysioHelps: "Sciatica physiotherapy focuses on neural decompression, nerve desensitization, and addressing the mechanical source of compression. Through specific neural mobilization (neurodynamic sliders and tensioners), Dr. Mohammed Hamid Ali restores smooth gliding of the sciatic nerve along its anatomical pathway while relieving mechanical disc pressure through directional extension and pelvic alignment.",
-    assessmentProcess: [
-      "Straight Leg Raise (SLR) and Slump neurodynamic tests to assess sciatic nerve sensitivity",
-      "Detailed dermatomal sensory mapping and myotomal motor power evaluation (L4, L5, S1)",
-      "Differential testing between lumbar disc radiculopathy and piriformis syndrome",
-      "Spinal range of motion and directional preference assessment to find pain-relieving postures",
-      "Gait analysis to detect antalgic limping or subtle foot drop"
-    ],
-    treatmentApproach: [
-      "Neural mobilization techniques to restore physiological excursion of the sciatic nerve",
-      "Directional extension therapy (McKenzie protocol) to centralize radiating leg symptoms",
-      "Targeted deep gluteal and piriformis manual soft tissue release",
-      "Gentle lumbar decompression traction and anti-inflammatory electro-modalities in acute flare-ups",
-      "Progressive lumbo-pelvic stabilization exercises to protect the nerve root from re-compression"
-    ],
+    howPhysioHelps: "The first step is to assess the leg symptoms, strength, sensation, movement, function, and any warning signs. If physiotherapy is appropriate, a plan may include information, activity guidance, and progressive exercises. Neural mobilisation or hands-on techniques are considered only where assessment supports them and they are tolerated; they are not required or suitable for everyone. Medical review is important for progressive weakness, severe or changing symptoms, or other warning signs.",
+    assessmentProcess: ["History of radiating pain, altered sensation, weakness, progression, and health history", "Appropriate checks of leg strength, sensation, reflexes, walking, and function", "Movement assessment and review of relevant investigations if available", "Screening for warning signs and discussion of whether medical review is needed"],
+    treatmentApproach: ["Education and activity guidance that fit the patient’s symptoms and goals", "Comfortable movement and progressive exercise selected after assessment", "Strength and functional rehabilitation with progress monitored", "Neural mobilisation or hands-on care only when clinically appropriate", "Medical referral or coordination where symptoms indicate it"],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
-    homeCare: [
-      "Avoid sitting on soft, deep couches that force your lower spine into prolonged flexion",
-      "Place a supportive pillow under your knees when sleeping on your back, or between your knees when on your side",
-      "Never push through intense shooting nerve pain during home stretches",
-      "Perform gentle sciatic nerve gliding exercises strictly as demonstrated by Dr. Hamid",
-      "Apply ice packs to the lower back/upper buttock for 15 minutes to reduce acute nerve root inflammation"
-    ],
-    whenToVisit: "Consult Dr. Hamid promptly if shooting pain extends past your knee, your foot feels numb or heavy, or walking becomes difficult. Immediate emergency hospital evaluation is required if you experience loss of bowel or bladder control.",
+    homeCare: ["Continue comfortable activity as tolerated and adjust activity if symptoms worsen", "Avoid forcing stretches or exercises that increase leg symptoms", "Use nerve mobilisation only if an appropriate clinician recommends it after assessment", "Seek assessment for persistent or worsening pain, numbness, or weakness", "Seek urgent care for bladder or bowel changes, saddle-area numbness, or rapidly worsening weakness"],
+    whenToVisit: "Consider assessment if radiating leg pain, tingling, or numbness is affecting walking, sleep, work, or daily activity. Seek urgent medical care for severe back pain with new bladder or bowel dysfunction, numbness around the genitals or buttocks, or rapidly worsening leg weakness.",
     faqs: [
-      {
-        question: "Can physiotherapy cure sciatica without spinal surgery?",
-        answer: "Some people with sciatica improve without surgery, but the course and appropriate care vary. Physiotherapy may help manage symptoms and support activity for some people. A medical assessment is important for severe or worsening symptoms, and treatment cannot guarantee that surgery will be avoided."
-      },
-      {
-        question: "What is the difference between back pain and sciatica?",
-        answer: "Back pain is localized discomfort confined to the lumbar spine or flank. Sciatica is specific nerve pain that travels past the buttock and down the leg along the pathway of the sciatic nerve."
-      },
-      {
-        question: "Why does my sciatica hurt more when sitting down?",
-        answer: "Some people find that sitting changes or aggravates their symptoms. The reasons differ, and posture alone does not show whether a disc is pressing on a nerve. Varying position and taking movement breaks may be helpful; seek assessment for persistent symptoms."
-      },
-      {
-        question: "What exercises should I avoid with active sciatica?",
-        answer: "Avoid aggressive straight-leg hamstring stretches, toe-touching, heavy squats, and high-impact running, as these stretch an already inflamed nerve and worsen symptoms."
-      },
-      {
-        question: "Does Dr. Hamid provide home physiotherapy for severe sciatica in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali offers home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients unable to travel due to severe sciatic pain."
-      },
-      {
-        question: "How do I schedule a sciatica assessment at the Manikonda clinic?",
-        answer: "Call +91 76010 26596 or reach out via WhatsApp to book your consultation at Dr Hamid’s Physio and Pain Clinic."
-      }
-    ]
+      { question: "Does a disc bulge always cause sciatica?", answer: "No. A disc bulge is an imaging description and does not automatically cause symptoms. Sciatica describes a pattern of radiating leg pain; clinical assessment helps interpret symptoms and any scan findings together." },
+      { question: "Can physiotherapy help with sciatica?", answer: "Physiotherapy may help some people manage symptoms and activity through an individualised plan. Suitability depends on assessment, and no outcome or fixed recovery time can be promised." },
+      { question: "Will I need neural mobilisation?", answer: "Not necessarily. Neural mobilisation is considered only when examination suggests it may be appropriate and the person tolerates it; it is not required for everyone." },
+      { question: "When should I seek urgent medical care?", answer: "Seek urgent medical care for new bladder or bowel dysfunction, numbness around the genitals or buttocks, or rapidly worsening leg weakness." },
+      { question: "How do I book a clinic appointment?", answer: "Use the Book a Clinic Appointment link to open the existing appointment request form. Phone and WhatsApp are supporting options if you need help coordinating a visit." }
+    ],
   },
   {
     slug: "lumbar-pain-physiotherapy-manikonda",
@@ -175,80 +82,30 @@ export const spineAndBackServices: ServiceDetail[] = [
     metaTitle: "Lumbar Pain Physiotherapy in Manikonda | Lower Back Specialist Hyderabad",
     metaDescription: "Expert lumbar pain physiotherapy in Manikonda. Clinical diagnosis and personalized rehabilitation for lower lumbar spine pain under Dr. Mohammed Hamid Ali.",
     h1: "Lumbar Pain Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Targeted clinical therapy for lumbar vertebral stiffness, mechanical lower back ache, and paraspinal muscle fatigue.",
+    shortDescription: "Assessment-led information for localised lower-back pain, stiffness, and functional limitations; an imaging-confirmed structural diagnosis is not required to discuss assessment.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Lumbar pain physiotherapy and lower spine rehabilitation in Manikonda",
-    whatItIs: "Lumbar pain refers specifically to pain, stiffness, or functional limitation localized between the lower costal margin (ribs) and the gluteal folds. The five lumbar vertebrae (L1-L5) bear the majority of the human upper body's weight and absorb substantial ground reaction forces during locomotion. At Dr Hamid’s Physio and Pain Clinic in Manikonda, we perform a thorough mechanical assessment to identify whether your lumbar symptoms originate from intervertebral disc degeneration, facet arthropathy, segmental instability, or postural exhaustion.",
-    causes: [
-      "Repetitive flexion and rotational loading on the lumbar motion segments",
-      "Prolonged static desk postures creating cumulative creep in lumbar ligaments",
-      "Lumbar facet joint syndrome caused by compressive joint loading",
-      "Deconditioning of the multifidus and transversus abdominis stabilizers",
-      "Pelvic asymmetry or leg length discrepancy altering lumbar biomechanics",
-      "Sudden increases in physical activity without adequate core conditioning"
-    ],
-    symptoms: [
-      "Deep, localized aching across the lower lumbar vertebrae",
-      "Morning lumbar stiffness that takes 20 to 30 minutes of moving around to loosen",
-      "Pain aggravated by arching backward (extension) or bending forward (flexion)",
-      "Difficulty sitting through long meetings, drives, or cinema screenings",
-      "Protective paraspinal muscle tightness and painful tender points"
-    ],
-    howPhysioHelps: "Physiotherapy restores harmonious biomechanics to the five lumbar motion segments. Dr. Mohammed Hamid Ali employs hands-on Maitland and Mulligan joint mobilizations to restore pain-free segmental excursion, releases compensatory muscle guarding, and trains deep segmental stabilization muscles that shield the lumbar vertebrae from daily mechanical strain.",
-    assessmentProcess: [
-      "Segment-by-segment central and unilateral posterior-anterior (PA) lumbar joint spring tests",
-      "Observation of the lumbar lordotic curve in static stance and functional movement",
-      "Active movement testing with overpressure to determine mechanical provocative patterns",
-      "Muscle length testing of hip flexors, hamstrings, and tensor fasciae latae",
-      "Prone instability testing to evaluate functional lumbar segmental stability"
-    ],
-    treatmentApproach: [
-      "Specific lumbar segmental joint mobilizations to relieve hypomobility",
-      "Soft tissue release of tight erector spinae, quadratus lumborum, and psoas muscles",
-      "Targeted motor control training for deep lumbar multifidus muscles using biofeedback principles",
-      "Spinal stabilization exercises on stable and unstable surfaces",
-      "Comprehensive workplace ergonomic modification and movement pacing strategies"
-    ],
+    whatItIs: "Lumbar pain describes pain or stiffness in the lower-back region. It can affect bending, lifting, sitting, standing, walking, or sleep, and does not require an imaging-confirmed structural diagnosis. Symptoms alone do not establish disc herniation, sacroiliac joint dysfunction, or another specific cause. At Dr Hamid’s Physio and Pain Clinic in Manikonda, assessment considers history, movement, function, and relevant warning signs before discussing an individual rehabilitation plan.",
+    causes: ["Lower-back pain may have several contributors, including changes in activity or load", "A particular movement or scan finding does not confirm the cause by itself", "Health history and examination guide whether further medical assessment is needed"],
+    symptoms: ["Localised pain or stiffness in the lower back", "Difficulty bending, lifting, sitting, standing, walking, or completing work and home tasks", "Symptoms that may change over time or with activity", "Pain with or without buttock or leg symptoms"],
+    howPhysioHelps: "Physiotherapy may help some people with lower-back pain through education, activity guidance, comfortable movement, and exercises selected after assessment. The plan is based on functional goals and response, not an assumed structural diagnosis. Hands-on care is optional and considered only where appropriate.",
+    assessmentProcess: ["History of symptoms, health, daily activities, and previous care", "Lower-back and related movement assessment focused on functional goals", "Strength, sensation, or other neurological checks if symptoms indicate them", "Discussion of whether physiotherapy is appropriate or medical review is needed"],
+    treatmentApproach: ["Clear advice and activity pacing based on assessment", "Gradual, individualised mobility and strengthening exercises", "Functional practice linked to work, home, and movement goals", "Hands-on techniques only when appropriate and discussed", "Review of progress and adjustment of the plan"],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
-    homeCare: [
-      "Perform gentle pelvic clocks and lumbar rocking before getting out of bed in the morning",
-      "Use an ergonomic mesh lumbar support behind your lower back while driving or working",
-      "Incorporate daily 20-minute brisk walks on level surfaces to nourish lumbar discs",
-      "Avoid sleeping on an excessively sagging or unsupportive mattress",
-      "Keep core muscles gently braced when transferring in and out of chairs"
-    ],
-    whenToVisit: "Consult Dr. Hamid if lower lumbar ache recurs regularly, prevents you from exercising, or makes daily sitting uncomfortable.",
+    homeCare: ["Continue comfortable daily activity as symptoms allow", "Vary positions during prolonged sitting, standing, or driving", "Avoid forcing movements or stretches that noticeably worsen symptoms", "Use exercises selected for your needs after assessment", "Seek urgent care for new bladder or bowel changes, saddle-area numbness, or rapidly worsening leg weakness"],
+    whenToVisit: "Consider assessment when lower-back pain is persistent, recurring, or limiting everyday activities. Seek urgent medical care for new bladder or bowel dysfunction, numbness around the genitals or buttocks, or rapidly worsening leg weakness.",
     faqs: [
-      {
-        question: "How does lumbar pain physiotherapy differ from general exercise?",
-        answer: "General gym exercises often overload an already irritated lumbar spine. Lumbar physiotherapy uses precise clinical diagnostics to activate the deep stabilizing muscles (multifidus and core) without compressing the vulnerable vertebrae."
-      },
-      {
-        question: "Can lumbar pain be completely cured with physiotherapy?",
-        answer: "Yes, the vast majority of mechanical lumbar pain can be fully resolved and managed through targeted joint mobilization, postural retraining, and core strengthening."
-      },
-      {
-        question: "Is ultrasound therapy helpful for lumbar pain?",
-        answer: "Therapeutic ultrasound is useful as an adjunct supportive modality during acute flare-ups to reduce paraspinal muscle spasms before active rehabilitation exercises."
-      },
-      {
-        question: "Where is the clinic located for lumbar physiotherapy in Manikonda?",
-        answer: "Our clinic is located at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India."
-      },
-      {
-        question: "Do you offer home visits for lumbar pain?",
-        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
-      },
-      {
-        question: "How soon can I get an appointment?",
-        answer: "Contact the clinic to ask about current appointment availability."
-      }
-    ]
+      { question: "Do I need an MRI before a lumbar pain assessment?", answer: "Imaging is not needed for every episode of lower-back pain. A medical professional can advise whether it is appropriate based on symptoms, examination, and whether the result would change management." },
+      { question: "Does lower-back pain always mean a disc or SIJ problem?", answer: "No. Symptoms alone do not establish a disc herniation, sacroiliac joint dysfunction, or another structural diagnosis. Assessment considers history, function, and examination findings." },
+      { question: "What might physiotherapy involve?", answer: "If suitable, it may include advice, comfortable movement, and exercises selected for your symptoms and goals. The plan is adjusted based on response." },
+      { question: "When should I seek urgent medical care?", answer: "Seek urgent care for new bladder or bowel dysfunction, numbness around the genitals or buttocks, or rapidly worsening leg weakness." },
+      { question: "How can I request a clinic appointment?", answer: "Use the Book a Clinic Appointment link to open the existing appointment request form, or call or message the clinic for help coordinating a visit." }
+    ],
   },
   {
     slug: "disc-bulge-physiotherapy-manikonda",
@@ -334,16 +191,16 @@ export const spineAndBackServices: ServiceDetail[] = [
   },
   {
     slug: "lumbar-spondylosis-physiotherapy-manikonda",
-    relatedServiceSlugs: ["back-pain-physiotherapy-manikonda", "disc-bulge-physiotherapy-manikonda", "spinal-injuries-rehabilitation-manikonda"],
+    relatedServiceSlugs: ["back-pain-physiotherapy-manikonda", "lumbar-pain-physiotherapy-manikonda", "sciatica-physiotherapy-manikonda"],
     category: "Spine & Back",
     title: "Lumbar Spondylosis Physiotherapy",
     metaTitle: "Lumbar Spondylosis Physiotherapy in Manikonda | Spine Arthritis Care",
     metaDescription: "Relieve spinal stiffness and lumbar spondylosis pain with specialized physiotherapy in Manikonda, Hyderabad. Expert care by Dr. Mohammed Hamid Ali.",
     h1: "Lumbar Spondylosis Physiotherapy in Manikonda, Hyderabad",
-    shortDescription: "Specialized geriatric and adult rehabilitation for lumbar spine arthritis, disc space narrowing, and osteophytic stiffness.",
+    shortDescription: "Individualised rehabilitation information for diagnosed degenerative changes in the lumbar spine, guided by symptoms and functional needs.",
     imageSrc: "/images/services/spine-care.svg",
     altText: "Lumbar spondylosis physiotherapy and spine arthritis care in Manikonda clinic",
-    whatItIs: "Lumbar spondylosis describes age-related changes in the lower spine. Some people have pain or stiffness, while others have no symptoms. An assessment can help consider whether physiotherapy may support movement and everyday activity; it cannot reverse age-related changes or guarantee pain-free function.",
+    whatItIs: "Lumbar spondylosis describes degenerative changes in the lower spine. Symptoms vary: some people have pain or stiffness, while others have imaging changes without related symptoms. Scan findings should be interpreted alongside history and clinical assessment. Physiotherapy does not reverse degeneration, but an individual plan may support movement, strength, and daily function.",
     causes: [
       "Natural age-related degenerative changes in lumbar discs and articular cartilage",
       "History of heavy physical labor or high-impact athletic pursuits",
@@ -358,61 +215,24 @@ export const spineAndBackServices: ServiceDetail[] = [
       "Pain that improves when leaning forward slightly on a shopping cart or walker",
       "Occasional referred ache into the buttocks or outer hips"
     ],
-    howPhysioHelps: "While degenerative joint changes cannot be reversed, physiotherapy is remarkably effective at restoring pain-free function. Dr. Mohammed Hamid Ali uses gentle rotational mobilizations to improve synovial fluid circulation within arthritic facet joints, applies soft-tissue therapy to relax chronic paraspinal tension, and prescribes low-impact strengthening exercises that build a muscular 'corset' around the spine.",
-    assessmentProcess: [
-      "Assessment of lumbar extension and facet joint compression tolerance (Kemp's test)",
-      "Evaluation of spinal mobility in flexion, extension, and lateral rotation",
-      "Measurement of hamstring, quadriceps, and hip flexor flexibility",
-      "Balance, gait stability, and walking tolerance testing",
-      "Review of X-ray or MRI reports to correlate radiographic wear with clinical symptoms"
-    ],
-    treatmentApproach: [
-      "Gentle Grade I-III Maitland joint mobilizations to lubricate stiff facet joints",
-      "Flexion-biased lumbar exercises (Williams flexion protocol) to open the spinal canal",
-      "Deep tissue myofascial release of tight lumbar extensors and gluteal muscles",
-      "Supportive heat therapy and gentle electrotherapy to soothe chronic aching",
-      "Low-impact aerobic conditioning program (stationary cycle, walking pacing)"
-    ],
+    howPhysioHelps: "Assessment considers the person’s symptoms, function, activity goals, and any available imaging in context. Rehabilitation may include education, activity pacing, comfortable mobility, and progressive strength or aerobic exercise where suitable. No single symptom pattern or treatment applies to everyone, and degenerative findings do not inevitably cause nerve compression. If radiating leg symptoms are present, the sciatica information may be relevant.",
+    assessmentProcess: ["Review of symptoms, function, relevant history, and any available imaging report", "Assessment of movement, strength, balance, walking, and the activities affected", "Neurological checks where symptoms or examination findings indicate them", "Discussion of whether further medical evaluation or individualised rehabilitation is appropriate"],
+    treatmentApproach: ["Education about the diagnosis and how imaging relates to symptoms", "Individualised mobility and strength exercises based on function and tolerance", "Activity pacing and practical strategies for daily tasks", "Progress review with adjustments based on the person’s response", "Medical referral if symptoms or examination findings warrant it"],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
     serviceAreas: [
       "Manikonda", "Puppalguda", "Shaikpet", "Alkapur Township",
       "Narsingi", "Gandipet", "Kokapet", "Financial District", "Gachibowli"
     ],
-    homeCare: [
-      "Begin each morning with 5 minutes of gentle knee-to-chest and pelvic tilt stretches",
-      "Avoid standing stationary in one position for long periods; shift your weight frequently",
-      "Wear supportive, well-cushioned footwear during all daily walking activities",
-      "Apply warm heating pads to your lower back for 15 minutes before daily movement",
-      "Engage in daily low-impact walks to keep spinal joints nourished"
-    ],
-    whenToVisit: "Consult Dr. Hamid if lower back stiffness restricts your daily walking, causes difficulty standing from low chairs, or interferes with your sleep.",
+    homeCare: ["Continue comfortable activity within your tolerance", "Vary sustained positions and pace activities to your needs", "Use a walking or exercise plan only if it is suitable for you", "Discuss relevant imaging in the context of symptoms and examination", "Seek urgent care for new bladder or bowel dysfunction, saddle-area numbness, or rapidly worsening leg weakness"],
+    whenToVisit: "Consider assessment if diagnosed lumbar spondylosis or lower-back symptoms are limiting walking, sleep, work, or daily activities. Seek urgent medical care for new bladder or bowel dysfunction, numbness around the genitals or buttocks, or rapidly worsening leg weakness.",
     faqs: [
-      {
-        question: "Can lumbar spondylosis be reversed?",
-        answer: "The structural degenerative changes (bone spurs and disc thinning) cannot be reversed, but the pain and stiffness can be completely controlled. Physiotherapy restores mobility and strengthens muscles so you remain active and pain-free."
-      },
-      {
-        question: "Is walking good for lumbar spondylosis?",
-        answer: "Yes, regular walking on flat, even surfaces increases blood circulation to spinal tissues, lubricates facet joints, and maintains core endurance. Pacing yourself is key."
-      },
-      {
-        question: "Why do I feel better leaning forward when I have spondylosis?",
-        answer: "Leaning forward flexes the lumbar spine, which opens up the intervertebral foramina and facet joints, relieving compressive pressure on the articular surfaces."
-      },
-      {
-        question: "Do you offer home visit physiotherapy for elderly patients with spondylosis?",
-        answer: "Yes, Dr. Hamid provides compassionate home visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for seniors who find clinic travel challenging."
-      },
-      {
-        question: "What should I wear for my physiotherapy session?",
-        answer: "Comfortable, loose-fitting clothing that allows easy movement of your lower back and legs is ideal."
-      },
-      {
-        question: "How do I book an appointment?",
-        answer: "Call our Manikonda clinic on +91 76010 26596 or reach out via WhatsApp."
-      }
-    ]
+      { question: "Can physiotherapy reverse lumbar spondylosis?", answer: "Physiotherapy does not reverse degenerative changes. Individualised rehabilitation may support movement, strength, and everyday function, but symptom response varies." },
+      { question: "Do lumbar spondylosis symptoms follow one pattern?", answer: "No. Symptoms and functional effects vary, and imaging findings may not match pain directly. Assessment considers the person rather than assuming one symptom pattern." },
+      { question: "Does lumbar spondylosis always cause sciatica?", answer: "No. Degenerative changes do not inevitably cause nerve-root symptoms. If radiating leg pain is present, an assessment can help determine whether the clinic’s sciatica information is relevant." },
+      { question: "When should I seek urgent medical care?", answer: "Seek urgent medical care for new bladder or bowel dysfunction, numbness around the genitals or buttocks, or rapidly worsening leg weakness." },
+      { question: "How do I book an appointment?", answer: "Use the Book a Clinic Appointment link to open the existing appointment request form. Contact the clinic by phone or WhatsApp if you need help arranging a visit." }
+    ],
   },
   {
     slug: "spinal-injuries-rehabilitation-manikonda",

@@ -80,7 +80,7 @@ Dr Hamid’s Physio and Pain Clinic in Manikonda, Hyderabad provides physiothera
 - [Accident Physiotherapy](https://www.drhamidphysio.in/services/accident-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/accident-physiotherapy-manikonda.md)
 - [Geriatric Physiotherapy](https://www.drhamidphysio.in/services/geriatric-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/geriatric-physiotherapy-manikonda.md)
 - [Paediatric Physiotherapy](https://www.drhamidphysio.in/services/paediatric-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/paediatric-physiotherapy-manikonda.md)
-- [Home Physiotherapy Visits](https://www.drhamidphysio.in/services/home-visit-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/home-visit-physiotherapy-manikonda.md)
+- [Home Visit Physiotherapy](https://www.drhamidphysio.in/services/home-visit-physiotherapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/home-visit-physiotherapy-manikonda.md)
 - [Therapeutic Exercise Therapy](https://www.drhamidphysio.in/services/therapeutic-exercise-therapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/therapeutic-exercise-therapy-manikonda.md)
 - [Balance Exercise Therapy](https://www.drhamidphysio.in/services/balance-exercise-therapy-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/balance-exercise-therapy-manikonda.md)
 - [Chronic Pain Management](https://www.drhamidphysio.in/services/chronic-pain-management-manikonda) · [Markdown](https://www.drhamidphysio.in/markdown/services/chronic-pain-management-manikonda.md)

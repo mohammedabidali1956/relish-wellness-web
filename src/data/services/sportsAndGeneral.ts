@@ -582,43 +582,19 @@ serviceAreas: [
   {
     slug: "home-visit-physiotherapy-manikonda",
     category: "Sports, Post-Op & General",
-    title: "Home Physiotherapy Visits",
+    title: "Home Visit Physiotherapy",
     metaTitle: "Home Visit Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda. Contact the clinic to confirm location coverage and appointment availability.",
-    h1: "Home Physiotherapy Visits in Manikonda, Hyderabad",
-    shortDescription: "Home physiotherapy visits in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda. Contact the clinic to confirm location coverage and availability.",
+    h1: "Home Visit Physiotherapy in Manikonda, Hyderabad",
+    shortDescription: "Home Visit Physiotherapy may be an option when travelling to the clinic is difficult. Suitability, service coverage, and appointment availability are confirmed with the clinic.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Home physiotherapy visits and apartment rehabilitation in Manikonda",
-    whatItIs: "Home physiotherapy visits may bring rehabilitation to a person's residence when travelling to the clinic is difficult. At Dr Hamid’s Physio and Pain Clinic, the suitability, available services, and location for a home visit are confirmed individually; visits are generally targeted within an approximate 15 km radius of Manikonda.",
-    causes: [
-      "Immediate post-operative recovery (knee/hip replacement, spinal fusion) where patient transit is restricted",
-      "Acute, severe back spasm or sciatica making sitting in a car or walking downstairs unbearable",
-      "Severe neurological conditions (stroke, Parkinson's disease, paraplegia) requiring home environment training",
-      "Frailty, high fall risk, and reduced endurance in senior citizens who struggle with clinic travel",
-      "Demanding corporate and entrepreneurial work schedules requiring time-saving healthcare delivery at home"
-    ],
-    symptoms: [
-      "Inability to walk down apartment stairs or get into an automobile without severe pain",
-      "High level of physical dependency requiring 2 or more family members to assist with transfers",
-      "Severe post-surgical fatigue, surgical incision vulnerability, and pain during vehicular movement",
-      "Bed-bound or chair-bound status due to recent hospitalization, illness, or acute trauma",
-      "Exhaustion and anxiety experienced by elderly patients when navigating crowded medical clinics"
-    ],
-    howPhysioHelps: "A home visit may make assessment and rehabilitation more accessible when travelling to the clinic is difficult. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Consultant Physiotherapist, assesses whether a visit is suitable and discusses available care. Recommendations depend on the person's needs, the home setting, and equipment availability.",
-    assessmentProcess: [
-      "Comprehensive initial bedside clinical history, physical assessment, and medical documentation review",
-      "Evaluation of functional home transfers (bed-to-chair, chair-to-standing, toilet transfers)",
-      "Home environmental hazard audit identifying slip risks, rug obstructions, and stair rail safety",
-      "Assessment of patient vital signs, joint mobility, muscle tone, and pain levels in a relaxed setting",
-      "Collaborative goal setting with patient and family members focusing on real-world daily independence"
-    ],
-    treatmentApproach: [
-      "Individualized therapeutic exercise and mobility work based on assessment, goals, and tolerance",
-      "Bedside passive, active-assisted, and resisted joint mobilizations to prevent joint contractures",
-      "Functional transfer training and safe gait re-education using walkers, crutches, or canes in hallways",
-      "Stair climbing practice and balance retraining using real home architecture",
-      "Detailed caregiver training empowering family members with safe transfer and support techniques"
-    ],
+    whatItIs: "Home Visit Physiotherapy may bring assessment and rehabilitation to a person’s home when travelling to the clinic is difficult. The clinic confirms whether a visit is suitable, what care is available, and whether the address is within current service coverage. Home visits are generally targeted within an approximate 15 km radius of Manikonda; this is not a guarantee of coverage.",
+    causes: ["A person may ask about a home visit when pain, mobility limits, recent surgery, or another health concern makes clinic travel difficult", "Some people may prefer assessment of movement in their home setting", "Suitability depends on the person’s needs, clinical requirements, address, and current availability"],
+    symptoms: ["Difficulty travelling to an appointment", "Reduced mobility that affects household movement or daily tasks", "A need to discuss rehabilitation after surgery or an illness", "A family member seeking guidance about whether home-based assessment is suitable"],
+    howPhysioHelps: "A home visit can make an assessment more accessible when travelling to the clinic is difficult. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Consultant Physiotherapist, discusses the person’s needs, home setting, and goals, then confirms whether a visit and the requested service are suitable. The available equipment and treatment options are confirmed with the clinic; no particular device or service is guaranteed.",
+    assessmentProcess: ["Discuss the reason for requesting a home visit, health history, and current mobility", "Confirm the address, service coverage, and appointment availability with the clinic", "Assess relevant movement and daily tasks in the home setting when appropriate", "Discuss whether physiotherapy is suitable or another medical review is needed", "Agree on goals and next steps with the patient"],
+    treatmentApproach: ["Individualised advice and exercises when appropriate", "Movement and daily-task practice suited to the person and home environment", "Progress review and adjustment according to the person’s response", "Available treatment options depend on clinical suitability and what the clinic can provide", "Clinic care or medical referral may be discussed when that is the better next step"],
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
     serviceAreas: [
@@ -642,39 +618,16 @@ serviceAreas: [
       "Financial District",
       "HITEC City"
     ],
-    homeCare: [
-      "Ensure a clear, well-lit pathway in hallways and between the bed and bathroom",
-      "Keep a sturdy, non-wheeled chair with armrests available for exercise drills",
-      "Have previous medical discharge summaries, surgical notes, and X-rays ready for the physiotherapist",
-      "Encourage the patient to perform gentle bedside prescribed breathing and circulation drills between visits"
-    ],
-    whenToVisit: "Ask about a home visit if you or a family member cannot comfortably travel to a clinic due to recent surgery, pain, mobility limitations, or frailty. Contact the clinic at +91 76010 26596 to confirm whether a visit is suitable and currently available for your location.",
+    homeCare: ["Clear a comfortable space for movement if an appointment is confirmed", "Have relevant discharge notes or investigation reports available if you already have them", "Tell the clinic about access needs or mobility support when enquiring", "Do not begin new exercises or transfers that feel unsafe without individual guidance"],
+    whenToVisit: "Ask the clinic about Home Visit Physiotherapy if pain, mobility, recent surgery, or another health need makes travelling difficult. The clinic will confirm whether a visit is appropriate, whether your address is within current coverage, and whether an appointment is available. For in-clinic attendance, use the main appointment request pathway.",
     faqs: [
-      {
-        question: "Which areas in Hyderabad do you cover for home visit physiotherapy?",
-        answer: "Home visits are generally targeted within an approximate 15 km radius of Manikonda. Priority target areas include Kokapet, Gandipet, Narsingi, Jubilee Hills, Banjara Hills, Gachibowli, the Financial District, HITEC City, Puppalguda, Lanco Hills, Alkapur Township, Shaikpet, and Tolichowki, along with other nearby existing service areas. Actual availability depends on the patient's exact address; contact the clinic to confirm. The approximate radius does not guarantee a particular road distance."
-      },
-      {
-        question: "Is home physiotherapy as effective as clinic-based physiotherapy?",
-        answer: "Home visits and clinic appointments have different practical considerations. Suitability depends on the person's condition, goals, home environment, and available services. Contact the clinic to discuss options; no particular result is guaranteed."
-      },
-      {
-        question: "What equipment does the physiotherapist bring to my home?",
-        answer: "The equipment used, if any, depends on the person's needs and the clinic's current availability. Contact the clinic before booking if you need to confirm a particular device or service."
-      },
-      {
-        question: "How long does each home physiotherapy session last?",
-        answer: "Session length and arrangements should be confirmed directly with the clinic when booking."
-      },
-      {
-        question: "How do I schedule a home visit in Manikonda?",
-        answer: "Call or WhatsApp the clinic at +91 76010 26596 to ask about a home visit. The clinic can review your enquiry and address; suitability and appointment availability depend on clinical needs, location, and the current schedule."
-      },
-      {
-        question: "Can home visit patients later transition to your Manikonda clinic?",
-        answer: "A change from home visits to clinic appointments depends on the person's needs, mobility, goals, and available services. Discuss timing with the clinic and the treating medical team."
-      }
-    ]
+      { question: "Which areas are covered for home visits?", answer: "Home visits are generally targeted within an approximate 15 km radius of Manikonda. Coverage depends on the exact address and current availability, so contact the clinic to confirm. The approximate radius does not guarantee coverage." },
+      { question: "Who may benefit from Home Visit Physiotherapy?", answer: "A home visit may suit someone whose pain, mobility, recent surgery, or health needs make clinic travel difficult. The clinic confirms suitability individually." },
+      { question: "What happens during a home visit?", answer: "If a visit is suitable and available, the physiotherapist discusses your needs and goals and assesses relevant movement or daily activities. The next steps depend on findings and available services." },
+      { question: "What equipment will be brought?", answer: "Equipment and treatment options depend on the person’s needs and the clinic’s current availability. Contact the clinic before booking if a particular item or service is important." },
+      { question: "Can I attend the clinic instead of having a home visit?", answer: "Yes. In-clinic appointments are the clinic’s primary appointment pathway. Choose the clinic appointment request form or ask the team to help coordinate a suitable visit." },
+      { question: "How do I ask about a home visit?", answer: "Contact the clinic by phone or WhatsApp with your area and a brief description of the support needed. The clinic confirms coverage, suitability, and current appointment availability." }
+    ],
   },
   {
     slug: "therapeutic-exercise-therapy-manikonda",
