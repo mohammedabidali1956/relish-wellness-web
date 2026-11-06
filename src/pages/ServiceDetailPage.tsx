@@ -41,6 +41,7 @@ import { scrollToAppointmentSection } from "@/lib/navigation";
 import { trackAnalyticsEvent } from "@/lib/analytics";
 import { uppercasePainTerm } from "@/lib/seoText";
 import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
+import ServicePatientResources from "@/components/ServicePatientResources";
 
 import NotFound from "@/pages/NotFound";
 
@@ -309,6 +310,7 @@ export const ServiceDetailPage: React.FC = () => {
         <p className="mt-2">The visit starts with a discussion of your symptoms, health history, and goals. Dr. Hamid may assess relevant movement, strength, sensation, and daily activities, then explain the findings and appropriate next steps. A treatment plan is discussed only if physiotherapy is suitable; referral or further medical assessment may be recommended when needed.</p>
         <Link to="/contact#appointment-request" className="mt-3 inline-flex font-semibold text-[#8a5d24] underline-offset-2 hover:underline">Book a Clinic Appointment</Link>
       </section>
+      <ServicePatientResources serviceSlug={service.slug} />
 
       {/* Main Educational Long-Form Content Area */}
       <section id="service-details" className="py-12 sm:py-16 md:py-20">
@@ -332,7 +334,7 @@ export const ServiceDetailPage: React.FC = () => {
                 <div className="p-4 sm:p-5 rounded-xl bg-[#faf6ed] border border-[#e5dec9] space-y-2">
                   <h3 className="text-sm font-bold text-[#081a2e] flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-[#8a5d24]" />
-                    <span>How Targeted Physiotherapy Restores Function</span>
+                    <span>How Physiotherapy May Support Movement and Function</span>
                   </h3>
                   <p className="text-sm text-[#4a5568] leading-relaxed">
                     {service.howPhysioHelps}
@@ -601,6 +603,9 @@ export const ServiceDetailPage: React.FC = () => {
                   <h3 className="font-serif text-xl font-bold text-[#081a2e]">
                     Dr. Mohammed Hamid Ali
                   </h3>
+                  <p className="text-xs leading-relaxed text-[#4a5568]">
+                    BPT, MPT (Ortho) · Telangana State Board Registered · Professional Registration No. 0413
+                  </p>
                   <p className="text-xs font-semibold text-[#8a5d24]">Physiotherapy clinic in Manikonda</p>
                 </div>
 

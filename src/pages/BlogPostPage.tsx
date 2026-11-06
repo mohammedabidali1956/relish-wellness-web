@@ -8,6 +8,7 @@ import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalRevie
 import { Helmet } from "react-helmet";
 import { uppercasePainTerm } from "@/lib/seoText";
 import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
+import { patientTopicResources } from "@/data/patientResources";
 
 const toIsoDate = (date?: string): string | undefined => {
   if (!date) return undefined;
@@ -25,6 +26,10 @@ const BlogPostPage = () => {
   }
 
   const postContent = readBlogPostContent(post);
+  const topicResources = patientTopicResources.find((topic) =>
+    topic.answer?.path === `/blogs/${post.slug}` ||
+    topic.guide?.path === `/blogs/${post.slug}`
+  );
   const isKneeStairsArticle = post.slug === "knee-pain-when-climbing-stairs";
   const canonicalUrl = `https://www.drhamidphysio.in/blogs/${post.slug}`;
   const pageTitle = uppercasePainTerm(post.title);
@@ -112,7 +117,7 @@ const BlogPostPage = () => {
                 <span className="font-medium">{post.author}</span>
                 {post.author === "Dr. Mohammed Hamid Ali" && (
                   <span className="font-medium text-[#8a5d24]">
-                    BPT, MPT (Ortho) · Regd. No. 0413 · Consultant Physiotherapist
+                    BPT, MPT (Ortho) · Telangana State Board Registered · Professional Registration No. 0413
                   </span>
                 )}
               </div>
@@ -183,6 +188,65 @@ const BlogPostPage = () => {
         </div>
       </section>
 
+      {topicResources && (
+        <section
+          id="related-topic-pathway"
+          className="border-y border-[#e5dec9] bg-[#faf6ed] px-4 py-10 md:py-12"
+        >
+          <div className="container max-w-4xl">
+            <p className="text-xs font-bold uppercase tracking-wider text-[#8a5d24]">
+              Related patient pathway · {topicResources.topic}
+            </p>
+            <h2 className="mt-2 font-serif text-2xl font-bold text-[#081a2e]">
+              Explore the next useful step
+            </h2>
+            <div className="mt-5 flex flex-col items-start gap-3">
+              {topicResources.answer && topicResources.answer.path !== `/blogs/${post.slug}` && (
+                <Link
+                  to={topicResources.answer.path}
+                  className="font-semibold text-[#8a5d24] underline underline-offset-2"
+                >
+                  Patient question: {topicResources.answer.title}
+                </Link>
+              )}
+              {topicResources.guide && topicResources.guide.path !== `/blogs/${post.slug}` && (
+                <Link
+                  to={topicResources.guide.path}
+                  className="font-semibold text-[#8a5d24] underline underline-offset-2"
+                >
+                  Broader guide: {topicResources.guide.title}
+                </Link>
+              )}
+              {topicResources.evidence && (
+                <div>
+                  <Link
+                    to={topicResources.evidence.path}
+                    className="font-semibold text-[#8a5d24] underline underline-offset-2"
+                  >
+                    Related case evidence: {topicResources.evidence.title}
+                  </Link>
+                  <p className="mt-1 text-sm leading-relaxed text-[#4a5568]">
+                    {topicResources.evidence.summary} {topicResources.evidence.note}
+                  </p>
+                </div>
+              )}
+              <Link
+                to={topicResources.servicePath}
+                className="font-semibold text-[#081a2e] underline decoration-[#c4a46b] underline-offset-2"
+              >
+                Existing service: {topicResources.serviceTitle}
+              </Link>
+              <Link
+                to="/conditions#patient-resources"
+                className="font-semibold text-[#081a2e] underline decoration-[#c4a46b] underline-offset-2"
+              >
+                Browse Patient Resources by topic
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Related Posts */}
       {recentPosts.length > 0 && (
         <section className="py-16 bg-gray-50">
@@ -238,7 +302,7 @@ const BlogPostPage = () => {
             </p>
             <Link to="/#appointment">
               <Button className="bg-card text-relish-700 hover:bg-muted px-4 sm:px-8 py-3 font-medium text-lg">
-                Book an Appointment <ArrowRight className="ml-2 h-4 w-4" />
+                Book a Clinic Appointment <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>

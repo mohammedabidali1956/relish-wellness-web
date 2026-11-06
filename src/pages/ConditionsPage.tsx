@@ -1,8 +1,10 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import PainPointGuide from "@/components/PainPointGuide";
 import StructuredData from "@/components/StructuredData";
 import MedicalReviewByline from "@/components/MedicalReviewByline";
 import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
+import PatientResourceHub from "@/components/PatientResourceHub";
 
 const canonicalUrl = "https://www.drhamidphysio.in/conditions";
 const pageTitle = "Conditions and Body PAIN Guide in Manikonda | Dr Hamid’s Physio and PAIN Clinic";
@@ -55,6 +57,14 @@ const ConditionsPage = () => {
           <p className="text-[#4a5568] text-base sm:text-lg leading-relaxed mt-4 max-w-3xl mx-auto">
             Select a body area to explore general information about common pain conditions and physiotherapy. The guide is educational and does not replace an individual clinical assessment.
           </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <a className="inline-flex min-h-11 items-center rounded-lg bg-[#081a2e] px-4 py-2 text-sm font-semibold text-white hover:bg-[#122842]" href="#patient-resources">
+              Browse Patient Resources
+            </a>
+            <a className="inline-flex min-h-11 items-center rounded-lg border border-[#d6cbaf] bg-white px-4 py-2 text-sm font-semibold text-[#081a2e] hover:bg-[#f4ede0]" href="#interactive-body-pain-guide">
+              Open the interactive body guide
+            </a>
+          </div>
         </div>
       </section>
 
@@ -69,10 +79,24 @@ const ConditionsPage = () => {
               Patient Resources
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#081a2e] mt-2">
-              Anonymised cervical and lumbar case studies
+              Answers, guides, and genuine case evidence
             </h2>
             <p className="text-[#4a5568] leading-relaxed mt-3">
-              These individual clinical experiences describe presentation, assessment, documented care, and progress. Measured findings and patient-reported outcomes are identified separately. Results are individual and are not typical or guaranteed for every patient.
+              Browse existing patient questions and in-depth guides by topic, then explore the relevant clinic service. The interactive Body PAIN Guide remains available below.
+            </p>
+          </div>
+
+          <PatientResourceHub />
+
+          <div className="mt-12 max-w-3xl">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#725281]">
+              PROVE · Individual clinical experiences
+            </span>
+            <h3 className="mt-2 font-serif text-2xl font-bold text-[#081a2e]">
+              Anonymised cervical and lumbar case studies
+            </h3>
+            <p className="mt-3 leading-relaxed text-[#4a5568]">
+              Measured findings and patient-reported outcomes are identified separately. Each case describes one person's care and progress; results are not typical or guaranteed.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-6">
@@ -110,6 +134,9 @@ const ConditionsPage = () => {
                   </div>
                 </div>
               </details>
+              <p className="text-sm leading-relaxed text-[#334155]">
+                For general information about neck pain, read the <Link to="/blogs/neck-pain-after-waking-up" className="font-semibold text-[#8a5d24] underline underline-offset-2">neck pain question guide</Link> or explore the existing <Link to="/services/neck-pain-physiotherapy-manikonda" className="font-semibold text-[#8a5d24] underline underline-offset-2">Neck Pain Physiotherapy service</Link>.
+              </p>
               <p className="text-xs leading-relaxed text-[#64748b]">An anonymised clinical experience for education. Outcomes vary and require individual assessment. Symptom improvement does not mean cervical spondylosis or disc bulges were cured or reversed. Patient-identifying details are excluded; the source case records consent for publication.</p>
             </article>
             <article id="lumbar-clinical-case-study" className="bg-white border border-[#e5dec9] rounded-2xl p-6 sm:p-8 shadow-xs space-y-4">
@@ -174,6 +201,9 @@ const ConditionsPage = () => {
                   </div>
                 </div>
               </details>
+              <p className="text-sm leading-relaxed text-[#334155]">
+                For general information about lower-back pain, read the <Link to="/blogs/why-does-my-lower-back-hurt-10-common-causes" className="font-semibold text-[#8a5d24] underline underline-offset-2">lower-back pain guide</Link> or explore the existing <Link to="/services/back-pain-physiotherapy-manikonda" className="font-semibold text-[#8a5d24] underline underline-offset-2">Back Pain Physiotherapy service</Link>.
+              </p>
               <p className="text-xs leading-relaxed text-[#64748b]">An anonymised clinical experience for education. Outcomes vary and require individual assessment. Symptom improvement does not mean lumbar spondylosis or disc bulges were cured or reversed. Patient-identifying details are excluded; the source case records consent for publication.</p>
             </article>
           </div>

@@ -213,7 +213,7 @@ const PainPointGuide = () => {
   };
 
   return (
-    <section className="border-y border-border bg-sand-100 px-4 py-16 md:py-24" aria-labelledby="pain-guide-heading">
+    <section id="interactive-body-pain-guide" className="border-y border-border bg-sand-100 px-4 py-16 md:py-24" aria-labelledby="pain-guide-heading">
       <div className="container">
         <div className="max-w-2xl">
           <span className="eyebrow">Body pain guide</span>

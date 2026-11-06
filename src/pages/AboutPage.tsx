@@ -15,13 +15,13 @@ const AboutPage = () => {
       />
       <Helmet>
         <meta property="og:title" content="About Dr Hamid’s Physio and PAIN Clinic | Manikonda, Hyderabad" />
-        <meta property="og:description" content="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Regd. No. 0413, Consultant Physiotherapist and founder of the clinic in Manikonda." />
+        <meta property="og:description" content="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Telangana State Board Registered, Consultant Physiotherapist and founder of the clinic in Manikonda." />
         <meta property="og:url" content="https://www.drhamidphysio.in/about" />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://www.drhamidphysio.in/images/doctor/dr-mohammed-hamid-ali.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Dr Hamid’s Physio and PAIN Clinic | Manikonda" />
-        <meta name="twitter:description" content="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Regd. No. 0413, Consultant Physiotherapist and founder of the clinic in Manikonda." />
+        <meta name="twitter:description" content="Meet Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Telangana State Board Registered, Consultant Physiotherapist and founder of the clinic in Manikonda." />
         <meta name="twitter:image" content="https://www.drhamidphysio.in/images/doctor/dr-mohammed-hamid-ali.webp" />
       </Helmet>
       {/* Hero Section */}
@@ -58,7 +58,7 @@ const AboutPage = () => {
                 <h2 className="text-3xl font-bold text-gray-900">Clinic profile</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Dr. Mohammed Hamid Ali is the founder and Consultant Physiotherapist at Dr Hamid’s Physio and Pain Clinic. His confirmed qualifications are BPT and MPT (Ortho), with Registration No. 0413 under the Government of Telangana.
+                Dr. Mohammed Hamid Ali is the founder and Consultant Physiotherapist at Dr Hamid’s Physio and Pain Clinic. His confirmed qualifications are BPT and MPT (Ortho); he is Telangana State Board Registered, Professional Registration No. 0413.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 He has 8+ years of clinical experience. The clinic was established in 2021 and is founder-operated, with individualized one-to-one care. Appointment and service suitability depend on an individual assessment.
