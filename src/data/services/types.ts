@@ -9,6 +9,7 @@ export interface ServiceDetail {
   metaTitle: string;
   metaDescription: string;
   h1: string;
+  localAnswer?: string;
   shortDescription: string;
   imageSrc: string;
   altText: string;

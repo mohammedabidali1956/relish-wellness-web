@@ -8,6 +8,7 @@ export const shoulderServices: ServiceDetail[] = [
     metaTitle: "Shoulder Pain Physiotherapy in Manikonda | Dr Hamid’s Physio",
     metaDescription: "Learn about assessment and physiotherapy options for shoulder pain and restricted movement in Manikonda, Hyderabad. Suitable care depends on individual needs and findings.",
     h1: "Shoulder Pain Physiotherapy in Manikonda, Hyderabad",
+    localAnswer: "At Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad, Shoulder Pain Physiotherapy starts with a review of pain, arm movement, sleep and daily activities. Clinic appointments are in Manikonda; people from nearby localities can ask about availability. In-clinic consultation is ₹300; physiotherapy starts from ₹500, with total cost based on assessed needs.",
     shortDescription: "Assessment-led physiotherapy information for shoulder pain, stiffness, or movement limitations that affect reaching, dressing, sleep, work, or daily activities.",
     imageSrc: "/images/services/condition-shoulder-pain.webp",
     altText: "Shoulder pain physiotherapy and rotator cuff treatment in Manikonda clinic",
@@ -58,24 +59,24 @@ export const shoulderServices: ServiceDetail[] = [
     whenToVisit: "Consult Dr. Hamid if shoulder pain prevents sleeping, lasts longer than 7 days, or makes lifting your arm overhead painful.",
     faqs: [
       {
-        question: "Can rotator cuff tendinitis heal without surgery?",
-        answer: "Yes! The vast majority of rotator cuff tendinopathies, subacromial impingements, and partial tears heal completely with conservative physiotherapy that balances the rotator cuff muscles and expands the joint space."
+        question: "Can shoulder tendon pain improve without surgery?",
+        answer: "Some shoulder conditions can be managed without surgery, but options depend on the diagnosis, symptoms, and examination. Physiotherapy may be considered when appropriate; results vary."
       },
       {
         question: "Why does my shoulder hurt so much when sleeping at night?",
-        answer: "Lying down eliminates the downward pull of gravity on the arm, allowing the humeral head to migrate upward against the inflamed subacromial bursa. Sleeping on the affected side also directly compresses the sensitive tissues."
+        answer: "Night pain can have several causes, including sensitivity to movement or lying on the affected side. Persistent or severe pain deserves assessment."
       },
       {
         question: "What is the difference between shoulder impingement and frozen shoulder?",
-        answer: "Shoulder impingement causes pain mainly during specific movements (like reaching overhead), but passive range of motion is usually preserved. Frozen shoulder causes global, severe loss of motion in all directions, both active and passive."
+        answer: "Pain with overhead movement can have several causes. Frozen shoulder often restricts both active and passive movement, but no single symptom confirms a diagnosis."
       },
       {
         question: "Do you treat badminton and gym shoulder injuries in Manikonda?",
-        answer: "Yes, we treat athletes, gym enthusiasts, and badminton players from Manikonda and Gachibowli with customized shoulder rehab and return-to-sport protocols."
+        answer: "The clinic can assess sports-related shoulder pain and discuss whether physiotherapy is suitable. Contact the clinic about appointments; sudden injury or marked weakness may need medical review."
       },
       {
         question: "How do I book an appointment?",
-        answer: "Call our clinic at +91 76010 26596 or reach out via WhatsApp to schedule an assessment with Dr. Hamid."
+        answer: "Use the Book a Clinic Appointment link to open the existing request form. Phone and WhatsApp are supporting options for coordinating a visit."
       }
     ]
   },
@@ -145,7 +146,7 @@ export const shoulderServices: ServiceDetail[] = [
       },
       {
         question: "Does Dr. Hamid provide home visit physiotherapy for frozen shoulder in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with severe pain or mobility limitations."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for patients with severe pain or mobility limitations."
       },
       {
         question: "How do I book an appointment?",
@@ -218,7 +219,7 @@ export const shoulderServices: ServiceDetail[] = [
       },
       {
         question: "Can Dr. Hamid visit my home for post-op shoulder physiotherapy in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized in-home shoulder rehabilitation in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for post-surgical patients."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized in-home shoulder rehabilitation in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for post-surgical patients."
       },
       {
         question: "Where is the clinic located?",

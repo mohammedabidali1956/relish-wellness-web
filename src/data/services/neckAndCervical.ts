@@ -9,6 +9,7 @@ export const neckAndCervicalServices: ServiceDetail[] = [
     metaTitle: "Neck Pain Physiotherapy in Manikonda | Dr Hamid’s Physio",
     metaDescription: "Learn about assessment and physiotherapy options for neck pain and stiffness in Manikonda, Hyderabad. Suitable care depends on individual needs and findings.",
     h1: "Neck Pain Physiotherapy in Manikonda, Hyderabad",
+    localAnswer: "At Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad, Neck Pain Physiotherapy starts with a review of neck symptoms, movement and daily activities. Clinic appointments are in Manikonda; people from Puppalguda and nearby areas can ask about availability. In-clinic consultation is ₹300; physiotherapy starts from ₹500, with total cost based on assessed needs.",
     shortDescription: "Assessment-led physiotherapy information for neck pain, stiffness and movement limitations, including discomfort associated with prolonged device or desk work.",
     imageSrc: "/images/services/condition-neck-pain.webp",
     altText: "Neck pain physiotherapy and cervical care in Manikonda clinic",

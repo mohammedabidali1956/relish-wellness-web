@@ -183,7 +183,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     metaTitle: "Post-Surgical Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Post-operative physiotherapy in Manikonda, Hyderabad, for rehabilitation after knee replacement, hip surgery, spinal procedures, and fractures. Follow the treating team's advice.",
     h1: "Post-Surgical Physiotherapy & Rehabilitation in Manikonda, Hyderabad",
-    shortDescription: "Doctor-supervised post-operative physical therapy restoring joint mobility, muscle activation, and independent functional living after orthopedic surgeries. Offers both clinic-based advanced therapy and dedicated home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage.",
+    shortDescription: "Doctor-supervised post-operative physical therapy restoring joint mobility, muscle activation, and independent functional living after orthopedic surgeries. Offers both clinic-based advanced therapy and dedicated home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Post-surgical rehabilitation and orthopedic physiotherapy in Manikonda",
     whatItIs: "Post-surgical rehabilitation may support movement and daily activities after an operation. The appropriate exercises, precautions, and timeline depend on the procedure, healing, and instructions from the surgeon or hospital team. At Dr Hamid’s Physio and Pain Clinic in Manikonda, care is planned around the person's assessment and medical guidance; physiotherapy does not replace post-operative medical follow-up.",
@@ -412,7 +412,7 @@ serviceAreas: [
       },
       {
         question: "What if I am too sore or unable to travel to the clinic in Manikonda?",
-        answer: "We provide professional home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage so you can begin recovering in the comfort and safety of your own home."
+        answer: "We provide professional home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage so you can begin recovering in the comfort and safety of your own home."
       }
     ]
   },
@@ -477,7 +477,7 @@ serviceAreas: [
       },
       {
         question: "Do you offer home visit physiotherapy for seniors in Manikonda?",
-        answer: "Yes, we have a dedicated home visit physiotherapy service in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage and equipment availability. Home visits may support older adults who have difficulty travelling."
+        answer: "Yes, we have a dedicated home visit physiotherapy service in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage and equipment availability. Home visits may support older adults who have difficulty travelling."
       },
       {
         question: "How does physiotherapy prevent falls in senior citizens?",
@@ -584,12 +584,13 @@ serviceAreas: [
     category: "Sports, Post-Op & General",
     title: "Home Visit Physiotherapy",
     metaTitle: "Home Visit Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
-    metaDescription: "Home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda. Contact the clinic to confirm location coverage and appointment availability.",
+    metaDescription: "Home Visit Physiotherapy may be available within the clinic’s approximate 5 km target area around Manikonda. Confirm exact-address coverage, suitability, fee, and appointment availability with the clinic.",
     h1: "Home Visit Physiotherapy in Manikonda, Hyderabad",
+    localAnswer: "Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad, offers Home Visit Physiotherapy when travel to the clinic is difficult. The clinic confirms suitability, exact-address coverage, care options, fee and appointment availability before booking. Home visits target areas within about 5 km of Manikonda, but coverage is not guaranteed. Contact the clinic to request a visit.",
     shortDescription: "Home Visit Physiotherapy may be an option when travelling to the clinic is difficult. Suitability, service coverage, and appointment availability are confirmed with the clinic.",
     imageSrc: "/images/services/consultation-assessment.webp",
     altText: "Home physiotherapy visits and apartment rehabilitation in Manikonda",
-    whatItIs: "Home Visit Physiotherapy may bring assessment and rehabilitation to a person’s home when travelling to the clinic is difficult. The clinic confirms whether a visit is suitable, what care is available, and whether the address is within current service coverage. Home visits are generally targeted within an approximate 15 km radius of Manikonda; this is not a guarantee of coverage.",
+    whatItIs: "Home Visit Physiotherapy may bring assessment and rehabilitation to a person’s home when travelling to the clinic is difficult. The clinic confirms whether a visit is suitable, what care is available, and whether the address is within current service coverage. Home visits target areas within about 5 km of Manikonda; this is not a guarantee of coverage.",
     causes: ["A person may ask about a home visit when pain, mobility limits, recent surgery, or another health concern makes clinic travel difficult", "Some people may prefer assessment of movement in their home setting", "Suitability depends on the person’s needs, clinical requirements, address, and current availability"],
     symptoms: ["Difficulty travelling to an appointment", "Reduced mobility that affects household movement or daily tasks", "A need to discuss rehabilitation after surgery or an illness", "A family member seeking guidance about whether home-based assessment is suitable"],
     howPhysioHelps: "A home visit can make an assessment more accessible when travelling to the clinic is difficult. Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Consultant Physiotherapist, discusses the person’s needs, home setting, and goals, then confirms whether a visit and the requested service are suitable. The available equipment and treatment options are confirmed with the clinic; no particular device or service is guaranteed.",
@@ -598,30 +599,12 @@ serviceAreas: [
     expectedRecovery: "Recovery time and response vary with the diagnosis, symptom severity, overall health, treatment, and individual progress. An assessment can help set goals and review progress; no fixed timeline or outcome can be promised.",
     whyChooseDoctor: [],
     serviceAreas: [
-      "Manikonda",
-      "Puppalguda",
-      "Lanco Hills",
-      "Tolichowki",
-      "Seven Tombs",
-      "Narsingi",
-      "Alkapur Township",
-      "Kokapet",
-      "Shaikpet",
-      "OU Colony",
-      "Khajaguda",
-      "Neknampur",
-      "Golconda",
-      "Gandipet",
-      "Jubilee Hills",
-      "Banjara Hills",
-      "Gachibowli",
-      "Financial District",
-      "HITEC City"
+      "Manikonda"
     ],
     homeCare: ["Clear a comfortable space for movement if an appointment is confirmed", "Have relevant discharge notes or investigation reports available if you already have them", "Tell the clinic about access needs or mobility support when enquiring", "Do not begin new exercises or transfers that feel unsafe without individual guidance"],
     whenToVisit: "Ask the clinic about Home Visit Physiotherapy if pain, mobility, recent surgery, or another health need makes travelling difficult. The clinic will confirm whether a visit is appropriate, whether your address is within current coverage, and whether an appointment is available. For in-clinic attendance, use the main appointment request pathway.",
     faqs: [
-      { question: "Which areas are covered for home visits?", answer: "Home visits are generally targeted within an approximate 15 km radius of Manikonda. Coverage depends on the exact address and current availability, so contact the clinic to confirm. The approximate radius does not guarantee coverage." },
+      { question: "Which areas are covered for home visits?", answer: "Home visits target areas within about 5 km of Manikonda. Actual coverage depends on your exact address and current availability; contact the clinic to confirm before booking. The target area is not a coverage guarantee." },
       { question: "Who may benefit from Home Visit Physiotherapy?", answer: "A home visit may suit someone whose pain, mobility, recent surgery, or health needs make clinic travel difficult. The clinic confirms suitability individually." },
       { question: "What happens during a home visit?", answer: "If a visit is suitable and available, the physiotherapist discusses your needs and goals and assesses relevant movement or daily activities. The next steps depend on findings and available services." },
       { question: "What equipment will be brought?", answer: "Equipment and treatment options depend on the person’s needs and the clinic’s current availability. Contact the clinic before booking if a particular item or service is important." },
@@ -786,7 +769,7 @@ serviceAreas: [
       },
       {
         question: "Do you offer balance therapy home visits in Manikonda?",
-        answer: "Yes, we provide home visit balance and fall prevention therapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients who cannot travel to the clinic."
+        answer: "Yes, we provide home visit balance and fall prevention therapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for patients who cannot travel to the clinic."
       }
     ]
   },
@@ -847,7 +830,7 @@ serviceAreas: [
     faqs: [
 {
         question: "Do you offer chronic pain therapy home visits in Manikonda?",
-        answer: "Yes, for patients whose severe chronic pain restricts them from traveling to the clinic, we offer dedicated home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
+        answer: "Yes, for patients whose severe chronic pain restricts them from traveling to the clinic, we offer dedicated home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage."
       },
       {
         question: "Can physiotherapy help with fibromyalgia?",
@@ -867,7 +850,7 @@ serviceAreas: [
       },
       {
         question: "Do you offer chronic pain therapy home visits in Manikonda?",
-        answer: "Yes, for patients whose severe chronic pain restricts them from traveling to the clinic, we offer dedicated home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
+        answer: "Yes, for patients whose severe chronic pain restricts them from traveling to the clinic, we offer dedicated home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage."
       }
     ]
   },
@@ -948,7 +931,7 @@ serviceAreas: [
       },
       {
         question: "Can I get home physiotherapy if I cannot stand up to come to the clinic?",
-        answer: "Yes, we offer emergency home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for people whose severe muscle spasms prevent them from driving or climbing stairs."
+        answer: "Yes, we offer emergency home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for people whose severe muscle spasms prevent them from driving or climbing stairs."
       }
     ]
   },
@@ -1260,7 +1243,7 @@ serviceAreas: [
       },
       {
         question: "Do you offer home visit physiotherapy after knee replacement in Manikonda?",
-        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage during the early post-operative period when travel is difficult."
+        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage during the early post-operative period when travel is difficult."
       },
       {
         question: "Will rehabilitation be painful after knee replacement?",
@@ -1343,7 +1326,7 @@ serviceAreas: [
       },
       {
         question: "Do you offer home visit physiotherapy after hip replacement in Manikonda?",
-        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage. Home visits are especially valuable during the early weeks when hip precautions limit your mobility."
+        answer: "Yes, Dr. Hamid provides specialized home visit rehabilitation in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage. Home visits are especially valuable during the early weeks when hip precautions limit your mobility."
       },
       {
         question: "When can I drive after hip replacement?",

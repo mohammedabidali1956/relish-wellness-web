@@ -99,7 +99,7 @@ const ServicesPage: React.FC = () => {
         <title>Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder &amp; Home Visits</title>
         <meta
           name="description"
-          content="Explore physiotherapy for back, neck, knee and shoulder PAIN, sports injuries and recovery after surgery in Manikonda. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage."
+          content="Explore physiotherapy for back, neck, knee and shoulder PAIN, sports injuries and recovery after surgery in Manikonda. Home visits target areas within about 5 km; confirm exact-address coverage and availability with the clinic."
         />
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content="Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder & Home Visits" />
@@ -111,7 +111,7 @@ const ServicesPage: React.FC = () => {
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Physiotherapy Services in Manikonda | Dr Hamid’s Physio and PAIN Clinic" />
-        <meta name="twitter:description" content="Physiotherapy programs for back, neck, knee and shoulder PAIN, sports injuries and post-surgery recovery in Manikonda. Home visits generally target locations within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage." />
+        <meta name="twitter:description" content="Physiotherapy programs for back, neck, knee and shoulder PAIN, sports injuries and post-surgery recovery in Manikonda. Home visits target areas within about 5 km; confirm exact-address coverage and availability with the clinic." />
         <meta name="twitter:image" content={CLINIC_LOGO_URL} />
         <script type="application/ld+json">{JSON.stringify(servicesStructuredData)}</script>
       </Helmet>
@@ -145,7 +145,7 @@ const ServicesPage: React.FC = () => {
                 Call or WhatsApp: <a href="tel:+917601026596" className="text-[#8a5d24] hover:underline">+91 76010 26596</a>
               </p>
               <p className="text-xs text-[#64748b]">
-                Clinic visits serve Manikonda and nearby areas. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage.
+                The clinic is in Manikonda. Home visits target areas within about 5 km; exact-address coverage and availability must be confirmed with the clinic.
               </p>
               <div className="flex flex-col sm:flex-row gap-2 pt-1">
                 <Button asChild className="bg-[#081a2e] hover:bg-[#122842] text-white text-sm">
@@ -339,7 +339,7 @@ const ServicesPage: React.FC = () => {
                           className="home-visit-whatsapp mt-2 inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-emerald-700 hover:underline"
                         >
                           <MessageCircle className="w-4 h-4" />
-                          <span>WhatsApp to book home visit: +91 76010 26596</span>
+                          <span>Ask about a home visit on WhatsApp: +91 76010 26596</span>
                         </a>
                       )}
                     </div>
@@ -388,7 +388,7 @@ const ServicesPage: React.FC = () => {
                               className="home-visit-whatsapp mb-4 inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-emerald-700 hover:underline"
                             >
                               <MessageCircle className="w-4 h-4" />
-                              <span>WhatsApp to book home visit: +91 76010 26596</span>
+                              <span>Ask about a home visit on WhatsApp: +91 76010 26596</span>
                             </a>
                           )}
 
@@ -477,7 +477,7 @@ const ServicesPage: React.FC = () => {
                 Call or WhatsApp: +91 76010 26596
               </p>
               <p className="text-xs sm:text-sm text-slate-300">
-                Clinic visits serve Manikonda and nearby areas. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage.
+                The clinic is in Manikonda. Home visits target areas within about 5 km; exact-address coverage and availability must be confirmed with the clinic.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button asChild className="bg-[#8a5d24] hover:bg-[#a67232] text-white font-semibold px-6 py-5 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md">

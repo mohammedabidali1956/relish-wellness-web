@@ -88,7 +88,7 @@ export const serviceCategoryGroups: ServiceCategoryGroup[] = [
     id: "sports-general",
     title: "Sports, Post-Op & General Physical Therapy",
     badge: "Rehabilitation & Sports",
-    description: "Rehabilitation information for sports injuries, post-surgical recovery, fractures and geriatric mobility. Home visits are generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm coverage and availability.",
+    description: "Rehabilitation information for sports injuries, post-surgical recovery, fractures and geriatric mobility. Home visits target areas within about 5 km of Manikonda; contact the clinic to confirm exact-address coverage and availability.",
     services: sportsAndGeneralServices,
   },
 ];

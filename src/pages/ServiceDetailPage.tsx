@@ -53,6 +53,12 @@ export const ServiceDetailPage: React.FC = () => {
     return <NotFound />;
   }
 
+  const isHomeVisitService = service.slug === "home-visit-physiotherapy-manikonda";
+  const primaryCtaLabel = isHomeVisitService ? "Request a Home Visit" : "Book a Clinic Appointment";
+  const secondaryWhatsAppLabel = isHomeVisitService ? "Ask on WhatsApp" : "Chat on WhatsApp";
+  const answerQuestions = service.localAnswer ? service.faqs.slice(0, 3) : [];
+  const detailedFaqs = service.localAnswer ? service.faqs.slice(answerQuestions.length) : service.faqs;
+
   const handleCall = () => {
     trackAnalyticsEvent("phone_click", {
       page_category: "service",
@@ -62,9 +68,10 @@ export const ServiceDetailPage: React.FC = () => {
   };
 
   const handleWhatsApp = () => {
-    const text = encodeURIComponent(
-      `Hello Dr. Hamid, I would like to book a consultation for ${service.title} at your Manikonda clinic.`
-    );
+    const message = isHomeVisitService
+      ? "Hello Dr. Hamid, I would like to request a home visit. My area is: ____. Please confirm address coverage, suitability, fee, and availability."
+      : `Hello Dr. Hamid, I would like to book a consultation for ${service.title} at your Manikonda clinic.`;
+    const text = encodeURIComponent(message);
     openWhatsApp(decodeURIComponent(text));
     trackAnalyticsEvent("whatsapp_click", {
       page_category: "service",
@@ -226,17 +233,36 @@ export const ServiceDetailPage: React.FC = () => {
             <div className="lg:col-span-7 space-y-4 sm:space-y-5">
               <div className="inline-flex items-center gap-2 bg-[#f4ede0] border border-[#e5dec9] px-3 py-1 rounded-full text-xs font-semibold text-[#8a5d24]">
                 <MapPin className="w-3.5 h-3.5 text-[#8a5d24]" />
-                <span>Manikonda &amp; Puppalguda Clinic • Home Physiotherapy Visits</span>
+                <span>{isHomeVisitService ? "Home visits near Manikonda • confirm address coverage" : "Physiotherapy clinic in Manikonda, Hyderabad"}</span>
               </div>
 
               <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#081a2e] tracking-tight leading-[1.15]">
                 {pageHeading}
               </h1>
+              {service.localAnswer && (
+                <div id="local-service-answer" className="rounded-xl border border-[#e5dec9] bg-white p-4 sm:p-5">
+                  <p className="text-sm sm:text-base text-[#334155] leading-relaxed">
+                    {service.localAnswer}
+                  </p>
+                </div>
+              )}
+              {answerQuestions.length > 0 && (
+                <div id="local-service-questions" className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {answerQuestions.map((faq) => (
+                    <article key={faq.question} className="rounded-xl border border-[#e5dec9] bg-white/90 p-4">
+                      <h2 className="text-sm font-semibold text-[#081a2e]">{faq.question}</h2>
+                      <p className="mt-1 text-xs sm:text-sm text-[#4a5568] leading-relaxed">{faq.answer}</p>
+                    </article>
+                  ))}
+                </div>
+              )}
               <MedicalReviewByline />
 
-              <p className="text-base sm:text-lg text-[#334155] leading-relaxed">
-                {service.shortDescription}
-              </p>
+              {!service.localAnswer && (
+                <p className="text-base sm:text-lg text-[#334155] leading-relaxed">
+                  {service.shortDescription}
+                </p>
+              )}
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-3 pt-3">
@@ -246,7 +272,7 @@ export const ServiceDetailPage: React.FC = () => {
                 >
                   <Link to="/contact#appointment-request">
                     <Calendar className="w-5 h-5 text-[#e5c58a]" />
-                    <span>Book a Clinic Appointment</span>
+                    <span>{primaryCtaLabel}</span>
                   </Link>
                 </Button>
                 <Button
@@ -263,7 +289,7 @@ export const ServiceDetailPage: React.FC = () => {
                   className="border-emerald-600 text-emerald-800 hover:bg-emerald-50 font-semibold px-6 py-6 rounded-xl flex items-center justify-center gap-2 text-base bg-white/90 shadow-xs transition-all hover:scale-[1.02]"
                 >
                   <MessageCircle className="w-5 h-5 text-emerald-600" />
-                  <span>Chat on WhatsApp</span>
+                  <span>{secondaryWhatsAppLabel}</span>
                 </Button>
               </div>
 
@@ -306,9 +332,9 @@ export const ServiceDetailPage: React.FC = () => {
         </div>
       </section>
       <section id="clinic-visit-expectations" className="mt-4 rounded-xl border border-[#e5dec9] bg-white p-5 text-sm leading-relaxed text-[#334155]">
-        <h2 className="font-semibold text-[#081a2e]">What to expect at a clinic appointment</h2>
-        <p className="mt-2">The visit starts with a discussion of your symptoms, health history, and goals. Dr. Hamid may assess relevant movement, strength, sensation, and daily activities, then explain the findings and appropriate next steps. A treatment plan is discussed only if physiotherapy is suitable; referral or further medical assessment may be recommended when needed.</p>
-        <Link to="/contact#appointment-request" className="mt-3 inline-flex font-semibold text-[#8a5d24] underline-offset-2 hover:underline">Book a Clinic Appointment</Link>
+        <h2 className="font-semibold text-[#081a2e]">{isHomeVisitService ? "What to expect when requesting a home visit" : "What to expect at a clinic appointment"}</h2>
+        <p className="mt-2">{isHomeVisitService ? "Contact the clinic with your area and a brief description of the support needed. The clinic confirms exact-address coverage, clinical suitability, fee, care options, and appointment availability before arranging a visit." : "The visit starts with a discussion of your symptoms, health history, and goals. Dr. Hamid may assess relevant movement, strength, sensation, and daily activities, then explain the findings and appropriate next steps. A treatment plan is discussed only if physiotherapy is suitable; referral or further medical assessment may be recommended when needed."}</p>
+        <Link to="/contact#appointment-request" className="mt-3 inline-flex font-semibold text-[#8a5d24] underline-offset-2 hover:underline">{primaryCtaLabel}</Link>
       </section>
       <ServicePatientResources serviceSlug={service.slug} />
 
@@ -518,7 +544,7 @@ export const ServiceDetailPage: React.FC = () => {
                     {service.whenToVisit}
                   </p>
                   <Button asChild size="sm" className="w-full bg-[#081a2e] hover:bg-[#122842] text-white text-xs mt-2">
-                    <Link to="/contact#appointment-request">Book a Clinic Appointment</Link>
+                    <Link to="/contact#appointment-request">{primaryCtaLabel}</Link>
                   </Button>
                 </div>
               </div>
@@ -537,7 +563,7 @@ export const ServiceDetailPage: React.FC = () => {
                 </p>
 
                 <Accordion type="single" collapsible className="w-full space-y-3">
-                  {service.faqs.map((faq, index) => (
+                  {detailedFaqs.map((faq, index) => (
                     <AccordionItem
                       key={index}
                       value={`faq-${index}`}
@@ -613,7 +639,7 @@ export const ServiceDetailPage: React.FC = () => {
                   <h4 className="text-xs font-bold uppercase tracking-wider text-[#081a2e]">
                     Ask about this service
                   </h4>
-                  <p className="text-xs leading-relaxed text-[#4a5568]">Contact the clinic to discuss appointment options and whether the listed service may be appropriate for you.</p>
+                  <p className="text-xs leading-relaxed text-[#4a5568]">{isHomeVisitService ? "Contact the clinic with your area and brief support needs. The clinic confirms address coverage, suitability, fees, care options, and availability." : "Contact the clinic to discuss appointment options and whether the listed service may be appropriate for you."}</p>
                 </div>
 
                 {/* Booking Action Buttons */}
@@ -621,7 +647,7 @@ export const ServiceDetailPage: React.FC = () => {
                   <Button asChild className="w-full bg-[#081a2e] hover:bg-[#122842] text-white font-semibold py-5 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md">
                     <Link to="/contact#appointment-request">
                       <Calendar className="w-4 h-4 text-[#e5c58a]" />
-                      <span>Book a Clinic Appointment</span>
+                      <span>{primaryCtaLabel}</span>
                     </Link>
                   </Button>
                   <Button
@@ -638,7 +664,7 @@ export const ServiceDetailPage: React.FC = () => {
                     className="w-full border-emerald-600 text-emerald-800 hover:bg-emerald-50 font-semibold py-5 rounded-xl flex items-center justify-center gap-2 text-sm"
                   >
                     <MessageCircle className="w-4 h-4 text-emerald-600" />
-                    <span>Book via WhatsApp</span>
+                    <span>{isHomeVisitService ? "Ask on WhatsApp" : "Book via WhatsApp"}</span>
                   </Button>
                 </div>
 
@@ -646,18 +672,22 @@ export const ServiceDetailPage: React.FC = () => {
                 <div className="pt-4 border-t border-[#e5dec9] space-y-2">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-[#081a2e] flex items-center gap-1.5">
                     <MapPin className="w-3.5 h-3.5 text-[#8a5d24]" />
-                    <span>Areas Served for Clinic &amp; Home:</span>
+                    <span>{service.localAnswer ? (isHomeVisitService ? "Home visit coverage:" : "Clinic location:") : "Areas Served for Clinic & Home:"}</span>
                   </h4>
-                  <div className="flex flex-wrap gap-1.5">
-                    {service.serviceAreas.map((area, idx) => (
-                      <span
-                        key={idx}
-                        className="text-[11px] bg-[#faf6ed] border border-[#e5dec9] text-[#4a5568] px-2 py-0.5 rounded-md"
-                      >
-                        {area}
-                      </span>
-                    ))}
-                  </div>
+                  {service.localAnswer ? (
+                    <p className="text-xs leading-relaxed text-[#4a5568]">{isHomeVisitService ? "The target area is about 5 km around Manikonda. Coverage, suitability, fee, and availability depend on your exact address and must be confirmed with the clinic; the target area is not a service guarantee." : "The clinic is in Manikonda. People from Puppalguda and nearby areas can contact the clinic to ask about an in-clinic appointment; this is not a claim of additional branches."}</p>
+                  ) : (
+                    <div className="flex flex-wrap gap-1.5">
+                      {service.serviceAreas.map((area, idx) => (
+                        <span
+                          key={idx}
+                          className="text-[11px] bg-[#faf6ed] border border-[#e5dec9] text-[#4a5568] px-2 py-0.5 rounded-md"
+                        >
+                          {area}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 {/* Clinic Location Box */}
@@ -697,7 +727,7 @@ export const ServiceDetailPage: React.FC = () => {
           <Button asChild className="flex-1 bg-[#081a2e] hover:bg-[#122842] text-white text-xs font-semibold py-5 rounded-xl flex items-center justify-center gap-1.5">
             <Link to="/contact#appointment-request">
               <Calendar className="w-4 h-4 text-[#e5c58a]" />
-              <span>Book Appointment</span>
+              <span>{primaryCtaLabel}</span>
             </Link>
           </Button>
           <Button

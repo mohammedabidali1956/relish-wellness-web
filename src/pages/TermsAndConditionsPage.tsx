@@ -59,7 +59,7 @@ const TermsAndConditionsPage = () => {
           Services and home visits
         </h2>
         <p>
-          The website describes home visits as generally targeted within an approximate 15 km radius of Manikonda. This is not an exact road-distance promise or a guarantee of service in every area. Actual availability depends on the patient’s address and must be confirmed with the clinic before making arrangements.
+          Home visits target areas within about 5 km of Manikonda. This is a target, not a guarantee of service or an exact road-distance promise. Actual address coverage, clinical suitability, fees, and availability must be confirmed with the clinic before making arrangements.
         </p>
         <p>
           The website currently lists a consultation fee of ₹300 and physiotherapy treatment from ₹500, with total treatment cost varying by treatment. Confirm current charges directly with the clinic before booking. The website does not specify advance-payment requirements, cancellation or rescheduling deadlines, refund rules, or home-visit charges; ask the clinic to confirm any terms that apply before arranging a visit or making a payment.

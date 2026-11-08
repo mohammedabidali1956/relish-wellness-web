@@ -8,6 +8,7 @@ export const kneeServices: ServiceDetail[] = [
     metaTitle: "Knee Pain Physiotherapy in Manikonda | Dr Hamid’s Physio",
     metaDescription: "Learn about assessment and physiotherapy options for knee pain and movement limitations in Manikonda, Hyderabad. Suitable care depends on individual needs and findings.",
     h1: "Knee Pain Physiotherapy in Manikonda, Hyderabad",
+    localAnswer: "At Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad, Knee Pain Physiotherapy starts with a review of symptoms, walking, stairs and activity goals. Clinic appointments are in Manikonda; people from Puppalguda and nearby areas can ask about availability. In-clinic consultation is ₹300; physiotherapy starts from ₹500, with total cost based on assessed needs.",
     shortDescription: "Assessment-led physiotherapy information for knee pain, stiffness, and movement limitations that affect walking, stairs, sports, work, or daily activities.",
     imageSrc: "/images/services/condition-knee-pain.webp",
     altText: "Knee pain physiotherapy and knee joint rehabilitation in Manikonda clinic",
@@ -103,7 +104,7 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for seniors with knee arthritis?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for elderly patients with restricted mobility."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for elderly patients with restricted mobility."
       },
       {
         question: "What exercises should I avoid with knee osteoarthritis?",
@@ -398,11 +399,11 @@ export const kneeServices: ServiceDetail[] = [
       "Practice prescribed heel slides daily, holding comfortable stretch at the end-range",
       "Use your walker or cane exactly as demonstrated until formally cleared by Dr. Hamid"
     ],
-    whenToVisit: "Begin post-surgery knee rehabilitation as soon as discharged from the hospital (typically day 3 to 5 post-op). Home visits can be arranged in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage.",
+    whenToVisit: "Follow your surgeon’s and treating team’s instructions about when to begin post-surgery rehabilitation. If travel is difficult, contact the clinic to ask whether a home visit is suitable and whether your exact address is within current coverage.",
     faqs: [
       {
         question: "Can Dr. Hamid visit my home for knee replacement physiotherapy in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized home visit knee rehabilitation for post-TKR patients in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for people who cannot easily travel to the clinic."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized home visit knee rehabilitation for post-TKR patients in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for people who cannot easily travel to the clinic."
       },
       {
         question: "How much knee bend should I achieve after knee replacement surgery?",

@@ -71,7 +71,7 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for hip pain in Manikonda?",
-        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with difficulty walking."
+        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for patients with difficulty walking."
       },
       {
         question: "How do I book an appointment?",
@@ -384,7 +384,7 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for plantar fasciitis in Manikonda?",
-        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with severe heel pain."
+        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for patients with severe heel pain."
       },
       {
         question: "How do I book an appointment?",
@@ -616,7 +616,7 @@ export const otherJointsServices: ServiceDetail[] = [
       },
       {
         question: "Can Dr. Hamid visit my home for post-fracture ankle rehabilitation in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients unable to travel to the clinic."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for patients unable to travel to the clinic."
       },
       {
         question: "Where is the clinic located?",

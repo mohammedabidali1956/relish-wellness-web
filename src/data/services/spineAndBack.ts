@@ -8,6 +8,7 @@ export const spineAndBackServices: ServiceDetail[] = [
     metaTitle: "Back Pain Physiotherapy in Manikonda | Dr Hamid’s Physio and Pain Clinic",
     metaDescription: "Learn about assessment and physiotherapy options for back pain and movement limitations in Manikonda, Hyderabad. Suitable care depends on individual needs and findings.",
     h1: "Back Pain Physiotherapy in Manikonda, Hyderabad",
+    localAnswer: "At Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad, Back Pain Physiotherapy starts with a review of symptoms, movement and daily goals. The clinic is in Manikonda; people from Puppalguda and nearby areas can ask about appointment availability. In-clinic consultation is ₹300; physiotherapy starts from ₹500, with total cost based on assessed needs.",
     shortDescription: "Assessment-led information for pain and movement limitations affecting the upper, middle, or lower back, with rehabilitation tailored to the person.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Back pain physiotherapy treatment and spinal care in Manikonda clinic",
@@ -44,6 +45,7 @@ export const spineAndBackServices: ServiceDetail[] = [
     metaTitle: "Sciatica Physiotherapy in Manikonda | Dr Hamid’s Physio",
     metaDescription: "Learn about assessment and physiotherapy options for radiating leg symptoms in Manikonda, Hyderabad. Symptoms can have different causes and need individual assessment.",
     h1: "Sciatica Physiotherapy in Manikonda, Hyderabad",
+    localAnswer: "At Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad, Sciatica Physiotherapy starts with a review of radiating leg symptoms, movement and health history. Assessment helps consider possible causes; a scan alone does not establish a diagnosis. In-clinic consultation is ₹300; physiotherapy starts from ₹500, with total cost based on assessed needs.",
     shortDescription: "Assessment-led physiotherapy information for radiating leg pain, altered sensation, or weakness that may follow a sciatic nerve pathway.",
     imageSrc: "/images/services/condition-back-pain.webp",
     altText: "Physiotherapy assessment for radiating leg symptoms in Manikonda clinic",
@@ -181,7 +183,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Can I receive home physiotherapy for a severe disc bulge?",
-        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with severe acute disc pain."
+        answer: "Yes, Dr. Hamid provides home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for patients with severe acute disc pain."
       },
       {
         question: "How do I book a consultation?",
@@ -458,7 +460,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Do you provide home visit physiotherapy for spondylolisthesis in Manikonda?",
-        answer: "Yes, Dr. Hamid provides personalized home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with spinal conditions requiring specialized care."
+        answer: "Yes, Dr. Hamid provides personalized home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for patients with spinal conditions requiring specialized care."
       },
       {
         question: "How do I book a consultation for spondylolisthesis?",

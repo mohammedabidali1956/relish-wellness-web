@@ -53,7 +53,7 @@ export const neurologicalServices: ServiceDetail[] = [
       "Practice supported sit-to-stand repetitions from a firm chair 2-3 times daily",
       "Keep walking pathways at home free of loose rugs, wires, and furniture obstacles"
     ],
-    whenToVisit: "Begin stroke physiotherapy as soon as the patient is medically stable in the hospital or discharged home. Early intervention yields the highest neuroplastic gains. Home visits are available in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage.",
+    whenToVisit: "Begin stroke physiotherapy as soon as the patient is medically stable in the hospital or discharged home. Early intervention yields the highest neuroplastic gains. Home visits are available in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage.",
     faqs: [
       {
         question: "When should physiotherapy start after a stroke?",
@@ -65,7 +65,7 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Do you provide home visit stroke physiotherapy in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized, compassionate in-home stroke rehabilitation in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides specialized, compassionate in-home stroke rehabilitation in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage."
       },
       {
         question: "How do you treat spasticity and tight fist in stroke patients?",
@@ -142,7 +142,7 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit neurological physiotherapy in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides personalized home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage."
       },
       {
         question: "Where is your clinic located?",
@@ -301,7 +301,7 @@ export const neurologicalServices: ServiceDetail[] = [
       },
       {
         question: "Do you offer home visit physiotherapy for foot drop in Manikonda?",
-        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy in Manikonda and nearby areas, generally targeted within an approximate 15 km radius of Manikonda; contact the clinic to confirm current coverage for patients with walking difficulties."
+        answer: "Yes, Dr. Mohammed Hamid Ali provides home visit physiotherapy in Manikonda and nearby areas, targeted within about 5 km of Manikonda; contact the clinic to confirm current coverage for patients with walking difficulties."
       },
       {
         question: "How do I book a consultation?",

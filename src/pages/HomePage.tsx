@@ -831,7 +831,7 @@ const HomePage = () => {
                 How much does physiotherapy cost?
               </summary>
               <p className="mt-3 text-sm leading-relaxed text-[#4a5568]">
-                In-clinic consultations are ₹300, and treatments start from ₹500; the total depends on the treatment needed. Home visits start from ₹1,200 and vary with your treatment needs and travel distance from the clinic.
+                In-clinic consultations are ₹300, and treatments start from ₹500; the total depends on the treatment needed. Home-visit fees depend on the address and treatment; contact the clinic to confirm the current fee before booking.
               </p>
               <a
                 href="https://wa.me/917601026596?text=Hi%20Dr.%20Hamid,%20I%20would%20like%20to%20request%20a%20home%20visit.%0A%0AMy%20location/area%20is:%20%0A%0AMy%20problem%20is:%20"
