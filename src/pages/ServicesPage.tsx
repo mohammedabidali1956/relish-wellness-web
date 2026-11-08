@@ -7,6 +7,7 @@ import {
   allServices,
   primaryServices,
 } from "@/data/services";
+import { getServiceCardDescription } from "@/data/services/catalogueCopy";
 import { Button } from "@/components/ui/button";
 import { openWhatsApp } from "@/lib/whatsapp";
 import { trackAnalyticsEvent } from "@/lib/analytics";
@@ -59,6 +60,7 @@ const ServicesPage: React.FC = () => {
       (s) =>
         s.title.toLowerCase().includes(q) ||
         s.shortDescription.toLowerCase().includes(q) ||
+        getServiceCardDescription(s).toLowerCase().includes(q) ||
         s.category.toLowerCase().includes(q)
     );
   }, [searchTerm]);
@@ -292,7 +294,7 @@ const ServicesPage: React.FC = () => {
                           {service.title}
                         </h3>
                         <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5">
-                          {service.shortDescription}
+                          {getServiceCardDescription(service)}
                         </p>
                       </div>
                       </Link>
@@ -374,7 +376,7 @@ const ServicesPage: React.FC = () => {
                             {service.title}
                           </h3>
                           <p className="text-xs sm:text-sm text-[#4a5568] leading-relaxed line-clamp-3 mb-5">
-                            {service.shortDescription}
+                            {getServiceCardDescription(service)}
                           </p>
                         </div>
                         </Link>
@@ -447,7 +449,7 @@ const ServicesPage: React.FC = () => {
                         {modality.title}
                       </h3>
                       <p className="text-xs text-[#64748b] leading-relaxed line-clamp-3 mb-4 flex-grow">
-                        {modality.shortDescription}
+                        {getServiceCardDescription(modality)}
                       </p>
                       <span className="inline-flex items-center text-xs font-semibold text-[#8a5d24] hover:text-[#5c3e17] pt-3 border-t border-[#f0e7d3] mt-auto">
                         <span>Learn how it works</span>
