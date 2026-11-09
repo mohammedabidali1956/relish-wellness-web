@@ -3,6 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (prefers-reduced-motion: reduce) {
+  .clinic-photo-carousel .clinic-photo-track {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .clinic-photo-carousel .clinic-photo-slide:not(:first-child) {
+    display: none;
+  }
+}
+
 @layer base {
   :root {
     --background: 40 24% 98%;

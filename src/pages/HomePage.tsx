@@ -21,6 +21,7 @@ import ContactMap from "@/components/ContactMap";
 import { getRecentPosts } from "@/data/blogPosts";
 import { GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_MAPS_EMBED_URL, PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 import { trackAnalyticsEvent } from "@/lib/analytics";
+import ClinicPhotoCarousel from "@/components/ClinicPhotoCarousel";
 
 // Full review wording and five-star ratings transcribed from the supplied Google profile screenshots.
 export const googleReviews = [
@@ -350,6 +351,7 @@ const HomePage = () => {
         <link rel="preload" as="image" href="/images/doctor/dr-hamid-transparent.webp" fetchPriority="high" />
       </Helmet>
       <StructuredData type="homepage" />
+      <ClinicPhotoCarousel />
 
       {/* =========================================================
           1. HERO SECTION (EXACT MATCH TO REFERENCE DESIGN)
