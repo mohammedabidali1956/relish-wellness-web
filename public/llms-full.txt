@@ -24,6 +24,36 @@ Page title: Physio in Manikonda | Dr Hamid’s Physio and PAIN Clinic
 
 [Skip to main content](https://www.drhamidphysio.in/#main-content)
 
+![Exterior entrance of Dr Hamid’s Physio and Pain Clinic in Manikonda Hyderabad with two wheelers parked outside](https://www.drhamidphysio.in/images/clinic-photo-carousel/clinic-exterior-manikonda.webp)
+
+![Older man performing seated knee strengthening exercise with a blue ball at a physiotherapy clinic](https://www.drhamidphysio.in/images/clinic-photo-carousel/senior-knee-ball-exercise.webp)
+
+![Man performing a forearm plank on a treatment table during physiotherapy rehabilitation](https://www.drhamidphysio.in/images/clinic-photo-carousel/prone-plank-rehabilitation.webp)
+
+![Man performing a seated dumbbell biceps curl in a physiotherapy treatment room](https://www.drhamidphysio.in/images/clinic-photo-carousel/seated-dumbbell-biceps-exercise.webp)
+
+![Woman performing a bird dog balance and core stability exercise on a physiotherapy table](https://www.drhamidphysio.in/images/clinic-photo-carousel/bird-dog-core-stability-exercise.webp)
+
+![Man performing a prone press up back extension exercise on a physiotherapy table](https://www.drhamidphysio.in/images/clinic-photo-carousel/prone-back-extension-exercise.webp)
+
+![Woman performing a standing dumbbell shoulder strengthening exercise in the clinic](https://www.drhamidphysio.in/images/clinic-photo-carousel/standing-dumbbell-shoulder-exercise.webp)
+
+![Woman performing a bodyweight squat during a physiotherapy exercise session](https://www.drhamidphysio.in/images/clinic-photo-carousel/bodyweight-squat-rehabilitation.webp)
+
+![Woman performing seated knee extension strengthening with an ankle weight](https://www.drhamidphysio.in/images/clinic-photo-carousel/seated-knee-extension-ankle-weight.webp)
+
+![Man performing standing shoulder abduction with a blue resistance band](https://www.drhamidphysio.in/images/clinic-photo-carousel/resistance-band-shoulder-exercise.webp)
+
+![Four people seated in the waiting area of Dr Hamid’s Physio and Pain Clinic in Manikonda](https://www.drhamidphysio.in/images/clinic-photo-carousel/clinic-waiting-area-visitors-one.webp)
+
+![Four people seated in the physiotherapy clinic waiting area beside the consultation desk](https://www.drhamidphysio.in/images/clinic-photo-carousel/clinic-waiting-area-visitors-two.webp)
+
+![Five people seated in the waiting area of a physiotherapy clinic in Hyderabad](https://www.drhamidphysio.in/images/clinic-photo-carousel/clinic-waiting-area-visitors-three.webp)
+
+![Five people seated in the clinic waiting area with certificates and information displays on the walls](https://www.drhamidphysio.in/images/clinic-photo-carousel/clinic-waiting-area-visitors-four.webp)
+
+![Four people seated near the consultation desk in a physiotherapy clinic waiting room](https://www.drhamidphysio.in/images/clinic-photo-carousel/clinic-waiting-area-visitors-five.webp)
+
 Physiotherapy in Manikonda, Hyderabad
 
 # Trusted Physiotherapy in Manikonda, Hyderabad
@@ -1593,7 +1623,13 @@ Related patient pathway · Knee pain
 
 ## Explore the next useful step
 
-[Broader guide: Knee pain without an injury: eight possible causes](https://www.drhamidphysio.in/blogs/knee-pain-without-injury-physiotherapy-near-me-manikonda)[Existing service: Knee Pain Physiotherapy](https://www.drhamidphysio.in/services/knee-pain-physiotherapy-manikonda)[Browse Patient Resources by topic](https://www.drhamidphysio.in/conditions#patient-resources)
+[Broader guide: Knee pain without an injury: eight possible causes](https://www.drhamidphysio.in/blogs/knee-pain-without-injury-physiotherapy-near-me-manikonda)
+
+[Related case evidence: An anonymised medial meniscus case study](https://www.drhamidphysio.in/conditions#meniscus-clinical-case-study)
+
+Review the recorded symptoms, knee measures, conservative care, and follow-up for one patient. This is one individual case. Outcomes do not predict another person's result or mean surgery is never needed.
+
+[Existing service: Knee Pain Physiotherapy](https://www.drhamidphysio.in/services/knee-pain-physiotherapy-manikonda)[Browse Patient Resources by topic](https://www.drhamidphysio.in/conditions#patient-resources)
 
 ## Related Articles
 
@@ -1873,7 +1909,13 @@ Related patient pathway · Knee pain
 
 ## Explore the next useful step
 
-[Patient question: Why does my knee hurt when climbing stairs?](https://www.drhamidphysio.in/blogs/knee-pain-when-climbing-stairs)[Existing service: Knee Pain Physiotherapy](https://www.drhamidphysio.in/services/knee-pain-physiotherapy-manikonda)[Browse Patient Resources by topic](https://www.drhamidphysio.in/conditions#patient-resources)
+[Patient question: Why does my knee hurt when climbing stairs?](https://www.drhamidphysio.in/blogs/knee-pain-when-climbing-stairs)
+
+[Related case evidence: An anonymised medial meniscus case study](https://www.drhamidphysio.in/conditions#meniscus-clinical-case-study)
+
+Review the recorded symptoms, knee measures, conservative care, and follow-up for one patient. This is one individual case. Outcomes do not predict another person's result or mean surgery is never needed.
+
+[Existing service: Knee Pain Physiotherapy](https://www.drhamidphysio.in/services/knee-pain-physiotherapy-manikonda)[Browse Patient Resources by topic](https://www.drhamidphysio.in/conditions#patient-resources)
 
 ## Related Articles
 
@@ -5401,7 +5443,12 @@ RANK · Broader guide
 
 A broader guide to possible causes, assessment, self-care considerations, and when to seek medical advice.
 
-PROVE · No knee-specific case study is currently published.
+PROVE · Individual case evidence
+[An anonymised medial meniscus case study](https://www.drhamidphysio.in/conditions#meniscus-clinical-case-study)
+
+Review the recorded symptoms, knee measures, conservative care, and follow-up for one patient.
+
+This is one individual case. Outcomes do not predict another person's result or mean surgery is never needed.
 
 SELL · Existing clinic service
 [Knee Pain Physiotherapy ](https://www.drhamidphysio.in/services/knee-pain-physiotherapy-manikonda)
@@ -5458,6 +5505,32 @@ One 35-year-old female IT professional with two months of neck pain, stiffness, 
 
 **Measured findings:** VAS pain changed from 8/10 to 1/10 and goniometer-measured cervical movement reached the documented full pain-free range. **Patient-reported:** approximately 70–80% overall relief. This describes one patient's experience, not a typical or guaranteed outcome.
 
+### Statistical charts
+
+### Pain intensity (VAS)
+
+Visual Analogue Scale, 0–10. Recorded before treatment and after seven sessions.
+
+VAS pain changed from 8 out of 10 on Day 1 to 1 out of 10 after seven sessions.
+
+### Cervical range of motion
+
+Goniometer measurements and the normal reference values listed in the source case, in degrees.
+
+Flexion 20 to 80 degrees; extension 20 to 70; right lateral flexion 20 to 45; left lateral flexion 25 to 45; right rotation 25 to 70; left rotation 30 to 70. After-treatment values equal the listed normal references.
+
+### Session-by-session VAS trend
+
+The source reports a one-point decrease per session. Intermediate points are derived from that statement, not separately itemised session records.
+
+Reported VAS trend: Day 1, 8; after session 1, 7; session 2, 6; session 3, 5; session 4, 4; session 5, 3; session 6, 2; session 7, 1. Intermediate values are derived, not separately itemised.
+
+### Patient-reported overall relief
+
+A reported estimate only. The remainder is arithmetic, not a measured residual symptom score.
+
+Midpoint of reported 70–80% range: 75 percent. The remaining 25 percent is an arithmetic complement and was not separately measured.
+
 View the full case measurements, care, and follow-up
 
 The recorded presentation included early-morning neck pain and stiffness, difficulty turning the neck, painful end-range lateral flexion, discomfort with forward flexion, and cervical muscle tightness and spasm.
@@ -5496,6 +5569,42 @@ An anonymised clinical experience for education. Outcomes vary and require indiv
 One 39-year-old female IT professional with six months of lower-back pain, left-leg symptoms, lumbar spondylosis, left L4–S1 radiculopathy, and L3–S1 disc bulges completed seven individualised conservative physiotherapy sessions.
 
 **Measured findings:** VAS pain changed from 9/10 to 1/10, lumbar MMT from 2+/5 to 5/5, and the antalgic gait and left-leg numbness were documented as resolved. **Patient-reported:** 89% overall relief; EQ VAS changed from 35/100 to 85/100. This is one patient's experience, not a typical or guaranteed outcome.
+
+### Statistical charts
+
+### Pain intensity (VAS)
+
+Visual Analogue Scale, 0–10. Recorded before treatment and after seven sessions.
+
+VAS pain changed from 9 out of 10 before treatment to 1 out of 10 after seven sessions.
+
+### Lumbar range of motion
+
+Goniometer measurements and listed normal reference values, in degrees.
+
+Flexion 30 to 60 degrees; extension 15 to 35; right and left lateral flexion 10 to 20 each; right and left rotation 8 to 18 each. After-treatment values equal the listed normal references.
+
+### EQ VAS health rating
+
+Patient-rated health Visual Analogue Scale, 0–100.
+
+EQ VAS increased from 35 out of 100 before treatment to 85 out of 100 after seven sessions, a recorded increase of 50 points.
+
+### EQ-5D-5L dimension-level distribution
+
+Count of the five dimensions at each ordinal level. This is not an EQ-5D index score.
+
+Before
+
+After
+
+Before: two dimensions at level 3 and three at level 4. After: four dimensions at level 1 and one at level 2. Dimension levels are ordinal categories.
+
+### Patient-reported overall relief
+
+A reported estimate only. The remainder is arithmetic, not a measured residual symptom score.
+
+Patient-reported overall relief: 89 percent. The remaining 11 percent is an arithmetic complement and was not separately measured.
 
 View the full case measurements, assessment, care, and follow-up
 
@@ -5561,6 +5670,112 @@ The case record reports return to full work capacity, resolution of night-time l
 For general information about lower-back pain, read the [lower-back pain guide](https://www.drhamidphysio.in/blogs/why-does-my-lower-back-hurt-10-common-causes) or explore the existing [Back Pain Physiotherapy service](https://www.drhamidphysio.in/services/back-pain-physiotherapy-manikonda).
 
 An anonymised clinical experience for education. Outcomes vary and require individual assessment. Symptom improvement does not mean lumbar spondylosis or disc bulges were cured or reversed. Patient-identifying details are excluded; the source case records consent for publication.
+
+## What did one anonymised medial meniscus case show?
+
+A 36-year-old female IT professional presented ten weeks after a badminton-related twisting injury. MRI described a horizontal cleavage tear of the posterior horn of the medial meniscus, without a displaced fragment or bucket-handle component. Following eight supervised physiotherapy sessions over three weeks, her activity VAS changed from 7/10 to 2/10 and Lysholm Knee Score from 58 to 86. This is one person's experience, not a typical or guaranteed result.
+
+### Presentation and clinical findings
+
+Reported difficulties included medial knee pain during stair descent, squatting and twisting, intermittent catching without true locking, swelling after activity, and reduced comfortable extension and deep flexion. Baseline findings included a mild antalgic gait, stroke test grade 2+ effusion, mid-patellar girth 1.5 cm greater than the other side, flexion to 95° with painful end-range, a 5° extension deficit, and quadriceps MMT 3+/5. The neurological screen was normal.
+
+### Outcome measures and follow-up
+
+Medial meniscus case outcomes at baseline and follow-up
+| Measure | Baseline | After 8 sessions | 4 weeks after supervised care | 3 months from baseline | 6 months from baseline
+
+| VAS during activity | 7/10 | 2/10 | 1/10 | 1/10 | 1/10
+
+| VAS at rest | 5/10 | 1/10 | 0/10 | 0/10 | 0/10
+
+| Lysholm Knee Score | 58 (poor) | 86 (good) | 88 (good) | 90 (good) | 92 (good)
+
+| Knee flexion | 95° | 130° | 132° | 135° | 135°
+
+| Extension deficit | 5° | 0° | 0° | 0° | 0°
+
+| Stroke test effusion | Grade 2+ | Trace | 0 | 0 | 0
+
+| Mid-patellar girth difference | +1.5 cm | 0 cm | 0 cm | 0 cm | 0 cm
+
+| Quadriceps MMT | 3+/5 | 4+/5 | 4+/5 | 5-/5 | 5/5
+
+| GROC (scale anchors not provided in source) | — | +5 | +5 | +6 | +6
+
+Effusion categories and MMT grades are ordinal findings; they are shown as recorded and are not plotted as continuous values. GROC scale anchors were not provided in the case PDF.
+
+### Statistical charts
+
+### Activity and rest pain (VAS)
+
+Pain ratings on the source case’s 0–10 scale, from baseline through six months.
+
+Activity VAS: 7, 2, 1, 1, 1. Rest VAS: 5, 1, 0, 0, 0. Visits are baseline, after eight sessions, four weeks after supervised care, three months from baseline, and six months from baseline.
+
+### Lysholm Knee Score
+
+Patient-reported knee score, reproduced at each recorded review.
+
+Lysholm Knee Score: 58 at baseline, 86 after eight sessions, 88 four weeks after supervised care, 90 at three months, and 92 at six months.
+
+### Knee flexion
+
+Goniometer-measured flexion in degrees.
+
+Knee flexion: 95 degrees at baseline, 130 after eight sessions, 132 at four-week review, and 135 at both three- and six-month reviews.
+
+### Knee extension deficit
+
+Recorded deficit in degrees; zero indicates no extension deficit.
+
+Extension deficit: 5 degrees at baseline, then 0 degrees after eight sessions, four weeks after supervised care, three months, and six months.
+
+### Mid-patellar girth difference
+
+Difference from the contralateral side, in centimetres.
+
+Girth difference: 1.5 centimetres at baseline and 0 centimetres at all four later reviews.
+
+### Physiotherapy programme
+
+- Sessions 1–3 focused on load education, effusion strategies, restoring extension, quadriceps isometrics, and comfortable closed-chain movement.
+
+- Sessions 4–6 progressed mini-squats, step-ups, hip strengthening, single-leg balance, and squatting within available depth when the recorded progression criteria were met.
+
+- Sessions 7–8 progressed step-down control and return-to-activity criteria and finalised the home exercise programme.
+
+The case notes identify progressive exercise and load management as the programme core. Ultrasound or interferential therapy, when used, were occasional comfort adjuncts.
+
+### Functional performance observations
+
+Functional observations at baseline, after eight sessions, and at six months
+| Task | Baseline | After 8 sessions | 6-month review
+
+| Single-leg squat | Unable due to pain/apprehension | 45° depth; mild pelvic drop | 70° depth; excellent control
+
+| Step-down | Failed 10 cm step; dynamic valgus | Passed 15 cm; neutral alignment | Passed 20 cm; controlled eccentric lowering
+
+| Stair climbing | Step-to-step pattern required | Reciprocal; mild stiffness | Asymptomatic reciprocal descent
+
+| Walking tolerance | Under 15 min before reactive swelling | 45+ min pain-free | Unrestricted
+
+| Return to badminton | Unable to play | Light footwork drills (15 min) | Full competitive match play, unrestricted
+
+These are clinical performance observations, not laboratory kinematic measurements. Step-down heights differed between visits and are not directly comparable repeated scores. Baseline single-leg squat depth was not measured because the patient could not perform the task.
+
+### Progress, discussion, and limitations
+
+After eight supervised sessions, the patient resumed desk work and began a graded return to activity. The case records maintained gains at four weeks, three months, and six months, when the patient reported unrestricted return to competitive badminton. The decision for conservative care applied to this patient's symptoms and the absence of true locking or a displaced fragment; it is not a recommendation for every meniscus tear.
+
+This is a single-patient case without a comparison group. The observed changes do not establish that physiotherapy alone caused every improvement or predict outcomes for others. Long-term structural MRI change was not assessed. Evidence from trials of predominantly degenerative tears does not automatically apply to this younger patient with a traumatic tear.
+
+### Conclusion
+
+In this case, eight supervised sessions were followed by changes in pain, knee movement, strength grades, and recorded function. Improvement continued during follow-up. Individual assessment remains essential; these outcomes are not guaranteed.
+
+This anonymised case is for education and does not replace medical assessment or establish a treatment recommendation. The source PDF records written consent specifically covering online publication of this anonymised case and its outcomes.
+
+For general knee information, explore the existing [Meniscus Injury Physiotherapy service](https://www.drhamidphysio.in/services/meniscus-injury-physiotherapy-manikonda).
 
 Body pain guide
 
@@ -11947,7 +12162,9 @@ Patient resources · Knee pain
 
 [Patient question: Why does my knee hurt when climbing stairs?](https://www.drhamidphysio.in/blogs/knee-pain-when-climbing-stairs)[Broader guide: Knee pain without an injury: eight possible causes](https://www.drhamidphysio.in/blogs/knee-pain-without-injury-physiotherapy-near-me-manikonda)
 
-No knee-specific case study is currently published.
+[Case evidence: An anonymised medial meniscus case study](https://www.drhamidphysio.in/conditions#meniscus-clinical-case-study)
+
+Review the recorded symptoms, knee measures, conservative care, and follow-up for one patient. This is one individual case. Outcomes do not predict another person's result or mean surgery is never needed.
 
 [Browse Patient Resources](https://www.drhamidphysio.in/conditions#patient-resources)
 

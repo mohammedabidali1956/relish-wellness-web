@@ -73,7 +73,12 @@ export const patientTopicResources: PatientTopicResources[] = [
       title: "Knee pain without an injury: eight possible causes",
       summary: "A broader guide to possible causes, assessment, self-care considerations, and when to seek medical advice.",
     },
-    evidenceGap: "No knee-specific case study is currently published.",
+    evidence: {
+      path: "/conditions#meniscus-clinical-case-study",
+      title: "An anonymised medial meniscus case study",
+      summary: "Review the recorded symptoms, knee measures, conservative care, and follow-up for one patient.",
+      note: "This is one individual case. Outcomes do not predict another person's result or mean surgery is never needed.",
+    },
     servicePath: "/services/knee-pain-physiotherapy-manikonda",
     serviceTitle: "Knee Pain Physiotherapy",
   },
