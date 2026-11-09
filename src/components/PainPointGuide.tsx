@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Activity, AlertCircle, Info, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -14,6 +15,7 @@ type PainRegion = {
   contributors: string;
   support: string;
   assessment: string;
+  serviceLinks?: Array<{ label: string; path: string; context?: string }>;
   preferredView: BodyView;
   hotspots: Partial<Record<BodyView, string>>;
 };
@@ -26,6 +28,13 @@ const painRegions: PainRegion[] = [
     contributors: "Head pain can be associated with tension, migraine, illness, injury, or pain referred from the neck. An individual assessment is needed to understand the pattern.",
     support: "When symptoms are linked with neck movement or muscle and joint factors, physiotherapy may help through assessment, education, movement advice, and an individualized exercise plan.",
     assessment: "Seek urgent medical help for a sudden extremely severe headache, headache after a serious injury, or headache with confusion, fainting, fever, new weakness, numbness, vision loss, or speech difficulty.",
+    serviceLinks: [
+      {
+        label: "Neck Pain Physiotherapy",
+        path: "/services/neck-pain-physiotherapy-manikonda",
+        context: "For head pain associated with neck movement:",
+      },
+    ],
     preferredView: "front",
     hotspots: { front: "left-[39%] top-[2.5%] h-[10%] w-[22%]" },
   },
@@ -36,6 +45,11 @@ const painRegions: PainRegion[] = [
     contributors: "Prolonged static positions, muscle strain, joint-related changes, nerve irritation, or an injury can be associated with neck pain.",
     support: "A physiotherapist may assess movement and nerve symptoms, then use education, graded exercise, posture or activity changes, and an individual movement plan.",
     assessment: "Arrange an assessment when pain persists or limits normal activity. Seek medical care promptly after major trauma, or for marked weakness, loss of coordination, fever, or severe unexplained symptoms.",
+    serviceLinks: [
+      { label: "Neck Pain Physiotherapy", path: "/services/neck-pain-physiotherapy-manikonda" },
+      { label: "Cervical Spondylosis Physiotherapy", path: "/services/cervical-spondylosis-physiotherapy-manikonda" },
+      { label: "Cervical Radiculopathy Physiotherapy", path: "/services/cervical-radiculopathy-physiotherapy-manikonda" },
+    ],
     preferredView: "front",
     hotspots: {
       front: "left-[42%] top-[12%] h-[8%] w-[16%]",
@@ -49,6 +63,10 @@ const painRegions: PainRegion[] = [
     contributors: "Possible contributors include overuse, tendon or bursa irritation, joint stiffness, age-related change, or a fall or other injury.",
     support: "Physiotherapy may help through movement assessment, advice on comfortable activity, progressive mobility and strengthening, and a plan matched to daily needs.",
     assessment: "Seek assessment if symptoms are worsening, last beyond a couple of weeks, or make arm movement very difficult. Sudden severe pain, deformity, or inability to move after injury needs medical evaluation.",
+    serviceLinks: [
+      { label: "Shoulder Pain Physiotherapy", path: "/services/shoulder-pain-physiotherapy-manikonda" },
+      { label: "Frozen Shoulder Physiotherapy", path: "/services/frozen-shoulder-physiotherapy-manikonda" },
+    ],
     preferredView: "front",
     hotspots: {
       front: "left-[25%] top-[17%] h-[10%] w-[50%] rounded-[45%]",
@@ -62,6 +80,9 @@ const painRegions: PainRegion[] = [
     contributors: "Muscle or joint strain, repeated loading, prolonged positions, reduced activity, or pain referred from the neck can contribute.",
     support: "Physiotherapy may help identify movement factors and provide education, mobility work, strengthening, and a gradual return to comfortable activity.",
     assessment: "Persistent or limiting pain merits assessment. Seek urgent medical help when upper-back pain occurs with chest pain, breathing difficulty, faintness, fever, or follows significant trauma.",
+    serviceLinks: [
+      { label: "Back Pain Physiotherapy", path: "/services/back-pain-physiotherapy-manikonda" },
+    ],
     preferredView: "back",
     hotspots: { back: "left-[32%] top-[24%] h-[16%] w-[36%] rounded-[38%]" },
   },
@@ -72,6 +93,10 @@ const painRegions: PainRegion[] = [
     contributors: "Repetitive work or sport, a change in loading, tendon irritation, joint problems, or a direct injury are possible contributors.",
     support: "Physiotherapy may help by reviewing load and technique, guiding progressive exercise, and improving strength and movement around the arm and shoulder.",
     assessment: "Book an assessment if pain persists or affects work and daily tasks. Marked swelling, deformity, locking, numbness, or inability to use the arm after injury needs medical review.",
+    serviceLinks: [
+      { label: "Elbow Pain Physiotherapy", path: "/services/elbow-pain-physiotherapy-manikonda" },
+      { label: "Tennis Elbow Physiotherapy", path: "/services/tennis-elbow-physiotherapy-manikonda" },
+    ],
     preferredView: "front",
     hotspots: {
       front: "left-[15%] top-[34%] h-[13%] w-[15%] -rotate-12",
@@ -98,6 +123,11 @@ const painRegions: PainRegion[] = [
     contributors: "A strain, sudden or repeated loading, reduced activity, joint or disc-related change, or nerve irritation may contribute; the exact cause is not always clear.",
     support: "Physiotherapy may help restore comfortable movement through assessment, reassurance, education, graded activity and an individualized exercise plan.",
     assessment: "Seek assessment when pain is persistent or limits daily life. Urgent medical evaluation is needed for new bowel or bladder changes, numbness around the groin, major leg weakness, fever, or pain after significant trauma.",
+    serviceLinks: [
+      { label: "Back Pain Physiotherapy", path: "/services/back-pain-physiotherapy-manikonda" },
+      { label: "Lumbar Spondylosis Physiotherapy", path: "/services/lumbar-spondylosis-physiotherapy-manikonda" },
+      { label: "Sciatica Physiotherapy", path: "/services/sciatica-physiotherapy-manikonda", context: "For pain travelling into the leg:" },
+    ],
     preferredView: "back",
     hotspots: { back: "left-[34%] top-[39%] h-[14%] w-[32%] rounded-[38%]" },
   },
@@ -108,6 +138,9 @@ const painRegions: PainRegion[] = [
     contributors: "A fall or strain, tendon or bursa irritation, joint-related change, or pain referred from the back are possible contributors.",
     support: "Physiotherapy may help assess walking and movement, manage activity, and build mobility, balance and strength progressively.",
     assessment: "Arrange assessment if pain affects sleep or normal activity, worsens, or keeps returning. Severe pain or inability to walk after a fall, or a hot swollen joint with fever, needs urgent medical care.",
+    serviceLinks: [
+      { label: "Hip Pain Physiotherapy", path: "/services/hip-pain-physiotherapy-manikonda" },
+    ],
     preferredView: "front",
     hotspots: {
       front: "left-[31%] top-[46%] h-[13%] w-[38%] rounded-[42%]",
@@ -121,6 +154,10 @@ const painRegions: PainRegion[] = [
     contributors: "Overuse, a sprain or other injury, tendon irritation, joint-related change, or altered strength and movement can contribute.",
     support: "Physiotherapy may help through movement and strength assessment, load guidance, progressive exercise, and support returning to everyday or sporting activity.",
     assessment: "Seek assessment for persistent pain, swelling, locking, or instability. Inability to bear weight, marked swelling or deformity, or a hot red knee with fever requires prompt medical evaluation.",
+    serviceLinks: [
+      { label: "Knee Pain Physiotherapy", path: "/services/knee-pain-physiotherapy-manikonda" },
+      { label: "Meniscus Injury Physiotherapy", path: "/services/meniscus-injury-physiotherapy-manikonda", context: "For symptoms related to a meniscus injury:" },
+    ],
     preferredView: "front",
     hotspots: {
       front: "left-[35%] top-[68%] h-[10%] w-[14%]",
@@ -134,6 +171,11 @@ const painRegions: PainRegion[] = [
     contributors: "A sprain, sudden increase in activity, tendon irritation, footwear or loading changes, or joint-related problems are possible contributors.",
     support: "Physiotherapy may help assess walking, balance, strength and mobility, then guide progressive loading and a safe return to activity.",
     assessment: "Assessment is appropriate when pain or swelling persists. Seek medical evaluation if you cannot bear weight after injury, the foot looks deformed, or it becomes cold, pale, numb, hot, or very swollen.",
+    serviceLinks: [
+      { label: "Foot and Ankle Pain Physiotherapy", path: "/services/foot-and-ankle-pain-physiotherapy-manikonda" },
+      { label: "Ankle Rehabilitation", path: "/services/ankle-rehabilitation-manikonda" },
+      { label: "Orthotics and Insole Assessment", path: "/services/orthotics-insole-assessment-manikonda" },
+    ],
     preferredView: "front",
     hotspots: {
       front: "left-[34%] top-[87%] h-[12%] w-[17%]",
@@ -299,7 +341,23 @@ const PainPointGuide = () => {
                   <Stethoscope className="h-4 w-4 text-relish-600" aria-hidden="true" />
                   How physiotherapy may help
                 </dt>
-                <dd className="mt-2 text-sm leading-relaxed text-muted-foreground">{activeRegion.support}</dd>
+                <dd className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  <p>{activeRegion.support}</p>
+                  {activeRegion.serviceLinks && (
+                    <div className="mt-3 flex flex-wrap gap-x-3 gap-y-2">
+                      {activeRegion.serviceLinks.map((service) => (
+                        <Link
+                          key={service.path}
+                          to={service.path}
+                          className="font-semibold text-relish-700 underline underline-offset-2 hover:text-relish-900"
+                        >
+                          {service.context && <span>{service.context} </span>}
+                          {service.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </dd>
               </div>
               <div>
                 <dt className="flex items-center gap-2 text-sm font-semibold text-foreground">

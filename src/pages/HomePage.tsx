@@ -348,44 +348,55 @@ const HomePage = () => {
             reviewedBy: MEDICAL_REVIEWER_SCHEMA,
           })}
         </script>
-        <link rel="preload" as="image" href="/images/doctor/dr-hamid-transparent.webp" fetchPriority="high" />
       </Helmet>
       <StructuredData type="homepage" />
-      <ClinicPhotoCarousel />
 
       {/* =========================================================
           1. HERO SECTION (EXACT MATCH TO REFERENCE DESIGN)
       ========================================================= */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#faf6ed] via-[#f7f2e5] to-[#f4ede0] pt-8 sm:pt-12 pb-16 lg:pb-24 border-b border-[#e5dec9]">
         <div className="container px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 sm:gap-9 lg:gap-4 items-center">
-            
-            {/* Left Column: Headlines & CTAs */}
-            <div className="lg:col-span-7 space-y-5 sm:space-y-6">
-              
-              {/* Location Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#ece5d4] border border-[#dfd6be] text-[#5c4928] text-xs sm:text-sm font-medium shadow-2xs">
-                <MapPin className="w-4 h-4 text-[#8a5d24] shrink-0" />
-                <span>Physiotherapy in Manikonda, Hyderabad</span>
+          <div className="grid grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] gap-x-3 gap-y-5 lg:grid-cols-12 lg:gap-x-4">
+              <div className="col-span-1 min-w-0 space-y-3 sm:space-y-5 lg:col-span-7 lg:row-start-1 lg:space-y-6">
+                <div className="inline-flex max-w-full items-center gap-1 rounded-full border border-[#dfd6be] bg-[#ece5d4] px-2 py-1.5 text-[0.625rem] font-medium leading-tight text-[#5c4928] shadow-2xs sm:gap-2 sm:px-3.5 sm:text-sm">
+                  <MapPin className="h-3.5 w-3.5 shrink-0 text-[#8a5d24] sm:h-4 sm:w-4" />
+                  <span>Physiotherapy in Manikonda, Hyderabad</span>
+                </div>
+
+                <h1 className="max-w-[14ch] font-serif text-[clamp(1.375rem,5.5vw,2rem)] font-bold leading-[1.18] tracking-tight text-[#081a2e] sm:max-w-none sm:text-4xl lg:text-[3.25rem]">
+                  Trusted Physiotherapy in Manikonda, Hyderabad
+                </h1>
+                <MedicalReviewByline />
+                <p className="text-[0.6875rem] font-semibold leading-relaxed text-[#5c4928] sm:text-sm">
+                  ⭐️⭐️⭐️⭐️⭐️ 5.0 on Google, 100+ patient reviews
+                </p>
               </div>
 
-              {/* Main Headline */}
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-[3.65rem] font-bold text-[#081a2e] tracking-tight leading-[1.12]">
-                Trusted Physiotherapy in Manikonda, Hyderabad
-              </h1>
-              <MedicalReviewByline />
-
-              {/* Subheading */}
-              <p className="text-base sm:text-lg lg:text-xl text-[#4a5568] leading-relaxed max-w-xl font-normal">
+              <div className="relative col-start-2 row-start-1 flex min-w-0 min-h-[14rem] items-center justify-center lg:col-span-5 lg:col-start-8 lg:row-span-2 lg:min-h-[36rem] lg:justify-end">
+                <div
+                  aria-hidden="true"
+                  className="absolute left-1/2 h-28 w-28 -translate-x-1/2 rounded-full bg-[#e9dfc9]/75 sm:h-72 sm:w-72 lg:bottom-8 lg:left-auto lg:right-[-1rem] lg:h-[26rem] lg:w-[26rem] lg:translate-x-0"
+                />
+                <img
+                  src="/images/doctor/dr-hamid-transparent.webp"
+                  alt="Dr. Mohammed Hamid Ali holding an anatomical spine model"
+                  width={682}
+                  height={1024}
+                  className="relative z-10 h-[14rem] w-auto max-w-full object-contain object-bottom drop-shadow-xl sm:h-[25rem] lg:h-[32rem]"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            <div className="col-span-full space-y-5 sm:space-y-6 lg:col-span-7 lg:col-start-1 lg:row-start-2">
+              <p className="max-w-[42rem] text-base font-normal leading-[1.7] text-[#4a5568] sm:text-lg lg:text-xl">
                 Dr Hamid’s Physio and PAIN Clinic provides one-to-one physiotherapy in Puppalguda, Manikonda, led by Dr. Mohammed Hamid Ali, BPT, MPT (Ortho), Telangana State Board Registered Consultant Physiotherapist. Explore the <Link to="/services" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">existing physiotherapy services</Link> or ask the clinic whether a <Link to="/services/home-visit-physiotherapy-manikonda" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">Home Visit Physiotherapy appointment</Link> is suitable for your address.
               </p>
 
-              {/* Two CTA Buttons Side by Side */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center gap-3 pt-1 sm:gap-4 sm:pt-2">
                 <Button
                   size="lg"
                   onClick={scrollToAppointment}
-                  className="bg-[#081a2e] hover:bg-[#122842] text-white px-7 py-3.5 h-13 text-base font-semibold rounded-lg shadow-md transition-all flex items-center gap-2 group cursor-pointer"
+                  className="bg-[#081a2e] hover:bg-[#122842] text-white px-5 py-3 h-auto text-sm font-semibold rounded-lg shadow-md transition-all flex items-center gap-2 group cursor-pointer sm:px-7 sm:py-3.5 sm:h-13 sm:text-base"
                 >
                   <span>Book a Clinic Appointment</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -395,42 +406,21 @@ const HomePage = () => {
                   variant="outline"
                   size="lg"
                   onClick={handleDirections}
-                  className="border-[#8c6b3e] text-[#553b1b] hover:bg-[#ece2cc] hover:text-[#33220e] px-7 py-3.5 h-13 text-base font-semibold rounded-lg bg-transparent transition-all cursor-pointer"
+                  className="border-[#8c6b3e] text-[#553b1b] hover:bg-[#ece2cc] hover:text-[#33220e] px-5 py-3 h-auto text-sm font-semibold rounded-lg bg-transparent transition-all cursor-pointer sm:px-7 sm:py-3.5 sm:h-13 sm:text-base"
                 >
                   Get Directions
                 </Button>
               </div>
 
-              <p className="pt-3 text-sm font-semibold text-[#5c4928]">
-                ⭐️⭐️⭐️⭐️⭐️ 5.0 on Google, 100+ patient reviews
-              </p>
-
-              {/* Clinic service information */}
-              <div className="pt-6 flex flex-wrap items-center gap-6 text-xs sm:text-sm text-[#4a5568] border-t border-[#e2d8c0]/80">
+              <div className="flex flex-wrap items-center gap-2 border-t border-[#e2d8c0]/80 pt-4 text-sm text-[#4a5568] sm:gap-6 sm:pt-6">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#2a5d45]" />
+                  <CheckCircle2 className="h-4 w-4 shrink-0 text-[#2a5d45]" />
                   <span>Home Physiotherapy Visits in Manikonda &amp; Puppalguda</span>
                 </div>
               </div>
             </div>
 
-            {/* Transparent portrait blends into the shared hero background without a separate image card. */}
-            <div className="relative lg:col-span-5 flex min-h-[19rem] items-end justify-center lg:min-h-[32rem] lg:justify-end">
-              <div
-                aria-hidden="true"
-                className="absolute bottom-5 left-1/2 h-56 w-56 -translate-x-1/2 rounded-full bg-[#e9dfc9]/75 sm:h-72 sm:w-72 lg:bottom-8 lg:left-auto lg:right-[-1rem] lg:h-[26rem] lg:w-[26rem] lg:translate-x-0"
-              />
-              <img
-                src="/images/doctor/dr-hamid-transparent.webp"
-                alt="Dr. Mohammed Hamid Ali holding an anatomical spine model"
-                width={682}
-                height={1024}
-                className="relative z-10 h-[19rem] w-auto max-w-full object-contain object-bottom drop-shadow-xl sm:h-[25rem] lg:h-[32rem]"
-                loading="eager"
-                {...{ fetchpriority: "high" }}
-              />
-            </div>
-
+            <ClinicPhotoCarousel />
           </div>
 
           {/* =========================================================

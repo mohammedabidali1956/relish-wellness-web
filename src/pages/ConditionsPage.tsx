@@ -69,6 +69,7 @@ const ConditionsPage = () => {
         </div>
       </section>
 
+      <PainPointGuide />
 
       <section
         id="patient-resources"
@@ -83,7 +84,7 @@ const ConditionsPage = () => {
               Answers, guides, and genuine case evidence
             </h2>
             <p className="text-[#4a5568] leading-relaxed mt-3">
-              Browse existing patient questions and in-depth guides by topic, then explore the relevant clinic service. The interactive Body PAIN Guide remains available below.
+              Browse existing patient questions and in-depth guides by topic, then explore the relevant clinic service. The interactive Body PAIN Guide is available above.
             </p>
           </div>
 
@@ -94,10 +95,10 @@ const ConditionsPage = () => {
               PROVE · Individual clinical experiences
             </span>
             <h3 className="mt-2 font-serif text-2xl font-bold text-[#081a2e]">
-              Anonymised cervical and lumbar case studies
+              Clinical case studies and outcome charts
             </h3>
             <p className="mt-3 leading-relaxed text-[#4a5568]">
-              Measured findings and patient-reported outcomes are identified separately. Each case describes one person's care and progress; results are not typical or guaranteed.
+              Explore three separate, anonymised cases. Measured findings and patient-reported outcomes are identified separately; one person's progress does not predict another person's result.
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-6">
@@ -415,7 +416,7 @@ const ConditionsPage = () => {
                 </p>
               </div>
 
-              <CaseStudyCharts caseStudy="meniscus" />
+              <CaseStudyCharts caseStudy="medial_meniscus" />
 
               <div>
                 <h3 className="font-semibold text-[#081a2e]">Physiotherapy programme</h3>
@@ -509,7 +510,6 @@ const ConditionsPage = () => {
         </div>
       </section>
 
-      <PainPointGuide />
     </div>
   );
 };
