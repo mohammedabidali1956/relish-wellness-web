@@ -411,7 +411,7 @@ const HomePage = () => {
                   <span>Physiotherapy in Manikonda, Hyderabad</span>
                 </div>
 
-                <h1 className="max-w-[14ch] font-serif text-[clamp(1.375rem,5.5vw,2rem)] font-bold leading-[1.18] tracking-tight text-[#081a2e] sm:max-w-none sm:text-4xl lg:text-[3.25rem]">
+                <h1 className="max-w-[14ch] font-serif text-[clamp(1.375rem,5.5vw,2rem)] font-bold leading-[1.18] tracking-tight text-[#081a2e] sm:max-w-none sm:text-4xl lg:text-[3.25rem] lg:leading-[1.2]">
                   Trusted Physiotherapy in Manikonda, Hyderabad
                 </h1>
                 <MedicalReviewByline />
