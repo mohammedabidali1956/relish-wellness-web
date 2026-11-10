@@ -6,7 +6,7 @@ import StructuredData from "@/components/StructuredData";
 import MedicalReviewByline from "@/components/MedicalReviewByline";
 import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
 import { Helmet } from "react-helmet";
-import { uppercasePainTerm } from "@/lib/seoText";
+import { getBlogMetaDescription, getBlogMetaTitle, uppercasePainTerm } from "@/lib/seoText";
 import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
 import { patientTopicResources } from "@/data/patientResources";
 
@@ -14,6 +14,47 @@ const toIsoDate = (date?: string): string | undefined => {
   if (!date) return undefined;
   const parsedDate = new Date(date);
   return Number.isNaN(parsedDate.getTime()) ? undefined : parsedDate.toISOString().slice(0, 10);
+};
+
+const htmlToPlainText = (html: string): string =>
+  html
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;|&#160;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;|&#34;/gi, '"')
+    .replace(/&#39;|&apos;|&#x27;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&rsquo;|&#8217;/gi, "’")
+    .replace(/&lsquo;|&#8216;/gi, "‘")
+    .replace(/&mdash;|&#8212;/gi, "—")
+    .replace(/&ndash;|&#8211;/gi, "–")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const extractVisibleFaqs = (html: string): Array<{ question: string; answer: string }> => {
+  const h2Pattern = /<h2\b[^>]*>([\s\S]*?)<\/h2>/gi;
+  const headings = [...html.matchAll(h2Pattern)];
+  const faqHeadingIndex = headings.findIndex((heading) =>
+    /frequently asked|\bfaq\b/i.test(htmlToPlainText(heading[1]))
+  );
+  if (faqHeadingIndex < 0) return [];
+
+  const faqHeading = headings[faqHeadingIndex];
+  const sectionStart = faqHeading.index! + faqHeading[0].length;
+  const sectionEnd = headings[faqHeadingIndex + 1]?.index ?? html.length;
+  const faqSection = html.slice(sectionStart, sectionEnd);
+  const questionPattern = /<h3\b[^>]*>([\s\S]*?)<\/h3>([\s\S]*?)(?=<h3\b|$)/gi;
+
+  return [...faqSection.matchAll(questionPattern)]
+    .map((match) => ({
+      question: htmlToPlainText(match[1]),
+      answer: [...match[2].matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
+        .map((paragraph) => htmlToPlainText(paragraph[1]))
+        .filter(Boolean)
+        .join(" "),
+    }))
+    .filter((faq) => faq.question && faq.answer);
 };
 
 const BlogPostPage = () => {
@@ -34,6 +75,9 @@ const BlogPostPage = () => {
   const canonicalUrl = `https://www.drhamidphysio.in/blogs/${post.slug}`;
   const pageTitle = uppercasePainTerm(post.title);
   const pageDescription = uppercasePainTerm(post.excerpt);
+  const metaTitle = uppercasePainTerm(getBlogMetaTitle(post.slug, pageTitle));
+  const metaDescription = uppercasePainTerm(getBlogMetaDescription(post.slug, pageDescription));
+  const visibleFaqs = extractVisibleFaqs(postContent);
   const publishedDate = toIsoDate(post.date);
   const modifiedDate = toIsoDate(post.lastUpdated) ?? publishedDate;
   const articleSchema = {
@@ -57,37 +101,36 @@ const BlogPostPage = () => {
     inLanguage: "en-IN",
     about: { "@type": "Thing", name: post.category },
   };
-  const faqSchema = {
+  const faqSchema = visibleFaqs.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      ["Is knee pain while climbing stairs normal?", "Occasional discomfort does not automatically mean serious damage, but persistent or recurring pain deserves attention, particularly when it affects daily activities."],
-      ["Why does my knee hurt going downstairs?", "Descending requires substantial eccentric control from the quadriceps and places considerable demand on the knee. Several conditions can produce pain during this movement."],
-      ["Can physiotherapy help knee pain?", "Physiotherapy may help many musculoskeletal knee problems through assessment, education, exercise, and progressive rehabilitation. Appropriate care depends on the underlying cause."],
-      ["Do I need an MRI for knee pain on stairs?", "Not necessarily. Imaging decisions depend on clinical history, examination, and whether imaging is likely to change management."],
-    ].map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })),
-  };
+    mainEntity: visibleFaqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
+  } : undefined;
 
   return (
     <div>
       <StructuredData 
         type="blog" 
-        pageTitle={`${pageTitle} | Dr Hamid’s Physio and PAIN Clinic`}
-        pageDescription={pageDescription}
+        pageTitle={metaTitle}
+        pageDescription={metaDescription}
       />
       <Helmet>
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={pageDescription} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:image" content={`https://www.drhamidphysio.in${post.imageUrl}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:title" content={metaTitle} />
+        <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={`https://www.drhamidphysio.in${post.imageUrl}`} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
-        {isKneeStairsArticle && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
       </Helmet>
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-8 md:py-14">

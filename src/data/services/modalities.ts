@@ -67,7 +67,7 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "How long does an ultrasound treatment session take?",
-        answer: "An ultrasound treatment typically lasts between 5 and 10 minutes per anatomical zone, and is followed immediately by active joint mobilization and therapeutic exercises."
+        answer: "Session length and any other care depend on the area, assessment, and plan. The physiotherapist can explain what to expect and whether ultrasound is suitable for your needs."
       },
       {
         question: "Can ultrasound therapy be used over metal implants or pacemakers?",
@@ -141,11 +141,11 @@ export const supportingModalities: ServiceDetail[] = [
     faqs: [
       {
         question: "Does IFT give an electric shock?",
-        answer: "No, never! IFT feels like a soothing, comfortable, rhythmic tingling or gentle buzzing vibration deep within your muscles. Many patients find it so relaxing that they drift off to sleep during treatment."
+        answer: "IFT uses electrical stimulation, and the sensation varies. It should be comfortable; tell the physiotherapist if it feels painful or unpleasant so they can adjust or stop it. Suitability depends on individual assessment."
       },
       {
         question: "What is the difference between IFT and TENS?",
-        answer: "TENS delivers low-frequency current on the skin surface, which can cause prickling and cannot penetrate deeply. IFT uses two crossing medium-frequency currents that penetrate much deeper into joints and spinal discs with far greater comfort."
+        answer: "Both TENS and IFT use electrical stimulation, but their parameters, electrode placement, and intended use can differ. Neither should be described as reaching or treating a spinal disc. The clinician can explain whether either option is suitable."
       },
       {
         question: "How many IFT sessions will I need?",
@@ -309,11 +309,11 @@ export const supportingModalities: ServiceDetail[] = [
       },
       {
         question: "How is EMS different from TENS?",
-        answer: "TENS stimulates sensory nerves to block pain and does not cause muscle contractions. EMS stimulates motor nerves to forcefully contract and strengthen weak or paralyzed muscles."
+        answer: "TENS is generally used to provide sensory stimulation for pain management. EMS aims to produce muscle contraction by stimulating motor nerves. Effects vary, and the appropriate choice depends on the person's condition and assessment."
       },
       {
         question: "Can EMS help with Bell's palsy (facial paralysis)?",
-        answer: "Yes! Using specialized interrupted galvanic stimulation, Dr. Hamid stimulates individual facial muscles (eyebrow, smile, cheek) to maintain muscle tone and prevent atrophy while facial nerves regenerate."
+        answer: "Electrical stimulation should not be assumed to help Bell’s palsy or started without assessment. Facial weakness needs appropriate medical evaluation, and care options depend on the presentation and current clinical advice. Discuss treatment with a qualified clinician."
       },
       {
         question: "Why can't I lift my leg straight after knee replacement surgery?",
@@ -633,7 +633,7 @@ export const supportingModalities: ServiceDetail[] = [
     faqs: [
       {
         question: "Is manual therapy the same as chiropractic joint cracking?",
-        answer: "No. While chiropractors often focus on high-velocity thrust manipulations to create audible 'cracks', physiotherapy manual therapy emphasizes gentle, graded physiological and accessory mobilizations, soft tissue myofascial release, and neurodynamic flossing that gently restore movement without violent forces."
+        answer: "Manual therapy is a broad term for hands-on techniques. Physiotherapists and chiropractors may use different approaches, and practice varies by clinician. Ask what a proposed technique involves, its possible benefits and risks, and whether alternatives are available; treatment should be discussed and consented to."
       },
       {
         question: "Does manual therapy hurt?",

@@ -173,7 +173,7 @@ export const kneeServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Is surgery always mandatory for an ACL tear?",
-        answer: "Not in all cases. Sedentary individuals or those who do not participate in pivoting sports can often manage successfully with conservative physiotherapy and intensive neuromuscular stabilization (known as 'copers'). Athletes desiring to return to cutting sports usually require reconstruction."
+        answer: "ACL injury management depends on the tear, symptoms, instability, associated injuries, activity goals, and preferences. Some people may be considered for structured non-operative rehabilitation; others may discuss reconstruction with an orthopaedic specialist, particularly when returning to pivoting sports."
       },
       {
         question: "Why is achieving full knee extension so critical early on?",
@@ -407,11 +407,11 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "How much knee bend should I achieve after knee replacement surgery?",
-        answer: "The standard functional goal is achieving at least 90 degrees of flexion by week 2-3, and 110 to 120+ degrees by week 6-8, which allows comfortable stair climbing and sitting in normal chairs."
+        answer: "There is no single flexion target or timeline for everyone. Progress depends on the operation, swelling, pain, starting mobility, healing, and the surgeon’s protocol. Your treating team can set and review movement goals for your recovery."
       },
       {
         question: "Is pain normal during post-surgical knee rehabilitation?",
-        answer: "Mild to moderate stretching discomfort is expected as tissues regain flexibility, but exercises should never cause severe, sharp pain. Dr. Hamid paces therapy gently and effectively."
+        answer: "Some discomfort can occur during recovery, but its level and meaning depend on the operation and stage of healing. Follow your surgeon’s and physiotherapist’s instructions, and contact the treating team about severe, increasing, or unexpected pain or swelling."
       },
       {
         question: "How long will I need physiotherapy after knee replacement?",
@@ -489,11 +489,11 @@ export const kneeServices: ServiceDetail[] = [
       },
       {
         question: "Do I need new running shoes for runner's knee?",
-        answer: "Worn-out or improperly matched shoes can contribute to runner's knee. We assess your foot type and gait to recommend appropriate footwear, though shoes alone rarely fix the problem—hip strengthening is essential."
+        answer: "Footwear may affect comfort for some runners, but no shoe is right for everyone or fixes every cause of knee pain. Hip strengthening may be one part of rehabilitation when assessment suggests it is suitable."
       },
       {
         question: "Will strengthening my hips really help my knee pain?",
-        answer: "Absolutely. Weak hip abductors allow the knee to collapse inward during running, dramatically increasing patellofemoral stress. Strengthening these muscles is one of the most evidence-based treatments for runner's knee."
+        answer: "Hip and knee strengthening may help some runners with pain around the kneecap. Exercise choice should fit the person's symptoms, activity, and assessment; it is not the only option and results vary."
       },
       {
         question: "Do you treat runners from Gachibowli and Manikonda running groups?",

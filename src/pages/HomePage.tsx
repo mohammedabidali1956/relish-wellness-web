@@ -69,6 +69,53 @@ export const googleReviews = [
 
 const REVIEW_PREVIEW_LIMIT = 313;
 
+const homepageFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Where is the nearest physiotherapy clinic in Manikonda?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dr Hamid’s Physio and Pain Clinic is at 4-3/81, Opp: HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089, India. The clinic is open daily from 10 AM to 10 PM.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need a doctor’s referral for physiotherapy?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No referral is needed to contact the clinic or request an appointment. If your symptoms should be medically assessed before physiotherapy, the clinic can advise you to seek that review.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer home physiotherapy visits in Hyderabad?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Home visits are available for suitable needs; your location, clinical requirements, and appointment availability are confirmed by the clinic. See the home-visit service details.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does physiotherapy cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "In-clinic consultations are ₹300, and treatments start from ₹500; the total depends on the treatment needed. Home-visit fees depend on the address and treatment; contact the clinic to confirm the current fee before booking.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How can I book an appointment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Call the clinic at +91 76010 26596 or use the appointment form below. The form opens WhatsApp with a prepared message; review it and send it from WhatsApp to complete your enquiry.",
+      },
+    },
+  ],
+};
+
 const getReviewPreview = (text: string) => {
   if (text.length <= REVIEW_PREVIEW_LIMIT) {
     return { text, isTruncated: false };
@@ -333,7 +380,7 @@ const HomePage = () => {
     <div className="pb-16 md:pb-0 bg-[#faf6ed] text-[#1a202c]">
       <Helmet>
         <title>Physio in Manikonda | Dr Hamid’s Physio and PAIN Clinic</title>
-        <meta name="description" content="Physiotherapy for back, neck, knee PAIN and more in Manikonda, Hyderabad. Clinic and home visits; open daily 10 AM to 10 PM. Rated 5.0 on Google from 100+ patient reviews." />
+        <meta name="description" content="Physiotherapy for back, neck and knee pain in Manikonda, Hyderabad. Clinic and home visits; open daily, 10 AM–10 PM. Rated 5.0 on Google from 100+ reviews." />
         <meta property="og:title" content="Physio in Manikonda | Dr Hamid’s Physio and PAIN Clinic" />
         <meta property="og:url" content="https://www.drhamidphysio.in/" />
         <script type="application/ld+json">
@@ -348,6 +395,7 @@ const HomePage = () => {
             reviewedBy: MEDICAL_REVIEWER_SCHEMA,
           })}
         </script>
+        <script type="application/ld+json">{JSON.stringify(homepageFaqSchema)}</script>
       </Helmet>
       <StructuredData type="homepage" />
 

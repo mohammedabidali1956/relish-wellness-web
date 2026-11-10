@@ -214,7 +214,7 @@ export const otherJointsServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Why hasn't my tennis elbow healed with rest and painkiller tablets alone?",
-        answer: "Chronic tennis elbow is a tendinopathy with disordered collagen fibers and poor blood flow. Passive rest and pills do not stimulate tissue repair. Progressive eccentric loading exercises are required to stimulate new collagen production."
+        answer: "Ongoing elbow pain can have several contributors, and rest or medication alone may not meet everyone's needs. Progressive strengthening can be part of rehabilitation for some people; exercise selection and pace depend on symptoms, assessment, and response."
       },
       {
         question: "Are cortisone steroid injections good for tennis elbow?",
@@ -608,7 +608,7 @@ export const otherJointsServices: ServiceDetail[] = [
     faqs: [
       {
         question: "Why is my ankle so stiff after removing the plaster cast?",
-        answer: "Weeks of immobilization cause joint capsule contracture, collagen cross-linking, and calf muscle shortening. Skilled manual joint mobilizations by Dr. Hamid are essential to safely restore normal joint play."
+        answer: "Stiffness can follow immobilisation, but the reason and suitable next steps vary with the injury, healing, and any restrictions. After medical clearance, assessment can guide comfortable movement and exercise; hands-on care is optional and only considered when appropriate."
       },
       {
         question: "When can I walk without a limp after an ankle fracture?",

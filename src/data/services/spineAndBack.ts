@@ -33,8 +33,12 @@ export const spineAndBackServices: ServiceDetail[] = [
     faqs: [
       { question: "Do I need an MRI before a back-pain assessment?", answer: "Imaging is not needed for every episode of back pain. A medical professional can advise whether it is appropriate based on symptoms, examination, and whether a result would change management." },
       { question: "Can a muscle spasm explain all of my back pain?", answer: "No. A spasm is a symptom or sign and does not by itself establish the cause of pain. Assessment considers the wider history, function, and relevant findings." },
-      { question: "How many physiotherapy visits will I need?", answer: "The number and pace of visits vary with your symptoms, goals, and response. Progress can be reviewed and the plan adjusted; a fixed number is not appropriate for everyone." },
+      { question: "How many physiotherapy sessions might back pain require?", answer: "The number and pace of visits vary with your symptoms, goals, and response. Progress can be reviewed and the plan adjusted; a fixed number is not appropriate for everyone." },
       { question: "When should I seek urgent medical care?", answer: "Seek urgent care for new bladder or bowel dysfunction, numbness around the genitals or buttocks, or rapidly worsening weakness." },
+      { question: "How do physiotherapists assess and treat sciatica and back pain?", answer: "An assessment reviews symptoms, health history, movement, function, and goals, with neurological or warning-sign checks when indicated. If physiotherapy is suitable, care may include advice, staying active, and tailored exercise. Manual therapy is considered only when appropriate as part of a plan that includes exercise." },
+      { question: "When should I see a physiotherapist for persistent back pain?", answer: "Consider an assessment when pain persists or returns, limits daily activities, sleep, work, or movement, or you are unsure how to manage it. New bladder or bowel changes, numbness around the genitals or buttocks, or rapidly worsening weakness need urgent medical care." },
+      { question: "What exercises can help relieve back pain safely at home?", answer: "There is no single exercise that is right for everyone. Comfortable activity and exercises selected for your symptoms and goals may help; a physiotherapist can advise on suitable movements. Stop and seek advice if an exercise causes a marked worsening or new neurological symptoms." },
+      { question: "What is the best physiotherapy treatment for lower back pain in Manikonda?", answer: "There is no single best treatment for everyone. An assessment in Manikonda can help identify relevant symptoms, movement limits, goals, and warning signs, then guide a plan that may include advice and exercise. Manual therapy is considered only when appropriate and alongside active care." },
       { question: "How do I request an appointment?", answer: "Use the Book a Clinic Appointment link to open the existing appointment request form. Phone and WhatsApp are supporting options for coordinating a visit." }
     ],
   },
@@ -294,11 +298,11 @@ export const spineAndBackServices: ServiceDetail[] = [
     faqs: [
       {
         question: "When should physiotherapy start after a spinal fracture?",
-        answer: "Gentle breathing exercises, circulation drills, and bed-mobility training can start early under medical guidance. Active spinal rehabilitation begins once your surgeon confirms sufficient bony union, usually around 6 to 8 weeks post-injury."
+        answer: "The timing and type of activity depend on the fracture, treatment, healing, and any movement restrictions. Follow the surgeon’s instructions; the treating team can advise when to begin or progress rehabilitation. There is no single timeline for every spinal fracture."
       },
       {
         question: "How do I safely wean off my spinal brace?",
-        answer: "Brace weaning must be done gradually under physiotherapist supervision while simultaneously strengthening your core and spinal muscles to take over support."
+        answer: "Do not stop or change brace use without guidance from the treating team. They will advise whether and how to reduce use based on the injury, healing, and treatment plan. Exercises should follow the same individual restrictions."
       },
       {
         question: "Can Dr. Hamid visit my home for spinal injury rehabilitation in Manikonda?",
@@ -379,7 +383,7 @@ export const spineAndBackServices: ServiceDetail[] = [
       },
       {
         question: "Can spine physiotherapy help mild scoliosis in adults?",
-        answer: "Yes, targeted asymmetrical strengthening and mobility exercises help balance muscular forces, alleviate discomfort, and prevent progression of adult postural scoliosis."
+        answer: "Exercise may support strength, function, or symptoms for some people with scoliosis, but it cannot be promised to change spinal structure or prevent progression. A clinician can discuss suitable care and monitoring based on the individual assessment."
       },
       {
         question: "Where is the clinic located in Manikonda?",

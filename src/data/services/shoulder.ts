@@ -211,11 +211,11 @@ export const shoulderServices: ServiceDetail[] = [
     faqs: [
       {
         question: "When can I stop wearing my shoulder sling after rotator cuff surgery?",
-        answer: "Most rotator cuff repairs require sling immobilization for 4 to 6 weeks to allow tendon-to-bone healing. Dr. Hamid guides you safely through the weaning process once cleared by your surgeon."
+        answer: "Sling use and weaning depend on the repair, surgical protocol, and your surgeon’s instructions. Do not change the plan without checking with the treating team; your physiotherapist can help follow the protocol once cleared."
       },
       {
         question: "Can shoulder physiotherapy prevent recurrent dislocations?",
-        answer: "Yes, intensive neuromuscular rehabilitation targeting the dynamic stabilizers (rotator cuff, long head of biceps, and subscapularis) significantly enhances joint stability and reduces recurrence risk in non-surgical shoulder subluxations."
+        answer: "Rehabilitation may support shoulder strength and function after some dislocations, but the plan depends on the injury, stability, and medical advice. It cannot guarantee that another dislocation will not occur."
       },
       {
         question: "Can Dr. Hamid visit my home for post-op shoulder physiotherapy in Manikonda?",

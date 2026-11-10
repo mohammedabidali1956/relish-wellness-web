@@ -58,7 +58,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
     faqs: [
       {
         question: "How soon after a sports injury should I start physiotherapy in Manikonda?",
-        answer: "You should consult a physiotherapist within 24 to 48 hours. Early assessment allows Dr. Hamid to rule out structural fractures or complete tears, control swelling with safe modalities, and initiate early protected movement to prevent joint stiffness and muscle wasting."
+        answer: "There is no fixed timeframe for every sports injury. Seek prompt medical assessment for a serious injury, deformity, major swelling, inability to bear weight, or severe symptoms. Otherwise, arrange an assessment when needed; rehabilitation timing depends on the injury and medical advice."
       },
       {
         question: "Can physiotherapy help me return to running or playing badminton without pain?",
@@ -66,7 +66,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "Do you treat gym workout injuries like deadlift back strains or shoulder impingement?",
-        answer: "Frequently. We evaluate barbell setup, movement form, thoracic mobility, and rotator cuff engagement to fix lifting mechanics, eliminate acute pain, and safely progress you back to progressive overload."
+        answer: "The clinic can assess gym-related symptoms and discuss whether physiotherapy is suitable. Any movement or training changes depend on the assessment, symptoms, and goals; pain relief or a specific return to lifting cannot be guaranteed."
       },
       {
         question: "What is the difference between general physiotherapy and sports rehabilitation?",
@@ -78,7 +78,7 @@ export const sportsAndGeneralServices: ServiceDetail[] = [
       },
       {
         question: "How do you know when an athlete is truly ready to return to their sport?",
-        answer: "We use objective return-to-play criteria, including limb symmetry index (>90% strength compared to uninjured side), pain-free agility drills, psychological readiness, and dynamic stability testing before granting full athletic clearance."
+        answer: "Return-to-sport decisions are individual and may consider symptoms, strength, function, sport demands, confidence, and the treating team's advice. No single test or limb-symmetry threshold guarantees readiness or provides medical clearance for every athlete."
       }
     ]
   },
@@ -392,11 +392,11 @@ serviceAreas: [
     faqs: [
       {
         question: "When should I start physiotherapy after a car or bike accident?",
-        answer: "As soon as medical stability is confirmed by your emergency physician or orthopedic surgeon—typically within 3 to 7 days. Early, gentle physiotherapy prevents muscle contractures, reduces swelling, and prevents long-term chronic pain."
+        answer: "After an accident, first follow emergency and medical advice and ensure injuries have been assessed. The timing of physiotherapy depends on the injuries, medical stability, and treatment plan; early physiotherapy is not suitable for every injury and cannot guarantee prevention of ongoing pain."
       },
       {
         question: "Can physiotherapy help with post-accident neck stiffness and headaches?",
-        answer: "Yes. Post-accident whiplash and tension headaches stem from acute strain of cervical muscles and suboccipital ligaments. Dr. Hamid uses gentle cervical mobilizations and trigger point release to rapidly alleviate neck tightness and radiating head pain."
+        answer: "Neck stiffness or headache can occur after an accident, but symptoms can have different causes. A medical assessment is important after significant trauma or for severe, worsening, or unusual symptoms. Physiotherapy options depend on the assessment and recovery needs."
       },
       {
         question: "I have pain in multiple joints after my fall. Can all areas be treated together?",
@@ -605,10 +605,14 @@ serviceAreas: [
     whenToVisit: "Ask the clinic about Home Visit Physiotherapy if pain, mobility, recent surgery, or another health need makes travelling difficult. The clinic will confirm whether a visit is appropriate, whether your address is within current coverage, and whether an appointment is available. For in-clinic attendance, use the main appointment request pathway.",
     faqs: [
       { question: "Which areas are covered for home visits?", answer: "Home visits target areas within about 5 km of Manikonda. Actual coverage depends on your exact address and current availability; contact the clinic to confirm before booking. The target area is not a coverage guarantee." },
-      { question: "Who may benefit from Home Visit Physiotherapy?", answer: "A home visit may suit someone whose pain, mobility, recent surgery, or health needs make clinic travel difficult. The clinic confirms suitability individually." },
+      { question: "What conditions can a physiotherapist treat during a home visit?", answer: "A home visit may support assessment and rehabilitation for suitable movement, pain, mobility, or post-operative needs when travelling is difficult. The clinic first reviews your needs and confirms whether home physiotherapy is appropriate and available." },
       { question: "What happens during a home visit?", answer: "If a visit is suitable and available, the physiotherapist discusses your needs and goals and assesses relevant movement or daily activities. The next steps depend on findings and available services." },
       { question: "What equipment will be brought?", answer: "Equipment and treatment options depend on the person’s needs and the clinic’s current availability. Contact the clinic before booking if a particular item or service is important." },
       { question: "Can I attend the clinic instead of having a home visit?", answer: "Yes. In-clinic appointments are the clinic’s primary appointment pathway. Choose the clinic appointment request form or ask the team to help coordinate a suitable visit." },
+      { question: "Which providers offer home physiotherapy visits in Manikonda and Puppalguda?", answer: "Dr Hamid’s Physio and PAIN Clinic in Puppalguda, Manikonda accepts enquiries about home physiotherapy. Address coverage, clinical suitability, fee, and appointment availability are confirmed by the clinic; this page does not compare other providers." },
+      { question: "How much does a home physiotherapy visit cost in Hyderabad?", answer: "The clinic does not list one fixed home-visit fee because the address and requested care may affect the cost. Contact the clinic to confirm the current fee, suitability, and availability before booking." },
+      { question: "How do I choose a qualified home visit physiotherapist in Manikonda?", answer: "Ask whether the physiotherapist is registered, who will assess and provide care, what the current fee is, and how the plan will fit your home setting and goals. Confirm the address is covered and that the visit is clinically suitable before booking." },
+      { question: "Is home physiotherapy effective for back pain and mobility problems?", answer: "Home physiotherapy may be suitable for some people with back pain or mobility difficulties, especially when travel is hard. Benefit depends on the cause, individual assessment, care plan, and home setting; the clinic can discuss whether a visit is appropriate." },
       { question: "How do I ask about a home visit?", answer: "Contact the clinic by phone or WhatsApp with your area and a brief description of the support needed. The clinic confirms coverage, suitability, and current appointment availability." }
     ],
   },

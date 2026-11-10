@@ -39,7 +39,7 @@ import {
 } from "@/components/ui/accordion";
 import { scrollToAppointmentSection } from "@/lib/navigation";
 import { trackAnalyticsEvent } from "@/lib/analytics";
-import { uppercasePainTerm } from "@/lib/seoText";
+import { getServiceMetaDescription, getServiceMetaTitle, uppercasePainTerm } from "@/lib/seoText";
 import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
 import ServicePatientResources from "@/components/ServicePatientResources";
 
@@ -80,8 +80,8 @@ export const ServiceDetailPage: React.FC = () => {
   };
 
   const canonicalUrl = `https://www.drhamidphysio.in/services/${service.slug}`;
-  const pageTitle = uppercasePainTerm(service.metaTitle);
-  const pageDescription = uppercasePainTerm(service.metaDescription);
+  const pageTitle = uppercasePainTerm(getServiceMetaTitle(service.metaTitle));
+  const pageDescription = uppercasePainTerm(getServiceMetaDescription(service.slug, service.metaDescription));
   const pageHeading = uppercasePainTerm(service.h1);
 
   // Find 3 closely related services in same or complementary category
@@ -164,7 +164,7 @@ export const ServiceDetailPage: React.FC = () => {
         },
         publisher: { "@id": CLINIC_BUSINESS_SCHEMA_ID }
       },
-      {
+      ...(service.faqs.length > 0 ? [{
         "@type": "FAQPage",
         "@id": `${canonicalUrl}#faq`,
         mainEntity: service.faqs.map((faq) => ({
@@ -175,7 +175,7 @@ export const ServiceDetailPage: React.FC = () => {
             text: faq.answer
           }
         }))
-      },
+      }] : []),
       {
         "@type": "Service",
         "@id": `${canonicalUrl}#service`,

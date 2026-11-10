@@ -8,8 +8,8 @@ import PatientResourceHub from "@/components/PatientResourceHub";
 import CaseStudyCharts from "@/components/CaseStudyCharts";
 
 const canonicalUrl = "https://www.drhamidphysio.in/conditions";
-const pageTitle = "Conditions and Body PAIN Guide in Manikonda | Dr Hamid’s Physio and PAIN Clinic";
-const pageDescription = "Explore the interactive body PAIN guide to select a PAIN area and read general information about common conditions and physiotherapy options in Manikonda, Hyderabad.";
+const pageTitle = "Conditions and Pain Guide | Dr Hamid Physio Manikonda";
+const pageDescription = "Choose a body area to explore general condition information and physiotherapy options in Manikonda, Hyderabad.";
 
 const ConditionsPage = () => {
   return (

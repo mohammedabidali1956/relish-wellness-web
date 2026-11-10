@@ -11,12 +11,12 @@ const BlogsPage = () => {
   return (
     <div>
       <Helmet>
-        <meta property="og:title" content="Health & Wellness Blog | Dr Hamid’s Physio and PAIN Clinic Manikonda" />
+        <meta property="og:title" content="Physiotherapy Blog | Dr Hamid’s Clinic Manikonda" />
         <meta property="og:url" content="https://www.drhamidphysio.in/blogs" />
       </Helmet>
       <StructuredData 
         type="blog" 
-        pageTitle="Health & Wellness Blog | Dr Hamid’s Physio and PAIN Clinic Manikonda"
+        pageTitle="Physiotherapy Blog | Dr Hamid’s Clinic Manikonda"
         pageDescription="Health information and physiotherapy articles from Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad, covering PAIN, movement, and rehabilitation."
       />
       {/* Hero Section */}

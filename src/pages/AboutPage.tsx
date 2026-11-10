@@ -10,7 +10,7 @@ const AboutPage = () => {
     <div className="min-h-screen">
       <StructuredData 
         type="about" 
-        pageTitle="About Dr Hamid’s Physio and PAIN Clinic | Physiotherapist in Manikonda"
+        pageTitle="About Dr Hamid’s Physio Clinic | Manikonda"
         pageDescription="Meet Dr. Mohammed Hamid Ali, founder and Consultant Physiotherapist at Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad."
       />
       <Helmet>
@@ -145,19 +145,19 @@ const AboutPage = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-md border border-border p-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Orthopedic & Musculoskeletal Rehabilitation</h4>
+                  <h3 className="font-semibold text-gray-900 mb-2">Orthopedic & Musculoskeletal Rehabilitation</h3>
                 </div>
                 <div className="bg-white rounded-md border border-border p-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Pain Management (Back, Neck, Joints)</h4>
+                  <h3 className="font-semibold text-gray-900 mb-2">Pain Management (Back, Neck, Joints)</h3>
                 </div>
                 <div className="bg-white rounded-md border border-border p-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Sports-Injury Prevention & Performance Enhancement</h4>
+                  <h3 className="font-semibold text-gray-900 mb-2">Sports-Injury Prevention & Performance Enhancement</h3>
                 </div>
                 <div className="bg-white rounded-md border border-border p-6">
-                  <h4 className="font-semibold text-gray-900 mb-2">Soft-Tissue Mobilization & Corrective Exercise</h4>
+                  <h3 className="font-semibold text-gray-900 mb-2">Soft-Tissue Mobilization & Corrective Exercise</h3>
                 </div>
                 <div className="bg-white rounded-md border border-border p-6 md:col-span-2">
-                  <h4 className="font-semibold text-gray-900 mb-2">Ergonomic & Lifestyle Advice</h4>
+                  <h3 className="font-semibold text-gray-900 mb-2">Ergonomic & Lifestyle Advice</h3>
                 </div>
               </div>
             </div>

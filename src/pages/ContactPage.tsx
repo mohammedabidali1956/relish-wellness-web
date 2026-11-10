@@ -12,7 +12,7 @@ const ContactPage = () => {
     <div className="min-h-screen bg-[#faf6ed]">
       <StructuredData type="about" />
       <Helmet>
-        <title>Contact a Physiotherapist in Manikonda | Dr Hamid’s Physio and PAIN Clinic</title>
+        <title>Contact a Physio in Manikonda | Dr Hamid’s Clinic</title>
         <meta name="description" content="Contact Dr Hamid’s Physio and PAIN Clinic in Puppalguda, Manikonda, Hyderabad. Call, WhatsApp, get directions or request an appointment." />
         <meta property="og:title" content="Contact Dr Hamid’s Physio and PAIN Clinic in Manikonda" />
         <meta property="og:description" content="Clinic address, hours, directions and appointment contact options for Dr Hamid’s Physio and PAIN Clinic in Manikonda, Hyderabad." />

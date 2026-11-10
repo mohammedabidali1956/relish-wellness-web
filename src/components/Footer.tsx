@@ -135,7 +135,7 @@ const Footer = () => {
 
           {/* Quick links */}
           <div className="lg:col-span-2">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-relish-900">Quick Links</h3>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-relish-900">Quick Links</h2>
             <ul className="mt-4 space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -152,7 +152,7 @@ const Footer = () => {
 
           {/* Contact Details */}
           <div className="lg:col-span-3">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-relish-900">Visit & Contact</h3>
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-relish-900">Visit & Contact</h2>
             <ul className="mt-4 space-y-3.5">
               <li className="flex gap-3">
                 <MapPin className="h-4 w-4 shrink-0 mt-1 text-relish-600" />
@@ -194,12 +194,12 @@ const Footer = () => {
 
           {/* Dedicated Social Media Section - High Visibility */}
           <div className="lg:col-span-3">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-relish-900 flex items-center justify-between">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-relish-900 flex items-center justify-between">
               <span>Connect With Us</span>
               <span className="text-[11px] font-normal normal-case text-relish-700 bg-relish-50 px-2 py-0.5 rounded border border-relish-200">
                 Profiles &amp; Contact
               </span>
-            </h3>
+            </h2>
             <p className="mt-2 text-xs text-muted-foreground">
               Follow Dr. Hamid on social media for physiotherapy exercises, recovery tips, and direct consultations:
             </p>

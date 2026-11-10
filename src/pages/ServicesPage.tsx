@@ -32,6 +32,29 @@ import {
   ChevronRight
 } from "lucide-react";
 
+const serviceCatalogueFaqs = [
+  {
+    question: "Should I choose a one-to-one physiotherapy clinic or a larger rehabilitation centre?",
+    answer: "A one-to-one clinic can offer direct discussion with the treating physiotherapist and access to the clinic’s available equipment. A larger centre may have more departments or services. Size alone does not indicate quality; consider your needs, staff registration, assessment, communication, accessibility, and fees.",
+  },
+  {
+    question: "How much does physiotherapy cost at clinics in Manikonda, Hyderabad?",
+    answer: "At Dr Hamid’s clinic, an in-clinic consultation is ₹300 and physiotherapy treatment starts from ₹500. The total depends on the assessment and care discussed. Home-visit fees vary by address and needs; confirm the current fee with the clinic before booking.",
+  },
+  {
+    question: "Which physiotherapy clinics near Manikonda treat back, neck, knee and shoulder pain?",
+    answer: "Dr Hamid’s Physio and PAIN Clinic in Puppalguda, Manikonda lists physiotherapy services for back, neck, knee, and shoulder concerns. Review the service information on this page and contact the clinic to ask whether an assessment is suitable for your needs.",
+  },
+  {
+    question: "What questions should I ask a physiotherapist before booking my first appointment?",
+    answer: "Ask who will assess and treat you, how the assessment relates to your goals, what the current fees are, how progress will be reviewed, and whether medical review or reports are needed first. You can also share relevant health history and access needs when enquiring.",
+  },
+  {
+    question: "What should I look for when choosing a physiotherapy clinic in Manikonda, Hyderabad?",
+    answer: "Look for a registered physiotherapist, an individual assessment, clear explanations of options and fees, a plan linked to your needs, and progress review. A suitable clinic should discuss medical referral when symptoms need further assessment. Outcomes and recovery times vary between people.",
+  },
+] as const;
+
 const ServicesPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -74,9 +97,9 @@ const ServicesPage: React.FC = () => {
         "@type": "MedicalWebPage",
         "@id": "https://www.drhamidphysio.in/services#webpage",
         url: canonicalUrl,
-        name: "Physiotherapy Services in Manikonda | Dr Hamid’s Physio and Pain Clinic",
+        name: "Physiotherapy Services in Manikonda | Dr Hamid",
         description:
-          "Physiotherapy and rehabilitation services in Manikonda, Hyderabad, including care for spine, neck, knee, shoulder, neurological, sports, and post-surgery needs.",
+          "Physiotherapy for back, neck, knee, shoulder, sports and post-surgery needs in Manikonda. Confirm home-visit coverage and availability with the clinic.",
         lastReviewed: MEDICAL_REVIEW_DATE,
         reviewedBy: MEDICAL_REVIEWER_SCHEMA,
         inLanguage: "en-IN",
@@ -90,7 +113,16 @@ const ServicesPage: React.FC = () => {
           name: service.title,
           url: `https://www.drhamidphysio.in/services/${service.slug}`
         }))
-      }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${canonicalUrl}#faq`,
+        mainEntity: serviceCatalogueFaqs.map(({ question, answer }) => ({
+          "@type": "Question",
+          name: question,
+          acceptedAnswer: { "@type": "Answer", text: answer },
+        })),
+      },
     ]
   };
 
@@ -98,22 +130,22 @@ const ServicesPage: React.FC = () => {
     <div className="bg-[#faf6ed] min-h-screen">
       <StructuredData type="service" includeCanonical={false} />
       <Helmet>
-        <title>Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder &amp; Home Visits</title>
+        <title>Physiotherapy Services in Manikonda | Dr Hamid</title>
         <meta
           name="description"
-          content="Explore physiotherapy for back, neck, knee and shoulder PAIN, sports injuries and recovery after surgery in Manikonda. Home visits target areas within about 5 km; confirm exact-address coverage and availability with the clinic."
+          content="Physiotherapy for back, neck, knee, shoulder, sports and post-surgery needs in Manikonda. Confirm home-visit coverage and availability with the clinic."
         />
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content="Physiotherapy Services in Manikonda | Back, Neck, Knee, Shoulder & Home Visits" />
+        <meta property="og:title" content="Physiotherapy Services in Manikonda | Dr Hamid" />
         <meta
           property="og:description"
-          content="Browse physiotherapy programs for back, neck, knee and shoulder PAIN, sports injuries and post-surgery recovery in Manikonda, Hyderabad."
+          content="Physiotherapy for back, neck, knee, shoulder, sports and post-surgery needs in Manikonda. Confirm home-visit coverage and availability with the clinic."
         />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Physiotherapy Services in Manikonda | Dr Hamid’s Physio and PAIN Clinic" />
-        <meta name="twitter:description" content="Physiotherapy programs for back, neck, knee and shoulder PAIN, sports injuries and post-surgery recovery in Manikonda. Home visits target areas within about 5 km; confirm exact-address coverage and availability with the clinic." />
+        <meta name="twitter:title" content="Physiotherapy Services in Manikonda | Dr Hamid" />
+        <meta name="twitter:description" content="Physiotherapy for back, neck, knee, shoulder, sports and post-surgery needs in Manikonda. Confirm home-visit coverage and availability with the clinic." />
         <meta name="twitter:image" content={CLINIC_LOGO_URL} />
         <script type="application/ld+json">{JSON.stringify(servicesStructuredData)}</script>
       </Helmet>
@@ -462,6 +494,21 @@ const ServicesPage: React.FC = () => {
               </section>
             </div>
           )}
+
+          <section id="services-faq" className="mb-12 rounded-2xl border border-[#e5dec9] bg-white p-6 sm:p-8">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#8a5d24]">Patient questions</p>
+            <h2 className="mt-2 font-serif text-2xl font-bold text-[#081a2e] sm:text-3xl">
+              Choosing a physiotherapy clinic in Manikonda
+            </h2>
+            <div className="mt-5 space-y-3">
+              {serviceCatalogueFaqs.map((faq) => (
+                <details key={faq.question} className="rounded-xl border border-[#e5dec9] bg-[#faf6ed] p-4">
+                  <summary className="cursor-pointer font-semibold text-[#081a2e]">{faq.question}</summary>
+                  <p className="mt-3 text-sm leading-relaxed text-[#4a5568]">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </section>
 
           {/* Bottom Consultation Banner */}
           <section className="bg-gradient-to-r from-[#081a2e] to-[#122842] rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl">

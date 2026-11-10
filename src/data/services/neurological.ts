@@ -57,11 +57,11 @@ export const neurologicalServices: ServiceDetail[] = [
     faqs: [
       {
         question: "When should physiotherapy start after a stroke?",
-        answer: "Rehabilitation should begin as early as 24 to 48 hours post-stroke once the patient is medically stable. Early bedside mobilization prevents chest infections, joint stiffness, and bedsores, while priming the brain for neuroplastic rewiring."
+        answer: "The timing and type of rehabilitation after stroke should be decided with the stroke and medical team once the person is stable. Early rehabilitation may be considered, but activity must fit the person's health, stroke effects, and safety needs."
       },
       {
         question: "Can an older stroke patient who had a stroke over a year ago still improve?",
-        answer: "Yes! Modern neuroscience confirms that neuroplasticity has no age or strict time limit. Even in chronic stroke phases, targeted physiotherapy improves balance, walking speed, and daily functional ability."
+        answer: "Some people make functional gains months or longer after a stroke, but progress varies with health, stroke effects, goals, and rehabilitation. An assessment can help identify suitable goals; improvement cannot be guaranteed."
       },
       {
         question: "Do you provide home visit stroke physiotherapy in Manikonda?",
