@@ -363,7 +363,7 @@ try {
   const aboutPageMarkdown = markdownByCanonicalUrl.get(`${canonicalOrigin}/about`)?.markdown || "";
   const contactPageMarkdown = markdownByCanonicalUrl.get(`${canonicalOrigin}/contact`)?.markdown || "";
   const servicesPageMarkdown = markdownByCanonicalUrl.get(`${canonicalOrigin}/services`)?.markdown || "";
-  const practitionerCredentials = aboutPageMarkdown.split("\n").find((line) => /BPT.*MPT.*Registration No\./i.test(line));
+  const practitionerCredentials = aboutPageMarkdown.split("\n").find((line) => /BPT.*MPT.*REGD\.NO\s*0413/i.test(line));
   const clinicalExperience = aboutPageMarkdown.match(/8\+ years of clinical experience/i)?.[0];
   const clinicEstablished = aboutPageMarkdown.match(/established in 2021/i)?.[0];
   const careModel = aboutPageMarkdown.match(/founder-operated, with individualized one-to-one care/i)?.[0];

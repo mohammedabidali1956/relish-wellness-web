@@ -1,8 +1,22 @@
 import { Link } from "react-router-dom";
-import { patientTopicResources } from "@/data/patientResources";
+import { patientTopicResources, type PatientTopicResources } from "@/data/patientResources";
+
+const meniscusPatientResource: PatientTopicResources = {
+  id: "meniscus",
+  topic: "Meniscus injury",
+  evidence: {
+    path: "/conditions#meniscus-clinical-case-study",
+    title: "An anonymised medial meniscus case study",
+    summary: "Review one patient's recorded symptoms, knee measures, conservative care, and follow-up.",
+    note: "This individual case does not predict another person's outcome or mean surgery is never needed.",
+  },
+  servicePath: "/services/meniscus-injury-physiotherapy-manikonda",
+  serviceTitle: "Meniscus Injury Physiotherapy",
+};
 
 const ServicePatientResources = ({ serviceSlug }: { serviceSlug: string }) => {
-  const topic = patientTopicResources.find((item) => item.servicePath.endsWith(serviceSlug));
+  const topic = patientTopicResources.find((item) => item.servicePath.endsWith(serviceSlug))
+    ?? (serviceSlug === "meniscus-injury-physiotherapy-manikonda" ? meniscusPatientResource : undefined);
   if (!topic) return null;
 
   return (
@@ -44,6 +58,11 @@ const ServicePatientResources = ({ serviceSlug }: { serviceSlug: string }) => {
               <p className="text-[#64748b]">
                 {topic.evidenceGap}
               </p>
+            )}
+            {topic.reviewPath && (
+              <Link className="font-semibold text-[#8a5d24] underline underline-offset-2" to={topic.reviewPath}>
+                {topic.reviewLabel || "Read related patient reviews"}
+              </Link>
             )}
           </div>
         </div>

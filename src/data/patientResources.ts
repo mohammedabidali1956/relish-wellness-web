@@ -13,6 +13,8 @@ export type PatientTopicResources = {
   evidenceGap?: string;
   servicePath: string;
   serviceTitle: string;
+  reviewPath?: string;
+  reviewLabel?: string;
 };
 
 export const patientTopicResources: PatientTopicResources[] = [
@@ -37,6 +39,8 @@ export const patientTopicResources: PatientTopicResources[] = [
     },
     servicePath: "/services/neck-pain-physiotherapy-manikonda",
     serviceTitle: "Neck Pain Physiotherapy",
+    reviewPath: "/reviews#reviews-neck-pain",
+    reviewLabel: "Read patient reviews mentioning neck pain",
   },
   {
     id: "back",
@@ -59,6 +63,8 @@ export const patientTopicResources: PatientTopicResources[] = [
     },
     servicePath: "/services/back-pain-physiotherapy-manikonda",
     serviceTitle: "Back Pain Physiotherapy",
+    reviewPath: "/reviews#reviews-back-pain",
+    reviewLabel: "Read patient reviews mentioning back pain",
   },
   {
     id: "knee",
@@ -81,6 +87,8 @@ export const patientTopicResources: PatientTopicResources[] = [
     },
     servicePath: "/services/knee-pain-physiotherapy-manikonda",
     serviceTitle: "Knee Pain Physiotherapy",
+    reviewPath: "/reviews#reviews-knee-pain",
+    reviewLabel: "Read patient reviews mentioning knee pain",
   },
   {
     id: "sciatica",
@@ -115,5 +123,7 @@ export const patientTopicResources: PatientTopicResources[] = [
     evidenceGap: "No shoulder-specific case study or general shoulder-pain guide is currently published.",
     servicePath: "/services/shoulder-pain-physiotherapy-manikonda",
     serviceTitle: "Shoulder Pain Physiotherapy",
+    reviewPath: "/reviews#reviews-shoulder-pain",
+    reviewLabel: "Read patient reviews mentioning shoulder pain",
   },
 ];
