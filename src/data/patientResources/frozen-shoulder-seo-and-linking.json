@@ -1,0 +1,37 @@
+{
+  "title": "Frozen Shoulder Physiotherapy Case Study, Manikonda, Hyderabad",
+  "metaDescription": "Explore a frozen shoulder case study from Dr. Hamid's Physio and Pain Clinic, Manikonda, Hyderabad, with documented improvements in pain, SPADI and shoulder mobility over six months.",
+  "primaryTopic": "Frozen shoulder physiotherapy",
+  "locationTerms": [
+    "Manikonda",
+    "Hyderabad",
+    "Telangana"
+  ],
+  "keywords": [
+    "frozen shoulder physiotherapy Manikonda",
+    "frozen shoulder treatment Hyderabad",
+    "adhesive capsulitis physiotherapy",
+    "shoulder pain physiotherapy Manikonda",
+    "shoulder stiffness treatment Hyderabad",
+    "diabetic frozen shoulder case study"
+  ],
+  "category": "Patient Resources",
+  "subcategory": "Shoulder Case Studies",
+  "canonical": "Preserve the existing page URL and canonical URL. Do not create a new route or slug.",
+  "internalLinkOptions": [
+    {
+      "label": "Clinic homepage",
+      "url": "https://www.drhamidphysio.in/"
+    },
+    {
+      "label": "Existing services page",
+      "url": "https://www.drhamidphysio.in/services"
+    }
+  ],
+  "conversion": {
+    "primaryCta": "Book a shoulder assessment",
+    "whatsapp": "https://wa.me/917601026596",
+    "clinicName": "Dr. Hamid's Physio and Pain Clinic",
+    "clinicLocation": "Manikonda, Hyderabad"
+  }
+}

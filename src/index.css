@@ -181,6 +181,21 @@
     @apply max-w-3xl;
   }
 
+  .case-study-chart {
+    @apply m-0 flex h-full min-w-0 flex-col rounded-xl border border-[#e5dec9] bg-white p-2 shadow-sm sm:p-3;
+  }
+
+  .case-study-chart img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+
+  .case-study-chart figcaption {
+    @apply mt-2 text-xs leading-relaxed text-[#4a5568];
+  }
+
   .blog-article .article-figure img {
     @apply mx-auto h-auto w-full object-contain;
   }

@@ -120,7 +120,12 @@ export const patientTopicResources: PatientTopicResources[] = [
       title: "Could shoulder pain and stiffness be frozen shoulder?",
       summary: "A condition-specific guide to signs that warrant assessment; shoulder pain can have other causes too.",
     },
-    evidenceGap: "No shoulder-specific case study or general shoulder-pain guide is currently published.",
+    evidence: {
+      path: "/conditions#frozen-shoulder-case-study",
+      title: "Frozen shoulder physiotherapy case study",
+      summary: "Review one anonymised case, its recorded outcomes, treatment programme, and six-month follow-up.",
+      note: "This single case describes one person's experience and does not predict another person's outcome.",
+    },
     servicePath: "/services/shoulder-pain-physiotherapy-manikonda",
     serviceTitle: "Shoulder Pain Physiotherapy",
     reviewPath: "/reviews#reviews-shoulder-pain",

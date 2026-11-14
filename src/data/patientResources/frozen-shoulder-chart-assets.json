@@ -1,0 +1,117 @@
+{
+  "./charts/active_abduction_bar.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-shoulder-abduction-outcome-bar-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 422
+  },
+  "./charts/active_abduction_donut.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-shoulder-abduction-outcome-donut-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 647
+  },
+  "./charts/active_abduction_line.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-shoulder-abduction-outcome-line-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 423
+  },
+  "./charts/active_er_bar.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-external-rotation-outcome-bar-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 422
+  },
+  "./charts/active_er_donut.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-external-rotation-outcome-donut-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 671
+  },
+  "./charts/active_er_line.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-external-rotation-outcome-line-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 423
+  },
+  "./charts/active_flexion_bar.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-flexion-outcome-bar-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 422
+  },
+  "./charts/active_flexion_donut.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-flexion-outcome-donut-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 678
+  },
+  "./charts/active_flexion_line.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-flexion-outcome-line-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 423
+  },
+  "./charts/active_internal_rotation_progression.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-internal-rotation-vertebral-level-progression-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 306
+  },
+  "./charts/functional_recovery_timeline.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-functional-recovery-timeline-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 252
+  },
+  "./charts/passive_flexion_bar.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-passive-flexion-outcome-bar-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 422
+  },
+  "./charts/passive_flexion_donut.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-passive-flexion-outcome-donut-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 664
+  },
+  "./charts/passive_flexion_line.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-passive-flexion-outcome-line-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 423
+  },
+  "./charts/spadi_bar.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-spadi-outcome-bar-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 422
+  },
+  "./charts/spadi_donut.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-spadi-outcome-donut-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 523
+  },
+  "./charts/spadi_line.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-spadi-outcome-line-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 423
+  },
+  "./charts/vas_activity_bar.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-activity-night-pain-vas-outcome-bar-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 422
+  },
+  "./charts/vas_activity_donut.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-activity-night-pain-vas-outcome-donut-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 667
+  },
+  "./charts/vas_activity_line.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-activity-night-pain-vas-outcome-line-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 423
+  },
+  "./charts/vas_rest_bar.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-resting-pain-vas-outcome-bar-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 422
+  },
+  "./charts/vas_rest_donut.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-resting-pain-vas-outcome-donut-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 767
+  },
+  "./charts/vas_rest_line.png": {
+    "src": "/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-resting-pain-vas-outcome-line-chart-manikonda-hyderabad.webp",
+    "width": 800,
+    "height": 423
+  }
+}

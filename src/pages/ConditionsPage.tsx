@@ -6,10 +6,12 @@ import MedicalReviewByline from "@/components/MedicalReviewByline";
 import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
 import PatientResourceHub from "@/components/PatientResourceHub";
 import CaseStudyCharts from "@/components/CaseStudyCharts";
+import FrozenShoulderCaseStudy from "@/components/FrozenShoulderCaseStudy";
+import frozenShoulderSeo from "@/data/patientResources/frozenShoulderSeo";
 
 const canonicalUrl = "https://www.drhamidphysio.in/conditions";
-const pageTitle = "Conditions and Pain Guide | Dr Hamid Physio Manikonda";
-const pageDescription = "Choose a body area to explore general condition information and physiotherapy options in Manikonda, Hyderabad.";
+const pageTitle = frozenShoulderSeo.title;
+const pageDescription = frozenShoulderSeo.metaDescription;
 
 const ConditionsPage = () => {
   return (
@@ -21,6 +23,8 @@ const ConditionsPage = () => {
       />
 
       <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
@@ -507,6 +511,7 @@ const ConditionsPage = () => {
               </p>
             </article>
           </div>
+          <FrozenShoulderCaseStudy />
         </div>
       </section>
 

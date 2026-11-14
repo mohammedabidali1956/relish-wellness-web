@@ -1205,6 +1205,10 @@ Related patient pathway · Shoulder pain
 
 ## Explore the next useful step
 
+[Related case evidence: Frozen shoulder physiotherapy case study](https://www.drhamidphysio.in/conditions#frozen-shoulder-case-study)
+
+Review one anonymised case, its recorded outcomes, treatment programme, and six-month follow-up. This single case describes one person's experience and does not predict another person's outcome.
+
 [Existing service: Shoulder Pain Physiotherapy](https://www.drhamidphysio.in/services/shoulder-pain-physiotherapy-manikonda)[Browse Patient Resources by topic](https://www.drhamidphysio.in/conditions#patient-resources)
 
 ## Related Articles
@@ -5473,7 +5477,7 @@ This article provides general health information. It is not a diagnosis or an in
 
 Canonical HTML URL: <https://www.drhamidphysio.in/conditions>
 
-Page title: Conditions and PAIN Guide | Dr Hamid Physio Manikonda
+Page title: Frozen Shoulder Physiotherapy Case Study, Manikonda, Hyderabad
 
 ---
 
@@ -5632,7 +5636,12 @@ ANSWER · Patient question
 
 A condition-specific guide to signs that warrant assessment; shoulder pain can have other causes too.
 
-PROVE · No shoulder-specific case study or general shoulder-pain guide is currently published.
+PROVE · Individual case evidence
+[Frozen shoulder physiotherapy case study](https://www.drhamidphysio.in/conditions#frozen-shoulder-case-study)
+
+Review one anonymised case, its recorded outcomes, treatment programme, and six-month follow-up.
+
+This single case describes one person's experience and does not predict another person's outcome.
 
 SELL · Existing clinic service
 [Shoulder Pain Physiotherapy ](https://www.drhamidphysio.in/services/shoulder-pain-physiotherapy-manikonda)
@@ -5940,6 +5949,684 @@ In this case, eight supervised sessions were followed by changes in pain, knee m
 This anonymised case is for education and does not replace medical assessment or establish a treatment recommendation. The source PDF records written consent specifically covering online publication of this anonymised case and its outcomes.
 
 For general knee information, explore the existing [Meniscus Injury Physiotherapy service](https://www.drhamidphysio.in/services/meniscus-injury-physiotherapy-manikonda).
+
+# Frozen Shoulder Physiotherapy Case Study, Manikonda, Hyderabad
+
+**Adhesive Capsulitis (Frozen Shoulder) Associated with Type 2 Diabetes: A Conservative Physiotherapy Case Study**
+
+**Dr. Hamid's Physio and Pain Clinic | Manikonda, Hyderabad, Telangana, India**
+
+**Author:** Dr. Mohammed Hamid Ali — BPT, MPT (Ortho), Telangana State Board Registered, Registration No. 0413, Consultant Physiotherapist.
+
+**Clinic:** Dr. Hamid's Physio and Pain Clinic, Manikonda, Hyderabad.
+
+**Address:** 4-3/81, Opp. HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089.
+
+**Website:** [drhamidphysio.in](https://www.drhamidphysio.in/) | **Contact:** +91 76010 26596
+
+**Last reviewed:** 14 November 2026
+
+**Patient consent:** The patient provided formal written consent for anonymised online publication of this case and its outcomes. Identifying details have been removed.
+
+---
+
+## Quick Answer
+
+A 65-year-old man with type 2 diabetes and right-sided frozen shoulder achieved substantial improvements following an individualised physiotherapy programme at Dr. Hamid's Physio and Pain Clinic, Manikonda, Hyderabad. After 10 consecutive daily sessions, activity pain reduced from 8/10 to 4/10, SPADI improved from 68 to 42, and active shoulder flexion increased from 90° to 125°. At six months, SPADI reached 15, activity pain reduced to 1/10, and active flexion improved to 158°.
+
+**Looking for personalised frozen shoulder physiotherapy in Manikonda, Hyderabad?**
+
+[Book a shoulder assessment through WhatsApp](https://wa.me/917601026596).
+
+## Case at a Glance
+
+| Parameter | Details
+
+| Patient | 65-year-old male, anonymised
+
+| Medical history | Type 2 diabetes for 10 years
+
+| Latest HbA1c | 8.3%
+
+| Affected shoulder | Right
+
+| Clinical diagnosis | Adhesive capsulitis (frozen shoulder)
+
+| Symptom duration | Approximately 5 months
+
+| Clinical stage | Late freezing / early frozen stage
+
+| Treatment | 10 supervised physiotherapy sessions
+
+| Treatment frequency | 10 consecutive days
+
+| Additional treatment | Structured home exercise programme
+
+| Follow-up | Day 10, week 6, 3 months and 6 months
+
+## 1. Patient Presentation and Clinical History
+
+A 65-year-old right-hand-dominant man with a 10-year history of type 2 diabetes mellitus presented with progressive right shoulder pain and stiffness of approximately five months' duration.
+
+His latest HbA1c was 8.3%, with diabetes management under the supervision of his diabetologist.
+
+The onset was gradual and non-traumatic. The patient reported a persistent low-grade shoulder ache that increased during overhead reaching, dressing, particularly reaching behind the back, and lying on the affected side.
+
+Night pain interrupted sleep approximately two to four times per night.
+
+His symptoms affected:
+
+- Dressing and personal care.
+
+- Overhead reaching.
+
+- Sleeping on the affected side.
+
+- Desk-based professional activities.
+
+- Light household activities.
+
+There was no previous history of shoulder injury or surgery.
+
+### Clinical timeline
+
+- Approximately five months before baseline: Gradual onset of right shoulder pain and stiffness.
+
+- Baseline: Initial clinical assessment and commencement of physiotherapy.
+
+- Day 10: Completion of 10 supervised sessions.
+
+- Week 6: Follow-up approximately four weeks after completion of supervised treatment.
+
+- Month 3: Further clinical review.
+
+- Month 6: Long-term functional outcome assessment.
+
+## 2. Clinical Assessment and Findings
+
+### Observation
+
+- Mild forward-head posture.
+
+- Rounded shoulders.
+
+- Right scapula slightly elevated and protracted at rest.
+
+- No gross swelling or visible muscle wasting.
+
+### Active Range of Motion (AROM)
+
+| Movement | Baseline
+
+| Shoulder flexion | 90°
+
+| Shoulder abduction | 70°
+
+| External rotation | 20°
+
+| Internal rotation | L5
+
+Pain and apprehension were present at end ranges.
+
+### Passive Range of Motion (PROM)
+
+| Movement | Baseline
+
+| Shoulder flexion | 100°
+
+| Shoulder abduction | 80°
+
+| External rotation | 30°
+
+| Internal rotation | L4
+
+A firm capsular end-feel was noted, with greater restriction in external rotation and abduction.
+
+### Muscle Strength
+
+Rotator cuff and deltoid isometric strength was approximately MRC grade 4-/5, with reduced performance secondary to pain inhibition.
+
+### Special Tests and Screening
+
+- Global shoulder movement restriction was consistent with adhesive capsulitis.
+
+- Empty-can and lag signs were negative for a full-thickness rotator cuff tear.
+
+- Cervical screening was clear.
+
+- Neurological screening, including sensation, reflexes and myotomes, was intact.
+
+- Skin sensation over the shoulder region was intact before heat application.
+
+- No reported red-flag features such as fever, unexplained weight loss or progressive neurological deficit.
+
+No imaging was performed.
+
+### Clinical Impression
+
+Right shoulder adhesive capsulitis (frozen shoulder), associated with type 2 diabetes mellitus, clinically corresponding to the late freezing / early frozen stage.
+
+Significant rotator cuff tear, advanced glenohumeral osteoarthritis and cervical radiculopathy were considered clinically unlikely based on the presenting history and examination.
+
+## 3. Outcome Measures and Results
+
+Clinical progress was monitored using:
+
+- Visual Analogue Scale (VAS) for pain.
+
+- Shoulder Pain and Disability Index (SPADI).
+
+- Active shoulder range of motion.
+
+- Passive shoulder range of motion.
+
+- Functional performance during activities of daily living.
+
+All measurements represent individual recorded observations.
+
+### A. Pain Assessment – VAS
+
+| Assessment | Rest Pain | Activity / Night Pain
+
+| Baseline | 6/10 | 8/10
+
+| Day 10 | 3/10 | 4/10
+
+| Week 6 | 2/10 | 3/10
+
+| 3 months | 1/10 | 2/10
+
+| 6 months | 1/10 | 1/10
+
+**Key outcome:** Activity/night pain decreased from 8/10 to 4/10 after 10 sessions and reached 1/10 at six months.
+
+#### Pain at Rest — Visual Statistics
+
+![Bar chart showing pain at rest reducing from 6 out of 10 at baseline to 1 out of 10 at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-resting-pain-vas-outcome-bar-chart-manikonda-hyderabad.webp)
+
+Pain at rest across all five assessment points.
+
+![Donut chart showing baseline pain score partitioned into improvement and remaining pain at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-resting-pain-vas-outcome-donut-chart-manikonda-hyderabad.webp)
+
+Baseline pain score: improvement and remaining score at six months.
+
+![Line graph showing pain at rest across six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-resting-pain-vas-outcome-line-chart-manikonda-hyderabad.webp)
+
+Six-month pain-at-rest progression.
+
+#### Activity / Night Pain — Visual Statistics
+
+![Bar chart showing activity and night pain reducing from 8 out of 10 to 1 out of 10](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-activity-night-pain-vas-outcome-bar-chart-manikonda-hyderabad.webp)
+
+Activity and night pain across all five assessment points.
+
+![Donut chart showing activity pain improvement and remaining score at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-activity-night-pain-vas-outcome-donut-chart-manikonda-hyderabad.webp)
+
+Baseline activity/night pain score: improvement and remaining score.
+
+![Line graph showing activity and night pain progression over six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-activity-night-pain-vas-outcome-line-chart-manikonda-hyderabad.webp)
+
+Six-month activity/night pain progression.
+
+### B. Shoulder Pain and Disability Index (SPADI)
+
+| Assessment | SPADI Score
+
+| Baseline | 68
+
+| Day 10 | 42
+
+| Week 6 | 34
+
+| 3 months | 22
+
+| 6 months | 15
+
+**Key outcome:** SPADI improved by 26 points after 10 sessions, representing approximately 38.2% reduction from baseline.
+
+At six months, the score had improved by 53 points, representing approximately 77.9% reduction from baseline.
+
+Lower SPADI scores indicate reduced shoulder pain and disability.
+
+#### SPADI — Visual Statistics
+
+![Bar chart showing SPADI score improving from 68 at baseline to 15 at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-spadi-outcome-bar-chart-manikonda-hyderabad.webp)
+
+SPADI scores across all five assessment points.
+
+![Donut chart showing SPADI score improvement and remaining score at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-spadi-outcome-donut-chart-manikonda-hyderabad.webp)
+
+Baseline SPADI score: improvement and remaining score at six months.
+
+![Line graph showing SPADI improvement over six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-spadi-outcome-line-chart-manikonda-hyderabad.webp)
+
+Six-month SPADI progression.
+
+### C. Active Range of Motion (AROM)
+
+| Movement | Baseline | Day 10 | Week 6 | 3 Months | 6 Months
+
+| Flexion | 90° | 125° | 138° | 152° | 158°
+
+| Abduction | 70° | 105° | 122° | 142° | 152°
+
+| External rotation | 20° | 40° | 48° | 58° | 68°
+
+| Internal rotation | L5 | L2 | T12 | T10 | T9
+
+#### Active Flexion — Visual Statistics
+
+![Bar chart showing active shoulder flexion increasing from 90 degrees to 158 degrees](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-flexion-outcome-bar-chart-manikonda-hyderabad.webp)
+
+Active shoulder flexion across all assessment points.
+
+![Donut chart showing baseline active flexion and measured gain at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-flexion-outcome-donut-chart-manikonda-hyderabad.webp)
+
+Baseline flexion and measured gain at six months.
+
+![Line graph showing active shoulder flexion progression over six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-flexion-outcome-line-chart-manikonda-hyderabad.webp)
+
+Six-month active flexion progression.
+
+#### Active Abduction — Visual Statistics
+
+![Bar chart showing active shoulder abduction increasing from 70 degrees to 152 degrees](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-shoulder-abduction-outcome-bar-chart-manikonda-hyderabad.webp)
+
+Active shoulder abduction across all assessment points.
+
+![Donut chart showing baseline active abduction and measured gain at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-shoulder-abduction-outcome-donut-chart-manikonda-hyderabad.webp)
+
+Baseline abduction and measured gain at six months.
+
+![Line graph showing active shoulder abduction progression over six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-shoulder-abduction-outcome-line-chart-manikonda-hyderabad.webp)
+
+Six-month active abduction progression.
+
+#### Active External Rotation — Visual Statistics
+
+![Bar chart showing active external rotation increasing from 20 degrees to 68 degrees](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-external-rotation-outcome-bar-chart-manikonda-hyderabad.webp)
+
+Active external rotation across all assessment points.
+
+![Donut chart showing baseline external rotation and measured gain at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-external-rotation-outcome-donut-chart-manikonda-hyderabad.webp)
+
+Baseline external rotation and measured gain at six months.
+
+![Line graph showing active external rotation progression over six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-external-rotation-outcome-line-chart-manikonda-hyderabad.webp)
+
+Six-month active external rotation progression.
+
+### D. Passive Range of Motion (PROM)
+
+| Movement | Baseline | Day 10 | Week 6 | 3 Months | 6 Months
+
+| Flexion | 100° | 135° | 148° | 160° | 168°
+
+#### Passive Flexion — Visual Statistics
+
+![Bar chart showing passive shoulder flexion increasing from 100 degrees to 168 degrees](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-passive-flexion-outcome-bar-chart-manikonda-hyderabad.webp)
+
+Passive shoulder flexion across all assessment points.
+
+![Donut chart showing baseline passive flexion and measured gain at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-passive-flexion-outcome-donut-chart-manikonda-hyderabad.webp)
+
+Baseline passive flexion and measured gain at six months.
+
+![Line graph showing passive shoulder flexion progression over six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-passive-flexion-outcome-line-chart-manikonda-hyderabad.webp)
+
+Six-month passive flexion progression.
+
+### E. Active Internal Rotation — Vertebral-Level Progression
+
+![Progression of active internal rotation from L5 at baseline to T9 at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-active-internal-rotation-vertebral-level-progression-chart-manikonda-hyderabad.webp)
+
+Recorded vertebral-level progression. Vertebral levels are categorical measurements and are not converted into degrees.
+
+### F. Major Clinical Improvements
+
+| Outcome | Baseline | Day 10 | 6 Months
+
+| Activity/night pain | 8/10 | 4/10 | 1/10
+
+| SPADI | 68 | 42 | 15
+
+| Active flexion | 90° | 125° | 158°
+
+| Active abduction | 70° | 105° | 152°
+
+| Active external rotation | 20° | 40° | 68°
+
+| Passive flexion | 100° | 135° | 168°
+
+**Overall clinical outcome:** Substantial improvement in pain, shoulder mobility and functional independence was recorded over the six-month follow-up period.
+
+## 4. Functional Performance
+
+| Functional activity | Baseline | Day 10 | 6 Months
+
+| Dressing | Difficult and painful | Independent with mild discomfort | Independent with minimal difficulty
+
+| Overhead reaching | Highly limited | Partial reach with compensation | Near-full functional reach
+
+| Sleeping on affected side | Disturbed 2–4 times/night | Occasional disturbance | Mostly undisturbed
+
+| Desk and light work | Limited | Improved tolerance | Unrestricted with posture awareness
+
+The patient demonstrated progressive improvements in everyday activities, with meaningful gains in independence.
+
+![Functional recovery milestones from severe limitation at baseline to functional independence at six months](https://www.drhamidphysio.in/images/patient-resources/frozen-shoulder-case-study/frozen-shoulder-functional-recovery-timeline-chart-manikonda-hyderabad.webp)
+
+Functional recovery milestones across the follow-up period.
+
+## 5. Physiotherapy Treatment Programme
+
+**Treatment duration:** 10 consecutive days.
+
+**Total supervised sessions:** 10.
+
+The programme was individualised according to the patient's symptoms, movement restrictions and tolerance.
+
+### Sessions 1–4: Pain Modulation and Gentle Mobility
+
+Treatment included:
+
+- Therapeutic ultrasound over the glenohumeral region using pulsed parameters within tolerance.
+
+- Interferential therapy (IFT) over the painful shoulder region.
+
+- Gentle grade I–II glenohumeral joint mobilisation.
+
+- Distraction and inferior/posterior glides.
+
+- Physiotherapist-applied posterior shoulder capsule stretching.
+
+- Codman's pendulum exercises.
+
+- Gentle shoulder pulley-assisted elevation.
+
+- Moist heat after confirming intact skin sensation.
+
+- Education regarding recovery expectations and activity modification.
+
+### Sessions 5–8: Progressive Mobility and Early Motor Control
+
+Treatment progression included:
+
+- Progression of joint mobilisation according to irritability.
+
+- Continued posterior capsule stretching.
+
+- Light rotator cuff isometric exercises.
+
+- Active-assisted shoulder range of motion.
+
+- Shoulder pulley exercises.
+
+- Scapular setting.
+
+- Postural correction and movement education.
+
+### Sessions 9–10: Strengthening and Functional Restoration
+
+Treatment included:
+
+- Theraband external rotation.
+
+- Theraband internal rotation.
+
+- Scaption within a comfortable range.
+
+- Functional reaching exercises.
+
+- Dressing-related functional practice.
+
+- Home exercise programme finalisation.
+
+- Ergonomic and activity-modification advice.
+
+### Home Exercise Programme
+
+The patient was instructed to perform a daily home programme consisting of:
+
+- Moist heat.
+
+- Codman's pendulum exercises.
+
+- Shoulder pulley exercises.
+
+- Posterior capsule stretching.
+
+- Light rotator cuff exercises.
+
+- Postural correction and holds.
+
+Exercise dosage was progressed according to tolerance.
+
+Adherence was reported as good during follow-up reviews.
+
+No adverse events were reported during supervised treatment or the home programme.
+
+Diabetes management, including HbA1c monitoring, remained under the care of the patient's diabetologist.
+
+## 6. Clinical Progress and Follow-up
+
+### Day 10: Immediate Treatment Outcome
+
+After completing 10 consecutive supervised sessions:
+
+- Activity/night pain decreased from 8/10 to 4/10.
+
+- SPADI improved from 68 to 42.
+
+- Active shoulder flexion increased from 90° to 125°.
+
+- Active shoulder abduction increased from 70° to 105°.
+
+- Dressing and light daily activities became easier.
+
+- Sleep disturbance reduced.
+
+### Week 6: Continued Functional Improvement
+
+At approximately four weeks after supervised treatment completion:
+
+- Activity/night pain was 3/10.
+
+- SPADI improved to 34.
+
+- Active shoulder flexion reached 138°.
+
+- Active shoulder abduction reached 122°.
+
+- Sleep and desk-work tolerance improved.
+
+### Three-Month Follow-up
+
+Further improvements were recorded:
+
+- Activity/night pain reduced to 2/10.
+
+- SPADI reached 22.
+
+- Active flexion improved to 152°.
+
+- Active abduction improved to 142°.
+
+- Functional independence approached normal daily requirements.
+
+### Six-Month Follow-up
+
+At six months from baseline:
+
+- Activity/night pain reduced to 1/10.
+
+- Rest pain remained at 1/10.
+
+- SPADI improved to 15.
+
+- Active shoulder flexion reached 158°.
+
+- Active shoulder abduction reached 152°.
+
+- Active external rotation reached 68°.
+
+- Passive flexion reached 168°.
+
+The patient reported functional independence during daily activities and desk-based work, with mild residual end-range stiffness, particularly in external rotation and full overhead elevation.
+
+### Patient Perspective
+
+The patient valued the early reduction in night pain, the structured daily physiotherapy programme and the explanation regarding continued recovery through consistent self-management.
+
+He expressed satisfaction with his measurable clinical progress and improved ability to perform everyday activities.
+
+## 7. Clinical Discussion and Evidence Context
+
+Adhesive capsulitis is characterised by progressive shoulder pain and restriction of both active and passive glenohumeral movements.
+
+The condition involves inflammatory changes followed by capsular fibrosis and contracture, producing characteristic movement restrictions, particularly in external rotation.
+
+Type 2 diabetes mellitus is a recognised risk factor for adhesive capsulitis and may be associated with a more prolonged recovery.
+
+Physiotherapy plays an important role in conservative management through:
+
+- Pain management.
+
+- Joint mobilisation.
+
+- Progressive mobility exercises.
+
+- Stretching.
+
+- Rotator cuff strengthening.
+
+- Scapular control.
+
+- Functional rehabilitation.
+
+- Patient education and home exercise adherence.
+
+In this case, the treatment programme combined physical modalities, manual therapy, therapeutic exercises and structured self-management.
+
+The patient's early improvement was demonstrated through reductions in pain and disability, accompanied by measurable gains in shoulder range of motion.
+
+Further improvements were recorded throughout the six-month follow-up period.
+
+Natural recovery is also an important consideration in adhesive capsulitis. The individual contribution of physiotherapy and natural recovery cannot be separated in a single-patient case report.
+
+## 8. Clinical Limitations
+
+- This is a single-patient clinical case report.
+
+- No comparison group was included.
+
+- Findings represent the clinical progress of this individual patient.
+
+- The treatment programme involved 10 consecutive supervised sessions.
+
+- Longer-term improvements were accompanied by continued home exercise adherence.
+
+- No imaging was performed.
+
+- Mild residual restriction remained at six months.
+
+## 9. Conclusion
+
+This case demonstrates substantial clinical and functional improvement following an individualised conservative physiotherapy programme for right-sided adhesive capsulitis associated with type 2 diabetes.
+
+After 10 consecutive supervised physiotherapy sessions, activity/night pain decreased from 8/10 to 4/10, SPADI improved from 68 to 42, and active shoulder flexion increased from 90° to 125°.
+
+At six months from baseline, the patient achieved further improvements, with activity/night pain reduced to 1/10, SPADI reaching 15 and active shoulder flexion improving to 158°.
+
+The patient regained functional independence in daily activities, with only mild residual end-range stiffness.
+
+This case highlights the importance of individualised physiotherapy assessment, progressive rehabilitation, structured home exercises and continued clinical follow-up in managing frozen shoulder.
+
+## About Dr. Hamid's Physio and Pain Clinic
+
+Dr. Hamid's Physio and Pain Clinic provides personalised physiotherapy assessment, pain management and rehabilitation services in Manikonda, Hyderabad, Telangana.
+
+The clinic is led by:
+
+**Dr. Mohammed Hamid Ali — BPT, MPT (Ortho), Regd. No. 0413, Consultant Physiotherapist, Founder.**
+
+The clinic focuses on individualised, one-to-one physiotherapy care for musculoskeletal pain, shoulder conditions, back pain, neck pain, knee pain and rehabilitation needs.
+
+**Clinic Address:**
+
+4-3/81, Opp. HDFC Bank ATM, near Friends Colony Park, Friends Colony, Puppalguda, Manikonda, Hyderabad, Telangana 500089.
+
+**Website:** [drhamidphysio.in](https://www.drhamidphysio.in/)
+
+**WhatsApp:** +91 76010 26596
+
+### Get Personalised Physiotherapy for Frozen Shoulder
+
+Experiencing shoulder stiffness, persistent shoulder pain, difficulty reaching overhead or difficulty dressing?
+
+Get a personalised shoulder assessment at Dr. Hamid's Physio and Pain Clinic, Manikonda, Hyderabad.
+
+[Book your shoulder assessment on WhatsApp](https://wa.me/917601026596).
+
+## When to Seek Professional Assessment
+
+Consider a professional assessment if:
+
+- Shoulder pain and progressive stiffness persist for several weeks.
+
+- Night pain repeatedly interrupts sleep.
+
+- Dressing and overhead reaching become difficult.
+
+- Shoulder mobility progressively decreases.
+
+- Everyday activities become increasingly restricted.
+
+Individual assessment helps determine the appropriate management and rehabilitation programme.
+
+## Medical Disclaimer
+
+This case study is presented for educational and informational purposes. It describes the clinical progress of one anonymised patient and does not replace an individual medical or physiotherapy assessment. Treatment decisions should be based on the patient's clinical presentation and professional evaluation.
+
+## Selected References
+
+- Kelley MJ, Shaffer MA, Kuhn JE, et al. Shoulder pain and mobility deficits: adhesive capsulitis. *J Orthop Sports Phys Ther.* 2013;43(5):A1–A31.
+
+- Roach KE, Budiman-Mak E, Songsiridej N, Lertratanakul Y. Development of a shoulder pain and disability index. *Arthritis Care Res.* 1991;4(4):143–149.
+
+- Roy JS, MacDermid JC, Woodhouse LJ. Measuring shoulder function: a systematic review of four questionnaires. *Arthritis Rheum.* 2009;61(5):623–632.
+
+- Hand C, Clipsham K, Rees JL, Carr AJ. Long-term outcome of frozen shoulder. *J Shoulder Elbow Surg.* 2008;17(2):231–236.
+
+- Magee DJ. *Orthopedic Physical Assessment.* 7th ed. Elsevier; 2020.
+
+- British Elbow and Shoulder Society. Frozen Shoulder Patient Care Pathway.
+
+## Frequently Asked Questions
+
+**1. How long does frozen shoulder usually last?**
+
+Frozen shoulder can progress over several months and may take 12–36 months or longer to resolve substantially. Recovery varies between individuals.
+
+**2. Is daily physiotherapy necessary for frozen shoulder?**
+
+Treatment frequency depends on pain, irritability, movement restrictions and individual rehabilitation requirements. Some patients benefit from more intensive supervised treatment, while others follow programmes with fewer supervised sessions and regular home exercises.
+
+**3. Does diabetes affect frozen shoulder recovery?**
+
+Diabetes is a recognised risk factor for frozen shoulder and may be associated with a longer recovery period. Diabetes management should remain coordinated with the treating physician.
+
+**4. Will full shoulder movement return?**
+
+Many patients achieve substantial improvements in shoulder mobility and function. Some may retain mild residual stiffness.
+
+**5. When should I seek physiotherapy for frozen shoulder?**
+
+A physiotherapy assessment is advisable when progressive shoulder stiffness, pain, night discomfort or difficulty performing daily activities develops.
+
+---
+
+**Dr. Hamid's Physio and Pain Clinic | Manikonda, Hyderabad, Telangana, India**
 
 
 ---
@@ -17184,7 +17871,10 @@ Patient resources · Shoulder pain
 
 [Patient question: Could shoulder pain and stiffness be frozen shoulder?](https://www.drhamidphysio.in/blogs/frozen-shoulder-physiotherapy-near-me-manikonda)
 
-No shoulder-specific case study or general shoulder-pain guide is currently published.
+[Case evidence: Frozen shoulder physiotherapy case study](https://www.drhamidphysio.in/conditions#frozen-shoulder-case-study)
+
+Review one anonymised case, its recorded outcomes, treatment programme, and six-month follow-up. This single case describes one person's experience and does not predict another person's outcome.
+
 [Read patient reviews mentioning shoulder pain](https://www.drhamidphysio.in/reviews#reviews-shoulder-pain)
 
 [Browse Patient Resources](https://www.drhamidphysio.in/conditions#patient-resources)
