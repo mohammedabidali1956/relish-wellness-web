@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 
 import StructuredData from "@/components/StructuredData";
 import { Helmet } from "react-helmet";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const BlogsPage = () => {
   const posts = getBlogPostsNewestFirst();
@@ -22,6 +23,7 @@ const BlogsPage = () => {
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-14 md:py-20">
         <div className="container">
+          <PageBreadcrumbs items={[{ label: "Home", path: "/" }, { label: "Blogs", path: "/blogs" }]} className="mb-5" />
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-gray-900">
               Health & Wellness <span className="text-relish-700">Insights</span>

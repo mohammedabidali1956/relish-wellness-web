@@ -81,6 +81,7 @@ const quickLinks = [
   { to: "/services/sports-injury-physiotherapy-manikonda", label: "Sports Rehab" },
   { to: "/services/post-surgical-rehabilitation-manikonda", label: "Post-Surgery Rehab" },
   { to: "/services/home-visit-physiotherapy-manikonda", label: "Home Physiotherapy Visits" },
+  { to: "/locations", label: "Clinic Locations" },
   { to: "/reviews", label: "Reviews" },
   { to: "/blogs", label: "Blogs" },
   { to: "/contact", label: "Contact the Clinic" },

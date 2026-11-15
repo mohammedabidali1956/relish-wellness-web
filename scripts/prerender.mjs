@@ -194,6 +194,7 @@ try {
   const { googleReviews } = await vite.ssrLoadModule("/src/pages/HomePage.tsx");
   const { allServices } = await vite.ssrLoadModule("/src/data/services/index.ts");
   const { blogPosts } = await vite.ssrLoadModule("/src/data/blogPosts.ts");
+  const { localityPages } = await vite.ssrLoadModule("/src/data/localityPages.ts");
   const {
     FACEBOOK_PROFILE_URL,
     GOOGLE_BUSINESS_PROFILE_URL,
@@ -210,6 +211,8 @@ try {
     "/reviews",
     "/blogs",
     "/contact",
+    "/locations",
+    ...localityPages.map(({ slug }) => `/locations/${slug}`),
     "/privacy-policy",
     "/terms-and-conditions",
     ...allServices.flatMap(({ slug }) => [`/services/${slug}`, `/${slug}`]),

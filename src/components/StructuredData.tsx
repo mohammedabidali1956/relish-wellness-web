@@ -48,8 +48,8 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription, include
     "founder": {
       "@type": "Person",
       "name": "Dr. Mohammed Hamid Ali",
-      "jobTitle": "Consultant Physiotherapist and Founder",
-      "description": "BPT, MPT (Ortho); Registration No. 0413 with Government of Telangana; 8+ years of clinical experience."
+      "jobTitle": "Orthopedic & Pain Physiotherapist",
+      "description": "BPT, MPT (Orthopedics); REGD.NO 0413; Telangana State Board Registered. Founder & Lead Physiotherapist, Dr Hamid’s Physio and Pain Clinic."
     },
     "areaServed": [
       {

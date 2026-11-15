@@ -13,6 +13,7 @@ import { openWhatsApp } from "@/lib/whatsapp";
 import { trackAnalyticsEvent } from "@/lib/analytics";
 import { CLINIC_BUSINESS_SCHEMA_ID, CLINIC_LOGO_URL } from "@/lib/businessInfo";
 import StructuredData from "@/components/StructuredData";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import MedicalReviewByline from "@/components/MedicalReviewByline";
 import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
 import {
@@ -153,6 +154,7 @@ const ServicesPage: React.FC = () => {
       {/* Hero Header */}
       <section className="border-b border-[#e5dec9] bg-gradient-to-b from-[#faf6ed] via-[#f7f1e4] to-[#f2e9d9] py-14 sm:py-16 md:py-20">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6">
+          <PageBreadcrumbs items={[{ label: "Home", path: "/" }, { label: "Services", path: "/services" }]} className="mb-5" />
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <div className="inline-flex items-center gap-2 bg-[#f4ede0] border border-[#e5dec9] px-3.5 py-1 rounded-full text-xs font-semibold text-[#8a5d24]">
               <Sparkles className="w-3.5 h-3.5" />

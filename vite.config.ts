@@ -31,13 +31,13 @@ const setMdxAttribute = (node: MdxNode, name: string, value: string | { type: st
 };
 
 const visualStatisticsHeadings = new Set([
-  "Pain at Rest — Visual Statistics",
-  "Activity / Night Pain — Visual Statistics",
-  "SPADI — Visual Statistics",
-  "Active Flexion — Visual Statistics",
-  "Active Abduction — Visual Statistics",
-  "Active External Rotation — Visual Statistics",
-  "Passive Flexion — Visual Statistics",
+  "Pain at Rest: Visual Statistics",
+  "Activity / Night Pain: Visual Statistics",
+  "SPADI: Visual Statistics",
+  "Active Flexion: Visual Statistics",
+  "Active Abduction: Visual Statistics",
+  "Active External Rotation: Visual Statistics",
+  "Passive Flexion: Visual Statistics",
 ]);
 
 const stripFrozenShoulderFrontmatter = {

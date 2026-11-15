@@ -40,6 +40,8 @@ export const BlogPostPage = lazyPage(() => import("@/pages/BlogPostPage"));
 export const ConditionsPage = lazyPage(() => import("@/pages/ConditionsPage"));
 export const ServiceDetailPage = lazyPage(() => import("@/pages/ServiceDetailPage"));
 export const ContactPage = lazyPage(() => import("@/pages/ContactPage"));
+export const LocationsPage = lazyPage(() => import("@/pages/LocationsPage"));
+export const LocalityPage = lazyPage(() => import("@/pages/LocalityPage"));
 export const PrivacyPolicyPage = lazyPage(() => import("@/pages/PrivacyPolicyPage"));
 export const TermsAndConditionsPage = lazyPage(() => import("@/pages/TermsAndConditionsPage"));
 export const NotFound = lazyPage(() => import("@/pages/NotFound"));
@@ -58,6 +60,7 @@ export async function preloadRoute(url: string): Promise<void> {
       case "reviews": return void (await ReviewsPage.preload());
       case "blogs": return void (await BlogsPage.preload());
       case "contact": return void (await ContactPage.preload());
+      case "locations": return void (await LocationsPage.preload());
       case "privacy-policy": return void (await PrivacyPolicyPage.preload());
       case "terms-and-conditions": return void (await TermsAndConditionsPage.preload());
       default: return void (await ServiceDetailPage.preload());
@@ -67,6 +70,7 @@ export async function preloadRoute(url: string): Promise<void> {
   if (segments.length === 2) {
     switch (section) {
       case "services": return void (await ServiceDetailPage.preload());
+      case "locations": return void (await LocalityPage.preload());
       case "blogs":
         await Promise.all([
           BlogPostPage.preload(),

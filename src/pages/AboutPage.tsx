@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import StructuredData from "@/components/StructuredData";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import { PRACTO_PROFILE_URL } from "@/lib/businessInfo";
 import { whatsappUrl } from "@/lib/whatsapp";
 
@@ -37,6 +38,9 @@ const AboutPage = () => {
 
       <section id="practitioner-profile" className="border-b border-[#e5dec9] bg-[#fffdf8] py-12 md:py-16">
         <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 md:grid-cols-[0.8fr_1.2fr] md:gap-12 md:px-6">
+          <div className="md:col-span-2">
+            <PageBreadcrumbs items={[{ label: "Home", path: "/" }, { label: "About", path: "/about" }]} />
+          </div>
           <figure className="mx-auto w-full max-w-sm">
             <img
               src="/images/doctor/dr-hamid-hero.webp"

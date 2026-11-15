@@ -4,6 +4,7 @@ import AppointmentForm from "@/components/AppointmentForm";
 import ContactMap from "@/components/ContactMap";
 import StructuredData from "@/components/StructuredData";
 import { CLINIC_BUSINESS_SCHEMA_ID, GOOGLE_BUSINESS_PROFILE_URL, GOOGLE_MAPS_EMBED_URL, OFFICIAL_CLINIC_EMAIL } from "@/lib/businessInfo";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const ContactPage = () => {
   const canonicalUrl = "https://www.drhamidphysio.in/contact";
@@ -34,6 +35,7 @@ const ContactPage = () => {
 
       <section className="border-b border-[#e5dec9] bg-gradient-to-b from-[#faf6ed] to-[#f2e9d9] py-14 md:py-20">
         <div className="container max-w-5xl px-4">
+          <PageBreadcrumbs items={[{ label: "Home", path: "/" }, { label: "Contact", path: "/contact" }]} className="mb-5" />
           <p className="text-xs font-bold uppercase tracking-widest text-[#8a5d24]">Contact and appointments</p>
           <h1 className="mt-3 font-serif text-4xl font-bold leading-tight text-[#081a2e] sm:text-5xl">
             Contact Dr Hamid’s Physio and PAIN Clinic

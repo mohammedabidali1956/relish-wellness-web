@@ -8,6 +8,7 @@ import PatientResourceHub from "@/components/PatientResourceHub";
 import CaseStudyCharts from "@/components/CaseStudyCharts";
 import FrozenShoulderCaseStudy from "@/components/FrozenShoulderCaseStudy";
 import frozenShoulderSeo from "@/data/patientResources/frozenShoulderSeo";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const canonicalUrl = "https://www.drhamidphysio.in/conditions";
 const pageTitle = frozenShoulderSeo.title;
@@ -52,6 +53,7 @@ const ConditionsPage = () => {
         className="border-b border-[#e5dec9] bg-gradient-to-b from-[#faf6ed] to-[#f4ede0] px-4 py-12 md:py-16"
       >
         <div className="container max-w-4xl mx-auto text-center">
+          <PageBreadcrumbs items={[{ label: "Home", path: "/" }, { label: "Conditions & Patient Resources", path: "/conditions" }]} className="mb-5 text-left" />
           <span className="text-xs uppercase tracking-widest font-bold text-[#8a5d24]">
             Conditions and symptom guide
           </span>

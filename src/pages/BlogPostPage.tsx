@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 import { getBlogMetaDescription, getBlogMetaTitle, uppercasePainTerm } from "@/lib/seoText";
 import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
 import { patientTopicResources } from "@/data/patientResources";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const toIsoDate = (date?: string): string | undefined => {
   if (!date) return undefined;
@@ -135,6 +136,7 @@ const BlogPostPage = () => {
       {/* Hero Section */}
       <section className="border-b border-border bg-sand-50 py-8 md:py-14">
         <div className="container">
+          <PageBreadcrumbs items={[{ label: "Home", path: "/" }, { label: "Blogs", path: "/blogs" }, { label: pageTitle, path: `/blogs/${post.slug}` }]} className="mb-5" />
           <Link to="/blogs">
             <Button variant="outline" className="mb-6 border-relish-600 text-relish-600 hover:bg-relish-50">
               <ArrowLeft className="w-4 h-4 mr-2" />

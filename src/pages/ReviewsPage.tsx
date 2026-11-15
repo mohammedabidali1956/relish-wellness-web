@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import {
   clinicReviewCategories,
   clinicReviews,
@@ -59,6 +60,7 @@ const ReviewsPage = () => {
 
       <section id="reviews-introduction" className="border-b border-[#e5dec9] bg-[#fffdf8] py-14 md:py-18">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <PageBreadcrumbs items={[{ label: "Home", path: "/" }, { label: "Reviews", path: "/reviews" }]} className="mb-5" />
           <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#8a5d24]">Patient feedback</p>
           <h1 className="mt-4 max-w-4xl font-serif text-4xl font-bold leading-tight text-[#081a2e] sm:text-5xl">
             Patient Reviews of Dr Hamid’s Physio and PAIN Clinic in Manikonda

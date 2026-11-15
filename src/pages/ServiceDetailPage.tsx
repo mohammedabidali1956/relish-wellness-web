@@ -42,6 +42,8 @@ import { trackAnalyticsEvent } from "@/lib/analytics";
 import { getServiceMetaDescription, getServiceMetaTitle, uppercasePainTerm } from "@/lib/seoText";
 import { CLINIC_BUSINESS_SCHEMA_ID } from "@/lib/businessInfo";
 import ServicePatientResources from "@/components/ServicePatientResources";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
+import { localityPages } from "@/data/localityPages";
 
 import NotFound from "@/pages/NotFound";
 
@@ -58,6 +60,12 @@ export const ServiceDetailPage: React.FC = () => {
   const secondaryWhatsAppLabel = isHomeVisitService ? "Ask on WhatsApp" : "Chat on WhatsApp";
   const answerQuestions = service.localAnswer ? service.faqs.slice(0, 3) : [];
   const detailedFaqs = service.localAnswer ? service.faqs.slice(answerQuestions.length) : service.faqs;
+  const showNearbyLocalities = [
+    "back-pain-physiotherapy-manikonda",
+    "neck-pain-physiotherapy-manikonda",
+    "knee-pain-physiotherapy-manikonda",
+    "shoulder-pain-physiotherapy-manikonda",
+  ].includes(service.slug);
 
   const handleCall = () => {
     trackAnalyticsEvent("phone_click", {
@@ -210,21 +218,11 @@ export const ServiceDetailPage: React.FC = () => {
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 
-      {/* Top Breadcrumb Header */}
-      <nav aria-label="Breadcrumb" className="bg-[#f4ede0] border-b border-[#e5dec9] py-3 text-xs sm:text-sm text-[#4a5568]">
-        <div className="container max-w-6xl mx-auto px-4 sm:px-6 flex items-center gap-2 overflow-x-auto">
-          <Link to="/" className="hover:text-[#081a2e] flex items-center gap-1 shrink-0">
-            <Home className="w-3.5 h-3.5" />
-            <span>Home</span>
-          </Link>
-          <span>/</span>
-          <Link to="/services" className="hover:text-[#081a2e] shrink-0">
-            Services
-          </Link>
-          <span>/</span>
-          <span className="text-[#8a5d24] font-medium truncate">{service.title}</span>
+      <div className="border-b border-[#e5dec9] bg-[#f4ede0] py-3">
+        <div className="container max-w-6xl px-4 sm:px-6">
+          <PageBreadcrumbs items={[{ label: "Home", path: "/" }, { label: "Services", path: "/services" }, { label: service.title, path: `/services/${service.slug}` }]} />
         </div>
-      </nav>
+      </div>
 
       {/* Hero Section */}
       <section className="py-10 sm:py-14 md:py-16 border-b border-[#e5dec9] bg-gradient-to-b from-[#faf6ed] to-[#f6f0e2]">
@@ -580,13 +578,40 @@ export const ServiceDetailPage: React.FC = () => {
                 </Accordion>
               </div>
 
+              {showNearbyLocalities && (
+                <section id="nearby-locality-links" className="rounded-2xl border border-[#e5dec9] bg-[#fffdf8] p-6 sm:p-8">
+                  <h2 className="font-serif text-xl font-bold text-[#081a2e]">
+                    Patients from nearby Hyderabad localities
+                  </h2>
+                  <p className="mt-2 text-sm leading-relaxed text-[#4a5568]">
+                    The clinic is in Puppalguda, Manikonda. Patients can ask about this service from nearby areas and use the locality pages to check travel and appointment options.
+                  </p>
+                  <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                    {localityPages.map((locality) => (
+                      <li key={locality.slug}>
+                        <Link to={`/locations/${locality.slug}`} className="font-semibold text-[#8a5d24] underline underline-offset-2">
+                          {locality.locality}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
               {/* Related Health Articles (Internal Linking) */}
               {relatedBlogs.length > 0 && (
                 <div className="bg-white border border-[#e5dec9] rounded-2xl p-6 sm:p-8 shadow-xs space-y-4">
-                  <h3 className="font-serif text-xl font-bold text-[#081a2e] flex items-center gap-2">
-                    <BookOpen className="w-5 h-5 text-[#8a5d24]" />
-                    <span>Related Clinical Articles</span>
-                  </h3>
+                  {showNearbyLocalities ? (
+                    <h2 className="font-serif text-xl font-bold text-[#081a2e] flex items-center gap-2">
+                      <BookOpen className="w-5 h-5 text-[#8a5d24]" />
+                      <span>Related Clinical Articles</span>
+                    </h2>
+                  ) : (
+                    <h3 className="font-serif text-xl font-bold text-[#081a2e] flex items-center gap-2">
+                      <BookOpen className="w-5 h-5 text-[#8a5d24]" />
+                      <span>Related Clinical Articles</span>
+                    </h3>
+                  )}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {relatedBlogs.map((blog) => (
                       <Link

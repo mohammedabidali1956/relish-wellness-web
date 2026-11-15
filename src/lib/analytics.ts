@@ -4,13 +4,19 @@ type AnalyticsEvent =
   | "appointment_form_submit"
   | "phone_click"
   | "whatsapp_click"
-  | "directions_click";
+  | "directions_click"
+  | "booking_click";
 
 type PageCategory = "home" | "service" | "blog" | "contact" | "other";
 type CtaLocation = "header" | "footer" | "sticky" | "appointment_form" | "contact_page" | "service_page" | "blog_page" | "page_content";
 type AnalyticsEventParams = {
   page_category?: PageCategory;
   cta_location?: CtaLocation;
+  page_location?: string;
+  page_path?: string;
+  page_title?: string;
+  locality?: string;
+  link_url?: string;
 };
 
 type Gtag = (...args: [string, ...unknown[]]) => void;
@@ -50,6 +56,26 @@ const getCtaLocation = (element: Element): CtaLocation => {
   if (pathname.startsWith("/services")) return "service_page";
   if (pathname.startsWith("/blogs")) return "blog_page";
   return "page_content";
+};
+
+const getSafeInteractionUrl = (link: HTMLAnchorElement | null): string => {
+  if (!link) return "";
+  try {
+    const url = new URL(link.href, window.location.origin);
+    if (url.protocol === "tel:") return "tel:";
+    if (url.hostname === "wa.me" || url.hostname === "api.whatsapp.com") return `${url.origin}/`;
+    return `${url.origin}${url.pathname}`;
+  } catch {
+    return "";
+  }
+};
+
+const localityNamesBySlug: Record<string, string> = {
+  "lanco-hills-physiotherapy": "Lanco Hills",
+  "alkapur-township-physiotherapy": "Alkapur Township",
+  "narsingi-physiotherapy": "Narsingi",
+  "gachibowli-physiotherapy": "Gachibowli",
+  "hitec-city-physiotherapy": "HITEC City",
 };
 
 const allowedCampaignKeys = new Set([
@@ -165,26 +191,44 @@ const registerInteractionListeners = () => {
 
     const link = clickable instanceof HTMLAnchorElement ? clickable : null;
     const href = link?.getAttribute("href")?.trim().toLowerCase() ?? "";
+    const localitySlug = window.location.pathname.match(/^\/locations\/([^/]+)/)?.[1];
     const context: AnalyticsEventParams = {
       page_category: getPageCategory(window.location.pathname),
       cta_location: getCtaLocation(clickable),
     };
+    const localityRoot = clickable.closest<HTMLElement>("[data-locality]");
+    const locality = localityRoot?.dataset.locality ?? (localitySlug ? localityNamesBySlug[localitySlug] : undefined);
+    const localityContext: AnalyticsEventParams = locality
+      ? {
+          ...context,
+          page_location: getSafePageLocation(window.location.pathname),
+          page_path: window.location.pathname.split("?")[0].split("#")[0] || "/",
+          page_title: document.title.slice(0, 200),
+          locality: locality.slice(0, 100),
+          link_url: getSafeInteractionUrl(link),
+        }
+      : context;
     const label = (clickable.getAttribute("aria-label") ?? clickable.textContent ?? "")
       .trim()
       .toLowerCase();
     const appointmentForm = clickable.closest<HTMLFormElement>("#appointment-request-form");
     const appointmentSubmitButton =
       appointmentForm && clickable.matches("button[type='submit']");
-
-    if (
-      (href.startsWith("/contact#appointment-request") || href.startsWith("/#appointment")) ||
+    const isAppointmentClick =
+      href.startsWith("/contact#appointment-request") ||
+      href.startsWith("/#appointment") ||
       appointmentSubmitButton ||
       ((href.includes("wa.me/") || href.includes("api.whatsapp.com/")) &&
         /book|appointment|consultation/.test(label)) ||
       (clickable.tagName === "BUTTON" &&
         /book|appointment|consultation/.test(label) &&
-        !/callback/.test(label))
-    ) {
+        !/callback/.test(label));
+
+    if (locality && (clickable.dataset.localityEvent === "booking_click" || isAppointmentClick)) {
+      trackAnalyticsEvent("booking_click", localityContext);
+    }
+
+    if (isAppointmentClick && !locality) {
       trackAnalyticsEvent("appointment_cta_click", context);
     }
 
@@ -195,15 +239,15 @@ const registerInteractionListeners = () => {
     }
 
     if (href.startsWith("tel:")) {
-      trackAnalyticsEvent("phone_click", context);
+      trackAnalyticsEvent("phone_click", localityContext);
     } else if (href.includes("wa.me/") || href.includes("api.whatsapp.com/")) {
-      trackAnalyticsEvent("whatsapp_click", context);
+      trackAnalyticsEvent("whatsapp_click", localityContext);
     } else if (
       href.includes("maps.app.goo.gl/") ||
       href.includes("google.com/maps") ||
       href.includes("maps.google.")
     ) {
-      trackAnalyticsEvent("directions_click", context);
+      trackAnalyticsEvent("directions_click", localityContext);
     }
   });
 };
@@ -280,7 +324,7 @@ export const trackAnalyticsEvent = (
     return;
   }
 
-  // Only static labels are sent. Never pass form values, message text, or full links.
+  // Only page metadata and a sanitized destination are sent; never pass form values or message text.
   window.gtag("event", eventName, {
     ...params,
     page_category: params.page_category ?? getPageCategory(window.location.pathname),
