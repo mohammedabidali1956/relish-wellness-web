@@ -40,7 +40,6 @@ const longServiceMetaDescriptions: Record<string, string> = {
   "cervical-radiculopathy-physiotherapy-manikonda": "Physiotherapy for cervical radiculopathy in Manikonda may address arm pain, tingling or weakness after assessment.",
   "foot-drop-physiotherapy-manikonda": "Foot drop physiotherapy in Manikonda supports assessment of walking, strength and daily function. Care depends on its cause.",
   "gym-injuries-physiotherapy-manikonda": "Assessment and individual rehabilitation for gym-related strains and shoulder, knee or back pain in Manikonda.",
-  "home-visit-physiotherapy-manikonda": "Home physiotherapy may be available within an approximate 5 km target area around Manikonda. Confirm address, suitability, fee and availability.",
   "geriatric-physiotherapy-manikonda": "Geriatric physiotherapy in Manikonda for assessed mobility, balance and arthritis needs. Ask the clinic about suitability and home visits.",
   "knee-pain-physiotherapy-manikonda": "Knee pain physiotherapy in Manikonda starts with assessment of symptoms, movement and goals. Care depends on individual findings.",
   "knee-rehabilitation-manikonda": "Knee rehabilitation after surgery or injury in Manikonda, guided by assessment and the treating team. Recovery varies by person.",

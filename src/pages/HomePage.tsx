@@ -437,7 +437,7 @@ const HomePage = () => {
               </div>
             <div className="col-span-full space-y-5 sm:space-y-6 lg:col-span-7 lg:col-start-1 lg:row-start-2">
               <p className="max-w-[42rem] text-base font-normal leading-[1.7] text-[#4a5568] sm:text-lg lg:text-xl">
-                Dr Hamid’s Physio and Pain Clinic provides one-to-one physiotherapy in Puppalguda, Manikonda, led by Dr. Mohammed Hamid Ali, Orthopedic &amp; Pain Physiotherapist, BPT, MPT (Orthopedics), REGD.NO 0413, Telangana State Board Registered. Explore the <Link to="/services" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">existing physiotherapy services</Link> or ask the clinic whether a <Link to="/services/home-visit-physiotherapy-manikonda" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">Home Visit Physiotherapy appointment</Link> is suitable for your address.
+                Dr Hamid’s Physio and Pain Clinic provides one-to-one physiotherapy in Puppalguda, Manikonda, led by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Telangana State Board Registered, Registration No. 0413, Orthopedic &amp; Pain Physiotherapist. Explore the <Link to="/services" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">existing physiotherapy services</Link> or ask the clinic whether a <Link to="/services/home-visit-physiotherapy-manikonda" className="font-semibold text-[#081a2e] underline decoration-[#8a5d24] underline-offset-2">Home Visit Physiotherapy appointment</Link> is suitable for your address.
               </p>
 
               <div className="flex flex-wrap items-center gap-3 pt-1 sm:gap-4 sm:pt-2">
@@ -641,10 +641,10 @@ const HomePage = () => {
                     Dr. Mohammed Hamid Ali
                   </h3>
                   <p className="text-sm font-medium text-[#8a5d24]">
-                    BPT, MPT (Orthopedics) · REGD.NO 0413 · Telangana State Board Registered · 8+ years’ clinical experience
+                    Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Telangana State Board Registered, Registration No. 0413, Orthopedic &amp; Pain Physiotherapist.
                   </p>
                   <p className="text-xs text-[#5e6b78] mt-2">
-                    Orthopedic &amp; Pain Physiotherapist · Founder &amp; Lead Physiotherapist
+                    Founder &amp; Lead Physiotherapist · 8+ years’ clinical experience
                   </p>
                 </div>
               </div>
@@ -658,7 +658,7 @@ const HomePage = () => {
               </h2>
 
               <p className="text-base text-[#4a5568] leading-relaxed">
-                Dr Hamid’s Physio and Pain Clinic provides one-to-one physiotherapy and rehabilitation in Manikonda, Hyderabad, led by Dr. Mohammed Hamid Ali, Orthopedic &amp; Pain Physiotherapist, BPT, MPT (Orthopedics), REGD.NO 0413, Telangana State Board Registered. The clinic was established in 2021.
+                Dr Hamid’s Physio and Pain Clinic provides one-to-one physiotherapy and rehabilitation in Manikonda, Hyderabad, led by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Telangana State Board Registered, Registration No. 0413, Orthopedic &amp; Pain Physiotherapist. The clinic was established in 2021.
               </p>
 
               <p className="text-base text-[#4a5568] leading-relaxed">

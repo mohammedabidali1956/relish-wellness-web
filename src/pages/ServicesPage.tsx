@@ -181,7 +181,7 @@ const ServicesPage: React.FC = () => {
                 Call or WhatsApp: <a href="tel:+917601026596" className="text-[#8a5d24] hover:underline">+91 76010 26596</a>
               </p>
               <p className="text-xs text-[#64748b]">
-                The clinic is in Manikonda. Home visits target areas within about 5 km; exact-address coverage and availability must be confirmed with the clinic.
+                Home visits are available in Lanco Hills, Alkapur Township, Narsingi, Gachibowli, and HITEC City. Gachibowli visits are available irrespective of distance; confirm the exact address and appointment availability with the clinic.
               </p>
               <div className="flex flex-col sm:flex-row gap-2 pt-1">
                 <Button asChild className="bg-[#081a2e] hover:bg-[#122842] text-white text-sm">
@@ -528,7 +528,7 @@ const ServicesPage: React.FC = () => {
                 Call or WhatsApp: +91 76010 26596
               </p>
               <p className="text-xs sm:text-sm text-slate-300">
-                The clinic is in Manikonda. Home visits target areas within about 5 km; exact-address coverage and availability must be confirmed with the clinic.
+                Home visits are available in Lanco Hills, Alkapur Township, Narsingi, Gachibowli, and HITEC City. Gachibowli visits are available irrespective of distance; confirm the exact address and appointment availability with the clinic.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <Button asChild className="bg-[#8a5d24] hover:bg-[#a67232] text-white font-semibold px-6 py-5 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md">

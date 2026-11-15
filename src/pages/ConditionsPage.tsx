@@ -5,7 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import MedicalReviewByline from "@/components/MedicalReviewByline";
 import { MEDICAL_REVIEW_DATE, MEDICAL_REVIEWER_SCHEMA } from "@/lib/medicalReview";
 import PatientResourceHub from "@/components/PatientResourceHub";
-import CaseStudyCharts from "@/components/CaseStudyCharts";
+import DeferredCaseStudyCharts from "@/components/DeferredCaseStudyCharts";
 import FrozenShoulderCaseStudy from "@/components/FrozenShoulderCaseStudy";
 import frozenShoulderSeo from "@/data/patientResources/frozenShoulderSeo";
 import PageBreadcrumbs from "@/components/PageBreadcrumbs";
@@ -113,7 +113,7 @@ const ConditionsPage = () => {
               <h2 className="font-serif text-2xl font-bold text-[#081a2e]">What did one anonymised cervical case show?</h2>
               <p className="text-sm leading-relaxed text-[#334155]">One 35-year-old female IT professional with two months of neck pain, stiffness, restricted movement, cervical spondylosis, and C3–C7 disc bulges completed seven individualised conservative physiotherapy sessions over seven days. Her neurological screen was documented as normal, with no neurological symptoms.</p>
               <p className="text-sm leading-relaxed text-[#334155]"><strong>Measured findings:</strong> VAS pain changed from 8/10 to 1/10 and goniometer-measured cervical movement reached the documented full pain-free range. <strong>Patient-reported:</strong> approximately 70–80% overall relief. This describes one patient's experience, not a typical or guaranteed outcome.</p>
-              <CaseStudyCharts caseStudy="cervical" />
+              <DeferredCaseStudyCharts caseStudy="cervical" />
               <details className="rounded-xl border border-[#e5dec9] bg-[#faf6ed] p-4">
                 <summary className="cursor-pointer font-semibold text-[#081a2e]">View the full case measurements, care, and follow-up</summary>
                 <div className="mt-4 space-y-5 text-sm leading-relaxed text-[#334155]">
@@ -176,7 +176,7 @@ const ConditionsPage = () => {
               <h2 className="font-serif text-2xl font-bold text-[#081a2e]">What did one anonymised lumbar case show?</h2>
               <p className="text-sm leading-relaxed text-[#334155]">One 39-year-old female IT professional with six months of lower-back pain, left-leg symptoms, lumbar spondylosis, left L4–S1 radiculopathy, and L3–S1 disc bulges completed seven individualised conservative physiotherapy sessions.</p>
               <p className="text-sm leading-relaxed text-[#334155]"><strong>Measured findings:</strong> VAS pain changed from 9/10 to 1/10, lumbar MMT from 2+/5 to 5/5, and the antalgic gait and left-leg numbness were documented as resolved. <strong>Patient-reported:</strong> 89% overall relief; EQ VAS changed from 35/100 to 85/100. This is one patient's experience, not a typical or guaranteed outcome.</p>
-              <CaseStudyCharts caseStudy="lumbar" />
+              <DeferredCaseStudyCharts caseStudy="lumbar" />
               <details className="rounded-xl border border-[#e5dec9] bg-[#faf6ed] p-4">
                 <summary className="cursor-pointer font-semibold text-[#081a2e]">View the full case measurements, assessment, care, and follow-up</summary>
                 <div className="mt-4 space-y-5 text-sm leading-relaxed text-[#334155]">
@@ -422,7 +422,7 @@ const ConditionsPage = () => {
                 </p>
               </div>
 
-              <CaseStudyCharts caseStudy="medial_meniscus" />
+              <DeferredCaseStudyCharts caseStudy="medial_meniscus" />
 
               <div>
                 <h3 className="font-semibold text-[#081a2e]">Physiotherapy programme</h3>

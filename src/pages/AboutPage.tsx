@@ -67,7 +67,7 @@ const AboutPage = () => {
               Founder &amp; Lead Physiotherapist
             </p>
             <p className="mt-5 text-lg font-semibold leading-relaxed text-[#081a2e]">
-              BPT, MPT (Orthopedics) · REGD.NO 0413 · Telangana State Board Registered
+              Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Telangana State Board Registered, Registration No. 0413, Orthopedic &amp; Pain Physiotherapist.
             </p>
             <p className="mt-6 font-semibold text-[#081a2e]">Dr Hamid’s Physio and Pain Clinic</p>
             <p className="mt-1 text-[#64748b]">Manikonda, Hyderabad</p>
@@ -181,7 +181,7 @@ const AboutPage = () => {
             <article id="qualified-physiotherapist" className="rounded-xl border border-[#e5dec9] bg-white p-5">
               <h3 className="font-serif text-xl font-bold text-[#081a2e]">Qualified, registered physiotherapist</h3>
               <p className="mt-3 leading-relaxed">
-                Care is led by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), REGD.NO 0413, Telangana State Board Registered, with 8+ years of clinical experience.
+                Care is led by Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Telangana State Board Registered, Registration No. 0413, Orthopedic &amp; Pain Physiotherapist, with 8+ years of clinical experience.
               </p>
             </article>
             <article id="transparent-treatment-charges" className="rounded-xl border border-[#e5dec9] bg-white p-5">

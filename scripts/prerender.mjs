@@ -5,20 +5,12 @@ import path from "node:path";
 const root = process.cwd();
 const canonicalOrigin = "https://www.drhamidphysio.in";
 const priceAsOf = "October 2026"; // The current website price copy was introduced in Git on 25 October 2026.
-const homeVisitPriorityAreas = [
-  "Kokapet",
-  "Gandipet",
-  "Narsingi",
-  "Jubilee Hills",
-  "Banjara Hills",
-  "Gachibowli",
-  "Financial District",
-  "HITEC City",
-  "Puppalguda",
+const confirmedHomeVisitAreas = [
   "Lanco Hills",
   "Alkapur Township",
-  "Shaikpet",
-  "Tolichowki",
+  "Narsingi",
+  "Gachibowli",
+  "HITEC City",
 ];
 const clinicReviewDraftUrls = new Set([
   `${canonicalOrigin}/privacy-policy`,
@@ -366,7 +358,7 @@ try {
   const aboutPageMarkdown = markdownByCanonicalUrl.get(`${canonicalOrigin}/about`)?.markdown || "";
   const contactPageMarkdown = markdownByCanonicalUrl.get(`${canonicalOrigin}/contact`)?.markdown || "";
   const servicesPageMarkdown = markdownByCanonicalUrl.get(`${canonicalOrigin}/services`)?.markdown || "";
-  const practitionerCredentials = aboutPageMarkdown.split("\n").find((line) => /BPT.*MPT.*REGD\.NO\s*0413/i.test(line));
+  const practitionerCredentials = aboutPageMarkdown.split("\n").find((line) => /Dr\. Mohammed Hamid Ali, BPT, MPT \(Orthopedics\), Telangana State Board Registered, Registration No\. 0413, Orthopedic & Pain Physiotherapist/i.test(line));
   const clinicalExperience = aboutPageMarkdown.match(/8\+ years of clinical experience/i)?.[0];
   const clinicEstablished = aboutPageMarkdown.match(/established in 2021/i)?.[0];
   const careModel = aboutPageMarkdown.match(/founder-operated, with individualized one-to-one care/i)?.[0];
@@ -395,7 +387,7 @@ try {
     `- Clinic established: ${clinicEstablished.replace(/^established in /i, "")}.`,
     `- Care model: ${careModel}.`,
     `- Listed prices: ${priceLine}`,
-    `- Home visits: generally targeted within an approximate 15 km radius of Manikonda; actual availability depends on the patient’s address and should be confirmed with the clinic. Priority target areas include ${homeVisitPriorityAreas.join(", ")}, along with the clinic’s other existing nearby areas. This is not a claim that each location is exactly within 15 km by road.`,
+    `- Home visits: available in the existing locality pages (${confirmedHomeVisitAreas.join(", ")}). Gachibowli visits are available irrespective of distance; confirm each request’s exact address, clinical suitability, fee, and appointment availability with the clinic.`,
     `- Instagram: ${INSTAGRAM_PROFILE_URL}`,
     `- Facebook: ${FACEBOOK_PROFILE_URL}`,
     `- YouTube: ${YOUTUBE_CHANNEL_URL}`,
@@ -424,12 +416,109 @@ try {
     "",
   ].join("\n");
 
+  const frozenShoulderMdx = await readFile(
+    path.join(root, "src/data/patientResources/frozen-shoulder-case-study.mdx"),
+    "utf8",
+  );
+  const extractMarkdownTable = (heading) => {
+    const lines = frozenShoulderMdx.split(/\r?\n/);
+    const headingIndex = lines.findIndex((line) => line.trim() === heading);
+    if (headingIndex < 0) throw new Error(`Frozen Shoulder source heading not found: ${heading}`);
+
+    const tableStart = lines.findIndex((line, index) => index > headingIndex && line.trim().startsWith("|"));
+    if (tableStart < 0) throw new Error(`Frozen Shoulder source table not found under: ${heading}`);
+
+    const rows = [];
+    for (let index = tableStart; index < lines.length && lines[index].trim().startsWith("|"); index += 1) {
+      const cells = lines[index].trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim());
+      if (!cells.every((cell) => /^:?-{3,}:?$/.test(cell))) rows.push(cells);
+    }
+    return rows;
+  };
+  const markdownTable = (rows) => [
+    `| ${rows[0].join(" | ")} |`,
+    `| ${rows[0].map(() => "---").join(" | ")} |`,
+    ...rows.slice(1).map((row) => `| ${row.join(" | ")} |`),
+  ].join("\n");
+  const measureSeries = (rows, measurement, label) => {
+    const values = rows.find((row) => row[0].toLowerCase() === measurement.toLowerCase());
+    if (!values) throw new Error(`Frozen Shoulder measure not found: ${measurement}`);
+    return markdownTable([
+      ["Assessment", label],
+      ...rows[0].slice(1).map((assessment, index) => [assessment, values[index + 1]]),
+    ]);
+  };
+  const painRows = extractMarkdownTable("### A. Pain Assessment – VAS");
+  const spadiRows = extractMarkdownTable("### B. Shoulder Pain and Disability Index (SPADI)");
+  const activeRows = extractMarkdownTable("### C. Active Range of Motion (AROM)");
+  const passiveRows = extractMarkdownTable("### D. Passive Range of Motion (PROM)");
+  const functionRows = extractMarkdownTable("## 4. Functional Performance");
+  const internalRotation = activeRows.find((row) => row[0].toLowerCase() === "internal rotation");
+  if (!internalRotation) throw new Error("Frozen Shoulder internal-rotation source values not found.");
+  const frozenShoulderChartSummary = [
+    "## Frozen Shoulder Case Study — Textual Chart Summaries",
+    "Generated from the verified Frozen Shoulder case-study MDX tables, independently of chart rendering.",
+    "",
+    "Assessment points shown in the source: Baseline, Day 10, Week 6, 3 months, and 6 months.",
+    "",
+    "### Pain at Rest: Visual Statistics",
+    "Recorded pain-at-rest VAS values:",
+    markdownTable([
+      ["Assessment", "Pain at Rest (VAS)"],
+      ...painRows.slice(1).map((row) => [row[0], row[1]]),
+    ]),
+    "",
+    "### Activity / Night Pain: Visual Statistics",
+    "Recorded activity/night-pain VAS values:",
+    markdownTable([
+      ["Assessment", "Activity / Night Pain (VAS)"],
+      ...painRows.slice(1).map((row) => [row[0], row[2]]),
+    ]),
+    "",
+    "### SPADI: Visual Statistics",
+    "Recorded Shoulder Pain and Disability Index scores:",
+    markdownTable([
+      ["Assessment", "SPADI score"],
+      ...spadiRows.slice(1).map((row) => [row[0], row[1]]),
+    ]),
+    "",
+    "### Active Flexion: Visual Statistics",
+    "Recorded active shoulder flexion in degrees:",
+    measureSeries(activeRows, "Flexion", "Active flexion (degrees)"),
+    "",
+    "### Active Abduction: Visual Statistics",
+    "Recorded active shoulder abduction in degrees:",
+    measureSeries(activeRows, "Abduction", "Active abduction (degrees)"),
+    "",
+    "### Active External Rotation: Visual Statistics",
+    "Recorded active external rotation in degrees:",
+    measureSeries(activeRows, "External rotation", "Active external rotation (degrees)"),
+    "",
+    "### Passive Flexion: Visual Statistics",
+    "Recorded passive shoulder flexion in degrees:",
+    measureSeries(passiveRows, "Flexion", "Passive flexion (degrees)"),
+    "",
+    "### Active Internal Rotation: Vertebral-Level Progression",
+    `Recorded categorical vertebral-level progression by assessment: ${activeRows[0].slice(1).map((assessment, index) => `${assessment}: ${internalRotation[index + 1]}`).join("; ")}. These are categorical measurements, not degrees.`,
+    "",
+    "### Functional Recovery Timeline",
+    "The source records the following functional status at baseline, Day 10, and 6 months:",
+    markdownTable(functionRows),
+    "",
+    "The source also reports week-6 and three-month improvements in sleep, desk-work tolerance, daily activity, and functional independence; no additional numerical functional scores are reported.",
+  ].join("\n\n");
+
+  const markdownPagesWithChartSummary = markdownPages.map((page) => (
+    page.canonicalUrl === `${canonicalOrigin}/conditions`
+      ? { ...page, markdown: `${page.markdown}\n\n${frozenShoulderChartSummary}\n` }
+      : page
+  ));
   const llmsFullText = [
     "# Full text of eligible public pages",
     "",
     `Markdown copies are generated at build time from prerendered canonical HTML pages. Prices shown below are dated as of ${priceAsOf}. Privacy and Terms pages are omitted until their clinic-specific legal details are confirmed.`,
     "",
-    ...markdownPages.map((page) => page.markdown),
+    ...markdownPagesWithChartSummary.map((page) => page.markdown),
   ].join("\n\n---\n\n");
 
   const aiText = [

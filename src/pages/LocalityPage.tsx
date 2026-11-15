@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link, Navigate, useParams } from "react-router-dom";
 import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import StructuredData from "@/components/StructuredData";
+import PatientActionGroup from "@/components/PatientActionGroup";
 import { localityPages } from "@/data/localityPages";
 import { CLINIC_BUSINESS_INFO, GOOGLE_BUSINESS_PROFILE_URL } from "@/lib/businessInfo";
 
@@ -78,39 +79,18 @@ const LocalityPage = () => {
               {page.introduction}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-[#5e6b78]">
-              Dr. Mohammed Hamid Ali — Orthopedic &amp; Pain Physiotherapist · BPT, MPT (Orthopedics) · REGD.NO 0413 · Telangana State Board Registered · Founder &amp; Lead Physiotherapist.
+              Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Telangana State Board Registered, Registration No. 0413, Orthopedic &amp; Pain Physiotherapist.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link
-                data-locality-event="booking_click"
-                to="/contact#appointment-request"
-                className="inline-flex min-h-11 items-center justify-center rounded-lg bg-[#081a2e] px-5 py-3 text-sm font-semibold text-white hover:bg-[#122842] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8a5d24]"
-              >
-                Request an appointment
-              </Link>
-              <a
-                href={clinicWhatsAppUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center justify-center rounded-lg border border-[#b08a58] px-5 py-3 text-sm font-semibold text-[#081a2e] hover:bg-white"
-              >
-                WhatsApp the clinic
-              </a>
-              <a
-                href="tel:+917601026596"
-                className="inline-flex min-h-11 items-center justify-center rounded-lg border border-[#d6cbaf] px-5 py-3 text-sm font-semibold text-[#081a2e] hover:bg-white"
-              >
-                Call the clinic
-              </a>
-              <a
-                href={clinicDirectionsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center justify-center rounded-lg border border-[#d6cbaf] px-5 py-3 text-sm font-semibold text-[#081a2e] hover:bg-white"
-              >
-                Directions to the clinic
-              </a>
-            </div>
+            <PatientActionGroup
+              ariaLabel={`Contact and booking options for ${page.locality}`}
+              className="mt-6 max-w-4xl"
+              actions={[
+                { kind: "internal", to: "/contact#appointment-request", label: "Request an appointment", primary: true, localityEvent: "booking_click" },
+                { kind: "external", href: clinicWhatsAppUrl, label: "WhatsApp the clinic", target: "_blank" },
+                { kind: "external", href: "tel:+917601026596", label: "Call the clinic" },
+                { kind: "external", href: clinicDirectionsUrl, label: "Directions to the clinic", target: "_blank" },
+              ]}
+            />
           </div>
         </div>
       </section>
@@ -158,9 +138,6 @@ const LocalityPage = () => {
           </h2>
           <p className="mt-3 leading-relaxed">
             The clinic has one physical location: {CLINIC_BUSINESS_INFO.fullAddress} It is open daily from 10:00 AM to 10:00 PM. Consultation is ₹300; physiotherapy treatment starts from ₹500, and total treatment cost varies according to the treatment plan. Confirm current fees directly with the clinic.
-          </p>
-          <p className="mt-3 text-sm leading-relaxed text-[#5e6b78]">
-            Estimated road distance from {page.locality}: {page.roadDistance}. The route depends on your exact starting point and destination; use live directions before travelling.
           </p>
           <div className="mt-4 flex flex-wrap gap-4 text-sm font-semibold">
             <a href={clinicDirectionsUrl} target="_blank" rel="noopener noreferrer" className="text-[#8a5d24] underline underline-offset-2">

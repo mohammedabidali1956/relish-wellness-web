@@ -13,7 +13,7 @@ import {
   YAxis,
 } from "recharts";
 
-type CaseStudyKey = "cervical" | "lumbar" | "medial_meniscus";
+export type CaseStudyKey = "cervical" | "lumbar" | "medial_meniscus";
 
 interface CaseStudyChartsProps {
   caseStudy: CaseStudyKey;
@@ -516,6 +516,14 @@ const chartSectionTitles: Record<CaseStudyKey, string> = {
   medial_meniscus: "Statistical Charts — Medial Meniscus Case",
 };
 
+export const CaseStudyChartContent: React.FC<CaseStudyChartsProps> = ({ caseStudy }) => (
+  <div id={`${caseStudy}-statistical-chart-groups`}>
+    {caseStudy === "cervical" && <CervicalCharts />}
+    {caseStudy === "lumbar" && <LumbarCharts />}
+    {caseStudy === "medial_meniscus" && <MeniscusCharts />}
+  </div>
+);
+
 const CaseStudyCharts: React.FC<CaseStudyChartsProps> = ({ caseStudy }) => (
   <section
     id={`${caseStudy}-statistical-charts`}
@@ -528,9 +536,7 @@ const CaseStudyCharts: React.FC<CaseStudyChartsProps> = ({ caseStudy }) => (
     >
       {chartSectionTitles[caseStudy]}
     </h3>
-    {caseStudy === "cervical" && <CervicalCharts />}
-    {caseStudy === "lumbar" && <LumbarCharts />}
-    {caseStudy === "medial_meniscus" && <MeniscusCharts />}
+    <CaseStudyChartContent caseStudy={caseStudy} />
   </section>
 );
 

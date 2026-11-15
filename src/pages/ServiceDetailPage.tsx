@@ -88,8 +88,12 @@ export const ServiceDetailPage: React.FC = () => {
   };
 
   const canonicalUrl = `https://www.drhamidphysio.in/services/${service.slug}`;
-  const pageTitle = uppercasePainTerm(getServiceMetaTitle(service.metaTitle));
-  const pageDescription = uppercasePainTerm(getServiceMetaDescription(service.slug, service.metaDescription));
+  const pageTitle = isHomeVisitService
+    ? service.metaTitle
+    : uppercasePainTerm(getServiceMetaTitle(service.metaTitle));
+  const pageDescription = isHomeVisitService
+    ? service.metaDescription
+    : uppercasePainTerm(getServiceMetaDescription(service.slug, service.metaDescription));
   const pageHeading = uppercasePainTerm(service.h1);
 
   // Find 3 closely related services in same or complementary category
@@ -655,7 +659,7 @@ export const ServiceDetailPage: React.FC = () => {
                     Dr. Mohammed Hamid Ali
                   </h3>
                   <p className="text-xs leading-relaxed text-[#4a5568]">
-                    BPT, MPT (Ortho) · Telangana State Board Registered · Professional Registration No. 0413
+                    Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Telangana State Board Registered, Registration No. 0413, Orthopedic &amp; Pain Physiotherapist.
                   </p>
                   <p className="text-xs font-semibold text-[#8a5d24]">Physiotherapy clinic in Manikonda</p>
                 </div>
@@ -700,7 +704,7 @@ export const ServiceDetailPage: React.FC = () => {
                     <span>{service.localAnswer ? (isHomeVisitService ? "Home visit coverage:" : "Clinic location:") : "Areas Served for Clinic & Home:"}</span>
                   </h4>
                   {service.localAnswer ? (
-                    <p className="text-xs leading-relaxed text-[#4a5568]">{isHomeVisitService ? "The target area is about 5 km around Manikonda. Coverage, suitability, fee, and availability depend on your exact address and must be confirmed with the clinic; the target area is not a service guarantee." : "The clinic is in Manikonda. People from Puppalguda and nearby areas can contact the clinic to ask about an in-clinic appointment; this is not a claim of additional branches."}</p>
+                    <p className="text-xs leading-relaxed text-[#4a5568]">{isHomeVisitService ? "Home visits are available in Lanco Hills, Alkapur Township, Narsingi, Gachibowli, and HITEC City. Gachibowli visits are available irrespective of distance; confirm your exact address, suitability, fee, and appointment availability with the clinic." : "The clinic is in Manikonda. People from Puppalguda and nearby areas can contact the clinic to ask about an in-clinic appointment; this is not a claim of additional branches."}</p>
                   ) : (
                     <div className="flex flex-wrap gap-1.5">
                       {service.serviceAreas.map((area, idx) => (
@@ -747,28 +751,28 @@ export const ServiceDetailPage: React.FC = () => {
       </section>
 
       {/* Bottom Sticky Action Bar on Mobile */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#e5dec9] p-3 shadow-xl">
-        <div className="flex gap-2 max-w-md mx-auto">
-          <Button asChild className="flex-1 bg-[#081a2e] hover:bg-[#122842] text-white text-xs font-semibold py-5 rounded-xl flex items-center justify-center gap-1.5">
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#e5dec9] px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-xl">
+        <div className="mx-auto grid w-full max-w-md grid-cols-[1.4fr_1fr_1fr] gap-2">
+          <Button asChild className="h-auto min-h-12 min-w-0 w-full whitespace-normal bg-[#081a2e] hover:bg-[#122842] px-1.5 py-2 text-[11px] leading-tight text-center font-semibold rounded-xl flex items-center justify-center gap-1">
             <Link to="/contact#appointment-request">
-              <Calendar className="w-4 h-4 text-[#e5c58a]" />
+              <Calendar className="w-4 h-4 shrink-0 text-[#e5c58a]" />
               <span>{primaryCtaLabel}</span>
             </Link>
           </Button>
           <Button
             onClick={handleCall}
             variant="outline"
-            className="flex-1 border-[#081a2e] text-[#081a2e] hover:bg-[#f4ede0] text-xs font-semibold py-5 rounded-xl flex items-center justify-center gap-1.5"
+            className="h-auto min-h-12 min-w-0 w-full whitespace-normal border-[#081a2e] text-[#081a2e] hover:bg-[#f4ede0] px-1.5 py-2 text-[11px] leading-tight text-center font-semibold rounded-xl flex items-center justify-center gap-1"
           >
-            <Phone className="w-4 h-4 text-[#8a5d24]" />
+            <Phone className="w-4 h-4 shrink-0 text-[#8a5d24]" />
             <span>Call Clinic</span>
           </Button>
           <Button
             onClick={handleWhatsApp}
             variant="outline"
-            className="flex-1 border-emerald-600 text-emerald-800 hover:bg-emerald-50 text-xs font-semibold py-5 rounded-xl flex items-center justify-center gap-1.5"
+            className="h-auto min-h-12 min-w-0 w-full whitespace-normal border-emerald-600 text-emerald-800 hover:bg-emerald-50 px-1.5 py-2 text-[11px] leading-tight text-center font-semibold rounded-xl flex items-center justify-center gap-1"
           >
-            <MessageCircle className="w-4 h-4 text-emerald-600" />
+            <MessageCircle className="w-4 h-4 shrink-0 text-emerald-600" />
             <span>WhatsApp</span>
           </Button>
         </div>

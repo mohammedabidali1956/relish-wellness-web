@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import StructuredData from "@/components/StructuredData";
+import PatientActionGroup from "@/components/PatientActionGroup";
 import { localityPages } from "@/data/localityPages";
 import { CLINIC_BUSINESS_INFO } from "@/lib/businessInfo";
 
@@ -77,11 +78,10 @@ const LocationsPage = () => {
                   {locality.locality}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed">
-                  Approximate road distance: {locality.roadDistance}.
-                </p>
-                <p className="mt-2 text-sm leading-relaxed">
                   {locality.homeVisitsAvailable
-                    ? "Home visits are available in this locality; please confirm your exact address and availability with the clinic."
+                    ? locality.locality === "Gachibowli"
+                      ? "Home visits are available irrespective of distance; confirm your exact address and appointment availability with the clinic."
+                      : "Home visits are available in this locality; please confirm your exact address and availability with the clinic."
                     : "Contact the clinic to confirm home-visit coverage for your exact address."}
                 </p>
                 <Link
@@ -117,7 +117,7 @@ const LocationsPage = () => {
               Home visit availability
             </h2>
             <p className="mt-3 leading-relaxed">
-              Home visits are available in Lanco Hills, Alkapur Township, Narsingi, and Gachibowli; confirm the exact address and appointment availability with the clinic. For HITEC City and other areas, contact the clinic to check coverage. No home-visit fee is quoted here.
+              Home visits are available in all five listed localities: Lanco Hills, Alkapur Township, Narsingi, Gachibowli, and HITEC City. Gachibowli visits are available irrespective of distance. The clinic confirms each exact address, clinical suitability, and appointment availability. No home-visit fee is quoted here.
             </p>
             <div className="mt-4 flex flex-wrap gap-4 text-sm font-semibold">
               <Link to="/services/home-visit-physiotherapy-manikonda" className="text-[#8a5d24] underline underline-offset-2">
@@ -135,16 +135,16 @@ const LocationsPage = () => {
       </section>
 
       <section id="locations-actions" className="px-4 py-10 sm:py-14">
-        <div className="mx-auto flex max-w-6xl flex-wrap gap-3">
-          <Link to="/contact#appointment-request" className="inline-flex min-h-11 items-center justify-center rounded-lg bg-[#081a2e] px-5 py-3 text-sm font-semibold text-white hover:bg-[#122842]">
-            Request an appointment
-          </Link>
-          <a href="tel:+917601026596" className="inline-flex min-h-11 items-center justify-center rounded-lg border border-[#d6cbaf] px-5 py-3 text-sm font-semibold text-[#081a2e]">
-            Call the clinic
-          </a>
-          <a href="https://wa.me/917601026596?text=Hi%20Dr.%20Hamid%2C%20I%20would%20like%20to%20ask%20about%20physiotherapy%20appointments." target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center justify-center rounded-lg border border-[#d6cbaf] px-5 py-3 text-sm font-semibold text-[#081a2e]">
-            WhatsApp the clinic
-          </a>
+        <div className="mx-auto max-w-6xl">
+          <PatientActionGroup
+            ariaLabel="Contact and appointment options"
+            className="justify-center"
+            actions={[
+              { kind: "internal", to: "/contact#appointment-request", label: "Request an appointment", primary: true },
+              { kind: "external", href: "tel:+917601026596", label: "Call the clinic" },
+              { kind: "external", href: "https://wa.me/917601026596?text=Hi%20Dr.%20Hamid%2C%20I%20would%20like%20to%20ask%20about%20physiotherapy%20appointments.", label: "WhatsApp the clinic", target: "_blank" },
+            ]}
+          />
         </div>
       </section>
     </main>

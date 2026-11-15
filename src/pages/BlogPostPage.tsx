@@ -159,11 +159,12 @@ const BlogPostPage = () => {
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm sm:text-base text-muted-foreground">
               <div className="flex items-center gap-2">
                 <User className="w-5 h-5" />
-                <span className="font-medium">{post.author}</span>
-                {post.author === "Dr. Mohammed Hamid Ali" && (
-                  <span className="font-medium text-[#8a5d24]">
-                    BPT, MPT (Ortho) · Telangana State Board Registered · Professional Registration No. 0413
+                {post.author === "Dr. Mohammed Hamid Ali" ? (
+                  <span className="font-medium">
+                    Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Telangana State Board Registered, Registration No. 0413, Orthopedic &amp; Pain Physiotherapist.
                   </span>
+                ) : (
+                  <span className="font-medium">{post.author}</span>
                 )}
               </div>
               {post.date && (

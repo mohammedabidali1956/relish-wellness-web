@@ -13,6 +13,7 @@ const navLinks = [
   { title: "Blogs", path: "/blogs" },
   { title: "Conditions", path: "/conditions" },
   { title: "Patient Resources", path: "/conditions#patient-resources" },
+  { title: "Reviews", path: "/reviews" },
   { title: "Contact", path: "/contact" },
 ];
 

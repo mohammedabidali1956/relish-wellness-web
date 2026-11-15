@@ -49,7 +49,7 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription, include
       "@type": "Person",
       "name": "Dr. Mohammed Hamid Ali",
       "jobTitle": "Orthopedic & Pain Physiotherapist",
-      "description": "BPT, MPT (Orthopedics); REGD.NO 0413; Telangana State Board Registered. Founder & Lead Physiotherapist, Dr Hamid’s Physio and Pain Clinic."
+      "description": "Dr. Mohammed Hamid Ali, BPT, MPT (Orthopedics), Telangana State Board Registered, Registration No. 0413, Orthopedic & Pain Physiotherapist. Founder & Lead Physiotherapist, Dr Hamid’s Physio and Pain Clinic."
     },
     "areaServed": [
       {
@@ -129,16 +129,6 @@ const StructuredData = ({ type = "homepage", pageTitle, pageDescription, include
       {
         "@type": "AdministrativeArea",
         "name": "HITEC City"
-      },
-      {
-        "@type": "GeoCircle",
-        "description": "Approximate target radius for home visits; availability depends on the patient's exact address.",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": CLINIC_BUSINESS_INFO.latitude,
-          "longitude": CLINIC_BUSINESS_INFO.longitude
-        },
-        "geoRadius": "15000"
       }
     ],
     "medicalSpecialty": [
